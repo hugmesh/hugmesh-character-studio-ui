@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c14e)}.region-accent{fill:var(--region-accent,#faf0dc)}.region-detail{fill:var(--region-detail,#e8933a)}</style>
+  <!-- Avian body: rounded feathered torso with scalloped breast panel, folded-wing hints, bare bird legs and three-toed feet. -->
+  <path class="region-detail" d="M462 738 l-6 118 h34 l-2 -112 z"/>
+  <path class="region-detail" d="M446 852 l-40 34 26 8 20 -22 -2 34 24 2 4 -34 20 24 26 -8 -42 -36 z"/>
+  <g transform="translate(1024 0) scale(-1 1)">
+    <path class="region-detail" d="M462 738 l-6 118 h34 l-2 -112 z"/>
+    <path class="region-detail" d="M446 852 l-40 34 26 8 20 -22 -2 34 24 2 4 -34 20 24 26 -8 -42 -36 z"/>
+  </g>
+  <path class="region-fur" d="M512 402 Q616 408 640 504 Q660 590 634 672 Q596 750 512 756 Q428 750 390 672 Q364 590 384 504 Q408 408 512 402 Z"/>
+  <path class="region-accent" d="M404 500 Q378 570 396 648 Q416 610 418 552 Q416 520 404 500 Z"/>
+  <path class="region-accent" d="M620 500 Q646 570 628 648 Q608 610 606 552 Q608 520 620 500 Z"/>
+  <path class="region-fur" d="M406 522 Q392 576 402 626 Q412 594 412 556 Z"/>
+  <path class="region-fur" d="M618 522 Q632 576 622 626 Q612 594 612 556 Z"/>
+  <path class="region-accent" d="M512 462 Q582 468 602 536 Q614 592 600 646 Q584 634 576 614 Q566 654 542 676 Q532 656 528 636 Q516 676 488 690 Q480 664 482 642 Q462 668 436 660 Q416 600 424 540 Q444 468 512 462 Z"/>
+</svg>

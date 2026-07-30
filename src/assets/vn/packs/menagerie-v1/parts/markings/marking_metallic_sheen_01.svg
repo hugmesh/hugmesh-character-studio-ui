@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#eef3f8)}</style>
+  <!-- Metallic sheen overlay: parallel diagonal highlight slashes and glint ticks across the torso footprint -->
+  <path class="region-accent" d="M404 640 L560 484 L588 512 L432 668 Z"/>
+  <path class="region-accent" d="M452 712 L600 564 L620 584 L472 732 Z"/>
+  <path class="region-accent" d="M400 560 L472 488 L490 506 L418 578 Z"/>
+  <path class="region-accent" d="M540 736 L622 654 L638 670 L556 752 Z"/>
+  <path class="region-accent" d="M416 476 L448 444 L458 454 L426 486 Z"/>
+  <path class="region-accent" d="M598 520 L630 488 L640 498 L608 530 Z"/>
+  <path class="region-accent" d="M480 758 L512 726 L521 735 L489 767 Z"/>
+  <path class="region-accent" d="M390 700 L416 674 L425 683 L399 709 Z"/>
+  <path class="region-accent" d="M560 448 L582 426 L591 435 L569 457 Z"/>
+  <path class="region-accent" d="M614 594 L636 572 L645 581 L623 603 Z"/>
+</svg>

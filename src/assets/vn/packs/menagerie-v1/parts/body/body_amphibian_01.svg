@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#79b356)}.region-accent{fill:var(--region-accent,#e3edb4)}.region-detail{fill:var(--region-detail,#e8935a)}</style>
+  <!-- Amphibian body: smooth pear-shaped torso with a big pale belly, slim arms, squat haunches and round orange toe pads -->
+  <path class="region-fur" d="M430 516 Q384 556 372 626 Q366 664 390 668 Q404 606 442 570 Z"/>
+  <path class="region-fur" d="M594 516 Q640 556 652 626 Q658 664 634 668 Q620 606 582 570 Z"/>
+  <ellipse class="region-fur" cx="384" cy="678" rx="30" ry="20"/>
+  <ellipse class="region-fur" cx="640" cy="678" rx="30" ry="20"/>
+  <path class="region-fur" d="M462 436 H562 Q580 498 622 530 Q662 570 666 652 Q670 742 640 798 Q598 852 512 852 Q426 852 384 798 Q354 742 358 652 Q362 570 402 530 Q444 498 462 436 Z"/>
+  <ellipse class="region-fur" cx="414" cy="780" rx="72" ry="66"/>
+  <ellipse class="region-fur" cx="610" cy="780" rx="72" ry="66"/>
+  <rect class="region-fur" x="344" y="842" width="140" height="36" rx="18"/>
+  <rect class="region-fur" x="540" y="842" width="140" height="36" rx="18"/>
+  <ellipse class="region-accent" cx="512" cy="648" rx="116" ry="140"/>
+  <circle class="region-detail" cx="362" cy="690" r="10"/>
+  <circle class="region-detail" cx="388" cy="696" r="9"/>
+  <circle class="region-detail" cx="662" cy="690" r="10"/>
+  <circle class="region-detail" cx="636" cy="696" r="9"/>
+  <circle class="region-detail" cx="362" cy="880" r="15"/>
+  <circle class="region-detail" cx="398" cy="886" r="13"/>
+  <circle class="region-detail" cx="434" cy="882" r="12"/>
+  <circle class="region-detail" cx="662" cy="880" r="15"/>
+  <circle class="region-detail" cx="626" cy="886" r="13"/>
+  <circle class="region-detail" cx="590" cy="882" r="12"/>
+</svg>

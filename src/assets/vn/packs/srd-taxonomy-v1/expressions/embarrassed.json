@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schema/vn-expression-v1.schema.json",
+  "id": "embarrassed",
+  "displayName": "Embarrassed",
+  "slots": { "eyes": "eyes_embarrassed_01", "brows": "brows_sad_01", "mouth": "mouth_embarrassed_01" }
+}

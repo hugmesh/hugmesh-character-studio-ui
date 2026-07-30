@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8b8e99)}.region-accent{fill:var(--region-accent,#e8e6df)}</style>
+  <!-- Ookami tail: heavy bushy wolf tail hanging low behind the hip, pale tip patch -->
+  <path class="region-fur" d="M622 658 C716 646 798 692 828 782 Q844 846 812 890 Q780 924 736 908 L744 876 Q712 886 692 856 Q676 830 690 806 Q660 782 652 744 Q646 702 630 716 Z"/>
+  <path class="region-accent" d="M804 882 Q790 914 752 902 Q744 894 748 882 Q772 888 790 860 Q800 866 804 882 Z"/>
+</svg>

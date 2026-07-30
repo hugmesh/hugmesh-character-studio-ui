@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:none;stroke:var(--region-fur,#8a6550);stroke-width:24;stroke-linecap:round}.region-accent{fill:var(--region-accent,#e8d6b8)}.region-detail{fill:var(--region-detail,#6b4a3e)}</style>
+  <!-- Pig curl tail: springy corkscrew curl off the hip drawn as a rounded stroke, pale rump tuft at the base, darker nub at the tip -->
+  <path class="region-accent" d="M628 698 Q650 678 680 682 Q668 704 670 728 Q646 716 628 698 Z"/>
+  <path class="region-fur" d="M648 706 Q708 668 754 700 Q792 730 774 772 Q756 806 716 796 Q684 786 692 754 Q700 728 724 736"/>
+  <circle class="region-detail" cx="724" cy="736" r="13"/>
+</svg>

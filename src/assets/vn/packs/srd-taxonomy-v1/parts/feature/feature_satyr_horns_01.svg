@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfc0aa)}.region-accent{fill:var(--region-accent,#e8ddc8)}</style>
+  <!-- Satyr horns (SRD 5.1): small back-curled goat horns for humanoid heads, soft rounded tips -->
+  <path class="region-fur" d="M466 176 Q436 96 364 82 Q338 86 352 114 Q410 128 430 198 Q456 208 466 176 Z"/>
+  <path class="region-fur" d="M558 176 Q588 96 660 82 Q686 86 672 114 Q614 128 594 198 Q568 208 558 176 Z"/>
+  <circle class="region-accent" cx="358" cy="98" r="10"/>
+  <circle class="region-accent" cx="666" cy="98" r="10"/>
+</svg>

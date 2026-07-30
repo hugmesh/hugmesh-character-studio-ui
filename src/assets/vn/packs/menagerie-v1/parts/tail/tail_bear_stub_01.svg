@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7a5844)}.region-accent{fill:var(--region-accent,#c8a880)}</style>
+  <!-- Bear stub tail: small round fluffy nub peeking out behind the hip, with a pale underside and tufted top edge -->
+  <circle class="region-fur" cx="696" cy="684" r="48"/>
+  <path class="region-fur" d="M676 644 L688 620 L698 646 Z"/>
+  <path class="region-fur" d="M702 642 L714 622 L722 648 Z"/>
+  <path class="region-fur" d="M724 654 L740 640 L742 664 Z"/>
+  <path class="region-accent" d="M664 700 Q690 742 732 714 Q718 740 690 738 Q668 724 664 700 Z"/>
+</svg>

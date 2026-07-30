@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e9dcae)}.region-accent{fill:var(--region-accent,#f0c684)}.region-detail{fill:var(--region-detail,#f2968e)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Cockatrice (SRD 5.1) head: rounded rooster comb + wobbly wattle drops + dizzy swirl temples, small gold beak -->
+  <path class="region-detail" d="M424 178 Q414 100 470 94 Q490 94 496 112 Q502 62 552 66 Q578 70 578 98 Q630 92 634 144 Q636 178 616 198 Q560 168 512 170 Q462 170 424 178 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-accent" d="M478 382 Q512 364 546 382 Q542 402 512 414 Q482 402 478 382 Z"/>
+  <path class="region-detail" d="M490 478 Q480 522 502 530 Q518 524 508 482 Z"/>
+  <path class="region-detail" d="M534 482 Q544 526 522 532 Q506 526 516 486 Z"/>
+  <path class="region-line" d="M398 238 q-22 -6 -16 -26 q6 -16 24 -10 q12 6 6 18"/>
+  <path class="region-line" d="M626 238 q22 -6 16 -26 q-6 -16 -24 -10 q-12 6 -6 18"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

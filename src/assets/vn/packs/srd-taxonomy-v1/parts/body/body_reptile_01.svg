@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a8d8b9)}.region-accent{fill:var(--region-accent,#e7f2d9)}.region-detail{fill:var(--region-detail,#6fa287)}.region-line{fill:none;stroke:var(--region-line,#4c6657);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Reptile (SRD 5.1) body: jellybean torso with segmented belly plate, tiny curled tail nub, round claw-dot feet -->
+  <path class="region-fur" d="M430 516 Q374 552 360 624 Q354 662 378 666 Q394 604 440 568 Z"/>
+  <path class="region-fur" d="M594 516 Q650 552 664 624 Q670 662 646 666 Q630 604 584 568 Z"/>
+  <ellipse class="region-fur" cx="372" cy="676" rx="30" ry="20"/>
+  <ellipse class="region-fur" cx="652" cy="676" rx="30" ry="20"/>
+  <path class="region-fur" d="M600 780 Q720 790 740 720 Q744 680 710 676 Q680 740 596 756 Z"/>
+  <path class="region-fur" d="M462 436 H562 Q592 500 630 540 Q668 594 668 668 Q668 762 632 806 Q590 852 512 852 Q434 852 392 806 Q356 762 356 668 Q356 594 394 540 Q432 500 462 436 Z"/>
+  <ellipse class="region-accent" cx="512" cy="660" rx="112" ry="148"/>
+  <path class="region-line" d="M424 600 q88 34 176 0"/>
+  <path class="region-line" d="M416 668 q96 36 192 0"/>
+  <path class="region-line" d="M428 736 q84 32 168 0"/>
+  <ellipse class="region-fur" cx="414" cy="788" rx="70" ry="58"/>
+  <ellipse class="region-fur" cx="610" cy="788" rx="70" ry="58"/>
+  <circle class="region-detail" cx="382" cy="818" r="9"/>
+  <circle class="region-detail" cx="414" cy="826" r="8"/>
+  <circle class="region-detail" cx="446" cy="818" r="8"/>
+  <circle class="region-detail" cx="642" cy="818" r="9"/>
+  <circle class="region-detail" cx="610" cy="826" r="8"/>
+  <circle class="region-detail" cx="578" cy="818" r="8"/>
+</svg>

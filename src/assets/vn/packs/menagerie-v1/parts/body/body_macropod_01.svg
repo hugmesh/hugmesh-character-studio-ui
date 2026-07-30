@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5854f)}.region-accent{fill:var(--region-accent,#e6cba4)}.region-detail{fill:var(--region-detail,#6b4226)}</style>
+  <!-- Kangaroo body: slim chest widening into heavy hips, small forearms, cream belly with pouch fold, thick bent thighs and long forward feet with claws -->
+  <path class="region-fur" d="M470 498 Q512 488 554 498 L566 560 Q512 578 458 560 Z"/>
+  <path class="region-fur" d="M448 560 Q420 580 416 622 Q414 650 434 656 Q452 652 454 628 L460 578 Z"/>
+  <path class="region-fur" d="M576 560 Q604 580 608 622 Q610 650 590 656 Q572 652 570 628 L564 578 Z"/>
+  <path class="region-fur" d="M456 548 Q380 590 358 680 Q344 760 396 812 Q452 852 512 854 Q572 852 628 812 Q680 760 666 680 Q644 590 568 548 Q512 528 456 548 Z"/>
+  <path class="region-fur" d="M386 660 Q342 690 342 760 Q344 830 396 856 Q442 872 462 838 Q470 780 440 720 Q418 676 386 660 Z"/>
+  <path class="region-fur" d="M638 660 Q682 690 682 760 Q680 830 628 856 Q582 872 562 838 Q554 780 584 720 Q606 676 638 660 Z"/>
+  <path class="region-fur" d="M398 840 Q386 876 384 908 L424 912 Q428 878 434 848 Z"/>
+  <path class="region-fur" d="M626 840 Q638 876 640 908 L600 912 Q596 878 590 848 Z"/>
+  <path class="region-fur" d="M386 900 Q356 918 352 938 Q354 952 372 954 L500 954 Q514 950 508 936 Q498 922 462 918 L414 908 Z"/>
+  <path class="region-fur" d="M638 900 Q668 918 672 938 Q670 952 652 954 L524 954 Q510 950 516 936 Q526 922 562 918 L610 908 Z"/>
+  <path class="region-accent" d="M462 570 Q512 556 562 570 Q616 640 612 730 Q600 800 512 812 Q424 800 412 730 Q408 640 462 570 Z"/>
+  <path class="region-fur" d="M424 704 Q512 752 600 704 Q596 726 512 744 Q428 726 424 704 Z"/>
+  <polygon class="region-detail" points="500,930 530,936 502,946"/>
+  <polygon class="region-detail" points="486,942 512,948 488,954"/>
+  <polygon class="region-detail" points="524,930 494,936 522,946"/>
+  <polygon class="region-detail" points="538,942 512,948 536,954"/>
+</svg>

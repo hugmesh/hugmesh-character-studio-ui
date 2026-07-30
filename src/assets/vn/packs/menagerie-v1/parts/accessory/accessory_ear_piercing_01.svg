@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:none;stroke:var(--region-detail,#d9a441);stroke-width:9;stroke-linecap:round}</style>
+  <!-- Ear piercings: two small hoops on the left ear rim, one on the right -->
+  <circle class="region-detail" cx="352" cy="214" r="13"/>
+  <circle class="region-detail" cx="338" cy="244" r="11"/>
+  <circle class="region-detail" cx="672" cy="214" r="13"/>
+</svg>

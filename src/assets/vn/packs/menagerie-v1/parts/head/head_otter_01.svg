@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6f5136)}.region-accent{fill:var(--region-accent,#d9c3a3)}.region-detail{fill:var(--region-detail,#3a2a22)}</style>
+  <!-- Otter head: broad rounded skull with cheek bulges, tiny low-set round ears, wide blunt cream whisker muzzle, big rounded nose, dark whisker strokes fanning out -->
+  <circle class="region-fur" cx="352" cy="212" r="42"/>
+  <circle class="region-fur" cx="672" cy="212" r="42"/>
+  <circle class="region-detail" cx="352" cy="212" r="20"/>
+  <circle class="region-detail" cx="672" cy="212" r="20"/>
+  <path class="region-fur" d="M512 132 Q332 132 316 320 Q310 424 388 486 Q446 530 512 530 Q578 530 636 486 Q714 424 708 320 Q692 132 512 132 Z"/>
+  <path class="region-fur" d="M322 360 Q288 396 298 442 Q336 450 368 428 Z"/>
+  <path class="region-fur" d="M702 360 Q736 396 726 442 Q688 450 656 428 Z"/>
+  <path class="region-accent" d="M420 380 Q512 352 604 380 Q626 436 596 482 Q556 512 512 514 Q468 512 428 482 Q398 436 420 380 Z"/>
+  <path class="region-detail" d="M472 396 Q512 382 552 396 Q558 424 534 444 Q512 456 490 444 Q466 424 472 396 Z"/>
+  <path class="region-detail" d="M508 452 L516 452 L514 476 L510 476 Z"/>
+  <path class="region-detail" d="M446 414 L354 394 L446 424 Z"/>
+  <path class="region-detail" d="M448 438 L350 436 L448 448 Z"/>
+  <path class="region-detail" d="M446 460 L358 478 L446 470 Z"/>
+  <path class="region-detail" d="M578 414 L670 394 L578 424 Z"/>
+  <path class="region-detail" d="M576 438 L674 436 L576 448 Z"/>
+  <path class="region-detail" d="M578 460 L666 478 L578 470 Z"/>
+</svg>

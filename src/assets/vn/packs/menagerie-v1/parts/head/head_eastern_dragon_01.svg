@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4f9e82)}.region-accent{fill:var(--region-accent,#f0dfae)}.region-detail{fill:var(--region-detail,#c9b183)}.region-line{fill:var(--region-line,#2e5b4c)}</style>
+  <!-- Eastern dragon head: flowing flame-like mane crest, branched antler nubs, broad blunt snout with nostril flares, long trailing whiskers and a chin tuft -->
+  <path class="region-accent" d="M512 118 Q420 96 366 150 Q430 142 470 168 Q400 190 372 246 Q446 208 512 214 Q578 208 652 246 Q624 190 554 168 Q594 142 658 150 Q604 96 512 118 Z"/>
+  <path class="region-accent" d="M348 240 Q268 280 246 372 L318 340 Q272 406 276 486 L346 428 Q322 486 342 540 L420 470 Q368 380 372 296 Z"/>
+  <path class="region-accent" d="M676 240 Q756 280 778 372 L706 340 Q752 406 748 486 L678 428 Q702 486 682 540 L604 470 Q656 380 652 296 Z"/>
+  <path class="region-detail" d="M426 208 Q402 158 416 102 L440 108 Q430 156 452 200 Z"/>
+  <path class="region-detail" d="M414 146 L378 116 L398 162 Z"/>
+  <path class="region-detail" d="M598 208 Q622 158 608 102 L584 108 Q594 156 572 200 Z"/>
+  <path class="region-detail" d="M610 146 L646 116 L626 162 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-accent" d="M474 152 Q512 132 550 152 Q534 182 512 178 Q490 182 474 152 Z"/>
+  <path class="region-fur" d="M438 380 Q512 352 586 380 L600 452 Q596 502 512 510 Q428 502 424 452 Z"/>
+  <path class="region-accent" d="M462 388 Q512 368 562 388 L570 440 Q512 462 454 440 Z"/>
+  <ellipse class="region-detail" cx="468" cy="418" rx="16" ry="13"/>
+  <ellipse class="region-detail" cx="556" cy="418" rx="16" ry="13"/>
+  <ellipse class="region-line" cx="468" cy="418" rx="5" ry="8"/>
+  <ellipse class="region-line" cx="556" cy="418" rx="5" ry="8"/>
+  <path class="region-line" d="M452 428 Q356 420 300 470 Q240 524 244 600 Q238 528 296 480 Q348 438 452 440 Z"/>
+  <path class="region-line" d="M572 428 Q668 420 724 470 Q784 524 780 600 Q786 528 728 480 Q676 438 572 440 Z"/>
+  <path class="region-accent" d="M488 506 Q512 552 536 506 Q530 484 512 490 Q494 484 488 506 Z"/>
+</svg>

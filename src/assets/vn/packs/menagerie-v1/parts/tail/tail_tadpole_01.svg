@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#79b356)}.region-accent{fill:var(--region-accent,#a8d4c4)}.region-line{fill:none;stroke:var(--region-line,#4a8a6a);stroke-width:9;stroke-linecap:round}</style>
+  <!-- Tadpole tail: broad rounded paddle with a translucent-look accent fin edge around a muscular core, rippled membrane lines -->
+  <path class="region-accent" d="M632 664 Q760 592 876 620 Q966 648 970 736 Q968 830 872 872 Q764 912 664 800 Q628 748 632 664 Z"/>
+  <path class="region-fur" d="M626 686 Q756 660 866 700 Q930 726 924 764 Q906 802 828 796 Q716 788 634 748 Q618 716 626 686 Z"/>
+  <circle class="region-fur" cx="650" cy="712" r="46"/>
+  <path class="region-line" d="M744 618 Q752 640 748 662"/>
+  <path class="region-line" d="M822 636 Q830 656 826 678"/>
+  <path class="region-line" d="M756 810 Q764 840 756 866"/>
+  <path class="region-line" d="M852 812 Q858 836 850 858"/>
+  <circle class="region-accent" cx="742" cy="724" r="10"/>
+  <circle class="region-accent" cx="802" cy="744" r="9"/>
+  <circle class="region-accent" cx="686" cy="700" r="8"/>
+</svg>

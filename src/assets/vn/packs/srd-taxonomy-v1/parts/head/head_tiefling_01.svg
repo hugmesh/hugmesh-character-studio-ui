@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e5c6e9)}.region-accent{fill:var(--region-accent,#f6e6f8)}.region-detail{fill:var(--region-detail,#c493cf)}.region-hair{fill:var(--region-hair,#b48cd9)}</style>
+  <!-- Tiefling (SRD 5.1) head: wavy soft hair on hair region, gently pointed ears w/ accent inner-ear (horns are a separate feature part) -->
+  <circle class="region-hair" cx="512" cy="316" r="216"/>
+  <path class="region-hair" d="M316 340 Q276 440 302 522 Q308 572 344 598 Q364 570 348 498 Q338 420 344 364 Z"/>
+  <path class="region-hair" d="M708 340 Q748 440 722 522 Q716 572 680 598 Q660 570 676 498 Q686 420 680 364 Z"/>
+  <path class="region-fur" d="M334 312 Q290 284 260 302 Q240 318 258 344 Q282 384 330 386 Q346 350 334 312 Z"/>
+  <path class="region-fur" d="M690 312 Q734 284 764 302 Q784 318 766 344 Q742 384 694 386 Q678 350 690 312 Z"/>
+  <path class="region-accent" d="M318 330 Q290 316 276 328 Q272 340 288 354 Q306 366 320 362 Q326 344 318 330 Z"/>
+  <path class="region-accent" d="M706 330 Q734 316 748 328 Q752 340 736 354 Q718 366 704 362 Q698 344 706 330 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="202"/>
+  <path class="region-hair" d="M318 330 Q304 150 512 128 Q720 150 706 330 Q690 240 640 226 Q622 258 586 234 Q550 214 512 240 Q474 214 438 234 Q402 258 384 226 Q334 240 318 330 Z"/>
+  <ellipse class="region-detail" cx="512" cy="396" rx="11" ry="9"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

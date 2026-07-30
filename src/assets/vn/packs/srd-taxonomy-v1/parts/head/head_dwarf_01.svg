@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f0c3a0)}.region-hair{fill:var(--region-hair,#d9a678)}.region-detail{fill:var(--region-detail,#cf8f6b)}</style>
+  <!-- Dwarf (SRD 5.1, Hill Dwarf) head: chin-frame braided beard, bulbous nose, thick baked brows -->
+  <circle class="region-hair" cx="512" cy="322" r="212"/>
+  <circle class="region-fur" cx="314" cy="348" r="40"/>
+  <circle class="region-fur" cx="710" cy="348" r="40"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-hair" d="M318 322 Q308 150 512 132 Q716 150 706 322 Q674 212 512 218 Q350 212 318 322 Z"/>
+  <rect class="region-hair" x="398" y="246" width="84" height="28" rx="14"/>
+  <rect class="region-hair" x="542" y="246" width="84" height="28" rx="14"/>
+  <path class="region-hair" d="M348 420 Q336 520 398 588 Q452 640 512 644 Q572 640 626 588 Q688 520 676 420 Q660 470 624 486 Q568 500 512 500 Q456 500 400 486 Q364 470 348 420 Z"/>
+  <rect class="region-hair" x="424" y="556" width="40" height="144" rx="20"/>
+  <rect class="region-hair" x="560" y="556" width="40" height="144" rx="20"/>
+  <rect class="region-detail" x="420" y="632" width="48" height="18" rx="9"/>
+  <rect class="region-detail" x="556" y="632" width="48" height="18" rx="9"/>
+  <path class="region-hair" d="M400 434 Q372 418 352 432 Q360 462 392 458 Q400 448 400 434 Z"/>
+  <path class="region-hair" d="M624 434 Q652 418 672 432 Q664 462 632 458 Q624 448 624 434 Z"/>
+  <ellipse class="region-detail" cx="512" cy="390" rx="26" ry="15"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="405" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="405" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#bfb3d9)}.region-accent{fill:var(--region-accent,#e3dcf2)}.region-detail{fill:var(--region-detail,#8d7fa8)}</style>
+  <!-- Spider body (SRD 5.1 giant spider/drider kin): round fuzzy abdomen, three stubby rounded leg pairs, heart-ish back marking -->
+  <path class="region-fur" d="M416 574 Q322 548 284 600 Q268 634 300 644 Q352 642 420 622 Z"/>
+  <path class="region-fur" d="M408 636 Q312 642 288 704 Q282 736 314 736 Q366 720 424 690 Z"/>
+  <path class="region-fur" d="M418 698 Q342 726 336 788 Q340 816 370 808 Q414 776 448 742 Z"/>
+  <path class="region-fur" d="M608 574 Q702 548 740 600 Q756 634 724 644 Q672 642 604 622 Z"/>
+  <path class="region-fur" d="M616 636 Q712 642 736 704 Q742 736 710 736 Q658 720 600 690 Z"/>
+  <path class="region-fur" d="M606 698 Q682 726 688 788 Q684 816 654 808 Q610 776 576 742 Z"/>
+  <circle class="region-detail" cx="300" cy="626" r="17"/>
+  <circle class="region-detail" cx="310" cy="718" r="17"/>
+  <circle class="region-detail" cx="360" cy="796" r="17"/>
+  <circle class="region-detail" cx="724" cy="626" r="17"/>
+  <circle class="region-detail" cx="714" cy="718" r="17"/>
+  <circle class="region-detail" cx="664" cy="796" r="17"/>
+  <ellipse class="region-fur" cx="512" cy="652" rx="174" ry="196"/>
+  <circle class="region-accent" cx="368" cy="520" r="24"/>
+  <circle class="region-accent" cx="438" cy="470" r="24"/>
+  <circle class="region-accent" cx="586" cy="470" r="24"/>
+  <circle class="region-accent" cx="656" cy="520" r="24"/>
+  <ellipse class="region-accent" cx="512" cy="706" rx="106" ry="112"/>
+  <path class="region-detail" d="M512 528 Q550 580 512 634 Q474 580 512 528 Z"/>
+  <circle class="region-detail" cx="512" cy="836" r="14"/>
+</svg>

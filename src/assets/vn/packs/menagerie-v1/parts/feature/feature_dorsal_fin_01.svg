@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Dorsal fin: tall curved shark-style fin rising from behind the right shoulder, pale trailing edge, ray shading -->
+  <path class="region-fur" d="M648 600 Q700 566 726 600 Q706 632 660 628 Z"/>
+  <path class="region-fur" d="M664 578 Q672 448 790 316 Q828 422 778 506 Q744 556 704 588 Z"/>
+  <path class="region-accent" d="M752 506 Q800 430 790 348 Q818 430 772 508 Q758 528 744 536 Z"/>
+  <path class="region-detail" d="M700 566 L748 428 L758 436 Z"/>
+  <path class="region-detail" d="M688 574 L716 470 L726 476 Z"/>
+  <path class="region-detail" d="M712 556 L774 396 L782 406 Z"/>
+</svg>

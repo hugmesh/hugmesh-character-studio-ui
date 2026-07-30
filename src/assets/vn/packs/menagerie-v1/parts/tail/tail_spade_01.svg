@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a63d40)}.region-accent{fill:var(--region-accent,#e8c98f)}.region-detail{fill:var(--region-detail,#5e2a2d)}</style>
+  <!-- Dragon tail: sinuous sweep off the hip curling up to a spade tip, pale underside ridge, dorsal spikes -->
+  <path class="region-fur" d="M636 664 Q724 722 796 700 Q848 682 850 612 Q852 550 878 498 L916 516 Q894 560 892 616 Q888 704 820 736 Q740 770 620 732 Z"/>
+  <path class="region-accent" d="M648 722 Q740 756 812 728 L806 708 Q736 734 660 700 Z"/>
+  <path class="region-accent" d="M700 680 q14 22 10 46 l26 -6 q4 -24 -10 -48 z"/>
+  <path class="region-accent" d="M782 700 q10 16 8 36 l24 -10 q0 -18 -8 -34 z"/>
+  <path class="region-accent" d="M846 636 q-4 20 -14 34 l24 8 q10 -16 14 -36 z"/>
+  <path class="region-detail" d="M690 672 l12 -28 l18 32 z"/>
+  <path class="region-detail" d="M766 700 l10 -28 l20 26 z"/>
+  <path class="region-detail" d="M838 662 l22 -22 l6 32 z"/>
+  <path class="region-detail" d="M856 566 l26 -16 l-2 32 z"/>
+  <path class="region-detail" d="M900 512 C858 476 864 424 892 404 L900 380 L908 404 C936 424 942 476 900 512 Z"/>
+</svg>

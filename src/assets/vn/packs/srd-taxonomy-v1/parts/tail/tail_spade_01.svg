@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfaede)}.region-accent{fill:var(--region-accent,#f0e2f6)}.region-detail{fill:var(--region-detail,#a97fc6)}</style>
+  <!-- Spade Tail (SRD 5.1, tiefling/imp/devil) tail: thin curvy S-ribbon, heart-spade tip, tiny shine dot -->
+  <path class="region-fur" d="M586 786 Q706 780 754 700 Q784 646 772 596 Q760 610 748 616 Q752 668 712 716 Q660 756 584 756 Z"/>
+  <path class="region-detail" d="M756 600 Q728 566 748 538 Q766 518 784 534 Q788 510 812 512 Q838 516 834 546 Q828 578 756 600 Z"/>
+  <circle class="region-accent" cx="776" cy="540" r="9"/>
+</svg>

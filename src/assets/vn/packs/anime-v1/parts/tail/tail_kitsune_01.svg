@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e8913a)}.region-accent{fill:var(--region-accent,#f7efe2)}</style>
+  <!-- Kitsune tail: single big fluffy fox tail swept up behind, wavy cream tip -->
+  <path class="region-fur" d="M634 728 Q764 744 836 656 Q896 578 878 472 Q862 382 788 362 Q722 346 692 412 Q670 462 684 522 Q658 574 644 646 Q636 690 634 728 Z"/>
+  <path class="region-accent" d="M788 362 Q722 346 692 412 Q680 440 682 470 L714 448 L734 476 L760 450 L786 478 L812 452 L838 474 Q862 470 866 452 Q846 380 788 362 Z"/>
+</svg>

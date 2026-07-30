@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d29a90)}.region-accent{fill:var(--region-accent,#f6c193)}.region-detail{fill:var(--region-detail,#e7d1b6)}</style>
+  <!-- Balor (SRD 5.1) head: big solid comma ram horns w/ downward curl tips + open C-spiral accent ridge, rounded flame-tuft crown, flanking fangs -->
+  <ellipse class="region-accent" cx="512" cy="106" rx="18" ry="34"/>
+  <ellipse class="region-accent" cx="520" cy="74" rx="10" ry="16"/>
+  <ellipse class="region-accent" cx="464" cy="124" rx="13" ry="24"/>
+  <ellipse class="region-accent" cx="560" cy="124" rx="13" ry="24"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-detail" d="M262 218 Q230 178 246 128 Q266 82 322 88 Q372 96 374 148 Q375 168 366 184 Q394 234 378 284 Q370 318 340 312 Q322 304 332 282 Q346 258 340 222 Q298 230 262 218 Z"/>
+  <path class="region-accent" d="M340 104 Q288 84 258 122 Q238 158 266 188 Q280 202 298 200 Q280 186 274 162 Q268 128 300 116 Q322 108 340 104 Z"/>
+  <ellipse class="region-accent" cx="364" cy="246" rx="13" ry="7"/>
+  <path class="region-detail" d="M762 218 Q794 178 778 128 Q758 82 702 88 Q652 96 650 148 Q649 168 658 184 Q630 234 646 284 Q654 318 684 312 Q702 304 692 282 Q678 258 684 222 Q726 230 762 218 Z"/>
+  <path class="region-accent" d="M684 104 Q736 84 766 122 Q786 158 758 188 Q744 202 726 200 Q744 186 750 162 Q756 128 724 116 Q702 108 684 104 Z"/>
+  <ellipse class="region-accent" cx="660" cy="246" rx="13" ry="7"/>
+  <path class="region-accent" d="M376 426 Q372 460 388 464 Q400 458 396 428 Q386 420 376 426 Z"/>
+  <path class="region-accent" d="M648 426 Q652 460 636 464 Q624 458 628 428 Q638 420 648 426 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

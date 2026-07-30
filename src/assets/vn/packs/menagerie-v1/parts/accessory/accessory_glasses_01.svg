@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#33303b);stroke-width:12;stroke-linecap:round}</style>
+  <!-- Round glasses: circular wire frames over both eyes, nose bridge, temple arms, lens glints -->
+  <circle class="region-line" cx="440" cy="300" r="54"/>
+  <circle class="region-line" cx="584" cy="300" r="54"/>
+  <path class="region-line" d="M494 292 Q512 280 530 292"/>
+  <path class="region-line" d="M386 292 L348 276"/>
+  <path class="region-line" d="M638 292 L676 276"/>
+  <path d="M412 274 q10 -12 26 -16" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M556 274 q10 -12 26 -16" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4f9e82)}.region-accent{fill:var(--region-accent,#f0dfae)}.region-detail{fill:var(--region-detail,#c9b183)}</style>
+  <!-- Eastern dragon tail: long sinuous S-curve ribbon sweeping out and up from the hip, pale crescent belly bands, small ridge fins and a flame-like fluffy fur tip -->
+  <path class="region-fur" d="M620 666 Q690 702 762 692 Q850 676 878 594 Q898 530 876 464 L852 378 L884 370 Q928 452 922 542 Q908 648 812 708 Q714 764 622 740 Z"/>
+  <path class="region-accent" d="M712 690 Q724 716 720 742 L748 734 Q750 708 738 684 Z"/>
+  <path class="region-accent" d="M816 646 Q834 668 838 694 L862 678 Q854 652 838 632 Z"/>
+  <path class="region-accent" d="M872 552 Q890 566 900 588 L918 566 Q904 544 886 532 Z"/>
+  <path class="region-detail" d="M742 730 L764 774 L784 726 Z"/>
+  <path class="region-detail" d="M846 686 L888 716 L878 660 Z"/>
+  <path class="region-detail" d="M912 548 L956 566 L916 586 Z"/>
+  <path class="region-accent" d="M846 392 Q806 344 826 282 Q848 316 862 300 Q858 252 886 218 Q896 268 922 262 Q914 314 944 330 Q902 352 894 390 Q868 402 846 392 Z"/>
+  <path class="region-accent" d="M840 388 Q800 372 786 336 Q820 344 834 326 Q836 364 852 380 Z"/>
+  <path class="region-accent" d="M886 384 Q926 366 958 380 Q930 396 926 420 Q902 402 886 384 Z"/>
+</svg>

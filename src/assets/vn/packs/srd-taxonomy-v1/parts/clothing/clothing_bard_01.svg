@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#dcaed0)}.region-clothtrim{fill:var(--region-clothtrim,#f4dfee)}.region-iris{fill:var(--region-iris,#f2b04e)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Bard traveling doublet (SRD 5.1): scalloped petal collar, brass buttons on the placket, flared scalloped hem -->
+  <path class="region-cloth" d="M372 516 Q346 638 362 754 Q392 806 424 760 Q456 810 490 762 Q512 812 534 762 Q568 810 600 760 Q632 806 662 754 Q678 638 652 516 Q512 550 372 516 Z"/>
+  <circle class="region-clothtrim" cx="368" cy="560" r="34"/>
+  <circle class="region-clothtrim" cx="656" cy="560" r="34"/>
+  <rect class="region-clothtrim" x="494" y="556" width="36" height="196" rx="18"/>
+  <circle class="region-clothtrim" cx="420" cy="540" r="30"/>
+  <circle class="region-clothtrim" cx="466" cy="556" r="32"/>
+  <circle class="region-clothtrim" cx="512" cy="562" r="33"/>
+  <circle class="region-clothtrim" cx="558" cy="556" r="32"/>
+  <circle class="region-clothtrim" cx="604" cy="540" r="30"/>
+  <circle class="region-iris" cx="512" cy="612" r="11"/>
+  <circle class="region-iris" cx="512" cy="656" r="11"/>
+  <path class="region-line" d="M366 694 Q512 724 658 694"/>
+  <circle class="region-line" cx="512" cy="708" r="15"/>
+</svg>

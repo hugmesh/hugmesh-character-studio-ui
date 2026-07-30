@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8d8078)}.region-detail{fill:var(--region-detail,#cf8f9b)}.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:6;stroke-linecap:round}</style>
+  <!-- Rat tail: long naked pink tail tapering out from a furred hip base, with faint segment ticks -->
+  <ellipse class="region-fur" cx="648" cy="692" rx="34" ry="44" transform="rotate(-20 648 692)"/>
+  <path class="region-detail" d="M632 664 q118 24 196 -8 q86 -36 106 -128 q10 -50 -6 -92 q-8 -18 -22 -8 q-10 8 -4 24 q14 38 2 78 q-18 66 -88 96 q-72 30 -180 6 z"/>
+  <path class="region-line" d="M842 638 l12 -26"/>
+  <path class="region-line" d="M902 566 l22 -14"/>
+  <path class="region-line" d="M924 492 l24 -4"/>
+</svg>

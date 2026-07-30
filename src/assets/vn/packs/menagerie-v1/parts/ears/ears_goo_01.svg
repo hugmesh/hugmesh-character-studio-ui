@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}</style>
+  <!-- Goo ears overlay: rounded blob ears melting at the crown, inner accent pools, drip fingers sliding down the skull rim, one floating droplet per side -->
+  <path class="region-fur" d="M354 262 Q322 160 390 116 Q452 78 494 140 Q516 176 496 232 Q480 268 428 272 Q380 274 354 262 Z"/>
+  <path class="region-fur" d="M670 262 Q702 160 634 116 Q572 78 530 140 Q508 176 528 232 Q544 268 596 272 Q644 274 670 262 Z"/>
+  <ellipse class="region-accent" cx="420" cy="180" rx="32" ry="54" transform="rotate(-18 420 180)"/>
+  <ellipse class="region-accent" cx="604" cy="180" rx="32" ry="54" transform="rotate(18 604 180)"/>
+  <path class="region-fur" d="M348 252 q-12 52 -4 86 q4 18 17 18 q13 0 15 -22 q3 -44 -8 -78 z"/>
+  <path class="region-fur" d="M676 252 q12 52 4 86 q-4 18 -17 18 q-13 0 -15 -22 q-3 -44 8 -78 z"/>
+  <path class="region-fur" d="M504 240 q-6 26 0 44 q3 11 10 11 q8 0 9 -14 q2 -22 -4 -41 z"/>
+  <ellipse class="region-accent" cx="398" cy="132" rx="20" ry="12" transform="rotate(-30 398 132)"/>
+  <ellipse class="region-accent" cx="626" cy="132" rx="20" ry="12" transform="rotate(30 626 132)"/>
+  <circle class="region-fur" cx="322" cy="392" r="9"/>
+  <circle class="region-accent" cx="700" cy="120" r="8"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#5c2231)}.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:14;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Happy anime mouth: open cat-smile (:3) with a double-bump top lip and a tiny fang -->
+  <path class="region-detail" d="M452 426 Q482 450 512 428 Q542 450 572 426 Q576 476 512 488 Q448 476 452 426 Z"/>
+  <path class="region-line" d="M452 426 Q482 450 512 428 Q542 450 572 426 Q576 476 512 488 Q448 476 452 426 Z"/>
+  <polygon fill="#ffffff" points="528,432 544,430 537,450"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#35302b)}</style>
+  <!-- Tiger body stripes: tapered dark wedges over the flanks, shoulders and forearms, aligned to the felid torso -->
+  <path class="region-detail" d="M372 560 Q432 554 468 574 Q416 596 370 592 Z"/>
+  <path class="region-detail" d="M368 618 Q432 614 470 636 Q414 656 366 650 Z"/>
+  <path class="region-detail" d="M372 674 Q430 674 464 694 Q416 712 370 704 Z"/>
+  <path class="region-detail" d="M652 560 Q592 554 556 574 Q608 596 654 592 Z"/>
+  <path class="region-detail" d="M656 618 Q592 614 554 636 Q610 656 658 650 Z"/>
+  <path class="region-detail" d="M652 674 Q594 674 560 694 Q608 712 654 704 Z"/>
+  <path class="region-detail" d="M424 512 Q464 520 476 552 Q432 550 416 526 Z"/>
+  <path class="region-detail" d="M600 512 Q560 520 548 552 Q592 550 608 526 Z"/>
+  <path class="region-detail" d="M352 660 Q380 656 396 668 Q372 682 350 678 Z"/>
+  <path class="region-detail" d="M672 660 Q644 656 628 668 Q652 682 674 678 Z"/>
+</svg>

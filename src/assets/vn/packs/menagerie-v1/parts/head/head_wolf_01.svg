@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8b8e99)}.region-accent{fill:var(--region-accent,#e8e6df)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Wolf head: broad skull, sturdy triangular ears, jagged cheek fluff, dark crown saddle, cream muzzle with broad dark nose -->
+  <path class="region-fur" d="M350 235 L305 92 L455 168 Q396 196 350 235 Z"/>
+  <path class="region-fur" d="M674 235 L719 92 L569 168 Q628 196 674 235 Z"/>
+  <path class="region-detail" d="M362 216 L330 122 L428 174 Z"/>
+  <path class="region-detail" d="M662 216 L694 122 L596 174 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M330 270 Q272 306 258 360 L330 344 Q296 396 296 448 L364 412 Q352 462 376 500 L440 440 Q400 380 396 330 Z"/>
+  <path class="region-fur" d="M694 270 Q752 306 766 360 L694 344 Q728 396 728 448 L660 412 Q672 462 648 500 L584 440 Q624 380 628 330 Z"/>
+  <path class="region-detail" d="M430 158 Q512 120 594 158 Q560 192 512 198 Q464 192 430 158 Z"/>
+  <path class="region-accent" d="M446 366 Q512 344 578 366 L592 442 Q570 496 512 502 Q454 496 432 442 Z"/>
+  <path class="region-detail" d="M478 380 Q512 366 546 380 Q548 408 512 426 Q476 408 478 380 Z"/>
+</svg>

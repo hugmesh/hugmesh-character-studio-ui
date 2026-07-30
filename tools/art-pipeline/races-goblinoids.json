@@ -1,0 +1,184 @@
+{
+  "agent": "races-goblinoids",
+  "parts": [
+    { "slot": "head",
+      "part": { "id": "head_humanoid_01", "displayName": "Human", "file": "parts/head/head_humanoid_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2c9a8" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#c49a6e" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#df9f7e" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "human"] } },
+    { "slot": "head",
+      "part": { "id": "head_dwarf_01", "displayName": "Dwarf", "file": "parts/head/head_dwarf_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f0c3a0" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#d9a678" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#cf8f6b" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "dwarf", "hill-dwarf", "beard"] } },
+    { "slot": "head",
+      "part": { "id": "head_elf_01", "displayName": "Elf", "file": "parts/head/head_elf_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2cdb0" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#ece0b4" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#e0a68c" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "elf", "high-elf", "pointed-ears"] } },
+    { "slot": "head",
+      "part": { "id": "head_halfling_01", "displayName": "Halfling", "file": "parts/head/head_halfling_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2c9a8" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#d3a06a" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#df9f7e" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "halfling", "lightfoot", "curly-hair"] } },
+    { "slot": "head",
+      "part": { "id": "head_gnome_01", "displayName": "Gnome", "file": "parts/head/head_gnome_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f0c8a6" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#eee9df" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#fbdfc4" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#b98a6e" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "gnome", "rock-gnome", "big-nose"] } },
+    { "slot": "head",
+      "part": { "id": "head_halforc_01", "displayName": "Half-Orc", "file": "parts/head/head_halforc_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#b7d9a8" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#9aa4ae" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f4eedd" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "half-orc", "tusks"] } },
+    { "slot": "head",
+      "part": { "id": "head_orc_01", "displayName": "Orc", "file": "parts/head/head_orc_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#a3cc92" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#77947e" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2ecd9" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "orc", "tusks"] } },
+    { "slot": "head",
+      "part": { "id": "head_goblin_01", "displayName": "Goblin", "file": "parts/head/head_goblin_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#b5d9a0" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#ecf5e2" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "goblinoid", "goblin", "bat-ears"] } },
+    { "slot": "head",
+      "part": { "id": "head_hobgoblin_01", "displayName": "Hobgoblin", "file": "parts/head/head_hobgoblin_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#dfa987" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#979aad" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c98d6f" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "goblinoid", "hobgoblin"] } },
+    { "slot": "head",
+      "part": { "id": "head_bugbear_01", "displayName": "Bugbear", "file": "parts/head/head_bugbear_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#c9a284" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#ecd9c2" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#8a5a44" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "goblinoid", "bugbear", "shaggy"] } },
+    { "slot": "head",
+      "part": { "id": "head_doppelganger_01", "displayName": "Doppelganger", "file": "parts/head/head_doppelganger_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#cfd3db" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#e6e9ef" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#aab0bd" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "doppelganger", "shapechanger"] } },
+    { "slot": "head",
+      "part": { "id": "head_drow_01", "displayName": "Drow", "file": "parts/head/head_elf_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#b3a1c7" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#f2f0f5" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#9c8bb0" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "drow", "elf", "white-hair", "underdark"] } },
+    { "slot": "head",
+      "part": { "id": "head_halfelf_01", "displayName": "Half-Elf", "file": "parts/head/head_elf_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2c9a8" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#d9c298" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#df9f7e" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "half-elf", "subtle-ears"] } },
+    { "slot": "head",
+      "part": { "id": "head_duergar_01", "displayName": "Duergar", "file": "parts/head/head_dwarf_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#c4c4ca" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#d8d8de" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#8f939c" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "duergar", "gray-dwarf", "underdark"] } },
+    { "slot": "head",
+      "part": { "id": "head_svirfneblin_01", "displayName": "Svirfneblin", "file": "parts/head/head_gnome_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#aebcc9" },
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#e3e8ee" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#dfe6ee" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#6f7a88" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "svirfneblin", "deep-gnome", "underdark"] } },
+    { "slot": "head",
+      "part": { "id": "head_grimlock_01", "displayName": "Grimlock", "file": "parts/head/head_doppelganger_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#b8b4b0" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#ccc8c2" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#94908b" }
+        ],
+        "source": "SRD 5.1", "tags": ["monster", "grimlock", "eyeless", "underdark"] } },
+    { "slot": "feature",
+      "part": { "id": "feature_elf_ears_01", "displayName": "Elf Ears", "file": "parts/feature/feature_elf_ears_01.svg",
+        "category": "feature", "compatibleHeads": ["humanoid"],
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2c9a8" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f9ddcb" }
+        ],
+        "source": "SRD 5.1", "tags": ["feature", "ears", "elf", "clip-on"] } },
+    { "slot": "feature",
+      "part": { "id": "feature_dwarf_beard_01", "displayName": "Dwarf Beard", "file": "parts/feature/feature_dwarf_beard_01.svg",
+        "category": "feature", "compatibleHeads": ["humanoid"],
+        "tintRegions": [
+          { "region": "hair", "svgClass": "region-hair", "defaultPalette": "#d9a678" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c08a54" }
+        ],
+        "source": "SRD 5.1", "tags": ["feature", "beard", "dwarf", "clip-on"] } },
+    { "slot": "feature",
+      "part": { "id": "feature_tusks_01", "displayName": "Tusks", "file": "parts/feature/feature_tusks_01.svg",
+        "category": "feature", "compatibleHeads": ["humanoid"],
+        "tintRegions": [
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f4eedd" }
+        ],
+        "source": "SRD 5.1", "tags": ["feature", "tusks", "orc", "half-orc", "clip-on"] } },
+    { "slot": "body",
+      "part": { "id": "body_humanoid_01", "displayName": "Humanoid Body", "file": "parts/body/body_humanoid_01.svg",
+        "category": "base", "headArchetype": "humanoid",
+        "tintRegions": [
+          { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#f2c9a8" },
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#fbe7d4" }
+        ],
+        "source": "SRD 5.1", "tags": ["race", "humanoid", "jellybean"] } }
+  ]
+}

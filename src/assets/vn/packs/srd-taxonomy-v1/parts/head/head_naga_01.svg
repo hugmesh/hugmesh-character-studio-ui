@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cbb4e4)}.region-accent{fill:var(--region-accent,#e9def7)}.region-detail{fill:var(--region-detail,#967cc0)}.region-line{fill:none;stroke:var(--region-line,#5c4a72);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Naga (SRD 5.1) head: wide cobra hood with pale lining, tiny fangs under the smile, forehead gem dot -->
+  <path class="region-fur" d="M512 84 Q280 88 200 250 Q160 380 280 480 Q390 540 512 540 Q634 540 744 480 Q864 380 824 250 Q744 88 512 84 Z"/>
+  <path class="region-accent" d="M512 136 Q330 140 264 272 Q232 376 330 458 Q414 506 512 506 Q610 506 694 458 Q792 376 760 272 Q694 140 512 136 Z"/>
+  <circle class="region-detail" cx="288" cy="330" r="15"/>
+  <circle class="region-detail" cx="736" cy="330" r="15"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-detail" cx="512" cy="200" r="14"/>
+  <path class="region-accent" d="M368 444 Q378 512 400 450 Q382 452 368 444 Z"/>
+  <path class="region-accent" d="M656 444 Q646 512 624 450 Q642 452 656 444 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M494 400 l6 5"/>
+  <path class="region-line" d="M530 400 l-6 5"/>
+</svg>

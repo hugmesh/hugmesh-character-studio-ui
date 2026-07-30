@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#8a4a2f)}.region-accent{fill:var(--region-accent,#b06f4a)}</style>
+  <!-- Curly hair: cloud of round curls hugging the skull, curl columns down both sides, rounded curl bangs, offset curl highlights. -->
+  <path class="region-hair" d="M310 380 Q302 120 512 100 Q722 120 714 380 Q700 250 512 224 Q324 250 310 380 Z"/>
+  <circle class="region-hair" cx="512" cy="130" r="76"/>
+  <circle class="region-hair" cx="404" cy="152" r="62"/>
+  <circle class="region-hair" cx="620" cy="152" r="62"/>
+  <circle class="region-hair" cx="330" cy="222" r="56"/>
+  <circle class="region-hair" cx="694" cy="222" r="56"/>
+  <circle class="region-hair" cx="298" cy="320" r="52"/>
+  <circle class="region-hair" cx="726" cy="320" r="52"/>
+  <circle class="region-hair" cx="308" cy="416" r="48"/>
+  <circle class="region-hair" cx="716" cy="416" r="48"/>
+  <circle class="region-hair" cx="336" cy="502" r="44"/>
+  <circle class="region-hair" cx="688" cy="502" r="44"/>
+  <circle class="region-hair" cx="420" cy="226" r="44"/>
+  <circle class="region-hair" cx="512" cy="240" r="48"/>
+  <circle class="region-hair" cx="604" cy="226" r="44"/>
+  <circle class="region-accent" cx="480" cy="108" r="22"/>
+  <circle class="region-accent" cx="384" cy="132" r="16"/>
+  <circle class="region-accent" cx="640" cy="132" r="16"/>
+  <circle class="region-accent" cx="310" cy="300" r="14"/>
+  <circle class="region-accent" cx="714" cy="300" r="14"/>
+</svg>

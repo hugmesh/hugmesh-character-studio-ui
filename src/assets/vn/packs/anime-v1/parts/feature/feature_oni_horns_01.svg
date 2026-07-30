@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#c9524a)}.region-accent{fill:var(--region-accent,#f0c05a)}</style>
+  <!-- Oni horns: short curved demon horns at the hairline with gold base bands -->
+  <path class="region-detail" d="M404 190 Q390 126 424 72 Q436 54 448 76 Q470 130 466 186 Q434 204 404 190 Z"/>
+  <path class="region-accent" d="M398 192 Q436 210 472 186 L478 206 Q436 230 392 210 Z"/>
+  <path class="region-detail" d="M620 190 Q634 126 600 72 Q588 54 576 76 Q554 130 558 186 Q590 204 620 190 Z"/>
+  <path class="region-accent" d="M626 192 Q588 210 552 186 L546 206 Q588 230 632 210 Z"/>
+</svg>

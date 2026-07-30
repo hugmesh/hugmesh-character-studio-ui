@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0855a)}.region-accent{fill:var(--region-accent,#e8d5b5)}</style>
+  <!-- Feather fan tail: five long tail feathers fanning back from the hip with accent tips and a quill-base tuft. -->
+  <path class="region-fur" d="M652 694 Q740 540 890 506 Q790 640 652 694 Z"/>
+  <path class="region-fur" d="M654 700 Q790 600 946 614 Q800 690 654 706 Z"/>
+  <path class="region-fur" d="M654 706 Q800 690 952 724 Q800 760 652 716 Z"/>
+  <path class="region-fur" d="M650 710 Q780 760 912 816 Q760 800 646 720 Z"/>
+  <path class="region-fur" d="M646 712 Q720 800 824 872 Q700 820 640 722 Z"/>
+  <path class="region-accent" d="M778 574 Q830 528 890 506 Q844 574 792 600 Z"/>
+  <path class="region-accent" d="M810 636 Q876 616 946 614 Q878 668 816 668 Z"/>
+  <path class="region-accent" d="M812 712 Q880 712 952 724 Q878 746 812 736 Z"/>
+  <path class="region-accent" d="M796 772 Q852 792 912 816 Q838 812 786 790 Z"/>
+  <path class="region-accent" d="M742 812 Q780 840 824 872 Q764 852 728 824 Z"/>
+  <path class="region-fur" d="M622 656 Q684 636 706 694 Q698 752 632 752 Q596 704 622 656 Z"/>
+</svg>

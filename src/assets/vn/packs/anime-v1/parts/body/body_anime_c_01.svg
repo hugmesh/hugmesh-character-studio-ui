@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#8a76b8)}.region-detail{fill:var(--region-detail,#5c4a85)}</style>
+  <!-- Anime body C: androgynous silhouette, cozy hoodie (accent) with bunched hood, kangaroo pocket + drawstrings (detail), skin hands -->
+  <path class="region-skin" d="M478 458 h68 v60 q-34 18 -68 0 z"/>
+  <ellipse class="region-skin" cx="388" cy="748" rx="20" ry="23"/>
+  <ellipse class="region-skin" cx="636" cy="748" rx="20" ry="23"/>
+  <path class="region-accent" d="M430 548 Q470 530 512 532 Q554 530 594 548 Q632 562 640 600 L652 700 Q654 726 644 734 Q630 740 622 728 L606 664 L608 744 Q560 764 512 764 Q464 764 416 744 L418 664 L402 728 Q394 740 380 734 Q370 726 372 700 L384 600 Q392 562 430 548 Z"/>
+  <path class="region-accent" d="M420 560 Q436 508 512 504 Q588 508 604 560 Q570 588 512 590 Q454 588 420 560 Z"/>
+  <path class="region-detail" d="M446 552 Q478 522 512 520 Q546 522 578 552 Q548 574 512 576 Q476 574 446 552 Z"/>
+  <path class="region-detail" d="M490 588 h10 l4 54 h-10 z"/>
+  <path class="region-detail" d="M524 588 h10 l-4 54 h-10 z"/>
+  <path class="region-detail" d="M462 668 L562 668 L576 734 Q512 748 448 734 Z"/>
+  <path class="region-detail" d="M374 700 L402 694 L400 716 L376 722 Z"/>
+  <path class="region-detail" d="M650 700 L622 694 L624 716 L648 722 Z"/>
+</svg>

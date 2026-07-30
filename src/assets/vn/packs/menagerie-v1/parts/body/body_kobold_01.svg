@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a6663d)}.region-accent{fill:var(--region-accent,#e0c08a)}.region-detail{fill:var(--region-detail,#6b4526)}</style>
+  <!-- Kobold body: small slight draconic frame, thin arms, stacked belly scutes, tiny toe claws and elbow spurs -->
+  <path class="region-fur" d="M428 540 Q400 600 410 664 Q422 676 438 668 Q432 606 448 560 Z"/>
+  <path class="region-fur" d="M596 540 Q624 600 614 664 Q602 676 586 668 Q592 606 576 560 Z"/>
+  <path class="region-fur" d="M474 470 H550 Q560 504 588 522 Q622 548 626 606 Q630 674 618 720 Q600 774 560 790 H464 Q424 774 406 720 Q394 674 398 606 Q402 548 436 522 Q464 504 474 470 Z"/>
+  <path class="region-fur" d="M446 744 Q436 800 448 830 L506 830 Q504 788 500 744 Z"/>
+  <path class="region-fur" d="M578 744 Q588 800 576 830 L518 830 Q520 788 524 744 Z"/>
+  <rect class="region-fur" x="424" y="824" width="96" height="26" rx="13"/>
+  <rect class="region-fur" x="504" y="824" width="96" height="26" rx="13"/>
+  <rect class="region-accent" x="462" y="560" width="100" height="24" rx="12"/>
+  <rect class="region-accent" x="456" y="592" width="112" height="24" rx="12"/>
+  <rect class="region-accent" x="452" y="624" width="120" height="24" rx="12"/>
+  <rect class="region-accent" x="458" y="656" width="108" height="24" rx="12"/>
+  <rect class="region-accent" x="466" y="688" width="92" height="24" rx="12"/>
+  <path class="region-detail" d="M430 826 l-18 8 l18 10 z"/>
+  <path class="region-detail" d="M594 826 l18 8 l-18 10 z"/>
+  <path class="region-detail" d="M410 652 l-14 20 l18 -4 z"/>
+  <path class="region-detail" d="M614 652 l14 20 l-18 -4 z"/>
+</svg>

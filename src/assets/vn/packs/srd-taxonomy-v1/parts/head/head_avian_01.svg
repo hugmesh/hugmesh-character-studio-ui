@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9b98f)}.region-accent{fill:var(--region-accent,#f2d5a0)}.region-detail{fill:var(--region-detail,#f0a45c)}</style>
+  <!-- Eagle (SRD 5.1) head: feather brow tufts + crown crest + chunky gold hooked beak at the nose w/ cere nostril dots; cheek fluff, aliases Hawk/roc via tint -->
+  <path class="region-fur" d="M452 152 Q468 92 512 82 Q556 92 572 152 Q542 128 512 130 Q482 128 452 152 Z"/>
+  <path class="region-accent" d="M492 118 Q512 94 532 118 Q526 140 512 144 Q498 140 492 118 Z"/>
+  <path class="region-fur" d="M340 380 Q258 400 260 452 Q294 446 300 478 Q308 510 344 516 Q328 470 336 428 Z"/>
+  <path class="region-fur" d="M684 380 Q766 400 764 452 Q730 446 724 478 Q716 510 680 516 Q696 470 688 428 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-accent" d="M368 268 Q378 226 428 218 Q472 212 496 238 Q458 252 434 250 Q400 254 368 268 Z"/>
+  <path class="region-accent" d="M656 268 Q646 226 596 218 Q552 212 528 238 Q566 252 590 250 Q624 254 656 268 Z"/>
+  <path class="region-accent" d="M458 360 Q512 332 566 360 Q574 392 544 405 Q524 400 512 414 Q500 400 480 405 Q450 392 458 360 Z"/>
+  <ellipse class="region-detail" cx="488" cy="368" rx="6" ry="8"/>
+  <ellipse class="region-detail" cx="536" cy="368" rx="6" ry="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

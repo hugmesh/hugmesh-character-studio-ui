@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c19a6b)}.region-detail{fill:var(--region-detail,#33261f)}</style>
+  <!-- Hyena tail: short bushy brush hanging behind the hip, ragged tuft-notched edges, heavy dark tip like a paintbrush -->
+  <path class="region-fur" d="M632 694 Q662 672 700 674 Q690 700 694 726 Q664 712 632 694 Z"/>
+  <path class="region-fur" d="M626 676 Q690 646 748 668 Q796 692 800 752 Q802 812 762 848 Q722 876 682 858 Q646 838 638 792 Q628 730 626 676 Z"/>
+  <path class="region-fur" d="M700 650 L734 622 L740 662 Z"/>
+  <path class="region-fur" d="M770 676 L810 662 L800 702 Z"/>
+  <path class="region-fur" d="M652 828 L676 868 L628 856 Z"/>
+  <path class="region-detail" d="M642 800 Q660 844 700 860 Q742 872 770 846 Q796 820 800 776 Q768 812 724 820 Q678 826 642 800 Z"/>
+  <path class="region-detail" d="M700 862 L724 896 L678 888 Z"/>
+  <path class="region-detail" d="M762 844 L798 858 L784 814 Z"/>
+</svg>

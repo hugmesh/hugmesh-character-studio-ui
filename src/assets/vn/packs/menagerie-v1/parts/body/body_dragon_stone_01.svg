@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8a8071)}.region-accent{fill:var(--region-accent,#7da35c)}.region-detail{fill:none;stroke:var(--region-detail,#4d463c);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Stone dragon body: chunky angular slab torso with boulder shoulders, crack web and moss tufts -->
+  <path class="region-fur" d="M462 458 L562 458 L618 520 L664 570 L672 690 L648 800 L590 844 L434 844 L376 800 L352 690 L360 570 L406 520 Z"/>
+  <path class="region-fur" d="M380 520 L330 548 L344 604 L398 588 Z"/>
+  <path class="region-fur" d="M644 520 L694 548 L680 604 L626 588 Z"/>
+  <path class="region-fur" d="M380 600 L352 720 L384 736 L408 628 Z"/>
+  <path class="region-fur" d="M644 600 L672 720 L640 736 L616 628 Z"/>
+  <path class="region-fur" d="M420 800 L408 884 L508 884 L500 800 Z"/>
+  <path class="region-fur" d="M604 800 L616 884 L516 884 L524 800 Z"/>
+  <rect class="region-fur" x="392" y="878" width="126" height="32" rx="15"/>
+  <rect class="region-fur" x="506" y="878" width="126" height="32" rx="15"/>
+  <path class="region-accent" d="M356 540 q30 -16 54 -2 q8 18 -10 28 q-26 12 -46 -2 q-6 -14 2 -24 z"/>
+  <path class="region-accent" d="M598 718 q28 -14 50 0 q8 16 -8 26 q-24 10 -44 -2 q-6 -12 2 -24 z"/>
+  <path class="region-accent" d="M478 468 q22 -10 40 0 q6 12 -6 20 q-18 8 -34 -2 q-4 -10 0 -18 z"/>
+  <path class="region-detail" d="M436 520 l30 34 l-8 40 l26 30"/>
+  <path class="region-detail" d="M466 554 l28 -8"/>
+  <path class="region-detail" d="M560 480 l22 40 l30 18"/>
+  <path class="region-detail" d="M400 660 l34 22 l-4 36"/>
+  <path class="region-detail" d="M620 620 l-26 30 l6 34"/>
+  <path class="region-detail" d="M500 760 l20 26 l-8 30"/>
+  <path class="region-detail" d="M594 650 l24 12"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6eedd)}.region-detail{fill:var(--region-detail,#c9a96e)}</style>
+  <!-- Token backdrop: scalloped-edge circle, 18 rounded lobes (detail rim) + accent field + inner pinstripe ring -->
+  <path class="region-detail" d="M512 78 Q596 33 660 104 Q755 91 791 180 Q884 200 888 295 Q969 346 939 437 Q998 512 939 587 Q969 678 888 729 Q884 824 791 844 Q755 933 660 920 Q596 991 512 946 Q428 991 364 920 Q269 933 233 844 Q140 824 136 729 Q55 678 85 587 Q26 512 85 437 Q55 346 136 295 Q140 200 233 180 Q269 91 364 104 Q428 33 512 78 Z"/>
+  <circle class="region-accent" cx="512" cy="512" r="420"/>
+  <circle class="region-detail" cx="512" cy="512" r="396"/>
+  <circle class="region-accent" cx="512" cy="512" r="382"/>
+</svg>

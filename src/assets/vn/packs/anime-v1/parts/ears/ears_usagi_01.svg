@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#efe9e2)}.region-accent{fill:var(--region-accent,#f2c9cf)}</style>
+  <!-- Usagi ears: tall upright bunny ears with long pink inner-ear accent -->
+  <path class="region-fur" d="M398 238 Q356 160 366 66 Q372 22 410 24 Q452 28 460 118 Q466 192 442 238 Q420 250 398 238 Z"/>
+  <path class="region-accent" d="M414 216 Q390 152 398 80 Q402 52 418 54 Q440 58 444 124 Q448 180 432 214 Q422 222 414 216 Z"/>
+  <path class="region-fur" d="M626 238 Q668 160 658 66 Q652 22 614 24 Q572 28 564 118 Q558 192 582 238 Q604 250 626 238 Z"/>
+  <path class="region-accent" d="M610 216 Q634 152 626 80 Q622 52 606 54 Q584 58 580 124 Q576 180 592 214 Q602 222 610 216 Z"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8d8a93)}.region-accent{fill:var(--region-accent,#ece7dc)}.region-detail{fill:var(--region-detail,#322e35)}</style>
+  <!-- Raccoon ringed tail: medium plume sweeping up-right from the hip, four alternating pale accent bands crossing the shaft, dark rounded tip, fluff cusps on the underside -->
+  <path class="region-fur" d="M632 656 Q720 616 796 544 Q838 504 856 468 Q896 462 892 506 Q878 560 826 620 Q770 682 716 754 Q656 738 632 656 Z"/>
+  <path class="region-fur" d="M636 664 Q622 690 630 716 Q650 706 656 686 Z"/>
+  <path class="region-fur" d="M742 690 L718 728 L764 708 Z"/>
+  <path class="region-fur" d="M808 608 L790 648 L832 628 Z"/>
+  <path class="region-accent" d="M648 652 Q682 696 712 746 L740 722 Q706 672 674 632 Z"/>
+  <path class="region-accent" d="M696 628 Q722 662 750 704 L774 682 Q748 640 720 604 Z"/>
+  <path class="region-accent" d="M764 572 Q788 606 814 646 L836 622 Q814 582 788 548 Z"/>
+  <path class="region-accent" d="M818 514 Q838 538 854 566 L874 542 Q860 512 840 490 Z"/>
+  <path class="region-detail" d="M846 484 Q852 474 856 468 Q896 462 892 506 Q888 532 878 550 Q860 518 846 484 Z"/>
+</svg>

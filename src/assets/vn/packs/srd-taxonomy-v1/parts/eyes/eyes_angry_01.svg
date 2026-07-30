@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Angry eyes: hard upper lids slant down toward the nose (tsuri-me), irises cut by the lid -->
+  <path class="region-iris" d="M402 306L492 336Q498 392 444 398Q396 386 402 306Z"/>
+  <path class="region-iris" d="M622 306L532 336Q526 392 580 398Q628 386 622 306Z"/>
+  <circle class="region-detail" cx="452" cy="358" r="16"/>
+  <circle class="region-detail" cx="572" cy="358" r="16"/>
+  <circle fill="#ffffff" cx="436" cy="346" r="11"/>
+  <circle fill="#ffffff" cx="588" cy="346" r="11"/>
+  <circle fill="#ffffff" cx="464" cy="378" r="5"/>
+  <circle fill="#ffffff" cx="560" cy="378" r="5"/>
+  <path class="region-line" d="M392 296Q448 306 500 334"/>
+  <path class="region-line" d="M632 296Q576 306 524 334"/>
+</svg>

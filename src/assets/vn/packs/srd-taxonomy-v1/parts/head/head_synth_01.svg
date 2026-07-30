@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c7d3e0)}.region-accent{fill:var(--region-accent,#e4ecf4)}.region-detail{fill:var(--region-detail,#8fa2b8)}</style>
+  <!-- Robot head: antenna bobble, dome faceplate seam with side bolts, LED blush bars -->
+  <rect class="region-detail" x="498" y="96" width="28" height="92" rx="14"/>
+  <circle class="region-accent" cx="512" cy="78" r="30"/>
+  <circle class="region-detail" cx="512" cy="78" r="12"/>
+  <circle class="region-detail" cx="296" cy="330" r="38"/>
+  <circle class="region-detail" cx="728" cy="330" r="38"/>
+  <circle class="region-accent" cx="282" cy="330" r="14"/>
+  <circle class="region-accent" cx="742" cy="330" r="14"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-accent" d="M326 244 Q348 138 512 132 Q676 138 698 244 Q600 208 512 208 Q424 208 326 244 Z"/>
+  <circle class="region-detail" cx="368" cy="232" r="10"/>
+  <circle class="region-detail" cx="656" cy="232" r="10"/>
+  <rect class="region-accent" x="482" y="492" width="60" height="20" rx="10"/>
+  <rect fill="#f2a0b3" opacity="0.55" x="354" y="398" width="72" height="26" rx="13"/>
+  <rect fill="#f2a0b3" opacity="0.55" x="598" y="398" width="72" height="26" rx="13"/>
+</svg>

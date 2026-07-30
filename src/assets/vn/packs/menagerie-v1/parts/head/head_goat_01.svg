@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfc3ae)}.region-accent{fill:var(--region-accent,#efe6d4)}.region-detail{fill:var(--region-detail,#55483a)}</style>
+  <!-- Goat head: long horizontal droop ears, narrow muzzle, small pointed chin beard, poll tuft on the crown -->
+  <path class="region-fur" d="M348 214 Q250 196 176 246 Q246 296 352 268 Q368 240 348 214 Z"/>
+  <path class="region-fur" d="M676 214 Q774 196 848 246 Q778 296 672 268 Q656 240 676 214 Z"/>
+  <path class="region-detail" d="M344 228 Q268 220 208 248 Q266 276 344 256 Z"/>
+  <path class="region-detail" d="M680 228 Q756 220 816 248 Q758 276 680 256 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M478 148 Q500 108 512 96 Q524 108 546 148 Q512 132 478 148 Z"/>
+  <path class="region-accent" d="M452 372 Q512 356 572 372 L584 452 Q560 502 512 508 Q464 502 440 452 Z"/>
+  <path class="region-detail" d="M488 392 Q512 382 536 392 Q538 414 512 426 Q486 414 488 392 Z"/>
+  <path class="region-accent" d="M488 506 Q512 500 536 506 L524 560 Q512 574 500 560 Z"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#becbe6)}.region-clothtrim{fill:var(--region-clothtrim,#f4efe2)}.region-iris{fill:var(--region-iris,#f2c14e)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Cleric vestments (SRD 5.1): ivory tabard stripe, golden sun emblem, scalloped robe hem -->
+  <path class="region-cloth" d="M376 512 Q344 654 358 794 Q390 844 422 798 Q456 848 490 800 Q512 850 534 800 Q568 848 602 798 Q634 844 666 794 Q680 654 648 512 Q512 544 376 512 Z"/>
+  <path class="region-clothtrim" d="M400 514 Q512 546 624 514 Q618 552 512 584 Q406 552 400 514 Z"/>
+  <rect class="region-clothtrim" x="476" y="552" width="72" height="252" rx="26"/>
+  <circle class="region-iris" cx="512" cy="648" r="26"/>
+  <circle class="region-iris" cx="512" cy="604" r="8"/>
+  <circle class="region-iris" cx="550" cy="626" r="8"/>
+  <circle class="region-iris" cx="550" cy="670" r="8"/>
+  <circle class="region-iris" cx="512" cy="692" r="8"/>
+  <circle class="region-iris" cx="474" cy="670" r="8"/>
+  <circle class="region-iris" cx="474" cy="626" r="8"/>
+  <path class="region-line" d="M368 716 Q420 730 470 732"/>
+  <path class="region-line" d="M554 732 Q604 730 656 716"/>
+</svg>

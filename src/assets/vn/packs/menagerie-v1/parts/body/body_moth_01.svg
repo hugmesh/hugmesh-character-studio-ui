@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cdb891)}.region-accent{fill:var(--region-accent,#f0e6d0)}.region-detail{fill:var(--region-detail,#7a6248)}</style>
+  <!-- Moth body: slim fuzzy torso with banded abdomen, thick jagged fluff collar around the shoulders, slender legs with tiny claw tips -->
+  <path class="region-fur" d="M452 540 Q512 524 572 540 Q604 600 606 660 Q606 724 576 768 Q548 800 512 804 Q476 800 448 768 Q418 724 418 660 Q420 600 452 540 Z"/>
+  <path class="region-accent" d="M438 668 Q512 692 586 668 Q584 690 512 706 Q440 690 438 668 Z"/>
+  <path class="region-accent" d="M448 724 Q512 746 576 724 Q572 744 512 758 Q452 744 448 724 Z"/>
+  <path class="region-fur" d="M462 760 Q444 810 448 862 Q450 890 470 892 Q486 888 484 862 Q482 812 492 772 Z"/>
+  <path class="region-fur" d="M562 760 Q580 810 576 862 Q574 890 554 892 Q538 888 540 862 Q542 812 532 772 Z"/>
+  <path class="region-fur" d="M444 886 Q436 912 456 918 L490 918 Q502 912 494 894 Z"/>
+  <path class="region-fur" d="M580 886 Q588 912 568 918 L534 918 Q522 912 530 894 Z"/>
+  <polygon class="region-detail" points="452,918 462,930 470,918"/>
+  <polygon class="region-detail" points="474,918 484,930 492,918"/>
+  <polygon class="region-detail" points="572,918 562,930 554,918"/>
+  <polygon class="region-detail" points="550,918 540,930 532,918"/>
+  <path class="region-accent" d="M396 512 L428 484 L446 516 L480 480 L496 514 L512 478 L528 514 L544 480 L578 516 L596 484 L628 512 L640 560 L600 552 L616 592 L566 574 L574 612 L512 588 L450 612 L458 574 L408 592 L424 552 L384 560 Z"/>
+</svg>

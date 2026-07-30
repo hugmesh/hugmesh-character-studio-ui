@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9a066)}.region-accent{fill:none;stroke:var(--region-accent,#8c5a3c);stroke-width:20;stroke-linecap:round}.region-detail{fill:var(--region-detail,#6b4226)}</style>
+  <!-- Snail shell: cute round coiled shell worn on the upper back, swirling spiral groove, dark rim at the opening and tiny speckles -->
+  <ellipse class="region-fur" cx="688" cy="592" rx="88" ry="32"/>
+  <circle class="region-fur" cx="724" cy="498" r="116"/>
+  <path class="region-detail" d="M622 546 Q718 630 828 538 Q806 600 726 608 Q648 606 622 546 Z"/>
+  <path class="region-accent" d="M648 516 Q638 410 726 396 Q818 390 826 490 Q830 578 748 586 Q676 590 672 520 Q670 458 728 454 Q780 452 782 500 Q782 538 750 540"/>
+  <circle class="region-detail" cx="744" cy="496" r="13"/>
+  <path class="region-detail" d="M630 548 Q598 566 594 600 Q622 620 662 610 Q642 584 642 552 Z"/>
+  <circle class="region-detail" cx="668" cy="432" r="8"/>
+  <circle class="region-detail" cx="700" cy="412" r="6"/>
+  <circle class="region-detail" cx="652" cy="466" r="6"/>
+  <circle class="region-detail" cx="776" cy="404" r="7"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c9a8)}.region-hair{fill:var(--region-hair,#c49a6e)}.region-detail{fill:var(--region-detail,#df9f7e)}</style>
+  <!-- Human (SRD 5.1) head: soft bowl hair with ahoge swoosh (region-hair), round ears, button nose -->
+  <circle class="region-hair" cx="512" cy="316" r="216"/>
+  <path class="region-hair" d="M500 132 Q536 70 588 84 Q548 92 534 140 Z"/>
+  <path class="region-hair" d="M312 348 Q294 456 330 508 Q354 462 346 372 Z"/>
+  <path class="region-hair" d="M712 348 Q730 456 694 508 Q670 462 678 372 Z"/>
+  <circle class="region-fur" cx="318" cy="350" r="42"/>
+  <circle class="region-fur" cx="706" cy="350" r="42"/>
+  <circle class="region-fur" cx="512" cy="330" r="202"/>
+  <path class="region-hair" d="M318 330 Q304 150 512 128 Q720 150 706 330 Q688 232 636 240 Q604 246 574 232 Q544 220 512 232 Q480 220 450 232 Q420 246 388 240 Q336 232 318 330 Z"/>
+  <ellipse class="region-detail" cx="512" cy="396" rx="13" ry="9"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

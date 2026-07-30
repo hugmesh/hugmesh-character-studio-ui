@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#aad4dd)}.region-accent{fill:var(--region-accent,#d9edf1)}.region-detail{fill:var(--region-detail,#7fb0c4)}</style>
+  <!-- Fish tail (SRD 5.1 merfolk/sahuagin) feature: curvy swoosh from behind the body, two-lobe fan fluke, scale dots at the base -->
+  <path class="region-fur" d="M610 660 Q700 636 752 668 Q796 696 792 748 Q756 720 716 726 Q664 734 632 758 Q600 736 598 700 Q598 676 610 660 Z"/>
+  <path class="region-fur" d="M770 742 Q800 660 850 634 Q842 674 862 690 Q884 704 906 694 Q894 748 848 772 Q804 792 766 760 Q764 750 770 742 Z"/>
+  <path class="region-accent" d="M796 730 Q814 678 846 660 Q842 686 856 698 Q840 722 812 736 Q800 736 796 730 Z"/>
+  <circle class="region-detail" cx="650" cy="690" r="10"/>
+  <circle class="region-detail" cx="686" cy="700" r="10"/>
+  <circle class="region-detail" cx="660" cy="722" r="10"/>
+</svg>

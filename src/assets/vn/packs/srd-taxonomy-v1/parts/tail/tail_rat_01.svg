@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f4c6d0)}</style>
+  <!-- Rat tail (SRD 5.1 rat/wererat): curvy pink S-sweep tapering to a soft curled tip -->
+  <path class="region-fur" d="M556 802 Q706 810 762 716 Q800 648 756 598 Q736 578 724 600 Q756 648 718 704 Q666 764 552 754 Q522 776 556 802 Z"/>
+  <circle class="region-fur" cx="734" cy="594" r="13"/>
+</svg>

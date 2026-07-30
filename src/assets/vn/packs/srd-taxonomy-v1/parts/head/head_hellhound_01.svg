@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d8a28e)}.region-accent{fill:var(--region-accent,#f7ddc6)}.region-detail{fill:var(--region-detail,#efa273)}.region-hair{fill:var(--region-hair,#f0a06b)}</style>
+  <!-- Hell Hound (SRD 5.1) head: puppy muzzle, round-tipped perky ears w/ bold rounded ember tufts INSIDE the ear (ember = hair region), tiny crown ember -->
+  <path class="region-fur" d="M330 262 Q306 130 388 96 Q402 90 414 102 Q446 152 448 236 Q392 268 330 262 Z"/>
+  <path class="region-fur" d="M694 262 Q718 130 636 96 Q622 90 610 102 Q578 152 576 236 Q632 268 694 262 Z"/>
+  <path class="region-accent" d="M356 240 Q344 156 394 126 Q404 121 412 132 Q428 170 428 226 Q392 246 356 240 Z"/>
+  <path class="region-accent" d="M668 240 Q680 156 630 126 Q620 121 612 132 Q596 170 596 226 Q632 246 668 240 Z"/>
+  <ellipse class="region-hair" cx="392" cy="202" rx="26" ry="32"/>
+  <ellipse class="region-hair" cx="398" cy="156" rx="15" ry="20"/>
+  <ellipse class="region-hair" cx="632" cy="202" rx="26" ry="32"/>
+  <ellipse class="region-hair" cx="626" cy="156" rx="15" ry="20"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-hair" cx="512" cy="140" rx="15" ry="24"/>
+  <ellipse class="region-hair" cx="518" cy="108" rx="8" ry="12"/>
+  <ellipse class="region-accent" cx="512" cy="420" rx="84" ry="54"/>
+  <path class="region-detail" d="M488 384 Q512 372 536 384 Q532 400 512 404 Q492 400 488 384 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

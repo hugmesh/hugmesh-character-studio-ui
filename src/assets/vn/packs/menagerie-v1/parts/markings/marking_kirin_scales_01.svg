@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#8fc4a5)}</style>
+  <!-- Kirin scales: staggered rows of round-topped scale patches on both shoulders and haunches, within the torso footprint. -->
+  <path class="region-accent" d="M408 486 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M438 486 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M422 510 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M452 510 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M406 534 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M436 534 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M560 486 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M590 486 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M546 510 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M576 510 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M562 534 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M592 534 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M404 664 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M432 688 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M406 712 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M594 664 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M566 688 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+  <path class="region-accent" d="M592 712 q13 -17 26 0 q-2 15 -13 19 q-11 -4 -13 -19 z"/>
+</svg>

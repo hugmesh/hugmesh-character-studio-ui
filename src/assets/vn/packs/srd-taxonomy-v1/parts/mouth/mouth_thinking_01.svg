@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Thinking mouth: tiny puzzled o -->
+  <circle class="region-line" cx="512" cy="444" r="12"/>
+</svg>

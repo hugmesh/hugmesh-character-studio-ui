@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:16;stroke-linecap:round}.region-accent{fill:none;stroke:var(--region-accent,#e2554f);stroke-width:12;stroke-linecap:round}</style>
+  <!-- Angry anime brows: hard slash down toward the nose, with a cross-popping anger vein at the temple -->
+  <path class="region-line" d="M392 238 q54 6 92 30"/>
+  <path class="region-line" d="M632 238 q-54 6 -92 30"/>
+  <path class="region-accent" d="M666 194 q10 -12 20 0"/>
+  <path class="region-accent" d="M666 234 q10 12 20 0"/>
+  <path class="region-accent" d="M650 204 q-12 10 0 20"/>
+  <path class="region-accent" d="M702 204 q12 10 0 20"/>
+</svg>

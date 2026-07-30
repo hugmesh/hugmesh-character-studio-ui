@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6e9f5)}.region-accent{fill:var(--region-accent,#f7f8fd)}</style>
+  <!-- Spectral (SRD 5.1) body: jellybean torso tapering into a wispy curl tail-bottom (no feet), pale translucent accent bands, stubby ghost arms -->
+  <path class="region-fur" d="M462 436 H562 Q642 478 658 578 Q672 672 638 748 Q612 800 556 818 Q504 834 462 814 Q432 800 420 780 Q396 812 358 802 Q330 794 334 768 Q362 778 378 760 Q350 744 356 704 Q382 732 416 726 Q392 664 396 580 Q406 476 462 436 Z"/>
+  <path class="region-fur" d="M356 806 Q300 806 288 762 Q282 722 316 714 Q342 710 346 736 Q348 758 326 756 Q332 776 356 770 Q372 766 372 748 Q384 782 356 806 Z"/>
+  <path class="region-fur" d="M392 520 Q330 542 312 596 Q302 628 328 638 Q352 644 362 616 Q374 578 410 560 Z"/>
+  <path class="region-fur" d="M632 520 Q694 542 712 596 Q722 628 696 638 Q672 644 662 616 Q650 578 614 560 Z"/>
+  <path class="region-accent" d="M408 636 Q460 660 512 652 Q570 644 622 664 Q618 690 608 698 Q556 680 508 688 Q456 696 414 674 Q408 656 408 636 Z"/>
+  <path class="region-accent" d="M404 714 Q464 738 544 726 Q592 720 610 734 Q602 760 592 766 Q540 750 484 760 Q440 766 410 746 Q404 730 404 714 Z"/>
+</svg>

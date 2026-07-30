@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#6b4a3a)}.region-accent{fill:var(--region-accent,#96705a)}</style>
+  <!-- Bob cut: rounded helmet silhouette, blunt jaw-length side locks, five-point bangs, crescent sheen highlight. -->
+  <path class="region-hair" d="M306 380 Q298 108 512 92 Q726 108 718 380 Q704 238 512 212 Q320 238 306 380 Z"/>
+  <path class="region-hair" d="M306 290 Q288 380 300 452 Q316 486 352 478 Q370 400 364 300 Q336 244 306 290 Z"/>
+  <path class="region-hair" d="M718 290 Q736 380 724 452 Q708 486 672 478 Q654 400 660 300 Q688 244 718 290 Z"/>
+  <path class="region-hair" d="M356 232 Q366 266 392 288 Q406 240 400 194 Q374 206 356 232 Z"/>
+  <path class="region-hair" d="M396 198 Q418 258 446 280 Q462 234 456 180 Q424 182 396 198 Z"/>
+  <path class="region-hair" d="M450 182 Q478 248 512 286 Q542 244 548 178 Q498 164 450 182 Z"/>
+  <path class="region-hair" d="M544 180 Q562 240 580 280 Q608 256 628 198 Q586 178 544 180 Z"/>
+  <path class="region-hair" d="M624 200 Q640 252 634 288 Q660 264 668 232 Q652 206 624 200 Z"/>
+  <path class="region-accent" d="M394 138 Q496 102 606 130 Q500 92 398 122 Z"/>
+  <path class="region-accent" d="M330 322 Q320 384 332 436 Q344 386 344 330 Q338 314 330 322 Z"/>
+  <path class="region-accent" d="M694 322 Q704 384 692 436 Q680 386 680 330 Q686 314 694 322 Z"/>
+</svg>

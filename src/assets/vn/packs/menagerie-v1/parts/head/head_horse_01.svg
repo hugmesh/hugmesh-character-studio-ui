@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9c6a3f)}.region-accent{fill:var(--region-accent,#58402a)}.region-detail{fill:var(--region-detail,#33261c)}.region-line{fill:var(--region-line,#241a12)}</style>
+  <!-- Horse head: long dropped face with soft muzzle band and nostrils, narrow upright ears, mane forelock falling over the forehead. -->
+  <path class="region-fur" d="M402 182 L386 64 L470 150 Z"/>
+  <path class="region-fur" d="M622 182 L638 64 L554 150 Z"/>
+  <path class="region-detail" d="M416 168 L406 96 L452 146 Z"/>
+  <path class="region-detail" d="M608 168 L618 96 L572 146 Z"/>
+  <ellipse class="region-fur" cx="512" cy="308" rx="180" ry="178"/>
+  <path class="region-fur" d="M446 350 Q512 320 578 350 L590 470 Q590 526 512 530 Q434 526 434 470 Z"/>
+  <path class="region-detail" d="M446 452 Q512 424 578 452 Q586 516 512 522 Q438 516 446 452 Z"/>
+  <ellipse class="region-line" cx="472" cy="482" rx="12" ry="16"/>
+  <ellipse class="region-line" cx="552" cy="482" rx="12" ry="16"/>
+  <path class="region-accent" d="M452 128 Q512 100 572 128 L566 214 L540 172 L522 238 L500 176 L478 226 L458 168 Z"/>
+</svg>

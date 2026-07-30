@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b8e0c2)}.region-hair{fill:var(--region-hair,#8fc4a6)}.region-line{fill:none;stroke:var(--region-line,#5f8a72);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Zombie / Ghoul (SRD 5.1) head: droopy soft hair fringe with a long side strand (region-hair), temple cross-stitch, mouth left to mouth parts -->
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-hair" d="M312 314 Q296 140 512 116 Q728 140 712 314 Q706 236 668 214 Q674 258 646 262 Q640 210 596 206 Q604 252 566 258 Q560 200 512 202 Q506 256 468 254 Q464 202 420 208 Q428 258 396 252 Q392 214 358 224 Q360 268 330 280 Q322 296 312 314 Z"/>
+  <path class="region-hair" d="M318 268 Q296 330 316 384 Q332 344 336 286 Z"/>
+  <path class="region-line" d="M646 270 Q668 294 690 322"/>
+  <path class="region-line" d="M688 272 Q666 296 648 324"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

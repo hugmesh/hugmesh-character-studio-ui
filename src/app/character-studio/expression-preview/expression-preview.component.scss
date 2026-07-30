@@ -1,0 +1,59 @@
+:host {
+  display: block;
+}
+
+.expression-preview {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.expression-preview legend {
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.preset {
+  cursor: pointer;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  // Subtle press feedback; suppressed under reduced-motion (see below).
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.preset:active {
+  transform: scale(0.96);
+}
+
+.preset.selected {
+  border-color: var(--hug-accent, #7c4dff);
+  outline: 2px solid var(--hug-accent, #7c4dff);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+// Honor users who prefer no motion: no transition / no scale animation.
+@media (prefers-reduced-motion: reduce) {
+  .preset {
+    transition: none;
+  }
+
+  .preset:active {
+    transform: none;
+  }
+}

@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.export {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: var(--hug-accent, #7c4dff);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  flex-basis: 100%;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.status:empty {
+  display: none;
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#3a3f4b)}.region-iris{fill:var(--region-iris,#4de3e1)}.region-detail{fill:var(--region-detail,#1f232c)}</style>
+  <!-- Protogen head: angular chassis with antenna ear-nubs, recolorable full-face visor (iris), forehead vent + brow seams + chin plate (detail), LED slivers on the ears -->
+  <polygon class="region-fur" points="380,214 322,96 446,152"/>
+  <polygon class="region-fur" points="644,214 702,96 578,152"/>
+  <path class="region-fur" d="M512 122 L668 186 L712 322 L650 460 L556 516 L468 516 L374 460 L312 322 L356 186 Z"/>
+  <polygon class="region-iris" points="388,192 354,122 420,156"/>
+  <polygon class="region-iris" points="636,192 670,122 604,156"/>
+  <path class="region-iris" d="M396 252 L628 252 Q672 260 682 322 L640 448 Q600 492 544 500 L480 500 Q424 492 384 448 L342 322 Q352 260 396 252 Z"/>
+  <polygon class="region-detail" points="490,148 534,148 526,192 498,192"/>
+  <path class="region-detail" d="M368 232 L402 216 L396 238 L362 254 Z"/>
+  <path class="region-detail" d="M656 232 L622 216 L628 238 L662 254 Z"/>
+  <polygon class="region-detail" points="452,470 478,462 470,486"/>
+  <polygon class="region-detail" points="572,470 546,462 554,486"/>
+  <polygon class="region-detail" points="476,504 548,504 540,520 484,520"/>
+</svg>

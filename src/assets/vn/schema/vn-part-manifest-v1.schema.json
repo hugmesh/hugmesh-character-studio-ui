@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hugmesh.internal/schemas/vn-part-manifest-v1.json",
+  "title": "VN PartManifest v1",
+  "description": "Schema for a character-studio asset pack (pack.json). See hugmesh-vn-character-b0-scaffold §1.2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["packId", "version", "displayName", "canvas", "slots"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "packId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "version": { "type": "string" },
+    "displayName": { "type": "string" },
+    "licenseSpdx": { "type": "string" },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "slots": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/slot" }
+    }
+  },
+  "definitions": {
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "offset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+    },
+    "tintRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region", "defaultPalette"],
+      "properties": {
+        "region": { "type": "string" },
+        "mask": { "type": ["string", "null"] },
+        "defaultPalette": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      }
+    },
+    "part": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "displayName", "file"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "displayName": { "type": "string" },
+        "file": { "type": "string" },
+        "tintRegions": { "type": "array", "items": { "$ref": "#/definitions/tintRegion" } },
+        "anchorOverride": { "oneOf": [{ "$ref": "#/definitions/anchor" }, { "type": "null" }] },
+        "offset": { "$ref": "#/definitions/offset" }
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slot", "zOrder", "required", "anchor", "parts"],
+      "properties": {
+        "slot": { "type": "string" },
+        "zOrder": { "type": "integer" },
+        "required": { "type": "boolean" },
+        "anchor": { "$ref": "#/definitions/anchor" },
+        "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/part" } }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#dcc39a)}.region-accent{fill:var(--region-accent,#f0e2c6)}.region-detail{fill:var(--region-detail,#9c7a58)}.region-hair{fill:var(--region-hair,#b89a73)}</style>
+  <!-- Gnoll (SRD 5.1) head: big round hyena ears, rounded mohawk crest (hair region), freckle spots -->
+  <circle class="region-fur" cx="344" cy="192" r="80"/>
+  <circle class="region-accent" cx="352" cy="198" r="46"/>
+  <circle class="region-fur" cx="680" cy="192" r="80"/>
+  <circle class="region-accent" cx="672" cy="198" r="46"/>
+  <circle class="region-hair" cx="462" cy="132" r="42"/>
+  <circle class="region-hair" cx="512" cy="110" r="46"/>
+  <circle class="region-hair" cx="562" cy="132" r="42"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <circle class="region-detail" cx="392" cy="226" r="11"/>
+  <circle class="region-detail" cx="456" cy="200" r="10"/>
+  <circle class="region-detail" cx="568" cy="204" r="10"/>
+  <circle class="region-detail" cx="632" cy="230" r="11"/>
+  <circle class="region-detail" cx="330" cy="336" r="11"/>
+  <circle class="region-detail" cx="694" cy="336" r="11"/>
+  <circle class="region-detail" cx="360" cy="398" r="9"/>
+  <circle class="region-detail" cx="664" cy="398" r="9"/>
+  <ellipse class="region-accent" cx="512" cy="422" rx="82" ry="52"/>
+  <path class="region-detail" d="M490 382 Q512 372 534 382 Q530 398 512 404 Q494 398 490 382 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

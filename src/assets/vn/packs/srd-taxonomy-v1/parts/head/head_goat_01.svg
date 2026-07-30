@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6d3b8)}.region-accent{fill:var(--region-accent,#f9f0dd)}.region-detail{fill:var(--region-detail,#b8a68f)}</style>
+  <!-- Goat / Satyr-kin (SRD 5.1) head: back-curled rounded horns, floppy droop ears, tiny chin beard tuft -->
+  <path class="region-detail" d="M470 176 Q450 84 368 62 Q338 62 350 92 Q404 110 424 190 Q452 212 470 176 Z"/>
+  <path class="region-detail" d="M554 176 Q574 84 656 62 Q686 62 674 92 Q620 110 600 190 Q572 212 554 176 Z"/>
+  <ellipse class="region-fur" cx="280" cy="336" rx="42" ry="82"/>
+  <ellipse class="region-accent" cx="274" cy="344" rx="20" ry="52"/>
+  <ellipse class="region-fur" cx="744" cy="336" rx="42" ry="82"/>
+  <ellipse class="region-accent" cx="750" cy="344" rx="20" ry="52"/>
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="328" cy="396" r="40"/>
+  <circle class="region-fur" cx="696" cy="396" r="40"/>
+  <ellipse class="region-accent" cx="512" cy="428" rx="80" ry="52"/>
+  <path class="region-accent" d="M486 522 Q504 596 538 518 Q526 504 512 510 Q498 504 486 522 Z"/>
+  <ellipse class="region-detail" cx="512" cy="404" rx="14" ry="10"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

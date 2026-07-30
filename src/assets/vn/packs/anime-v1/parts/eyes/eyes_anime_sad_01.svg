@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#6f9fd8)}.region-detail{fill:var(--region-detail,#2b2438)}.region-accent{fill:var(--region-accent,#a7d8f0)}.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:18;stroke-linecap:round}</style>
+  <!-- Sad teary anime eyes: heavy drooping lids, watery wide iris with pooled shine, welling teardrops -->
+  <ellipse fill="#ffffff" cx="440" cy="312" rx="45" ry="52"/>
+  <ellipse fill="#ffffff" cx="584" cy="312" rx="45" ry="52"/>
+  <ellipse class="region-iris" cx="440" cy="318" rx="32" ry="44"/>
+  <ellipse class="region-iris" cx="584" cy="318" rx="32" ry="44"/>
+  <ellipse class="region-detail" cx="440" cy="322" rx="13" ry="21"/>
+  <ellipse class="region-detail" cx="584" cy="322" rx="13" ry="21"/>
+  <circle fill="#ffffff" cx="428" cy="296" r="9"/>
+  <circle fill="#ffffff" cx="572" cy="296" r="9"/>
+  <ellipse fill="#ffffff" cx="440" cy="348" rx="17" ry="8"/>
+  <ellipse fill="#ffffff" cx="584" cy="348" rx="17" ry="8"/>
+  <path class="region-accent" d="M398 366 q-18 30 -8 42 a12 12 0 0 0 16 0 q10 -12 -8 -42"/>
+  <path class="region-accent" d="M626 366 q18 30 8 42 a12 12 0 0 1 -16 0 q-10 -12 8 -42"/>
+  <path class="region-line" d="M482 268 q-48 -14 -84 34 l-6 12"/>
+  <path class="region-line" d="M542 268 q48 -14 84 34 l6 12"/>
+  <path class="region-line" d="M410 364 q26 10 50 4"/>
+  <path class="region-line" d="M614 364 q-26 10 -50 4"/>
+</svg>

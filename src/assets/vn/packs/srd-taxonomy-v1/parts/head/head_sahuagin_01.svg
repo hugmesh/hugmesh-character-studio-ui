@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a9d4da)}.region-accent{fill:var(--region-accent,#dceef0)}.region-detail{fill:var(--region-detail,#7fb7c1)}.region-line{fill:none;stroke:var(--region-line,#4e7880);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sahuagin (SRD 5.1) head: shark dorsal fin on top, webbed fan fin-ears, three gill lines per cheek, stout pale muzzle with one tiny fang -->
+  <path class="region-detail" d="M446 162 Q462 64 552 72 Q606 80 598 168 Q556 128 512 138 Q474 146 446 162 Z"/>
+  <path class="region-detail" d="M368 296 Q292 244 254 292 Q232 322 254 366 Q282 414 366 398 Q338 348 368 296 Z"/>
+  <path class="region-detail" d="M656 296 Q732 244 770 292 Q792 322 770 366 Q742 414 658 398 Q686 348 656 296 Z"/>
+  <path class="region-accent" d="M352 314 Q300 284 278 314 Q266 334 280 362 Q300 390 348 382 Q330 348 352 314 Z"/>
+  <path class="region-accent" d="M672 314 Q724 284 746 314 Q758 334 744 362 Q724 390 676 382 Q694 348 672 314 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="418" rx="88" ry="54"/>
+  <path class="region-line" d="M494 394 q4 4 10 6"/>
+  <path class="region-line" d="M530 400 q4 -4 10 -6"/>
+  <path class="region-line" d="M340 432 q-12 24 0 46"/>
+  <path class="region-line" d="M362 428 q-12 26 0 50"/>
+  <path class="region-line" d="M384 432 q-12 24 0 46"/>
+  <path class="region-line" d="M684 432 q12 24 0 46"/>
+  <path class="region-line" d="M662 428 q12 26 0 50"/>
+  <path class="region-line" d="M640 432 q12 24 0 46"/>
+  <path class="region-accent" d="M382 470 Q380 444 390 436 Q400 444 400 468 Q390 476 382 470 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

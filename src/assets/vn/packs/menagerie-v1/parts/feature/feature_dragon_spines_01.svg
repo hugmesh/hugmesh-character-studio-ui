@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#d9c9a3)}.region-accent{fill:var(--region-accent,#c96a4a)}</style>
+  <!-- Dorsal spine row: bone spikes arcing from the crown down the neck to each shoulder, small accent spikes between -->
+  <path class="region-detail" d="M478 142 L512 48 L546 142 Z"/>
+  <path class="region-detail" d="M462 150 L408 62 L500 128 Z"/>
+  <path class="region-detail" d="M372 210 L296 142 L426 176 Z"/>
+  <path class="region-detail" d="M322 300 L232 268 L342 254 Z"/>
+  <path class="region-detail" d="M322 390 L226 402 L322 348 Z"/>
+  <path class="region-detail" d="M358 486 L292 528 L332 442 Z"/>
+  <path class="region-detail" d="M562 150 L616 62 L524 128 Z"/>
+  <path class="region-detail" d="M652 210 L728 142 L598 176 Z"/>
+  <path class="region-detail" d="M702 300 L792 268 L682 254 Z"/>
+  <path class="region-detail" d="M702 390 L798 402 L702 348 Z"/>
+  <path class="region-detail" d="M666 486 L732 528 L692 442 Z"/>
+  <path class="region-accent" d="M414 178 L364 122 L444 156 Z"/>
+  <path class="region-accent" d="M342 254 L272 212 L376 232 Z"/>
+  <path class="region-accent" d="M314 348 L232 336 L326 302 Z"/>
+  <path class="region-accent" d="M330 444 L256 466 L318 398 Z"/>
+  <path class="region-accent" d="M610 178 L660 122 L580 156 Z"/>
+  <path class="region-accent" d="M682 254 L752 212 L648 232 Z"/>
+  <path class="region-accent" d="M710 348 L792 336 L698 302 Z"/>
+  <path class="region-accent" d="M694 444 L768 466 L706 398 Z"/>
+</svg>

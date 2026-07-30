@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8aa657)}.region-accent{fill:var(--region-accent,#d9c98a)}.region-detail{fill:var(--region-detail,#4a5537)}</style>
+  <!-- Cobra head: flared hood with pale inner face and eyespot markings, smooth rounded skull, brow scutes -->
+  <path class="region-fur" d="M512 110 Q322 132 258 314 Q228 424 314 522 Q400 606 512 618 Q624 606 710 522 Q796 424 766 314 Q702 132 512 110 Z"/>
+  <path class="region-accent" d="M512 146 Q352 166 296 326 Q272 420 346 502 Q420 572 512 582 Q604 572 678 502 Q752 420 728 326 Q672 166 512 146 Z"/>
+  <circle class="region-detail" cx="330" cy="404" r="26"/>
+  <circle class="region-accent" cx="330" cy="404" r="12"/>
+  <circle class="region-detail" cx="694" cy="404" r="26"/>
+  <circle class="region-accent" cx="694" cy="404" r="12"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-accent" d="M430 396 q82 44 164 0 q-6 78 -82 86 q-76 -8 -82 -86 z"/>
+  <circle class="region-detail" cx="478" cy="404" r="7"/>
+  <circle class="region-detail" cx="546" cy="404" r="7"/>
+  <path class="region-detail" d="M398 264 l74 -16 l6 18 l-74 16 z"/>
+  <path class="region-detail" d="M626 264 l-74 -16 l-6 18 l74 16 z"/>
+</svg>

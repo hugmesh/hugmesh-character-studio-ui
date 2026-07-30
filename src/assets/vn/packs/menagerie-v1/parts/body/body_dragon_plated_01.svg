@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8f95a3)}.region-accent{fill:var(--region-accent,#dfe6ee)}.region-detail{fill:var(--region-detail,#454b59)}</style>
+  <!-- Plated dragon body: broad hide with pauldrons, banded chest armor, rivet seams and diagonal sheen slashes -->
+  <path class="region-fur" d="M394 558 Q358 640 374 722 Q390 738 412 728 Q404 650 428 586 Z"/>
+  <path class="region-fur" d="M630 558 Q666 640 650 722 Q634 738 612 728 Q620 650 596 586 Z"/>
+  <path class="region-fur" d="M468 462 H556 Q576 508 612 526 Q666 558 670 622 Q674 700 660 752 Q638 816 592 838 H432 Q386 816 366 752 Q352 700 356 622 Q360 558 414 526 Q450 508 468 462 Z"/>
+  <path class="region-fur" d="M408 790 Q394 856 412 886 L500 886 Q498 836 492 790 Z"/>
+  <path class="region-fur" d="M616 790 Q630 856 612 886 L524 886 Q526 836 532 790 Z"/>
+  <rect class="region-fur" x="378" y="880" width="134" height="32" rx="15"/>
+  <rect class="region-fur" x="512" y="880" width="134" height="32" rx="15"/>
+  <path class="region-detail" d="M398 508 Q444 484 480 502 L470 552 Q428 560 396 542 Z"/>
+  <path class="region-detail" d="M626 508 Q580 484 544 502 L554 552 Q596 560 628 542 Z"/>
+  <path class="region-detail" d="M436 560 L588 560 L600 596 L424 596 Z"/>
+  <path class="region-detail" d="M428 610 L596 610 L606 646 L418 646 Z"/>
+  <path class="region-detail" d="M432 660 L592 660 L600 696 L424 696 Z"/>
+  <path class="region-accent" d="M420 632 L560 560 L584 574 L444 646 Z"/>
+  <path class="region-accent" d="M470 700 L588 640 L604 656 L486 716 Z"/>
+  <circle class="region-detail" cx="412" cy="556" r="7"/>
+  <circle class="region-detail" cx="612" cy="556" r="7"/>
+  <circle class="region-detail" cx="404" cy="650" r="7"/>
+  <circle class="region-detail" cx="620" cy="650" r="7"/>
+  <circle class="region-detail" cx="430" cy="742" r="7"/>
+  <circle class="region-detail" cx="594" cy="742" r="7"/>
+</svg>

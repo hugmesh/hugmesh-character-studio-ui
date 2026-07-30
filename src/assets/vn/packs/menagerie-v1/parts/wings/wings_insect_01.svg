@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#dceef5)}.region-line{fill:var(--region-line,#7fa3b2)}</style>
+  <!-- Insect wings: two pairs of slim oval membrane wings from the shoulders, pale accent membrane with slender line veins and cross-veins -->
+  <path class="region-accent" d="M432 468 Q300 356 176 296 Q124 274 110 300 Q102 332 150 374 Q272 464 420 502 Q438 490 432 468 Z"/>
+  <path class="region-line" d="M422 478 Q288 396 152 314 L146 324 Q284 406 418 492 Z"/>
+  <path class="region-line" d="M326 382 Q318 414 326 442 L336 438 Q330 412 336 386 Z"/>
+  <path class="region-line" d="M234 340 Q226 370 236 398 L246 394 Q238 368 244 344 Z"/>
+  <path class="region-accent" d="M436 514 Q330 566 246 644 Q212 678 230 700 Q256 714 298 686 Q392 618 452 548 Q452 526 436 514 Z"/>
+  <path class="region-line" d="M438 524 Q340 584 252 662 L260 670 Q346 594 446 536 Z"/>
+  <path class="region-line" d="M338 592 Q334 618 342 640 L352 634 Q346 614 350 596 Z"/>
+  <path class="region-accent" d="M592 468 Q724 356 848 296 Q900 274 914 300 Q922 332 874 374 Q752 464 604 502 Q586 490 592 468 Z"/>
+  <path class="region-line" d="M602 478 Q736 396 872 314 L878 324 Q740 406 606 492 Z"/>
+  <path class="region-line" d="M698 382 Q706 414 698 442 L688 438 Q694 412 688 386 Z"/>
+  <path class="region-line" d="M790 340 Q798 370 788 398 L778 394 Q786 368 780 344 Z"/>
+  <path class="region-accent" d="M588 514 Q694 566 778 644 Q812 678 794 700 Q768 714 726 686 Q632 618 572 548 Q572 526 588 514 Z"/>
+  <path class="region-line" d="M586 524 Q684 584 772 662 L764 670 Q678 594 578 536 Z"/>
+  <path class="region-line" d="M686 592 Q690 618 682 640 L672 634 Q678 614 674 596 Z"/>
+</svg>

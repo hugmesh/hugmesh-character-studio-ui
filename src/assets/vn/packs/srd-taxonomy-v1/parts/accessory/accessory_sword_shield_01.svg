@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b7c6da)}.region-clothtrim{fill:var(--region-clothtrim,#e4eaf2)}.region-iris{fill:var(--region-iris,#d95f6c)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Fighter sidearms (SRD 5.1): stubby round-tip longsword, kite shield with rounded crimson chevron, chunky crossguard and pommel -->
+  <path class="region-clothtrim" d="M734 500 Q734 440 750 412 Q758 398 768 398 Q778 398 786 412 Q802 440 802 500 L802 650 Q802 660 792 660 L744 660 Q734 660 734 650 Z"/>
+  <path class="region-line" d="M768 452 Q772 540 768 622"/>
+  <rect class="region-cloth" x="706" y="646" width="124" height="42" rx="21"/>
+  <rect class="region-cloth" x="750" y="684" width="36" height="70" rx="18"/>
+  <circle class="region-cloth" cx="768" cy="774" r="26"/>
+  <circle class="region-iris" cx="768" cy="774" r="11"/>
+  <path class="region-cloth" d="M288 508 Q366 526 368 600 Q368 704 302 772 Q288 786 274 772 Q208 704 208 600 Q210 526 288 508 Z"/>
+  <path class="region-clothtrim" d="M288 528 Q348 542 350 602 Q350 690 296 748 Q288 758 280 748 Q226 690 226 602 Q228 542 288 528 Z"/>
+  <path class="region-iris" d="M240 596 Q288 568 336 596 Q340 616 336 634 Q288 606 240 634 Q236 616 240 596 Z"/>
+  <circle class="region-cloth" cx="288" cy="690" r="12"/>
+</svg>

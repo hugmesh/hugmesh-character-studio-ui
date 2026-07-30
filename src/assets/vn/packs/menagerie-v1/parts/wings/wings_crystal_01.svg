@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#c9b8f0)}.region-detail{fill:none;stroke:var(--region-detail,#4b3f78);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Crystal shard wings: fans of elongated faceted shards radiating from each shoulder, edge lines down each shard -->
+  <path class="region-accent" d="M402 462 L150 176 L104 232 L368 486 Z"/>
+  <path class="region-accent" d="M394 478 L96 344 L84 412 L376 508 Z"/>
+  <path class="region-accent" d="M392 502 L136 528 L150 596 L392 546 Z"/>
+  <path class="region-accent" d="M404 524 L232 668 L272 712 L420 560 Z"/>
+  <path class="region-accent" d="M622 462 L874 176 L920 232 L656 486 Z"/>
+  <path class="region-accent" d="M630 478 L928 344 L940 412 L648 508 Z"/>
+  <path class="region-accent" d="M632 502 L888 528 L874 596 L632 546 Z"/>
+  <path class="region-accent" d="M620 524 L792 668 L752 712 L604 560 Z"/>
+  <path class="region-detail" d="M382 470 L138 212"/>
+  <path class="region-detail" d="M380 492 L106 380"/>
+  <path class="region-detail" d="M384 522 L148 560"/>
+  <path class="region-detail" d="M406 540 L258 686"/>
+  <path class="region-detail" d="M642 470 L886 212"/>
+  <path class="region-detail" d="M644 492 L918 380"/>
+  <path class="region-detail" d="M640 522 L876 560"/>
+  <path class="region-detail" d="M618 540 L766 686"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#a08c6c)}.region-accent{fill:var(--region-accent,#c4b394)}</style>
+  <!-- Goat horns: paired scimitar horns rising from the crown and sweeping back, with ridge bands and base rings -->
+  <path class="region-detail" d="M452 162 Q430 70 346 44 Q380 96 390 150 Q394 178 398 196 Q424 186 452 162 Z"/>
+  <path class="region-detail" d="M572 162 Q594 70 678 44 Q644 96 634 150 Q630 178 626 196 Q600 186 572 162 Z"/>
+  <path class="region-accent" d="M436 128 Q420 84 392 62 Q408 96 414 134 Q424 134 436 128 Z"/>
+  <path class="region-accent" d="M588 128 Q604 84 632 62 Q616 96 610 134 Q600 134 588 128 Z"/>
+  <ellipse class="region-accent" cx="424" cy="180" rx="30" ry="14"/>
+  <ellipse class="region-accent" cx="600" cy="180" rx="30" ry="14"/>
+</svg>

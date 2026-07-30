@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Round toony eyes: big friendly iris, dark pupil, bright double glint -->
+  <circle class="region-iris" cx="440" cy="300" r="40"/>
+  <circle class="region-iris" cx="584" cy="300" r="40"/>
+  <circle class="region-detail" cx="443" cy="304" r="17"/>
+  <circle class="region-detail" cx="581" cy="304" r="17"/>
+  <circle fill="#ffffff" cx="428" cy="288" r="9"/>
+  <circle fill="#ffffff" cx="572" cy="288" r="9"/>
+  <circle fill="#ffffff" cx="452" cy="314" r="4"/>
+  <circle fill="#ffffff" cx="596" cy="314" r="4"/>
+</svg>

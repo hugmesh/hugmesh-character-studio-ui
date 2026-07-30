@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b99a6b)}.region-accent{fill:var(--region-accent,#e9e0cf)}.region-detail{fill:var(--region-detail,#7a6252)}</style>
+  <!-- Felid body: sleek tapered torso with pale chest patch and collar fluff, slim arms ending in darker paws, elbow tufts -->
+  <path class="region-fur" d="M462 468 h100 l8 66 q66 14 80 88 l6 102 q2 36 -34 36 h-220 q-36 0 -34 -36 l6 -102 q14 -74 80 -88 z"/>
+  <path class="region-accent" d="M512 556 q-56 4 -64 72 l-8 82 q36 28 72 28 t72 -28 l-8 -82 q-8 -68 -64 -72 z"/>
+  <path class="region-fur" d="M468 560 q44 30 88 0 l-10 36 q-34 22 -68 0 z"/>
+  <path class="region-fur" d="M404 556 Q358 574 352 632 L344 714 Q342 746 372 748 Q402 750 406 718 L418 600 Z"/>
+  <path class="region-fur" d="M620 556 Q666 574 672 632 L680 714 Q682 746 652 748 Q622 750 618 718 L606 600 Z"/>
+  <path class="region-fur" d="M352 640 l-24 18 l26 12 Z"/>
+  <path class="region-fur" d="M672 640 l24 18 l-26 12 Z"/>
+  <ellipse class="region-detail" cx="368" cy="734" rx="28" ry="20"/>
+  <ellipse class="region-detail" cx="656" cy="734" rx="28" ry="20"/>
+</svg>

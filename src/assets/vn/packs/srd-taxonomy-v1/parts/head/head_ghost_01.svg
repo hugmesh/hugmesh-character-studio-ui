@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6e9f5)}</style>
+  <!-- Ghost / Specter / Wraith (SRD 5.1) head: wispy rounded sheet with scalloped hem, trailing side curl, whipped top wisp -->
+  <path class="region-fur" d="M317 380 Q300 500 360 542 Q390 502 418 546 Q446 588 478 548 Q502 518 526 552 Q552 590 586 552 Q610 520 638 556 Q674 600 698 548 Q712 516 707 380 Q610 472 512 472 Q414 472 317 380 Z"/>
+  <path class="region-fur" d="M688 520 Q756 518 776 566 Q788 604 750 614 Q722 620 716 596 Q712 576 732 572 Q744 570 746 582 Q756 566 742 550 Q726 532 686 540 Z"/>
+  <path class="region-fur" d="M500 130 Q492 84 522 58 Q510 96 536 106 Q516 122 508 144 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

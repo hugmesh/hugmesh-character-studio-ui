@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:16;stroke-linecap:round}</style>
+  <!-- Neutral anime brows: relaxed slim arcs floating above the big eyes -->
+  <path class="region-line" d="M394 252 q46 -20 94 -8"/>
+  <path class="region-line" d="M630 252 q-46 -20 -94 -8"/>
+</svg>

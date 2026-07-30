@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c7d3e0)}.region-accent{fill:var(--region-accent,#e4ecf4)}.region-detail{fill:var(--region-detail,#8fa2b8)}.region-line{fill:none;stroke:var(--region-line,#5a6272);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Robot body: jellybean chassis with bolted chest panel, stubby piston arms, rounded boot feet -->
+  <path class="region-fur" d="M420 520 Q352 540 336 616 Q330 668 362 676 Q382 610 428 578 Z"/>
+  <path class="region-fur" d="M604 520 Q672 540 688 616 Q694 668 662 676 Q642 610 596 578 Z"/>
+  <circle class="region-detail" cx="350" cy="664" r="24"/>
+  <circle class="region-detail" cx="674" cy="664" r="24"/>
+  <circle class="region-fur" cx="348" cy="686" r="26"/>
+  <circle class="region-fur" cx="676" cy="686" r="26"/>
+  <path class="region-fur" d="M448 444 H576 Q600 500 630 528 Q668 566 672 650 Q676 748 644 800 Q600 852 512 852 Q424 852 380 800 Q348 748 352 650 Q356 566 394 528 Q424 500 448 444 Z"/>
+  <rect class="region-accent" x="436" y="560" width="152" height="108" rx="28"/>
+  <circle class="region-detail" cx="456" cy="580" r="8"/>
+  <circle class="region-detail" cx="568" cy="580" r="8"/>
+  <circle class="region-detail" cx="456" cy="648" r="8"/>
+  <circle class="region-detail" cx="568" cy="648" r="8"/>
+  <path class="region-line" d="M396 706 Q512 730 628 706"/>
+  <circle class="region-detail" cx="512" cy="766" r="16"/>
+  <ellipse class="region-fur" cx="414" cy="784" rx="72" ry="56"/>
+  <ellipse class="region-fur" cx="610" cy="784" rx="72" ry="56"/>
+  <rect class="region-accent" x="348" y="836" width="130" height="36" rx="18"/>
+  <rect class="region-accent" x="546" y="836" width="130" height="36" rx="18"/>
+</svg>

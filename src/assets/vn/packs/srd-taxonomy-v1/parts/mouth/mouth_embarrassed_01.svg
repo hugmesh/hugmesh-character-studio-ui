@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Embarrassed mouth: small flustered wavy line -->
+  <path class="region-line" d="M462 444Q478 434 494 444Q510 454 528 444Q544 434 562 444"/>
+</svg>

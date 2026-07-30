@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#4e6b3a)}</style>
+  <!-- Dino back stripes: tapered bands wrapping from the spine over the shoulders and down both flanks of the torso -->
+  <path class="region-accent" d="M428 468 Q468 476 482 506 Q436 504 418 480 Z"/>
+  <path class="region-accent" d="M596 468 Q556 476 542 506 Q588 504 606 480 Z"/>
+  <path class="region-accent" d="M378 520 Q436 512 470 534 Q420 556 374 550 Z"/>
+  <path class="region-accent" d="M646 520 Q588 512 554 534 Q604 556 650 550 Z"/>
+  <path class="region-accent" d="M374 578 Q438 572 474 596 Q420 616 370 608 Z"/>
+  <path class="region-accent" d="M650 578 Q586 572 550 596 Q604 616 654 608 Z"/>
+  <path class="region-accent" d="M376 636 Q434 634 468 656 Q420 674 372 664 Z"/>
+  <path class="region-accent" d="M648 636 Q590 634 556 656 Q604 674 652 664 Z"/>
+  <path class="region-accent" d="M382 692 Q430 690 458 708 Q418 724 380 718 Z"/>
+  <path class="region-accent" d="M642 692 Q594 690 566 708 Q606 724 644 718 Z"/>
+</svg>

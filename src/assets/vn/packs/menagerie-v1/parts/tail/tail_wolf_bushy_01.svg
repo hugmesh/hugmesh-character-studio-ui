@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8b8e99)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Wolf tail: thick bushy plume sweeping low behind the hip, fluff-notched edges with tuft breaks, dark tip -->
+  <path class="region-fur" d="M640 700 Q670 674 716 672 Q700 700 704 730 Q676 716 640 700 Z"/>
+  <path class="region-fur" d="M628 676 Q700 640 790 656 Q880 674 906 750 L850 746 Q896 792 892 852 L832 826 Q848 886 806 918 Q770 872 720 856 Q660 838 636 780 Q620 724 628 676 Z"/>
+  <path class="region-fur" d="M700 648 L740 618 L746 662 Z"/>
+  <path class="region-fur" d="M790 652 L836 632 L832 676 Z"/>
+  <path class="region-fur" d="M872 742 L908 752 L888 784 Z"/>
+  <path class="region-fur" d="M676 820 L706 864 L652 852 Z"/>
+  <path class="region-fur" d="M742 856 L780 896 L724 888 Z"/>
+  <path class="region-detail" d="M778 828 Q822 796 858 800 Q894 818 892 852 L832 826 Q848 886 806 918 Q772 884 778 828 Z"/>
+  <path class="region-detail" d="M812 872 L836 908 L796 902 Z"/>
+  <path class="region-detail" d="M848 810 L880 834 L850 852 Z"/>
+</svg>

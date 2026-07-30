@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b4f3a)}.region-accent{fill:var(--region-accent,#e9dcc8)}.region-detail{fill:var(--region-detail,#d9a441)}</style>
+  <!-- Raptor head: eagle-style skull with pale mask, heavy fierce brow ridges, cere, and a large hooked beak. -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M470 138 q40 -22 84 0 q-18 -30 -42 -34 q-24 4 -42 34 z"/>
+  <path class="region-fur" d="M334 432 q-40 26 -50 62 q36 -4 60 -30 z"/>
+  <path class="region-fur" d="M690 432 q40 26 50 62 q-36 -4 -60 -30 z"/>
+  <path class="region-fur" d="M310 380 q-44 16 -60 48 q38 2 64 -20 z"/>
+  <path class="region-fur" d="M714 380 q44 16 60 48 q-38 2 -64 -20 z"/>
+  <path class="region-accent" d="M512 300 L360 250 Q330 300 340 360 Q380 430 470 448 L512 430 L554 448 Q644 430 684 360 Q694 300 664 250 Z"/>
+  <path class="region-fur" d="M352 240 Q440 258 516 296 L508 318 Q436 282 348 268 Z"/>
+  <path class="region-fur" d="M672 240 Q584 258 508 296 L516 318 Q588 282 676 268 Z"/>
+  <path class="region-detail" d="M480 372 q32 -14 64 0 q-6 16 -32 16 q-26 0 -32 -16 z"/>
+  <path class="region-detail" d="M470 452 q42 26 84 0 q-10 24 -42 28 q-32 -4 -42 -28 z"/>
+  <path class="region-detail" d="M452 386 h120 q4 46 -32 74 q-16 12 -24 28 q-4 -22 -20 -36 q-48 -34 -44 -66 z"/>
+</svg>

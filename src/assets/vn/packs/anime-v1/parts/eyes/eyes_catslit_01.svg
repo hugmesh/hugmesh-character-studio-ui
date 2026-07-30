@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#d9a441)}.region-detail{fill:var(--region-detail,#2b2438)}.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:18;stroke-linecap:round}</style>
+  <!-- Cat-slit anime eyes: big luminous iris with a vertical slit pupil, feline lash line -->
+  <ellipse fill="#ffffff" cx="440" cy="308" rx="46" ry="52"/>
+  <ellipse fill="#ffffff" cx="584" cy="308" rx="46" ry="52"/>
+  <ellipse class="region-iris" cx="440" cy="312" rx="34" ry="48"/>
+  <ellipse class="region-iris" cx="584" cy="312" rx="34" ry="48"/>
+  <path class="region-detail" d="M440 272 q11 44 0 88 q-11 -44 0 -88"/>
+  <path class="region-detail" d="M584 272 q11 44 0 88 q-11 -44 0 -88"/>
+  <circle fill="#ffffff" cx="424" cy="288" r="10"/>
+  <circle fill="#ffffff" cx="568" cy="288" r="10"/>
+  <circle fill="#ffffff" cx="452" cy="336" r="4"/>
+  <circle fill="#ffffff" cx="596" cy="336" r="4"/>
+  <path class="region-line" d="M486 258 q-50 -18 -88 22 l-8 10"/>
+  <path class="region-line" d="M538 258 q50 -18 88 22 l8 10"/>
+  <path class="region-line" d="M408 358 q26 12 52 4"/>
+  <path class="region-line" d="M616 358 q-26 12 -52 4"/>
+</svg>

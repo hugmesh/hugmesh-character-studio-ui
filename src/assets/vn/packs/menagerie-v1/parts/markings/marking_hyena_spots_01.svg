@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#33261f)}</style>
+  <!-- Hyena spots: irregular dark dapples scattered over the shoulders, flanks and upper arms, denser toward the back and sparser near the belly -->
+  <ellipse class="region-detail" cx="430" cy="560" rx="14" ry="11"/>
+  <ellipse class="region-detail" cx="594" cy="560" rx="13" ry="10"/>
+  <ellipse class="region-detail" cx="398" cy="600" rx="12" ry="10"/>
+  <ellipse class="region-detail" cx="626" cy="600" rx="12" ry="10"/>
+  <ellipse class="region-detail" cx="452" cy="606" rx="11" ry="9"/>
+  <ellipse class="region-detail" cx="572" cy="606" rx="11" ry="9"/>
+  <ellipse class="region-detail" cx="534" cy="584" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="490" cy="588" rx="8" ry="7"/>
+  <ellipse class="region-detail" cx="416" cy="650" rx="13" ry="10"/>
+  <ellipse class="region-detail" cx="608" cy="650" rx="13" ry="10"/>
+  <ellipse class="region-detail" cx="472" cy="660" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="552" cy="660" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="438" cy="706" rx="12" ry="9"/>
+  <ellipse class="region-detail" cx="586" cy="706" rx="12" ry="9"/>
+  <ellipse class="region-detail" cx="500" cy="724" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="376" cy="620" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="648" cy="620" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="386" cy="684" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="638" cy="684" rx="9" ry="7"/>
+</svg>

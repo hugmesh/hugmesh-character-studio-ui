@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cbc6be)}.region-accent{fill:var(--region-accent,#e2ddd3)}.region-detail{fill:var(--region-detail,#a2c298)}.region-line{fill:none;stroke:var(--region-line,#6b655f);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Stone Golem head: rocky crown plates, mossy tuft, soft crack seam; plate blush on the cheek slabs -->
+  <circle class="region-accent" cx="398" cy="182" r="66"/>
+  <circle class="region-accent" cx="628" cy="184" r="62"/>
+  <circle class="region-accent" cx="512" cy="148" r="78"/>
+  <path class="region-detail" d="M448 96 Q464 58 494 82 Q510 48 540 78 Q568 54 580 92 Q550 116 512 114 Q476 116 448 96 Z"/>
+  <circle class="region-detail" cx="430" cy="122" r="11"/>
+  <circle class="region-detail" cx="596" cy="118" r="10"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-accent" d="M428 176 Q512 156 596 176 Q608 214 598 246 Q512 226 426 246 Q416 214 428 176 Z"/>
+  <rect class="region-accent" x="312" y="368" width="60" height="48" rx="22"/>
+  <rect class="region-accent" x="652" y="368" width="60" height="48" rx="22"/>
+  <rect class="region-accent" x="470" y="486" width="84" height="30" rx="15"/>
+  <path class="region-line" d="M624 178 q16 20 4 38 q-10 16 6 30"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:var(--region-line,#4a3526)}.region-detail{fill:var(--region-detail,#c96a7a)}</style>
+  <!-- Happy open smile: dark open mouth, tongue, two little white fangs -->
+  <path class="region-line" d="M450 424 Q512 448 574 424 Q566 502 512 512 Q458 502 450 424 Z"/>
+  <path class="region-detail" d="M478 476 Q512 498 546 476 Q540 502 512 506 Q484 502 478 476 Z"/>
+  <polygon fill="#ffffff" points="466,430 492,437 478,464"/>
+  <polygon fill="#ffffff" points="558,430 532,437 546,464"/>
+</svg>

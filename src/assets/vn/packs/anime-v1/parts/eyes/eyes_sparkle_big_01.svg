@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#5ec4b8)}.region-detail{fill:var(--region-detail,#2b2438)}.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:18;stroke-linecap:round}</style>
+  <!-- Sparkle anime eyes: huge dewy iris packed with starburst glints and twinkles -->
+  <ellipse fill="#ffffff" cx="440" cy="308" rx="47" ry="55"/>
+  <ellipse fill="#ffffff" cx="584" cy="308" rx="47" ry="55"/>
+  <ellipse class="region-iris" cx="440" cy="312" rx="38" ry="52"/>
+  <ellipse class="region-iris" cx="584" cy="312" rx="38" ry="52"/>
+  <ellipse class="region-detail" cx="440" cy="316" rx="22" ry="32"/>
+  <ellipse class="region-detail" cx="584" cy="316" rx="22" ry="32"/>
+  <polygon fill="#ffffff" points="424,258 431,281 454,288 431,295 424,318 417,295 394,288 417,281"/>
+  <polygon fill="#ffffff" points="600,258 607,281 630,288 607,295 600,318 593,295 570,288 593,281"/>
+  <polygon fill="#ffffff" points="456,326 459,333 466,336 459,339 456,346 453,339 446,336 453,333"/>
+  <polygon fill="#ffffff" points="568,326 571,333 578,336 571,339 568,346 565,339 558,336 565,333"/>
+  <circle fill="#ffffff" cx="452" cy="298" r="5"/>
+  <circle fill="#ffffff" cx="596" cy="298" r="5"/>
+  <ellipse fill="#ffffff" cx="440" cy="352" rx="14" ry="6"/>
+  <ellipse fill="#ffffff" cx="584" cy="352" rx="14" ry="6"/>
+  <path class="region-line" d="M486 258 q-50 -20 -90 20 l-6 12"/>
+  <path class="region-line" d="M538 258 q50 -20 90 20 l6 12"/>
+  <path class="region-line" d="M408 362 q26 12 52 4"/>
+  <path class="region-line" d="M616 362 q-26 12 -52 4"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7a5c40)}.region-accent{fill:var(--region-accent,#dcc9a8)}.region-detail{fill:var(--region-detail,#3c2b20)}</style>
+  <!-- Sleek mustelid body: long low-shouldered tube torso, short close-set limbs with dark mustelid paws and feet, cream throat-to-belly stripe running the whole length -->
+  <path class="region-fur" d="M474 494 Q512 484 550 494 L556 552 Q512 566 468 552 Z"/>
+  <path class="region-fur" d="M462 534 Q430 560 428 640 Q426 730 444 786 Q470 830 512 836 Q554 830 580 786 Q598 730 596 640 Q594 560 562 534 Q512 516 462 534 Z"/>
+  <path class="region-fur" d="M446 560 Q414 580 410 640 L406 690 Q408 714 432 716 Q454 712 454 690 L458 620 Q460 580 446 560 Z"/>
+  <path class="region-fur" d="M578 560 Q610 580 614 640 L618 690 Q616 714 592 716 Q570 712 570 690 L566 620 Q564 580 578 560 Z"/>
+  <path class="region-detail" d="M408 686 Q402 716 424 724 Q450 726 456 702 Q454 688 452 682 Q430 674 408 686 Z"/>
+  <path class="region-detail" d="M616 686 Q622 716 600 724 Q574 726 568 702 Q570 688 572 682 Q594 674 616 686 Z"/>
+  <path class="region-fur" d="M452 812 Q436 856 446 896 L452 918 L508 918 Q510 894 496 872 Q486 844 490 816 Z"/>
+  <path class="region-fur" d="M572 812 Q588 856 578 896 L572 918 L516 918 Q514 894 528 872 Q538 844 534 816 Z"/>
+  <path class="region-detail" d="M440 912 Q430 938 452 944 L512 944 Q522 930 512 916 Q476 906 440 912 Z"/>
+  <path class="region-detail" d="M584 912 Q594 938 572 944 L512 944 Q502 930 512 916 Q548 906 584 912 Z"/>
+  <path class="region-accent" d="M480 540 Q512 530 544 540 Q560 640 552 740 Q534 790 512 794 Q490 790 472 740 Q464 640 480 540 Z"/>
+  <path class="region-accent" d="M482 498 Q512 490 542 498 L546 534 Q512 544 478 534 Z"/>
+</svg>

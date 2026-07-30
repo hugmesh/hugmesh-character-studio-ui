@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:none;stroke:var(--region-detail,#b59872);stroke-width:20;stroke-linecap:round}.region-fur{fill:var(--region-fur,#a97d4e)}</style>
+  <!-- Branching deer antlers: main beams sweeping up and out from furred burrs, each with a brow tine and two upper tines. -->
+  <circle class="region-fur" cx="438" cy="222" r="24"/>
+  <circle class="region-fur" cx="586" cy="222" r="24"/>
+  <path class="region-detail" d="M438 220 C425 160 400 105 350 55"/>
+  <path class="region-detail" d="M430 180 C448 158 460 140 464 118"/>
+  <path class="region-detail" d="M414 130 C392 112 372 104 344 102"/>
+  <path class="region-detail" d="M378 85 C395 60 405 45 408 22"/>
+  <path class="region-detail" d="M586 220 C599 160 624 105 674 55"/>
+  <path class="region-detail" d="M594 180 C576 158 564 140 560 118"/>
+  <path class="region-detail" d="M610 130 C632 112 652 104 680 102"/>
+  <path class="region-detail" d="M646 85 C629 60 619 45 616 22"/>
+</svg>

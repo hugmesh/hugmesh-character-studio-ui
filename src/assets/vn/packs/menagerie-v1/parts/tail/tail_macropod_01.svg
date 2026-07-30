@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5854f)}.region-accent{fill:var(--region-accent,#e6cba4)}.region-detail{fill:var(--region-detail,#6b4226)}</style>
+  <!-- Kangaroo tail: thick muscular balance tail sweeping from the hip down to rest along the ground, hip fluff, top fur creases, pale underside band and darker tip -->
+  <path class="region-fur" d="M616 660 Q700 692 772 768 Q838 840 904 872 Q936 890 930 920 Q920 944 886 938 Q796 918 716 848 Q636 778 598 718 Q584 686 616 660 Z"/>
+  <path class="region-fur" d="M604 668 Q580 660 566 672 Q582 680 594 694 Q578 694 568 704 Q588 710 602 724 L616 700 Z"/>
+  <path class="region-accent" d="M642 756 Q718 838 806 894 Q862 926 892 932 Q848 936 786 910 Q700 862 630 782 Q622 764 642 756 Z"/>
+  <path class="region-detail" d="M668 690 Q690 712 706 736 Q684 716 662 700 Z"/>
+  <path class="region-detail" d="M742 750 Q766 774 780 796 Q756 778 734 760 Z"/>
+  <path class="region-detail" d="M818 812 Q842 834 858 850 Q834 836 810 822 Z"/>
+  <path class="region-accent" d="M700 812 Q744 852 794 884 Q752 866 712 836 Q700 826 700 812 Z"/>
+  <path class="region-accent" d="M622 742 Q648 776 682 808 Q644 786 618 754 Q614 744 622 742 Z"/>
+  <path class="region-detail" d="M862 850 Q882 862 894 872 Q874 866 854 858 Z"/>
+  <path class="region-detail" d="M884 878 Q926 896 924 922 Q916 942 886 936 Q862 926 858 902 Q866 882 884 878 Z"/>
+</svg>

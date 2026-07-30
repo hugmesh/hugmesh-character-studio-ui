@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hugmesh.internal/schemas/vn-part-manifest-v2.json",
+  "title": "VN PartManifest v2 (SVG-driven)",
+  "description": "Schema for a character-studio asset pack (pack.json) — SVG parts, class-based recolor, head↔feature taxonomy. See hugmesh-vn-character-studio-v2 §1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["packId", "version", "displayName", "canvas", "slots"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "packId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "version": { "type": "string" },
+    "displayName": { "type": "string" },
+    "licenseSpdx": { "type": "string" },
+    "attribution": { "type": "string" },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "slots": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/slot" } },
+    "expressionSlots": {
+      "type": "array",
+      "description": "OPTIONAL — slots an expression may override (e.g. eyes/brows/mouth). Packs without expressions omit this.",
+      "items": { "type": "string" }
+    },
+    "expressions": {
+      "type": "array",
+      "description": "OPTIONAL — index of expression presets. Each entry points to an expressions/<id>.json file naming slot→partId overrides. Packs without expressions omit this.",
+      "items": { "$ref": "#/definitions/expressionEntry" }
+    }
+  },
+  "definitions": {
+    "expressionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+        "path": { "type": "string", "pattern": "\\.json$" }
+      }
+    },
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "offset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+    },
+    "tintRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region", "svgClass", "defaultPalette"],
+      "properties": {
+        "region": { "type": "string" },
+        "svgClass": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "defaultPalette": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      }
+    },
+    "part": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "displayName", "file"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "displayName": { "type": "string" },
+        "file": { "type": "string", "pattern": "\\.svg$" },
+        "tintRegions": { "type": "array", "items": { "$ref": "#/definitions/tintRegion" } },
+        "anchorOverride": { "oneOf": [{ "$ref": "#/definitions/anchor" }, { "type": "null" }] },
+        "offset": { "$ref": "#/definitions/offset" },
+        "category": { "type": "string", "enum": ["base", "head", "eyes", "hair", "clothing", "feature", "accessory"] },
+        "headArchetype": { "type": "string" },
+        "compatibleHeads": { "type": "array", "items": { "type": "string" } },
+        "requires": { "type": "array", "items": { "type": "string" } },
+        "origin": { "type": "string", "enum": ["pack", "user-drawn"] },
+        "source": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slot", "zOrder", "required", "anchor", "parts"],
+      "properties": {
+        "slot": { "type": "string" },
+        "zOrder": { "type": "integer" },
+        "required": { "type": "boolean" },
+        "anchor": { "$ref": "#/definitions/anchor" },
+        "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/part" } }
+      }
+    }
+  }
+}

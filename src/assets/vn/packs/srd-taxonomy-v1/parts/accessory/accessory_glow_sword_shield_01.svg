@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#c3bbdf)}.region-clothtrim{fill:var(--region-clothtrim,#eeecf7)}.region-iris{fill:var(--region-iris,#6ec1e4)}</style>
+  <!-- Paladin glow set (SRD 5.1): pastel-glow longsword with halo core and sparkle motes, heater shield with radiant star sigil -->
+  <rect class="region-iris" x="708" y="368" width="120" height="330" rx="58" opacity="0.4"/>
+  <path class="region-clothtrim" d="M734 500 Q734 442 750 414 Q758 400 768 400 Q778 400 786 414 Q802 442 802 500 L802 648 Q802 658 792 658 L744 658 Q734 658 734 648 Z"/>
+  <rect class="region-iris" x="760" y="446" width="16" height="180" rx="8"/>
+  <rect class="region-cloth" x="704" y="644" width="128" height="42" rx="21"/>
+  <rect class="region-cloth" x="750" y="682" width="36" height="66" rx="18"/>
+  <circle class="region-iris" cx="768" cy="766" r="20"/>
+  <circle class="region-iris" cx="688" cy="416" r="9"/>
+  <circle class="region-iris" cx="848" cy="486" r="7"/>
+  <circle class="region-iris" cx="696" cy="584" r="6"/>
+  <path class="region-cloth" d="M208 528 Q288 546 368 528 Q372 646 300 764 Q288 782 276 764 Q204 646 208 528 Z"/>
+  <path class="region-clothtrim" d="M226 546 Q288 560 350 546 Q352 640 294 738 Q288 748 282 738 Q224 640 226 546 Z"/>
+  <path class="region-iris" d="M288 566 Q298 606 336 618 Q298 630 288 670 Q278 630 240 618 Q278 606 288 566 Z"/>
+</svg>

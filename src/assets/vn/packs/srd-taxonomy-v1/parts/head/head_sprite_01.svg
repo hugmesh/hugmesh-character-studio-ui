@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f6e4ee)}.region-hair{fill:var(--region-hair,#cfe0f5)}.region-detail{fill:var(--region-detail,#b79ad1)}.region-line{fill:none;stroke:var(--region-line,#6b5566);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sprite (SRD 5.1) head: petal hair crown (hair region), curled antennae with drop tips, dainty tiny features -->
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="332" cy="392" r="38"/>
+  <circle class="region-fur" cx="692" cy="392" r="38"/>
+  <path class="region-hair" d="M512 214 Q478 108 512 40 Q546 108 512 214 Z"/>
+  <path class="region-hair" d="M462 224 Q396 130 420 58 Q470 96 488 216 Z"/>
+  <path class="region-hair" d="M562 224 Q628 130 604 58 Q554 96 536 216 Z"/>
+  <path class="region-hair" d="M414 252 Q322 200 320 122 Q388 138 434 240 Z"/>
+  <path class="region-hair" d="M610 252 Q702 200 704 122 Q636 138 590 240 Z"/>
+  <path class="region-hair" d="M320 322 Q326 168 512 152 Q698 168 704 322 Q652 252 512 246 Q372 252 320 322 Z"/>
+  <path class="region-line" d="M478 148 Q462 76 404 62"/>
+  <path class="region-line" d="M546 148 Q562 76 620 62"/>
+  <circle class="region-detail" cx="404" cy="62" r="12"/>
+  <circle class="region-detail" cx="620" cy="62" r="12"/>
+  <circle class="region-detail" cx="512" cy="398" r="6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

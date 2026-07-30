@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#3a2d1c)}</style>
+  <!-- Bee stripes: three broad curved abdomen bands across the torso with small fuzzy flank wedges -->
+  <path class="region-detail" d="M392 578 Q512 556 632 578 Q638 596 632 612 Q512 636 392 612 Q386 596 392 578 Z"/>
+  <path class="region-detail" d="M384 646 Q512 624 640 646 Q648 666 640 686 Q512 708 384 686 Q376 666 384 646 Z"/>
+  <path class="region-detail" d="M400 716 Q512 696 624 716 Q630 734 624 752 Q512 772 400 752 Q394 734 400 716 Z"/>
+  <path class="region-detail" d="M380 586 Q362 592 352 604 Q368 606 384 602 Z"/>
+  <path class="region-detail" d="M644 586 Q662 592 672 604 Q656 606 640 602 Z"/>
+  <path class="region-detail" d="M372 654 Q352 660 342 674 Q360 676 378 672 Z"/>
+  <path class="region-detail" d="M652 654 Q672 660 682 674 Q664 676 646 672 Z"/>
+  <path class="region-detail" d="M394 724 Q376 730 368 742 Q384 744 398 740 Z"/>
+  <path class="region-detail" d="M630 724 Q648 730 656 742 Q640 744 626 740 Z"/>
+</svg>

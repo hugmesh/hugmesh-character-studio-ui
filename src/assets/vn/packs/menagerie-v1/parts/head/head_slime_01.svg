@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#78d178)}.region-accent{fill:var(--region-accent,#b9f0b3)}.region-detail{fill:var(--region-detail,#f0fdee)}</style>
+  <!-- Slime head: glossy translucent-look blob with drippy bottom edge, inner-glow accent blob, gloss swooshes, one bubble suspended in the goo, two detached falling drops -->
+  <path class="region-fur" d="M312 340 Q310 190 440 140 Q512 116 584 140 Q714 190 712 340 Q710 420 664 470 L664 514 Q664 542 642 542 Q620 542 620 512 L620 488 Q592 504 558 510 L558 556 Q558 584 535 584 Q512 584 512 554 L512 514 Q470 512 436 498 L436 534 Q436 560 415 560 Q394 560 394 530 L394 478 Q330 440 312 340 Z"/>
+  <ellipse class="region-fur" cx="558" cy="622" rx="11" ry="16"/>
+  <ellipse class="region-fur" cx="415" cy="596" rx="8" ry="12"/>
+  <path class="region-accent" d="M402 412 Q402 348 512 344 Q622 348 622 412 Q622 470 512 478 Q402 470 402 412 Z"/>
+  <path class="region-accent" d="M382 208 Q420 156 488 146 Q432 178 404 226 Q384 246 382 208 Z"/>
+  <circle class="region-accent" cx="520" cy="150" r="10"/>
+  <circle class="region-accent" cx="560" cy="164" r="6"/>
+  <circle class="region-accent" cx="392" cy="292" r="7"/>
+  <ellipse class="region-fur" cx="648" cy="566" rx="6" ry="9"/>
+  <circle class="region-detail" cx="612" cy="224" r="15"/>
+</svg>

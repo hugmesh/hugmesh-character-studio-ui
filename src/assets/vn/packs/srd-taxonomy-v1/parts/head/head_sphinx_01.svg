@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2d7a4)}.region-accent{fill:var(--region-accent,#faeed2)}.region-detail{fill:var(--region-detail,#d9a860)}.region-hair{fill:var(--region-hair,#aac4e6)}</style>
+  <!-- Sphinx (SRD 5.1) head: nemes crown cap + clean side flap panels (hair) with rounded gold bands, gold brow arc, lion-cub muzzle -->
+  <path class="region-hair" d="M512 78 Q688 86 718 214 Q726 254 698 268 Q622 208 512 206 Q402 208 326 268 Q298 254 306 214 Q336 86 512 78 Z"/>
+  <path class="region-hair" d="M334 214 Q268 240 256 336 Q246 442 272 538 Q286 580 332 568 Q358 558 354 518 Q336 432 344 340 Q350 262 334 214 Z"/>
+  <path class="region-hair" d="M690 214 Q756 240 768 336 Q778 442 752 538 Q738 580 692 568 Q666 558 670 518 Q688 432 680 340 Q674 262 690 214 Z"/>
+  <ellipse class="region-detail" cx="295" cy="436" rx="44" ry="14"/>
+  <ellipse class="region-detail" cx="300" cy="488" rx="44" ry="14"/>
+  <ellipse class="region-detail" cx="308" cy="540" rx="38" ry="13"/>
+  <ellipse class="region-detail" cx="729" cy="436" rx="44" ry="14"/>
+  <ellipse class="region-detail" cx="724" cy="488" rx="44" ry="14"/>
+  <ellipse class="region-detail" cx="716" cy="540" rx="38" ry="13"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-detail" d="M368 200 Q512 122 656 200 Q662 166 640 144 Q512 88 384 144 Q362 166 368 200 Z"/>
+  <circle class="region-accent" cx="482" cy="428" r="35"/>
+  <circle class="region-accent" cx="542" cy="428" r="35"/>
+  <path class="region-detail" d="M494 390 Q512 382 530 390 Q526 401 512 404 Q498 401 494 390 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

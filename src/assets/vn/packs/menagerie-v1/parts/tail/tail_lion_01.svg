@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c99a56)}.region-accent{fill:var(--region-accent,#8a5a2e)}</style>
+  <!-- Lion tail: thin rope tail curving up behind the hip, ending in a spiky dark tuft with loose wisps -->
+  <path class="region-fur" d="M634 738 C 726 756 794 728 814 656 C 828 610 828 552 820 498 L 792 504 C 800 556 798 616 786 652 C 770 702 706 718 628 704 Z"/>
+  <path class="region-fur" d="M640 700 L604 740 L656 748 Z"/>
+  <polygon class="region-accent" points="873,478 842,492 846,526 818,506 790,526 794,492 763,478 794,464 790,430 818,450 846,430 842,464"/>
+  <path class="region-accent" d="M818 448 L800 396 L848 414 Z"/>
+  <path class="region-accent" d="M844 510 L892 528 L852 548 Z"/>
+</svg>

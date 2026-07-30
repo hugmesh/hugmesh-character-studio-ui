@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:16;stroke-linecap:round}</style>
+  <!-- Sad anime brows: worried slope, inner ends tilted up toward the center -->
+  <path class="region-line" d="M394 260 q50 -4 92 -26"/>
+  <path class="region-line" d="M630 260 q-50 -4 -92 -26"/>
+</svg>

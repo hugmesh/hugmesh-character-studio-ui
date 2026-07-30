@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#3a3f4b)}.region-iris{fill:var(--region-iris,#4de3e1)}.region-detail{fill:var(--region-detail,#1f232c)}</style>
+  <!-- Synth LED ear-fins: twin angular chassis blades per side with glowing inset stripes (iris) and dark joint mounts (detail) -->
+  <polygon class="region-fur" points="346,262 226,150 352,204"/>
+  <polygon class="region-iris" points="338,240 262,166 340,212"/>
+  <polygon class="region-fur" points="368,236 302,64 430,148"/>
+  <polygon class="region-iris" points="372,214 324,96 408,152"/>
+  <polygon class="region-detail" points="352,244 398,214 412,252 370,272"/>
+  <polygon class="region-fur" points="678,262 798,150 672,204"/>
+  <polygon class="region-iris" points="686,240 762,166 684,212"/>
+  <polygon class="region-fur" points="656,236 722,64 594,148"/>
+  <polygon class="region-iris" points="652,214 700,96 616,152"/>
+  <polygon class="region-detail" points="672,244 626,214 612,252 654,272"/>
+</svg>

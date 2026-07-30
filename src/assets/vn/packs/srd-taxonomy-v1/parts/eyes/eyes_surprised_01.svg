@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Surprised eyes: huge round startled irises, shrunk pupils, no lid at all -->
+  <ellipse class="region-iris" cx="446" cy="348" rx="54" ry="66"/>
+  <ellipse class="region-iris" cx="578" cy="348" rx="54" ry="66"/>
+  <circle class="region-detail" cx="446" cy="350" r="11"/>
+  <circle class="region-detail" cx="578" cy="350" r="11"/>
+  <circle fill="#ffffff" cx="426" cy="314" r="16"/>
+  <circle fill="#ffffff" cx="558" cy="314" r="16"/>
+  <circle fill="#ffffff" cx="468" cy="384" r="6"/>
+  <circle fill="#ffffff" cx="600" cy="384" r="6"/>
+</svg>

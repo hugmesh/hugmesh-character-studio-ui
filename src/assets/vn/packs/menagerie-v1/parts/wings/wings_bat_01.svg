@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#66597a)}.region-accent{fill:var(--region-accent,#dcb8c6)}.region-detail{fill:var(--region-detail,#2e2536)}</style>
+  <!-- Bat membrane wings: long arm and three finger bones over deeply scalloped stretched membrane, hooked thumb claws at the wrists -->
+  <path class="region-accent" d="M408 470 Q328 352 252 238 L104 402 Q204 478 150 576 Q252 604 264 686 Q340 702 408 642 Z"/>
+  <path class="region-accent" d="M616 470 Q696 352 772 238 L920 402 Q820 478 874 576 Q772 604 760 686 Q684 702 616 642 Z"/>
+  <path class="region-fur" d="M408 452 Q324 344 246 242 L228 260 Q306 360 392 480 Z"/>
+  <path class="region-fur" d="M244 234 L106 396 L122 408 L258 250 Z"/>
+  <path class="region-fur" d="M242 240 L140 570 L156 574 L258 256 Z"/>
+  <path class="region-fur" d="M246 246 L256 682 L272 678 L262 256 Z"/>
+  <path class="region-fur" d="M616 452 Q700 344 778 242 L796 260 Q718 360 632 480 Z"/>
+  <path class="region-fur" d="M780 234 L918 396 L902 408 L766 250 Z"/>
+  <path class="region-fur" d="M782 240 L884 570 L868 574 L766 256 Z"/>
+  <path class="region-fur" d="M778 246 L768 682 L752 678 L762 256 Z"/>
+  <path class="region-detail" d="M240 232 L214 182 L258 202 Z"/>
+  <path class="region-detail" d="M784 232 L810 182 L766 202 Z"/>
+</svg>

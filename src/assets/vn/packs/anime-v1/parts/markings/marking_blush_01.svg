@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f2a0a0)}.region-line{fill:none;stroke:var(--region-line,#d97f7f);stroke-width:8;stroke-linecap:round}</style>
+  <!-- Cheek blush: soft accent ovals with anime-style diagonal hatch strokes, sits below the eye line -->
+  <ellipse class="region-accent" cx="420" cy="370" rx="38" ry="17"/>
+  <ellipse class="region-accent" cx="604" cy="370" rx="38" ry="17"/>
+  <path class="region-line" d="M404 358 l-10 24"/>
+  <path class="region-line" d="M422 358 l-10 24"/>
+  <path class="region-line" d="M440 358 l-10 24"/>
+  <path class="region-line" d="M458 360 l-10 22"/>
+  <path class="region-line" d="M576 360 l-10 22"/>
+  <path class="region-line" d="M594 358 l-10 24"/>
+  <path class="region-line" d="M612 358 l-10 24"/>
+  <path class="region-line" d="M630 358 l-10 24"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6fae52)}.region-accent{fill:var(--region-accent,#f2b6c6)}.region-detail{fill:var(--region-detail,#46752f)}</style>
+  <!-- Leafy sprout crown: central stem on the crown of the head with two big arcing leaves, a small pink bud at the tip, leaf midrib veins, and two little side leaves -->
+  <path class="region-detail" d="M506 172 Q502 128 512 96 Q522 128 518 172 Z"/>
+  <path class="region-fur" d="M500 150 Q420 140 380 84 Q368 66 390 62 Q450 52 496 96 Q514 118 500 150 Z"/>
+  <path class="region-fur" d="M524 150 Q604 140 644 84 Q656 66 634 62 Q574 52 528 96 Q510 118 524 150 Z"/>
+  <path class="region-detail" d="M494 142 Q446 118 402 78 Q450 106 498 130 Z"/>
+  <path class="region-detail" d="M530 142 Q578 118 622 78 Q574 106 526 130 Z"/>
+  <path class="region-accent" d="M512 60 Q534 84 524 106 Q518 118 512 118 Q506 118 500 106 Q490 84 512 60 Z"/>
+  <path class="region-fur" d="M496 108 Q512 126 528 108 Q524 130 512 132 Q500 130 496 108 Z"/>
+  <path class="region-fur" d="M470 168 Q436 160 420 136 Q444 138 466 152 Q476 160 470 168 Z"/>
+  <path class="region-fur" d="M556 170 Q590 162 606 138 Q582 140 560 154 Q550 162 556 170 Z"/>
+  <circle class="region-accent" cx="612" cy="130" r="7"/>
+</svg>

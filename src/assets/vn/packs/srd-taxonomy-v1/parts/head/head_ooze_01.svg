@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfe8c8)}.region-accent{fill:var(--region-accent,#e9f6e2)}.region-detail{fill:var(--region-detail,#a3cba6)}</style>
+  <!-- Ooze head: rounded cube-blob dome (reads as Gelatinous Cube when tinted mint), hanging drip nubs, floating bubble dots -->
+  <path class="region-fur" d="M310 496 Q300 182 512 168 Q724 182 714 496 Q712 544 656 540 Q600 550 512 546 Q424 550 368 540 Q312 544 310 496 Z"/>
+  <path class="region-fur" d="M700 218 q40 0 40 36 q0 30 -30 28 Z"/>
+  <path class="region-fur" d="M398 540 q-8 46 14 48 q22 2 16 -48 Z"/>
+  <path class="region-fur" d="M596 542 q-6 42 14 44 q20 2 14 -44 Z"/>
+  <circle class="region-accent" cx="424" cy="214" r="18"/>
+  <circle class="region-accent" cx="496" cy="182" r="12"/>
+  <circle class="region-accent" cx="588" cy="216" r="15"/>
+  <circle class="region-accent" cx="664" cy="368" r="13"/>
+  <circle class="region-accent" cx="356" cy="300" r="11"/>
+  <circle class="region-detail" cx="446" cy="252" r="8"/>
+  <circle class="region-detail" cx="628" cy="250" r="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

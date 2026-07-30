@@ -1,0 +1,610 @@
+{
+  "agent": "reptiles-dragons",
+  "parts": [
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_reptile_01",
+        "displayName": "Giant Lizard",
+        "file": "parts/head/head_reptile_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a8d8b9"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#d8eedd"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#4c6657"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "reptile",
+          "lizard",
+          "giant-lizard",
+          "crocodile",
+          "giant-crocodile",
+          "snake",
+          "constrictor-snake",
+          "giant-constrictor-snake",
+          "poisonous-snake",
+          "giant-poisonous-snake",
+          "flying-snake",
+          "salamander",
+          "troglodyte",
+          "sahuagin",
+          "homunculus"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_dragonborn_01",
+        "displayName": "Dragonborn",
+        "file": "parts/head/head_dragonborn_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#e2c4a4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f4e3cd"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#b08a66"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#6a513f"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "race",
+          "draconic",
+          "dragonborn",
+          "scales"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_kobold_01",
+        "displayName": "Kobold",
+        "file": "parts/head/head_kobold_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#eec3a5"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#fae1cc"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#c9906c"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#6e4a3a"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "humanoid-monster",
+          "kobold",
+          "draconic",
+          "ear-frills",
+          "horn-nubs"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_lizardfolk_01",
+        "displayName": "Lizardfolk",
+        "file": "parts/head/head_lizardfolk_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#b7d3a4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#dcead0"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#7c9b6b"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#4f6247"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "humanoid-monster",
+          "lizardfolk",
+          "troglodyte",
+          "sahuagin",
+          "crest"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_dragon_01",
+        "displayName": "Chromatic Dragon",
+        "file": "parts/head/head_dragon_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f2b6b6"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#fbdada"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#e8d3ae"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#71525c"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "dragon",
+          "chromatic",
+          "black-dragon",
+          "blue-dragon",
+          "green-dragon",
+          "red-dragon",
+          "white-dragon",
+          "wyvern",
+          "pseudodragon",
+          "tarrasque"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_dragon_metallic_01",
+        "displayName": "Metallic Dragon",
+        "file": "parts/head/head_dragon_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f2dfa8"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#faf0d2"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#d9bd7e"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#6e5f42"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "dragon",
+          "metallic",
+          "brass-dragon",
+          "bronze-dragon",
+          "copper-dragon",
+          "gold-dragon",
+          "silver-dragon",
+          "dragon-turtle",
+          "wyvern",
+          "pseudodragon"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_naga_01",
+        "displayName": "Naga",
+        "file": "parts/head/head_naga_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#cbb4e4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#e9def7"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#967cc0"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#5c4a72"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "monstrosity",
+          "naga",
+          "spirit-naga",
+          "guardian-naga",
+          "cobra",
+          "snake",
+          "marilith",
+          "purple-worm"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_couatl_01",
+        "displayName": "Couatl",
+        "file": "parts/head/head_couatl_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a9dccf"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f4c6d4"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#f0dfa2"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#4f6a62"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "celestial",
+          "couatl",
+          "feathered-serpent",
+          "flying-snake",
+          "rainbow"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_trex_01",
+        "displayName": "Tyrannosaurus Rex",
+        "file": "parts/head/head_trex_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a6d8bf"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#dcf1e3"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#5f8a76"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "dinosaur",
+          "tyrannosaurus-rex",
+          "triceratops",
+          "plesiosaurus",
+          "aboleth",
+          "hezrou",
+          "big-jaw"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_hydra_01",
+        "displayName": "Hydra",
+        "file": "parts/head/head_hydra_01.svg",
+        "category": "head",
+        "headArchetype": "reptile",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#aacfdd"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#d6e9f0"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#6f93a6"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#4a5f6e"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "monstrosity",
+          "hydra",
+          "multi-headed",
+          "kraken",
+          "chimera"
+        ]
+      }
+    },
+    {
+      "slot": "body",
+      "part": {
+        "id": "body_reptile_01",
+        "displayName": "Reptile",
+        "file": "parts/body/body_reptile_01.svg",
+        "category": "base",
+        "compatibleHeads": [
+          "*"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a8d8b9"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#e7f2d9"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#6fa287"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#4c6657"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "reptile",
+          "lizard",
+          "belly-plate",
+          "tail-nub"
+        ]
+      }
+    },
+    {
+      "slot": "body",
+      "part": {
+        "id": "body_dragonborn_01",
+        "displayName": "Dragonborn",
+        "file": "parts/body/body_dragonborn_01.svg",
+        "category": "base",
+        "compatibleHeads": [
+          "*"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#e2c4a4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f4e3cd"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#b08a66"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "race",
+          "draconic",
+          "dragonborn",
+          "chest-plates"
+        ]
+      }
+    },
+    {
+      "slot": "tail",
+      "part": {
+        "id": "tail_draconic_01",
+        "displayName": "Draconic Tail",
+        "file": "parts/tail/tail_draconic_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "*"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a8d8b9"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#d8eedd"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#6fa287"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "dragon",
+          "draconic",
+          "tail",
+          "tail-spade",
+          "dragonborn",
+          "kobold",
+          "lizardfolk"
+        ]
+      }
+    },
+    {
+      "slot": "wings",
+      "part": {
+        "id": "wings_dragon_01",
+        "displayName": "Dragon Wings",
+        "file": "parts/wings/wings_dragon_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "*"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#c9b6e0"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#ecdff7"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#7a6694"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "dragon",
+          "wings",
+          "wyvern",
+          "pseudodragon",
+          "draconic"
+        ]
+      }
+    },
+    {
+      "slot": "feature",
+      "part": {
+        "id": "feature_frill_01",
+        "displayName": "Head Frill",
+        "file": "parts/feature/feature_frill_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "reptile"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f4b8a4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#fbdccd"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#8a5a4c"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "reptile",
+          "frill",
+          "fin",
+          "crest"
+        ]
+      }
+    }
+  ]
+}

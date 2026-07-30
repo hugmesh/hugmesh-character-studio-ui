@@ -1,0 +1,9 @@
+{
+  "id": "sad",
+  "displayName": "Sad",
+  "slots": {
+    "eyes": "eyes_sad_01",
+    "brows": "brows_sad_01",
+    "mouth": "mouth_sad_01"
+  }
+}

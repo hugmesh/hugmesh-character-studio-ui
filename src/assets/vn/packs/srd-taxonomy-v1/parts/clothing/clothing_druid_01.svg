@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#bccf9f)}.region-clothtrim{fill:var(--region-clothtrim,#dfeacc)}.region-iris{fill:var(--region-iris,#d96a6a)}.region-line{fill:none;stroke:var(--region-line,#6b5a48);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Druid bark-and-leaf robe (SRD 5.1): leaf collar with berry clasp, bark seam lines and knothole, leafy scalloped hem -->
+  <path class="region-cloth" d="M378 514 Q346 650 360 786 Q384 832 410 790 Q438 836 466 792 Q494 838 512 792 Q540 838 568 790 Q596 834 622 788 Q646 830 664 784 Q678 650 646 514 Q512 546 378 514 Z"/>
+  <path class="region-line" d="M432 604 Q450 662 438 722"/>
+  <path class="region-line" d="M588 596 Q604 654 594 716"/>
+  <path class="region-line" d="M512 648 Q520 700 510 752"/>
+  <circle class="region-line" cx="548" cy="672" r="11"/>
+  <path class="region-clothtrim" d="M424 536 Q398 574 428 600 Q456 576 442 538 Q434 528 424 536 Z"/>
+  <path class="region-clothtrim" d="M470 548 Q452 592 486 612 Q510 584 494 546 Q482 536 470 548 Z"/>
+  <path class="region-clothtrim" d="M500 550 Q488 596 512 618 Q536 596 524 550 Q512 538 500 550 Z"/>
+  <path class="region-clothtrim" d="M554 548 Q572 592 538 612 Q514 584 530 546 Q542 536 554 548 Z"/>
+  <path class="region-clothtrim" d="M600 536 Q626 574 596 600 Q568 576 582 538 Q590 528 600 536 Z"/>
+  <circle class="region-iris" cx="512" cy="548" r="9"/>
+  <circle class="region-iris" cx="497" cy="560" r="8"/>
+  <circle class="region-iris" cx="527" cy="560" r="8"/>
+</svg>

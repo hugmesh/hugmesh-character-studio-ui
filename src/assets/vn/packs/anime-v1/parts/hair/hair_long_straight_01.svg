@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#3a3a4c)}.region-accent{fill:var(--region-accent,#5c5c78)}</style>
+  <!-- Long straight hair: crown dome, soft pointed bangs, two shoulder-length curtains with jagged tips, vertical sheen streaks. -->
+  <path class="region-hair" d="M306 380 Q298 108 512 92 Q726 108 718 380 Q704 238 512 212 Q320 238 306 380 Z"/>
+  <path class="region-hair" d="M306 250 Q278 340 270 480 Q264 620 278 724 L316 698 L338 732 L368 690 Q352 560 356 420 Q360 320 372 268 Q336 218 306 250 Z"/>
+  <path class="region-hair" d="M718 250 Q746 340 754 480 Q760 620 746 724 L708 698 L686 732 L656 690 Q672 560 668 420 Q664 320 652 268 Q688 218 718 250 Z"/>
+  <path class="region-hair" d="M358 230 Q368 266 394 288 Q408 240 402 194 Q376 206 358 230 Z"/>
+  <path class="region-hair" d="M398 198 Q420 258 448 280 Q464 234 458 180 Q426 182 398 198 Z"/>
+  <path class="region-hair" d="M452 182 Q480 248 512 286 Q542 244 548 178 Q498 164 452 182 Z"/>
+  <path class="region-hair" d="M544 180 Q562 240 582 280 Q610 256 628 198 Q586 178 544 180 Z"/>
+  <path class="region-hair" d="M622 200 Q638 252 632 288 Q658 264 666 232 Q650 206 622 200 Z"/>
+  <path class="region-accent" d="M300 340 Q290 500 298 650 Q312 502 316 350 Q310 322 300 340 Z"/>
+  <path class="region-accent" d="M724 340 Q734 500 726 650 Q712 502 708 350 Q714 322 724 340 Z"/>
+  <path class="region-accent" d="M398 136 Q498 102 606 130 Q502 92 402 122 Z"/>
+</svg>

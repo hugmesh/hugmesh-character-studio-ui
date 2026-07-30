@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Angry mouth: wavy gritted-teeth line -->
+  <path class="region-line" d="M436 442Q460 428 484 442Q508 456 532 442Q556 428 580 442"/>
+</svg>

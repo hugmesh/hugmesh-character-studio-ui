@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+.pack-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pack-picker .name {
+  font-weight: 600;
+}
+
+.pack-picker select {
+  cursor: pointer;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  /* LIMIT: a long pack displayName never widens the header past a phone —
+   * the select clips internally (native behaviour) at this bound. */
+  max-width: min(60vw, 16rem);
+}

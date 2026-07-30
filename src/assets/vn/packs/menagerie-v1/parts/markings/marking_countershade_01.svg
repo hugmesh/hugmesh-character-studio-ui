@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Countershade marking: broad pale ventral panel from throat to hips with notched shoulder boundary, small transition speckles along each edge -->
+  <path class="region-accent" d="M512 456 Q560 458 590 492 Q576 502 588 516 Q604 540 612 588 Q620 664 610 700 Q594 746 512 756 Q430 746 414 700 Q404 664 412 588 Q420 540 436 516 Q448 502 434 492 Q464 458 512 456 Z"/>
+  <circle class="region-detail" cx="446" cy="532" r="8"/>
+  <circle class="region-detail" cx="578" cy="532" r="8"/>
+  <circle class="region-detail" cx="430" cy="586" r="7"/>
+  <circle class="region-detail" cx="594" cy="586" r="7"/>
+  <circle class="region-detail" cx="438" cy="652" r="7"/>
+  <circle class="region-detail" cx="586" cy="652" r="7"/>
+</svg>

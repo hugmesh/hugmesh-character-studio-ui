@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8d8078)}.region-accent{fill:var(--region-accent,#cfc3b8)}.region-detail{fill:var(--region-detail,#cf8f9b)}.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:8;stroke-linecap:round}</style>
+  <!-- Rat head: long pointed snout with pale bridge and pink nose, rounded bare ears, long whiskers -->
+  <circle class="region-fur" cx="380" cy="168" r="72"/>
+  <circle class="region-fur" cx="644" cy="168" r="72"/>
+  <circle class="region-detail" cx="382" cy="172" r="44"/>
+  <circle class="region-detail" cx="642" cy="172" r="44"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M446 420 q66 96 132 0 l-30 118 q-36 26 -72 0 z"/>
+  <path class="region-accent" d="M470 380 q42 -14 84 0 q-6 70 -42 96 q-36 -26 -42 -96 z"/>
+  <path class="region-detail" d="M494 452 q18 -8 36 0 q4 4 0 10 l-14 14 q-4 4 -8 0 l-14 -14 q-4 -6 0 -10 z"/>
+  <path class="region-line" d="M448 440 q-64 -4 -118 -22"/>
+  <path class="region-line" d="M452 462 q-60 10 -108 28"/>
+  <path class="region-line" d="M576 440 q64 -4 118 -22"/>
+  <path class="region-line" d="M572 462 q60 10 108 28"/>
+</svg>

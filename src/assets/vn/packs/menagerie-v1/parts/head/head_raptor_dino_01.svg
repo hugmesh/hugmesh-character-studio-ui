@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4f8f8b)}.region-accent{fill:var(--region-accent,#e0b64e)}.region-detail{fill:var(--region-detail,#2f5a57)}</style>
+  <!-- Dromaeosaur raptor head: sleek tapered snout, swept golden feather crest, keen cheek stripes, corner-teeth glint -->
+  <path class="region-accent" d="M420 232 L446 128 L478 192 L502 96 L528 190 L560 118 L586 196 L616 158 L620 240 Q512 170 420 232 Z"/>
+  <path class="region-detail" d="M436 246 Q512 196 606 250 L602 268 Q512 224 442 264 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M414 360 Q512 342 610 360 Q648 396 640 428 Q616 476 552 488 Q532 492 512 492 Q492 492 472 488 Q408 476 384 428 Q376 396 414 360 Z"/>
+  <path class="region-detail" d="M424 424 Q512 454 600 424 L600 438 Q512 468 424 438 Z"/>
+  <path class="region-accent" d="M446 438 L458 460 L470 440 Z"/>
+  <path class="region-accent" d="M554 440 L566 460 L578 438 Z"/>
+  <circle class="region-detail" cx="468" cy="380" r="8"/>
+  <circle class="region-detail" cx="556" cy="380" r="8"/>
+  <path class="region-detail" d="M362 318 Q398 332 424 358 L410 372 Q384 348 354 336 Z"/>
+  <path class="region-detail" d="M662 318 Q626 332 600 358 L614 372 Q640 348 670 336 Z"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b5aee3)}.region-clothtrim{fill:var(--region-clothtrim,#f0e4bc)}.region-line{fill:none;stroke:var(--region-line,#6d7fae);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Wizard robe (SRD 5.1) clothing: wide bell sleeves, gold star spangles, gold collar and hem trim -->
+  <path class="region-cloth" d="M330 566 Q340 516 424 506 Q512 528 600 506 Q684 516 694 566 Q712 730 688 860 Q646 888 512 888 Q378 888 336 860 Q312 730 330 566 Z"/>
+  <path class="region-cloth" d="M400 540 Q344 572 324 660 Q318 704 354 712 Q410 714 430 676 Q440 600 450 554 Z"/>
+  <path class="region-cloth" d="M624 540 Q680 572 700 660 Q706 704 670 712 Q614 714 594 676 Q584 600 574 554 Z"/>
+  <path class="region-clothtrim" d="M320 662 Q362 690 430 678 L426 712 Q364 724 324 700 Z"/>
+  <path class="region-clothtrim" d="M704 662 Q662 690 594 678 L598 712 Q660 724 700 700 Z"/>
+  <path class="region-clothtrim" d="M448 512 Q512 556 576 512 L576 542 Q512 586 448 542 Z"/>
+  <path class="region-clothtrim" d="M342 822 Q512 856 682 822 Q688 850 662 870 Q512 892 362 870 Q336 850 342 822 Z"/>
+  <path class="region-clothtrim" d="M470 618 Q476 646 504 650 Q476 654 470 682 Q464 654 436 650 Q464 646 470 618 Z"/>
+  <path class="region-clothtrim" d="M600 594 Q605 617 628 620 Q605 623 600 646 Q595 623 572 620 Q595 617 600 594 Z"/>
+  <path class="region-clothtrim" d="M540 712 Q546 738 572 742 Q546 746 540 772 Q534 746 508 742 Q534 738 540 712 Z"/>
+  <path class="region-line" d="M446 730 Q450 776 442 812"/>
+  <path class="region-line" d="M584 744 Q580 782 588 812"/>
+  <circle class="region-clothtrim" cx="452" cy="732" r="8"/>
+  <circle class="region-clothtrim" cx="580" cy="672" r="7"/>
+  <circle class="region-clothtrim" cx="512" cy="600" r="7"/>
+</svg>

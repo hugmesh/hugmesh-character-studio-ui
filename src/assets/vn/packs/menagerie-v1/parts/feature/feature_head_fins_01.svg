@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#bfe6ee)}</style>
+  <!-- Head fins: webbed fan fins flaring out from the ear position on each side, pale membrane with fin-ray spines -->
+  <path class="region-accent" d="M372 262 Q240 258 168 150 Q292 108 396 190 Q402 230 372 262 Z"/>
+  <path class="region-fur" d="M384 232 L190 148 L200 134 Z"/>
+  <path class="region-fur" d="M384 240 L212 196 L216 180 Z"/>
+  <path class="region-fur" d="M384 250 L252 240 L254 224 Z"/>
+  <ellipse class="region-fur" cx="386" cy="222" rx="28" ry="42" transform="rotate(24 386 222)"/>
+  <path class="region-accent" d="M652 262 Q784 258 856 150 Q732 108 628 190 Q622 230 652 262 Z"/>
+  <path class="region-fur" d="M640 232 L834 148 L824 134 Z"/>
+  <path class="region-fur" d="M640 240 L812 196 L808 180 Z"/>
+  <path class="region-fur" d="M640 250 L772 240 L770 224 Z"/>
+  <ellipse class="region-fur" cx="638" cy="222" rx="28" ry="42" transform="rotate(-24 638 222)"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b5aee3)}.region-clothtrim{fill:var(--region-clothtrim,#f0e4bc)}.region-iris{fill:var(--region-iris,#b48fe0)}.region-line{fill:none;stroke:var(--region-line,#6d7fae);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Wizard hat and staff (SRD 5.1) accessory: floppy bent-tip hat on the crown, gold band and star, gnarled pale-wood crook staff -->
+  <path class="region-cloth" d="M408 234 Q440 130 512 96 Q560 74 618 92 Q590 150 600 200 Q608 226 616 234 Q512 208 408 234 Z"/>
+  <path class="region-cloth" d="M560 88 Q610 58 664 82 Q700 102 690 138 Q676 160 652 150 Q668 128 650 114 Q622 96 578 106 Z"/>
+  <circle class="region-clothtrim" cx="684" cy="146" r="16"/>
+  <path class="region-cloth" d="M310 234 Q512 198 714 234 Q734 250 714 262 Q512 284 310 262 Q290 250 310 234 Z"/>
+  <path class="region-clothtrim" d="M406 226 Q512 202 620 226 L616 252 Q512 230 410 252 Z"/>
+  <path class="region-clothtrim" d="M512 138 Q516 156 534 160 Q516 164 512 182 Q508 164 490 160 Q508 156 512 138 Z"/>
+  <path class="region-clothtrim" d="M796 322 Q820 318 822 342 Q810 420 820 500 Q830 590 816 680 Q808 764 820 836 Q818 858 798 856 Q778 852 782 830 Q792 760 780 680 Q768 590 782 500 Q792 420 780 344 Q780 324 796 322 Z"/>
+  <path class="region-clothtrim" d="M798 326 Q760 296 774 254 Q790 218 836 226 Q872 238 864 278 Q858 306 828 302 Q846 282 838 260 Q826 240 800 250 Q784 262 792 288 Q796 306 812 314 Q806 322 798 326 Z"/>
+  <circle class="region-iris" cx="822" cy="268" r="18"/>
+  <path class="region-line" d="M786 480 Q800 486 812 480"/>
+  <path class="region-line" d="M790 640 Q804 646 816 640"/>
+</svg>

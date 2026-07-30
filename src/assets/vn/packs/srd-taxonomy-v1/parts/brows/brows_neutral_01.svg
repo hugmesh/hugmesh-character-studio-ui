@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:22;stroke-linecap:round}</style>
+  <!-- Neutral brows: short thick rounded strokes, gentle relaxed arc -->
+  <path class="region-line" d="M400 272Q446 258 492 268"/>
+  <path class="region-line" d="M532 268Q578 258 624 272"/>
+</svg>

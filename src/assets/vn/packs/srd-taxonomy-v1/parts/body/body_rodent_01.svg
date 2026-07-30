@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d3cbd8)}.region-accent{fill:var(--region-accent,#f2edf4)}.region-detail{fill:var(--region-detail,#f2c3cd)}</style>
+  <!-- Rodent body (SRD 5.1 rat kin): small round jellybean, pink mitten hand-paws, pink-soled feet -->
+  <path class="region-fur" d="M436 514 Q394 544 388 604 Q388 634 410 632 Q422 584 456 556 Z"/>
+  <path class="region-fur" d="M588 514 Q630 544 636 604 Q636 634 614 632 Q602 584 568 556 Z"/>
+  <circle class="region-detail" cx="404" cy="624" r="22"/>
+  <circle class="region-detail" cx="620" cy="624" r="22"/>
+  <path class="region-fur" d="M464 440 H560 Q580 500 614 538 Q650 578 652 656 Q654 742 620 794 Q578 842 512 842 Q446 842 404 794 Q370 742 372 656 Q374 578 410 538 Q446 500 464 440 Z"/>
+  <ellipse class="region-accent" cx="512" cy="648" rx="102" ry="128"/>
+  <ellipse class="region-fur" cx="428" cy="774" rx="60" ry="50"/>
+  <ellipse class="region-fur" cx="596" cy="774" rx="60" ry="50"/>
+  <ellipse class="region-detail" cx="428" cy="796" rx="34" ry="20"/>
+  <ellipse class="region-detail" cx="596" cy="796" rx="34" ry="20"/>
+</svg>

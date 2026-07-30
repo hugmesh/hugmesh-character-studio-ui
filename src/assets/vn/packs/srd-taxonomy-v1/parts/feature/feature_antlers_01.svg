@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#dcc2a2)}.region-accent{fill:var(--region-accent,#f2e2cc)}.region-detail{fill:var(--region-detail,#8a6242)}</style>
+  <!-- Antlers (SRD 5.1 deer/elk): tall chunky 3-point antlers in dark bark detail, pale rounded tip caps, fur pedicle bases; tines angle up-out at y 90-230 clearing the deer side ears -->
+  <path class="region-detail" d="M414 230 Q404 196 342 190 Q322 186 326 168 Q330 152 356 158 Q392 166 412 176 Q406 148 356 128 Q336 118 344 102 Q352 88 374 98 Q408 112 424 132 Q424 108 436 92 Q448 80 462 92 Q474 106 474 140 Q478 190 470 230 Z"/>
+  <circle class="region-accent" cx="452" cy="94" r="14"/>
+  <circle class="region-accent" cx="352" cy="107" r="11"/>
+  <circle class="region-accent" cx="334" cy="171" r="11"/>
+  <path class="region-detail" d="M610 230 Q620 196 682 190 Q702 186 698 168 Q694 152 668 158 Q632 166 612 176 Q618 148 668 128 Q688 118 680 102 Q672 88 650 98 Q616 112 600 132 Q600 108 588 92 Q576 80 562 92 Q550 106 550 140 Q546 190 554 230 Z"/>
+  <circle class="region-accent" cx="572" cy="94" r="14"/>
+  <circle class="region-accent" cx="672" cy="107" r="11"/>
+  <circle class="region-accent" cx="690" cy="171" r="11"/>
+  <ellipse class="region-fur" cx="442" cy="228" rx="38" ry="20"/>
+  <ellipse class="region-fur" cx="582" cy="228" rx="38" ry="20"/>
+</svg>

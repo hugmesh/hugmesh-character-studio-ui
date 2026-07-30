@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ece5d8)}.region-accent{fill:var(--region-accent,#d9cfbe)}.region-detail{fill:var(--region-detail,#3a332e)}</style>
+  <!-- Cow tassel tail: thin rope tail swinging out from the hip, banded near the end and finishing in a dark brushy tassel -->
+  <path class="region-fur" d="M636 664 Q700 690 716 770 Q726 838 712 886 L688 882 Q700 830 690 776 Q678 712 628 694 Z"/>
+  <path class="region-accent" d="M682 866 L720 870 L718 892 L682 888 Z"/>
+  <path class="region-detail" d="M676 884 Q700 870 726 884 Q740 924 714 966 Q700 980 688 966 Q664 924 676 884 Z"/>
+  <path class="region-detail" d="M690 962 L696 990 L704 964 L712 988 L718 960 Z"/>
+</svg>

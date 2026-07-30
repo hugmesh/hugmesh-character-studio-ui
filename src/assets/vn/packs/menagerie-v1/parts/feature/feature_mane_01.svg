@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#8a5a2e)}.region-fur{fill:var(--region-fur,#c99a56)}</style>
+  <!-- Fluffy mane collar: spiky dark outer ruff framing the lower head and neck, lighter inner fluff layer, loose side and chest tufts -->
+  <path class="region-accent" d="M227 421 L300 468 L303 554 L390 557 L436 630 L512 590 L588 630 L635 557 L721 554 L724 468 L797 421 L686 392 A 180 180 0 0 1 338 392 Z"/>
+  <path class="region-fur" d="M291 473 L356 501 L385 566 L455 558 L512 600 L569 558 L639 566 L668 501 L733 473 L668 435 A 180 180 0 0 1 356 435 Z"/>
+  <path class="region-accent" d="M240 430 L196 396 L216 458 Z"/>
+  <path class="region-accent" d="M784 430 L828 396 L808 458 Z"/>
+  <path class="region-accent" d="M476 622 L512 702 L548 622 Z"/>
+  <path class="region-accent" d="M394 600 L404 664 L448 620 Z"/>
+  <path class="region-accent" d="M630 600 L620 664 L576 620 Z"/>
+</svg>

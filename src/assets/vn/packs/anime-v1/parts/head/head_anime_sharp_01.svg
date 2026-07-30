@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-detail{fill:var(--region-detail,#d99c86)}.region-line{fill:none;stroke:var(--region-line,#3a3340);stroke-width:10;stroke-linecap:round}</style>
+  <!-- Anime head, sharp: angular jawline converging on a pointed chin, small human ears (detail inner notch), nose tick (line); eye zone y~300 left clear -->
+  <path class="region-skin" d="M330 310 Q304 300 300 334 Q298 368 326 380 Q338 384 340 372 Q332 342 336 314 Z"/>
+  <path class="region-skin" d="M694 310 Q720 300 724 334 Q726 368 698 380 Q686 384 684 372 Q692 342 688 314 Z"/>
+  <ellipse class="region-detail" cx="316" cy="340" rx="8" ry="14"/>
+  <ellipse class="region-detail" cx="708" cy="340" rx="8" ry="14"/>
+  <path class="region-skin" d="M326 314 Q330 136 512 132 Q694 136 698 314 Q700 398 658 450 L538 518 Q512 534 486 518 L366 450 Q324 398 326 314 Z"/>
+  <path class="region-line" d="M516 384 q10 14 -6 26"/>
+  <path class="region-line" d="M628 436 q-8 14 -22 22"/>
+  <path class="region-line" d="M396 436 q8 14 22 22"/>
+  <path class="region-line" d="M316 318 q-6 12 -4 28"/>
+  <path class="region-line" d="M708 318 q6 12 4 28"/>
+</svg>

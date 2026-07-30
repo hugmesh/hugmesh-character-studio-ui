@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#dcaed0)}.region-clothtrim{fill:var(--region-clothtrim,#f4dfee)}.region-iris{fill:var(--region-iris,#f2b04e)}.region-line{fill:none;stroke:var(--region-line,#6b4f3f);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Bard lute (SRD 5.1): rounded pear body, curled scroll pegbox with candy pegs, feather charm -->
+  <path class="region-clothtrim" d="M232 358 Q208 326 220 294 Q244 310 242 348 Q240 358 232 358 Z"/>
+  <circle class="region-cloth" cx="240" cy="370" r="12"/>
+  <ellipse class="region-cloth" cx="258" cy="392" rx="28" ry="24"/>
+  <circle class="region-iris" cx="238" cy="398" r="8"/>
+  <circle class="region-iris" cx="280" cy="376" r="8"/>
+  <path class="region-cloth" d="M292 572 Q278 492 258 424 Q254 406 272 402 Q288 398 292 414 Q310 490 330 566 Q314 574 292 572 Z"/>
+  <path class="region-cloth" d="M310 566 Q246 584 230 664 Q222 752 284 792 Q310 806 336 792 Q398 752 390 664 Q374 584 310 566 Z"/>
+  <ellipse class="region-clothtrim" cx="310" cy="700" rx="60" ry="84"/>
+  <circle class="region-cloth" cx="310" cy="682" r="20"/>
+  <rect class="region-cloth" x="284" y="740" width="52" height="16" rx="8"/>
+  <path class="region-line" d="M260 404 Q288 560 300 740"/>
+  <path class="region-line" d="M274 398 Q304 560 318 740"/>
+</svg>

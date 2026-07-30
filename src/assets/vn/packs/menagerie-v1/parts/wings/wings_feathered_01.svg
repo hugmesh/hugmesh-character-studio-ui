@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8a6f4d)}.region-accent{fill:var(--region-accent,#d9c9a8)}</style>
+  <!-- Spread feathered wings: accent flight-feather layer with scalloped primaries under a fur covert layer, mirrored pair. -->
+  <path class="region-accent" d="M456 500 Q420 380 340 330 Q250 276 160 296 Q100 330 84 400 Q76 434 88 464 L96 468 Q118 452 128 428 Q124 500 148 556 L158 560 Q180 538 188 510 Q196 574 232 622 L244 624 Q262 598 266 568 Q286 626 336 656 L348 654 Q358 626 356 596 Q386 640 440 654 L452 644 Q452 560 456 500 Z"/>
+  <path class="region-fur" d="M456 500 Q420 380 340 330 Q250 276 160 296 Q136 316 124 348 Q160 344 176 360 Q170 396 186 414 Q224 400 246 416 Q246 448 266 462 Q306 448 330 470 Q338 502 360 512 Q396 504 416 528 Q440 542 456 528 Z"/>
+  <path class="region-accent" d="M232 420 Q210 452 214 484 Q238 462 244 432 Z"/>
+  <path class="region-accent" d="M300 458 Q286 494 296 524 Q318 498 318 468 Z"/>
+  <path class="region-accent" d="M368 500 Q360 536 374 562 Q392 534 388 508 Z"/>
+  <g transform="translate(1024 0) scale(-1 1)">
+    <path class="region-accent" d="M456 500 Q420 380 340 330 Q250 276 160 296 Q100 330 84 400 Q76 434 88 464 L96 468 Q118 452 128 428 Q124 500 148 556 L158 560 Q180 538 188 510 Q196 574 232 622 L244 624 Q262 598 266 568 Q286 626 336 656 L348 654 Q358 626 356 596 Q386 640 440 654 L452 644 Q452 560 456 500 Z"/>
+    <path class="region-fur" d="M456 500 Q420 380 340 330 Q250 276 160 296 Q136 316 124 348 Q160 344 176 360 Q170 396 186 414 Q224 400 246 416 Q246 448 266 462 Q306 448 330 470 Q338 502 360 512 Q396 504 416 528 Q440 542 456 528 Z"/>
+    <path class="region-accent" d="M232 420 Q210 452 214 484 Q238 462 244 432 Z"/>
+    <path class="region-accent" d="M300 458 Q286 494 296 524 Q318 498 318 468 Z"/>
+    <path class="region-accent" d="M368 500 Q360 536 374 562 Q392 534 388 508 Z"/>
+  </g>
+</svg>

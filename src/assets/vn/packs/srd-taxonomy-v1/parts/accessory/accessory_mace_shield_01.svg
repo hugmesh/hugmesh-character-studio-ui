@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#becbe6)}.region-clothtrim{fill:var(--region-clothtrim,#f4efe2)}.region-iris{fill:var(--region-iris,#e8798f)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Cleric kit (SRD 5.1): round rivet shield with a heart holy symbol, stubby knobbed mace -->
+  <circle class="region-cloth" cx="295" cy="655" r="118"/>
+  <circle class="region-clothtrim" cx="295" cy="655" r="92"/>
+  <path class="region-iris" d="M295 706 Q238 654 250 612 Q260 582 295 606 Q330 582 340 612 Q352 654 295 706 Z"/>
+  <circle class="region-cloth" cx="295" cy="572" r="9"/>
+  <circle class="region-cloth" cx="378" cy="655" r="9"/>
+  <circle class="region-cloth" cx="295" cy="738" r="9"/>
+  <circle class="region-cloth" cx="212" cy="655" r="9"/>
+  <rect class="region-cloth" x="784" y="580" width="26" height="246" rx="13"/>
+  <circle class="region-clothtrim" cx="797" cy="538" r="60"/>
+  <circle class="region-clothtrim" cx="797" cy="468" r="18"/>
+  <circle class="region-clothtrim" cx="856" cy="502" r="18"/>
+  <circle class="region-clothtrim" cx="862" cy="566" r="18"/>
+  <circle class="region-clothtrim" cx="738" cy="502" r="18"/>
+  <circle class="region-clothtrim" cx="732" cy="566" r="18"/>
+  <circle class="region-clothtrim" cx="797" cy="832" r="15"/>
+  <circle class="region-line" cx="797" cy="856" r="16"/>
+</svg>

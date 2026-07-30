@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7a5844)}.region-accent{fill:var(--region-accent,#c8a880)}.region-detail{fill:var(--region-detail,#362a22)}</style>
+  <!-- Stocky ursine body: thick neck, broad barrel torso with a big belly patch, heavy arms and short legs ending in clawed paws -->
+  <path class="region-fur" d="M462 456 Q512 490 562 456 L578 552 Q512 576 446 552 Z"/>
+  <path class="region-fur" d="M446 546 Q348 596 352 706 Q356 800 430 820 L594 820 Q668 800 672 706 Q676 596 578 546 Q512 576 446 546 Z"/>
+  <ellipse class="region-accent" cx="512" cy="682" rx="108" ry="118"/>
+  <path class="region-fur" d="M412 584 Q372 650 376 730 L416 738 Q420 664 442 612 Z"/>
+  <path class="region-fur" d="M612 584 Q652 650 648 730 L608 738 Q604 664 582 612 Z"/>
+  <ellipse class="region-fur" cx="396" cy="748" rx="27" ry="23"/>
+  <ellipse class="region-fur" cx="628" cy="748" rx="27" ry="23"/>
+  <path class="region-detail" d="M374 758 L382 780 L390 760 L398 780 L406 760 L414 780 L422 758 Z"/>
+  <path class="region-detail" d="M602 758 L610 780 L618 760 L626 780 L634 760 L642 780 L650 758 Z"/>
+  <path class="region-fur" d="M448 800 Q434 866 444 918 L500 918 Q506 858 498 806 Z"/>
+  <path class="region-fur" d="M576 800 Q590 866 580 918 L524 918 Q518 858 526 806 Z"/>
+  <path class="region-fur" d="M436 916 Q434 952 452 960 L496 960 Q508 948 502 916 Z"/>
+  <path class="region-fur" d="M588 916 Q590 952 572 960 L528 960 Q516 948 522 916 Z"/>
+  <path class="region-detail" d="M440 956 L448 976 L456 958 L464 976 L472 958 L480 976 L488 956 Z"/>
+  <path class="region-detail" d="M536 956 L544 976 L552 958 L560 976 L568 958 L576 976 L584 956 Z"/>
+</svg>

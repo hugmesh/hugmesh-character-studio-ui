@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9503a)}.region-accent{fill:var(--region-accent,#f7a83c)}.region-detail{fill:var(--region-detail,#e8952f)}</style>
+  <!-- Phoenix tail: three long flowing flame-plume streamers sweeping from the hip, each carrying an inner golden flame, with small ember flicks and a quill band at the base. -->
+  <circle class="region-fur" cx="654" cy="708" r="36"/>
+  <path class="region-fur" d="M648 686 Q770 604 908 616 Q962 620 990 600 Q972 668 898 688 Q782 716 660 720 Z"/>
+  <path class="region-fur" d="M658 714 Q800 726 924 798 Q968 824 996 820 Q950 884 864 858 Q760 824 652 748 Z"/>
+  <path class="region-fur" d="M648 736 Q732 822 792 918 Q818 962 858 978 Q782 996 734 928 Q676 846 632 762 Z"/>
+  <path class="region-accent" d="M690 690 Q790 632 900 640 Q940 644 962 630 Q944 672 884 682 Q790 700 692 706 Z"/>
+  <path class="region-accent" d="M694 730 Q806 744 906 806 Q940 826 962 824 Q928 866 862 844 Q778 814 690 752 Z"/>
+  <path class="region-accent" d="M676 764 Q744 832 796 916 Q816 948 844 960 Q792 968 754 916 Q706 844 664 776 Z"/>
+  <path class="region-fur" d="M660 668 q-6 -30 12 -50 q10 24 0 52 z"/>
+  <path class="region-fur" d="M628 742 q-30 8 -44 34 q28 4 48 -14 z"/>
+  <path class="region-detail" d="M632 690 q20 -14 46 -8 l-4 16 q-20 -4 -36 6 z"/>
+</svg>

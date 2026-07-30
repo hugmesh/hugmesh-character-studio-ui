@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5502a)}.region-accent{fill:var(--region-accent,#f2e8da)}.region-detail{fill:var(--region-detail,#402a24)}</style>
+  <!-- Red panda tail: very thick blunt plume curling up behind the hip, wide cream rings across the rust shaft, dark rounded tip, soft fluff cusps along the outer edge -->
+  <path class="region-fur" d="M622 662 Q700 606 754 528 Q782 486 790 452 Q846 424 880 470 Q898 500 888 534 Q862 606 806 668 Q756 720 720 764 Q654 742 622 662 Z"/>
+  <path class="region-fur" d="M628 672 Q610 700 618 730 Q640 722 648 700 Z"/>
+  <path class="region-fur" d="M756 710 L730 752 L780 730 Z"/>
+  <path class="region-fur" d="M816 646 L798 690 L842 668 Z"/>
+  <path class="region-fur" d="M866 560 L860 606 L894 574 Z"/>
+  <path class="region-accent" d="M652 650 Q692 700 714 748 L738 720 Q704 672 676 632 Z"/>
+  <path class="region-accent" d="M686 622 Q722 674 750 726 L774 696 Q742 646 710 592 Z"/>
+  <path class="region-accent" d="M748 538 Q788 592 816 646 L840 614 Q810 560 772 504 Z"/>
+  <path class="region-detail" d="M782 470 Q788 460 790 452 Q846 424 880 470 Q898 500 888 534 Q882 554 872 574 Q822 528 782 470 Z"/>
+</svg>

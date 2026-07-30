@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#c3bbdf)}.region-clothtrim{fill:var(--region-clothtrim,#eeecf7)}.region-iris{fill:var(--region-iris,#f0c05a)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Paladin plate (SRD 5.1): violet plate with pearly holy tabard, golden winged sun sigil, gem-dot pauldrons -->
+  <rect class="region-cloth" x="352" y="700" width="100" height="104" rx="34"/>
+  <rect class="region-cloth" x="572" y="700" width="100" height="104" rx="34"/>
+  <path class="region-cloth" d="M352 562 Q362 506 434 506 L590 506 Q662 506 672 562 L672 664 Q672 726 512 738 Q352 726 352 664 Z"/>
+  <path class="region-clothtrim" d="M446 518 L578 518 Q594 664 572 820 Q544 850 512 850 Q480 850 452 820 Q430 664 446 518 Z"/>
+  <path class="region-cloth" d="M482 632 Q450 616 432 624 Q446 634 440 644 Q454 650 450 660 Q470 664 484 654 Z"/>
+  <path class="region-cloth" d="M542 632 Q574 616 592 624 Q578 634 584 644 Q570 650 574 660 Q554 664 540 654 Z"/>
+  <path class="region-iris" d="M512 584 Q524 618 558 630 Q524 642 512 676 Q500 642 466 630 Q500 618 512 584 Z"/>
+  <rect class="region-cloth" x="380" y="688" width="264" height="44" rx="22"/>
+  <circle class="region-iris" cx="512" cy="710" r="20"/>
+  <circle class="region-cloth" cx="372" cy="560" r="62"/>
+  <circle class="region-cloth" cx="652" cy="560" r="62"/>
+  <circle class="region-clothtrim" cx="372" cy="558" r="52"/>
+  <circle class="region-clothtrim" cx="652" cy="558" r="52"/>
+  <circle class="region-iris" cx="372" cy="558" r="12"/>
+  <circle class="region-iris" cx="652" cy="558" r="12"/>
+  <path class="region-line" d="M452 526 Q512 546 572 526"/>
+</svg>

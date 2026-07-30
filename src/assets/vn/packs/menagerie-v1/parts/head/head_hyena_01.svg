@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c19a6b)}.region-accent{fill:var(--region-accent,#e4d3b4)}.region-detail{fill:var(--region-detail,#33261f)}</style>
+  <!-- Hyena head: big rounded ears with dark inner cups, jagged cheek fluff, dark muzzle wearing a wide toothy grin, spiky mohawk mane crest -->
+  <circle class="region-fur" cx="354" cy="184" r="64"/>
+  <circle class="region-detail" cx="356" cy="190" r="36"/>
+  <circle class="region-fur" cx="670" cy="184" r="64"/>
+  <circle class="region-detail" cx="668" cy="190" r="36"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M322 356 L276 386 L322 402 L296 442 L344 434 Q328 396 322 356 Z"/>
+  <path class="region-fur" d="M702 356 L748 386 L702 402 L728 442 L680 434 Q696 396 702 356 Z"/>
+  <path class="region-detail" d="M436 172 L456 96 L478 148 L504 76 L528 146 L556 90 L576 146 L592 122 L600 170 Q516 128 436 172 Z"/>
+  <path class="region-detail" d="M442 372 Q512 350 582 372 L594 448 Q562 502 512 508 Q462 502 430 448 Z"/>
+  <path class="region-accent" d="M446 430 Q512 494 578 430 Q564 480 512 492 Q460 480 446 430 Z"/>
+  <path class="region-detail" d="M470 450 L479 470 L488 452 Z"/>
+  <path class="region-detail" d="M503 462 L512 482 L521 462 Z"/>
+  <path class="region-detail" d="M536 452 L545 470 L554 450 Z"/>
+</svg>

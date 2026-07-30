@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c9a8)}.region-accent{fill:var(--region-accent,#fbe7d4)}</style>
+  <!-- Humanoid body (SRD 5.1): chibi jellybean torso, stubby mitten arms, pale belly patch, round feet -->
+  <path class="region-fur" d="M394 520 Q330 560 318 636 Q314 668 340 672 Q352 610 402 574 Z"/>
+  <path class="region-fur" d="M630 520 Q694 560 706 636 Q710 668 684 672 Q672 610 622 574 Z"/>
+  <circle class="region-fur" cx="334" cy="660" r="30"/>
+  <circle class="region-fur" cx="690" cy="660" r="30"/>
+  <path class="region-fur" d="M446 446 Q392 520 372 640 Q358 760 404 820 Q456 872 512 872 Q568 872 620 820 Q666 760 652 640 Q632 520 578 446 Q546 470 512 470 Q478 470 446 446 Z"/>
+  <ellipse class="region-accent" cx="512" cy="660" rx="118" ry="150"/>
+  <ellipse class="region-fur" cx="424" cy="850" rx="62" ry="40"/>
+  <ellipse class="region-fur" cx="600" cy="850" rx="62" ry="40"/>
+</svg>

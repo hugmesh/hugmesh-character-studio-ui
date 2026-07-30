@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b56a3c)}.region-accent{fill:var(--region-accent,#ecd9bd)}.region-detail{fill:var(--region-detail,#5f3a22)}</style>
+  <!-- Squirrel head: perky ears with tall tufts, jaggy cheek fluff, cream muzzle patch, dark nose -->
+  <path class="region-fur" d="M368 116 q-6 -64 22 -104 q24 44 12 106 z"/>
+  <path class="region-fur" d="M656 116 q6 -64 -22 -104 q-24 44 -12 106 z"/>
+  <path class="region-fur" d="M332 214 q-4 -78 56 -108 q58 30 56 108 q-56 34 -112 0 z"/>
+  <path class="region-fur" d="M692 214 q4 -78 -56 -108 q-58 30 -56 108 q56 34 112 0 z"/>
+  <path class="region-accent" d="M356 200 q2 -52 32 -72 q30 20 32 72 q-32 18 -64 0 z"/>
+  <path class="region-accent" d="M668 200 q-2 -52 -32 -72 q-30 20 -32 72 q32 18 64 0 z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M326 372 q-52 10 -78 44 q34 22 66 12 q-24 16 -34 40 q44 8 72 -24 z"/>
+  <path class="region-fur" d="M698 372 q52 10 78 44 q-34 22 -66 12 q24 16 34 40 q-44 8 -72 -24 z"/>
+  <ellipse class="region-accent" cx="512" cy="430" rx="92" ry="60"/>
+  <path class="region-detail" d="M490 386 q22 -10 44 0 q5 4 1 11 l-18 20 q-5 5 -10 0 l-18 -20 q-4 -7 1 -11 z"/>
+</svg>

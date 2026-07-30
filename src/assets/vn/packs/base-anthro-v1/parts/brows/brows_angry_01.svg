@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:14;stroke-linecap:round}</style>
+  <!-- angry: inner-lowered "furrowed" brows (placeholder) -->
+  <path class="region-line" d="M404 252 q36 -12 72 12"/>
+  <path class="region-line" d="M548 264 q36 -24 72 -12"/>
+</svg>

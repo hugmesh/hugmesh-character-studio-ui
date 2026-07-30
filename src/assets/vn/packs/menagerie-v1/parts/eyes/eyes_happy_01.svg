@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:16;stroke-linecap:round}</style>
+  <!-- Happy closed eyes: upturned ^^ arcs with tiny lash ticks at outer corners -->
+  <path class="region-line" d="M402 312 Q440 268 478 312"/>
+  <path class="region-line" d="M546 312 Q584 268 622 312"/>
+  <path class="region-line" d="M400 312 q-8 8 -14 8"/>
+  <path class="region-line" d="M624 312 q8 8 14 8"/>
+</svg>

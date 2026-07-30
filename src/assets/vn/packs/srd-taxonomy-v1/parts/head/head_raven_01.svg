@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a6a2c2)}.region-accent{fill:var(--region-accent,#c9c5dd)}.region-detail{fill:var(--region-detail,#837b95)}</style>
+  <!-- Raven (SRD 5.1) head: sleek swept crown feathers + fluffy neck ruff + small pointed beak; Vulture via dusty tint -->
+  <path class="region-fur" d="M436 152 Q460 76 540 64 Q602 60 638 100 Q578 92 546 112 Q502 96 436 152 Z"/>
+  <path class="region-fur" d="M560 118 Q612 96 650 128 Q616 128 596 146 Z"/>
+  <circle class="region-accent" cx="450" cy="528" r="36"/>
+  <circle class="region-accent" cx="512" cy="546" r="38"/>
+  <circle class="region-accent" cx="574" cy="528" r="36"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-accent" d="M402 212 Q456 168 558 174 Q502 188 470 214 Q438 200 402 212 Z"/>
+  <path class="region-detail" d="M472 378 Q512 358 552 378 Q550 398 524 406 Q514 410 512 414 Q510 410 500 406 Q474 398 472 378 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

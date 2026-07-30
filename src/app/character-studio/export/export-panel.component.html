@@ -1,0 +1,11 @@
+<div class="export">
+  <button
+    type="button"
+    class="primary"
+    data-testid="cs-set-avatar"
+    [disabled]="busy() || !state.isValid()"
+    (click)="setAsAvatar()"
+  >Set as Matrix avatar</button>
+  <button type="button" data-testid="cs-export-download" [disabled]="busy()" (click)="download()">Download PNG</button>
+  <p class="status" role="status" aria-live="polite" data-testid="cs-export-status">{{ status() }}</p>
+</div>

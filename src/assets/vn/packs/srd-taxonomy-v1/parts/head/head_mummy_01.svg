@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ece4d4)}.region-accent{fill:var(--region-accent,#f8f3e8)}.region-line{fill:none;stroke:var(--region-line,#8a7a68);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Mummy (SRD 5.1) head: rounded bandage wraps with one strip over the brow, loose end curling off the side, stitch seams -->
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-accent" d="M310 254 Q500 176 714 248 Q712 270 704 284 Q506 214 320 292 Q312 274 310 254 Z"/>
+  <path class="region-accent" d="M330 472 Q512 546 698 462 Q704 486 698 498 Q512 582 328 498 Q324 484 330 472 Z"/>
+  <path class="region-accent" d="M310 356 Q352 368 382 394 Q372 412 356 420 Q330 400 306 388 Q306 370 310 356 Z"/>
+  <path class="region-accent" d="M702 372 Q762 380 784 420 Q798 448 778 464 Q760 476 748 462 Q740 448 752 440 Q762 434 768 444 Q772 428 752 412 Q732 396 700 396 Z"/>
+  <path class="region-line" d="M420 224 q14 -4 28 -6"/>
+  <path class="region-line" d="M540 214 q14 2 28 6"/>
+  <path class="region-line" d="M470 524 q16 4 32 6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6e8f4a)}.region-accent{fill:var(--region-accent,#dbe6a8)}.region-detail{fill:var(--region-detail,#d9b84a)}.region-line{fill:var(--region-line,#3a4d26)}</style>
+  <!-- Basilisk head: jagged flared serpent hood with pale inner face and eyespots, smooth skull topped by a small golden crown crest, stern brow scutes -->
+  <path class="region-fur" d="M512 118 Q348 134 272 282 L308 296 Q252 372 276 458 L318 448 Q332 540 430 590 Q470 610 512 614 Q554 610 594 590 Q692 540 706 448 L748 458 Q772 372 716 296 L752 282 Q676 134 512 118 Z"/>
+  <path class="region-accent" d="M512 154 Q380 168 318 292 Q282 380 320 456 Q356 546 458 578 Q486 588 512 590 Q538 588 566 578 Q668 546 704 456 Q742 380 706 292 Q644 168 512 154 Z"/>
+  <circle class="region-detail" cx="326" cy="400" r="22"/>
+  <circle class="region-accent" cx="326" cy="400" r="10"/>
+  <circle class="region-detail" cx="698" cy="400" r="22"/>
+  <circle class="region-accent" cx="698" cy="400" r="10"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-detail" d="M446 216 L446 152 L478 188 L512 126 L546 188 L578 152 L578 216 Q512 194 446 216 Z"/>
+  <circle class="region-accent" cx="478" cy="196" r="7"/>
+  <circle class="region-accent" cx="546" cy="196" r="7"/>
+  <path class="region-line" d="M488 236 L512 226 L536 236 L530 248 L512 240 L494 248 Z"/>
+  <path class="region-detail" d="M402 268 L474 250 L480 268 L408 286 Z"/>
+  <path class="region-detail" d="M622 268 L550 250 L544 268 L616 286 Z"/>
+  <path class="region-accent" d="M434 394 Q512 360 590 394 Q596 466 512 494 Q428 466 434 394 Z"/>
+  <ellipse class="region-line" cx="482" cy="420" rx="6" ry="10"/>
+  <ellipse class="region-line" cx="542" cy="420" rx="6" ry="10"/>
+</svg>

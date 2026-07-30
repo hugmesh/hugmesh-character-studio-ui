@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0b0b0)}</style>
+  <rect class="region-fur" x="312" y="380" width="400" height="500" rx="80"/>
+</svg>

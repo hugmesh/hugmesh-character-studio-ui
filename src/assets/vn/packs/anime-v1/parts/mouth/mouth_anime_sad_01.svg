@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sad anime mouth: wobbly wavering line, corners dragging down -->
+  <path class="region-line" d="M464 446 q16 -18 32 -6 q16 12 32 0 q16 -12 32 6"/>
+</svg>

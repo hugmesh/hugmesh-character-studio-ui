@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#3a3f4b)}.region-accent{fill:var(--region-accent,#5ad7d4)}.region-detail{fill:var(--region-detail,#1f232c)}</style>
+  <!-- Synth android body: angular plated torso with shoulder pads, glowing chest screen (accent), collar/waist seams, side vents, hip servos and knee joints (detail), segmented legs with angular boots -->
+  <polygon class="region-fur" points="464,500 560,500 576,548 448,548"/>
+  <polygon class="region-fur" points="388,540 448,528 456,584 396,596"/>
+  <polygon class="region-fur" points="636,540 576,528 568,584 628,596"/>
+  <path class="region-fur" d="M402 540 L622 540 L644 648 L596 764 L428 764 L380 648 Z"/>
+  <polygon class="region-fur" points="438,764 586,764 566,828 458,828"/>
+  <polygon class="region-fur" points="426,790 486,800 478,872 430,868"/>
+  <polygon class="region-fur" points="434,872 476,874 470,932 438,930"/>
+  <path class="region-fur" d="M404 930 L486 928 L498 950 Q498 962 484 962 L410 962 Q398 960 400 946 Z"/>
+  <polygon class="region-fur" points="598,790 538,800 546,872 594,868"/>
+  <polygon class="region-fur" points="590,872 548,874 554,932 586,930"/>
+  <path class="region-fur" d="M620 930 L538 928 L526 950 Q526 962 540 962 L614 962 Q626 960 624 946 Z"/>
+  <rect class="region-accent" x="458" y="566" width="108" height="88" rx="14"/>
+  <polygon class="region-detail" points="452,548 572,548 568,562 456,562"/>
+  <polygon class="region-detail" points="414,620 442,614 438,632 410,638"/>
+  <polygon class="region-detail" points="610,620 582,614 586,632 614,638"/>
+  <polygon class="region-detail" points="432,764 592,764 588,776 436,776"/>
+  <circle class="region-detail" cx="452" cy="800" r="10"/>
+  <circle class="region-detail" cx="572" cy="800" r="10"/>
+  <rect class="region-detail" x="436" y="866" width="44" height="10" rx="4"/>
+  <rect class="region-detail" x="544" y="866" width="44" height="10" rx="4"/>
+</svg>

@@ -1,0 +1,57 @@
+<div class="part-picker">
+  <button
+    type="button"
+    class="hybrid-toggle"
+    data-testid="cs-hybrid-toggle"
+    [class.selected]="hybridMode()"
+    [attr.aria-pressed]="hybridMode()"
+    aria-label="Hybrid mode: show every part for every species"
+    (click)="toggleHybrid()"
+  >Hybrid mode: {{ hybridMode() ? 'on' : 'off' }}</button>
+  @for (slot of slots(); track slot.slot) {
+    <fieldset class="slot" [attr.data-testid]="'cs-slot-' + slot.slot">
+      <legend>{{ slot.slot }}{{ slot.required ? '' : ' (optional)' }}</legend>
+      @if (slot.parts.length >= filterMinParts) {
+        <input
+          type="search"
+          class="filter"
+          [attr.data-testid]="'cs-part-filter-' + slot.slot"
+          [attr.aria-label]="'Filter ' + slot.slot + ' parts'"
+          [attr.maxlength]="maxFilterLen"
+          [value]="filterOf(slot.slot)"
+          placeholder="Filter parts…"
+          (input)="onFilterInput(slot.slot, $event)"
+        />
+        <!-- aria-live so a screen-reader hears the (debounced) result count. -->
+        <p class="filter-count" aria-live="polite" [attr.data-testid]="'cs-part-filter-count-' + slot.slot">
+          @if (filterOf(slot.slot)) {
+            {{ visiblePartsFor(slot).length }} of {{ partsFor(slot).length }} parts shown
+          }
+        </p>
+      }
+      <div class="parts" role="group" [attr.aria-label]="slot.slot + ' parts'">
+        @if (!slot.required) {
+          <button
+            type="button"
+            class="part"
+            [attr.data-testid]="'cs-part-none-' + slot.slot"
+            [class.selected]="selected(slot.slot) === null"
+            [attr.aria-pressed]="selected(slot.slot) === null"
+            (click)="pick(slot.slot, null)"
+          >None</button>
+        }
+        @for (part of visiblePartsFor(slot); track part.id) {
+          <button
+            type="button"
+            class="part"
+            [attr.data-testid]="'cs-part-pick-' + slot.slot + '-' + part.id"
+            [class.selected]="selected(slot.slot) === part.id"
+            [attr.aria-pressed]="selected(slot.slot) === part.id"
+            [title]="part.displayName"
+            (click)="pick(slot.slot, part.id)"
+          >{{ part.displayName }}</button>
+        }
+      </div>
+    </fieldset>
+  }
+</div>

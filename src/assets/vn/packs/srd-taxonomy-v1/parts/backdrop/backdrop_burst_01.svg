@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6eedd)}.region-detail{fill:var(--region-detail,#c9a96e)}</style>
+  <!-- Token backdrop: soft 12-ray starburst (rounded tips, no sharp points) behind a rimmed circle badge -->
+  <path class="region-accent" d="M451 198 Q446 117 447 53 Q512 12 577 53 Q578 117 573 198 Z M616 209 Q652 137 686 82 Q762 79 798 146 Q766 203 722 270 Z M754 302 Q821 258 878 226 Q945 262 942 338 Q887 372 815 408 Z M826 451 Q907 446 971 447 Q1012 512 971 577 Q907 578 826 573 Z M815 616 Q887 652 942 686 Q945 762 878 798 Q821 766 754 722 Z M722 754 Q766 821 798 878 Q762 945 686 942 Q652 887 616 815 Z M573 826 Q578 907 577 971 Q512 1012 447 971 Q446 907 451 826 Z M408 815 Q372 887 338 942 Q262 945 226 878 Q258 821 302 754 Z M270 722 Q203 766 146 798 Q79 762 82 686 Q137 652 209 616 Z M198 573 Q117 578 53 577 Q12 512 53 447 Q117 446 198 451 Z M209 408 Q137 372 82 338 Q79 262 146 226 Q203 258 270 302 Z M302 270 Q258 203 226 146 Q262 79 338 82 Q372 137 408 209 Z"/>
+  <circle class="region-detail" cx="512" cy="512" r="442"/>
+  <circle class="region-accent" cx="512" cy="512" r="418"/>
+</svg>

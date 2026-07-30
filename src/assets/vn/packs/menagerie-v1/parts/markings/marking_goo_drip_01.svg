@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}.region-detail{fill:var(--region-detail,#eafaf2)}</style>
+  <!-- Goo drip marking: melted goo mantle poured over the shoulders with drip lobes down the chest, glowing accent core pool, trapped bubbles and a falling droplet -->
+  <path class="region-fur" d="M382 476 Q378 424 434 410 Q512 392 590 410 Q646 424 642 476 Q638 508 596 514 Q604 574 580 610 Q562 636 548 602 Q538 648 512 648 Q486 648 476 602 Q462 636 444 610 Q420 574 428 514 Q386 508 382 476 Z"/>
+  <path class="region-fur" d="M452 616 q-6 52 0 84 q4 17 14 17 q11 0 13 -21 q3 -42 -6 -80 z"/>
+  <path class="region-fur" d="M568 610 q6 44 2 70 q-3 15 -13 15 q-10 0 -12 -18 q-2 -34 5 -67 z"/>
+  <path class="region-accent" d="M452 452 Q512 430 572 452 Q592 486 568 512 Q540 534 512 534 Q484 534 456 512 Q432 486 452 452 Z"/>
+  <path class="region-accent" d="M500 528 q-4 34 0 54 q3 12 12 12 q9 0 10 -15 q2 -26 -4 -51 z"/>
+  <circle class="region-detail" cx="545" cy="470" r="9"/>
+  <circle class="region-detail" cx="478" cy="492" r="6"/>
+  <circle class="region-detail" cx="528" cy="560" r="5"/>
+  <circle class="region-fur" cx="560" cy="720" r="8"/>
+  <ellipse class="region-accent" cx="420" cy="440" rx="16" ry="9" transform="rotate(-20 420 440)"/>
+</svg>

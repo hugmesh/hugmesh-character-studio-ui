@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b56a3c)}.region-accent{fill:var(--region-accent,#ecd9bd)}</style>
+  <!-- Squirrel tail: huge S-swoosh plume rising up the back and curling over toward the head, cream inner stripe -->
+  <ellipse class="region-fur" cx="668" cy="664" rx="66" ry="92" transform="rotate(24 668 664)"/>
+  <ellipse class="region-fur" cx="762" cy="500" rx="92" ry="178" transform="rotate(-10 762 500)"/>
+  <ellipse class="region-fur" cx="738" cy="292" rx="104" ry="128" transform="rotate(-32 738 292)"/>
+  <circle class="region-fur" cx="672" cy="200" r="88"/>
+  <ellipse class="region-accent" cx="764" cy="505" rx="52" ry="132" transform="rotate(-10 764 505)"/>
+  <ellipse class="region-accent" cx="736" cy="296" rx="60" ry="84" transform="rotate(-32 736 296)"/>
+  <circle class="region-accent" cx="668" cy="206" r="50"/>
+</svg>

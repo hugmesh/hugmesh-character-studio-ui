@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d8b096)}.region-accent{fill:var(--region-accent,#f4e3d2)}.region-detail{fill:var(--region-detail,#a3785e)}.region-line{fill:none;stroke:var(--region-line,#6b5147);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Bovid body (SRD 5.1 minotaur/deer/goat/boar kin): sturdy jellybean, two-tone hoof feet, tail nub tuft -->
+  <circle class="region-fur" cx="678" cy="704" r="30"/>
+  <circle class="region-accent" cx="692" cy="690" r="16"/>
+  <path class="region-fur" d="M424 510 Q354 552 340 636 Q336 672 364 674 Q380 606 432 564 Z"/>
+  <path class="region-fur" d="M600 510 Q670 552 684 636 Q688 672 660 674 Q644 606 592 564 Z"/>
+  <circle class="region-fur" cx="360" cy="664" r="27"/>
+  <circle class="region-fur" cx="664" cy="664" r="27"/>
+  <path class="region-fur" d="M450 436 H574 Q598 506 644 548 Q688 592 692 674 Q696 766 658 816 Q608 860 512 860 Q416 860 366 816 Q328 766 332 674 Q336 592 380 548 Q426 506 450 436 Z"/>
+  <ellipse class="region-accent" cx="512" cy="664" rx="126" ry="146"/>
+  <ellipse class="region-fur" cx="414" cy="786" rx="74" ry="62"/>
+  <ellipse class="region-fur" cx="610" cy="786" rx="74" ry="62"/>
+  <path class="region-detail" d="M344 796 Q348 844 414 846 Q480 844 484 796 Q450 820 414 820 Q378 820 344 796 Z"/>
+  <path class="region-detail" d="M540 796 Q544 844 610 846 Q676 844 680 796 Q646 820 610 820 Q574 820 540 796 Z"/>
+  <path class="region-line" d="M410 822 q4 12 4 24"/>
+  <path class="region-line" d="M606 822 q4 12 4 24"/>
+</svg>

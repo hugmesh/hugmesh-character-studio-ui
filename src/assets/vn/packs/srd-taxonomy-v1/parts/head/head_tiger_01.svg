@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f5c9a0)}.region-accent{fill:var(--region-accent,#fdf1e0)}.region-detail{fill:var(--region-detail,#a26b4c)}</style>
+  <!-- Tiger (SRD 5.1) head: rounded stripe patches, soft round cheek ruff bumps, tiny nose (fangs live in mouth parts) -->
+  <circle class="region-fur" cx="382" cy="156" r="60"/>
+  <circle class="region-accent" cx="388" cy="162" r="34"/>
+  <circle class="region-fur" cx="642" cy="156" r="60"/>
+  <circle class="region-accent" cx="636" cy="162" r="34"/>
+  <ellipse class="region-fur" cx="318" cy="352" rx="44" ry="26"/>
+  <ellipse class="region-fur" cx="312" cy="398" rx="38" ry="22"/>
+  <ellipse class="region-fur" cx="706" cy="352" rx="44" ry="26"/>
+  <ellipse class="region-fur" cx="712" cy="398" rx="38" ry="22"/>
+  <circle class="region-fur" cx="512" cy="332" r="205"/>
+  <ellipse class="region-detail" cx="452" cy="208" rx="15" ry="44"/>
+  <ellipse class="region-detail" cx="512" cy="198" rx="17" ry="54"/>
+  <ellipse class="region-detail" cx="572" cy="208" rx="15" ry="44"/>
+  <ellipse class="region-detail" cx="330" cy="316" rx="38" ry="14"/>
+  <ellipse class="region-detail" cx="326" cy="372" rx="32" ry="13"/>
+  <ellipse class="region-detail" cx="694" cy="316" rx="38" ry="14"/>
+  <ellipse class="region-detail" cx="698" cy="372" rx="32" ry="13"/>
+  <path class="region-detail" d="M496 388 Q512 380 528 388 Q525 400 512 405 Q499 400 496 388 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:14;stroke-linecap:round}</style>
+  <!-- angry: tense flat-bared mouth (placeholder) -->
+  <path class="region-line" d="M462 444 q50 -22 100 0"/>
+  <path class="region-line" d="M474 444 h76"/>
+</svg>

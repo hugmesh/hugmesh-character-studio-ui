@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f2e7c9)}</style>
+  <!-- Fawn spots: scattered pale dapples across the shoulders and upper back, seen along both sides of the torso. -->
+  <ellipse class="region-accent" cx="472" cy="566" rx="13" ry="10"/>
+  <ellipse class="region-accent" cx="552" cy="566" rx="13" ry="10"/>
+  <ellipse class="region-accent" cx="432" cy="586" rx="12" ry="9"/>
+  <ellipse class="region-accent" cx="592" cy="586" rx="12" ry="9"/>
+  <ellipse class="region-accent" cx="416" cy="626" rx="11" ry="9"/>
+  <ellipse class="region-accent" cx="608" cy="626" rx="11" ry="9"/>
+  <ellipse class="region-accent" cx="438" cy="664" rx="12" ry="9"/>
+  <ellipse class="region-accent" cx="586" cy="664" rx="12" ry="9"/>
+  <ellipse class="region-accent" cx="420" cy="704" rx="11" ry="8"/>
+  <ellipse class="region-accent" cx="604" cy="704" rx="11" ry="8"/>
+  <ellipse class="region-accent" cx="444" cy="738" rx="10" ry="8"/>
+  <ellipse class="region-accent" cx="580" cy="738" rx="10" ry="8"/>
+</svg>

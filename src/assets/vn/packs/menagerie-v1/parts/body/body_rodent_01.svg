@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9a9aa6)}.region-accent{fill:var(--region-accent,#eadfd6)}.region-detail{fill:var(--region-detail,#d98fa0)}</style>
+  <!-- Rodent body: small pudgy oval with stubby arms, cream tummy, pink hands and toes -->
+  <ellipse class="region-fur" cx="512" cy="585" rx="118" ry="160"/>
+  <ellipse class="region-accent" cx="512" cy="612" rx="74" ry="100"/>
+  <ellipse class="region-fur" cx="412" cy="540" rx="30" ry="74" transform="rotate(18 412 540)"/>
+  <ellipse class="region-fur" cx="612" cy="540" rx="30" ry="74" transform="rotate(-18 612 540)"/>
+  <circle class="region-detail" cx="396" cy="606" r="20"/>
+  <circle class="region-detail" cx="628" cy="606" r="20"/>
+  <ellipse class="region-fur" cx="460" cy="738" rx="44" ry="24"/>
+  <ellipse class="region-fur" cx="564" cy="738" rx="44" ry="24"/>
+  <ellipse class="region-detail" cx="446" cy="742" rx="18" ry="10"/>
+  <ellipse class="region-detail" cx="578" cy="742" rx="18" ry="10"/>
+</svg>

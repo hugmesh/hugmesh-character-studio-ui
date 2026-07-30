@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7ba05b)}.region-accent{fill:var(--region-accent,#f0e8d4)}.region-detail{fill:var(--region-detail,#46603a)}</style>
+  <!-- T-rex head: boxy jowled skull, big square jaw, tiny brow horns, row of blunt friendly teeth over the chin -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M336 296 Q302 372 332 442 Q358 472 390 464 L392 356 Z"/>
+  <path class="region-fur" d="M688 296 Q722 372 692 442 Q666 472 634 464 L632 356 Z"/>
+  <path class="region-fur" d="M382 350 Q512 324 642 350 L654 452 Q656 506 598 512 L426 512 Q368 506 370 452 Z"/>
+  <path class="region-detail" d="M402 430 Q512 460 622 430 L622 448 Q512 480 402 448 Z"/>
+  <path class="region-accent" d="M436 444 L450 480 L464 446 Z"/>
+  <path class="region-accent" d="M467 450 L481 486 L495 451 Z"/>
+  <path class="region-accent" d="M498 453 L512 489 L526 453 Z"/>
+  <path class="region-accent" d="M529 451 L543 486 L557 450 Z"/>
+  <path class="region-accent" d="M560 446 L574 480 L588 444 Z"/>
+  <path class="region-detail" d="M416 252 Q428 214 456 208 Q460 228 444 248 Q432 256 416 252 Z"/>
+  <path class="region-detail" d="M608 252 Q596 214 568 208 Q564 228 580 248 Q592 256 608 252 Z"/>
+  <ellipse class="region-detail" cx="464" cy="386" rx="12" ry="9"/>
+  <ellipse class="region-detail" cx="560" cy="386" rx="12" ry="9"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfe8c8)}.region-accent{fill:var(--region-accent,#e9f6e2)}</style>
+  <!-- Ooze body: melting puddle blob, drip-edge droplets, floating bubbles; pairs with the ooze dome head -->
+  <path class="region-fur" d="M424 538 Q348 558 332 618 Q324 662 358 666 Q382 606 434 582 Z"/>
+  <path class="region-fur" d="M600 538 Q676 558 692 618 Q700 662 666 666 Q642 606 590 582 Z"/>
+  <ellipse class="region-fur" cx="512" cy="848" rx="186" ry="40"/>
+  <path class="region-fur" d="M446 452 H578 Q640 516 670 598 Q700 676 692 756 Q684 818 618 836 Q562 848 512 848 Q462 848 406 836 Q340 818 332 756 Q324 676 354 598 Q384 516 446 452 Z"/>
+  <path class="region-fur" d="M330 826 q-22 34 -2 46 q20 10 28 -20 Z"/>
+  <path class="region-fur" d="M694 826 q22 34 2 46 q-20 10 -28 -20 Z"/>
+  <path class="region-fur" d="M540 878 q-2 30 14 30 q16 0 10 -30 Z"/>
+  <ellipse class="region-accent" cx="512" cy="848" rx="120" ry="22"/>
+  <circle class="region-accent" cx="452" cy="602" r="16"/>
+  <circle class="region-accent" cx="544" cy="662" r="20"/>
+  <circle class="region-accent" cx="472" cy="742" r="12"/>
+  <circle class="region-accent" cx="592" cy="586" r="11"/>
+  <circle class="region-accent" cx="560" cy="782" r="14"/>
+</svg>

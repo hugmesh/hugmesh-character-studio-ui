@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f0e4d6)}</style>
+  <!-- Belly patch marking: scalloped cream chest-and-tummy patch with a chest tuft and hip spots -->
+  <path class="region-accent" d="M436 552 q20 -44 58 -40 q4 -26 30 -26 q26 0 30 26 q38 -4 58 40 q18 96 -18 158 q-30 52 -70 52 q-40 0 -70 -52 q-36 -62 -18 -158 z"/>
+  <path class="region-accent" d="M488 480 q24 -18 48 0 q-8 22 -24 22 q-16 0 -24 -22 z"/>
+  <ellipse class="region-accent" cx="420" cy="660" rx="26" ry="36"/>
+  <ellipse class="region-accent" cx="604" cy="660" rx="26" ry="36"/>
+</svg>

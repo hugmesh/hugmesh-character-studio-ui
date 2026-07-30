@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7ba05b)}.region-accent{fill:var(--region-accent,#ead9a6)}.region-detail{fill:var(--region-detail,#46603a)}</style>
+  <!-- Dino body: counterbalanced theropod stance with massive thighs, tiny bent arms, smooth belly panel, clawed toes -->
+  <path class="region-fur" d="M420 640 Q358 660 346 730 Q340 796 382 838 Q420 862 458 846 Q480 780 468 700 Z"/>
+  <path class="region-fur" d="M604 640 Q666 660 678 730 Q684 796 642 838 Q604 862 566 846 Q544 780 556 700 Z"/>
+  <path class="region-fur" d="M468 452 H556 Q584 500 612 536 Q652 574 660 648 Q666 720 646 772 Q618 828 556 842 H468 Q406 828 378 772 Q358 720 364 648 Q372 574 412 536 Q440 500 468 452 Z"/>
+  <path class="region-fur" d="M394 830 Q384 866 398 888 L472 888 Q470 852 462 826 Z"/>
+  <path class="region-fur" d="M630 830 Q640 866 626 888 L552 888 Q554 852 562 826 Z"/>
+  <rect class="region-fur" x="358" y="882" width="138" height="34" rx="16"/>
+  <rect class="region-fur" x="528" y="882" width="138" height="34" rx="16"/>
+  <path class="region-detail" d="M368 912 L382 938 L396 914 Z"/>
+  <path class="region-detail" d="M410 914 L424 940 L438 916 Z"/>
+  <path class="region-detail" d="M452 912 L466 938 L480 914 Z"/>
+  <path class="region-detail" d="M544 912 L558 938 L572 914 Z"/>
+  <path class="region-detail" d="M586 914 L600 940 L614 916 Z"/>
+  <path class="region-detail" d="M628 912 L642 938 L656 914 Z"/>
+  <path class="region-fur" d="M452 496 Q424 520 428 556 Q444 570 462 560 Q470 532 476 508 Z"/>
+  <path class="region-fur" d="M572 496 Q600 520 596 556 Q580 570 562 560 Q554 532 548 508 Z"/>
+  <path class="region-detail" d="M432 556 L418 576 L440 578 Z"/>
+  <path class="region-detail" d="M450 562 L442 584 L462 580 Z"/>
+  <path class="region-detail" d="M592 556 L606 576 L584 578 Z"/>
+  <path class="region-detail" d="M574 562 L582 584 L562 580 Z"/>
+  <path class="region-accent" d="M470 540 Q512 526 554 540 Q580 600 582 680 Q582 760 556 806 Q534 830 512 830 Q490 830 468 806 Q442 760 442 680 Q444 600 470 540 Z"/>
+</svg>

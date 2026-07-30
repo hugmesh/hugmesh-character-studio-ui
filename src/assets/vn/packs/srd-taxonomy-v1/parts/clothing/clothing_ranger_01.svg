@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#aec6a0)}.region-clothtrim{fill:var(--region-clothtrim,#e6dcc4)}.region-iris{fill:var(--region-iris,#f0b54e)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Ranger cloak (SRD 5.1): hood mound folded behind the head silhouette, amber-gem neck clasp, studded leather chest strap -->
+  <path class="region-cloth" d="M296 452 Q262 150 512 128 Q762 150 728 452 Q724 494 688 502 L336 502 Q300 494 296 452 Z"/>
+  <path class="region-line" d="M332 386 Q322 300 362 234 M692 386 Q702 300 662 234"/>
+  <path class="region-cloth" d="M324 512 Q400 466 512 466 Q624 466 700 512 Q714 542 692 554 Q600 512 512 512 Q424 512 332 554 Q310 542 324 512 Z"/>
+  <path class="region-cloth" d="M338 520 Q312 660 324 796 Q362 836 420 866 Q466 840 512 868 Q558 840 604 866 Q662 836 700 796 Q712 660 686 520 Z"/>
+  <path class="region-line" d="M512 566 Q506 700 516 856"/>
+  <path class="region-clothtrim" d="M394 540 Q472 606 546 640 Q612 668 646 706 Q654 730 634 738 Q598 694 536 668 Q456 632 378 566 Q380 548 394 540 Z"/>
+  <circle class="region-iris" cx="424" cy="580" r="9"/>
+  <circle class="region-iris" cx="478" cy="616" r="9"/>
+  <circle class="region-iris" cx="534" cy="644" r="9"/>
+  <circle class="region-iris" cx="594" cy="678" r="9"/>
+  <rect class="region-clothtrim" x="472" y="524" width="80" height="34" rx="17"/>
+  <circle class="region-iris" cx="512" cy="541" r="11"/>
+</svg>

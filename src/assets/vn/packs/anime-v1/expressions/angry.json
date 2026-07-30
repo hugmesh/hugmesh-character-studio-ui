@@ -1,0 +1,9 @@
+{
+  "id": "angry",
+  "displayName": "Angry",
+  "slots": {
+    "eyes": "eyes_anime_angry_01",
+    "brows": "brows_anime_angry_01",
+    "mouth": "mouth_anime_angry_01"
+  }
+}

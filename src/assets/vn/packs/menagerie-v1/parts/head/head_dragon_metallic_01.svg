@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8f95a3)}.region-accent{fill:var(--region-accent,#dfe6ee)}.region-detail{fill:var(--region-detail,#454b59)}</style>
+  <!-- Metallic dragon head: riveted crown and brow plates, jaw armor ridges, twin diagonal sheen slashes; palette swap yields gold/silver/copper -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M438 372 q-26 58 -6 96 q14 26 44 34 h72 q30 -8 44 -34 q20 -38 -6 -96 q-74 -30 -148 0 z"/>
+  <path class="region-accent" d="M404 232 L588 168 L600 188 L416 252 Z"/>
+  <path class="region-accent" d="M596 208 L668 182 L678 200 L606 234 Z"/>
+  <path class="region-detail" d="M448 168 L576 168 L560 208 L464 208 Z"/>
+  <path class="region-detail" d="M368 252 L472 226 L478 258 L380 284 Z"/>
+  <path class="region-detail" d="M656 252 L552 226 L546 258 L644 284 Z"/>
+  <path class="region-detail" d="M330 400 L396 430 L384 470 L322 442 Z"/>
+  <path class="region-detail" d="M694 400 L628 430 L640 470 L702 442 Z"/>
+  <circle class="region-detail" cx="452" cy="152" r="7"/>
+  <circle class="region-detail" cx="572" cy="152" r="7"/>
+  <circle class="region-detail" cx="384" cy="304" r="7"/>
+  <circle class="region-detail" cx="640" cy="304" r="7"/>
+  <circle class="region-detail" cx="470" cy="372" r="7"/>
+  <circle class="region-detail" cx="554" cy="372" r="7"/>
+  <circle class="region-detail" cx="512" cy="486" r="7"/>
+  <ellipse class="region-detail" cx="480" cy="424" rx="10" ry="16"/>
+  <ellipse class="region-detail" cx="544" cy="424" rx="10" ry="16"/>
+</svg>

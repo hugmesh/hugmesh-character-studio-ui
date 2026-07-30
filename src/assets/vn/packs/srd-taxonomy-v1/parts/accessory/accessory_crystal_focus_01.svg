@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#f0ae9b)}.region-clothtrim{fill:var(--region-clothtrim,#fbe3d4)}.region-iris{fill:var(--region-iris,#a98fe3)}.region-line{fill:none;stroke:var(--region-line,#8a76b8);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sorcerer crystal focus (SRD 5.1) accessory: floating rounded ember gem, pale inner facet, sparkle trio by the hand -->
+  <ellipse class="region-line" cx="748" cy="592" rx="74" ry="98"/>
+  <path class="region-cloth" d="M746 512 Q782 528 792 584 Q796 636 762 668 Q748 678 734 668 Q700 636 704 584 Q714 528 746 512 Z"/>
+  <path class="region-clothtrim" d="M746 546 Q768 558 772 592 Q774 622 752 642 Q744 648 738 642 Q718 622 722 592 Q726 558 746 546 Z"/>
+  <circle class="region-iris" cx="664" cy="608" r="11"/>
+  <circle class="region-iris" cx="648" cy="662" r="8"/>
+  <circle class="region-iris" cx="692" cy="690" r="7"/>
+  <path class="region-iris" d="M748 446 Q752 464 770 468 Q752 472 748 490 Q744 472 726 468 Q744 464 748 446 Z"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfd3db)}.region-accent{fill:var(--region-accent,#e6e9ef)}.region-detail{fill:var(--region-detail,#aab0bd)}</style>
+  <!-- Doppelganger (SRD 5.1) head: smooth featureless gray oval, no ears or hair, faint forehead sheen -->
+  <ellipse class="region-fur" cx="512" cy="332" rx="186" ry="212"/>
+  <ellipse class="region-accent" cx="446" cy="206" rx="58" ry="32"/>
+  <ellipse class="region-detail" cx="512" cy="398" rx="10" ry="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

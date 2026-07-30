@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.ai {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.ai legend {
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.prompt {
+  flex: 1 1 auto;
+  min-width: 8rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+}
+
+.row button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-accent, #7c4dff);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.status:empty {
+  display: none;
+}

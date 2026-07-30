@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    { "packId": "base-anthro-v1", "displayName": "Base Anthro v1", "path": "packs/base-anthro-v1/pack.json", "enabled": true },
+    { "packId": "srd-taxonomy-v1", "displayName": "Taxonomy + SRD Placeholders v1", "path": "packs/srd-taxonomy-v1/pack.json", "enabled": true },
+    { "packId": "menagerie-v1", "displayName": "Menagerie — All Creatures", "path": "packs/menagerie-v1/pack.json", "enabled": true },
+    { "packId": "anime-v1", "displayName": "Anime & Kemonomimi", "path": "packs/anime-v1/pack.json", "enabled": true }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f3efe6)}.region-detail{fill:var(--region-detail,#cbbfd6)}.region-line{fill:none;stroke:var(--region-line,#8a7f92);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Skeleton (SRD 5.1) head: rounded pastel-bone skull with heart nose-hollow, tiny tooth-line smile, soft dome crack -->
+  <circle class="region-fur" cx="512" cy="312" r="208"/>
+  <ellipse class="region-fur" cx="512" cy="448" rx="150" ry="94"/>
+  <circle class="region-fur" cx="338" cy="400" r="38"/>
+  <circle class="region-fur" cx="686" cy="400" r="38"/>
+  <path class="region-line" d="M594 148 q20 20 4 40 q-14 20 6 40"/>
+  <path class="region-detail" d="M512 402 Q492 386 497 369 Q501 356 512 365 Q523 356 527 369 Q532 386 512 402 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

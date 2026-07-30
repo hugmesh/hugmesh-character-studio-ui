@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c7a284)}.region-accent{fill:var(--region-accent,#ecdac6)}.region-detail{fill:var(--region-detail,#a06e55)}</style>
+  <!-- Ursine body (SRD 5.1): extra-round chunky jellybean, big belly patch, chunky arms, huge paw pads and toes -->
+  <path class="region-fur" d="M410 516 Q330 552 320 644 Q318 686 350 688 Q362 606 428 566 Z"/>
+  <path class="region-fur" d="M614 516 Q694 552 704 644 Q706 686 674 688 Q662 606 596 566 Z"/>
+  <ellipse class="region-fur" cx="344" cy="694" rx="34" ry="24"/>
+  <ellipse class="region-fur" cx="680" cy="694" rx="34" ry="24"/>
+  <path class="region-fur" d="M512 436 Q672 452 684 628 Q690 772 634 840 Q578 884 512 884 Q446 884 390 840 Q334 772 340 628 Q352 452 512 436 Z"/>
+  <ellipse class="region-accent" cx="512" cy="668" rx="126" ry="146"/>
+  <ellipse class="region-fur" cx="408" cy="794" rx="80" ry="64"/>
+  <ellipse class="region-fur" cx="616" cy="794" rx="80" ry="64"/>
+  <ellipse class="region-detail" cx="408" cy="806" rx="36" ry="24"/>
+  <ellipse class="region-detail" cx="616" cy="806" rx="36" ry="24"/>
+  <circle class="region-detail" cx="372" cy="776" r="11"/>
+  <circle class="region-detail" cx="408" cy="764" r="11"/>
+  <circle class="region-detail" cx="444" cy="776" r="11"/>
+  <circle class="region-detail" cx="580" cy="776" r="11"/>
+  <circle class="region-detail" cx="616" cy="764" r="11"/>
+  <circle class="region-detail" cx="652" cy="776" r="11"/>
+</svg>

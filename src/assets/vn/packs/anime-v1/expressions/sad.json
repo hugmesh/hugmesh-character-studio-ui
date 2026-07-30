@@ -1,0 +1,9 @@
+{
+  "id": "sad",
+  "displayName": "Sad",
+  "slots": {
+    "eyes": "eyes_anime_sad_01",
+    "brows": "brows_anime_sad_01",
+    "mouth": "mouth_anime_sad_01"
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c8d4)}.region-detail{fill:var(--region-detail,#ab84bd)}.region-hair{fill:var(--region-hair,#c795c9)}</style>
+  <!-- Succubus/Incubus (SRD 5.1) head: swept-back rounded horns, hair on hair region w/ tapered side locks curling inward at the chin, beauty mark -->
+  <ellipse class="region-hair" cx="512" cy="312" rx="220" ry="216"/>
+  <path class="region-hair" d="M312 302 Q280 402 298 492 Q308 542 348 550 Q356 532 332 518 Q312 498 316 432 Q320 364 332 314 Z"/>
+  <path class="region-hair" d="M712 302 Q744 402 726 492 Q716 542 676 550 Q668 532 692 518 Q712 498 708 432 Q704 364 692 314 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="202"/>
+  <path class="region-hair" d="M336 262 Q300 360 322 460 Q336 528 394 558 Q420 568 424 548 Q414 532 390 524 Q352 500 350 430 Q346 352 368 282 Z"/>
+  <path class="region-hair" d="M688 262 Q724 360 702 460 Q688 528 630 558 Q604 568 600 548 Q610 532 634 524 Q672 500 674 430 Q678 352 656 282 Z"/>
+  <path class="region-hair" d="M316 320 Q302 146 512 124 Q722 146 708 320 Q690 232 632 226 Q596 224 558 244 Q534 254 512 276 Q490 254 466 244 Q428 224 392 226 Q334 232 316 320 Z"/>
+  <path class="region-detail" d="M428 148 Q394 92 336 70 Q326 65 336 61 Q392 56 446 104 Q462 132 428 148 Z"/>
+  <path class="region-detail" d="M596 148 Q630 92 688 70 Q698 65 688 61 Q632 56 578 104 Q562 132 596 148 Z"/>
+  <circle class="region-detail" cx="636" cy="466" r="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

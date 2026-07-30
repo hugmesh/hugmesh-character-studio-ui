@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}</style>
+  <!-- Goo hairdo: big swooshy goo fringe over the crown with rounded bang lobes ending in drip tips, long melting side swoosh, glossy sheen and a floating bubble -->
+  <path class="region-fur" d="M350 258 Q322 130 452 94 Q560 64 656 116 Q744 164 716 258 Q688 214 628 202 Q664 246 636 274 Q600 222 536 214 Q566 258 532 282 Q492 226 428 228 Q444 266 412 282 Q368 272 350 258 Z"/>
+  <path class="region-fur" d="M660 130 Q778 136 818 224 Q800 310 744 348 Q768 260 710 196 Q690 168 660 130 Z"/>
+  <path class="region-fur" d="M736 336 q-8 38 -2 62 q4 14 13 14 q11 0 12 -18 q2 -32 -6 -58 z"/>
+  <path class="region-fur" d="M628 266 q-6 32 0 52 q3 12 11 12 q9 0 10 -15 q2 -26 -4 -49 z"/>
+  <path class="region-fur" d="M524 276 q-5 28 0 46 q3 11 10 11 q8 0 9 -13 q2 -24 -4 -44 z"/>
+  <path class="region-fur" d="M404 274 q-6 30 -1 50 q3 12 11 12 q9 0 10 -15 q2 -26 -5 -47 z"/>
+  <ellipse class="region-accent" cx="470" cy="128" rx="56" ry="16" transform="rotate(-14 470 128)"/>
+  <circle class="region-accent" cx="600" cy="140" r="10"/>
+  <circle class="region-accent" cx="780" cy="150" r="9"/>
+  <circle class="region-fur" cx="748" cy="452" r="7"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7ba05b)}.region-accent{fill:var(--region-accent,#ead9a6)}.region-detail{fill:var(--region-detail,#46603a)}</style>
+  <!-- Dino tail: thick stiff counterbalance held out level, tapering to a point, pale underside plates, low dorsal ridges -->
+  <path class="region-fur" d="M622 652 Q760 632 866 652 Q952 668 974 700 Q978 712 962 716 Q884 748 786 754 Q696 758 620 740 Z"/>
+  <path class="region-accent" d="M636 716 Q730 742 820 736 Q900 730 954 704 Q962 712 950 720 Q880 750 790 754 Q700 756 632 738 Z"/>
+  <path class="region-accent" d="M672 668 Q690 700 686 730 L714 726 Q718 696 702 662 Z"/>
+  <path class="region-accent" d="M764 662 Q780 692 778 722 L804 716 Q806 688 792 658 Z"/>
+  <path class="region-accent" d="M852 668 Q864 692 862 716 L886 708 Q886 686 876 662 Z"/>
+  <path class="region-detail" d="M676 646 L690 620 L704 648 Z"/>
+  <path class="region-detail" d="M744 640 L757 616 L770 642 Z"/>
+  <path class="region-detail" d="M812 642 L824 618 L836 646 Z"/>
+  <path class="region-detail" d="M876 654 L887 632 L898 658 Z"/>
+  <path class="region-detail" d="M930 674 L940 654 L950 680 Z"/>
+</svg>

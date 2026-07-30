@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Aquatic body: smooth streamlined torso with countershaded belly panel, flared arms with flipper tips, small hip fins -->
+  <rect class="region-fur" x="352" y="474" width="58" height="236" rx="29" transform="rotate(10 381 474)"/>
+  <rect class="region-fur" x="614" y="474" width="58" height="236" rx="29" transform="rotate(-10 643 474)"/>
+  <ellipse class="region-detail" cx="342" cy="712" rx="26" ry="16" transform="rotate(14 342 712)"/>
+  <ellipse class="region-detail" cx="682" cy="712" rx="26" ry="16" transform="rotate(-14 682 712)"/>
+  <path class="region-fur" d="M400 664 q-46 26 -54 78 q48 -10 66 -48 Z"/>
+  <path class="region-fur" d="M624 664 q46 26 54 78 q-48 -10 -66 -48 Z"/>
+  <rect class="region-fur" x="474" y="396" width="76" height="110" rx="30"/>
+  <path class="region-fur" d="M512 436 Q430 440 398 484 Q378 560 386 660 Q396 742 470 764 Q512 772 554 764 Q628 742 638 660 Q646 560 626 484 Q594 440 512 436 Z"/>
+  <path class="region-accent" d="M512 470 Q562 486 576 560 Q586 646 566 716 Q540 748 512 750 Q484 748 458 716 Q438 646 448 560 Q462 486 512 470 Z"/>
+  <circle class="region-detail" cx="438" cy="490" r="8"/>
+  <circle class="region-detail" cx="586" cy="490" r="8"/>
+</svg>

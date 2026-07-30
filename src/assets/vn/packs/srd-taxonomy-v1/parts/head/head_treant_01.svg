@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfb497)}.region-accent{fill:var(--region-accent,#b2d6a0)}.region-detail{fill:var(--region-detail,#ab8f70)}.region-line{fill:none;stroke:var(--region-line,#5f4a38);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Treant (SRD 5.1) head: 5 overlapping puffball canopy lobes split by line arcs + vein dots, big cheek bark knot + curved seams, chin bark plate -->
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="328" cy="396" r="40"/>
+  <circle class="region-fur" cx="696" cy="396" r="40"/>
+  <ellipse class="region-accent" cx="300" cy="268" rx="72" ry="54"/>
+  <ellipse class="region-accent" cx="724" cy="268" rx="72" ry="54"/>
+  <ellipse class="region-accent" cx="376" cy="190" rx="100" ry="72"/>
+  <ellipse class="region-accent" cx="648" cy="190" rx="100" ry="72"/>
+  <ellipse class="region-accent" cx="512" cy="130" rx="120" ry="80"/>
+  <path class="region-line" d="M424 198 Q512 238 600 198"/>
+  <path class="region-line" d="M310 240 Q372 274 438 248"/>
+  <path class="region-line" d="M586 248 Q652 274 714 240"/>
+  <path class="region-line" d="M510 106 l4 0"/>
+  <path class="region-line" d="M374 168 l4 0"/>
+  <path class="region-line" d="M646 168 l4 0"/>
+  <path class="region-line" d="M298 250 l4 0"/>
+  <path class="region-line" d="M722 250 l4 0"/>
+  <circle class="region-detail" cx="348" cy="466" r="26"/>
+  <circle class="region-fur" cx="348" cy="466" r="13"/>
+  <circle class="region-detail" cx="348" cy="466" r="5"/>
+  <path class="region-line" d="M676 396 q16 34 0 68"/>
+  <path class="region-line" d="M340 306 q-14 28 0 56"/>
+  <rect class="region-detail" x="470" y="482" width="84" height="32" rx="16"/>
+  <rect class="region-detail" x="498" y="384" width="28" height="20" rx="10"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

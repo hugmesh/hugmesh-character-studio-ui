@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2b6b6)}.region-accent{fill:var(--region-accent,#fbdada)}.region-detail{fill:var(--region-detail,#e8d3ae)}.region-line{fill:none;stroke:var(--region-line,#71525c);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Dragon (SRD 5.1) head: chunky rounded crown horns, three-lobe back-frill, small round cheek fins + compact snout w/ nostril puffs -->
+  <path class="region-detail" d="M394 208 Q326 138 340 62 Q346 38 374 44 Q428 96 450 168 Q420 184 394 208 Z"/>
+  <path class="region-detail" d="M630 208 Q698 138 684 62 Q678 38 650 44 Q596 96 574 168 Q604 184 630 208 Z"/>
+  <path class="region-detail" d="M436 150 Q430 96 462 90 Q484 96 472 146 Z"/>
+  <path class="region-detail" d="M492 128 Q488 52 512 46 Q536 52 532 128 Q512 116 492 128 Z"/>
+  <path class="region-detail" d="M588 150 Q594 96 562 90 Q540 96 552 146 Z"/>
+  <path class="region-fur" d="M344 292 Q254 268 250 328 Q256 384 344 374 Q334 332 344 292 Z"/>
+  <path class="region-fur" d="M680 292 Q770 268 774 328 Q768 384 680 374 Q690 332 680 292 Z"/>
+  <path class="region-accent" d="M338 304 Q280 290 276 330 Q280 362 336 356 Q330 330 338 304 Z"/>
+  <path class="region-accent" d="M686 304 Q744 290 748 330 Q744 362 688 356 Q694 330 686 304 Z"/>
+  <circle class="region-fur" cx="330" cy="392" r="42"/>
+  <circle class="region-fur" cx="694" cy="392" r="42"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="422" rx="50" ry="24"/>
+  <circle class="region-accent" cx="480" cy="392" r="12"/>
+  <circle class="region-accent" cx="544" cy="392" r="12"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M474 390 l7 6"/>
+  <path class="region-line" d="M550 390 l-7 6"/>
+</svg>

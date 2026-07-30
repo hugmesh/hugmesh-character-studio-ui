@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#e88ca4)}.region-detail{fill:var(--region-detail,#c9647f)}.region-line{fill:none;stroke:var(--region-line,#3a3340);stroke-width:10;stroke-linecap:round}</style>
+  <!-- Anime body A: slight femme silhouette, bare stylized torso with recolorable camisole (accent) and hem trim (detail) -->
+  <path class="region-skin" d="M480 456 h64 v70 q-32 20 -64 0 z"/>
+  <path class="region-skin" d="M424 548 Q460 514 512 514 Q564 514 600 548 Q616 590 606 640 Q596 682 600 720 Q606 748 602 760 L422 760 Q418 748 424 720 Q428 682 418 640 Q408 590 424 548 Z"/>
+  <path class="region-skin" d="M430 552 Q398 562 392 602 L384 718 Q382 748 400 752 Q416 748 414 718 L420 612 Q424 572 434 556 Z"/>
+  <path class="region-skin" d="M594 552 Q626 562 632 602 L640 718 Q642 748 624 752 Q608 748 610 718 L604 612 Q600 572 590 556 Z"/>
+  <path class="region-line" d="M470 566 q18 10 34 6"/>
+  <path class="region-line" d="M520 572 q16 4 34 -6"/>
+  <path class="region-accent" d="M446 546 L464 542 L472 600 L454 604 Z"/>
+  <path class="region-accent" d="M578 542 L596 546 L570 604 L552 600 Z"/>
+  <path class="region-accent" d="M436 590 Q512 636 588 590 Q602 592 600 640 Q590 688 596 736 Q554 754 512 754 Q470 754 428 736 Q434 688 424 640 Q422 592 436 590 Z"/>
+  <path class="region-detail" d="M428 734 Q512 758 596 734 L594 748 Q512 770 430 748 Z"/>
+</svg>

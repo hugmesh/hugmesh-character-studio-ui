@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6fae5c)}.region-accent{fill:var(--region-accent,#cfe08e)}.region-detail{fill:var(--region-detail,#3f6b34)}</style>
+  <!-- Thick lizard tail: heavy tapering sweep with pale crescent bands and low dorsal spikes -->
+  <path class="region-fur" d="M620 662 Q764 646 862 704 Q952 760 972 848 Q976 872 952 866 Q908 800 834 760 Q744 712 624 740 Z"/>
+  <path class="region-accent" d="M700 668 Q720 704 714 744 L746 738 Q750 700 732 662 Z"/>
+  <path class="region-accent" d="M804 700 Q820 730 818 760 L846 752 Q846 724 832 694 Z"/>
+  <path class="region-accent" d="M894 754 Q904 778 904 802 L926 794 Q924 770 914 746 Z"/>
+  <path class="region-detail" d="M694 668 l16 -30 l16 32 z"/>
+  <path class="region-detail" d="M772 674 l16 -28 l16 32 z"/>
+  <path class="region-detail" d="M846 702 l14 -26 l16 30 z"/>
+  <path class="region-detail" d="M906 748 l12 -24 l16 28 z"/>
+</svg>

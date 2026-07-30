@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Neutral round eyes: tall candy irises tilted ~6deg inward, soft 12deg tare-me upper-lid droop -->
+  <path class="region-iris" d="M453 282A52 68 6 1 1 439 418A52 68 6 1 1 453 282Z"/>
+  <path class="region-iris" d="M571 282A52 68 -6 1 1 585 418A52 68 -6 1 1 571 282Z"/>
+  <circle class="region-detail" cx="448" cy="354" r="21"/>
+  <circle class="region-detail" cx="576" cy="354" r="21"/>
+  <circle fill="#ffffff" cx="430" cy="320" r="16"/>
+  <circle fill="#ffffff" cx="562" cy="320" r="16"/>
+  <circle fill="#ffffff" cx="466" cy="382" r="6"/>
+  <circle fill="#ffffff" cx="598" cy="382" r="6"/>
+  <path class="region-line" d="M392 322Q438 284 500 302"/>
+  <path class="region-line" d="M632 322Q586 284 524 302"/>
+</svg>

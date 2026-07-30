@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8a8071)}.region-accent{fill:var(--region-accent,#7da35c)}.region-detail{fill:none;stroke:var(--region-detail,#4d463c);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Stone dragon head: rocky slab hide with jutting brow and jaw chunks, dark crack web, mossy patches -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M340 240 L282 226 L314 292 Z"/>
+  <path class="region-fur" d="M684 240 L742 226 L710 292 Z"/>
+  <path class="region-fur" d="M322 382 L266 422 L300 472 L354 452 Z"/>
+  <path class="region-fur" d="M702 382 L758 422 L724 472 L670 452 Z"/>
+  <path class="region-fur" d="M436 376 L588 376 L606 430 L588 494 L436 494 L418 430 Z"/>
+  <path class="region-accent" d="M598 188 q36 -18 66 2 q10 22 -12 34 q-32 12 -58 -4 q-8 -18 4 -32 z"/>
+  <path class="region-accent" d="M298 418 q20 -12 38 -2 q6 14 -8 22 q-20 8 -34 -2 q-4 -12 4 -18 z"/>
+  <path class="region-detail" d="M396 214 l30 24 l-6 28"/>
+  <path class="region-detail" d="M414 240 l28 -10"/>
+  <path class="region-detail" d="M648 348 l-24 26 l8 30"/>
+  <path class="region-detail" d="M630 368 l26 12"/>
+  <path class="region-detail" d="M500 400 l14 22 l-10 24"/>
+  <path class="region-detail" d="M556 438 l18 20"/>
+  <path class="region-detail" d="M360 320 l26 18"/>
+  <path class="region-detail" d="M474 416 q-4 14 2 26"/>
+  <path class="region-detail" d="M550 416 q4 14 -2 26"/>
+</svg>

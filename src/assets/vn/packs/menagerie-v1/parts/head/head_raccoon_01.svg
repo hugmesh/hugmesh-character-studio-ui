@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8d8a93)}.region-accent{fill:var(--region-accent,#ece7dc)}.region-detail{fill:var(--region-detail,#322e35)}</style>
+  <!-- Raccoon head: grey base with spiky cheek ruffs, triangular ears with pale front rims, iconic black eye mask under a cream brow band, cream muzzle with black nose -->
+  <path class="region-fur" d="M336 236 Q322 150 366 96 Q424 128 446 196 Q392 208 336 236 Z"/>
+  <path class="region-fur" d="M688 236 Q702 150 658 96 Q600 128 578 196 Q632 208 688 236 Z"/>
+  <path class="region-accent" d="M352 216 Q346 158 372 120 Q404 144 420 190 Q386 200 352 216 Z"/>
+  <path class="region-accent" d="M672 216 Q678 158 652 120 Q620 144 604 190 Q638 200 672 216 Z"/>
+  <path class="region-detail" d="M370 196 Q368 162 382 138 Q400 156 408 184 Q388 190 370 196 Z"/>
+  <path class="region-detail" d="M654 196 Q656 162 642 138 Q624 156 616 184 Q636 190 654 196 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="196"/>
+  <path class="region-fur" d="M318 350 L260 386 L318 400 L274 448 L340 442 Q320 398 318 350 Z"/>
+  <path class="region-fur" d="M706 350 L764 386 L706 400 L750 448 L684 442 Q704 398 706 350 Z"/>
+  <path class="region-accent" d="M356 268 Q392 226 452 220 Q512 214 572 220 Q632 226 668 268 Q636 250 572 246 Q512 242 452 246 Q388 250 356 268 Z"/>
+  <path class="region-detail" d="M348 296 Q372 262 428 262 Q478 262 500 286 Q512 280 524 286 Q546 262 596 262 Q652 262 676 296 Q684 326 660 350 Q622 380 574 356 Q544 340 524 344 Q512 348 500 344 Q480 340 450 356 Q402 380 364 350 Q340 326 348 296 Z"/>
+  <path class="region-detail" d="M352 330 Q318 352 306 386 L354 372 Z"/>
+  <path class="region-detail" d="M672 330 Q706 352 718 386 L670 372 Z"/>
+  <path class="region-accent" d="M438 382 Q512 358 586 382 Q604 438 574 478 Q544 506 512 508 Q480 506 450 478 Q420 438 438 382 Z"/>
+  <path class="region-detail" d="M478 394 Q512 382 546 394 Q552 420 530 438 Q512 448 494 438 Q472 420 478 394 Z"/>
+  <path class="region-detail" d="M509 444 L515 444 L513 466 L511 466 Z"/>
+</svg>

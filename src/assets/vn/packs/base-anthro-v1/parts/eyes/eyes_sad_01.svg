@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}</style>
+  <!-- sad: half-lidded round eyes with a droop line (placeholder) -->
+  <circle class="region-iris" cx="440" cy="310" r="34"/>
+  <circle class="region-iris" cx="584" cy="310" r="34"/>
+  <path class="region-iris" d="M404 286 q36 -18 72 0" fill="none" stroke="var(--region-iris,#3a78c2)" stroke-width="10" stroke-linecap="round"/>
+  <path class="region-iris" d="M548 286 q36 -18 72 0" fill="none" stroke="var(--region-iris,#3a78c2)" stroke-width="10" stroke-linecap="round"/>
+</svg>

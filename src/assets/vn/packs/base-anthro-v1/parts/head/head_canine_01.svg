@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0b0b0)}</style>
+  <circle class="region-fur" cx="512" cy="330" r="210"/>
+  <path class="region-fur" d="M360 180 l-40 -120 l120 60 z"/>
+  <path class="region-fur" d="M664 180 l40 -120 l-120 60 z"/>
+</svg>

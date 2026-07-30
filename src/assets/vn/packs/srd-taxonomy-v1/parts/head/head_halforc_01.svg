@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b7d9a8)}.region-hair{fill:var(--region-hair,#9aa4ae)}.region-accent{fill:var(--region-accent,#f4eedd)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Half-Orc (SRD 5.1) head: tiny up-tusks flanking the mouth corners, heavy cute jaw, cropped hair (region-hair) -->
+  <circle class="region-fur" cx="312" cy="340" r="38"/>
+  <circle class="region-fur" cx="712" cy="340" r="38"/>
+  <circle class="region-fur" cx="512" cy="318" r="196"/>
+  <ellipse class="region-fur" cx="512" cy="432" rx="208" ry="118"/>
+  <path class="region-hair" d="M322 298 Q320 152 512 132 Q704 152 702 298 Q686 202 512 196 Q338 202 322 298 Z"/>
+  <path class="region-line" d="M496 396 l8 6"/>
+  <path class="region-line" d="M528 396 l-8 6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-accent" d="M398 470 Q388 430 406 418 Q424 424 422 466 Q410 478 398 470 Z"/>
+  <path class="region-accent" d="M626 470 Q636 430 618 418 Q600 424 602 466 Q614 478 626 470 Z"/>
+</svg>

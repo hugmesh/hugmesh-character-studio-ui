@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#b5764f)}</style>
+  <!-- Freckles: scattered detail dots across the nose bridge and upper cheeks, below the eye line -->
+  <circle class="region-detail" cx="428" cy="362" r="6"/>
+  <circle class="region-detail" cx="452" cy="376" r="5"/>
+  <circle class="region-detail" cx="474" cy="360" r="6"/>
+  <circle class="region-detail" cx="496" cy="380" r="5"/>
+  <circle class="region-detail" cx="528" cy="380" r="5"/>
+  <circle class="region-detail" cx="550" cy="360" r="6"/>
+  <circle class="region-detail" cx="572" cy="376" r="5"/>
+  <circle class="region-detail" cx="596" cy="362" r="6"/>
+  <circle class="region-detail" cx="440" cy="392" r="4"/>
+  <circle class="region-detail" cx="584" cy="392" r="4"/>
+</svg>

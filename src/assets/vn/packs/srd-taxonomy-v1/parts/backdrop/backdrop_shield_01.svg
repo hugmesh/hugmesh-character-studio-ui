@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6eedd)}.region-detail{fill:var(--region-detail,#c9a96e)}</style>
+  <!-- Token backdrop: rounded heater-shield badge (soft curves, rounded bottom tip), detail rim + pinstripe -->
+  <path class="region-detail" d="M512 94 Q340 78 190 104 Q106 120 102 240 Q100 520 218 716 Q330 862 468 934 Q512 958 556 934 Q694 862 806 716 Q924 520 922 240 Q918 120 834 104 Q684 78 512 94 Z"/>
+  <path class="region-accent" d="M512 121 Q352 106 213 130 Q134 145 131 257 Q129 517 239 699 Q343 835 471 902 Q512 925 553 902 Q681 835 785 699 Q895 517 893 257 Q890 145 811 130 Q672 106 512 121 Z"/>
+  <path class="region-detail" d="M512 154 Q367 140 240 162 Q169 176 166 277 Q164 514 264 679 Q358 803 475 864 Q512 884 549 864 Q666 803 760 679 Q860 514 858 277 Q855 176 784 162 Q657 140 512 154 Z"/>
+  <path class="region-accent" d="M512 165 Q372 152 250 174 Q181 187 178 284 Q176 513 272 672 Q364 791 476 850 Q512 870 548 850 Q660 791 752 672 Q848 513 846 284 Q843 187 774 174 Q652 152 512 165 Z"/>
+</svg>

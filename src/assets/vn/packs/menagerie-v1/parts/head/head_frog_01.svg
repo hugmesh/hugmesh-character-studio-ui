@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#79b356)}.region-accent{fill:var(--region-accent,#e3edb4)}.region-line{fill:none;stroke:var(--region-line,#3e6b2f);stroke-width:13;stroke-linecap:round}</style>
+  <!-- Frog head: wide friendly face, eye-socket bumps on top of the skull, pale throat pouch under a big baked-in smile, tiny nostrils -->
+  <circle class="region-fur" cx="420" cy="172" r="64"/>
+  <circle class="region-fur" cx="604" cy="172" r="64"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-fur" cx="512" cy="392" rx="232" ry="136"/>
+  <path class="region-accent" d="M348 424 Q512 516 676 424 Q672 508 592 536 Q512 558 432 536 Q352 508 348 424 Z"/>
+  <circle class="region-accent" cx="452" cy="220" r="13"/>
+  <circle class="region-accent" cx="512" cy="244" r="10"/>
+  <circle class="region-accent" cx="572" cy="216" r="12"/>
+  <path class="region-line" d="M352 424 q160 92 320 0"/>
+  <path class="region-line" d="M488 378 l6 4"/>
+  <path class="region-line" d="M536 382 l6 -4"/>
+</svg>

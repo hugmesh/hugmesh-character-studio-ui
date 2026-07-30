@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9a8265)}.region-accent{fill:var(--region-accent,#e8ddc8)}.region-detail{fill:var(--region-detail,#4a3a2e)}</style>
+  <!-- Lean canid body: slim tapered torso, digitigrade hind legs with hock bend, spiky chest ruff and belly accent, toe-bean details -->
+  <path class="region-fur" d="M472 496 Q512 486 552 496 L560 560 Q512 578 464 560 Z"/>
+  <path class="region-fur" d="M404 548 Q376 570 368 630 L360 700 Q360 728 388 732 Q414 730 416 704 L420 620 Q422 570 404 548 Z"/>
+  <path class="region-fur" d="M620 548 Q648 570 656 630 L664 700 Q664 728 636 732 Q610 730 608 704 L604 620 Q602 570 620 548 Z"/>
+  <path class="region-fur" d="M422 540 Q384 556 382 620 Q380 690 410 738 Q442 774 512 780 Q582 774 614 738 Q644 690 642 620 Q640 556 602 540 Q512 512 422 540 Z"/>
+  <path class="region-fur" d="M426 736 Q408 794 426 842 Q440 872 432 900 Q428 916 440 924 L500 924 Q506 900 492 878 Q476 852 480 812 Q484 770 472 740 Z"/>
+  <path class="region-fur" d="M598 736 Q616 794 598 842 Q584 872 592 900 Q596 916 584 924 L524 924 Q518 900 532 878 Q548 852 544 812 Q540 770 552 740 Z"/>
+  <path class="region-fur" d="M416 900 Q404 930 428 938 L500 938 Q516 928 508 906 Q484 892 452 892 Q428 892 416 900 Z"/>
+  <path class="region-fur" d="M608 900 Q620 930 596 938 L524 938 Q508 928 516 906 Q540 892 572 892 Q596 892 608 900 Z"/>
+  <path class="region-accent" d="M446 538 Q512 520 578 538 Q596 588 570 634 L546 610 L552 664 L512 632 L472 664 L478 610 L454 634 Q428 588 446 538 Z"/>
+  <ellipse class="region-accent" cx="512" cy="702" rx="86" ry="62"/>
+  <ellipse class="region-detail" cx="436" cy="930" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="466" cy="934" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="494" cy="930" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="588" cy="930" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="558" cy="934" rx="10" ry="8"/>
+  <ellipse class="region-detail" cx="530" cy="930" rx="10" ry="8"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#c9a13b)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Feral slit eyes: almond iris with narrow vertical slit pupil, predator glint -->
+  <path class="region-iris" d="M402 300 Q440 260 478 300 Q440 340 402 300 Z"/>
+  <path class="region-iris" d="M546 300 Q584 260 622 300 Q584 340 546 300 Z"/>
+  <path class="region-detail" d="M440 266 Q451 300 440 334 Q429 300 440 266 Z"/>
+  <path class="region-detail" d="M584 266 Q595 300 584 334 Q573 300 584 266 Z"/>
+  <circle fill="#ffffff" cx="426" cy="286" r="6"/>
+  <circle fill="#ffffff" cx="570" cy="286" r="6"/>
+</svg>

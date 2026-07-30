@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7d7266)}.region-accent{fill:var(--region-accent,#ddd3c2)}.region-detail{fill:var(--region-detail,#403528)}</style>
+  <!-- Stocky canid body: broad barrel chest, thick arms, digitigrade hind legs with hock bend, large chest ruff and belly accent, toe-bean details -->
+  <path class="region-fur" d="M462 494 Q512 482 562 494 L572 562 Q512 582 452 562 Z"/>
+  <path class="region-fur" d="M394 548 Q356 576 348 648 L342 712 Q344 742 376 746 Q408 742 410 712 L414 630 Q416 576 394 548 Z"/>
+  <path class="region-fur" d="M630 548 Q668 576 676 648 L682 712 Q680 742 648 746 Q616 742 614 712 L610 630 Q608 576 630 548 Z"/>
+  <path class="region-fur" d="M408 536 Q352 560 346 640 Q344 706 384 750 Q436 786 512 790 Q588 786 640 750 Q680 706 678 640 Q672 560 616 536 Q512 504 408 536 Z"/>
+  <path class="region-fur" d="M416 744 Q396 800 418 850 Q434 878 426 904 Q422 918 436 926 L504 926 Q510 900 496 878 Q478 850 484 810 Q488 768 476 744 Z"/>
+  <path class="region-fur" d="M608 744 Q628 800 606 850 Q590 878 598 904 Q602 918 588 926 L520 926 Q514 900 528 878 Q546 850 540 810 Q536 768 548 744 Z"/>
+  <path class="region-fur" d="M408 902 Q396 932 422 940 L504 940 Q520 930 512 908 Q486 892 448 892 Q422 892 408 902 Z"/>
+  <path class="region-fur" d="M616 902 Q628 932 602 940 L520 940 Q504 930 512 908 Q538 892 576 892 Q602 892 616 902 Z"/>
+  <path class="region-accent" d="M436 536 Q512 514 588 536 Q612 592 582 646 L556 618 L560 682 L512 644 L464 682 L468 618 L442 646 Q412 592 436 536 Z"/>
+  <ellipse class="region-accent" cx="512" cy="706" rx="110" ry="70"/>
+  <ellipse class="region-detail" cx="430" cy="932" rx="11" ry="8"/>
+  <ellipse class="region-detail" cx="462" cy="936" rx="11" ry="8"/>
+  <ellipse class="region-detail" cx="492" cy="932" rx="11" ry="8"/>
+  <ellipse class="region-detail" cx="594" cy="932" rx="11" ry="8"/>
+  <ellipse class="region-detail" cx="562" cy="936" rx="11" ry="8"/>
+  <ellipse class="region-detail" cx="532" cy="932" rx="11" ry="8"/>
+</svg>

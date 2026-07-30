@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cda45e)}.region-accent{fill:var(--region-accent,#8fc4a5)}.region-detail{fill:var(--region-detail,#6e5136)}</style>
+  <!-- Kirin head: gentle deer-like face with a single backswept antler-horn, jade whisker-mane strands trailing from the cheeks, chin beard tuft, and brow spots. -->
+  <ellipse class="region-fur" cx="356" cy="222" rx="92" ry="40" transform="rotate(-30 356 222)"/>
+  <ellipse class="region-fur" cx="668" cy="222" rx="92" ry="40" transform="rotate(30 668 222)"/>
+  <ellipse class="region-detail" cx="344" cy="214" rx="52" ry="18" transform="rotate(-30 344 214)"/>
+  <ellipse class="region-detail" cx="680" cy="214" rx="52" ry="18" transform="rotate(30 680 214)"/>
+  <path class="region-accent" d="M368 386 Q296 428 300 506 Q302 556 274 604 Q260 540 272 486 Q244 518 240 570 Q230 492 280 434 Q316 398 356 380 Z"/>
+  <path class="region-accent" d="M656 386 Q728 428 724 506 Q722 556 750 604 Q764 540 752 486 Q780 518 784 570 Q794 492 744 434 Q708 398 668 380 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="196"/>
+  <path class="region-accent" d="M462 158 Q512 120 562 158 Q544 200 512 210 Q480 200 462 158 Z"/>
+  <path class="region-detail" d="M496 244 Q490 160 516 92 Q530 62 558 48 Q548 96 540 148 Q534 198 532 246 Z"/>
+  <path class="region-detail" d="M506 160 Q484 128 480 92 Q504 110 518 140 Z"/>
+  <path class="region-fur" d="M444 386 Q512 352 580 386 L566 482 Q512 520 458 482 Z"/>
+  <path class="region-accent" d="M462 408 Q512 378 562 408 L550 476 Q512 504 474 476 Z"/>
+  <path class="region-detail" d="M486 396 Q512 384 538 396 Q534 418 512 424 Q490 418 486 396 Z"/>
+  <path class="region-accent" d="M484 504 Q512 548 540 504 Q538 576 512 616 Q486 576 484 504 Z"/>
+  <ellipse class="region-accent" cx="442" cy="262" rx="15" ry="9"/>
+  <ellipse class="region-accent" cx="582" cy="262" rx="15" ry="9"/>
+</svg>

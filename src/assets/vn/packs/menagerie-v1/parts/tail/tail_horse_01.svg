@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9c6a3f)}.region-accent{fill:var(--region-accent,#58402a)}.region-detail{fill:none;stroke:var(--region-detail,#33261c);stroke-width:10;stroke-linecap:round}</style>
+  <!-- Horse tail: furred dock at the hip with a long flowing fall of hair sweeping down behind, ending in pointed strands. -->
+  <path class="region-accent" d="M636 672 Q724 696 746 796 Q760 878 730 958 L706 886 L692 962 L668 878 L654 946 L642 848 Q620 768 628 698 Q628 678 636 672 Z"/>
+  <ellipse class="region-fur" cx="652" cy="700" rx="32" ry="42"/>
+  <path class="region-detail" d="M690 750 Q712 820 704 900"/>
+  <path class="region-detail" d="M662 730 Q676 800 668 880"/>
+</svg>

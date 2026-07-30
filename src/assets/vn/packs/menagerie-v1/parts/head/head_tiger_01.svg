@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#dd8a3e)}.region-accent{fill:var(--region-accent,#35302b)}.region-detail{fill:var(--region-detail,#efe6d8)}</style>
+  <!-- Tiger head: broad skull with jagged cheek ruffs, round ears, bold dark cheek + forehead stripes, cream muzzle, dark nose -->
+  <circle class="region-fur" cx="388" cy="152" r="56"/>
+  <circle class="region-fur" cx="636" cy="152" r="56"/>
+  <circle class="region-detail" cx="392" cy="158" r="28"/>
+  <circle class="region-detail" cx="632" cy="158" r="28"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-fur" d="M330 300 L258 330 L322 356 L252 396 L330 420 L286 470 L360 474 Z"/>
+  <path class="region-fur" d="M694 300 L766 330 L702 356 L772 396 L694 420 L738 470 L664 474 Z"/>
+  <ellipse class="region-detail" cx="512" cy="424" rx="88" ry="56"/>
+  <path class="region-accent" d="M512 138 L496 208 L528 208 Z"/>
+  <path class="region-accent" d="M448 152 L452 216 L482 200 Z"/>
+  <path class="region-accent" d="M576 152 L572 216 L542 200 Z"/>
+  <path class="region-accent" d="M322 316 L408 330 L330 352 Z"/>
+  <path class="region-accent" d="M316 372 L416 380 L336 408 Z"/>
+  <path class="region-accent" d="M336 428 L420 428 L356 460 Z"/>
+  <path class="region-accent" d="M702 316 L616 330 L694 352 Z"/>
+  <path class="region-accent" d="M708 372 L608 380 L688 408 Z"/>
+  <path class="region-accent" d="M688 428 L604 428 L668 460 Z"/>
+  <path class="region-accent" d="M484 388 h56 l-28 32 Z"/>
+</svg>

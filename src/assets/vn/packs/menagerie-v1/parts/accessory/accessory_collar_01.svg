@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#a83a3a)}.region-detail{fill:var(--region-detail,#d9a441)}</style>
+  <!-- Buckle collar: curved neck band with studs, side buckle, knot ring and hanging round tag -->
+  <path class="region-accent" d="M426 496 Q512 534 598 496 L598 532 Q512 570 426 532 Z"/>
+  <rect class="region-detail" x="572" y="500" width="18" height="36" rx="5"/>
+  <circle class="region-detail" cx="462" cy="522" r="6"/>
+  <circle class="region-detail" cx="512" cy="538" r="6"/>
+  <circle class="region-detail" cx="562" cy="522" r="6"/>
+  <circle class="region-detail" cx="512" cy="558" r="9"/>
+  <circle class="region-detail" cx="512" cy="584" r="19"/>
+  <circle fill="#ffffff" cx="506" cy="578" r="5"/>
+</svg>

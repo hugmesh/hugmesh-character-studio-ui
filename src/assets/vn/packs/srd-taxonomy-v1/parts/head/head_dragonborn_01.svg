@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e2c4a4)}.region-accent{fill:var(--region-accent,#f4e3cd)}.region-detail{fill:var(--region-detail,#b08a66)}.region-line{fill:none;stroke:var(--region-line,#6a513f);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Dragonborn (SRD 5.1) head: rounded draconic snout, small swept side-frill plates, crown crest -->
+  <path class="region-detail" d="M400 168 Q308 74 246 108 Q226 120 240 134 Q298 146 362 214 Q378 188 400 168 Z"/>
+  <path class="region-detail" d="M624 168 Q716 74 778 108 Q798 120 784 134 Q726 146 662 214 Q646 188 624 168 Z"/>
+  <path class="region-accent" d="M448 138 Q512 26 576 138 Q512 100 448 138 Z"/>
+  <circle class="region-fur" cx="330" cy="388" r="42"/>
+  <circle class="region-fur" cx="694" cy="388" r="42"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-fur" cx="512" cy="420" rx="88" ry="50"/>
+  <ellipse class="region-accent" cx="512" cy="432" rx="62" ry="28"/>
+  <circle class="region-detail" cx="484" cy="400" r="8"/>
+  <circle class="region-detail" cx="540" cy="400" r="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M478 396 l8 6"/>
+  <path class="region-line" d="M546 396 l-8 6"/>
+</svg>

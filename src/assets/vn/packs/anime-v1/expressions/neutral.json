@@ -1,0 +1,9 @@
+{
+  "id": "neutral",
+  "displayName": "Neutral",
+  "slots": {
+    "eyes": "eyes_tareme_01",
+    "brows": "brows_anime_neutral_01",
+    "mouth": "mouth_anime_neutral_01"
+  }
+}

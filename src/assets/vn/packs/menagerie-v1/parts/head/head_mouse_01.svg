@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9a9aa6)}.region-accent{fill:var(--region-accent,#eadfd6)}.region-detail{fill:var(--region-detail,#d98fa0)}</style>
+  <!-- Mouse head: enormous round ears with pink inner discs, petite pointed muzzle, button nose, cheek dots -->
+  <circle class="region-fur" cx="348" cy="178" r="98"/>
+  <circle class="region-fur" cx="676" cy="178" r="98"/>
+  <circle class="region-detail" cx="352" cy="182" r="60"/>
+  <circle class="region-detail" cx="672" cy="182" r="60"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-accent" d="M448 388 q64 -26 128 0 q-14 62 -64 78 q-50 -16 -64 -78 z"/>
+  <circle class="region-detail" cx="512" cy="400" r="15"/>
+  <circle class="region-accent" cx="418" cy="432" r="16"/>
+  <circle class="region-accent" cx="606" cy="432" r="16"/>
+</svg>

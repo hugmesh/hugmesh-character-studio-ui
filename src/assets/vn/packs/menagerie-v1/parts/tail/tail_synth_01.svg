@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#3a3f4b)}.region-accent{fill:var(--region-accent,#5ad7d4)}.region-detail{fill:var(--region-detail,#1f232c)}</style>
+  <!-- Synth tail: five articulated chassis segments tapering as they curl up behind the hip, dark joint couplers between segments, glowing running lights and tip lamp (accent) -->
+  <path class="region-fur" d="M630 664 Q700 650 724 700 Q716 748 646 744 Q616 706 630 664 Z"/>
+  <polygon class="region-detail" points="716,682 742,674 746,692 720,700"/>
+  <path class="region-fur" d="M736 640 Q792 632 806 676 Q798 716 742 712 Q720 676 736 640 Z"/>
+  <polygon class="region-detail" points="798,646 818,638 822,654 802,662"/>
+  <path class="region-fur" d="M812 594 Q860 588 870 626 Q862 660 816 656 Q798 626 812 594 Z"/>
+  <polygon class="region-detail" points="862,592 878,584 882,598 866,606"/>
+  <path class="region-fur" d="M870 532 Q910 528 918 560 Q910 590 872 586 Q858 560 870 532 Z"/>
+  <polygon class="region-detail" points="906,518 918,510 922,522 910,530"/>
+  <path class="region-fur" d="M906 466 Q938 462 944 490 Q938 514 908 510 Q896 488 906 466 Z"/>
+  <circle class="region-accent" cx="676" cy="700" r="10"/>
+  <circle class="region-accent" cx="760" cy="674" r="9"/>
+  <circle class="region-accent" cx="836" cy="624" r="8"/>
+  <circle class="region-accent" cx="892" cy="558" r="7"/>
+  <circle class="region-accent" cx="924" cy="488" r="12"/>
+</svg>

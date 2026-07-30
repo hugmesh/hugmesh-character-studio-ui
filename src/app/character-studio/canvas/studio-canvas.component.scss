@@ -1,0 +1,33 @@
+@use '../../../styles/tokens' as t;
+
+:host {
+  display: inline-block;
+}
+
+.rig {
+  display: block;
+  width: 256px;
+  height: 256px;
+  object-fit: contain;
+  /* checker backdrop so a transparent rig reads clearly */
+  background-color: #1a1a22;
+  background-image:
+    linear-gradient(45deg, #20202a 25%, transparent 25%),
+    linear-gradient(-45deg, #20202a 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #20202a 75%),
+    linear-gradient(-45deg, transparent 75%, #20202a 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  border-radius: 8px;
+}
+
+// MOBILE: below the tablet breakpoint the preview sits sticky-top (see
+// character-studio.component.scss), so its height is BOUNDED to ~1/3 of the
+// viewport — the picker keeps most of the screen. object-fit: contain
+// letterboxes the square rig inside the shrunken box instead of overflowing.
+@media (max-width: #{t.$bp-md - 1px}) {
+  .rig {
+    width: min(256px, 100%);
+    height: min(256px, 34vh);
+  }
+}

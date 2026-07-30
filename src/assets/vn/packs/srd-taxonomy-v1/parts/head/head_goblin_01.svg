@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5d9a0)}.region-accent{fill:var(--region-accent,#ecf5e2)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Goblin (SRD 5.1) head: HUGE bat-like ears, small frame, one cheeky fang flanking the mouth corner -->
+  <path class="region-fur" d="M356 306 Q250 214 160 116 Q142 234 204 326 Q256 392 368 380 Z"/>
+  <path class="region-accent" d="M352 316 Q272 240 210 168 Q200 250 246 316 Q286 362 350 358 Z"/>
+  <path class="region-fur" d="M668 306 Q774 214 864 116 Q882 234 820 326 Q768 392 656 380 Z"/>
+  <path class="region-accent" d="M672 316 Q752 240 814 168 Q824 250 778 316 Q738 362 674 358 Z"/>
+  <circle class="region-fur" cx="512" cy="338" r="190"/>
+  <path class="region-line" d="M498 396 l7 5"/>
+  <path class="region-line" d="M526 396 l-7 5"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-accent" d="M408 470 Q400 426 422 416 Q442 424 436 464 Q422 480 408 470 Z"/>
+</svg>

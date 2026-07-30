@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f0e9dc)}</style>
+  <!-- Muzzle blaze: accent stripe from the nose bridge up between the eyes, flaring into a three-pronged flame over the forehead with side flecks -->
+  <path class="region-accent" d="M512 470 Q534 434 530 392 Q512 380 494 392 Q490 434 512 470 Z"/>
+  <path class="region-accent" d="M494 392 Q488 330 498 274 L526 274 Q536 330 530 392 Q512 402 494 392 Z"/>
+  <path class="region-accent" d="M498 274 L512 152 L526 274 Q512 284 498 274 Z"/>
+  <path class="region-accent" d="M498 274 Q478 246 480 214 L502 232 Q498 252 498 274 Z"/>
+  <path class="region-accent" d="M526 274 Q546 246 544 214 L522 232 Q526 252 526 274 Z"/>
+  <path class="region-accent" d="M478 340 Q470 316 476 296 L492 306 Q484 322 478 340 Z"/>
+  <path class="region-accent" d="M546 340 Q554 316 548 296 L532 306 Q540 322 546 340 Z"/>
+  <path class="region-accent" d="M488 176 L470 146 L500 156 Z"/>
+  <path class="region-accent" d="M536 176 L554 146 L524 156 Z"/>
+  <path class="region-accent" d="M504 462 Q512 480 520 462 Q516 452 508 452 Z"/>
+</svg>

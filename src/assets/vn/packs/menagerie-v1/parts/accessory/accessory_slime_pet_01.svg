@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}.region-detail{fill:var(--region-detail,#24523f)}</style>
+  <!-- Slime pet: tiny happy slime buddy perched on the shoulder — dome blob with a wobbly nub, goo puddle base, drip off the shoulder, dot eyes, smile, blush and a floating bubble -->
+  <path class="region-fur" d="M594 460 Q580 396 642 376 Q706 358 724 414 Q736 452 706 466 Q650 482 594 460 Z"/>
+  <ellipse class="region-fur" cx="658" cy="468" rx="62" ry="12"/>
+  <path class="region-fur" d="M600 470 q-5 26 0 42 q3 10 10 10 q8 0 9 -12 q1 -22 -4 -40 z"/>
+  <path class="region-fur" d="M666 372 q-2 -18 14 -20 q14 -2 16 14 q2 12 -12 16 q-14 2 -18 -10 z"/>
+  <ellipse class="region-accent" cx="630" cy="402" rx="15" ry="8" transform="rotate(-25 630 402)"/>
+  <circle class="region-accent" cx="700" cy="394" r="5"/>
+  <circle class="region-detail" cx="638" cy="426" r="6"/>
+  <circle class="region-detail" cx="676" cy="424" r="6"/>
+  <path class="region-detail" d="M646 442 q11 12 24 0 q-8 15 -24 0 z"/>
+  <circle class="region-accent" cx="622" cy="438" r="4"/>
+  <circle class="region-accent" cx="692" cy="436" r="4"/>
+  <circle class="region-accent" cx="742" cy="360" r="7"/>
+</svg>

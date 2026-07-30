@@ -1,0 +1,19 @@
+ATTRIBUTION — character-studio asset packs
+==========================================
+
+Any pack that ships D&D System Reference Document (SRD 5.1) content — names,
+creature types, class themes used as design labels — MUST carry the following
+attribution verbatim (in pack.json "attribution", here, and an in-app Credits
+view). See docs/CATALOG-DND-SRD.md for the SRD-vs-Product-Identity boundary.
+
+SRD 5.1 (CC-BY-4.0):
+  "This work includes material taken from the System Reference Document 5.1
+  (\"SRD 5.1\") by Wizards of the Coast LLC and available at
+  https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is
+  licensed under the Creative Commons Attribution 4.0 International License
+  available at https://creativecommons.org/licenses/by/4.0/legalcode."
+
+NOTE: the bundled `base-anthro-v1` pack is original generic-anthro content and is
+NOT SRD-derived. The SRD attribution applies only to SRD-content packs (e.g. a
+future `srd-dnd-v1`). WotC Product Identity (beholder, mind flayer, etc.) is
+NEVER shipped — see the EXCLUSIONS list in docs/CATALOG-DND-SRD.md.

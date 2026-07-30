@@ -1,0 +1,15 @@
+{
+  "name": "hugmesh-character-studio-ui-e2e",
+  "private": true,
+  "description": "Playwright + playwright-bdd (Gherkin) e2e harness for hugmesh-character-studio-ui — the platform's first e2e for this remote. Pure-UI scenarios (part-picker, palette, draw/undo/clear, draw apply/remove user-part, export→download, expression preview, preview↔export fidelity, AI local-heuristic fallback, canvas render) run OFFLINE against `ng serve character-studio` (static asset packs + in-browser SVG→PNG). Scenarios that touch the off-stack character-bff / character-ai (set-as-avatar cross-surface write + its cross-user isolation, the signed-out 401 path, the edge-AI seam) are tagged @cluster: they are GENERATED so they stay discoverable (bddgen + `playwright test --list`), and SKIPPED at runtime unless E2E_LIVE=1 (the fixtures.ts Before hook), so the default offline run lists them without executing.",
+  "scripts": {
+    "test": "playwright test",
+    "bdd:gen": "bddgen",
+    "bdd:list": "bddgen && playwright test --list"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.0",
+    "@types/node": "^20.0.0",
+    "playwright-bdd": "^8.5.0"
+  }
+}

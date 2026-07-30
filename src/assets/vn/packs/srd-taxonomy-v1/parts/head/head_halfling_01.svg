@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c9a8)}.region-hair{fill:var(--region-hair,#d3a06a)}.region-detail{fill:var(--region-detail,#df9f7e)}</style>
+  <!-- Halfling (SRD 5.1, Lightfoot) head: bouncy curly hair (region-hair), round ears, extra baby-fat cheeks -->
+  <circle class="region-hair" cx="512" cy="320" r="208"/>
+  <circle class="region-hair" cx="330" cy="214" r="46"/>
+  <circle class="region-hair" cx="376" cy="166" r="52"/>
+  <circle class="region-hair" cx="456" cy="130" r="56"/>
+  <circle class="region-hair" cx="544" cy="126" r="54"/>
+  <circle class="region-hair" cx="628" cy="148" r="50"/>
+  <circle class="region-hair" cx="694" cy="204" r="44"/>
+  <circle class="region-fur" cx="322" cy="352" r="34"/>
+  <circle class="region-fur" cx="702" cy="352" r="34"/>
+  <circle class="region-detail" cx="326" cy="352" r="14"/>
+  <circle class="region-detail" cx="698" cy="352" r="14"/>
+  <circle class="region-fur" cx="342" cy="404" r="46"/>
+  <circle class="region-fur" cx="682" cy="404" r="46"/>
+  <circle class="region-fur" cx="512" cy="335" r="200"/>
+  <circle class="region-hair" cx="512" cy="182" r="44"/>
+  <ellipse class="region-detail" cx="512" cy="397" rx="12" ry="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

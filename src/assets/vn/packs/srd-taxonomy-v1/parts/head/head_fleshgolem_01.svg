@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9d6b4)}.region-accent{fill:var(--region-accent,#e6d4c2)}.region-detail{fill:var(--region-detail,#aeb4c2)}.region-line{fill:none;stroke:var(--region-line,#6a5f66);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Flesh Golem head: two-tone patchwork skin, forehead cross-stitch seam, neck bolt nubs -->
+  <rect class="region-detail" x="292" y="446" width="80" height="38" rx="17"/>
+  <rect class="region-detail" x="652" y="446" width="80" height="38" rx="17"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-accent" d="M330 258 Q322 168 402 136 Q468 114 512 126 L512 230 Q418 234 330 258 Z"/>
+  <path class="region-accent" d="M560 462 Q610 434 648 456 Q658 494 618 516 Q580 506 560 462 Z"/>
+  <path class="region-line" d="M340 250 Q432 222 512 224"/>
+  <path class="region-line" d="M382 224 l10 30"/>
+  <path class="region-line" d="M438 214 l8 30"/>
+  <path class="region-line" d="M494 210 l6 30"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

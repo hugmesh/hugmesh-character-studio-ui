@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#3a332e)}</style>
+  <!-- Holstein patches: irregular dark dairy-cow blotches scattered across the shoulders, ribs, belly and hip -->
+  <path class="region-detail" d="M404 566 Q380 596 396 634 Q424 660 458 644 Q480 616 462 584 Q436 560 404 566 Z"/>
+  <path class="region-detail" d="M560 560 Q548 576 556 592 Q572 602 588 592 Q596 576 586 564 Q572 554 560 560 Z"/>
+  <path class="region-detail" d="M574 600 Q552 632 570 668 Q600 692 634 672 Q654 640 634 610 Q606 588 574 600 Z"/>
+  <path class="region-detail" d="M508 552 Q494 570 504 590 Q522 604 542 592 Q552 572 540 558 Q524 546 508 552 Z"/>
+  <path class="region-detail" d="M436 690 Q414 716 430 748 Q456 770 488 754 Q506 728 490 702 Q464 682 436 690 Z"/>
+  <path class="region-detail" d="M586 716 Q568 740 582 768 Q606 786 632 770 Q646 744 632 722 Q610 706 586 716 Z"/>
+</svg>

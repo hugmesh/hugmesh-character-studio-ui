@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#575060)}</style>
+  <!-- Beast bead eyes: simple dark shiny beads, oversized double glints carry all the charm -->
+  <ellipse class="region-iris" cx="446" cy="352" rx="36" ry="42"/>
+  <ellipse class="region-iris" cx="578" cy="352" rx="36" ry="42"/>
+  <circle fill="#ffffff" cx="432" cy="334" r="16"/>
+  <circle fill="#ffffff" cx="564" cy="334" r="16"/>
+  <circle fill="#ffffff" cx="460" cy="376" r="6"/>
+  <circle fill="#ffffff" cx="592" cy="376" r="6"/>
+</svg>

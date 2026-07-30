@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f3eff8)}.region-accent{fill:var(--region-accent,#d8cfe9)}</style>
+  <!-- Feathered wings feature (SRD 5.1): small rounded wings + scalloped flight-feather tips + covert arcs -->
+  <path class="region-fur" d="M430 476 Q312 428 240 458 Q176 490 182 560 Q188 606 226 626 Q230 588 258 580 Q260 620 292 632 Q298 596 326 590 Q332 626 364 630 Q402 590 424 540 Z"/>
+  <path class="region-fur" d="M594 476 Q712 428 784 458 Q848 490 842 560 Q836 606 798 626 Q794 588 766 580 Q764 620 732 632 Q726 596 698 590 Q692 626 660 630 Q622 590 600 540 Z"/>
+  <path class="region-accent" d="M408 486 Q322 450 258 468 Q222 482 218 524 Q252 540 292 536 Q344 530 392 508 Z"/>
+  <path class="region-accent" d="M616 486 Q702 450 766 468 Q802 482 806 524 Q772 540 732 536 Q680 530 632 508 Z"/>
+</svg>

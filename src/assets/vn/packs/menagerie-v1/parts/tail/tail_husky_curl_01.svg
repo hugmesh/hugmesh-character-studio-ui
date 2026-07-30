@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5f6b7d)}.region-accent{fill:var(--region-accent,#f3f5f8)}</style>
+  <!-- Husky tail: thick sickle plume rising from the hip and curling forward over the back, pale underside inside the curl, tuft breaks along the outer curve -->
+  <path class="region-fur" d="M636 712 Q606 636 630 562 Q656 486 730 458 Q802 436 850 482 Q890 524 868 578 Q846 626 792 630 Q748 632 722 600 Q756 596 776 576 Q798 552 786 524 Q770 498 732 508 Q690 522 672 570 Q656 618 672 664 Q680 692 668 714 Q650 716 636 712 Z"/>
+  <path class="region-fur" d="M700 470 L730 438 L746 480 Z"/>
+  <path class="region-fur" d="M804 460 L844 450 L830 494 Z"/>
+  <path class="region-fur" d="M862 518 L896 528 L870 560 Z"/>
+  <path class="region-fur" d="M624 560 L600 526 L648 528 Z"/>
+  <path class="region-fur" d="M616 622 L596 662 L638 662 Z"/>
+  <path class="region-fur" d="M646 690 L634 730 L678 716 Z"/>
+  <path class="region-accent" d="M672 570 Q690 522 732 508 Q770 498 786 524 Q798 552 776 576 Q756 596 722 600 Q700 590 686 574 Z"/>
+  <path class="region-accent" d="M640 690 Q622 634 636 578 Q652 600 668 610 Q658 650 666 686 Q652 692 640 690 Z"/>
+  <path class="region-accent" d="M838 508 L864 490 L866 528 Z"/>
+</svg>

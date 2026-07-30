@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Angry anime mouth: wide gritted teeth bared in a clenched rectangle -->
+  <rect fill="#ffffff" x="452" y="416" width="120" height="36" rx="14"/>
+  <rect class="region-line" x="452" y="416" width="120" height="36" rx="14"/>
+  <path class="region-line" d="M482 418 l0 32"/>
+  <path class="region-line" d="M512 416 l0 36"/>
+  <path class="region-line" d="M542 418 l0 32"/>
+</svg>

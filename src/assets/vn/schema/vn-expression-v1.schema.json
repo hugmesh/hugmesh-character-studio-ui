@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hugmesh.internal/schemas/vn-expression-v1.json",
+  "title": "VN Expression v1",
+  "description": "An OPTIONAL expression preset (expressions/<id>.json). Names overrides of a pack's expression slots (eyes/brows/mouth) by partId — applied at compose for preview-only. See hugmesh-vn-character-b0-scaffold (EXPRESSION-PREVIEW slice).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "slots"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "displayName": { "type": "string" },
+    "slots": {
+      "type": "object",
+      "description": "slot → partId override; partId MUST exist as a part in that slot of the pack.",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" }
+    }
+  }
+}

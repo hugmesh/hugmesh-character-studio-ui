@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b6a9cd)}.region-clothtrim{fill:var(--region-clothtrim,#e8e2d4)}.region-iris{fill:var(--region-iris,#8fd9b4)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Warlock pact tome (SRD 5.1) accessory: chunky closed tome, unblinking eye sigil, curling eldritch wisp -->
+  <rect class="region-clothtrim" x="226" y="626" width="118" height="150" rx="16"/>
+  <rect class="region-cloth" x="210" y="610" width="120" height="160" rx="18"/>
+  <rect class="region-clothtrim" x="204" y="684" width="130" height="26" rx="13"/>
+  <path class="region-clothtrim" d="M234 654 Q270 628 306 654 Q270 680 234 654 Z"/>
+  <circle class="region-iris" cx="270" cy="654" r="16"/>
+  <circle class="region-cloth" cx="270" cy="654" r="7"/>
+  <circle fill="#ffffff" cx="265" cy="648" r="4"/>
+  <circle class="region-clothtrim" cx="222" cy="622" r="9"/>
+  <circle class="region-clothtrim" cx="318" cy="622" r="9"/>
+  <circle class="region-clothtrim" cx="222" cy="758" r="9"/>
+  <circle class="region-clothtrim" cx="318" cy="758" r="9"/>
+  <path class="region-line" d="M244 630 Q240 690 244 750"/>
+  <path class="region-iris" d="M298 506 Q330 528 322 566 Q314 596 288 598 Q262 592 266 562 Q272 534 298 506 Z"/>
+  <circle class="region-clothtrim" cx="292" cy="566" r="10"/>
+  <circle class="region-iris" cx="262" cy="618" r="7"/>
+  <circle class="region-iris" cx="330" cy="604" r="5"/>
+</svg>

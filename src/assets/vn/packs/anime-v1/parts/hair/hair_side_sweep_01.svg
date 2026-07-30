@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#7a4a8a)}.region-accent{fill:var(--region-accent,#a374b3)}</style>
+  <!-- Side sweep: deep left part, thick fringe sweeping across to the right temple, long right lock, short tucked left side, sheen along the sweep. -->
+  <path class="region-hair" d="M306 380 Q298 108 512 92 Q726 108 718 380 Q704 238 512 212 Q320 238 306 380 Z"/>
+  <path class="region-hair" d="M424 148 Q560 148 656 240 Q688 290 676 330 Q640 270 574 232 Q500 204 428 196 Q416 170 424 148 Z"/>
+  <path class="region-hair" d="M428 190 Q470 214 502 250 Q476 268 452 262 Q430 230 428 190 Z"/>
+  <path class="region-hair" d="M382 170 Q396 218 390 258 Q414 234 418 196 Q402 176 382 170 Z"/>
+  <path class="region-hair" d="M344 186 Q352 232 346 268 Q370 246 376 208 Q362 190 344 186 Z"/>
+  <path class="region-hair" d="M306 260 Q288 340 298 408 Q316 434 344 424 Q356 356 352 284 Q328 232 306 260 Z"/>
+  <path class="region-hair" d="M718 270 Q742 370 730 480 Q722 528 692 516 Q674 460 680 380 Q684 310 668 276 Q696 232 718 270 Z"/>
+  <path class="region-hair" d="M622 232 Q652 268 660 310 Q632 300 610 274 Q612 248 622 232 Z"/>
+  <path class="region-accent" d="M448 168 Q560 176 636 250 Q548 196 452 190 Q444 178 448 168 Z"/>
+  <path class="region-accent" d="M702 320 Q716 400 708 470 Q696 402 692 332 Q696 310 702 320 Z"/>
+  <path class="region-accent" d="M402 130 Q490 100 590 124 Q494 92 406 116 Z"/>
+</svg>

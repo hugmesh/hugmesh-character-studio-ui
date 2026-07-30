@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2d9a8)}.region-accent{fill:var(--region-accent,#fbf0d9)}.region-detail{fill:var(--region-detail,#cf9668)}.region-hair{fill:var(--region-hair,#c49a72)}</style>
+  <!-- Lion (SRD 5.1) head: huge fluffy scalloped mane ring (hair region, warm brown), small round ears, cream cub muzzle -->
+  <path class="region-hair" d="M752 330 Q807 426 706 471 Q694 581 586 558 Q512 640 438 558 Q330 581 318 471 Q217 426 272 330 Q217 234 318 189 Q330 79 438 102 Q512 20 586 102 Q694 79 706 189 Q807 234 752 330 Z"/>
+  <circle class="region-fur" cx="394" cy="150" r="54"/>
+  <circle class="region-accent" cx="398" cy="156" r="28"/>
+  <circle class="region-fur" cx="630" cy="150" r="54"/>
+  <circle class="region-accent" cx="626" cy="156" r="28"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-accent" cx="482" cy="428" r="35"/>
+  <circle class="region-accent" cx="542" cy="428" r="35"/>
+  <path class="region-detail" d="M494 388 Q512 380 530 388 Q526 400 512 405 Q498 400 494 388 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

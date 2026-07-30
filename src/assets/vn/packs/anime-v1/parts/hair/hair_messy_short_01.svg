@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#7a5a3a)}.region-accent{fill:var(--region-accent,#a4835c)}</style>
+  <!-- Messy short cut: tousled dome with outward flicks at temples and crown, uneven crossing bangs, nape tufts, sliver highlights. -->
+  <path class="region-hair" d="M308 380 Q300 108 512 92 Q724 108 716 380 Q702 238 512 212 Q322 238 308 380 Z"/>
+  <path class="region-hair" d="M430 108 Q420 66 436 40 Q456 74 468 102 Z"/>
+  <path class="region-hair" d="M520 96 Q532 56 560 38 Q560 78 548 106 Z"/>
+  <path class="region-hair" d="M610 118 Q640 84 676 76 Q660 116 636 138 Z"/>
+  <path class="region-hair" d="M356 140 Q322 116 282 116 Q310 150 338 166 Z"/>
+  <path class="region-hair" d="M314 250 Q272 246 240 272 Q282 288 310 300 Z"/>
+  <path class="region-hair" d="M710 250 Q752 246 784 272 Q742 288 714 300 Z"/>
+  <path class="region-hair" d="M306 330 Q286 400 302 462 Q330 470 346 446 Q332 384 336 324 Z"/>
+  <path class="region-hair" d="M718 330 Q738 400 722 462 Q694 470 678 446 Q692 384 688 324 Z"/>
+  <path class="region-hair" d="M354 226 Q360 270 388 292 Q404 236 394 190 Q370 200 354 226 Z"/>
+  <path class="region-hair" d="M392 196 Q426 250 442 284 Q466 240 452 176 Q418 176 392 196 Z"/>
+  <path class="region-hair" d="M448 180 Q464 244 500 278 Q532 238 536 176 Q490 160 448 180 Z"/>
+  <path class="region-hair" d="M532 178 Q564 236 574 282 Q606 252 622 194 Q578 172 532 178 Z"/>
+  <path class="region-hair" d="M618 198 Q644 246 638 290 Q664 266 672 226 Q652 200 618 198 Z"/>
+  <path class="region-accent" d="M404 138 Q500 104 600 130 Q502 94 408 124 Z"/>
+  <path class="region-accent" d="M324 336 Q314 390 326 434 Q338 390 336 342 Z"/>
+  <path class="region-accent" d="M700 336 Q710 390 698 434 Q686 390 688 342 Z"/>
+</svg>

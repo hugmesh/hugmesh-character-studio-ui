@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6b7c0)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Open happy laugh: big D-smile, rosy inner mouth, little white teeth glint -->
+  <path class="region-accent" d="M436 428Q512 456 588 428Q574 504 512 512Q450 504 436 428Z"/>
+  <rect fill="#ffffff" x="474" y="438" width="76" height="14" rx="7"/>
+  <path class="region-line" d="M436 428Q512 456 588 428Q574 504 512 512Q450 504 436 428Z"/>
+</svg>

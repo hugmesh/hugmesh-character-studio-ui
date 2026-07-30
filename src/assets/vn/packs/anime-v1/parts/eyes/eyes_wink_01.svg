@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#7b68c9)}.region-detail{fill:var(--region-detail,#2b2438)}.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:18;stroke-linecap:round}</style>
+  <!-- Wink anime eyes: left eye wide open and glossy, right eye squeezed shut in a cheeky arc with lash flicks -->
+  <ellipse fill="#ffffff" cx="440" cy="308" rx="46" ry="54"/>
+  <ellipse class="region-iris" cx="440" cy="312" rx="34" ry="48"/>
+  <ellipse class="region-detail" cx="440" cy="318" rx="14" ry="24"/>
+  <circle fill="#ffffff" cx="426" cy="290" r="11"/>
+  <circle fill="#ffffff" cx="452" cy="334" r="5"/>
+  <path class="region-line" d="M484 262 q-48 -22 -86 26 l-6 12"/>
+  <path class="region-line" d="M408 360 q26 14 52 6"/>
+  <path class="region-line" d="M538 306 q48 -50 94 0"/>
+  <path class="region-line" d="M632 306 l14 8"/>
+  <path class="region-line" d="M616 280 l12 -10"/>
+  <path class="region-line" d="M592 264 l8 -13"/>
+</svg>

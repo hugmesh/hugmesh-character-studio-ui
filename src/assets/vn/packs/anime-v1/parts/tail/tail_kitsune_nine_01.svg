@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e8913a)}.region-accent{fill:var(--region-accent,#f7efe2)}</style>
+  <!-- Kitsune nine-tail fan: nine tapered tails radiating from the hip in a full fan, each with a cream tip -->
+  <g transform="rotate(-115 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(-90 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(-66 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(-44 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(-22 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(22 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(44 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <g transform="rotate(66 650 700)"><path class="region-fur" d="M650 700 Q594 616 604 496 Q612 398 650 350 Q688 398 696 496 Q706 616 650 700 Z"/><path class="region-accent" d="M620 452 Q630 390 650 360 Q670 390 680 452 Q650 474 620 452 Z"/></g>
+  <circle class="region-fur" cx="650" cy="700" r="64"/>
+</svg>

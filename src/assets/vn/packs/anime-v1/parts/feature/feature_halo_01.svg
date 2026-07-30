@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#ffd76b)}.region-detail{fill:var(--region-detail,#fff3c4)}</style>
+  <!-- Halo: golden ring floating above the head with two sparkles -->
+  <path class="region-accent" fill-rule="evenodd" d="M396 80 a116 34 0 1 0 232 0 a116 34 0 1 0 -232 0 Z M422 80 a90 18 0 1 0 180 0 a90 18 0 1 0 -180 0 Z"/>
+  <polygon class="region-detail" points="652,18 658,34 674,40 658,46 652,62 646,46 630,40 646,34"/>
+  <polygon class="region-detail" points="386,100 390,111 401,115 390,119 386,130 382,119 371,115 382,111"/>
+</svg>

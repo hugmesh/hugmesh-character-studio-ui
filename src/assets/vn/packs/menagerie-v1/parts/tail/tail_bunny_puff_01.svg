@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9b29a)}.region-accent{fill:var(--region-accent,#f0e4d6)}</style>
+  <!-- Bunny tail: cotton puff of overlapping round tufts at the hip with cream highlights -->
+  <circle class="region-fur" cx="652" cy="664" r="46"/>
+  <circle class="region-fur" cx="700" cy="686" r="52"/>
+  <circle class="region-fur" cx="662" cy="718" r="48"/>
+  <circle class="region-fur" cx="706" cy="736" r="40"/>
+  <circle class="region-fur" cx="728" cy="700" r="34"/>
+  <circle class="region-accent" cx="712" cy="682" r="26"/>
+  <circle class="region-accent" cx="690" cy="722" r="22"/>
+  <circle class="region-accent" cx="730" cy="708" r="16"/>
+</svg>

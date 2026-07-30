@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#a5e3da)}.region-detail{fill:var(--region-detail,#28545e)}</style>
+  <!-- Dorsal fin-mane: webbed membrane crest with a crown tuft between the ears, spiked fin fall running down the right side of the neck onto the back, ray spines inside the web -->
+  <path class="region-accent" d="M466 118 Q484 74 512 62 Q540 74 558 118 Q536 146 512 142 Q488 146 466 118 Z"/>
+  <path class="region-detail" d="M496 92 L502 136 L488 134 Z"/>
+  <path class="region-detail" d="M528 92 L522 136 L536 134 Z"/>
+  <path class="region-accent" d="M466 128 Q398 170 380 244 L416 232 Q396 284 404 336 Q438 296 462 300 Q442 212 466 128 Z"/>
+  <path class="region-detail" d="M430 200 L410 258 L398 246 Z"/>
+  <path class="region-accent" d="M560 120 Q664 168 706 262 L666 268 Q724 314 740 400 L696 396 Q744 458 748 546 L706 528 Q736 586 724 646 Q676 604 650 540 Q616 452 622 356 Q610 232 560 120 Z"/>
+  <path class="region-detail" d="M632 236 L690 268 L628 252 Z"/>
+  <path class="region-detail" d="M638 350 L714 402 L634 366 Z"/>
+  <path class="region-detail" d="M648 468 L712 534 L644 484 Z"/>
+  <path class="region-accent" d="M718 640 Q736 676 726 712 Q700 684 702 650 Z"/>
+</svg>

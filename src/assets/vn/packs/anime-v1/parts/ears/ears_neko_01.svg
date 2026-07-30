@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4a4553)}.region-accent{fill:var(--region-accent,#f2e0e6)}</style>
+  <!-- Neko ears: pointed cat ears on the crown with soft inner-ear accent and small fur tufts -->
+  <path class="region-fur" d="M372 232 Q346 128 398 58 Q462 108 496 198 Q446 240 372 232 Z"/>
+  <path class="region-accent" d="M398 206 Q386 138 404 96 Q446 136 466 194 Q432 214 398 206 Z"/>
+  <path class="region-fur" d="M404 214 Q416 186 440 176 Q432 204 418 218 Z"/>
+  <path class="region-fur" d="M652 232 Q678 128 626 58 Q562 108 528 198 Q578 240 652 232 Z"/>
+  <path class="region-accent" d="M626 206 Q638 138 620 96 Q578 136 558 194 Q592 214 626 206 Z"/>
+  <path class="region-fur" d="M620 214 Q608 186 584 176 Q592 204 606 218 Z"/>
+</svg>

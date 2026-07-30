@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#eee9e0)}.region-accent{fill:var(--region-accent,#f8f5ee)}.region-detail{fill:var(--region-detail,#756e7e)}</style>
+  <!-- Badger (SRD 5.1) head: two bold rounded crown stripes, tiny dark ears with pale rims, low oval muzzle -->
+  <circle class="region-detail" cx="398" cy="172" r="46"/>
+  <circle class="region-accent" cx="400" cy="176" r="22"/>
+  <circle class="region-detail" cx="626" cy="172" r="46"/>
+  <circle class="region-accent" cx="624" cy="176" r="22"/>
+  <circle class="region-fur" cx="512" cy="332" r="205"/>
+  <ellipse class="region-detail" cx="442" cy="206" rx="28" ry="68"/>
+  <ellipse class="region-detail" cx="582" cy="206" rx="28" ry="68"/>
+  <ellipse class="region-accent" cx="512" cy="418" rx="78" ry="50"/>
+  <ellipse class="region-detail" cx="512" cy="392" rx="16" ry="11"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,53 @@
+:host {
+  display: block;
+}
+
+.draw {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.draw legend {
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+.surface {
+  display: block;
+  width: 256px;
+  height: 256px;
+  max-width: 100%;
+  touch-action: none; /* pointer drawing, not scroll/zoom */
+  background: #14141c;
+  border: 1px dashed var(--hug-border, #444);
+  border-radius: 6px;
+  cursor: crosshair;
+}
+
+.ink {
+  fill: var(--hug-accent, #7c4dff);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.row button,
+.row select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.status:empty {
+  display: none;
+}

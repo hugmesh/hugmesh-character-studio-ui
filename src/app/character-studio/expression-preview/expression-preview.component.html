@@ -1,0 +1,18 @@
+@if (ids().length > 0) {
+  <fieldset class="expression-preview">
+    <legend>Expression (preview)</legend>
+    <div class="presets" role="group" aria-label="Expression preview">
+      @for (id of ids(); track id) {
+        <button
+          type="button"
+          class="preset"
+          [attr.data-testid]="'cs-expression-' + id"
+          [class.selected]="active() === id"
+          [attr.aria-pressed]="active() === id"
+          (click)="preview(id)"
+        >{{ labelOf()(id) }}</button>
+      }
+    </div>
+    <p class="hint">Preview only — your saved parts and colours don’t change.</p>
+  </fieldset>
+}

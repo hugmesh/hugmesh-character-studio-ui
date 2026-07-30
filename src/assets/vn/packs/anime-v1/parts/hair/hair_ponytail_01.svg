@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#4a5f8a)}.region-accent{fill:var(--region-accent,#7d92bd)}</style>
+  <!-- High ponytail: swept crown dome, side-parted bangs, one thick tail arcing right and down to a point, sheen streaks. -->
+  <path class="region-hair" d="M308 380 Q300 108 512 92 Q724 108 716 380 Q702 238 512 212 Q322 238 308 380 Z"/>
+  <path class="region-hair" d="M640 128 Q760 142 794 284 Q822 444 772 608 Q748 650 728 600 Q756 460 736 330 Q714 206 614 168 Q612 138 640 128 Z"/>
+  <path class="region-hair" d="M308 280 Q292 360 302 428 Q318 458 348 448 Q362 380 358 296 Q332 240 308 280 Z"/>
+  <path class="region-hair" d="M716 280 Q730 350 722 410 Q706 440 680 428 Q668 372 672 300 Q694 240 716 280 Z"/>
+  <path class="region-hair" d="M362 226 Q374 268 402 290 Q416 238 408 192 Q380 202 362 226 Z"/>
+  <path class="region-hair" d="M404 196 Q430 256 460 280 Q474 230 466 178 Q432 180 404 196 Z"/>
+  <path class="region-hair" d="M460 180 Q492 246 528 284 Q554 240 556 176 Q506 162 460 180 Z"/>
+  <path class="region-hair" d="M552 178 Q574 238 596 278 Q622 250 636 196 Q592 174 552 178 Z"/>
+  <path class="region-hair" d="M630 198 Q648 248 644 286 Q668 260 674 228 Q656 204 630 198 Z"/>
+  <path class="region-accent" d="M758 300 Q782 440 754 566 Q744 444 734 322 Q744 292 758 300 Z"/>
+  <path class="region-accent" d="M398 136 Q498 102 606 130 Q502 92 402 122 Z"/>
+</svg>

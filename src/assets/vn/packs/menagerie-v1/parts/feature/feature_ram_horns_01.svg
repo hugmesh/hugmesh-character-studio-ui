@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#b09a74)}.region-accent{fill:var(--region-accent,#d8c8a4)}</style>
+  <!-- Ram horns: thick spiral curls hugging the sides of the head, with growth-ridge bands and flicked tips -->
+  <path class="region-detail" d="M446 200 A95 95 0 1 0 446 292 L420 268 A62 62 0 1 1 420 222 Z"/>
+  <path class="region-detail" d="M578 200 A95 95 0 1 1 578 292 L604 268 A62 62 0 1 0 604 222 Z"/>
+  <path class="region-detail" d="M444 290 Q480 310 494 336 Q460 330 424 300 Z"/>
+  <path class="region-detail" d="M580 290 Q544 310 530 336 Q564 330 600 300 Z"/>
+  <circle class="region-accent" cx="362" cy="244" r="26"/>
+  <circle class="region-accent" cx="662" cy="244" r="26"/>
+  <path class="region-accent" d="M288 186 L306 168 L330 192 L312 210 Z"/>
+  <path class="region-accent" d="M736 186 L718 168 L694 192 L712 210 Z"/>
+  <path class="region-accent" d="M270 232 L294 230 L296 258 L272 260 Z"/>
+  <path class="region-accent" d="M754 232 L730 230 L728 258 L752 260 Z"/>
+</svg>

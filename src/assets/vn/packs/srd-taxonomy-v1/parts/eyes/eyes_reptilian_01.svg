@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#a3cc3f)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Reptilian eyes: big lime irises, vertical slit lens pupils, half-lowered dangerous-but-cute lids -->
+  <ellipse class="region-iris" cx="446" cy="350" rx="52" ry="68"/>
+  <ellipse class="region-iris" cx="578" cy="350" rx="52" ry="68"/>
+  <path class="region-detail" d="M446 294Q459 350 446 406Q433 350 446 294Z"/>
+  <path class="region-detail" d="M578 294Q591 350 578 406Q565 350 578 294Z"/>
+  <circle fill="#ffffff" cx="428" cy="316" r="13"/>
+  <circle fill="#ffffff" cx="560" cy="316" r="13"/>
+  <circle fill="#ffffff" cx="462" cy="390" r="5"/>
+  <circle fill="#ffffff" cx="594" cy="390" r="5"/>
+  <path class="region-line" d="M394 312Q446 298 498 314"/>
+  <path class="region-line" d="M526 314Q578 298 630 312"/>
+</svg>

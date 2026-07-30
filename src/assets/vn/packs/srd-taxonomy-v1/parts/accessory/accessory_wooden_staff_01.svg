@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#bccf9f)}.region-clothtrim{fill:var(--region-clothtrim,#dfeacc)}.region-iris{fill:var(--region-iris,#d96a6a)}.region-line{fill:none;stroke:var(--region-line,#6b5a48);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Druid living staff (SRD 5.1): curled crook top, fresh leaf sprout with a berry, herb pouch tied at the waist -->
+  <path class="region-cloth" d="M248 864 Q232 704 242 544 Q246 482 238 434 Q236 416 252 412 Q268 408 272 426 Q280 482 276 544 Q266 704 282 858 Q284 874 266 876 Q250 876 248 864 Z"/>
+  <path class="region-cloth" d="M240 438 Q250 356 180 326 Q108 300 84 366 Q72 402 100 424 Q118 436 128 420 Q136 406 122 396 Q110 388 116 372 Q126 344 172 356 Q202 366 194 420 Q192 436 206 442 Q228 448 240 438 Z"/>
+  <path class="region-clothtrim" d="M176 322 Q150 290 162 258 Q192 272 188 314 Q186 326 176 322 Z"/>
+  <path class="region-clothtrim" d="M196 320 Q206 282 238 272 Q240 304 208 328 Q198 330 196 320 Z"/>
+  <circle class="region-iris" cx="190" cy="326" r="9"/>
+  <path class="region-line" d="M262 608 Q284 616 292 632"/>
+  <path class="region-clothtrim" d="M276 632 Q246 662 260 696 Q278 718 308 702 Q330 678 310 642 Q296 626 276 632 Z"/>
+  <path class="region-line" d="M276 638 Q294 646 308 642"/>
+  <circle class="region-cloth" cx="286" cy="634" r="7"/>
+  <circle class="region-cloth" cx="300" cy="631" r="7"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e8d6b8)}.region-detail{fill:var(--region-detail,#6b4a3e)}</style>
+  <!-- Boar tusks: bold ivory tusks curving up and out from the jowls, with dark gum roots and a worn ridge crease on each -->
+  <path class="region-accent" d="M456 496 Q404 472 394 410 Q392 386 414 376 L438 398 Q432 448 466 482 Q464 496 456 496 Z"/>
+  <path class="region-accent" d="M568 496 Q620 472 630 410 Q632 386 610 376 L586 398 Q592 448 558 482 Q560 496 568 496 Z"/>
+  <path class="region-detail" d="M456 494 Q436 486 430 466 L448 470 Q452 482 462 488 Q460 494 456 494 Z"/>
+  <path class="region-detail" d="M568 494 Q588 486 594 466 L576 470 Q572 482 562 488 Q564 494 568 494 Z"/>
+  <path class="region-detail" d="M420 442 Q412 424 412 404 L424 400 Q422 424 430 442 Z"/>
+  <path class="region-detail" d="M604 442 Q612 424 612 404 L600 400 Q602 424 594 442 Z"/>
+</svg>

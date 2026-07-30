@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cf6c28)}.region-accent{fill:var(--region-accent,#f6ecd9)}</style>
+  <!-- Fox tail: huge plume rising from the hip in an S-sweep, fluffy cusped inner edge, cream underside strip and cream tip with tuft strands -->
+  <path class="region-fur" d="M636 700 Q660 676 700 676 Q688 704 692 728 Q662 714 636 700 Z"/>
+  <path class="region-fur" d="M630 690 Q640 770 716 792 Q808 810 866 744 Q916 682 906 588 Q896 496 826 456 Q788 434 746 444 Q772 470 784 502 Q748 480 712 494 Q744 520 756 556 Q716 546 688 566 Q726 592 736 634 Q740 680 700 694 Q664 700 630 690 Z"/>
+  <path class="region-fur" d="M700 782 L742 810 L686 814 Z"/>
+  <path class="region-fur" d="M788 800 L828 822 L774 832 Z"/>
+  <path class="region-fur" d="M884 702 L918 668 L914 722 Z"/>
+  <path class="region-fur" d="M898 610 L930 588 L920 636 Z"/>
+  <path class="region-accent" d="M740 446 Q790 430 836 458 Q890 494 904 568 Q868 586 830 580 Q838 528 800 496 Q772 470 740 446 Z"/>
+  <path class="region-accent" d="M798 468 L822 438 L838 472 Z"/>
+  <path class="region-accent" d="M866 540 L900 526 L894 566 Z"/>
+  <path class="region-accent" d="M704 774 Q782 800 850 762 Q820 798 762 804 Q726 796 704 774 Z"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0855a)}.region-accent{fill:var(--region-accent,#e8d5b5)}.region-detail{fill:var(--region-detail,#6b4a2f)}</style>
+  <!-- Gryphon body: feathered eagle chest with scalloped breast panel, furred lion haunches with crescent markings, taloned forefeet. -->
+  <path class="region-fur" d="M512 396 Q628 402 656 496 Q676 566 652 640 Q616 716 512 722 Q408 716 372 640 Q348 566 368 496 Q396 402 512 396 Z"/>
+  <ellipse class="region-fur" cx="412" cy="696" rx="74" ry="90"/>
+  <ellipse class="region-fur" cx="612" cy="696" rx="74" ry="90"/>
+  <path class="region-accent" d="M436 636 Q384 660 380 720 Q412 734 444 716 Q424 700 428 668 Z"/>
+  <path class="region-accent" d="M588 636 Q640 660 644 720 Q612 734 580 716 Q600 700 596 668 Z"/>
+  <path class="region-accent" d="M512 452 Q578 458 596 520 Q608 572 594 620 Q578 608 572 590 Q562 626 540 646 Q530 628 526 610 Q514 646 490 658 Q482 634 484 614 Q464 636 440 628 Q422 572 430 520 Q446 458 512 452 Z"/>
+  <path class="region-fur" d="M448 660 h40 l6 190 h-52 z"/>
+  <path class="region-fur" d="M440 844 h56 q12 28 -2 50 h-52 q-14 -22 -2 -50 z"/>
+  <path class="region-detail" d="M446 892 l10 26 10 -26 z M468 894 l10 26 10 -26 z M490 892 l10 26 10 -26 z"/>
+  <g transform="translate(1024 0) scale(-1 1)">
+    <path class="region-fur" d="M448 660 h40 l6 190 h-52 z"/>
+    <path class="region-fur" d="M440 844 h56 q12 28 -2 50 h-52 q-14 -22 -2 -50 z"/>
+    <path class="region-detail" d="M446 892 l10 26 10 -26 z M468 894 l10 26 10 -26 z M490 892 l10 26 10 -26 z"/>
+  </g>
+</svg>

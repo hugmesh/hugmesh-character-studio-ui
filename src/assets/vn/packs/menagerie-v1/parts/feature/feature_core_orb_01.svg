@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#c8f7e3)}.region-detail{fill:var(--region-detail,#2e8b6a)}</style>
+  <!-- Slime core orb: nucleus orb floating at the center of the chest inside an accent glow ring, with sparkle diamonds and tiny orbiting droplets -->
+  <path class="region-accent" fill-rule="evenodd" d="M512 452 a68 68 0 1 0 0 136 a68 68 0 1 0 0 -136 z M512 472 a48 48 0 1 1 0 96 a48 48 0 1 1 0 -96 z"/>
+  <circle class="region-accent" cx="512" cy="520" r="42"/>
+  <circle class="region-detail" cx="512" cy="520" r="30"/>
+  <circle class="region-accent" cx="501" cy="509" r="9"/>
+  <polygon class="region-accent" points="600,470 608,482 600,494 592,482"/>
+  <polygon class="region-accent" points="424,552 431,563 424,574 417,563"/>
+  <circle class="region-detail" cx="512" cy="432" r="5"/>
+  <circle class="region-detail" cx="582" cy="556" r="4"/>
+  <circle class="region-detail" cx="446" cy="566" r="4"/>
+  <circle class="region-accent" cx="560" cy="450" r="3"/>
+</svg>

@@ -1,0 +1,50 @@
+<fieldset class="draw">
+  <legend>Draw a part</legend>
+
+  <svg
+    class="surface"
+    data-testid="cs-draw-surface"
+    viewBox="0 0 1024 1024"
+    aria-label="Drawing surface — draw with the pointer"
+    (pointerdown)="onDown($event)"
+    (pointermove)="onMove($event)"
+    (pointerup)="onUp()"
+    (pointerleave)="onUp()"
+  >
+    @for (d of paths(); track $index) {
+      <path [attr.d]="d" class="ink" data-testid="cs-draw-ink" />
+    }
+    @if (current()) {
+      <path [attr.d]="current()" class="ink" data-testid="cs-draw-ink-current" />
+    }
+  </svg>
+
+  <div class="row">
+    <label>
+      Region
+      <select data-testid="cs-draw-region" [value]="region()" (change)="onRegionChange($event)">
+        <option value="fur">fur</option>
+        <option value="iris">iris</option>
+        <option value="hair">hair</option>
+        <option value="clothing">clothing</option>
+      </select>
+    </label>
+    <label>
+      Slot
+      <select data-testid="cs-draw-slot" [value]="targetSlot()" (change)="onTargetSlotChange($event)">
+        @for (s of slots(); track s) {
+          <option [value]="s">{{ s }}</option>
+        }
+      </select>
+    </label>
+  </div>
+
+  <div class="row">
+    <button type="button" data-testid="cs-draw-undo" (click)="undo()">Undo</button>
+    <button type="button" data-testid="cs-draw-clear" (click)="clearDrawing()">Clear</button>
+    <button type="button" data-testid="cs-draw-apply" (click)="apply()">Apply to character</button>
+    <button type="button" data-testid="cs-draw-remove" (click)="removeFromSlot()">Remove from slot</button>
+  </div>
+
+  <p class="status" role="status" aria-live="polite" data-testid="cs-draw-status">{{ status() }}</p>
+</fieldset>

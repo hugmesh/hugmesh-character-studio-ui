@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6cdb2)}.region-accent{fill:var(--region-accent,#f9ecdc)}.region-detail{fill:var(--region-detail,#d98d95)}</style>
+  <!-- Cat (SRD 5.1) head: tall round-tipped ears with inner tint, soft cheek fluff bumps, muzzle mounds -->
+  <path class="region-fur" d="M332 268 Q306 112 348 64 Q364 48 382 68 Q436 120 458 242 Q392 208 332 268 Z"/>
+  <path class="region-accent" d="M358 238 Q346 138 368 102 Q378 88 388 108 Q420 158 432 218 Q394 200 358 238 Z"/>
+  <path class="region-fur" d="M692 268 Q718 112 676 64 Q660 48 642 68 Q588 120 566 242 Q632 208 692 268 Z"/>
+  <path class="region-accent" d="M666 238 Q678 138 656 102 Q646 88 636 108 Q604 158 592 218 Q630 200 666 238 Z"/>
+  <ellipse class="region-fur" cx="316" cy="362" rx="42" ry="26"/>
+  <ellipse class="region-fur" cx="312" cy="408" rx="36" ry="22"/>
+  <ellipse class="region-fur" cx="708" cy="362" rx="42" ry="26"/>
+  <ellipse class="region-fur" cx="712" cy="408" rx="36" ry="22"/>
+  <circle class="region-fur" cx="512" cy="335" r="205"/>
+  <circle class="region-accent" cx="480" cy="430" r="36"/>
+  <circle class="region-accent" cx="544" cy="430" r="36"/>
+  <path class="region-detail" d="M496 388 Q512 380 528 388 Q525 400 512 405 Q499 400 496 388 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2b4a4)}.region-accent{fill:var(--region-accent,#fbdcc9)}.region-detail{fill:var(--region-detail,#e9d3b8)}</style>
+  <!-- Imp (SRD 5.1) head: huge pointy bat-ears, tiny curled horns, twin fangs flanking the mouth zone -->
+  <path class="region-fur" d="M348 316 Q246 286 200 178 Q194 158 214 166 Q310 200 366 262 Q376 296 348 316 Z"/>
+  <path class="region-fur" d="M676 316 Q778 286 824 178 Q830 158 810 166 Q714 200 658 262 Q648 296 676 316 Z"/>
+  <path class="region-accent" d="M342 296 Q272 270 234 196 Q302 226 348 274 Q352 288 342 296 Z"/>
+  <path class="region-accent" d="M682 296 Q752 270 790 196 Q722 226 676 274 Q672 288 682 296 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-detail" d="M436 168 Q408 112 442 76 Q470 50 486 78 Q492 96 474 100 Q466 88 456 96 Q442 110 460 150 Q450 162 436 168 Z"/>
+  <path class="region-detail" d="M588 168 Q616 112 582 76 Q554 50 538 78 Q532 96 550 100 Q558 88 568 96 Q582 110 564 150 Q574 162 588 168 Z"/>
+  <path class="region-accent" d="M372 424 Q368 456 384 460 Q396 454 392 426 Q382 418 372 424 Z"/>
+  <path class="region-accent" d="M652 424 Q656 456 640 460 Q628 454 632 426 Q642 418 652 424 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

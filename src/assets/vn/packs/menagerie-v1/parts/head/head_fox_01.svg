@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cf6c28)}.region-accent{fill:var(--region-accent,#f6ecd9)}.region-detail{fill:var(--region-detail,#3a2b26)}</style>
+  <!-- Fox head: oversized ears with dark tips, cream cheek tufts, narrow tapered snout with small dark nose -->
+  <path class="region-fur" d="M368 250 Q400 190 470 168 L330 52 Q318 160 368 250 Z"/>
+  <path class="region-fur" d="M656 250 Q624 190 554 168 L694 52 Q706 160 656 250 Z"/>
+  <path class="region-detail" d="M330 52 L436 138 Q392 152 362 184 Q336 122 330 52 Z"/>
+  <path class="region-detail" d="M694 52 L588 138 Q632 152 662 184 Q688 122 694 52 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="196"/>
+  <path class="region-accent" d="M336 330 Q310 396 330 458 L390 420 Q374 470 398 508 L448 448 Q408 400 402 344 Z"/>
+  <path class="region-accent" d="M688 330 Q714 396 694 458 L634 420 Q650 470 626 508 L576 448 Q616 400 622 344 Z"/>
+  <path class="region-accent" d="M452 380 Q512 358 572 380 L580 430 Q556 496 512 508 Q468 496 444 430 Z"/>
+  <path class="region-fur" d="M478 366 Q512 356 546 366 L524 452 Q512 460 500 452 Z"/>
+  <path class="region-detail" d="M492 444 Q512 434 532 444 Q532 462 512 474 Q492 462 492 444 Z"/>
+</svg>

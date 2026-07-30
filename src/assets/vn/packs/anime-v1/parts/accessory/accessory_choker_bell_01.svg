@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#454050)}.region-detail{fill:var(--region-detail,#f0c05a)}.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:8;stroke-linecap:round}</style>
+  <!-- Choker with bell: snug neck band following the neck curve, golden bell with slit hanging center -->
+  <path class="region-accent" d="M436 506 Q512 538 588 506 L588 532 Q512 564 436 532 Z"/>
+  <circle class="region-detail" cx="512" cy="566" r="20"/>
+  <path class="region-line" d="M501 568 L523 568 M512 570 L512 581"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6b7c0)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Viseme 1/4 (small): small parted oval -->
+  <ellipse class="region-accent" cx="512" cy="446" rx="15" ry="19"/>
+  <ellipse class="region-line" cx="512" cy="446" rx="15" ry="19"/>
+</svg>

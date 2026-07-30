@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f6bfa4)}.region-accent{fill:var(--region-accent,#fbdfcc)}.region-line{fill:none;stroke:var(--region-line,#7a5a52);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Elemental head: big cinnamon-roll swirl crown with accent crescent + spiral seam, floating motes; one file tinted Fire/Water/Air/Earth -->
+  <circle class="region-accent" cx="322" cy="88" r="28"/>
+  <circle class="region-accent" cx="258" cy="212" r="18"/>
+  <circle class="region-accent" cx="756" cy="176" r="22"/>
+  <circle class="region-accent" cx="700" cy="46" r="15"/>
+  <circle class="region-fur" cx="556" cy="106" r="112"/>
+  <circle class="region-accent" cx="596" cy="92" r="62"/>
+  <circle class="region-fur" cx="576" cy="116" r="54"/>
+  <path class="region-line" d="M576 116 Q574 88 604 86 Q636 86 636 118 Q636 148 602 150 Q566 150 562 112 Q558 66 614 62"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-accent" d="M446 216 Q468 162 540 164 Q600 168 610 218 Q562 186 512 188 Q472 190 446 216 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

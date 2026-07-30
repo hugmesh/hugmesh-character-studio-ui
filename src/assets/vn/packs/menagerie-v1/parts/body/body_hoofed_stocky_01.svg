@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ece5d8)}.region-accent{fill:var(--region-accent,#d9cfbe)}.region-detail{fill:var(--region-detail,#3a332e)}</style>
+  <!-- Stocky hoofed body (bovine build): wide chest and barrel belly, sturdy arms with rounded hand-hooves, thick legs on dark cloven hooves -->
+  <path class="region-fur" d="M466 458 Q512 490 558 458 L572 550 Q512 572 452 550 Z"/>
+  <path class="region-fur" d="M452 544 Q360 592 364 700 Q368 792 438 812 L586 812 Q656 792 660 700 Q664 592 572 544 Q512 570 452 544 Z"/>
+  <ellipse class="region-accent" cx="512" cy="678" rx="96" ry="112"/>
+  <path class="region-fur" d="M416 586 Q384 654 390 728 L424 734 Q428 662 448 610 Z"/>
+  <path class="region-fur" d="M608 586 Q640 654 634 728 L600 734 Q596 662 576 610 Z"/>
+  <ellipse class="region-detail" cx="408" cy="744" rx="19" ry="16"/>
+  <ellipse class="region-detail" cx="616" cy="744" rx="19" ry="16"/>
+  <path class="region-fur" d="M462 792 Q448 856 456 908 L506 908 Q510 852 504 798 Z"/>
+  <path class="region-fur" d="M562 792 Q576 856 568 908 L518 908 Q514 852 520 798 Z"/>
+  <path class="region-detail" d="M450 906 L508 906 L502 958 L482 958 L480 928 L476 958 L456 958 Z"/>
+  <path class="region-detail" d="M574 906 L516 906 L522 958 L542 958 L544 928 L548 958 L568 958 Z"/>
+</svg>

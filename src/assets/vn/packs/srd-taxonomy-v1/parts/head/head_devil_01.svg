@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d99c9c)}.region-accent{fill:var(--region-accent,#f3e2d0)}.region-detail{fill:var(--region-detail,#ecd9c2)}.region-hair{fill:var(--region-hair,#c08888)}</style>
+  <!-- Horned Devil (SRD 5.1) head: sweeping rounded horns, strong cute jaw with goatee tuft on hair region, single flank fang -->
+  <path class="region-detail" d="M382 240 Q328 176 302 106 Q296 84 318 92 Q384 122 418 192 Q426 222 382 240 Z"/>
+  <path class="region-detail" d="M642 240 Q696 176 722 106 Q728 84 706 92 Q640 122 606 192 Q598 222 642 240 Z"/>
+  <path class="region-fur" d="M322 392 Q280 388 262 358 Q292 344 328 356 Q334 376 322 392 Z"/>
+  <path class="region-fur" d="M702 392 Q744 388 762 358 Q732 344 696 356 Q690 376 702 392 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M324 356 Q314 474 408 526 Q512 566 616 526 Q710 474 700 356 Q676 452 512 478 Q348 452 324 356 Z"/>
+  <path class="region-hair" d="M482 508 Q512 516 542 508 Q534 552 512 560 Q490 552 482 508 Z"/>
+  <path class="region-accent" d="M650 424 Q654 458 638 462 Q626 456 630 428 Q640 418 650 424 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

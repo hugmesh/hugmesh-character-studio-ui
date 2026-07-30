@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#bfb3d9)}.region-accent{fill:var(--region-accent,#e3dcf2)}.region-detail{fill:var(--region-detail,#564566)}</style>
+  <!-- Giant Spider (SRD 5.1) head: fuzzy bumpy silhouette, bead-eye arc above the main eyes, tiny mandible nubs -->
+  <circle class="region-fur" cx="346" cy="190" r="38"/>
+  <circle class="region-fur" cx="424" cy="142" r="38"/>
+  <circle class="region-fur" cx="512" cy="126" r="38"/>
+  <circle class="region-fur" cx="600" cy="142" r="38"/>
+  <circle class="region-fur" cx="678" cy="190" r="38"/>
+  <circle class="region-fur" cx="318" cy="262" r="38"/>
+  <circle class="region-fur" cx="706" cy="262" r="38"/>
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="330" cy="396" r="40"/>
+  <circle class="region-fur" cx="694" cy="396" r="40"/>
+  <ellipse class="region-accent" cx="476" cy="520" rx="20" ry="30"/>
+  <ellipse class="region-accent" cx="548" cy="520" rx="20" ry="30"/>
+  <circle class="region-detail" cx="420" cy="238" r="16"/>
+  <circle class="region-detail" cx="466" cy="222" r="16"/>
+  <circle class="region-detail" cx="558" cy="222" r="16"/>
+  <circle class="region-detail" cx="604" cy="238" r="16"/>
+  <circle fill="#ffffff" cx="416" cy="234" r="5"/>
+  <circle fill="#ffffff" cx="462" cy="218" r="5"/>
+  <circle fill="#ffffff" cx="554" cy="218" r="5"/>
+  <circle fill="#ffffff" cx="600" cy="234" r="5"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

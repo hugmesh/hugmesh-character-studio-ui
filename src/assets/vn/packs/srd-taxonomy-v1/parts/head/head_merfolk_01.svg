@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f7e0d3)}.region-hair{fill:var(--region-hair,#a8d8cf)}.region-accent{fill:var(--region-accent,#f2c4d0)}</style>
+  <!-- Merfolk (SRD 5.1) head: long flowing wavy seafoam hair (region-hair), pink fan fin-ears (region-accent), pearl shell-dot accents along the fringe -->
+  <path class="region-hair" d="M296 330 Q300 130 512 112 Q724 130 728 330 Q734 480 700 616 Q676 552 680 486 Q650 574 612 612 Q606 546 614 492 Q580 570 540 600 Q550 540 552 500 Q470 560 430 606 Q428 538 436 486 Q392 566 348 604 Q340 528 350 470 Q322 520 306 560 Q294 460 296 330 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-hair" d="M320 300 Q322 160 512 140 Q702 160 704 300 Q680 220 620 212 Q580 208 552 232 Q530 248 512 250 Q494 248 472 232 Q444 208 404 212 Q344 220 320 300 Z"/>
+  <path class="region-accent" d="M340 330 Q286 296 270 330 Q258 356 276 388 Q296 420 344 404 Q326 366 340 330 Z"/>
+  <path class="region-accent" d="M684 330 Q738 296 754 330 Q766 356 748 388 Q728 420 680 404 Q698 366 684 330 Z"/>
+  <circle class="region-accent" cx="400" cy="208" r="9"/>
+  <circle class="region-accent" cx="512" cy="166" r="9"/>
+  <circle class="region-accent" cx="624" cy="208" r="9"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

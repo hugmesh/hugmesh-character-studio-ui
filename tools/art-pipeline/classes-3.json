@@ -1,0 +1,82 @@
+{
+  "agent": "classes-3",
+  "parts": [
+    { "slot": "clothing",
+      "part": { "id": "clothing_rogue_01", "displayName": "Rogue Tunic", "file": "parts/clothing/clothing_rogue_01.svg",
+        "category": "clothing", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b4aac0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#ded8e6" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "rogue", "fitted-tunic", "dark-leather", "hooded-cloak"] } },
+    { "slot": "accessory",
+      "part": { "id": "accessory_daggers_01", "displayName": "Twin Daggers", "file": "parts/accessory/accessory_daggers_01.svg",
+        "category": "accessory", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b4aac0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#ded8e6" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "rogue", "dagger-pair", "lockpicks", "face-mask"] } },
+    { "slot": "clothing",
+      "part": { "id": "clothing_sorcerer_01", "displayName": "Sorcerer Coat", "file": "parts/clothing/clothing_sorcerer_01.svg",
+        "category": "clothing", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#f0ae9b" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#fbe3d4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#e0755a" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#a86a4a" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "sorcerer", "arcane-coat", "ember-mantle", "silk-robe"] } },
+    { "slot": "accessory",
+      "part": { "id": "accessory_crystal_focus_01", "displayName": "Crystal Focus", "file": "parts/accessory/accessory_crystal_focus_01.svg",
+        "category": "accessory", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#f0ae9b" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#fbe3d4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#a98fe3" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#8a76b8" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "sorcerer", "crystal-focus", "glowing-runes-hands"] } },
+    { "slot": "clothing",
+      "part": { "id": "clothing_warlock_01", "displayName": "Warlock Mantle", "file": "parts/clothing/clothing_warlock_01.svg",
+        "category": "clothing", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b6a9cd" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e8e2d4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#85d9ae" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#574a63" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "warlock", "dark-mantle", "high-collar-coat", "tattered-robe"] } },
+    { "slot": "accessory",
+      "part": { "id": "accessory_pact_tome_01", "displayName": "Pact Tome", "file": "parts/accessory/accessory_pact_tome_01.svg",
+        "category": "accessory", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b6a9cd" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e8e2d4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#8fd9b4" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "warlock", "pact-tome", "eldritch-rod", "sigil-pendant"] } },
+    { "slot": "clothing",
+      "part": { "id": "clothing_wizard_01", "displayName": "Wizard Robe", "file": "parts/clothing/clothing_wizard_01.svg",
+        "category": "clothing", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b5aee3" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#f0e4bc" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#6d7fae" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "wizard", "long-robe", "star-mantle", "scholar-coat"] } },
+    { "slot": "accessory",
+      "part": { "id": "accessory_wizard_hat_staff_01", "displayName": "Wizard Hat & Staff", "file": "parts/accessory/accessory_wizard_hat_staff_01.svg",
+        "category": "accessory", "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b5aee3" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#f0e4bc" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#b48fe0" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#6d7fae" }
+        ],
+        "source": "SRD 5.1", "tags": ["class", "wizard", "pointed-hat", "gnarled-staff", "spellbook"] } }
+  ]
+}

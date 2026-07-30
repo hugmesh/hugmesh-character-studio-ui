@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a9dccf)}.region-accent{fill:var(--region-accent,#f4c6d4)}.region-detail{fill:var(--region-detail,#f0dfa2)}.region-line{fill:none;stroke:var(--region-line,#4f6a62);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Couatl (SRD 5.1) head: rainbow-pastel feather ruff crown, gentle serpent snout, feather cheek dots -->
+  <path class="region-detail" d="M472 176 Q464 44 512 30 Q560 44 552 176 Q512 158 472 176 Z"/>
+  <path class="region-accent" d="M398 204 Q356 72 428 52 Q474 84 466 186 Q430 186 398 204 Z"/>
+  <path class="region-accent" d="M626 204 Q668 72 596 52 Q550 84 558 186 Q594 186 626 204 Z"/>
+  <path class="region-detail" d="M330 268 Q248 132 328 102 Q394 142 402 228 Q362 240 330 268 Z"/>
+  <path class="region-detail" d="M694 268 Q776 132 696 102 Q630 142 622 228 Q662 240 694 268 Z"/>
+  <path class="region-accent" d="M292 348 Q176 262 224 198 Q308 218 354 292 Q318 312 292 348 Z"/>
+  <path class="region-accent" d="M732 348 Q848 262 800 198 Q716 218 670 292 Q706 312 732 348 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-detail" cx="350" cy="302" r="10"/>
+  <circle class="region-detail" cx="674" cy="302" r="10"/>
+  <ellipse class="region-fur" cx="512" cy="416" rx="56" ry="34"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M496 398 l6 5"/>
+  <path class="region-line" d="M528 398 l-6 5"/>
+</svg>

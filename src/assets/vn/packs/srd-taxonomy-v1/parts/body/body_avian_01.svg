@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8fb4d8)}.region-accent{fill:var(--region-accent,#e7eff8)}.region-detail{fill:var(--region-detail,#f0c26a)}</style>
+  <!-- Avian body (SRD 5.1): round bird tummy + scalloped wing-nub arms + chunky rounded legs with talon toes -->
+  <path class="region-fur" d="M400 524 Q288 518 254 592 Q240 650 274 668 Q280 634 304 628 Q300 664 330 674 Q336 640 360 634 Q358 668 386 670 Q400 600 400 524 Z"/>
+  <path class="region-fur" d="M624 524 Q736 518 770 592 Q784 650 750 668 Q744 634 720 628 Q724 664 694 674 Q688 640 664 634 Q666 668 638 670 Q624 600 624 524 Z"/>
+  <circle class="region-accent" cx="276" cy="640" r="13"/>
+  <circle class="region-accent" cx="306" cy="652" r="13"/>
+  <circle class="region-accent" cx="748" cy="640" r="13"/>
+  <circle class="region-accent" cx="718" cy="652" r="13"/>
+  <path class="region-fur" d="M512 448 Q672 460 690 640 Q700 780 628 838 Q570 872 512 872 Q454 872 396 838 Q324 780 334 640 Q352 460 512 448 Z"/>
+  <ellipse class="region-accent" cx="512" cy="692" rx="118" ry="128"/>
+  <rect class="region-detail" x="436" y="798" width="36" height="58" rx="17"/>
+  <rect class="region-detail" x="552" y="798" width="36" height="58" rx="17"/>
+  <ellipse class="region-detail" cx="424" cy="858" rx="16" ry="11"/>
+  <ellipse class="region-detail" cx="454" cy="864" rx="16" ry="11"/>
+  <ellipse class="region-detail" cx="484" cy="858" rx="16" ry="11"/>
+  <ellipse class="region-detail" cx="540" cy="858" rx="16" ry="11"/>
+  <ellipse class="region-detail" cx="570" cy="864" rx="16" ry="11"/>
+  <ellipse class="region-detail" cx="600" cy="858" rx="16" ry="11"/>
+</svg>

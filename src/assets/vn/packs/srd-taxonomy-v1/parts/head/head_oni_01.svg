@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b7c6de)}.region-hair{fill:var(--region-hair,#93a4c2)}.region-accent{fill:var(--region-accent,#f2e6cc)}.region-detail{fill:var(--region-detail,#7c88a6)}</style>
+  <!-- Oni head: two rounded ivory horn nubs (region-accent), topknot bun (region-hair), one up-fang flanking the mouth zone -->
+  <path class="region-accent" d="M424 180 Q398 118 430 90 Q460 120 454 180 Z"/>
+  <path class="region-accent" d="M600 180 Q626 118 594 90 Q564 120 570 180 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-hair" d="M314 254 Q298 116 512 102 Q726 116 710 254 Q640 196 568 190 Q540 232 512 236 Q484 232 456 190 Q384 196 314 254 Z"/>
+  <circle class="region-hair" cx="512" cy="88" r="44"/>
+  <rect class="region-detail" x="490" y="116" width="44" height="26" rx="13"/>
+  <path class="region-accent" d="M628 462 Q628 434 642 426 Q654 440 650 466 Q638 472 628 462 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b9d3ae)}.region-accent{fill:var(--region-accent,#d9e8cc)}.region-hair{fill:var(--region-hair,#86a87c)}</style>
+  <!-- Troll head: big stubby potato nose, wild moss hair (region-hair), big floppy ears -->
+  <path class="region-fur" d="M336 226 Q240 200 224 300 Q214 382 274 404 Q304 412 322 382 Q296 326 336 226 Z"/>
+  <path class="region-fur" d="M688 226 Q784 200 800 300 Q810 382 750 404 Q720 412 702 382 Q728 326 688 226 Z"/>
+  <path class="region-accent" d="M316 260 Q262 248 254 318 Q250 366 286 378 Q300 348 316 260 Z"/>
+  <path class="region-accent" d="M708 260 Q762 248 770 318 Q774 366 738 378 Q724 348 708 260 Z"/>
+  <path class="region-hair" d="M398 142 Q400 84 452 106 Q458 56 512 90 Q564 54 570 108 Q622 82 624 144 Q564 112 512 120 Q458 114 398 142 Z"/>
+  <circle class="region-hair" cx="376" cy="168" r="16"/>
+  <circle class="region-hair" cx="648" cy="166" r="15"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="372" rx="38" ry="32"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

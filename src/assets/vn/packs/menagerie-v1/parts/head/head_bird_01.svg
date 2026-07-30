@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c14e)}.region-accent{fill:var(--region-accent,#faf0dc)}.region-detail{fill:var(--region-detail,#e8933a)}</style>
+  <!-- Songbird head: small round skull with crown tuft and cheek fluff, cream face patch, short conical beak. -->
+  <circle class="region-fur" cx="512" cy="330" r="192"/>
+  <path class="region-fur" d="M478 146 q6 -36 28 -54 q8 24 -2 46 q16 -20 38 -26 q-4 30 -24 44 q-20 4 -40 -10 z"/>
+  <path class="region-fur" d="M420 168 q-14 -26 -8 -48 q20 10 28 34 z"/>
+  <path class="region-fur" d="M604 168 q14 -26 8 -48 q-20 10 -28 34 z"/>
+  <path class="region-fur" d="M328 372 q-34 8 -48 36 q26 8 46 -4 q-16 22 -18 46 q30 -8 44 -32 z"/>
+  <path class="region-fur" d="M696 372 q34 8 48 36 q-26 8 -46 -4 q16 22 18 46 q-30 -8 -44 -32 z"/>
+  <ellipse class="region-accent" cx="512" cy="352" rx="130" ry="116"/>
+  <path class="region-accent" d="M420 246 q44 -18 92 -12 l-4 22 q-44 -6 -82 10 z"/>
+  <path class="region-accent" d="M604 246 q-44 -18 -92 -12 l4 22 q44 -6 82 10 z"/>
+  <path class="region-detail" d="M456 396 h112 q-14 34 -42 52 q-14 10 -28 0 q-28 -18 -42 -52 z"/>
+  <path class="region-detail" d="M482 448 q30 22 60 0 q-4 20 -30 24 q-26 -4 -30 -24 z"/>
+</svg>

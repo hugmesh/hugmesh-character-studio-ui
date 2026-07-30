@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e2c4a4)}.region-accent{fill:var(--region-accent,#f4e3cd)}.region-detail{fill:var(--region-detail,#b08a66)}</style>
+  <!-- Dragonborn (SRD 5.1) body: sturdy wide-shouldered jellybean, stacked chest plates, small rounded tail -->
+  <path class="region-fur" d="M610 760 Q730 770 756 690 Q762 646 726 640 Q700 710 600 736 Z"/>
+  <path class="region-fur" d="M424 508 Q362 544 348 618 Q342 658 368 662 Q386 598 434 562 Z"/>
+  <path class="region-fur" d="M600 508 Q662 544 676 618 Q682 658 656 662 Q638 598 590 562 Z"/>
+  <ellipse class="region-fur" cx="362" cy="672" rx="32" ry="21"/>
+  <ellipse class="region-fur" cx="662" cy="672" rx="32" ry="21"/>
+  <path class="region-fur" d="M448 436 H576 Q622 496 652 548 Q684 604 684 678 Q684 768 644 812 Q596 856 512 856 Q428 856 380 812 Q340 768 340 678 Q340 604 372 548 Q402 496 448 436 Z"/>
+  <rect class="region-accent" x="424" y="556" width="176" height="64" rx="32"/>
+  <rect class="region-accent" x="436" y="632" width="152" height="60" rx="30"/>
+  <rect class="region-accent" x="448" y="704" width="128" height="56" rx="28"/>
+  <rect class="region-accent" x="460" y="772" width="104" height="48" rx="24"/>
+  <circle class="region-detail" cx="408" cy="512" r="12"/>
+  <circle class="region-detail" cx="616" cy="512" r="12"/>
+  <ellipse class="region-fur" cx="410" cy="792" rx="72" ry="58"/>
+  <ellipse class="region-fur" cx="614" cy="792" rx="72" ry="58"/>
+  <circle class="region-detail" cx="378" cy="822" r="9"/>
+  <circle class="region-detail" cx="410" cy="830" r="8"/>
+  <circle class="region-detail" cx="442" cy="822" r="8"/>
+  <circle class="region-detail" cx="646" cy="822" r="9"/>
+  <circle class="region-detail" cx="614" cy="830" r="8"/>
+  <circle class="region-detail" cx="582" cy="822" r="8"/>
+</svg>

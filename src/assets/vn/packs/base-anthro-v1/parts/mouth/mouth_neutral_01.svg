@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:14;stroke-linecap:round}</style>
+  <!-- neutral: straight mouth (placeholder) -->
+  <path class="region-line" d="M468 440 h88"/>
+</svg>

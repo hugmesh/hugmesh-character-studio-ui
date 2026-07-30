@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#6ec1e4)}.region-detail{fill:var(--region-detail,#33303b)}</style>
+  <!-- Sparkle eyes: oversized shiny iris, big pupil, large white glints plus star twinkle -->
+  <circle class="region-iris" cx="440" cy="300" r="50"/>
+  <circle class="region-iris" cx="584" cy="300" r="50"/>
+  <circle class="region-detail" cx="442" cy="306" r="27"/>
+  <circle class="region-detail" cx="582" cy="306" r="27"/>
+  <circle fill="#ffffff" cx="424" cy="284" r="15"/>
+  <circle fill="#ffffff" cx="568" cy="284" r="15"/>
+  <circle fill="#ffffff" cx="456" cy="322" r="7"/>
+  <circle fill="#ffffff" cx="600" cy="322" r="7"/>
+  <polygon fill="#ffffff" points="460,262 465,273 476,278 465,283 460,294 455,283 444,278 455,273"/>
+  <polygon fill="#ffffff" points="604,262 609,273 620,278 609,283 604,294 599,283 588,278 599,273"/>
+</svg>

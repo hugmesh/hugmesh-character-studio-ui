@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7fae52)}.region-accent{fill:var(--region-accent,#d9e8a8)}.region-detail{fill:var(--region-detail,#3b5226)}</style>
+  <!-- Mantis head: inverted-triangle face tapering to the chin, large side-set compound-eye bulges (accent) outboard of the shared eye zone, slim antennae and mandible ticks (detail) -->
+  <path class="region-detail" d="M458 186 Q420 122 382 58 L396 48 Q430 110 474 176 Z"/>
+  <path class="region-detail" d="M566 186 Q604 122 642 58 L628 48 Q594 110 550 176 Z"/>
+  <path class="region-fur" d="M322 208 Q512 126 702 208 Q742 282 666 402 Q588 502 512 530 Q436 502 358 402 Q282 282 322 208 Z"/>
+  <path class="region-detail" d="M420 190 Q512 150 604 190 Q512 166 420 190 Z"/>
+  <ellipse class="region-accent" cx="336" cy="272" rx="60" ry="82"/>
+  <ellipse class="region-accent" cx="688" cy="272" rx="60" ry="82"/>
+  <circle class="region-detail" cx="330" cy="266" r="14"/>
+  <circle class="region-detail" cx="694" cy="266" r="14"/>
+  <path class="region-accent" d="M462 408 Q512 392 562 408 L546 470 Q512 496 478 470 Z"/>
+  <path class="region-detail" d="M478 466 L462 492 L490 480 Z"/>
+  <path class="region-detail" d="M546 466 L562 492 L534 480 Z"/>
+</svg>

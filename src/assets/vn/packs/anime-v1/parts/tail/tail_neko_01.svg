@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4a4553)}.region-accent{fill:var(--region-accent,#f2e0e6)}</style>
+  <!-- Neko tail: slim sinuous cat tail curling up from the hip, pale accent tip -->
+  <path class="region-fur" d="M624 672 C720 668 796 636 806 556 Q800 512 776 498 Q846 520 850 610 C852 700 780 756 652 742 Z"/>
+  <path class="region-accent" d="M806 556 Q800 512 776 498 Q824 514 838 566 Q820 580 806 556 Z"/>
+</svg>

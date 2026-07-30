@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3a3340);stroke-width:12;stroke-linecap:round}</style>
+  <!-- Megane: half-rim glasses — top rims over each eye, thin bridge, short temple arms -->
+  <path class="region-line" d="M382 300 Q384 268 420 262 L468 262 Q498 266 500 296"/>
+  <path class="region-line" d="M642 300 Q640 268 604 262 L556 262 Q526 266 524 296"/>
+  <path class="region-line" d="M500 278 Q512 270 524 278"/>
+  <path class="region-line" d="M382 296 L344 292"/>
+  <path class="region-line" d="M642 296 L680 292"/>
+</svg>

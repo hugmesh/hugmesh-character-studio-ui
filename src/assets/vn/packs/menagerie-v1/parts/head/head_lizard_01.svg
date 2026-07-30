@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6fae5c)}.region-accent{fill:var(--region-accent,#cfe08e)}.region-detail{fill:var(--region-detail,#3f6b34)}.region-line{fill:none;stroke:var(--region-line,#2f4a28);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Lizard head: serrated dorsal crest, wide jowly cheeks, broad permanent grin line -->
+  <path class="region-accent" d="M402 176 L436 84 L462 140 L498 62 L528 138 L566 74 L592 146 L624 96 L640 184 Q520 122 402 176 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-fur" cx="512" cy="396" rx="216" ry="126"/>
+  <path class="region-accent" d="M370 402 q142 94 284 0 q-22 96 -142 96 q-120 0 -142 -96 z"/>
+  <circle class="region-accent" cx="472" cy="196" r="9"/>
+  <circle class="region-accent" cx="512" cy="184" r="9"/>
+  <circle class="region-accent" cx="552" cy="196" r="9"/>
+  <path class="region-detail" d="M396 262 q44 -20 88 -6 l-6 18 q-38 -10 -74 6 z"/>
+  <path class="region-detail" d="M628 262 q-44 -20 -88 -6 l6 18 q38 -10 74 6 z"/>
+  <circle class="region-detail" cx="474" cy="390" r="9"/>
+  <circle class="region-detail" cx="550" cy="390" r="9"/>
+  <path class="region-line" d="M368 400 q10 28 34 40 q110 52 220 0 q24 -12 34 -40"/>
+</svg>

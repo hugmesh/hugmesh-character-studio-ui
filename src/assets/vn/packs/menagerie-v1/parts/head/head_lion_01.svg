@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c99a56)}.region-accent{fill:var(--region-accent,#8a5a2e)}.region-detail{fill:var(--region-detail,#e8d9bd)}</style>
+  <!-- Lion head: big spiky mane silhouette behind a tawny skull, round ears, forehead fringe, cheek tufts, pale muzzle, brown nose -->
+  <polygon class="region-accent" points="812,345 754,410 772,495 689,522 662,605 577,587 512,645 447,587 362,605 335,522 252,495 271,410 212,345 271,280 252,195 335,168 362,85 447,104 512,45 577,104 662,85 689,168 772,195 754,280"/>
+  <circle class="region-fur" cx="368" cy="150" r="52"/>
+  <circle class="region-fur" cx="656" cy="150" r="52"/>
+  <circle class="region-detail" cx="374" cy="156" r="26"/>
+  <circle class="region-detail" cx="650" cy="156" r="26"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-accent" d="M424 168 L460 214 L500 172 L512 206 L524 172 L564 214 L600 168 Q560 116 512 118 Q464 116 424 168 Z"/>
+  <path class="region-accent" d="M340 372 L290 460 L376 470 Z"/>
+  <path class="region-accent" d="M684 372 L734 460 L648 470 Z"/>
+  <ellipse class="region-detail" cx="512" cy="424" rx="86" ry="58"/>
+  <path class="region-accent" d="M486 390 h52 l-26 30 Z"/>
+</svg>

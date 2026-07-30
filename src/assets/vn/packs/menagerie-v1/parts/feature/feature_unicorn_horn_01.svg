@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#e6d3a3)}.region-accent{fill:var(--region-accent,#f8f1dd)}.region-fur{fill:var(--region-fur,#f0ebf7)}</style>
+  <!-- Unicorn horn: slender spiral horn rising from the center of the brow, with pale twist bands, an edge highlight, and a soft fur burr at the base. -->
+  <path class="region-detail" d="M512 38 Q524 140 542 250 Q512 268 482 250 Q500 140 512 38 Z"/>
+  <path class="region-accent" d="M487 214 L539 232 L541 244 L485 226 Z"/>
+  <path class="region-accent" d="M494 168 L533 186 L535 198 L492 180 Z"/>
+  <path class="region-accent" d="M500 122 L526 138 L528 150 L498 134 Z"/>
+  <path class="region-accent" d="M506 82 L520 94 L522 106 L504 94 Z"/>
+  <path class="region-accent" d="M480 244 Q512 262 544 244 L546 254 Q512 272 478 254 Z"/>
+  <path class="region-accent" d="M506 62 Q498 150 488 224 L496 228 Q506 150 512 64 Z"/>
+  <ellipse class="region-fur" cx="512" cy="258" rx="44" ry="16"/>
+  <path class="region-fur" d="M470 252 q-26 -6 -40 8 q18 12 42 6 z"/>
+  <path class="region-fur" d="M554 252 q26 -6 40 8 q-18 12 -42 6 z"/>
+</svg>

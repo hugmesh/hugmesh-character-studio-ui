@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#78d178)}.region-accent{fill:var(--region-accent,#b9f0b3)}.region-detail{fill:var(--region-detail,#f0fdee)}</style>
+  <!-- Slime body: blobby torso with drooping goo arms and a drip skirt instead of legs, glowing accent core in the chest, suspended bubbles and falling drops -->
+  <path class="region-fur" d="M446 470 Q512 436 578 470 Q652 508 666 600 Q676 668 668 720 L668 776 Q668 804 645 804 Q622 804 622 774 L622 742 Q594 756 556 762 L556 820 Q556 848 533 848 Q510 848 510 818 L510 764 Q470 760 438 746 L438 792 Q438 818 417 818 Q396 818 396 788 L396 726 Q368 700 358 620 Q350 520 446 470 Z"/>
+  <path class="region-fur" d="M446 500 Q394 512 372 566 Q356 610 372 646 Q388 672 406 652 Q424 630 428 584 Q432 534 450 510 Z"/>
+  <path class="region-fur" d="M578 500 Q630 512 652 566 Q668 610 652 646 Q636 672 618 652 Q600 630 596 584 Q592 534 574 510 Z"/>
+  <ellipse class="region-fur" cx="533" cy="886" rx="10" ry="15"/>
+  <ellipse class="region-fur" cx="417" cy="852" rx="7" ry="11"/>
+  <path class="region-accent" d="M446 608 Q446 538 512 534 Q578 538 578 608 Q578 670 512 676 Q446 670 446 608 Z"/>
+  <path class="region-accent" d="M424 492 Q462 464 512 460 Q468 482 448 512 Q430 530 424 492 Z"/>
+  <circle class="region-detail" cx="512" cy="606" r="24"/>
+  <circle class="region-detail" cx="602" cy="540" r="10"/>
+  <circle class="region-detail" cx="430" cy="676" r="8"/>
+</svg>

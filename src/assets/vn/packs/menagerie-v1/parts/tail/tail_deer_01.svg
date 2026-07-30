@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a97d4e)}.region-accent{fill:var(--region-accent,#f4ecd8)}</style>
+  <!-- Deer flag tail: short teardrop tail flicked up from the hip with a pale accent underside. -->
+  <path class="region-fur" d="M628 720 Q700 700 724 636 Q736 690 700 740 Q660 756 628 720 Z"/>
+  <path class="region-accent" d="M648 726 Q696 712 716 668 Q720 700 692 728 Q664 738 648 726 Z"/>
+</svg>

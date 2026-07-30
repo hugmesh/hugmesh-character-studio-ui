@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#dbe6a8)}</style>
+  <!-- Serpent coil bands: alternating wide and narrow pale crescent bands curving around the torso to suggest wrapped snake coils -->
+  <path class="region-accent" d="M418 408 Q512 436 606 404 L606 424 Q512 452 418 428 Z"/>
+  <path class="region-accent" d="M398 452 Q512 486 626 448 L626 470 Q512 508 398 474 Z"/>
+  <path class="region-accent" d="M400 490 Q512 522 624 486 L624 498 Q512 534 400 502 Z"/>
+  <path class="region-accent" d="M394 520 Q512 556 630 516 L630 540 Q512 578 394 544 Z"/>
+  <path class="region-accent" d="M396 558 Q512 592 628 554 L628 566 Q512 602 396 570 Z"/>
+  <path class="region-accent" d="M392 590 Q512 626 632 586 L632 610 Q512 648 392 614 Z"/>
+  <path class="region-accent" d="M394 628 Q512 662 630 624 L630 636 Q512 674 394 640 Z"/>
+  <path class="region-accent" d="M396 660 Q512 694 628 656 L628 678 Q512 714 396 682 Z"/>
+  <path class="region-accent" d="M402 694 Q512 726 622 690 L622 702 Q512 738 402 706 Z"/>
+  <path class="region-accent" d="M410 716 Q512 744 614 712 L614 730 Q512 756 410 734 Z"/>
+</svg>

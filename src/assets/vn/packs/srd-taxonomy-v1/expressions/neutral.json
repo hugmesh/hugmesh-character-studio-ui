@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schema/vn-expression-v1.schema.json",
+  "id": "neutral",
+  "displayName": "Neutral",
+  "slots": { "eyes": "eyes_round_01", "brows": "brows_neutral_01", "mouth": "mouth_neutral_01" }
+}

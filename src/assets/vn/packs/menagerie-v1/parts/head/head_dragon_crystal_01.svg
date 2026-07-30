@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7a6fae)}.region-accent{fill:var(--region-accent,#c9b8f0)}.region-detail{fill:none;stroke:var(--region-detail,#4b3f78);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Crystal dragon head: crown of faceted gem spikes with edge lines, cheek gem studs; palette swap yields ruby/sapphire/emerald -->
+  <path class="region-accent" d="M472 208 L512 56 L552 208 Z"/>
+  <path class="region-accent" d="M400 232 L396 96 L468 212 Z"/>
+  <path class="region-accent" d="M624 232 L628 96 L556 212 Z"/>
+  <path class="region-accent" d="M348 280 L308 170 L404 248 Z"/>
+  <path class="region-accent" d="M676 280 L716 170 L620 248 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M438 372 q-26 58 -6 96 q14 26 44 34 h72 q30 -8 44 -34 q20 -38 -6 -96 q-74 -30 -148 0 z"/>
+  <path class="region-accent" d="M336 350 L360 328 L374 358 L350 374 Z"/>
+  <path class="region-accent" d="M688 350 L664 328 L650 358 L674 374 Z"/>
+  <path class="region-detail" d="M512 78 L512 198"/>
+  <path class="region-detail" d="M492 152 L512 128 L532 152"/>
+  <path class="region-detail" d="M404 116 L442 204"/>
+  <path class="region-detail" d="M620 116 L582 204"/>
+  <path class="region-detail" d="M330 192 L384 250"/>
+  <path class="region-detail" d="M694 192 L640 250"/>
+  <path class="region-detail" d="M478 414 q-4 14 2 26"/>
+  <path class="region-detail" d="M546 414 q4 14 -2 26"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#66597a)}.region-accent{fill:var(--region-accent,#dcb8c6)}.region-detail{fill:var(--region-detail,#2e2536)}</style>
+  <!-- Bat body: slight narrow torso, thin arms with pale wing-membrane webs hinting at the flank, pale chest fluff and belly, tiny toe claws -->
+  <path class="region-fur" d="M472 498 Q512 488 552 498 L558 554 Q512 568 466 554 Z"/>
+  <path class="region-fur" d="M442 538 Q398 566 398 644 Q398 708 436 746 Q472 776 512 778 Q552 776 588 746 Q626 708 626 644 Q626 566 582 538 Q512 514 442 538 Z"/>
+  <path class="region-fur" d="M436 544 Q400 574 392 650 L386 716 Q388 744 412 748 Q438 744 440 714 L444 632 Q446 574 436 544 Z"/>
+  <path class="region-fur" d="M588 544 Q624 574 632 650 L638 716 Q636 744 612 748 Q586 744 584 714 L580 632 Q578 574 588 544 Z"/>
+  <path class="region-accent" d="M440 566 Q424 626 432 692 Q458 662 468 606 Q456 578 440 566 Z"/>
+  <path class="region-accent" d="M584 566 Q600 626 592 692 Q566 662 556 606 Q568 578 584 566 Z"/>
+  <path class="region-fur" d="M470 744 Q458 794 468 842 Q474 872 468 900 L508 902 Q512 880 502 858 Q490 828 496 792 Q500 762 490 744 Z"/>
+  <path class="region-fur" d="M554 744 Q566 794 556 842 Q550 872 556 900 L516 902 Q512 880 522 858 Q534 828 528 792 Q524 762 534 744 Z"/>
+  <path class="region-fur" d="M458 894 Q448 922 470 930 L508 930 Q516 922 510 904 Q490 892 474 892 Q464 892 458 894 Z"/>
+  <path class="region-fur" d="M566 894 Q576 922 554 930 L516 930 Q508 922 514 904 Q534 892 550 892 Q560 892 566 894 Z"/>
+  <path class="region-accent" d="M466 548 Q512 532 558 548 Q568 588 550 614 Q512 632 476 614 Q456 588 466 548 Z"/>
+  <ellipse class="region-accent" cx="512" cy="664" rx="72" ry="58"/>
+  <ellipse class="region-detail" cx="470" cy="926" rx="7" ry="6"/>
+  <ellipse class="region-detail" cx="490" cy="929" rx="7" ry="6"/>
+  <ellipse class="region-detail" cx="534" cy="929" rx="7" ry="6"/>
+  <ellipse class="region-detail" cx="554" cy="926" rx="7" ry="6"/>
+</svg>

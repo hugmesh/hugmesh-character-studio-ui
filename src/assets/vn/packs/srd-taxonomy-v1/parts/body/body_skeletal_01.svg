@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f3efe6)}.region-accent{fill:var(--region-accent,#fbf8f1)}.region-line{fill:none;stroke:var(--region-line,#9c92a8);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Skeleton (SRD 5.1) body: cute jellybean torso with rib-arc ribcage, stubby knob-fisted bone arms, round bone feet -->
+  <path class="region-fur" d="M462 436 H562 Q580 498 622 530 Q662 570 666 652 Q670 742 640 798 Q598 852 512 852 Q426 852 384 798 Q354 742 358 652 Q362 570 402 530 Q444 498 462 436 Z"/>
+  <path class="region-fur" d="M392 512 Q330 534 310 592 Q300 624 324 636 Q348 644 358 614 Q370 576 408 554 Z"/>
+  <path class="region-fur" d="M632 512 Q694 534 714 592 Q724 624 700 636 Q676 644 666 614 Q654 576 616 554 Z"/>
+  <circle class="region-fur" cx="322" cy="628" r="18"/>
+  <circle class="region-fur" cx="702" cy="628" r="18"/>
+  <ellipse class="region-fur" cx="414" cy="792" rx="66" ry="56"/>
+  <ellipse class="region-fur" cx="610" cy="792" rx="66" ry="56"/>
+  <ellipse class="region-accent" cx="512" cy="762" rx="104" ry="52"/>
+  <path class="region-line" d="M430 560 Q512 600 594 560"/>
+  <path class="region-line" d="M424 620 Q512 664 600 620"/>
+  <path class="region-line" d="M430 680 Q512 720 594 680"/>
+  <path class="region-line" d="M512 556 Q518 620 512 700"/>
+</svg>

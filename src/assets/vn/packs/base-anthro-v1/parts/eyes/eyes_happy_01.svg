@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:none;stroke:var(--region-iris,#3a78c2);stroke-width:14;stroke-linecap:round}</style>
+  <!-- happy: upward-arc "^^" eyes (placeholder) -->
+  <path class="region-iris" d="M402 312 q38 -44 76 0"/>
+  <path class="region-iris" d="M546 312 q38 -44 76 0"/>
+</svg>

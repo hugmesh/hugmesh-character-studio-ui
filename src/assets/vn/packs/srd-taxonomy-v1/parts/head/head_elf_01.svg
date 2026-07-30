@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2cdb0)}.region-hair{fill:var(--region-hair,#ece0b4)}.region-detail{fill:var(--region-detail,#e0a68c)}</style>
+  <!-- Elf (SRD 5.1, High Elf) head: long pointed ears, sleek curtain hair (region-hair), slim cute face -->
+  <circle class="region-hair" cx="512" cy="320" r="212"/>
+  <path class="region-hair" d="M312 300 Q296 470 336 560 Q366 470 352 330 Z"/>
+  <path class="region-hair" d="M712 300 Q728 470 688 560 Q658 470 672 330 Z"/>
+  <path class="region-fur" d="M348 356 Q252 334 194 266 Q258 264 332 300 Q350 316 354 338 Z"/>
+  <path class="region-fur" d="M676 356 Q772 334 830 266 Q766 264 692 300 Q674 316 670 338 Z"/>
+  <path class="region-detail" d="M344 344 Q286 322 246 284 Q296 292 338 318 Z"/>
+  <path class="region-detail" d="M680 344 Q738 322 778 284 Q728 292 686 318 Z"/>
+  <ellipse class="region-fur" cx="512" cy="335" rx="190" ry="205"/>
+  <path class="region-hair" d="M322 332 Q310 148 512 126 Q714 148 702 332 Q692 214 622 238 Q560 258 512 230 Q464 258 402 238 Q332 214 322 332 Z"/>
+  <ellipse class="region-detail" cx="512" cy="397" rx="11" ry="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

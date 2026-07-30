@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#ead4bd)}.region-accent{fill:var(--region-accent,#f8ecd9)}</style>
+  <!-- Tiefling Horns (SRD 5.1) feature: solid spiral-roll ram horns w/ down-sweeping tail + forward curl tip, thin open C ridge, no enclosed holes (compatibleHeads: humanoid) -->
+  <path class="region-detail" d="M314 172 Q288 140 300 100 Q316 64 362 68 Q404 74 406 118 Q406 134 398 146 Q418 190 404 232 Q396 262 368 254 Q352 246 362 228 Q372 208 366 180 Q336 186 314 172 Z"/>
+  <path class="region-accent" d="M380 84 Q338 70 314 96 Q296 122 314 148 Q324 160 338 158 Q326 146 322 128 Q320 104 344 96 Q362 88 380 84 Z"/>
+  <ellipse class="region-accent" cx="388" cy="200" rx="11" ry="6"/>
+  <path class="region-detail" d="M710 172 Q736 140 724 100 Q708 64 662 68 Q620 74 618 118 Q618 134 626 146 Q606 190 620 232 Q628 262 656 254 Q672 246 662 228 Q652 208 658 180 Q688 186 710 172 Z"/>
+  <path class="region-accent" d="M644 84 Q686 70 710 96 Q728 122 710 148 Q700 160 686 158 Q698 146 702 128 Q704 104 680 96 Q662 88 644 84 Z"/>
+  <ellipse class="region-accent" cx="636" cy="200" rx="11" ry="6"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6f5136)}.region-accent{fill:var(--region-accent,#d9c3a3)}.region-detail{fill:var(--region-detail,#3a2a22)}</style>
+  <!-- Otter rudder tail: thick muscular base at the hip tapering smoothly to a point held low behind, dark ridge sliver along the top, cream underside strip, rounded butt blend at the attach -->
+  <path class="region-fur" d="M636 652 Q728 664 800 698 Q862 726 900 754 Q922 768 938 780 Q904 792 868 794 Q800 796 740 776 Q666 750 634 714 Q612 682 636 652 Z"/>
+  <path class="region-fur" d="M642 648 Q616 660 606 690 Q616 716 640 724 Q628 686 642 648 Z"/>
+  <path class="region-fur" d="M706 664 L696 638 L732 656 Z"/>
+  <path class="region-fur" d="M790 694 L784 666 L816 684 Z"/>
+  <path class="region-fur" d="M866 728 L864 700 L894 722 Z"/>
+  <path class="region-detail" d="M640 652 Q730 662 802 696 Q864 724 938 780 Q862 718 798 688 Q726 656 640 662 Z"/>
+  <path class="region-detail" d="M700 690 Q740 726 792 744 Q756 742 716 724 Q702 710 700 690 Z"/>
+  <path class="region-detail" d="M796 724 Q830 748 868 758 Q840 760 812 750 Q800 740 796 724 Z"/>
+  <path class="region-accent" d="M640 690 Q704 736 784 756 Q854 772 918 774 Q930 778 938 780 Q904 792 868 794 Q800 796 740 776 Q666 750 634 714 Q634 700 640 690 Z"/>
+</svg>

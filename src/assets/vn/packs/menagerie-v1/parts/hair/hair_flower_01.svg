@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2a7b8)}.region-accent{fill:var(--region-accent,#f7d774)}.region-detail{fill:var(--region-detail,#5c8a48)}</style>
+  <!-- Flower crown: green vine band arcing over the skull with five rosette blooms (petal circle clusters) and accent centers, small leaves tucked between blooms -->
+  <path class="region-detail" d="M330 218 Q392 138 512 118 Q632 138 694 218 Q628 158 512 140 Q396 158 330 218 Z"/>
+  <path class="region-detail" d="M470 134 Q448 112 452 92 Q468 108 476 128 Q476 134 470 134 Z"/>
+  <path class="region-detail" d="M554 134 Q576 112 572 92 Q556 108 548 128 Q548 134 554 134 Z"/>
+  <path class="region-detail" d="M388 176 Q366 158 366 138 Q384 152 394 170 Q394 178 388 176 Z"/>
+  <path class="region-detail" d="M636 176 Q658 158 658 138 Q640 152 630 170 Q630 178 636 176 Z"/>
+  <circle class="region-fur" cx="512" cy="103" r="15"/>
+  <circle class="region-fur" cx="530" cy="116" r="15"/>
+  <circle class="region-fur" cx="523" cy="138" r="15"/>
+  <circle class="region-fur" cx="501" cy="138" r="15"/>
+  <circle class="region-fur" cx="494" cy="116" r="15"/>
+  <circle class="region-fur" cx="428" cy="127" r="15"/>
+  <circle class="region-fur" cx="446" cy="140" r="15"/>
+  <circle class="region-fur" cx="439" cy="162" r="15"/>
+  <circle class="region-fur" cx="417" cy="162" r="15"/>
+  <circle class="region-fur" cx="410" cy="140" r="15"/>
+  <circle class="region-fur" cx="596" cy="127" r="15"/>
+  <circle class="region-fur" cx="614" cy="140" r="15"/>
+  <circle class="region-fur" cx="607" cy="162" r="15"/>
+  <circle class="region-fur" cx="585" cy="162" r="15"/>
+  <circle class="region-fur" cx="578" cy="140" r="15"/>
+  <circle class="region-fur" cx="352" cy="185" r="15"/>
+  <circle class="region-fur" cx="370" cy="198" r="15"/>
+  <circle class="region-fur" cx="363" cy="220" r="15"/>
+  <circle class="region-fur" cx="341" cy="220" r="15"/>
+  <circle class="region-fur" cx="334" cy="198" r="15"/>
+  <circle class="region-fur" cx="672" cy="185" r="15"/>
+  <circle class="region-fur" cx="690" cy="198" r="15"/>
+  <circle class="region-fur" cx="683" cy="220" r="15"/>
+  <circle class="region-fur" cx="661" cy="220" r="15"/>
+  <circle class="region-fur" cx="654" cy="198" r="15"/>
+  <circle class="region-accent" cx="512" cy="122" r="9"/>
+  <circle class="region-accent" cx="428" cy="146" r="9"/>
+  <circle class="region-accent" cx="596" cy="146" r="9"/>
+  <circle class="region-accent" cx="352" cy="204" r="9"/>
+  <circle class="region-accent" cx="672" cy="204" r="9"/>
+</svg>

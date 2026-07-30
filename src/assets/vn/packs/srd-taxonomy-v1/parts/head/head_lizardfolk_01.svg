@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b7d3a4)}.region-accent{fill:var(--region-accent,#dcead0)}.region-detail{fill:var(--region-detail,#7c9b6b)}.region-line{fill:none;stroke:var(--region-line,#4f6247);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Lizardfolk (SRD 5.1) head: back-swept scallop crest, broad rounded snout with pale jaw, cheek scale dots -->
+  <path class="region-detail" d="M396 176 Q414 84 484 112 Q506 40 576 82 Q642 52 668 152 Q530 150 396 176 Z"/>
+  <circle class="region-fur" cx="324" cy="392" r="44"/>
+  <circle class="region-fur" cx="700" cy="392" r="44"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-fur" cx="512" cy="422" rx="90" ry="52"/>
+  <ellipse class="region-accent" cx="512" cy="450" rx="72" ry="28"/>
+  <circle class="region-detail" cx="348" cy="318" r="10"/>
+  <circle class="region-detail" cx="676" cy="318" r="10"/>
+  <circle class="region-detail" cx="484" cy="400" r="7"/>
+  <circle class="region-detail" cx="540" cy="400" r="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M478 396 l8 6"/>
+  <path class="region-line" d="M546 396 l-8 6"/>
+</svg>

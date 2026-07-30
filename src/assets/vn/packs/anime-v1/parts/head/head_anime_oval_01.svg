@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-detail{fill:var(--region-detail,#d99c86)}.region-line{fill:none;stroke:var(--region-line,#3a3340);stroke-width:10;stroke-linecap:round}</style>
+  <!-- Anime head, oval: narrower tapered cheeks and a longer chin, small human ears (detail inner notch), nose tick (line); eye zone y~300 left clear -->
+  <path class="region-skin" d="M334 312 Q308 302 304 336 Q302 370 330 382 Q342 386 344 374 Q336 344 340 316 Z"/>
+  <path class="region-skin" d="M690 312 Q716 302 720 336 Q722 370 694 382 Q682 386 680 374 Q688 344 684 316 Z"/>
+  <ellipse class="region-detail" cx="320" cy="342" rx="8" ry="14"/>
+  <ellipse class="region-detail" cx="704" cy="342" rx="8" ry="14"/>
+  <path class="region-skin" d="M330 318 Q334 138 512 134 Q690 138 694 318 Q694 408 646 468 Q580 526 512 530 Q444 526 378 468 Q330 408 330 318 Z"/>
+  <path class="region-line" d="M514 386 q10 14 -4 26"/>
+  <path class="region-line" d="M448 470 q10 10 24 12"/>
+  <path class="region-line" d="M576 470 q-10 10 -24 12"/>
+  <path class="region-line" d="M320 320 q-6 12 -4 28"/>
+  <path class="region-line" d="M704 320 q6 12 4 28"/>
+</svg>

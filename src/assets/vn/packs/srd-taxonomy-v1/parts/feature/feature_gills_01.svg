@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#dcecf0)}.region-detail{fill:var(--region-detail,#7fb0c4)}</style>
+  <!-- Gill fronds (SRD 5.1 aquatic) feature: two leafy cheek-level fronds per side with a small nub, filament dots inside; accent so they never recolor body fur -->
+  <path class="region-accent" d="M382 366 Q310 330 268 352 Q238 370 244 402 Q280 396 306 404 Q346 414 382 400 Q372 382 382 366 Z"/>
+  <path class="region-accent" d="M382 424 Q316 420 280 448 Q254 470 268 496 Q300 482 330 490 Q360 498 384 480 Q374 452 382 424 Z"/>
+  <circle class="region-accent" cx="250" cy="432" r="12"/>
+  <path class="region-accent" d="M642 366 Q714 330 756 352 Q786 370 780 402 Q744 396 718 404 Q678 414 642 400 Q652 382 642 366 Z"/>
+  <path class="region-accent" d="M642 424 Q708 420 744 448 Q770 470 756 496 Q724 482 694 490 Q664 498 640 480 Q650 452 642 424 Z"/>
+  <circle class="region-accent" cx="774" cy="432" r="12"/>
+  <circle class="region-detail" cx="296" cy="378" r="7"/>
+  <circle class="region-detail" cx="300" cy="462" r="7"/>
+  <circle class="region-detail" cx="728" cy="378" r="7"/>
+  <circle class="region-detail" cx="724" cy="462" r="7"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:22;stroke-linecap:round}</style>
+  <!-- Sad brows: inner ends high, outer ends drooping down -->
+  <path class="region-line" d="M494 252Q446 258 398 282"/>
+  <path class="region-line" d="M530 252Q578 258 626 282"/>
+</svg>

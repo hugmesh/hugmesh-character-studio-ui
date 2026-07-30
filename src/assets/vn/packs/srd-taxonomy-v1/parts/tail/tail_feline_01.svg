@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6cdb2)}.region-accent{fill:var(--region-accent,#f9ecdc)}</style>
+  <!-- Feline tail (SRD 5.1 felid): long sleek s-curve with a curled hook tip capped in cream -->
+  <path class="region-fur" d="M608 758 Q770 712 800 580 Q816 470 752 424 Q704 392 676 436 Q700 428 724 452 Q766 520 744 584 Q700 674 604 712 Q586 738 608 758 Z"/>
+  <circle class="region-accent" cx="684" cy="432" r="25"/>
+</svg>

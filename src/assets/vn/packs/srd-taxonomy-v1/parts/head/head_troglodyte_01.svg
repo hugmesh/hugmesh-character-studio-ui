@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9d8a8)}.region-accent{fill:var(--region-accent,#eaf0d5)}.region-detail{fill:var(--region-detail,#9db377)}</style>
+  <!-- Troglodyte (SRD 5.1) head: rounded three-bump crest, stout pale snout with nostril dots, spot freckles on the cheeks -->
+  <path class="region-detail" d="M388 178 Q394 116 450 110 Q462 70 512 68 Q562 70 574 110 Q630 116 636 178 Q602 148 566 152 Q550 118 512 120 Q474 118 458 152 Q422 148 388 178 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="420" rx="92" ry="56"/>
+  <circle class="region-detail" cx="488" cy="398" r="7"/>
+  <circle class="region-detail" cx="536" cy="398" r="7"/>
+  <circle class="region-detail" cx="352" cy="368" r="8"/>
+  <circle class="region-detail" cx="330" cy="404" r="8"/>
+  <circle class="region-detail" cx="366" cy="428" r="8"/>
+  <circle class="region-detail" cx="672" cy="368" r="8"/>
+  <circle class="region-detail" cx="694" cy="404" r="8"/>
+  <circle class="region-detail" cx="658" cy="428" r="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

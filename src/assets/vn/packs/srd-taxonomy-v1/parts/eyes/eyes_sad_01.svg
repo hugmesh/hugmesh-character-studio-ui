@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sad eyes: irises sit low, upper lids droop hard toward the outer corners (~22deg) -->
+  <path class="region-iris" d="M453 296A50 64 6 1 1 439 424A50 64 6 1 1 453 296Z"/>
+  <path class="region-iris" d="M571 296A50 64 -6 1 1 585 424A50 64 -6 1 1 571 296Z"/>
+  <circle class="region-detail" cx="444" cy="368" r="19"/>
+  <circle class="region-detail" cx="580" cy="368" r="19"/>
+  <circle fill="#ffffff" cx="428" cy="334" r="14"/>
+  <circle fill="#ffffff" cx="560" cy="334" r="14"/>
+  <circle fill="#ffffff" cx="462" cy="398" r="6"/>
+  <circle fill="#ffffff" cx="594" cy="398" r="6"/>
+  <path class="region-line" d="M500 302Q450 296 392 346"/>
+  <path class="region-line" d="M524 302Q574 296 632 346"/>
+</svg>

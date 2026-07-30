@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e0904a)}.region-accent{fill:var(--region-accent,#f6d98c)}.region-detail{fill:var(--region-detail,#4b3328)}</style>
+  <!-- Butterfly wings: big scalloped forewings and hindwings from the shoulders, dark detail rim underlay, fur membrane, bold accent eyespots with detail centers -->
+  <path class="region-detail" d="M436 478 Q336 350 220 248 Q128 172 94 202 Q70 262 118 330 L106 344 Q138 416 210 466 L202 482 Q298 532 420 546 Q456 510 436 478 Z"/>
+  <path class="region-detail" d="M440 538 Q338 562 264 624 Q196 686 214 750 Q222 792 290 786 Q372 764 422 706 Q462 638 460 566 Q454 544 440 538 Z"/>
+  <path class="region-fur" d="M436 478 Q340 356 228 258 Q140 186 108 212 Q88 262 132 322 L122 334 Q152 402 222 448 L214 462 Q302 510 418 528 Q446 504 436 478 Z"/>
+  <path class="region-fur" d="M440 538 Q344 566 272 628 Q210 688 226 744 L240 740 Q246 776 296 772 L298 756 Q368 748 414 698 Q450 636 450 568 Q448 546 440 538 Z"/>
+  <ellipse class="region-accent" cx="238" cy="320" rx="52" ry="44"/>
+  <ellipse class="region-detail" cx="238" cy="320" rx="22" ry="18"/>
+  <circle class="region-accent" cx="304" cy="680" r="34"/>
+  <circle class="region-detail" cx="304" cy="680" r="15"/>
+  <path class="region-detail" d="M588 478 Q688 350 804 248 Q896 172 930 202 Q954 262 906 330 L918 344 Q886 416 814 466 L822 482 Q726 532 604 546 Q568 510 588 478 Z"/>
+  <path class="region-detail" d="M584 538 Q686 562 760 624 Q828 686 810 750 Q802 792 734 786 Q652 764 602 706 Q562 638 564 566 Q570 544 584 538 Z"/>
+  <path class="region-fur" d="M588 478 Q684 356 796 258 Q884 186 916 212 Q936 262 892 322 L902 334 Q872 402 802 448 L810 462 Q722 510 606 528 Q578 504 588 478 Z"/>
+  <path class="region-fur" d="M584 538 Q680 566 752 628 Q814 688 798 744 L784 740 Q778 776 728 772 L726 756 Q656 748 610 698 Q574 636 574 568 Q576 546 584 538 Z"/>
+  <ellipse class="region-accent" cx="786" cy="320" rx="52" ry="44"/>
+  <ellipse class="region-detail" cx="786" cy="320" rx="22" ry="18"/>
+  <circle class="region-accent" cx="720" cy="680" r="34"/>
+  <circle class="region-detail" cx="720" cy="680" r="15"/>
+</svg>

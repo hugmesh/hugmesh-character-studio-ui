@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Smug smirk: asymmetric curve pulled up hard at one corner -->
+  <path class="region-line" d="M448 446Q512 466 570 436Q584 428 592 430"/>
+</svg>

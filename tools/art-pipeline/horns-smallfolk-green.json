@@ -1,0 +1,207 @@
+{
+  "agent": "horns-smallfolk-green",
+  "parts": [
+    { "slot": "head",
+      "part": { "id": "head_minotaur_01", "displayName": "Minotaur", "file": "parts/head/head_minotaur_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#d8b096"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2ddc9"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#eadcc2"}
+        ],
+        "source": "SRD 5.1", "tags": ["minotaur", "gorgon", "wereboar", "minotaur-skeleton", "monstrosity"] } },
+    { "slot": "head",
+      "part": { "id": "head_goat_01", "displayName": "Goat", "file": "parts/head/head_goat_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#e6d3b8"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f9f0dd"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#b8a68f"}
+        ],
+        "source": "SRD 5.1", "tags": ["goat", "satyr", "beast", "fey"] } },
+    { "slot": "head",
+      "part": { "id": "head_satyr_01", "displayName": "Satyr", "file": "parts/head/head_goat_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#ecd6bc"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#faf1e0"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#b09a80"}
+        ],
+        "source": "SRD 5.1", "tags": ["satyr", "fey", "alias-of-goat", "humanoid-cute-face-variant"] } },
+    { "slot": "head",
+      "part": { "id": "head_deer_01", "displayName": "Deer", "file": "parts/head/head_deer_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#e4c9a6"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f9eed8"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#a5805f"}
+        ],
+        "source": "SRD 5.1", "tags": ["deer", "elk", "beast", "antler-nub"] } },
+    { "slot": "head",
+      "part": { "id": "head_mammoth_01", "displayName": "Mammoth", "file": "parts/head/head_deer_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#c9a284"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#e8d3ba"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#8f6b52"}
+        ],
+        "source": "SRD 5.1", "tags": ["mammoth", "beast", "alias-of-deer", "wooly-brown"] } },
+    { "slot": "head",
+      "part": { "id": "head_rhino_01", "displayName": "Rhino", "file": "parts/head/head_deer_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#cdc9c4"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#e9e6e1"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#a8a29a"}
+        ],
+        "source": "SRD 5.1", "tags": ["rhino", "horn-nub", "beast", "alias-of-deer"] } },
+    { "slot": "head",
+      "part": { "id": "head_boar_01", "displayName": "Boar", "file": "parts/head/head_boar_01.svg",
+        "category": "head", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#cfae9e"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2dcd2"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#6e544c"}
+        ],
+        "source": "SRD 5.1", "tags": ["boar", "wereboar", "beast"] } },
+    { "slot": "head",
+      "part": { "id": "head_rodent_01", "displayName": "Rat", "file": "parts/head/head_rodent_01.svg",
+        "category": "head", "headArchetype": "lagomorph_rodent",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#d3cbd8"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f9e9ec"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#6a5560"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#5f5560"}
+        ],
+        "source": "SRD 5.1", "tags": ["rat", "wererat", "stirge", "beast"] } },
+    { "slot": "head",
+      "part": { "id": "head_giant_rat_01", "displayName": "Giant Rat", "file": "parts/head/head_rodent_01.svg",
+        "category": "head", "headArchetype": "lagomorph_rodent",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#c4c0cb"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2dee3"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#5f4f58"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#5f5560"}
+        ],
+        "source": "SRD 5.1", "tags": ["giant-rat", "wererat", "beast", "alias-of-rat", "gray"] } },
+    { "slot": "head",
+      "part": { "id": "head_dryad_01", "displayName": "Dryad", "file": "parts/head/head_dryad_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#ddedcf"},
+          {"region": "hair", "svgClass": "region-hair", "defaultPalette": "#a9d6b4"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#f0b9c8"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#7a5f4e"}
+        ],
+        "source": "SRD 5.1", "tags": ["dryad", "fey", "leaf-hair", "bark-freckles"] } },
+    { "slot": "head",
+      "part": { "id": "head_sprite_01", "displayName": "Sprite", "file": "parts/head/head_sprite_01.svg",
+        "category": "head", "headArchetype": "humanoid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#f6e4ee"},
+          {"region": "hair", "svgClass": "region-hair", "defaultPalette": "#cfe0f5"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#b79ad1"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#6b5566"}
+        ],
+        "source": "SRD 5.1", "tags": ["sprite", "fey", "petal-hair", "antennae"] } },
+    { "slot": "head",
+      "part": { "id": "head_treant_01", "displayName": "Treant", "file": "parts/head/head_treant_01.svg",
+        "category": "head", "headArchetype": "plant",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#cfb497"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#b2d6a0"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#ab8f70"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#5f4a38"}
+        ],
+        "source": "SRD 5.1", "tags": ["treant", "awakened-tree", "plant"] } },
+    { "slot": "head",
+      "part": { "id": "head_fungus_01", "displayName": "Fungus", "file": "parts/head/head_fungus_01.svg",
+        "category": "head", "headArchetype": "plant",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#f0e8d8"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#d8bfe8"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#f6effb"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#6f5a68"}
+        ],
+        "source": "SRD 5.1", "tags": ["fungus", "shrieker", "violet-fungus", "awakened-shrub", "shambling-mound", "plant"] } },
+    { "slot": "head",
+      "part": { "id": "head_spider_01", "displayName": "Giant Spider", "file": "parts/head/head_spider_01.svg",
+        "category": "head", "headArchetype": "synth",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#bfb3d9"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#e3dcf2"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#564566"}
+        ],
+        "source": "SRD 5.1", "tags": ["giant-spider", "drider", "monstrosity", "bead-eyes"] } },
+    { "slot": "body",
+      "part": { "id": "body_bovid_01", "displayName": "Bovid Body", "file": "parts/body/body_bovid_01.svg",
+        "category": "base", "headArchetype": "bovid_cervid",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#d8b096"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f4e3d2"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#a3785e"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#6b5147"}
+        ],
+        "source": "SRD 5.1", "tags": ["archetype", "minotaur", "deer", "goat", "boar", "gorgon", "hoof-feet"] } },
+    { "slot": "body",
+      "part": { "id": "body_rodent_01", "displayName": "Rodent Body", "file": "parts/body/body_rodent_01.svg",
+        "category": "base", "headArchetype": "lagomorph_rodent",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#d3cbd8"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2edf4"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#f2c3cd"}
+        ],
+        "source": "SRD 5.1", "tags": ["archetype", "rat", "giant-rat", "wererat", "hand-paws"] } },
+    { "slot": "body",
+      "part": { "id": "body_plant_01", "displayName": "Plant Body", "file": "parts/body/body_plant_01.svg",
+        "category": "base", "headArchetype": "plant",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#c9ab8d"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#b2d6a0"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#a1836a"},
+          {"region": "line", "svgClass": "region-line", "defaultPalette": "#5f4a38"}
+        ],
+        "source": "SRD 5.1", "tags": ["archetype", "treant", "dryad", "shambling-mound", "awakened-shrub", "root-feet"] } },
+    { "slot": "body",
+      "part": { "id": "body_spider_01", "displayName": "Spider Body", "file": "parts/body/body_spider_01.svg",
+        "category": "base", "headArchetype": "synth",
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#bfb3d9"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#e3dcf2"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#8d7fa8"}
+        ],
+        "source": "SRD 5.1", "tags": ["archetype", "giant-spider", "drider", "leg-pairs"] } },
+    { "slot": "feature",
+      "part": { "id": "feature_antlers_01", "displayName": "Antlers", "file": "parts/feature/feature_antlers_01.svg",
+        "category": "feature", "compatibleHeads": ["bovid_cervid", "humanoid"],
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#dcc2a2"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#f2e2cc"},
+          {"region": "detail", "svgClass": "region-detail", "defaultPalette": "#8a6242"}
+        ],
+        "source": "SRD 5.1", "tags": ["antlers", "deer", "elk", "dryad", "feature"] } },
+    { "slot": "feature",
+      "part": { "id": "feature_satyr_horns_01", "displayName": "Satyr Horns", "file": "parts/feature/feature_satyr_horns_01.svg",
+        "category": "feature", "compatibleHeads": ["humanoid"],
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#cfc0aa"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#e8ddc8"}
+        ],
+        "source": "SRD 5.1", "tags": ["satyr", "fey", "horns", "feature"] } },
+    { "slot": "wings",
+      "part": { "id": "wings_insect_01", "displayName": "Insect Wings", "file": "parts/wings/wings_insect_01.svg",
+        "category": "feature", "compatibleHeads": ["*"],
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#d3ecf2"},
+          {"region": "accent", "svgClass": "region-accent", "defaultPalette": "#eef9fb"}
+        ],
+        "source": "SRD 5.1", "tags": ["wings", "sprite", "stirge", "fey", "feature"] } },
+    { "slot": "tail",
+      "part": { "id": "tail_rat_01", "displayName": "Rat Tail", "file": "parts/tail/tail_rat_01.svg",
+        "category": "feature", "compatibleHeads": ["lagomorph_rodent"],
+        "tintRegions": [
+          {"region": "fur", "svgClass": "region-fur", "defaultPalette": "#f4c6d0"}
+        ],
+        "source": "SRD 5.1", "tags": ["tail", "rat", "giant-rat", "wererat", "feature"] } }
+  ]
+}

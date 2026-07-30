@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e0c4e8)}.region-accent{fill:var(--region-accent,#f5e9f8)}</style>
+  <!-- Tiefling (SRD 5.1) body: chibi jellybean torso, stubby arms, round peeking feet, subtle tail-base bump -->
+  <path class="region-fur" d="M404 512 Q340 550 326 626 Q322 662 348 664 Q360 602 414 560 Z"/>
+  <path class="region-fur" d="M620 512 Q684 550 698 626 Q702 662 676 664 Q664 602 610 560 Z"/>
+  <ellipse class="region-fur" cx="342" cy="668" rx="28" ry="20"/>
+  <ellipse class="region-fur" cx="682" cy="668" rx="28" ry="20"/>
+  <path class="region-fur" d="M648 744 Q696 762 706 806 Q684 830 656 814 Q666 784 640 768 Z"/>
+  <path class="region-fur" d="M462 436 L562 436 Q588 468 618 494 Q662 550 668 648 Q672 748 638 802 Q596 854 512 854 Q428 854 386 802 Q352 748 356 648 Q362 550 406 494 Q436 468 462 436 Z"/>
+  <ellipse class="region-fur" cx="424" cy="826" rx="62" ry="44"/>
+  <ellipse class="region-fur" cx="600" cy="826" rx="62" ry="44"/>
+  <ellipse class="region-accent" cx="512" cy="662" rx="112" ry="130"/>
+</svg>

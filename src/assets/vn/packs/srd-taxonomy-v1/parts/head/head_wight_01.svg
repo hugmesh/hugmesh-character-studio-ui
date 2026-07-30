@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e7e2ef)}.region-hair{fill:var(--region-hair,#fafafd)}.region-line{fill:none;stroke:var(--region-line,#6c6180);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Wight (SRD 5.1) head: stern-cute pale lavender face, big swept white hair with a side flick (region-hair), mouth left to mouth parts -->
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-hair" d="M310 336 Q294 148 480 110 Q706 92 718 306 Q726 388 696 442 Q702 348 660 282 Q648 250 662 212 Q612 240 566 226 Q584 200 584 176 Q534 214 478 206 Q414 198 368 234 Q326 264 310 336 Z"/>
+  <path class="region-hair" d="M702 310 Q764 330 780 384 Q748 366 720 376 Q728 338 702 322 Z"/>
+  <path class="region-line" d="M420 170 Q470 150 520 156"/>
+  <path class="region-line" d="M560 176 Q610 168 648 186"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

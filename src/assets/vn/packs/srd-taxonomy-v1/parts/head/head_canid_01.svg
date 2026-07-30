@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9ced9)}.region-accent{fill:var(--region-accent,#eceff5)}.region-detail{fill:var(--region-detail,#6e6675)}</style>
+  <!-- Wolf (SRD 5.1) head: perky round-tipped ears, fluffy round cheek bumps, tiny nose (mouth left to mouth slot) -->
+  <path class="region-fur" d="M322 256 Q304 108 348 72 Q368 56 388 76 Q438 130 456 234 Q390 200 322 256 Z"/>
+  <path class="region-accent" d="M352 226 Q342 132 366 106 Q378 94 390 112 Q420 156 430 212 Q392 192 352 226 Z"/>
+  <path class="region-fur" d="M702 256 Q720 108 676 72 Q656 56 636 76 Q586 130 568 234 Q634 200 702 256 Z"/>
+  <path class="region-accent" d="M672 226 Q682 132 658 106 Q646 94 634 112 Q604 156 594 212 Q632 192 672 226 Z"/>
+  <ellipse class="region-fur" cx="322" cy="332" rx="44" ry="30"/>
+  <ellipse class="region-fur" cx="316" cy="390" rx="40" ry="28"/>
+  <ellipse class="region-fur" cx="702" cy="332" rx="44" ry="30"/>
+  <ellipse class="region-fur" cx="708" cy="390" rx="40" ry="28"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="424" rx="78" ry="50"/>
+  <path class="region-detail" d="M490 382 Q512 372 534 382 Q530 398 512 404 Q494 398 490 382 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

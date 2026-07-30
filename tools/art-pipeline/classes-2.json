@@ -1,0 +1,147 @@
+{
+  "agent": "classes-2",
+  "parts": [
+    {
+      "slot": "clothing",
+      "part": {
+        "id": "clothing_fighter_01",
+        "displayName": "Fighter Plate Armor",
+        "file": "parts/clothing/clothing_fighter_01.svg",
+        "category": "clothing",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b7c6da" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e4eaf2" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#d95f6c" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "fighter", "plate-armor", "chain-mail", "surcoat", "pauldrons"]
+      }
+    },
+    {
+      "slot": "accessory",
+      "part": {
+        "id": "accessory_sword_shield_01",
+        "displayName": "Fighter Sword & Shield",
+        "file": "parts/accessory/accessory_sword_shield_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#b7c6da" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e4eaf2" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#d95f6c" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "fighter", "longsword", "kite-shield", "great-helm"]
+      }
+    },
+    {
+      "slot": "clothing",
+      "part": {
+        "id": "clothing_monk_01",
+        "displayName": "Monk Gi",
+        "file": "parts/clothing/clothing_monk_01.svg",
+        "category": "clothing",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#ecc9b0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#f8eeda" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "monk", "gi", "sash-belt", "wrapped-robe"]
+      }
+    },
+    {
+      "slot": "accessory",
+      "part": {
+        "id": "accessory_quarterstaff_01",
+        "displayName": "Monk Quarterstaff",
+        "file": "parts/accessory/accessory_quarterstaff_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#ecc9b0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#f8eeda" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#e07a9a" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "monk", "quarterstaff", "prayer-beads", "hand-wraps"]
+      }
+    },
+    {
+      "slot": "clothing",
+      "part": {
+        "id": "clothing_paladin_01",
+        "displayName": "Paladin Plate",
+        "file": "parts/clothing/clothing_paladin_01.svg",
+        "category": "clothing",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#c3bbdf" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#eeecf7" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#f0c05a" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "paladin", "plate-armor", "holy-tabard", "wing-motif", "sun-sigil"]
+      }
+    },
+    {
+      "slot": "accessory",
+      "part": {
+        "id": "accessory_glow_sword_shield_01",
+        "displayName": "Paladin Glow Sword & Shield",
+        "file": "parts/accessory/accessory_glow_sword_shield_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#c3bbdf" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#eeecf7" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#6ec1e4" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "paladin", "longsword-glow", "heater-shield", "sigil", "winged-helm"]
+      }
+    },
+    {
+      "slot": "clothing",
+      "part": {
+        "id": "clothing_ranger_01",
+        "displayName": "Ranger Hooded Cloak",
+        "file": "parts/clothing/clothing_ranger_01.svg",
+        "category": "clothing",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#aec6a0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e6dcc4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#f0b54e" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "ranger", "hooded-cloak", "studded-leather", "chest-strap", "clasp"]
+      }
+    },
+    {
+      "slot": "accessory",
+      "part": {
+        "id": "accessory_bow_quiver_01",
+        "displayName": "Ranger Bow & Quiver",
+        "file": "parts/accessory/accessory_bow_quiver_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "cloth", "svgClass": "region-cloth", "defaultPalette": "#aec6a0" },
+          { "region": "clothtrim", "svgClass": "region-clothtrim", "defaultPalette": "#e6dcc4" },
+          { "region": "iris", "svgClass": "region-iris", "defaultPalette": "#f0b54e" },
+          { "region": "line", "svgClass": "region-line", "defaultPalette": "#5a4450" }
+        ],
+        "source": "SRD 5.1",
+        "tags": ["class", "ranger", "bow", "quiver", "arrows", "twin-shortswords"]
+      }
+    }
+  ]
+}

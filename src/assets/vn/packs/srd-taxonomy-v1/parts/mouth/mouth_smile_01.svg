@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Default smile: one wide happy q-curve, the pack's resting mouth -->
+  <path class="region-line" d="M430 428Q512 472 594 428"/>
+</svg>

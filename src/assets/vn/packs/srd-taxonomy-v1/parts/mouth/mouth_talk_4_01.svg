@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6b7c0)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Viseme 4/4 (wide): wide-open D shout with teeth glint -->
+  <path class="region-accent" d="M434 424Q512 446 590 424Q578 508 512 518Q446 508 434 424Z"/>
+  <rect fill="#ffffff" x="478" y="432" width="68" height="12" rx="6"/>
+  <path class="region-line" d="M434 424Q512 446 590 424Q578 508 512 518Q446 508 434 424Z"/>
+</svg>

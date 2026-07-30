@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c7a284)}.region-accent{fill:var(--region-accent,#ecdac6)}.region-detail{fill:var(--region-detail,#6f5140)}</style>
+  <!-- Bear (SRD 5.1) head: tiny round ears, extra-chubby cheeks, big oval cream muzzle (mouth left to mouth slot) -->
+  <circle class="region-fur" cx="392" cy="158" r="56"/>
+  <circle class="region-accent" cx="396" cy="164" r="30"/>
+  <circle class="region-fur" cx="632" cy="158" r="56"/>
+  <circle class="region-accent" cx="628" cy="164" r="30"/>
+  <ellipse class="region-fur" cx="334" cy="394" rx="56" ry="50"/>
+  <ellipse class="region-fur" cx="690" cy="394" rx="56" ry="50"/>
+  <circle class="region-fur" cx="512" cy="332" r="207"/>
+  <ellipse class="region-accent" cx="512" cy="420" rx="88" ry="58"/>
+  <ellipse class="region-detail" cx="512" cy="392" rx="19" ry="12"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

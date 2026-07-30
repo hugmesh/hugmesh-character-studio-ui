@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5f6b7d)}.region-accent{fill:var(--region-accent,#f3f5f8)}.region-detail{fill:var(--region-detail,#2c2f38)}</style>
+  <!-- Husky head: rounded skull, soft upright ears with pale inner ear, classic white face mask with twin brow lobes, dark nose -->
+  <path class="region-fur" d="M356 240 Q330 150 350 96 Q412 118 462 172 Q404 200 356 240 Z"/>
+  <path class="region-fur" d="M668 240 Q694 150 674 96 Q612 118 562 172 Q620 200 668 240 Z"/>
+  <path class="region-accent" d="M372 212 Q356 152 362 122 Q404 140 434 174 Z"/>
+  <path class="region-accent" d="M652 212 Q668 152 662 122 Q620 140 590 174 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M478 140 Q512 92 546 140 Q512 122 478 140 Z"/>
+  <path class="region-fur" d="M348 360 Q332 402 348 440 L404 414 Q380 388 380 356 Z"/>
+  <path class="region-fur" d="M676 360 Q692 402 676 440 L620 414 Q644 388 644 356 Z"/>
+  <path class="region-accent" d="M388 348 Q392 300 428 268 Q414 236 430 214 Q462 232 474 266 Q512 254 550 266 Q562 232 594 214 Q610 236 596 268 Q632 300 636 348 Q636 430 590 480 Q550 512 512 514 Q474 512 434 480 Q388 430 388 348 Z"/>
+  <path class="region-detail" d="M480 384 Q512 370 544 384 Q546 412 512 430 Q478 412 480 384 Z"/>
+</svg>

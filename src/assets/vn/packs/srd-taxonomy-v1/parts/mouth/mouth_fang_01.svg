@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Fang smile: wide q-curve plus one tiny soft-tipped predator fang -->
+  <path class="region-line" d="M434 430Q512 470 590 430"/>
+  <path fill="#ffffff" d="M537 447Q541 469 548 470Q555 469 559 446Q548 439 537 447Z"/>
+</svg>

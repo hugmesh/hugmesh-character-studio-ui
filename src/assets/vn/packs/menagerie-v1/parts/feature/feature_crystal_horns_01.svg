@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#c9b8f0)}.region-detail{fill:none;stroke:var(--region-detail,#4b3f78);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Crystal horns: angular faceted gem sweeps off the upper skull rim with a small secondary shard at each base -->
+  <path class="region-accent" d="M352 236 L306 168 L296 84 L344 56 L398 128 L416 196 Q392 226 352 236 Z"/>
+  <path class="region-accent" d="M672 236 L718 168 L728 84 L680 56 L626 128 L608 196 Q632 226 672 236 Z"/>
+  <path class="region-accent" d="M414 214 L446 152 L458 218 Z"/>
+  <path class="region-accent" d="M610 214 L578 152 L566 218 Z"/>
+  <path class="region-detail" d="M342 66 L352 160 L360 226"/>
+  <path class="region-detail" d="M306 170 L350 156"/>
+  <path class="region-detail" d="M394 132 L354 162"/>
+  <path class="region-detail" d="M682 66 L672 160 L664 226"/>
+  <path class="region-detail" d="M718 170 L674 156"/>
+  <path class="region-detail" d="M630 132 L670 162"/>
+</svg>

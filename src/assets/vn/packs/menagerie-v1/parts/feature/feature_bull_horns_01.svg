@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e4d6b4)}.region-detail{fill:var(--region-detail,#453729)}</style>
+  <!-- Bull horns: wide cream horns thrusting out from the temples then hooking upward, with dark tips and base bands -->
+  <path class="region-accent" d="M368 200 Q268 168 212 180 Q176 150 168 96 Q206 148 230 186 Q296 210 372 262 Q358 228 368 200 Z"/>
+  <path class="region-accent" d="M656 200 Q756 168 812 180 Q848 150 856 96 Q818 148 794 186 Q728 210 652 262 Q666 228 656 200 Z"/>
+  <path class="region-detail" d="M168 96 Q196 134 216 168 L196 178 Q180 140 168 96 Z"/>
+  <path class="region-detail" d="M856 96 Q828 134 808 168 L828 178 Q844 140 856 96 Z"/>
+  <path class="region-detail" d="M352 200 L330 194 L328 216 L350 226 Z"/>
+  <path class="region-detail" d="M672 200 L694 194 L696 216 L674 226 Z"/>
+  <path class="region-detail" d="M314 190 L294 186 L292 206 L312 212 Z"/>
+  <path class="region-detail" d="M710 190 L730 186 L732 206 L712 212 Z"/>
+</svg>

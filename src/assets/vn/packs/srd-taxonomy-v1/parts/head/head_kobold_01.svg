@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#eec3a5)}.region-accent{fill:var(--region-accent,#fae1cc)}.region-detail{fill:var(--region-detail,#c9906c)}.region-line{fill:none;stroke:var(--region-line,#6e4a3a);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Kobold (SRD 5.1) head: big up-swept fan ears w/ pale inner web, two rounded horn nubs, scale freckles on a big round face -->
+  <path class="region-fur" d="M356 286 Q248 168 172 184 Q138 198 150 242 Q184 332 340 388 Q354 338 356 286 Z"/>
+  <path class="region-fur" d="M668 286 Q776 168 852 184 Q886 198 874 242 Q840 332 684 388 Q670 338 668 286 Z"/>
+  <path class="region-accent" d="M342 300 Q262 210 204 222 Q182 232 190 260 Q220 322 332 362 Q342 332 342 300 Z"/>
+  <path class="region-accent" d="M682 300 Q762 210 820 222 Q842 232 834 260 Q804 322 692 362 Q682 332 682 300 Z"/>
+  <path class="region-detail" d="M430 152 Q424 86 456 80 Q478 90 468 148 Q450 140 430 152 Z"/>
+  <path class="region-detail" d="M594 152 Q600 86 568 80 Q546 90 556 148 Q574 140 594 152 Z"/>
+  <circle class="region-fur" cx="320" cy="390" r="46"/>
+  <circle class="region-fur" cx="704" cy="390" r="46"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-fur" cx="512" cy="412" rx="58" ry="34"/>
+  <circle class="region-accent" cx="368" cy="316" r="9"/>
+  <circle class="region-accent" cx="656" cy="316" r="9"/>
+  <circle class="region-accent" cx="348" cy="352" r="8"/>
+  <circle class="region-accent" cx="676" cy="352" r="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M492 394 l7 6"/>
+  <path class="region-line" d="M532 394 l-7 6"/>
+</svg>

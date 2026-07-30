@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9a284)}.region-accent{fill:var(--region-accent,#ecd9c2)}.region-detail{fill:var(--region-detail,#8a5a44)}</style>
+  <!-- Bugbear (SRD 5.1) head: rounded shaggy fluff lobes around the face, round bear ears, cream muzzle patch -->
+  <circle class="region-fur" cx="446" cy="128" r="44"/>
+  <circle class="region-fur" cx="578" cy="128" r="44"/>
+  <circle class="region-fur" cx="330" cy="196" r="52"/>
+  <circle class="region-fur" cx="694" cy="196" r="52"/>
+  <circle class="region-fur" cx="282" cy="300" r="50"/>
+  <circle class="region-fur" cx="742" cy="300" r="50"/>
+  <circle class="region-fur" cx="296" cy="412" r="46"/>
+  <circle class="region-fur" cx="728" cy="412" r="46"/>
+  <circle class="region-fur" cx="352" cy="492" r="42"/>
+  <circle class="region-fur" cx="672" cy="492" r="42"/>
+  <circle class="region-fur" cx="356" cy="152" r="62"/>
+  <circle class="region-fur" cx="668" cy="152" r="62"/>
+  <circle class="region-accent" cx="352" cy="140" r="28"/>
+  <circle class="region-accent" cx="672" cy="140" r="28"/>
+  <circle class="region-fur" cx="512" cy="335" r="200"/>
+  <ellipse class="region-accent" cx="512" cy="422" rx="88" ry="56"/>
+  <ellipse class="region-detail" cx="512" cy="392" rx="18" ry="13"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

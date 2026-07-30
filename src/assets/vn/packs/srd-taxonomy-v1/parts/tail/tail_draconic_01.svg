@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a8d8b9)}.region-accent{fill:var(--region-accent,#d8eedd)}.region-detail{fill:var(--region-detail,#6fa287)}</style>
+  <!-- Draconic tail (SRD 5.1 dragons): chunky curvy tail sweeping out from behind the body, rounded tail-spade tip, plate dots -->
+  <path class="region-detail" d="M812 492 Q870 540 856 596 Q836 646 800 652 Q764 642 746 588 Q736 534 792 496 Q802 486 812 492 Z"/>
+  <path class="region-fur" d="M470 780 Q660 852 780 740 Q838 676 798 606 Q756 662 700 690 Q600 736 470 660 Z"/>
+  <circle class="region-accent" cx="580" cy="780" r="16"/>
+  <circle class="region-accent" cx="676" cy="758" r="14"/>
+  <circle class="region-accent" cx="748" cy="700" r="12"/>
+</svg>

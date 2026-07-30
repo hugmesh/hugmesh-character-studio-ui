@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#dfa987)}.region-hair{fill:var(--region-hair,#979aad)}.region-detail{fill:var(--region-detail,#c98d6f)}</style>
+  <!-- Hobgoblin (SRD 5.1) head: disciplined straight-cut bob (region-hair), larger pointed ears, dusky orange face -->
+  <circle class="region-hair" cx="512" cy="322" r="212"/>
+  <path class="region-fur" d="M344 332 Q270 292 234 208 Q222 300 268 358 Q304 392 354 376 Z"/>
+  <path class="region-detail" d="M342 336 Q292 300 268 244 Q262 308 296 350 Z"/>
+  <path class="region-fur" d="M680 332 Q754 292 790 208 Q802 300 756 358 Q720 392 670 376 Z"/>
+  <path class="region-detail" d="M682 336 Q732 300 756 244 Q762 308 728 350 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-hair" d="M322 324 Q310 148 512 130 Q714 148 702 324 Q706 244 696 238 Q512 258 328 238 Q318 244 322 324 Z"/>
+  <rect class="region-hair" x="304" y="236" width="52" height="148" rx="26"/>
+  <rect class="region-hair" x="668" y="236" width="52" height="148" rx="26"/>
+  <ellipse class="region-detail" cx="512" cy="396" rx="12" ry="9"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

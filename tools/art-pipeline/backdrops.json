@@ -1,0 +1,65 @@
+{
+  "agent": "backdrops",
+  "parts": [
+    {
+      "slot": "backdrop",
+      "part": {
+        "id": "backdrop_ring_01",
+        "displayName": "Ring Badge",
+        "file": "parts/backdrop/backdrop_ring_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f6eedd" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c9a96e" }
+        ],
+        "tags": ["token", "backdrop"]
+      }
+    },
+    {
+      "slot": "backdrop",
+      "part": {
+        "id": "backdrop_scallop_01",
+        "displayName": "Scallop Badge",
+        "file": "parts/backdrop/backdrop_scallop_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f6eedd" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c9a96e" }
+        ],
+        "tags": ["token", "backdrop"]
+      }
+    },
+    {
+      "slot": "backdrop",
+      "part": {
+        "id": "backdrop_burst_01",
+        "displayName": "Burst Badge",
+        "file": "parts/backdrop/backdrop_burst_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f6eedd" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c9a96e" }
+        ],
+        "tags": ["token", "backdrop"]
+      }
+    },
+    {
+      "slot": "backdrop",
+      "part": {
+        "id": "backdrop_shield_01",
+        "displayName": "Shield Badge",
+        "file": "parts/backdrop/backdrop_shield_01.svg",
+        "category": "accessory",
+        "compatibleHeads": ["*"],
+        "tintRegions": [
+          { "region": "accent", "svgClass": "region-accent", "defaultPalette": "#f6eedd" },
+          { "region": "detail", "svgClass": "region-detail", "defaultPalette": "#c9a96e" }
+        ],
+        "tags": ["token", "backdrop"]
+      }
+    }
+  ]
+}

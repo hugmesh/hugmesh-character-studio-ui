@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e5566d)}.region-detail{fill:var(--region-detail,#b23a4e)}</style>
+  <!-- Big head ribbon: oversized bow tilted on the upper-right of the head, knot in detail tone -->
+  <path class="region-accent" d="M622 192 Q524 96 482 142 Q456 186 514 214 Q574 218 622 192 Z"/>
+  <path class="region-accent" d="M622 192 Q744 130 768 182 Q782 228 718 240 Q662 232 622 192 Z"/>
+  <path class="region-accent" d="M600 210 Q586 268 608 312 Q630 298 638 264 Q622 236 626 214 Z"/>
+  <path class="region-accent" d="M648 214 Q668 264 656 308 Q680 294 686 258 Q670 232 662 210 Z"/>
+  <rect class="region-detail" x="596" y="168" width="52" height="48" rx="16"/>
+</svg>

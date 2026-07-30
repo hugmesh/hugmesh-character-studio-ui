@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e8dcc4)}.region-accent{fill:var(--region-accent,#5a4536)}.region-detail{fill:var(--region-detail,#8a5a52)}</style>
+  <!-- Ferret head: cream sable base, wide-set round ears with dark centers and pale rims, iconic dark bandit mask across the eyes, dark crown patch, small tapered muzzle with pink nose -->
+  <circle class="region-fur" cx="366" cy="208" r="46"/>
+  <circle class="region-fur" cx="658" cy="208" r="46"/>
+  <circle class="region-accent" cx="366" cy="208" r="30"/>
+  <circle class="region-accent" cx="658" cy="208" r="30"/>
+  <circle class="region-fur" cx="512" cy="330" r="190"/>
+  <path class="region-fur" d="M334 356 Q304 392 314 432 Q348 438 376 416 Z"/>
+  <path class="region-fur" d="M690 356 Q720 392 710 432 Q676 438 648 416 Z"/>
+  <path class="region-accent" d="M430 172 Q512 146 594 172 Q588 208 512 216 Q436 208 430 172 Z"/>
+  <path class="region-accent" d="M344 300 Q356 264 402 258 Q456 252 490 272 Q512 262 534 272 Q568 252 622 258 Q668 264 680 300 Q684 330 664 348 Q616 368 568 344 Q540 356 512 356 Q484 356 456 344 Q408 368 360 348 Q340 330 344 300 Z"/>
+  <path class="region-accent" d="M352 328 Q324 348 314 378 L358 362 Z"/>
+  <path class="region-accent" d="M672 328 Q700 348 710 378 L666 362 Z"/>
+  <path class="region-fur" d="M462 388 Q512 372 562 388 Q576 428 552 458 Q532 476 512 478 Q492 476 472 458 Q448 428 462 388 Z"/>
+  <path class="region-detail" d="M488 398 Q512 388 536 398 Q540 418 522 432 Q512 438 502 432 Q484 418 488 398 Z"/>
+  <path class="region-detail" d="M509 434 L515 434 L513 456 L511 456 Z"/>
+</svg>

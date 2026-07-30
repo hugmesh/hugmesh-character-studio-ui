@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8b8e99)}.region-accent{fill:var(--region-accent,#e8e6df)}</style>
+  <!-- Ookami ears: broad wolf ears with rounded tips and tufty pale inner fur -->
+  <path class="region-fur" d="M352 244 Q334 132 396 60 Q412 46 428 62 Q484 116 500 206 Q436 252 352 244 Z"/>
+  <path class="region-accent" d="M392 216 Q380 140 406 94 Q450 138 470 200 L446 188 L438 212 L414 198 L404 220 Z"/>
+  <path class="region-fur" d="M672 244 Q690 132 628 60 Q612 46 596 62 Q540 116 524 206 Q588 252 672 244 Z"/>
+  <path class="region-accent" d="M632 216 Q644 140 618 94 Q574 138 554 200 L578 188 L586 212 L610 198 L620 220 Z"/>
+</svg>

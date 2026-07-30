@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8a6550)}.region-accent{fill:var(--region-accent,#e8d6b8)}.region-detail{fill:var(--region-detail,#6b4a3e)}</style>
+  <!-- Boar head: jowly cheeks, folded triangular ears, bristly crown crest, broad snout disc with nostrils and ivory tusks curving up past the jaw -->
+  <path class="region-fur" d="M356 232 L300 108 L452 168 Q398 192 356 232 Z"/>
+  <path class="region-detail" d="M368 210 L330 130 L428 172 Z"/>
+  <path class="region-fur" d="M668 232 L724 108 L572 168 Q626 192 668 232 Z"/>
+  <path class="region-detail" d="M656 210 L694 130 L596 172 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-detail" d="M446 152 L466 100 L484 140 L506 92 L528 138 L550 98 L572 146 Q510 122 446 152 Z"/>
+  <ellipse class="region-fur" cx="512" cy="428" rx="186" ry="104"/>
+  <path class="region-fur" d="M436 372 Q512 348 588 372 L600 462 Q560 506 512 510 Q464 506 424 462 Z"/>
+  <path class="region-accent" d="M446 478 Q414 462 408 414 Q408 396 424 388 L442 404 Q436 442 462 470 Q456 480 446 478 Z"/>
+  <path class="region-accent" d="M578 478 Q610 462 616 414 Q616 396 600 388 L582 404 Q588 442 562 470 Q568 480 578 478 Z"/>
+  <ellipse class="region-detail" cx="512" cy="432" rx="66" ry="50"/>
+  <ellipse class="region-fur" cx="490" cy="430" rx="10" ry="15"/>
+  <ellipse class="region-fur" cx="534" cy="430" rx="10" ry="15"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a6663d)}.region-accent{fill:var(--region-accent,#e0c08a)}.region-detail{fill:var(--region-detail,#6b4526)}</style>
+  <!-- Kobold tail: thin whippy draconic tail drooping off the hip with a curled flick tip, pale underside bands and tiny back spikes -->
+  <ellipse class="region-fur" cx="640" cy="692" rx="36" ry="46" transform="rotate(-18 640 692)"/>
+  <path class="region-fur" d="M620 662 Q750 650 846 710 Q930 764 924 856 Q920 906 884 934 Q872 942 866 930 Q862 918 872 908 Q898 884 900 852 Q902 774 830 726 Q744 672 622 696 Z"/>
+  <path class="region-accent" d="M640 692 Q744 676 826 726 L812 744 Q740 700 644 714 Z"/>
+  <path class="region-accent" d="M846 742 Q898 782 898 846 L878 842 Q876 792 832 758 Z"/>
+  <path class="region-accent" d="M896 866 Q890 898 872 916 L886 926 Q906 906 914 872 Z"/>
+  <path class="region-detail" d="M636 648 l10 -20 l12 22 z"/>
+  <path class="region-detail" d="M700 656 l12 -22 l12 24 z"/>
+  <path class="region-detail" d="M780 676 l14 -20 l10 26 z"/>
+  <path class="region-detail" d="M846 716 l16 -16 l6 26 z"/>
+  <path class="region-detail" d="M872 936 l-6 26 l22 -12 z"/>
+</svg>

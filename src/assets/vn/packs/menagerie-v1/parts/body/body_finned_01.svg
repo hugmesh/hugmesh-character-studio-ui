@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#bfe6ee)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Finned aquatic body: streamlined torso with webbed membrane fins trailing off each forearm, fin-ray details -->
+  <rect class="region-fur" x="352" y="474" width="58" height="236" rx="29" transform="rotate(10 381 474)"/>
+  <rect class="region-fur" x="614" y="474" width="58" height="236" rx="29" transform="rotate(-10 643 474)"/>
+  <path class="region-accent" d="M356 566 Q268 600 236 674 Q310 684 362 640 Z"/>
+  <path class="region-detail" d="M352 586 L266 646 L274 656 Z"/>
+  <path class="region-detail" d="M354 612 L294 658 L300 666 Z"/>
+  <path class="region-detail" d="M346 576 L242 662 L250 670 Z"/>
+  <path class="region-accent" d="M668 566 Q756 600 788 674 Q714 684 662 640 Z"/>
+  <path class="region-detail" d="M672 586 L758 646 L750 656 Z"/>
+  <path class="region-detail" d="M670 612 L730 658 L724 666 Z"/>
+  <path class="region-detail" d="M678 576 L782 662 L774 670 Z"/>
+  <rect class="region-fur" x="474" y="396" width="76" height="110" rx="30"/>
+  <path class="region-fur" d="M512 436 Q430 440 398 484 Q378 560 386 660 Q396 742 470 764 Q512 772 554 764 Q628 742 638 660 Q646 560 626 484 Q594 440 512 436 Z"/>
+  <path class="region-accent" d="M512 474 Q558 490 572 560 Q582 644 564 714 Q540 744 512 746 Q484 744 460 714 Q442 644 452 560 Q466 490 512 474 Z"/>
+</svg>

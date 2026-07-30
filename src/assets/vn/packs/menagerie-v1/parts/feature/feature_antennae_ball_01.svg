@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#4a3a2c)}</style>
+  <!-- Ball antennae: paired springy two-segment stalks rising from the crown with round ball tips and small base knobs -->
+  <circle class="region-detail" cx="470" cy="206" r="16"/>
+  <path class="region-detail" d="M462 212 Q440 168 424 132 L440 124 Q456 162 478 202 Z"/>
+  <path class="region-detail" d="M428 138 Q412 108 402 92 L418 84 Q428 104 442 130 Z"/>
+  <circle class="region-detail" cx="410" cy="78" r="30"/>
+  <circle class="region-detail" cx="554" cy="206" r="16"/>
+  <path class="region-detail" d="M562 212 Q584 168 600 132 L584 124 Q568 162 546 202 Z"/>
+  <path class="region-detail" d="M596 138 Q612 108 622 92 L606 84 Q596 104 582 130 Z"/>
+  <circle class="region-detail" cx="614" cy="78" r="30"/>
+</svg>

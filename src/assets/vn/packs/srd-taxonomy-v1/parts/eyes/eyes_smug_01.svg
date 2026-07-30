@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Smug eyes: dead-flat half lids, inward knowing pupils, smile-curved lower lids -->
+  <path class="region-iris" d="M400 332L492 332Q498 386 446 394Q394 386 400 332Z"/>
+  <path class="region-iris" d="M624 332L532 332Q526 386 578 394Q630 386 624 332Z"/>
+  <circle class="region-detail" cx="452" cy="354" r="15"/>
+  <circle class="region-detail" cx="572" cy="354" r="15"/>
+  <circle fill="#ffffff" cx="432" cy="346" r="10"/>
+  <circle fill="#ffffff" cx="564" cy="346" r="10"/>
+  <circle fill="#ffffff" cx="466" cy="374" r="5"/>
+  <circle fill="#ffffff" cx="598" cy="374" r="5"/>
+  <path class="region-line" d="M392 330Q446 324 500 330"/>
+  <path class="region-line" d="M524 330Q578 324 632 330"/>
+  <path class="region-line" d="M402 408Q446 396 490 408"/>
+  <path class="region-line" d="M534 408Q578 396 622 408"/>
+</svg>

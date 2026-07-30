@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#c9b8f0)}.region-detail{fill:none;stroke:var(--region-detail,#4b3f78);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}</style>
+  <!-- Crystal growth overlay: faceted gem clusters erupting at the left shoulder and right haunch -->
+  <path class="region-accent" d="M400 512 L376 424 L432 490 Z"/>
+  <path class="region-accent" d="M428 508 L436 448 L468 502 Z"/>
+  <path class="region-accent" d="M382 516 L346 462 L406 500 Z"/>
+  <path class="region-accent" d="M612 712 L640 616 L664 700 Z"/>
+  <path class="region-accent" d="M586 716 L576 652 L620 706 Z"/>
+  <path class="region-accent" d="M652 710 L690 660 L676 718 Z"/>
+  <path class="region-detail" d="M400 444 L410 502"/>
+  <path class="region-detail" d="M438 462 L446 500"/>
+  <path class="region-detail" d="M362 474 L392 504"/>
+  <path class="region-detail" d="M636 636 L634 702"/>
+  <path class="region-detail" d="M584 668 L600 704"/>
+  <path class="region-detail" d="M682 672 L668 708"/>
+</svg>

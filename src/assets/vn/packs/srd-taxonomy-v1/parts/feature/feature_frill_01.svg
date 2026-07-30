@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f4b8a4)}.region-accent{fill:var(--region-accent,#fbdccd)}.region-line{fill:none;stroke:var(--region-line,#8a5a4c);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Reptile head frill (SRD 5.1 reptiles): three-lobe crown fin with pale inner web and rib seams, small side fins -->
+  <path class="region-fur" d="M372 250 Q300 226 296 280 Q330 300 380 288 Z"/>
+  <path class="region-fur" d="M652 250 Q724 226 728 280 Q694 300 644 288 Z"/>
+  <path class="region-fur" d="M400 196 Q380 88 460 84 Q484 18 548 44 Q620 32 640 130 Q652 176 624 196 Q512 150 400 196 Z"/>
+  <path class="region-accent" d="M430 184 Q416 110 470 106 Q492 52 540 72 Q596 62 610 140 Q616 172 600 184 Q512 146 430 184 Z"/>
+  <path class="region-line" d="M472 100 Q476 140 470 172"/>
+  <path class="region-line" d="M552 72 Q556 118 552 162"/>
+</svg>

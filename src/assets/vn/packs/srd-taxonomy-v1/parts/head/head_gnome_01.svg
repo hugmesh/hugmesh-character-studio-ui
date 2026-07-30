@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f0c8a6)}.region-hair{fill:var(--region-hair,#eee9df)}.region-accent{fill:var(--region-accent,#fbdfc4)}.region-detail{fill:var(--region-detail,#b98a6e)}</style>
+  <!-- Gnome (SRD 5.1, Rock Gnome) head: large round accent nose, small pointed ears, round-tipped wispy hair (region-hair) -->
+  <path class="region-hair" d="M430 150 Q436 96 466 74 Q484 80 472 116 Q464 138 468 150 Z"/>
+  <path class="region-hair" d="M506 142 Q516 76 550 56 Q568 62 552 104 Q542 128 546 144 Z"/>
+  <path class="region-hair" d="M588 156 Q612 106 642 92 Q656 102 634 138 Q620 154 614 166 Z"/>
+  <path class="region-hair" d="M350 242 Q312 216 300 182 Q312 170 340 198 Q358 218 356 234 Z"/>
+  <path class="region-hair" d="M674 242 Q712 216 724 182 Q712 170 684 198 Q666 218 668 234 Z"/>
+  <path class="region-fur" d="M340 344 Q298 318 284 278 Q324 292 350 320 Z"/>
+  <path class="region-fur" d="M684 344 Q726 318 740 278 Q700 292 674 320 Z"/>
+  <circle class="region-fur" cx="512" cy="332" r="198"/>
+  <circle class="region-accent" cx="512" cy="375" r="30"/>
+  <circle class="region-detail" cx="501" cy="384" r="6"/>
+  <circle class="region-detail" cx="523" cy="384" r="6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

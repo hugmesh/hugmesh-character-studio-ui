@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9ab8d)}.region-accent{fill:var(--region-accent,#b2d6a0)}.region-detail{fill:var(--region-detail,#a1836a)}.region-line{fill:none;stroke:var(--region-line,#5f4a38);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Plant body (SRD 5.1 treant/dryad kin): barky jellybean, leafy collar and leaf-puff hands, splayed root feet -->
+  <path class="region-fur" d="M424 508 Q356 548 342 630 Q340 664 366 666 Q382 600 434 558 Z"/>
+  <path class="region-fur" d="M600 508 Q668 548 682 630 Q684 664 658 666 Q642 600 590 558 Z"/>
+  <circle class="region-accent" cx="362" cy="656" r="25"/>
+  <circle class="region-accent" cx="662" cy="656" r="25"/>
+  <path class="region-fur" d="M452 436 H572 Q596 506 640 548 Q682 592 686 672 Q690 762 652 812 Q604 856 512 856 Q420 856 372 812 Q334 762 338 672 Q342 592 384 548 Q428 506 452 436 Z"/>
+  <circle class="region-accent" cx="432" cy="470" r="30"/>
+  <circle class="region-accent" cx="474" cy="452" r="30"/>
+  <circle class="region-accent" cx="512" cy="444" r="30"/>
+  <circle class="region-accent" cx="552" cy="452" r="30"/>
+  <circle class="region-accent" cx="594" cy="470" r="30"/>
+  <path class="region-accent" d="M512 584 Q572 648 512 748 Q452 648 512 584 Z"/>
+  <path class="region-line" d="M452 560 q-10 40 2 76"/>
+  <path class="region-line" d="M578 560 q10 40 -2 76"/>
+  <ellipse class="region-fur" cx="414" cy="772" rx="68" ry="54"/>
+  <ellipse class="region-fur" cx="610" cy="772" rx="68" ry="54"/>
+  <ellipse class="region-detail" cx="374" cy="806" rx="26" ry="20"/>
+  <ellipse class="region-detail" cx="414" cy="814" rx="28" ry="22"/>
+  <ellipse class="region-detail" cx="454" cy="806" rx="26" ry="20"/>
+  <ellipse class="region-detail" cx="570" cy="806" rx="26" ry="20"/>
+  <ellipse class="region-detail" cx="610" cy="814" rx="28" ry="22"/>
+  <ellipse class="region-detail" cx="650" cy="806" rx="26" ry="20"/>
+</svg>

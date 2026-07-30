@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#66597a)}.region-accent{fill:var(--region-accent,#dcb8c6)}.region-detail{fill:var(--region-detail,#2e2536)}</style>
+  <!-- Bat head: huge leaf-shaped ears with pale inner membrane, snub muzzle disc, leaf nose, tiny pale fangs peeking below the lip -->
+  <path class="region-fur" d="M336 248 Q276 160 306 34 Q398 92 428 222 Q378 250 336 248 Z"/>
+  <path class="region-accent" d="M344 228 Q306 158 322 70 Q380 122 398 206 Q368 228 344 228 Z"/>
+  <path class="region-fur" d="M688 248 Q748 160 718 34 Q626 92 596 222 Q646 250 688 248 Z"/>
+  <path class="region-accent" d="M680 228 Q718 158 702 70 Q644 122 626 206 Q656 228 680 228 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M320 372 L284 396 L318 412 Z"/>
+  <path class="region-fur" d="M704 372 L740 396 L706 412 Z"/>
+  <ellipse class="region-accent" cx="512" cy="412" rx="70" ry="46"/>
+  <path class="region-detail" d="M494 380 L512 352 L530 380 Q532 402 512 412 Q492 402 494 380 Z"/>
+  <path class="region-accent" d="M474 446 L486 482 L497 452 Z"/>
+  <path class="region-accent" d="M527 452 L538 482 L550 446 Z"/>
+</svg>

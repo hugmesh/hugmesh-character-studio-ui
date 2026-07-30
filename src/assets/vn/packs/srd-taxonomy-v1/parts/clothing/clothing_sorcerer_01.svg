@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#f0ae9b)}.region-clothtrim{fill:var(--region-clothtrim,#fbe3d4)}.region-iris{fill:var(--region-iris,#e0755a)}.region-line{fill:none;stroke:var(--region-line,#a86a4a);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sorcerer arcane coat (SRD 5.1) clothing: ember-lobe mantle collar, swirl embroidery, floating ember motes -->
+  <path class="region-cloth" d="M330 570 Q340 518 424 508 Q512 530 600 508 Q684 518 694 570 Q710 716 686 858 Q654 888 512 888 Q370 888 338 858 Q314 716 330 570 Z"/>
+  <circle class="region-clothtrim" cx="402" cy="530" r="34"/>
+  <circle class="region-clothtrim" cx="460" cy="522" r="42"/>
+  <circle class="region-clothtrim" cx="512" cy="518" r="48"/>
+  <circle class="region-clothtrim" cx="564" cy="522" r="42"/>
+  <circle class="region-clothtrim" cx="622" cy="530" r="34"/>
+  <path class="region-clothtrim" d="M368 542 Q512 588 656 542 Q660 580 628 592 Q512 566 396 592 Q364 580 368 542 Z"/>
+  <path class="region-line" d="M512 610 Q516 730 512 852"/>
+  <path class="region-line" d="M420 646 Q456 624 470 658 Q478 690 448 694 Q426 692 430 668"/>
+  <path class="region-line" d="M604 646 Q568 624 554 658 Q546 690 576 694 Q598 692 594 668"/>
+  <path class="region-line" d="M512 776 Q540 766 544 790 Q546 810 522 808"/>
+  <path class="region-clothtrim" d="M344 700 Q512 736 680 700 L680 734 Q512 770 344 734 Z"/>
+  <circle class="region-iris" cx="348" cy="470" r="12"/>
+  <circle class="region-iris" cx="678" cy="486" r="9"/>
+</svg>

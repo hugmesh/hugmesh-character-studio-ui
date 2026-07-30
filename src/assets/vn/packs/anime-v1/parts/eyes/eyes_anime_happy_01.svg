@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#3b3441);stroke-width:18;stroke-linecap:round}</style>
+  <!-- Happy anime eyes: closed upward arcs squeezed shut with joy, little lash flicks at the corners -->
+  <path class="region-line" d="M392 308 q48 -54 96 -2"/>
+  <path class="region-line" d="M536 306 q48 -52 96 4"/>
+  <path class="region-line" d="M392 308 l-14 6"/>
+  <path class="region-line" d="M632 310 l14 6"/>
+  <path class="region-line" d="M406 284 l-12 -10"/>
+  <path class="region-line" d="M618 284 l12 -10"/>
+  <path class="region-line" d="M428 266 l-8 -13"/>
+  <path class="region-line" d="M596 266 l8 -13"/>
+</svg>

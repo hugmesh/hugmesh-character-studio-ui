@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8f97a3)}.region-accent{fill:var(--region-accent,#4d5560)}</style>
+  <!-- Cat tail: slim S-curved tail sweeping up behind the hip, darker dipped tip, small fur wisps along the outer edge -->
+  <path class="region-fur" d="M618 742 C 748 716 818 622 810 486 C 808 442 788 412 760 418 C 736 424 730 450 744 474 C 762 552 726 640 606 690 Z"/>
+  <path class="region-accent" d="M760 418 C 788 412 808 442 810 486 C 811 506 806 522 796 530 C 766 536 744 518 740 496 C 734 462 740 424 760 418 Z"/>
+  <path class="region-fur" d="M700 682 L748 640 L742 700 Z"/>
+  <path class="region-fur" d="M788 560 L830 520 L822 584 Z"/>
+  <path class="region-fur" d="M630 700 L596 742 L648 748 Z"/>
+  <path class="region-accent" d="M804 472 L848 452 L830 508 Z"/>
+</svg>

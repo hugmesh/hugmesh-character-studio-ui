@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d95f4c)}.region-accent{fill:var(--region-accent,#f6efe0)}.region-detail{fill:var(--region-detail,#e3d5b8)}</style>
+  <!-- Mushroom cap accessory: little toadstool perched on the upper-right side of the head, tilted with the skull slope, cream spots, gill rim and stem stub, plus a tiny companion mushroom -->
+  <path class="region-detail" d="M584 190 L702 206 Q690 226 646 220 Q600 212 584 190 Z"/>
+  <path class="region-detail" d="M614 214 Q612 244 626 252 Q650 260 664 250 Q674 240 668 222 Q640 232 614 214 Z"/>
+  <path class="region-fur" d="M566 168 Q576 104 650 102 Q722 110 720 186 Q720 204 702 206 L584 190 Q564 186 566 168 Z"/>
+  <circle class="region-accent" cx="616" cy="136" r="13"/>
+  <circle class="region-accent" cx="668" cy="126" r="10"/>
+  <circle class="region-accent" cx="696" cy="158" r="9"/>
+  <circle class="region-accent" cx="594" cy="160" r="8"/>
+  <rect class="region-detail" x="714" y="220" width="16" height="18" rx="6"/>
+  <path class="region-fur" d="M700 214 Q702 190 724 190 Q744 192 744 214 Q744 222 736 222 L708 222 Q700 222 700 214 Z"/>
+  <circle class="region-accent" cx="722" cy="204" r="5"/>
+</svg>

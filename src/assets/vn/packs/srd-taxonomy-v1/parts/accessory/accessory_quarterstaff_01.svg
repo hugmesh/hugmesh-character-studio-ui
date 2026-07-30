@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#ecc9b0)}.region-clothtrim{fill:var(--region-clothtrim,#f8eeda)}.region-iris{fill:var(--region-iris,#e07a9a)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Monk quarterstaff (SRD 5.1): simple wooden staff with cream wrap bands, candy prayer-bead loop, striped hand-wrap mitts -->
+  <rect class="region-cloth" x="752" y="300" width="40" height="580" rx="20"/>
+  <rect class="region-clothtrim" x="742" y="352" width="60" height="34" rx="16"/>
+  <rect class="region-clothtrim" x="742" y="794" width="60" height="34" rx="16"/>
+  <circle class="region-iris" cx="796" cy="412" r="13"/>
+  <circle class="region-iris" cx="806" cy="440" r="13"/>
+  <circle class="region-iris" cx="800" cy="468" r="13"/>
+  <circle class="region-iris" cx="780" cy="488" r="13"/>
+  <circle class="region-iris" cx="756" cy="474" r="13"/>
+  <circle class="region-iris" cx="748" cy="446" r="13"/>
+  <circle class="region-iris" cx="772" cy="510" r="17"/>
+  <circle class="region-clothtrim" cx="366" cy="668" r="42"/>
+  <circle class="region-clothtrim" cx="658" cy="668" r="42"/>
+  <path class="region-line" d="M334 656 Q366 644 398 660 M336 684 Q368 672 400 688"/>
+  <path class="region-line" d="M626 660 Q658 644 690 656 M624 688 Q656 672 688 684"/>
+</svg>

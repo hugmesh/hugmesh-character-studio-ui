@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ecc9a8)}.region-hair{fill:var(--region-hair,#c9a37e)}.region-detail{fill:var(--region-detail,#d9a284)}</style>
+  <!-- Giant head: heavy cute brow ridge, big soft jaw, messy hair cap (region-hair); tint variants cover Hill/Stone/Frost/Fire/Cloud/Storm -->
+  <circle class="region-fur" cx="298" cy="342" r="36"/>
+  <circle class="region-fur" cx="726" cy="342" r="36"/>
+  <path class="region-fur" d="M309 300 Q317 152 512 146 Q707 152 715 300 Q722 420 672 486 Q604 544 512 544 Q420 544 352 486 Q302 420 309 300 Z"/>
+  <path class="region-hair" d="M310 260 Q294 112 512 98 Q730 112 714 260 Q676 174 618 190 Q638 138 558 152 Q568 112 486 136 Q470 104 424 148 Q382 128 396 188 Q344 172 310 260 Z"/>
+  <rect class="region-detail" x="376" y="238" width="116" height="26" rx="13"/>
+  <rect class="region-detail" x="532" y="238" width="116" height="26" rx="13"/>
+  <ellipse class="region-detail" cx="512" cy="393" rx="26" ry="12"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

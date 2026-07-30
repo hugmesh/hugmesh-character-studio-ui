@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9b795)}.region-accent{fill:var(--region-accent,#f6e8d6)}.region-detail{fill:var(--region-detail,#a9846a)}</style>
+  <!-- Horse (SRD 5.1) head: long soft muzzle with oval nostrils + rounded mane forelock + tall soft ears; tints cover pony/camel/unicorn/pegasus/nightmare -->
+  <path class="region-fur" d="M338 252 Q334 132 394 100 Q408 90 418 104 Q448 152 446 240 Z"/>
+  <path class="region-fur" d="M686 252 Q690 132 630 100 Q616 90 606 104 Q576 152 578 240 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-accent" d="M366 224 Q368 152 400 128 Q422 160 424 218 Z"/>
+  <path class="region-accent" d="M658 224 Q656 152 624 128 Q602 160 600 218 Z"/>
+  <ellipse class="region-accent" cx="512" cy="416" rx="86" ry="56"/>
+  <ellipse class="region-detail" cx="458" cy="402" rx="6" ry="9"/>
+  <ellipse class="region-detail" cx="566" cy="402" rx="6" ry="9"/>
+  <path class="region-detail" d="M432 152 Q438 106 512 98 Q586 106 592 152 Q594 208 566 242 Q560 192 534 172 Q540 216 512 234 Q484 216 490 172 Q464 192 458 242 Q430 208 432 152 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

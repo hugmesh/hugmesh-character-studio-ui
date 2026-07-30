@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#bfdcc8)}.region-detail{fill:var(--region-detail,#ef9fb2)}.region-line{fill:none;stroke:var(--region-line,#4e5a50);stroke-width:14;stroke-linecap:round}.region-hair{fill:var(--region-hair,#9acbaf)}</style>
+  <!-- Medusa (SRD 5.1) head: six chunky S-curve snakes w/ big round heads, eye dots + pink forked tongues, varied heights, scalloped scalp cap -->
+  <path class="region-hair" d="M322 272 Q254 246 270 198 L296 188 Q292 228 340 248 Z"/>
+  <circle class="region-hair" cx="272" cy="172" r="29"/>
+  <path class="region-hair" d="M368 244 Q322 186 362 138 Q392 106 362 76 L396 60 Q416 96 386 132 Q352 172 398 224 Z"/>
+  <circle class="region-hair" cx="370" cy="58" r="33"/>
+  <path class="region-hair" d="M438 170 Q422 130 446 106 L472 98 Q458 132 476 160 Z"/>
+  <circle class="region-hair" cx="454" cy="88" r="26"/>
+  <path class="region-hair" d="M478 182 Q456 122 504 94 Q542 72 526 48 L562 58 Q564 96 520 120 Q494 142 514 174 Z"/>
+  <circle class="region-hair" cx="546" cy="48" r="33"/>
+  <path class="region-hair" d="M664 246 Q706 186 668 140 Q640 106 670 80 L636 66 Q618 100 650 134 Q684 176 634 228 Z"/>
+  <circle class="region-hair" cx="658" cy="70" r="32"/>
+  <path class="region-hair" d="M700 278 Q762 250 754 204 L726 196 Q732 234 684 252 Z"/>
+  <circle class="region-hair" cx="748" cy="184" r="30"/>
+  <path fill="#f2a0b3" d="M246 172 Q224 164 214 150 Q219 163 227 170 Q216 174 208 186 Q222 184 246 180 Z"/>
+  <path fill="#f2a0b3" d="M340 54 Q316 46 304 32 Q310 46 319 53 Q307 58 299 70 Q314 68 340 64 Z"/>
+  <path fill="#f2a0b3" d="M430 86 Q410 78 400 66 Q405 78 413 85 Q402 90 396 100 Q409 98 430 94 Z"/>
+  <path fill="#f2a0b3" d="M576 42 Q600 34 612 20 Q605 34 597 41 Q609 46 616 58 Q602 56 576 52 Z"/>
+  <path fill="#f2a0b3" d="M688 66 Q712 58 724 44 Q717 58 709 65 Q721 70 728 82 Q714 80 688 76 Z"/>
+  <path fill="#f2a0b3" d="M776 182 Q798 174 808 160 Q802 173 794 180 Q805 184 813 196 Q799 194 776 190 Z"/>
+  <circle class="region-line" cx="258" cy="166" r="3"/>
+  <circle class="region-line" cx="354" cy="50" r="3"/>
+  <circle class="region-line" cx="442" cy="82" r="3"/>
+  <circle class="region-line" cx="560" cy="38" r="3"/>
+  <circle class="region-line" cx="672" cy="62" r="3"/>
+  <circle class="region-line" cx="762" cy="178" r="3"/>
+  <circle class="region-fur" cx="512" cy="330" r="202"/>
+  <path class="region-hair" d="M320 310 Q308 146 512 130 Q716 146 704 310 Q672 218 616 232 Q564 244 512 226 Q460 244 408 232 Q352 218 320 310 Z"/>
+  <ellipse class="region-detail" cx="512" cy="396" rx="10" ry="8"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

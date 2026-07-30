@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:var(--region-line,#4a3526)}</style>
+  <!-- Angry snarl: jagged gritted mouth band, bared white fangs, curled snarl corners -->
+  <path class="region-line" d="M448 426 L576 426 L562 452 L536 436 L512 456 L488 436 L462 452 Z"/>
+  <polygon fill="#ffffff" points="464,428 488,428 476,460"/>
+  <polygon fill="#ffffff" points="536,428 560,428 548,460"/>
+  <polygon class="region-line" points="448,426 432,412 452,418"/>
+  <polygon class="region-line" points="576,426 592,412 572,418"/>
+</svg>

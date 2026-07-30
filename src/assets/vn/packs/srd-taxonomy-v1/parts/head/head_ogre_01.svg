@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfdcb2)}.region-accent{fill:var(--region-accent,#eef4da)}.region-hair{fill:var(--region-hair,#c2a878)}</style>
+  <!-- Ogre head: big soft nose, twin up-snaggle-teeth flanking the mouth zone, messy crown tuft (region-hair) -->
+  <circle class="region-fur" cx="294" cy="338" r="44"/>
+  <circle class="region-fur" cx="730" cy="338" r="44"/>
+  <circle class="region-accent" cx="280" cy="338" r="18"/>
+  <circle class="region-accent" cx="744" cy="338" r="18"/>
+  <path class="region-hair" d="M428 134 Q440 82 490 104 Q500 58 548 94 Q584 58 596 114 Q634 94 620 148 Q560 116 512 126 Q468 118 428 134 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-accent" cx="512" cy="387" rx="42" ry="18"/>
+  <path class="region-accent" d="M626 478 Q622 436 642 424 Q662 440 656 478 Q640 488 626 478 Z"/>
+  <path class="region-accent" d="M398 478 Q402 436 382 424 Q362 440 368 478 Q384 488 398 478 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

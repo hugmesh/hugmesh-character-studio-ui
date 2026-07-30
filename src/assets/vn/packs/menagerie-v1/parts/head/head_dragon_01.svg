@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a63d40)}.region-accent{fill:var(--region-accent,#e8c98f)}.region-detail{fill:var(--region-detail,#5e2a2d)}</style>
+  <!-- Dragon head: heavy horned brow ridges, long blocky snout with nostril flares, jaw spikes -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M334 396 l-56 32 l62 26 z"/>
+  <path class="region-fur" d="M352 450 l-46 44 l64 10 z"/>
+  <path class="region-fur" d="M690 396 l56 32 l-62 26 z"/>
+  <path class="region-fur" d="M672 450 l46 44 l-64 10 z"/>
+  <path class="region-fur" d="M438 372 q-26 58 -6 96 q14 26 44 34 h72 q30 -8 44 -34 q20 -38 -6 -96 q-74 -30 -148 0 z"/>
+  <path class="region-accent" d="M470 380 q42 -16 84 0 l10 56 q-52 20 -104 0 z"/>
+  <path class="region-accent" d="M452 468 q60 34 120 0 l-8 30 q-52 22 -104 0 z"/>
+  <path class="region-detail" d="M388 268 q36 -34 94 -22 l-10 24 q-46 -8 -72 12 z"/>
+  <path class="region-detail" d="M388 266 l-36 -26 l18 42 z"/>
+  <path class="region-detail" d="M636 268 q-36 -34 -94 -22 l10 24 q46 -8 72 12 z"/>
+  <path class="region-detail" d="M636 266 l36 -26 l-18 42 z"/>
+  <ellipse class="region-detail" cx="480" cy="424" rx="10" ry="16"/>
+  <ellipse class="region-detail" cx="544" cy="424" rx="10" ry="16"/>
+</svg>

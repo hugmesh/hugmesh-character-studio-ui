@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a97d4e)}.region-accent{fill:var(--region-accent,#ead9b8)}.region-detail{fill:var(--region-detail,#3e2e22)}</style>
+  <!-- Slender hoofed body (deer build): slim neck and chest, cream belly, tapered legs and arms ending in dark cloven hooves. -->
+  <path class="region-fur" d="M474 462 Q512 492 550 462 L562 550 Q512 572 462 550 Z"/>
+  <path class="region-fur" d="M462 548 Q386 590 396 696 Q404 780 466 802 L558 802 Q620 780 628 696 Q638 590 562 548 Q512 574 462 548 Z"/>
+  <ellipse class="region-accent" cx="512" cy="668" rx="76" ry="102"/>
+  <path class="region-fur" d="M420 588 Q394 652 402 722 L428 728 Q434 660 452 610 Z"/>
+  <path class="region-fur" d="M604 588 Q630 652 622 722 L596 728 Q590 660 572 610 Z"/>
+  <ellipse class="region-detail" cx="414" cy="738" rx="17" ry="14"/>
+  <ellipse class="region-detail" cx="610" cy="738" rx="17" ry="14"/>
+  <path class="region-fur" d="M452 782 Q438 850 450 902 L494 902 Q500 848 494 794 Z"/>
+  <path class="region-fur" d="M530 794 Q524 848 530 902 L574 902 Q586 850 572 782 Z"/>
+  <path class="region-detail" d="M446 900 L498 900 L492 950 L454 950 Z"/>
+  <path class="region-detail" d="M526 900 L578 900 L570 950 L532 950 Z"/>
+</svg>

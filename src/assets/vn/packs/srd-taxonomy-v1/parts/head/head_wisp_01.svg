@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f7f1cb)}.region-accent{fill:var(--region-accent,#fcf9e6)}.region-detail{fill:var(--region-detail,#e7d488)}</style>
+  <!-- Will-o'-Wisp head: soft glow halo ring, flame-curl crown, floating sparkle motes -->
+  <circle class="region-accent" cx="512" cy="330" r="236"/>
+  <path class="region-fur" d="M450 152 Q436 64 514 46 Q494 96 546 86 Q606 72 598 138 Q634 116 654 150 Q612 152 596 176 Q548 140 450 152 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-detail" cx="292" cy="152" r="14"/>
+  <circle class="region-detail" cx="252" cy="298" r="10"/>
+  <circle class="region-detail" cx="746" cy="166" r="13"/>
+  <circle class="region-detail" cx="774" cy="318" r="10"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

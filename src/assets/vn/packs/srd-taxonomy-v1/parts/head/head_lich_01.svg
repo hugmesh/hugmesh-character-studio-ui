@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#efe9dc)}.region-hair{fill:var(--region-hair,#d9d2e8)}.region-accent{fill:var(--region-accent,#f0d9a2)}</style>
+  <!-- Lich (SRD 5.1) head: pastel-bone skull with tiny gold ball-tip crown, lavender wispy side hair (region-hair), soft nose-hollow -->
+  <path class="region-hair" d="M330 250 Q270 300 292 380 Q300 420 278 452 Q318 434 322 380 Q326 320 352 282 Z"/>
+  <path class="region-hair" d="M694 250 Q754 300 732 380 Q724 420 746 452 Q706 434 702 380 Q698 320 672 282 Z"/>
+  <circle class="region-fur" cx="512" cy="318" r="204"/>
+  <ellipse class="region-fur" cx="512" cy="452" rx="146" ry="90"/>
+  <path class="region-accent" d="M446 152 Q442 106 460 92 Q472 118 486 114 Q492 86 512 80 Q532 86 538 114 Q552 118 564 92 Q582 106 578 152 Q546 166 512 166 Q478 166 446 152 Z"/>
+  <circle class="region-accent" cx="458" cy="88" r="11"/>
+  <circle class="region-accent" cx="512" cy="74" r="11"/>
+  <circle class="region-accent" cx="566" cy="88" r="11"/>
+  <path class="region-hair" d="M512 402 Q495 390 500 375 Q505 364 512 372 Q519 364 524 375 Q529 390 512 402 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

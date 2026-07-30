@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c19a6b)}.region-accent{fill:var(--region-accent,#e4d3b4)}.region-detail{fill:var(--region-detail,#33261f)}</style>
+  <!-- Hyena body: high withers humps behind the neck sloping to narrow hips, strong forelegs, slimmer hind legs, pale chest bib and belly, dark claws -->
+  <path class="region-fur" d="M460 494 Q512 482 564 494 L572 560 Q512 580 452 560 Z"/>
+  <path class="region-fur" d="M446 528 Q418 498 384 508 Q408 534 420 562 Z"/>
+  <path class="region-fur" d="M578 528 Q606 498 640 508 Q616 534 604 562 Z"/>
+  <path class="region-fur" d="M404 534 Q344 564 348 646 Q352 712 400 752 Q452 786 512 790 Q572 786 616 748 Q656 710 652 648 Q654 572 606 540 Q512 506 404 534 Z"/>
+  <path class="region-fur" d="M398 546 Q358 578 352 656 L348 724 Q350 754 382 758 Q412 754 414 722 L418 636 Q420 578 398 546 Z"/>
+  <path class="region-fur" d="M626 546 Q666 578 672 656 L676 724 Q674 754 642 758 Q612 754 610 722 L606 636 Q604 578 626 546 Z"/>
+  <path class="region-fur" d="M448 752 Q432 802 448 850 Q458 878 452 904 L506 906 Q510 884 498 862 Q484 832 490 794 Q494 764 482 750 Z"/>
+  <path class="region-fur" d="M576 752 Q592 802 576 850 Q566 878 572 904 L518 906 Q514 884 526 862 Q540 832 534 794 Q530 764 542 750 Z"/>
+  <path class="region-fur" d="M440 898 Q428 928 452 936 L506 936 Q516 928 510 908 Q486 894 462 894 Q448 894 440 898 Z"/>
+  <path class="region-fur" d="M584 898 Q596 928 572 936 L518 936 Q508 928 514 908 Q538 894 562 894 Q576 894 584 898 Z"/>
+  <path class="region-accent" d="M448 538 Q512 518 576 538 Q594 586 574 632 Q546 664 512 668 Q478 664 450 632 Q430 586 448 538 Z"/>
+  <ellipse class="region-accent" cx="512" cy="700" rx="92" ry="58"/>
+  <ellipse class="region-detail" cx="452" cy="932" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="472" cy="936" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="492" cy="932" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="532" cy="932" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="552" cy="936" rx="9" ry="7"/>
+  <ellipse class="region-detail" cx="572" cy="932" rx="9" ry="7"/>
+</svg>

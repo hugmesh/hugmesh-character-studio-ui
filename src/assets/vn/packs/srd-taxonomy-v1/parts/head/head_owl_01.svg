@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cdbba0)}.region-accent{fill:var(--region-accent,#f6ecd8)}.region-detail{fill:var(--region-detail,#e5a95c)}</style>
+  <!-- Owl (SRD 5.1) head: giant feather facial disc + soft ear tufts + tiny V beak, forehead speckles -->
+  <path class="region-fur" d="M320 262 Q292 168 334 118 Q344 108 356 118 Q392 164 404 232 Z"/>
+  <path class="region-fur" d="M704 262 Q732 168 690 118 Q680 108 668 118 Q632 164 620 232 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-accent" d="M338 236 Q324 176 348 142 Q370 168 380 220 Z"/>
+  <path class="region-accent" d="M686 236 Q700 176 676 142 Q654 168 644 220 Z"/>
+  <circle class="region-accent" cx="446" cy="340" r="102"/>
+  <circle class="region-accent" cx="578" cy="340" r="102"/>
+  <circle class="region-detail" cx="472" cy="178" r="9"/>
+  <circle class="region-detail" cx="512" cy="162" r="9"/>
+  <circle class="region-detail" cx="552" cy="178" r="9"/>
+  <path class="region-detail" d="M482 378 Q512 360 542 378 Q540 400 512 412 Q484 400 482 378 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

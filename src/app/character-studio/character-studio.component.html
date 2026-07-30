@@ -1,0 +1,65 @@
+<section class="character-studio" aria-labelledby="cs-title">
+  <h1 id="cs-title">Character Studio</h1>
+  <p class="lede">
+    Build a layered anthro/furry character and set it as your avatar. Choose a
+    part to update the live preview, recolour it, and preview an expression. When
+    you're happy, download a PNG or set it as your avatar — the avatar upload is
+    moderated server-side.
+  </p>
+
+  <!-- Status/error region (export 422, asset-load errors land here in later steps). -->
+  <p class="status" role="status" aria-live="polite" data-testid="cs-status">{{ status() }}</p>
+  @if (error()) {
+    <p class="error" role="alert" data-testid="cs-error">{{ error() }}</p>
+  }
+
+  @if (pack(); as p) {
+    <div class="studio-header" data-testid="cs-studio-header">
+      <hug-pack-picker
+        [entries]="packEntries()"
+        [activePackId]="p.packId"
+        (packChange)="onPackChange($event)"
+      />
+      <button
+        type="button"
+        class="surprise"
+        data-testid="cs-surprise"
+        aria-label="Surprise me — randomize the character"
+        (click)="surpriseMe()"
+      >Surprise me</button>
+    </div>
+    @if (state.character(); as c) {
+      <hug-ai-assist [pack]="p" />
+      <div class="studio" data-testid="cs-studio">
+        <div class="preview">
+          <hug-studio-canvas
+            [pack]="p"
+            [character]="c"
+            [expressionSlots]="state.activeExpressionSlots()"
+            [ariaLabel]="canvasAlt()"
+          />
+          <p class="validity" aria-live="polite" data-testid="cs-validity">
+            {{ state.isValid() ? 'Ready to export' : 'Fill all required slots' }}
+          </p>
+          <hug-export-panel [pack]="p" />
+        </div>
+        <div class="controls">
+          <hug-part-picker [pack]="p" />
+          <hug-palette [pack]="p" />
+          <hug-expression-preview />
+          <hug-draw [pack]="p" />
+        </div>
+      </div>
+    }
+
+    <!-- Credits / attribution. SRD 5.1 and any other sourced pack REQUIRE their
+         verbatim attribution be shown to end users (not just shipped in
+         ATTRIBUTION.txt). Rendered only when the active pack carries one. -->
+    @if (p.attribution; as attribution) {
+      <section class="credits" aria-labelledby="cs-credits-title" data-testid="cs-credits">
+        <h2 id="cs-credits-title">Credits &amp; attribution</h2>
+        <p class="credit-text">{{ attribution }}</p>
+      </section>
+    }
+  }
+</section>

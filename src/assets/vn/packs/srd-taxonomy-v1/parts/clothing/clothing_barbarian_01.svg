@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#d9bc9b)}.region-clothtrim{fill:var(--region-clothtrim,#f2e7d5)}.region-line{fill:none;stroke:var(--region-line,#8a6a4f);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Barbarian fur-pelt wrap (SRD 5.1): one-shoulder diagonal cut, scalloped fur hem, knotted rope belt -->
+  <path class="region-cloth" d="M380 505 Q512 546 655 585 Q676 650 668 762 Q645 818 610 768 Q578 820 545 770 Q512 824 479 770 Q446 820 414 768 Q382 816 356 760 Q348 640 362 560 Q366 522 380 505 Z"/>
+  <circle class="region-clothtrim" cx="385" cy="512" r="34"/>
+  <circle class="region-clothtrim" cx="412" cy="514" r="24"/>
+  <circle class="region-clothtrim" cx="470" cy="531" r="26"/>
+  <circle class="region-clothtrim" cx="528" cy="548" r="26"/>
+  <circle class="region-clothtrim" cx="586" cy="565" r="26"/>
+  <circle class="region-clothtrim" cx="642" cy="581" r="23"/>
+  <path class="region-line" d="M358 676 Q512 712 666 676"/>
+  <path class="region-line" d="M358 696 Q512 732 666 696"/>
+  <circle class="region-line" cx="572" cy="704" r="15"/>
+  <path class="region-line" d="M574 718 Q562 758 576 792"/>
+  <path class="region-line" d="M588 714 Q600 752 590 788"/>
+  <circle class="region-clothtrim" cx="578" cy="794" r="9"/>
+  <circle class="region-clothtrim" cx="590" cy="790" r="9"/>
+</svg>

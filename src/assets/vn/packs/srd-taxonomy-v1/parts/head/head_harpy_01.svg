@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2cdb0)}.region-hair{fill:var(--region-hair,#c3aede)}.region-detail{fill:var(--region-detail,#a58ac9)}</style>
+  <!-- Harpy (SRD 5.1) head: scalloped feather hair (hair region) + feather cheek tufts + humanoid button nose -->
+  <circle class="region-hair" cx="512" cy="300" r="215"/>
+  <path class="region-hair" d="M318 300 Q292 424 314 546 Q344 504 350 440 Z"/>
+  <path class="region-hair" d="M706 300 Q732 424 710 546 Q680 504 674 440 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-fur" cx="360" cy="420" r="48"/>
+  <circle class="region-fur" cx="664" cy="420" r="48"/>
+  <path class="region-hair" d="M318 302 Q330 134 512 126 Q694 134 706 302 Q680 238 640 252 Q652 202 600 210 Q596 246 560 254 Q560 210 512 216 Q464 210 464 254 Q428 246 424 210 Q372 202 384 252 Q344 238 318 302 Z"/>
+  <path class="region-detail" d="M352 402 Q296 404 284 438 Q314 436 326 454 Q336 472 362 470 Q346 448 350 424 Z"/>
+  <path class="region-detail" d="M672 402 Q728 404 740 438 Q710 436 698 454 Q688 472 662 470 Q678 448 674 424 Z"/>
+  <ellipse class="region-detail" cx="512" cy="400" rx="9" ry="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

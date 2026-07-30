@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f0e8d8)}.region-accent{fill:var(--region-accent,#d8bfe8)}.region-detail{fill:var(--region-detail,#f6effb)}.region-line{fill:none;stroke:var(--region-line,#6f5a68);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Fungus (SRD 5.1, shrieker/violet fungus kin) head: giant spotted mushroom cap, pale stalk face, wavy cap brim -->
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="328" cy="396" r="40"/>
+  <circle class="region-fur" cx="696" cy="396" r="40"/>
+  <path class="region-accent" d="M262 274 Q252 100 512 86 Q772 100 762 274 Q760 302 716 298 Q636 262 512 258 Q388 262 308 298 Q264 302 262 274 Z"/>
+  <circle class="region-detail" cx="366" cy="164" r="22"/>
+  <circle class="region-detail" cx="478" cy="118" r="16"/>
+  <circle class="region-detail" cx="614" cy="150" r="21"/>
+  <circle class="region-detail" cx="700" cy="218" r="13"/>
+  <circle class="region-detail" cx="324" cy="224" r="13"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M506 396 q6 8 12 0"/>
+</svg>

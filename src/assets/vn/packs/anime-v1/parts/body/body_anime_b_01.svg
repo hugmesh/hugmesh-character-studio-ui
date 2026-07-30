@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#6c8ec9)}.region-detail{fill:var(--region-detail,#41537a)}</style>
+  <!-- Anime body B: broader masc silhouette, crew-neck tee (accent) with ribbed collar (detail), bare forearms -->
+  <path class="region-skin" d="M474 456 h76 v72 q-38 24 -76 0 z"/>
+  <path class="region-skin" d="M382 656 L378 738 Q376 760 395 762 Q414 760 412 740 L408 656 Z"/>
+  <path class="region-skin" d="M642 656 L646 738 Q648 760 629 762 Q610 760 612 740 L616 656 Z"/>
+  <path class="region-accent" d="M440 526 Q512 558 584 526 Q640 540 656 586 L668 634 Q670 658 650 662 L604 652 L608 744 Q560 764 512 764 Q464 764 416 744 L420 652 L374 662 Q354 658 356 634 L368 586 Q384 540 440 526 Z"/>
+  <path class="region-detail" d="M448 522 Q512 556 576 522 L582 538 Q512 576 442 538 Z"/>
+  <path class="region-detail" d="M418 738 Q512 762 606 738 L606 750 Q512 776 418 750 Z"/>
+  <path class="region-detail" d="M374 640 L420 630 L420 652 L374 662 Q356 658 356 646 Z"/>
+  <path class="region-detail" d="M650 640 L604 630 L604 652 L650 662 Q668 658 668 646 Z"/>
+  <path class="region-detail" d="M540 600 h72 v46 h-72 z"/>
+  <path class="region-detail" d="M540 600 h72 v12 h-72 z"/>
+</svg>

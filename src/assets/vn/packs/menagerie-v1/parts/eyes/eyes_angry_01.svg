@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Angry glare: iris cut by a hard lid slanting down toward the nose, sharp brow-side lid line -->
+  <path class="region-iris" d="M406 282 L476 306 Q474 332 440 334 Q406 328 406 282 Z"/>
+  <path class="region-iris" d="M618 282 L548 306 Q550 332 584 334 Q618 328 618 282 Z"/>
+  <circle class="region-detail" cx="446" cy="312" r="13"/>
+  <circle class="region-detail" cx="578" cy="312" r="13"/>
+  <path class="region-line" d="M398 278 L482 306"/>
+  <path class="region-line" d="M626 278 L542 306"/>
+  <circle fill="#ffffff" cx="436" cy="300" r="5"/>
+  <circle fill="#ffffff" cx="588" cy="300" r="5"/>
+</svg>

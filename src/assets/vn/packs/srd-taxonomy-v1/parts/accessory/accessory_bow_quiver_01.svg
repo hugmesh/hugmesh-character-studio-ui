@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#aec6a0)}.region-clothtrim{fill:var(--region-clothtrim,#e6dcc4)}.region-iris{fill:var(--region-iris,#f0b54e)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Ranger kit (SRD 5.1): curved bow with wrap grip, shoulder quiver, three round-tip arrows peeking out -->
+  <path class="region-line" d="M750 398 Q736 572 750 746"/>
+  <path class="region-cloth" d="M748 392 Q900 572 748 752 Q830 572 748 392 Z"/>
+  <circle class="region-cloth" cx="750" cy="396" r="15"/>
+  <circle class="region-cloth" cx="750" cy="748" r="15"/>
+  <rect class="region-clothtrim" x="782" y="544" width="48" height="58" rx="17"/>
+  <path class="region-line" d="M300 470 Q268 438 242 412 M312 466 Q290 426 268 394 M322 472 Q308 448 296 432"/>
+  <circle class="region-iris" cx="238" cy="406" r="13"/>
+  <circle class="region-iris" cx="264" cy="388" r="13"/>
+  <circle class="region-iris" cx="292" cy="428" r="11"/>
+  <path class="region-clothtrim" d="M272 499 Q306 460 340 474 Q362 528 378 588 Q342 624 308 612 Q288 556 272 499 Z"/>
+  <path class="region-cloth" d="M272 499 Q306 460 340 474 Q308 490 272 499 Z"/>
+  <path class="region-cloth" d="M286 540 Q322 556 360 546 Q358 558 354 568 Q318 576 282 562 Z"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f6eedd)}.region-detail{fill:var(--region-detail,#c9a96e)}</style>
+  <!-- Token backdrop: plain circle badge, 24px detail rim ring + thin inner pinstripe -->
+  <circle class="region-detail" cx="512" cy="512" r="460"/>
+  <circle class="region-accent" cx="512" cy="512" r="436"/>
+  <circle class="region-detail" cx="512" cy="512" r="408"/>
+  <circle class="region-accent" cx="512" cy="512" r="394"/>
+</svg>

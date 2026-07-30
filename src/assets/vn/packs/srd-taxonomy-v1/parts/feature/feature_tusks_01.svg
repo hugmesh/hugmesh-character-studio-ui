@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f4eedd)}</style>
+  <!-- Tusks clip-on (SRD 5.1): small ivory up-tusks flanking the mouth corners, fits any humanoid head -->
+  <path class="region-accent" d="M404 466 Q394 426 412 418 Q430 424 428 462 Q416 474 404 466 Z"/>
+  <path class="region-accent" d="M620 466 Q630 426 612 418 Q594 424 596 462 Q608 474 620 466 Z"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e6cdb2)}.region-accent{fill:var(--region-accent,#f9ecdc)}.region-detail{fill:var(--region-detail,#d98d95)}</style>
+  <!-- Felid body (SRD 5.1): sleek slim jellybean, round mitten paws, cream belly, dainty toe beans -->
+  <path class="region-fur" d="M436 520 Q382 552 372 630 Q370 664 392 666 Q402 600 444 566 Z"/>
+  <path class="region-fur" d="M588 520 Q642 552 652 630 Q654 664 632 666 Q622 600 580 566 Z"/>
+  <circle class="region-fur" cx="388" cy="672" r="26"/>
+  <circle class="region-fur" cx="636" cy="672" r="26"/>
+  <path class="region-fur" d="M512 442 Q622 458 632 612 Q638 744 602 818 Q558 868 512 868 Q466 868 422 818 Q386 744 392 612 Q402 458 512 442 Z"/>
+  <ellipse class="region-accent" cx="512" cy="660" rx="92" ry="122"/>
+  <ellipse class="region-fur" cx="430" cy="790" rx="58" ry="50"/>
+  <ellipse class="region-fur" cx="594" cy="790" rx="58" ry="50"/>
+  <circle class="region-detail" cx="408" cy="804" r="8"/>
+  <circle class="region-detail" cx="430" cy="810" r="8"/>
+  <circle class="region-detail" cx="452" cy="804" r="8"/>
+  <circle class="region-detail" cx="572" cy="804" r="8"/>
+  <circle class="region-detail" cx="594" cy="810" r="8"/>
+  <circle class="region-detail" cx="616" cy="804" r="8"/>
+</svg>

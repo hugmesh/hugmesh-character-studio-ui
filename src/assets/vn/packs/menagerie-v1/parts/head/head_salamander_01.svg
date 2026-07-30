@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6a5a8c)}.region-detail{fill:var(--region-detail,#f2c14e)}.region-line{fill:none;stroke:var(--region-line,#3d3355);stroke-width:13;stroke-linecap:round}</style>
+  <!-- Salamander head: soft rounded smiley face with golden cheek-dot clusters and crown spots, curled smile corners -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-fur" cx="512" cy="402" rx="180" ry="110"/>
+  <circle class="region-detail" cx="470" cy="178" r="12"/>
+  <circle class="region-detail" cx="560" cy="166" r="14"/>
+  <circle class="region-detail" cx="372" cy="412" r="16"/>
+  <circle class="region-detail" cx="348" cy="374" r="11"/>
+  <circle class="region-detail" cx="396" cy="448" r="10"/>
+  <circle class="region-detail" cx="652" cy="412" r="16"/>
+  <circle class="region-detail" cx="676" cy="374" r="11"/>
+  <circle class="region-detail" cx="628" cy="448" r="10"/>
+  <path class="region-line" d="M402 426 q110 74 220 0"/>
+  <path class="region-line" d="M402 426 q-12 -6 -14 -18"/>
+  <path class="region-line" d="M622 426 q12 -6 14 -18"/>
+  <path class="region-line" d="M490 382 l6 4"/>
+  <path class="region-line" d="M534 386 l6 -4"/>
+</svg>

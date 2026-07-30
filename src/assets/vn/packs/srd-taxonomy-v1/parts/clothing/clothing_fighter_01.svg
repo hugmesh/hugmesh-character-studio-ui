@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b7c6da)}.region-clothtrim{fill:var(--region-clothtrim,#e4eaf2)}.region-iris{fill:var(--region-iris,#d95f6c)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Fighter plate (SRD 5.1): rounded double-bump pauldrons, crimson surcoat stripe, chain-mail skirt peeking under the breastplate -->
+  <rect class="region-clothtrim" x="356" y="700" width="312" height="148" rx="60"/>
+  <path class="region-line" d="M384 772 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0"/>
+  <path class="region-line" d="M400 808 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0 q16 14 32 0"/>
+  <path class="region-cloth" d="M352 562 Q360 506 432 506 L592 506 Q664 506 672 562 L672 662 Q672 728 512 742 Q352 728 352 662 Z"/>
+  <rect class="region-iris" x="478" y="512" width="68" height="324" rx="30"/>
+  <circle class="region-clothtrim" cx="408" cy="554" r="9"/>
+  <circle class="region-clothtrim" cx="616" cy="554" r="9"/>
+  <circle class="region-clothtrim" cx="398" cy="648" r="9"/>
+  <circle class="region-clothtrim" cx="626" cy="648" r="9"/>
+  <rect class="region-cloth" x="372" y="690" width="280" height="46" rx="23"/>
+  <rect class="region-clothtrim" x="486" y="682" width="52" height="60" rx="15"/>
+  <rect class="region-cloth" x="500" y="696" width="24" height="32" rx="10"/>
+  <circle class="region-cloth" cx="372" cy="562" r="64"/>
+  <circle class="region-cloth" cx="652" cy="562" r="64"/>
+  <circle class="region-clothtrim" cx="372" cy="560" r="54"/>
+  <circle class="region-clothtrim" cx="652" cy="560" r="54"/>
+  <circle class="region-cloth" cx="372" cy="506" r="26"/>
+  <circle class="region-cloth" cx="652" cy="506" r="26"/>
+  <path class="region-line" d="M452 524 Q512 546 572 524"/>
+</svg>

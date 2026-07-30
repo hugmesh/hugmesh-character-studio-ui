@@ -1,0 +1,90 @@
+:host {
+  display: block;
+}
+
+.hybrid-toggle {
+  cursor: pointer;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  margin: 0 0 0.75rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.hybrid-toggle.selected {
+  border-color: var(--hug-accent, #7c4dff);
+  outline: 2px solid var(--hug-accent, #7c4dff);
+}
+
+.slot {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.slot legend {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+.filter {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+  margin: 0.25rem 0 0.4rem;
+  padding: 0.35rem 0.6rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+}
+
+.filter-count {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--hug-text-muted, #a8acc4);
+}
+
+.filter-count:empty {
+  margin: 0;
+}
+
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  /* LIMIT: a slot's button list never grows the page unboundedly — the
+   * 54-part menagerie head slot scrolls INTERNALLY past ~5 button rows.
+   * 14rem ≈ 5 rows of 2.4rem buttons + gaps; small slots are unaffected. */
+  max-height: 14rem;
+  overflow-y: auto;
+  /* keep the focus ring of edge buttons from being clipped by the scrollport */
+  padding: 4px;
+}
+
+.part {
+  cursor: pointer;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  /* LIMIT: long displayNames (validator cap: 48 chars) ellipsize instead of
+   * stretching the row — the full name stays available via the title attr. */
+  max-width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.part.selected {
+  border-color: var(--hug-accent, #7c4dff);
+  outline: 2px solid var(--hug-accent, #7c4dff);
+}

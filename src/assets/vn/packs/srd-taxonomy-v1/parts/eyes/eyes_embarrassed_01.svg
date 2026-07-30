@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Embarrassed eyes: both irises averted aside, wavy flustered lower lids -->
+  <ellipse class="region-iris" cx="464" cy="352" rx="48" ry="62"/>
+  <ellipse class="region-iris" cx="596" cy="352" rx="48" ry="62"/>
+  <circle class="region-detail" cx="476" cy="356" r="17"/>
+  <circle class="region-detail" cx="608" cy="356" r="17"/>
+  <circle fill="#ffffff" cx="452" cy="320" r="13"/>
+  <circle fill="#ffffff" cx="584" cy="320" r="13"/>
+  <circle fill="#ffffff" cx="490" cy="386" r="5"/>
+  <circle fill="#ffffff" cx="622" cy="386" r="5"/>
+  <path class="region-line" d="M402 412Q420 402 438 412Q456 422 474 412"/>
+  <path class="region-line" d="M534 412Q552 402 570 412Q588 422 606 412"/>
+</svg>

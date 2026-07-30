@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:22;stroke-linecap:round}</style>
+  <!-- Angry brows: slanted hard inward-down toward the nose -->
+  <path class="region-line" d="M398 250Q446 256 494 286"/>
+  <path class="region-line" d="M626 250Q578 256 530 286"/>
+</svg>

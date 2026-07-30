@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a3814f)}.region-accent{fill:var(--region-accent,#d9a874)}.region-detail{fill:var(--region-detail,#5c4630)}</style>
+  <!-- Triceratops head: broad scalloped neck frill with rimmed edge, twin brow horns, stubby nose horn, hooked beak -->
+  <circle class="region-detail" cx="444" cy="98" r="16"/>
+  <circle class="region-detail" cx="512" cy="90" r="16"/>
+  <circle class="region-detail" cx="580" cy="98" r="16"/>
+  <circle class="region-detail" cx="664" cy="124" r="16"/>
+  <circle class="region-detail" cx="360" cy="124" r="16"/>
+  <circle class="region-detail" cx="724" cy="172" r="16"/>
+  <circle class="region-detail" cx="300" cy="172" r="16"/>
+  <circle class="region-detail" cx="768" cy="244" r="16"/>
+  <circle class="region-detail" cx="256" cy="244" r="16"/>
+  <path class="region-detail" d="M512 96 Q640 96 724 168 Q790 226 796 320 Q798 380 748 412 L276 412 Q226 380 228 320 Q234 226 300 168 Q384 96 512 96 Z"/>
+  <path class="region-accent" d="M512 128 Q622 130 696 194 Q754 248 760 322 Q760 370 720 396 L304 396 Q264 370 264 322 Q270 248 328 194 Q402 130 512 128 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-detail" d="M330 420 L300 470 L360 462 Z"/>
+  <path class="region-detail" d="M694 420 L724 470 L664 462 Z"/>
+  <path class="region-detail" d="M424 268 Q400 210 418 152 Q428 138 438 152 Q462 210 470 264 Q448 278 424 268 Z"/>
+  <path class="region-detail" d="M600 268 Q624 210 606 152 Q596 138 586 152 Q562 210 554 264 Q576 278 600 268 Z"/>
+  <path class="region-detail" d="M512 344 L494 408 Q512 420 530 408 Z"/>
+  <path class="region-detail" d="M462 428 Q512 414 562 428 Q556 470 512 496 Q468 470 462 428 Z"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9a482)}.region-accent{fill:var(--region-accent,#ecd9c2)}</style>
+  <!-- Horse tail feature (SRD 5.1): flowing wavy tail with rounded strand tips + lighter inner strand -->
+  <path class="region-fur" d="M640 556 Q744 556 780 640 Q804 714 778 794 Q758 842 700 858 Q722 800 714 758 Q698 812 658 826 Q682 776 678 734 Q662 780 628 790 Q654 740 650 698 Q646 618 640 556 Z"/>
+  <path class="region-accent" d="M712 616 Q758 668 756 742 Q748 798 716 826 Q728 770 716 732 Q702 690 712 616 Z"/>
+</svg>

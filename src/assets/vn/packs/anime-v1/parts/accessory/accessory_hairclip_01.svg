@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f0647e)}.region-detail{fill:var(--region-detail,#fdf3f5)}</style>
+  <!-- X hairclip: crossed clip pair at the left temple — one large X and one small X, bright center pins -->
+  <g transform="rotate(38 372 246)"><rect class="region-accent" x="317" y="235" width="110" height="22" rx="11"/></g>
+  <g transform="rotate(-38 372 246)"><rect class="region-accent" x="317" y="235" width="110" height="22" rx="11"/></g>
+  <circle class="region-detail" cx="372" cy="246" r="9"/>
+  <g transform="rotate(38 424 300)"><rect class="region-accent" x="385" y="292" width="78" height="16" rx="8"/></g>
+  <g transform="rotate(-38 424 300)"><rect class="region-accent" x="385" y="292" width="78" height="16" rx="8"/></g>
+  <circle class="region-detail" cx="424" cy="300" r="7"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ece5d8)}.region-accent{fill:var(--region-accent,#d99fa4)}.region-detail{fill:var(--region-detail,#3a332e)}</style>
+  <!-- Cow head: rounded skull with a small forelock, short side-sticking ears, big broad pink muzzle with oval nostrils -->
+  <path class="region-fur" d="M346 200 Q252 184 196 228 Q250 274 350 258 Q364 228 346 200 Z"/>
+  <path class="region-fur" d="M678 200 Q772 184 828 228 Q774 274 674 258 Q660 228 678 200 Z"/>
+  <path class="region-detail" d="M342 214 Q276 206 228 230 Q278 256 344 244 Z"/>
+  <path class="region-detail" d="M682 214 Q748 206 796 230 Q746 256 680 244 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M462 140 Q512 96 562 140 Q542 170 512 174 Q482 170 462 140 Z"/>
+  <path class="region-accent" d="M430 388 Q512 362 594 388 Q616 428 610 470 Q574 512 512 516 Q450 512 414 470 Q408 428 430 388 Z"/>
+  <ellipse class="region-detail" cx="468" cy="440" rx="13" ry="17"/>
+  <ellipse class="region-detail" cx="556" cy="440" rx="13" ry="17"/>
+</svg>

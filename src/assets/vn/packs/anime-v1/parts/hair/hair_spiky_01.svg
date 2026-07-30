@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#caa23a)}.region-accent{fill:var(--region-accent,#e6c669)}</style>
+  <!-- Spiky shonen hair: bold spikes radiating up and out from the crown, sharp zigzag bangs, inner spike highlights. -->
+  <path class="region-hair" d="M308 380 Q300 112 512 94 Q724 112 716 380 Q702 240 512 214 Q322 240 308 380 Z"/>
+  <path class="region-hair" d="M470 118 Q484 70 508 40 Q524 84 522 122 Z"/>
+  <path class="region-hair" d="M528 118 Q560 66 600 48 Q596 100 574 130 Z"/>
+  <path class="region-hair" d="M414 130 Q414 78 396 52 Q444 82 458 120 Z"/>
+  <path class="region-hair" d="M584 134 Q640 92 690 88 Q664 138 626 158 Z"/>
+  <path class="region-hair" d="M360 158 Q328 116 284 104 Q314 156 348 180 Z"/>
+  <path class="region-hair" d="M660 178 Q716 158 758 168 Q722 208 682 216 Z"/>
+  <path class="region-hair" d="M322 232 Q276 216 234 226 Q272 262 314 272 Z"/>
+  <path class="region-hair" d="M706 262 Q752 252 792 268 Q752 300 712 302 Z"/>
+  <path class="region-hair" d="M310 320 Q280 356 278 402 Q318 384 334 352 Z"/>
+  <path class="region-hair" d="M714 320 Q744 356 746 402 Q706 384 690 352 Z"/>
+  <path class="region-hair" d="M356 224 L392 292 L414 218 L446 284 L478 208 L512 288 L546 208 L578 284 L610 218 L632 292 L668 224 Q600 178 512 176 Q424 178 356 224 Z"/>
+  <path class="region-accent" d="M482 108 Q494 76 506 58 Q514 88 512 112 Z"/>
+  <path class="region-accent" d="M598 140 Q630 110 660 100 Q642 138 616 154 Z"/>
+  <path class="region-accent" d="M370 160 Q348 132 320 120 Q340 158 366 176 Z"/>
+</svg>

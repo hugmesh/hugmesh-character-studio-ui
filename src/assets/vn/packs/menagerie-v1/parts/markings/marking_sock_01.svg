@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f0e9dc)}</style>
+  <!-- Leg socks: accent socks with scalloped fur cuffs on both lower hind legs plus matching forearm cuffs and dewclaw bumps (aligned to canid body limb geometry) -->
+  <path class="region-accent" d="M412 848 L436 864 L460 846 L484 864 L504 848 Q500 874 506 902 Q518 924 506 940 L420 940 Q404 926 424 904 Q412 880 412 848 Z"/>
+  <path class="region-accent" d="M612 848 L588 864 L564 846 L540 864 L520 848 Q524 874 518 902 Q506 924 518 940 L604 940 Q620 926 600 904 Q612 880 612 848 Z"/>
+  <path class="region-accent" d="M406 832 L432 850 L458 830 L486 850 L510 832 L504 864 Q458 876 412 864 Z"/>
+  <path class="region-accent" d="M618 832 L592 850 L566 830 L538 850 L514 832 L520 864 Q566 876 612 864 Z"/>
+  <path class="region-accent" d="M420 916 Q412 934 428 940 L500 940 Q512 930 504 914 Q462 906 420 916 Z"/>
+  <path class="region-accent" d="M604 916 Q612 934 596 940 L524 940 Q512 930 520 914 Q562 906 604 916 Z"/>
+  <path class="region-accent" d="M336 690 L362 706 L390 688 L418 706 L430 692 Q434 728 414 748 Q374 756 348 742 Q334 718 336 690 Z"/>
+  <path class="region-accent" d="M688 690 L662 706 L634 688 L606 706 L594 692 Q590 728 610 748 Q650 756 676 742 Q690 718 688 690 Z"/>
+  <circle class="region-accent" cx="416" cy="886" r="10"/>
+  <circle class="region-accent" cx="608" cy="886" r="10"/>
+</svg>

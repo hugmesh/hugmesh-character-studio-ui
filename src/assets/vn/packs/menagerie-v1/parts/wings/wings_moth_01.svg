@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9c49a)}.region-accent{fill:var(--region-accent,#f2e9d5)}.region-detail{fill:var(--region-detail,#5f4a63)}</style>
+  <!-- Moth wings: rounded forewings and hindwings spreading from the shoulders, pale trailing-edge bands and bold eyespots with dark centers -->
+  <path class="region-fur" d="M436 476 Q300 340 178 272 Q96 246 76 316 Q66 420 150 512 Q250 600 372 610 Q430 600 442 544 Z"/>
+  <path class="region-fur" d="M440 560 Q330 600 268 686 Q238 760 300 786 Q380 796 436 730 Q470 670 458 600 Z"/>
+  <path class="region-accent" d="M96 330 Q88 420 160 500 Q250 580 360 594 Q300 560 220 500 Q130 430 96 330 Z"/>
+  <ellipse class="region-accent" cx="210" cy="380" rx="62" ry="50"/>
+  <ellipse class="region-detail" cx="210" cy="380" rx="30" ry="24"/>
+  <circle class="region-accent" cx="320" cy="700" r="34"/>
+  <circle class="region-detail" cx="320" cy="700" r="16"/>
+  <path class="region-fur" d="M588 476 Q724 340 846 272 Q928 246 948 316 Q958 420 874 512 Q774 600 652 610 Q594 600 582 544 Z"/>
+  <path class="region-fur" d="M584 560 Q694 600 756 686 Q786 760 724 786 Q644 796 588 730 Q554 670 566 600 Z"/>
+  <path class="region-accent" d="M928 330 Q936 420 864 500 Q774 580 664 594 Q724 560 804 500 Q894 430 928 330 Z"/>
+  <ellipse class="region-accent" cx="814" cy="380" rx="62" ry="50"/>
+  <ellipse class="region-detail" cx="814" cy="380" rx="30" ry="24"/>
+  <circle class="region-accent" cx="704" cy="700" r="34"/>
+  <circle class="region-detail" cx="704" cy="700" r="16"/>
+</svg>

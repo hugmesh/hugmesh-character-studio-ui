@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f0ebf7)}.region-accent{fill:var(--region-accent,#b48fd9)}.region-detail{fill:var(--region-detail,#a292b8)}</style>
+  <!-- Unicorn head: refined slender equine face with delicate curved ears, ethereal wavy mane locks flowing behind the cheeks and a soft forelock; brow left clear for the horn feature. -->
+  <path class="region-fur" d="M408 192 L382 64 Q438 96 470 160 Q436 172 408 192 Z"/>
+  <path class="region-fur" d="M616 192 L642 64 Q586 96 554 160 Q588 172 616 192 Z"/>
+  <path class="region-detail" d="M418 174 L402 96 Q436 122 452 162 Z"/>
+  <path class="region-detail" d="M606 174 L622 96 Q588 122 572 162 Z"/>
+  <path class="region-accent" d="M414 166 Q344 232 362 330 Q374 398 336 472 Q318 518 348 568 Q280 512 292 424 Q302 356 284 294 Q270 214 352 148 Z"/>
+  <path class="region-accent" d="M610 166 Q680 232 662 330 Q650 398 688 472 Q706 518 676 568 Q744 512 732 424 Q722 356 740 294 Q754 214 672 148 Z"/>
+  <ellipse class="region-fur" cx="512" cy="316" rx="176" ry="182"/>
+  <path class="region-accent" d="M446 136 Q512 98 578 136 Q562 196 512 210 Q462 196 446 136 Z"/>
+  <path class="region-fur" d="M450 352 Q512 322 574 352 L582 462 Q578 516 512 522 Q446 516 442 462 Z"/>
+  <ellipse class="region-detail" cx="474" cy="474" rx="11" ry="15"/>
+  <ellipse class="region-detail" cx="550" cy="474" rx="11" ry="15"/>
+  <path class="region-detail" d="M488 508 Q512 520 536 508 Q532 522 512 526 Q492 522 488 508 Z"/>
+</svg>

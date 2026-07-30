@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}</style>
+  <!-- Goo tail: thick glossy blob tail curling up behind the hip with an accent core glow, two drip fingers hanging from the underside and a floating droplet off the tip -->
+  <path class="region-fur" d="M604 744 C 744 756 858 668 868 546 C 872 494 840 462 802 474 C 770 484 764 522 782 552 C 770 640 700 690 596 688 Z"/>
+  <path class="region-accent" d="M652 714 C 750 706 816 646 826 556 C 828 528 812 512 796 518 C 782 524 780 542 788 556 C 778 634 718 672 648 680 Z"/>
+  <path class="region-fur" d="M688 702 q-8 48 -2 76 q4 16 15 16 q12 0 14 -20 q3 -40 -7 -72 z"/>
+  <path class="region-fur" d="M790 636 q-6 40 0 62 q3 13 13 13 q10 0 12 -17 q2 -32 -6 -58 z"/>
+  <circle class="region-fur" cx="896" cy="468" r="13"/>
+  <circle class="region-accent" cx="892" cy="463" r="4"/>
+  <circle class="region-accent" cx="720" cy="660" r="9"/>
+  <circle class="region-accent" cx="790" cy="596" r="7"/>
+  <circle class="region-accent" cx="846" cy="436" r="6"/>
+  <ellipse class="region-accent" cx="806" cy="502" rx="18" ry="10" transform="rotate(-20 806 502)"/>
+</svg>

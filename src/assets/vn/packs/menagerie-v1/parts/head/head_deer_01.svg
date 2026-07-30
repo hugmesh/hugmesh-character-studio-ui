@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a97d4e)}.region-accent{fill:var(--region-accent,#ead9b8)}.region-detail{fill:var(--region-detail,#3e2e22)}</style>
+  <!-- Deer head: large oval ears held out to the sides, slender tapered muzzle with cream accent patch, brow spots, dark rounded nose. -->
+  <ellipse class="region-fur" cx="318" cy="208" rx="108" ry="50" transform="rotate(-32 318 208)"/>
+  <ellipse class="region-fur" cx="706" cy="208" rx="108" ry="50" transform="rotate(32 706 208)"/>
+  <ellipse class="region-detail" cx="300" cy="198" rx="64" ry="24" transform="rotate(-32 300 198)"/>
+  <ellipse class="region-detail" cx="724" cy="198" rx="64" ry="24" transform="rotate(32 724 198)"/>
+  <circle class="region-fur" cx="512" cy="330" r="196"/>
+  <path class="region-fur" d="M436 392 Q512 352 588 392 L570 486 Q512 528 454 486 Z"/>
+  <path class="region-accent" d="M458 412 Q512 380 566 412 L552 480 Q512 510 472 480 Z"/>
+  <ellipse class="region-accent" cx="440" cy="264" rx="17" ry="10"/>
+  <ellipse class="region-accent" cx="584" cy="264" rx="17" ry="10"/>
+  <path class="region-detail" d="M486 398 Q512 386 538 398 Q534 420 512 426 Q490 420 486 398 Z"/>
+</svg>

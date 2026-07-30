@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c6b2dc)}.region-detail{fill:var(--region-detail,#9a82be)}.region-hair{fill:var(--region-hair,#9d94c4)}</style>
+  <!-- Night Hag (SRD 5.1) head: wild soft scallop mane on hair region, small hooked-but-round nose, warty cute chin dots -->
+  <path class="region-hair" d="M330 430 Q270 400 296 348 Q226 330 280 276 Q230 236 300 214 Q266 152 348 158 Q330 84 414 116 Q420 40 490 92 Q530 28 578 90 Q640 40 650 116 Q724 92 706 168 Q784 168 736 230 Q800 262 726 296 Q778 348 706 368 Q740 420 694 430 Q704 300 512 260 Q320 300 330 430 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-hair" d="M420 170 Q440 210 428 252 Q408 216 402 182 Z"/>
+  <path class="region-hair" d="M596 164 Q586 210 600 250 Q620 210 618 176 Z"/>
+  <path class="region-detail" d="M502 366 Q534 372 530 392 Q526 404 510 403 Q521 393 513 380 Q509 371 502 369 Z"/>
+  <circle class="region-detail" cx="466" cy="488" r="8"/>
+  <circle class="region-detail" cx="546" cy="494" r="7"/>
+  <circle class="region-detail" cx="500" cy="507" r="6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

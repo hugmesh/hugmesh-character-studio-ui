@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b7a0d4)}.region-accent{fill:var(--region-accent,#e6d8f4)}</style>
+  <!-- Bat Wings (SRD 5.1, imp/succubus/gargoyle) wings: small rounded scalloped membranes with soft finger rays -->
+  <path class="region-fur" d="M436 380 Q330 292 262 328 Q210 368 238 448 Q258 508 322 538 Q306 496 318 466 Q346 516 404 532 Q388 494 398 462 Q426 508 444 566 Q452 470 436 380 Z"/>
+  <path class="region-fur" d="M588 380 Q694 292 762 328 Q814 368 786 448 Q766 508 702 538 Q718 496 706 466 Q678 516 620 532 Q636 494 626 462 Q598 508 580 566 Q572 470 588 380 Z"/>
+  <path class="region-accent" d="M424 408 Q340 376 296 392 Q348 402 420 432 Z"/>
+  <path class="region-accent" d="M424 448 Q360 452 322 480 Q368 480 424 484 Z"/>
+  <path class="region-accent" d="M600 408 Q684 376 728 392 Q676 402 604 432 Z"/>
+  <path class="region-accent" d="M600 448 Q664 452 702 480 Q656 480 600 484 Z"/>
+</svg>

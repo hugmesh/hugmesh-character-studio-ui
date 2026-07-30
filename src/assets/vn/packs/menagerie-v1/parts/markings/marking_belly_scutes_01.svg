@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e8c98f)}.region-detail{fill:var(--region-detail,#c9a86e)}</style>
+  <!-- Belly-scute marking: stacked pale plates down the torso midline with darker seam shadows -->
+  <rect class="region-accent" x="432" y="544" width="160" height="32" rx="16"/>
+  <rect class="region-detail" x="440" y="572" width="144" height="8" rx="4"/>
+  <rect class="region-accent" x="424" y="586" width="176" height="32" rx="16"/>
+  <rect class="region-detail" x="432" y="614" width="160" height="8" rx="4"/>
+  <rect class="region-accent" x="420" y="628" width="184" height="32" rx="16"/>
+  <rect class="region-detail" x="428" y="656" width="168" height="8" rx="4"/>
+  <rect class="region-accent" x="424" y="670" width="176" height="32" rx="16"/>
+  <rect class="region-detail" x="432" y="698" width="160" height="8" rx="4"/>
+  <rect class="region-accent" x="432" y="712" width="160" height="32" rx="16"/>
+  <rect class="region-detail" x="440" y="740" width="144" height="8" rx="4"/>
+  <rect class="region-accent" x="444" y="754" width="136" height="30" rx="15"/>
+  <rect class="region-detail" x="452" y="780" width="120" height="8" rx="4"/>
+</svg>

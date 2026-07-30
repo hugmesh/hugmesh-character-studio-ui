@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#c9698c)}.region-accent{fill:var(--region-accent,#e39ab4)}.region-detail{fill:var(--region-detail,#f2d24b)}</style>
+  <!-- Twintails: crown dome with pointed bangs, two long side tails tied high with bead pairs, sheen streaks in each tail. -->
+  <path class="region-hair" d="M308 380 Q300 108 512 92 Q724 108 716 380 Q702 238 512 212 Q322 238 308 380 Z"/>
+  <path class="region-hair" d="M358 230 Q368 266 394 288 Q408 240 402 194 Q376 206 358 230 Z"/>
+  <path class="region-hair" d="M398 198 Q420 258 448 280 Q464 234 458 180 Q426 182 398 198 Z"/>
+  <path class="region-hair" d="M452 182 Q480 248 512 286 Q542 244 548 178 Q498 164 452 182 Z"/>
+  <path class="region-hair" d="M544 180 Q562 240 582 280 Q610 256 628 198 Q586 178 544 180 Z"/>
+  <path class="region-hair" d="M622 200 Q638 252 632 288 Q658 264 666 232 Q650 206 622 200 Z"/>
+  <path class="region-hair" d="M340 240 Q244 280 226 420 Q212 566 260 672 Q302 656 310 594 Q280 500 294 402 Q310 300 362 258 Q354 234 340 240 Z"/>
+  <path class="region-hair" d="M684 240 Q780 280 798 420 Q812 566 764 672 Q722 656 714 594 Q744 500 730 402 Q714 300 662 258 Q670 234 684 240 Z"/>
+  <path class="region-accent" d="M268 340 Q246 450 258 566 Q274 456 284 352 Q278 326 268 340 Z"/>
+  <path class="region-accent" d="M756 340 Q778 450 766 566 Q750 456 740 352 Q746 326 756 340 Z"/>
+  <path class="region-accent" d="M398 136 Q498 102 606 130 Q502 92 402 122 Z"/>
+  <circle class="region-detail" cx="330" cy="240" r="16"/>
+  <circle class="region-detail" cx="356" cy="218" r="16"/>
+  <circle class="region-detail" cx="694" cy="240" r="16"/>
+  <circle class="region-detail" cx="668" cy="218" r="16"/>
+</svg>

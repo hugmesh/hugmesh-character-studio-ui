@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e05a4e)}.region-accent{fill:var(--region-accent,#f2b344)}</style>
+  <!-- Feather head crest: five plumes fanning from the crown with accent tips, cockatoo style. -->
+  <path class="region-fur" d="M462 212 Q380 166 356 112 Q360 96 378 98 Q446 136 478 202 Z"/>
+  <path class="region-fur" d="M562 212 Q644 166 668 112 Q664 96 646 98 Q578 136 546 202 Z"/>
+  <path class="region-fur" d="M486 198 Q428 128 430 60 Q440 46 454 56 Q494 120 504 194 Z"/>
+  <path class="region-fur" d="M538 198 Q596 128 594 60 Q584 46 570 56 Q530 120 520 194 Z"/>
+  <path class="region-fur" d="M512 192 Q484 112 500 42 Q512 28 524 42 Q540 112 512 192 Z"/>
+  <path class="region-accent" d="M414 168 Q382 142 368 116 Q372 106 384 108 Q414 124 436 152 Z"/>
+  <path class="region-accent" d="M610 168 Q642 142 656 116 Q652 106 640 108 Q610 124 588 152 Z"/>
+  <path class="region-accent" d="M448 128 Q432 92 434 66 Q442 56 452 62 Q470 94 470 126 Z"/>
+  <path class="region-accent" d="M576 128 Q592 92 590 66 Q582 56 572 62 Q554 94 554 126 Z"/>
+  <path class="region-accent" d="M508 118 Q496 76 504 48 Q512 40 520 48 Q528 76 516 118 Z"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c19a6b)}.region-detail{fill:var(--region-detail,#33261f)}</style>
+  <!-- Hyena dorsal mane: tall spiky crest over the crown with dark tips, ragged tufts trailing down the sides of the neck to the shoulders -->
+  <path class="region-fur" d="M366 216 L394 110 L432 152 L468 70 L502 128 L540 64 L576 134 L612 88 L644 152 L664 214 Q514 124 366 216 Z"/>
+  <path class="region-detail" d="M406 192 L432 116 L464 158 L502 94 L536 152 L568 102 L598 162 L624 198 Q514 146 406 192 Z"/>
+  <path class="region-fur" d="M368 424 L312 462 L360 488 L322 544 L384 550 Q372 486 368 424 Z"/>
+  <path class="region-fur" d="M656 424 L712 462 L664 488 L702 544 L640 550 Q652 486 656 424 Z"/>
+  <path class="region-detail" d="M342 492 L322 540 L372 534 Z"/>
+  <path class="region-detail" d="M682 492 L702 540 L652 534 Z"/>
+  <path class="region-fur" d="M396 552 L376 612 L428 594 Z"/>
+  <path class="region-fur" d="M628 552 L648 612 L596 594 Z"/>
+</svg>

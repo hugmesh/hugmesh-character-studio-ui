@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}</style>
+  <!-- Goo crown: melting dollop plopped on the top of the skull with drip fingers running down the rim on both sides, glossy accent sheen and a floating bubble -->
+  <path class="region-fur" d="M366 216 Q352 124 452 100 Q512 86 572 100 Q672 124 658 216 Q590 250 512 252 Q434 250 366 216 Z"/>
+  <path class="region-fur" d="M368 210 q-16 64 -8 112 q4 20 18 20 q15 0 17 -25 q4 -56 -9 -104 z"/>
+  <path class="region-fur" d="M452 238 q-5 22 -1 38 q3 10 10 10 q8 0 9 -12 q2 -20 -4 -36 z"/>
+  <path class="region-fur" d="M496 244 q-5 28 0 46 q3 11 11 11 q8 0 9 -14 q2 -24 -4 -43 z"/>
+  <path class="region-fur" d="M614 236 q-6 30 0 50 q3 12 12 12 q9 0 10 -15 q2 -26 -6 -47 z"/>
+  <path class="region-fur" d="M656 210 q16 64 8 112 q-4 20 -18 20 q-15 0 -17 -25 q-4 -56 9 -104 z"/>
+  <ellipse class="region-accent" cx="455" cy="136" rx="42" ry="18" transform="rotate(-12 455 136)"/>
+  <circle class="region-accent" cx="585" cy="120" r="12"/>
+  <circle class="region-accent" cx="688" cy="140" r="9"/>
+  <circle class="region-fur" cx="352" cy="368" r="8"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9aa3ad)}.region-accent{fill:var(--region-accent,#8fe3f5)}.region-detail{fill:var(--region-detail,#4a4f58)}</style>
+  <!-- Retro robot body: boxy riveted torso with glowing chest screen, indicator lights, tube arms with shoulder joints and sphere hands, stubby piston legs with flat feet -->
+  <rect class="region-fur" x="474" y="430" width="76" height="60" rx="8"/>
+  <rect class="region-detail" x="464" y="478" width="96" height="16" rx="8"/>
+  <rect class="region-fur" x="344" y="506" width="48" height="186" rx="24"/>
+  <rect class="region-fur" x="632" y="506" width="48" height="186" rx="24"/>
+  <rect class="region-fur" x="398" y="492" width="228" height="250" rx="30"/>
+  <rect class="region-accent" x="446" y="524" width="132" height="104" rx="14"/>
+  <circle class="region-detail" cx="424" cy="518" r="8"/>
+  <circle class="region-detail" cx="600" cy="518" r="8"/>
+  <circle class="region-detail" cx="424" cy="616" r="8"/>
+  <circle class="region-detail" cx="600" cy="616" r="8"/>
+  <circle class="region-detail" cx="424" cy="716" r="8"/>
+  <circle class="region-detail" cx="600" cy="716" r="8"/>
+  <rect class="region-detail" x="438" y="652" width="148" height="10" rx="5"/>
+  <circle class="region-accent" cx="470" cy="692" r="9"/>
+  <circle class="region-accent" cx="512" cy="692" r="9"/>
+  <circle class="region-accent" cx="554" cy="692" r="9"/>
+  <circle class="region-detail" cx="368" cy="512" r="20"/>
+  <circle class="region-detail" cx="656" cy="512" r="20"/>
+  <rect class="region-detail" x="344" y="590" width="48" height="12" rx="6"/>
+  <rect class="region-detail" x="632" y="590" width="48" height="12" rx="6"/>
+  <circle class="region-detail" cx="368" cy="706" r="22"/>
+  <circle class="region-detail" cx="656" cy="706" r="22"/>
+  <rect class="region-fur" x="436" y="742" width="58" height="150" rx="18"/>
+  <rect class="region-fur" x="530" y="742" width="58" height="150" rx="18"/>
+  <rect class="region-detail" x="436" y="806" width="58" height="12" rx="6"/>
+  <rect class="region-detail" x="530" y="806" width="58" height="12" rx="6"/>
+  <rect class="region-detail" x="420" y="884" width="90" height="40" rx="16"/>
+  <rect class="region-detail" x="514" y="884" width="90" height="40" rx="16"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a6d8bf)}.region-accent{fill:var(--region-accent,#c5e6cf)}.region-detail{fill:var(--region-detail,#5f8a76)}</style>
+  <!-- Tyrannosaurus Rex (SRD 5.1) head: big rounded jaw w/ pale chin band, corner nub teeth flanking the mouth zone, soft brow bumps -->
+  <circle class="region-fur" cx="420" cy="150" r="40"/>
+  <circle class="region-fur" cx="604" cy="150" r="40"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-fur" d="M324 396 Q318 512 402 556 Q512 590 622 556 Q706 512 700 396 Q512 470 324 396 Z"/>
+  <rect class="region-accent" x="338" y="398" width="32" height="54" rx="15"/>
+  <rect class="region-accent" x="374" y="414" width="26" height="44" rx="13"/>
+  <rect class="region-accent" x="654" y="398" width="32" height="54" rx="15"/>
+  <rect class="region-accent" x="624" y="414" width="26" height="44" rx="13"/>
+  <ellipse class="region-accent" cx="512" cy="512" rx="118" ry="48"/>
+  <circle class="region-detail" cx="488" cy="392" r="11"/>
+  <circle class="region-detail" cx="536" cy="392" r="11"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

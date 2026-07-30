@@ -1,0 +1,15 @@
+<label class="pack-picker">
+  <span class="name">Asset pack</span>
+  <select
+    data-testid="cs-pack-select"
+    aria-label="Asset pack"
+    (change)="onChange($event)"
+  >
+    @for (entry of entries(); track entry.packId) {
+      <option
+        [value]="entry.packId"
+        [selected]="entry.packId === activePackId()"
+      >{{ labelOf(entry) }}</option>
+    }
+  </select>
+</label>

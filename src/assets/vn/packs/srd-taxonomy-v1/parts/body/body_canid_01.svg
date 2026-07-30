@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9ced9)}.region-accent{fill:var(--region-accent,#eceff5)}.region-detail{fill:var(--region-detail,#8b8494)}</style>
+  <!-- Canid body (SRD 5.1): jellybean torso, fluffy round-scalloped chest bib, stubby arms, round paw feet with toe pads -->
+  <path class="region-fur" d="M430 516 Q384 556 372 626 Q366 664 390 668 Q404 606 442 570 Z"/>
+  <path class="region-fur" d="M594 516 Q640 556 652 626 Q658 664 634 668 Q620 606 582 570 Z"/>
+  <ellipse class="region-fur" cx="384" cy="676" rx="30" ry="21"/>
+  <ellipse class="region-fur" cx="640" cy="676" rx="30" ry="21"/>
+  <path class="region-fur" d="M512 438 Q650 452 664 618 Q672 756 628 828 Q576 874 512 874 Q448 874 396 828 Q352 756 360 618 Q374 452 512 438 Z"/>
+  <ellipse class="region-accent" cx="512" cy="594" rx="86" ry="54"/>
+  <circle class="region-accent" cx="450" cy="634" r="24"/>
+  <circle class="region-accent" cx="492" cy="648" r="24"/>
+  <circle class="region-accent" cx="534" cy="648" r="24"/>
+  <circle class="region-accent" cx="576" cy="634" r="24"/>
+  <ellipse class="region-fur" cx="414" cy="786" rx="72" ry="60"/>
+  <ellipse class="region-fur" cx="610" cy="786" rx="72" ry="60"/>
+  <circle class="region-detail" cx="386" cy="802" r="10"/>
+  <circle class="region-detail" cx="414" cy="810" r="10"/>
+  <circle class="region-detail" cx="442" cy="802" r="10"/>
+  <circle class="region-detail" cx="582" cy="802" r="10"/>
+  <circle class="region-detail" cx="610" cy="810" r="10"/>
+  <circle class="region-detail" cx="638" cy="802" r="10"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a3cc92)}.region-hair{fill:var(--region-hair,#77947e)}.region-accent{fill:var(--region-accent,#f2ecd9)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Orc (SRD 5.1) head: big up-tusks flanking the mouth corners, pointed ears, mohawk top-knot (region-hair) -->
+  <path class="region-hair" d="M448 142 Q468 70 512 56 Q556 70 576 142 Q544 116 512 120 Q480 116 448 142 Z"/>
+  <path class="region-fur" d="M340 328 Q268 296 238 242 Q296 258 348 298 Z"/>
+  <path class="region-fur" d="M684 328 Q756 296 786 242 Q728 258 676 298 Z"/>
+  <circle class="region-fur" cx="512" cy="318" r="198"/>
+  <ellipse class="region-fur" cx="512" cy="438" rx="214" ry="124"/>
+  <path class="region-hair" d="M330 298 Q332 158 512 136 Q692 158 694 298 Q674 206 512 200 Q350 206 330 298 Z"/>
+  <path class="region-line" d="M398 258 q48 -10 92 6"/>
+  <path class="region-line" d="M626 258 q-48 -10 -92 6"/>
+  <path class="region-line" d="M492 396 l8 6"/>
+  <path class="region-line" d="M532 396 l-8 6"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-accent" d="M390 476 Q378 424 404 412 Q428 420 424 470 Q408 486 390 476 Z"/>
+  <path class="region-accent" d="M634 476 Q646 424 620 412 Q596 420 600 470 Q616 486 634 476 Z"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e8b544)}.region-accent{fill:var(--region-accent,#f7e7b8)}.region-detail{fill:var(--region-detail,#42311f)}</style>
+  <!-- Bee head: big cheerful round fuzzy skull, pale zigzag fuzz ruff around cheeks and chin, two ball-tipped antennae (detail), tiny round nose -->
+  <path class="region-detail" d="M452 206 Q426 152 392 106 L408 96 Q436 140 470 196 Z"/>
+  <circle class="region-detail" cx="398" cy="86" r="30"/>
+  <path class="region-detail" d="M572 206 Q598 152 632 106 L616 96 Q588 140 554 196 Z"/>
+  <circle class="region-detail" cx="626" cy="86" r="30"/>
+  <circle class="region-fur" cx="512" cy="330" r="206"/>
+  <path class="region-fur" d="M452 142 Q480 108 512 118 Q544 108 572 142 Q512 114 452 142 Z"/>
+  <path class="region-fur" d="M320 270 Q286 252 268 224 Q302 236 332 256 Z"/>
+  <path class="region-fur" d="M704 270 Q738 252 756 224 Q722 236 692 256 Z"/>
+  <path class="region-fur" d="M316 388 Q282 380 258 356 Q292 362 324 376 Z"/>
+  <path class="region-fur" d="M708 388 Q742 380 766 356 Q732 362 700 376 Z"/>
+  <path class="region-accent" d="M336 386 L318 428 L360 444 L330 486 L380 498 L364 544 L418 542 L416 588 L466 570 L478 612 L512 586 L546 612 L558 570 L608 588 L606 542 L660 544 L644 498 L694 486 L664 444 L706 428 L688 386 Q620 470 512 480 Q404 470 336 386 Z"/>
+  <path class="region-accent" d="M458 382 Q512 364 566 382 L574 446 Q548 484 512 488 Q476 484 450 446 Z"/>
+  <ellipse class="region-detail" cx="512" cy="398" rx="22" ry="15"/>
+</svg>

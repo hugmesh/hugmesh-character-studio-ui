@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ecc9a8)}.region-accent{fill:var(--region-accent,#f6e2c8)}.region-detail{fill:var(--region-detail,#c9a978)}.region-line{fill:none;stroke:var(--region-line,#6e5448);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Giant body: extra-chunky jellybean torso filling the envelope, rope belt with knot and dangling ends, big toe-dot feet -->
+  <path class="region-fur" d="M400 508 Q318 536 300 630 Q294 692 336 700 Q356 618 416 578 Z"/>
+  <path class="region-fur" d="M624 508 Q706 536 724 630 Q730 692 688 700 Q668 618 608 578 Z"/>
+  <circle class="region-fur" cx="330" cy="700" r="34"/>
+  <circle class="region-fur" cx="694" cy="700" r="34"/>
+  <path class="region-fur" d="M436 440 H588 Q618 504 656 540 Q696 588 700 672 Q704 764 664 812 Q608 862 512 862 Q416 862 360 812 Q320 764 324 672 Q328 588 368 540 Q406 504 436 440 Z"/>
+  <ellipse class="region-accent" cx="512" cy="668" rx="150" ry="160"/>
+  <rect class="region-detail" x="330" y="700" width="364" height="42" rx="21"/>
+  <circle class="region-detail" cx="512" cy="721" r="30"/>
+  <rect class="region-detail" x="486" y="738" width="20" height="64" rx="10"/>
+  <rect class="region-detail" x="518" y="742" width="20" height="56" rx="10"/>
+  <ellipse class="region-fur" cx="410" cy="802" rx="84" ry="60"/>
+  <ellipse class="region-fur" cx="614" cy="802" rx="84" ry="60"/>
+  <circle class="region-detail" cx="368" cy="844" r="13"/>
+  <circle class="region-detail" cx="406" cy="852" r="12"/>
+  <circle class="region-detail" cx="444" cy="848" r="11"/>
+  <circle class="region-detail" cx="656" cy="844" r="13"/>
+  <circle class="region-detail" cx="618" cy="852" r="12"/>
+  <circle class="region-detail" cx="580" cy="848" r="11"/>
+  <path class="region-line" d="M482 606 q30 18 60 0"/>
+</svg>

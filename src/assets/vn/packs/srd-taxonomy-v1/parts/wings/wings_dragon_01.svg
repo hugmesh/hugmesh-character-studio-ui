@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9b6e0)}.region-accent{fill:var(--region-accent,#ecdff7)}.region-line{fill:none;stroke:var(--region-line,#7a6694);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Dragon wings (SRD 5.1 dragons): small rounded bat wings with scalloped lower edge and soft finger seams -->
+  <path class="region-fur" d="M430 580 L430 360 Q420 288 340 272 Q240 256 190 330 Q150 396 170 470 Q178 530 230 560 Q252 528 278 556 Q304 528 330 562 Q360 534 386 570 Q408 546 430 580 Z"/>
+  <path class="region-fur" d="M594 580 L594 360 Q604 288 684 272 Q784 256 834 330 Q874 396 854 470 Q846 530 794 560 Q772 528 746 556 Q720 528 694 562 Q664 534 638 570 Q616 546 594 580 Z"/>
+  <path class="region-accent" d="M414 548 Q330 540 260 508 Q216 460 224 392 Q236 330 304 318 Q380 310 412 372 Z"/>
+  <path class="region-accent" d="M610 548 Q694 540 764 508 Q808 460 800 392 Q788 330 720 318 Q644 310 612 372 Z"/>
+  <path class="region-line" d="M300 328 Q280 424 252 512"/>
+  <path class="region-line" d="M356 340 Q346 436 330 540"/>
+  <path class="region-line" d="M724 328 Q744 424 772 512"/>
+  <path class="region-line" d="M668 340 Q678 436 694 540"/>
+</svg>

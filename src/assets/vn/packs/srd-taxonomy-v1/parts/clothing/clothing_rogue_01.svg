@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b4aac0)}.region-clothtrim{fill:var(--region-clothtrim,#ded8e6)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Rogue tunic (SRD 5.1) clothing: crossed chest belts, hip dagger sheath, draped hood collar -->
+  <path class="region-clothtrim" d="M392 520 Q512 468 632 520 Q652 560 620 580 Q512 540 404 580 Q372 560 392 520 Z"/>
+  <path class="region-cloth" d="M336 566 Q344 516 420 506 Q512 526 604 506 Q680 516 688 566 Q702 704 676 856 Q652 886 512 890 Q372 886 348 856 Q322 704 336 566 Z"/>
+  <path class="region-line" d="M374 834 Q512 860 650 834"/>
+  <path class="region-clothtrim" d="M398 548 Q512 600 616 674 L594 700 Q490 622 376 574 Z"/>
+  <path class="region-clothtrim" d="M626 548 Q512 600 408 674 L430 700 Q534 622 648 574 Z"/>
+  <circle class="region-line" cx="512" cy="614" r="24"/>
+  <path class="region-clothtrim" d="M340 700 Q512 738 684 700 L684 738 Q512 774 340 738 Z"/>
+  <rect class="region-cloth" x="486" y="706" width="52" height="44" rx="12"/>
+  <rect class="region-cloth" x="374" y="694" width="18" height="34" rx="8"/>
+  <rect class="region-cloth" x="360" y="716" width="46" height="14" rx="7"/>
+  <path class="region-clothtrim" d="M362 736 Q396 726 410 758 Q420 800 400 830 Q384 840 372 826 Q352 780 362 736 Z"/>
+  <path class="region-line" d="M364 756 Q386 750 406 758"/>
+</svg>

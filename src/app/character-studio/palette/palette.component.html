@@ -1,0 +1,15 @@
+<fieldset class="palette">
+  <legend>Colours</legend>
+  @for (region of regions(); track region) {
+    <label class="swatch">
+      <span class="name">{{ region }}</span>
+      <input
+        type="color"
+        [attr.data-testid]="'cs-palette-' + region"
+        [value]="colorOf(region)"
+        (input)="onColor(region, $event)"
+        [attr.aria-label]="region + ' colour'"
+      />
+    </label>
+  }
+</fieldset>

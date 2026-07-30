@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#7a5844)}.region-accent{fill:var(--region-accent,#c8a880)}.region-detail{fill:var(--region-detail,#362a22)}</style>
+  <!-- Bear head: big round skull with soft jowls, small round ears high on the crown, broad tan muzzle with a wide dark nose -->
+  <circle class="region-fur" cx="386" cy="168" r="54"/>
+  <circle class="region-fur" cx="638" cy="168" r="54"/>
+  <circle class="region-detail" cx="390" cy="174" r="28"/>
+  <circle class="region-detail" cx="634" cy="174" r="28"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-fur" cx="356" cy="398" rx="44" ry="58"/>
+  <ellipse class="region-fur" cx="668" cy="398" rx="44" ry="58"/>
+  <path class="region-accent" d="M424 372 Q512 348 600 372 L610 456 Q574 508 512 512 Q450 508 414 456 Z"/>
+  <path class="region-detail" d="M466 384 Q512 366 558 384 Q560 420 512 440 Q464 420 466 384 Z"/>
+</svg>

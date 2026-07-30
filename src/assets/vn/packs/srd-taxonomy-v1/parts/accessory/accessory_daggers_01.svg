@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b4aac0)}.region-clothtrim{fill:var(--region-clothtrim,#ded8e6)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Rogue twin daggers (SRD 5.1) accessory: stubby round-tip blades, chunky crossguards, ball pommels -->
+  <path class="region-clothtrim" d="M226 612 Q252 590 278 612 Q284 690 256 754 Q228 690 226 612 Z"/>
+  <path class="region-clothtrim" d="M746 612 Q772 590 798 612 Q804 690 776 754 Q748 690 746 612 Z"/>
+  <path class="region-line" d="M252 626 Q254 672 252 710"/>
+  <path class="region-line" d="M772 626 Q774 672 772 710"/>
+  <rect class="region-cloth" x="214" y="588" width="80" height="26" rx="13"/>
+  <rect class="region-cloth" x="734" y="588" width="80" height="26" rx="13"/>
+  <rect class="region-cloth" x="238" y="540" width="30" height="52" rx="14"/>
+  <rect class="region-cloth" x="758" y="540" width="30" height="52" rx="14"/>
+  <circle class="region-cloth" cx="253" cy="530" r="15"/>
+  <circle class="region-cloth" cx="773" cy="530" r="15"/>
+</svg>

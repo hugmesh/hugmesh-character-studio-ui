@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#d9bc9b)}.region-clothtrim{fill:var(--region-clothtrim,#f2e7d5)}.region-iris{fill:var(--region-iris,#e0596e)}.region-line{fill:none;stroke:var(--region-line,#6b5346);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Barbarian greataxe (SRD 5.1): chunky rounded bone twin blades, war-paint dots, bone charm on the haft -->
+  <path class="region-clothtrim" d="M772 492 Q678 480 648 548 Q640 610 714 622 Q756 628 772 614 Q750 552 772 492 Z"/>
+  <path class="region-clothtrim" d="M806 492 Q900 480 930 548 Q938 610 864 622 Q822 628 806 614 Q828 552 806 492 Z"/>
+  <rect class="region-cloth" x="772" y="470" width="34" height="390" rx="17"/>
+  <circle class="region-iris" cx="690" cy="542" r="11"/>
+  <circle class="region-iris" cx="716" cy="574" r="8"/>
+  <circle class="region-iris" cx="888" cy="542" r="11"/>
+  <circle class="region-iris" cx="862" cy="574" r="8"/>
+  <path class="region-line" d="M774 690 Q789 697 804 690"/>
+  <path class="region-line" d="M774 714 Q789 721 804 714"/>
+  <path class="region-line" d="M774 738 Q789 745 804 738"/>
+  <path class="region-line" d="M804 754 Q826 766 824 786"/>
+  <rect class="region-clothtrim" x="800" y="790" width="44" height="14" rx="7"/>
+  <circle class="region-clothtrim" cx="801" cy="797" r="9"/>
+  <circle class="region-clothtrim" cx="843" cy="797" r="9"/>
+  <circle class="region-clothtrim" cx="789" cy="872" r="18"/>
+</svg>

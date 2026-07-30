@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9b795)}.region-accent{fill:var(--region-accent,#f6e8d6)}.region-detail{fill:var(--region-detail,#a9846a)}</style>
+  <!-- Equine body (SRD 5.1): jellybean torso + fluffy chest tuft + stubby hoof-capped limbs -->
+  <path class="region-fur" d="M408 528 Q330 548 314 632 Q312 670 346 674 Q356 656 360 636 Q376 584 422 560 Z"/>
+  <path class="region-fur" d="M616 528 Q694 548 710 632 Q712 670 678 674 Q668 656 664 636 Q648 584 602 560 Z"/>
+  <ellipse class="region-detail" cx="334" cy="654" rx="30" ry="24"/>
+  <ellipse class="region-detail" cx="690" cy="654" rx="30" ry="24"/>
+  <path class="region-fur" d="M512 452 Q664 468 678 636 Q688 776 618 830 Q566 864 512 864 Q458 864 406 830 Q336 776 346 636 Q360 468 512 452 Z"/>
+  <ellipse class="region-accent" cx="512" cy="690" rx="110" ry="116"/>
+  <path class="region-accent" d="M446 474 Q444 540 480 556 Q482 522 502 512 Q500 548 530 556 Q532 524 550 514 Q552 546 578 540 Q590 504 578 470 Q544 500 512 498 Q480 500 446 474 Z"/>
+  <ellipse class="region-fur" cx="414" cy="782" rx="64" ry="58"/>
+  <ellipse class="region-fur" cx="610" cy="782" rx="64" ry="58"/>
+  <rect class="region-detail" x="356" y="838" width="116" height="44" rx="22"/>
+  <rect class="region-detail" x="552" y="838" width="116" height="44" rx="22"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#38313a)}.region-accent{fill:var(--region-accent,#efe8db)}</style>
+  <!-- Bandit face mask: dark band across both eyes dipping at the nose bridge, tapered flares toward the cheeks, pale accent rim tracing the top edge of the mask -->
+  <path class="region-accent" d="M356 272 Q400 234 470 230 Q504 230 512 244 Q520 230 554 230 Q624 234 668 272 Q640 254 584 250 Q532 248 512 262 Q492 248 440 250 Q384 254 356 272 Z"/>
+  <path class="region-detail" d="M344 296 Q368 258 424 254 Q476 250 500 278 Q512 272 524 278 Q548 250 600 254 Q656 258 680 296 Q688 330 664 352 Q618 378 570 352 Q540 336 524 340 Q512 344 500 340 Q484 336 454 352 Q406 378 360 352 Q336 330 344 296 Z"/>
+  <path class="region-detail" d="M350 330 Q318 350 306 382 L354 368 Z"/>
+  <path class="region-detail" d="M674 330 Q706 350 718 382 L670 368 Z"/>
+  <path class="region-detail" d="M462 360 Q452 384 458 404 L478 380 Z"/>
+  <path class="region-detail" d="M562 360 Q572 384 566 404 L546 380 Z"/>
+  <path class="region-accent" d="M388 366 Q408 382 434 386 Q410 394 388 384 Q384 374 388 366 Z"/>
+  <path class="region-accent" d="M636 366 Q616 382 590 386 Q614 394 636 384 Q640 374 636 366 Z"/>
+  <path class="region-accent" d="M500 288 Q512 280 524 288 Q518 300 512 302 Q506 300 500 288 Z"/>
+</svg>

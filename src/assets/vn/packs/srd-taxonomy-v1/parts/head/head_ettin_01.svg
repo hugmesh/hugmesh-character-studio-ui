@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e3c6a4)}.region-hair{fill:var(--region-hair,#b39a76)}.region-detail{fill:var(--region-detail,#caa07e)}.region-line{fill:none;stroke:var(--region-line,#6e5648);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Ettin head: two overlapping heads (little grumpy sidekick head keeps its baked face), messy twin tufts (region-hair), main mouth left to mouth parts -->
+  <rect class="region-fur" x="286" y="446" width="486" height="96" rx="46"/>
+  <circle class="region-fur" cx="348" cy="294" r="140"/>
+  <path class="region-hair" d="M286 198 Q296 150 338 166 Q348 130 386 156 Q412 138 410 188 Q364 170 286 198 Z"/>
+  <circle class="region-detail" cx="292" cy="320" r="8"/>
+  <path class="region-line" d="M254 298 q14 -14 28 0"/>
+  <path class="region-line" d="M310 296 q14 -14 28 0"/>
+  <path class="region-line" d="M272 338 q22 16 44 0"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="250" cy="340" rx="20" ry="12"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="330" cy="342" rx="20" ry="12"/>
+  <circle class="region-fur" cx="556" cy="336" r="190"/>
+  <path class="region-hair" d="M494 178 Q506 122 556 142 Q568 104 614 134 Q650 116 644 178 Q586 150 494 178 Z"/>
+  <ellipse class="region-detail" cx="512" cy="396" rx="16" ry="9"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

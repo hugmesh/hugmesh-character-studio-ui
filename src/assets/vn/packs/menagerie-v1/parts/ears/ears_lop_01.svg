@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9b29a)}.region-accent{fill:var(--region-accent,#f0e4d6)}</style>
+  <!-- Lop ears overlay: floppy lobes folding from the crown and draping past the cheeks, cream inner accent -->
+  <path class="region-fur" d="M436 152 q76 -30 152 0 q-24 40 -76 40 q-52 0 -76 -40 z"/>
+  <ellipse class="region-fur" cx="395" cy="185" rx="45" ry="30" transform="rotate(-25 395 185)"/>
+  <ellipse class="region-fur" cx="629" cy="185" rx="45" ry="30" transform="rotate(25 629 185)"/>
+  <ellipse class="region-fur" cx="352" cy="320" rx="62" ry="152" transform="rotate(16 352 320)"/>
+  <ellipse class="region-fur" cx="672" cy="320" rx="62" ry="152" transform="rotate(-16 672 320)"/>
+  <ellipse class="region-accent" cx="348" cy="340" rx="34" ry="110" transform="rotate(16 348 340)"/>
+  <ellipse class="region-accent" cx="676" cy="340" rx="34" ry="110" transform="rotate(-16 676 340)"/>
+</svg>

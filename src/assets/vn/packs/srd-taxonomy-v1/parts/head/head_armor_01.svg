@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ccd6e2)}.region-accent{fill:var(--region-accent,#e2eaf2)}.region-detail{fill:var(--region-detail,#f2b0a0)}.region-line{fill:none;stroke:var(--region-line,#5c6470);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Animated Armor head: coral plume curl, plain visor opening framing the eye zone, hinge-bolt cheeks -->
+  <path class="region-detail" d="M500 150 Q484 54 582 46 Q672 44 682 120 Q688 176 628 192 Q658 134 606 112 Q548 90 538 150 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <rect class="region-accent" x="352" y="254" width="320" height="150" rx="74"/>
+  <circle class="region-detail" cx="336" cy="304" r="14"/>
+  <circle class="region-detail" cx="688" cy="304" r="14"/>
+  <path class="region-line" d="M368 246 Q512 206 656 246"/>
+  <circle class="region-accent" cx="482" cy="500" r="7"/>
+  <circle class="region-accent" cx="512" cy="506" r="7"/>
+  <circle class="region-accent" cx="542" cy="500" r="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

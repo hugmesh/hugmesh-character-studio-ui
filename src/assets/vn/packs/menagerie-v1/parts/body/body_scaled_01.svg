@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a63d40)}.region-accent{fill:var(--region-accent,#e8c98f)}.region-detail{fill:var(--region-detail,#d9c9a3)}</style>
+  <!-- Scaled dragon body: broad chest, digitigrade legs, stacked belly-scute plates, bone claws -->
+  <path class="region-fur" d="M392 560 Q356 640 372 722 Q388 738 410 728 Q402 650 426 586 Z"/>
+  <path class="region-fur" d="M632 560 Q668 640 652 722 Q636 738 614 728 Q622 650 598 586 Z"/>
+  <path class="region-fur" d="M468 462 H556 Q572 508 608 524 Q664 556 668 620 Q672 700 660 750 Q640 816 592 836 H432 Q384 816 364 750 Q352 700 356 620 Q360 556 416 524 Q452 508 468 462 Z"/>
+  <path class="region-fur" d="M408 790 Q394 856 412 886 L502 886 Q500 836 494 790 Z"/>
+  <path class="region-fur" d="M616 790 Q630 856 612 886 L522 886 Q524 836 530 790 Z"/>
+  <rect class="region-fur" x="378" y="880" width="138" height="34" rx="16"/>
+  <rect class="region-fur" x="508" y="880" width="138" height="34" rx="16"/>
+  <rect class="region-accent" x="428" y="548" width="168" height="34" rx="17"/>
+  <rect class="region-accent" x="420" y="590" width="184" height="34" rx="17"/>
+  <rect class="region-accent" x="416" y="632" width="192" height="34" rx="17"/>
+  <rect class="region-accent" x="422" y="674" width="180" height="34" rx="17"/>
+  <rect class="region-accent" x="430" y="716" width="164" height="34" rx="17"/>
+  <rect class="region-accent" x="442" y="758" width="140" height="32" rx="16"/>
+  <path class="region-detail" d="M380 886 l-28 10 l28 12 z"/>
+  <path class="region-detail" d="M394 910 l-22 14 l26 4 z"/>
+  <path class="region-detail" d="M644 886 l28 10 l-28 12 z"/>
+  <path class="region-detail" d="M630 910 l22 14 l-26 4 z"/>
+  <path class="region-detail" d="M376 720 l-14 30 l24 -12 z"/>
+  <path class="region-detail" d="M648 720 l14 30 l-24 -12 z"/>
+</svg>

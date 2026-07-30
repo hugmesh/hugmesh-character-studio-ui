@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2b8c6)}.region-accent{fill:var(--region-accent,#e0708e)}.region-line{fill:none;stroke:var(--region-line,#8a4a5e);stroke-width:13;stroke-linecap:round}</style>
+  <!-- Axolotl head: wide rounded face, three feathery external gill fronds per side with filament tips, baked-in wide smile and tiny nostrils -->
+  <ellipse class="region-accent" cx="300" cy="178" rx="74" ry="24" transform="rotate(40 300 178)"/>
+  <ellipse class="region-accent" cx="258" cy="252" rx="80" ry="26" transform="rotate(8 258 252)"/>
+  <ellipse class="region-accent" cx="288" cy="330" rx="72" ry="24" transform="rotate(-24 288 330)"/>
+  <ellipse class="region-accent" cx="724" cy="178" rx="74" ry="24" transform="rotate(-40 724 178)"/>
+  <ellipse class="region-accent" cx="766" cy="252" rx="80" ry="26" transform="rotate(-8 766 252)"/>
+  <ellipse class="region-accent" cx="736" cy="330" rx="72" ry="24" transform="rotate(24 736 330)"/>
+  <circle class="region-accent" cx="240" cy="126" r="14"/>
+  <circle class="region-accent" cx="174" cy="240" r="14"/>
+  <circle class="region-accent" cx="217" cy="362" r="14"/>
+  <circle class="region-accent" cx="784" cy="126" r="14"/>
+  <circle class="region-accent" cx="850" cy="240" r="14"/>
+  <circle class="region-accent" cx="807" cy="362" r="14"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <ellipse class="region-fur" cx="512" cy="398" rx="192" ry="112"/>
+  <path class="region-line" d="M414 430 q98 78 196 0"/>
+  <path class="region-line" d="M490 384 l6 4"/>
+  <path class="region-line" d="M528 388 l6 -4"/>
+</svg>

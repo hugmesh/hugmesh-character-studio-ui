@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#5fc9a0)}.region-accent{fill:var(--region-accent,#c8f7e3)}.region-detail{fill:var(--region-detail,#eafaf2)}</style>
+  <!-- Goo wings: rounded translucent-look membranes framed by thick goo arms, drip fingers along the lower edge, trapped bubbles and a falling droplet under each wing -->
+  <path class="region-accent" d="M402 640 Q292 662 208 598 Q128 532 126 432 Q130 324 224 268 Q332 346 402 470 Z"/>
+  <path class="region-accent" d="M622 640 Q732 662 816 598 Q896 532 898 432 Q894 324 800 268 Q692 346 622 470 Z"/>
+  <path class="region-fur" d="M402 470 Q330 350 224 268 L194 296 Q294 372 384 494 Z"/>
+  <path class="region-fur" d="M622 470 Q694 350 800 268 L830 296 Q730 372 640 494 Z"/>
+  <path class="region-fur" d="M240 606 q-8 42 -2 68 q4 15 14 15 q12 0 14 -19 q2 -36 -7 -62 z"/>
+  <path class="region-fur" d="M312 632 q-6 36 0 58 q3 13 12 13 q10 0 11 -16 q2 -30 -5 -53 z"/>
+  <path class="region-fur" d="M784 606 q8 42 2 68 q-4 15 -14 15 q-12 0 -14 -19 q-2 -36 7 -62 z"/>
+  <path class="region-fur" d="M712 632 q6 36 0 58 q-3 13 -12 13 q-10 0 -11 -16 q-2 -30 5 -53 z"/>
+  <circle class="region-detail" cx="230" cy="420" r="10"/>
+  <circle class="region-detail" cx="280" cy="500" r="7"/>
+  <circle class="region-detail" cx="794" cy="420" r="10"/>
+  <circle class="region-detail" cx="744" cy="500" r="7"/>
+  <circle class="region-detail" cx="218" cy="742" r="8"/>
+  <circle class="region-detail" cx="806" cy="742" r="8"/>
+</svg>

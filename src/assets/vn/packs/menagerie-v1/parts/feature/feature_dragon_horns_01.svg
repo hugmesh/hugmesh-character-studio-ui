@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-detail{fill:var(--region-detail,#d9c9a3)}.region-line{fill:none;stroke:var(--region-line,#8a744f);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Swept dragon horns: thick keratin sweeps off the upper skull rim with ridge rings -->
+  <path class="region-detail" d="M356 236 Q300 170 282 96 Q274 66 268 52 Q316 84 352 128 Q388 172 414 196 Q394 224 356 236 Z"/>
+  <path class="region-detail" d="M668 236 Q724 170 742 96 Q750 66 756 52 Q708 84 672 128 Q636 172 610 196 Q630 224 668 236 Z"/>
+  <path class="region-line" d="M332 194 q28 -18 54 -36"/>
+  <path class="region-line" d="M308 152 q24 -16 42 -32"/>
+  <path class="region-line" d="M290 110 q18 -14 32 -26"/>
+  <path class="region-line" d="M692 194 q-28 -18 -54 -36"/>
+  <path class="region-line" d="M716 152 q-24 -16 -42 -32"/>
+  <path class="region-line" d="M734 110 q-18 -14 -32 -26"/>
+</svg>

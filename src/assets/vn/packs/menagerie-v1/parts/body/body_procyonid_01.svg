@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8d8a93)}.region-accent{fill:var(--region-accent,#ece7dc)}.region-detail{fill:var(--region-detail,#322e35)}</style>
+  <!-- Fluffy procyonid body: plump round torso with cusped side fluff, big cream belly patch, dark stubby forepaws and feet -->
+  <path class="region-fur" d="M470 494 Q512 484 554 494 L562 550 Q512 566 462 550 Z"/>
+  <path class="region-fur" d="M384 600 L344 586 L376 632 L336 640 L380 668 Z"/>
+  <path class="region-fur" d="M640 600 L680 586 L648 632 L688 640 L644 668 Z"/>
+  <path class="region-fur" d="M448 534 Q400 552 380 610 Q366 664 376 716 Q386 770 428 800 Q468 826 512 828 Q556 826 596 800 Q638 770 648 716 Q658 664 644 610 Q624 552 576 534 Q512 512 448 534 Z"/>
+  <path class="region-fur" d="M436 556 Q400 580 394 646 L390 700 Q394 722 418 722 Q440 718 440 698 L448 616 Q450 578 436 556 Z"/>
+  <path class="region-fur" d="M588 556 Q624 580 630 646 L634 700 Q630 722 606 722 Q584 718 584 698 L576 616 Q574 578 588 556 Z"/>
+  <path class="region-detail" d="M390 692 Q384 722 408 730 Q436 732 442 706 L440 694 Q414 684 390 692 Z"/>
+  <path class="region-detail" d="M634 692 Q640 722 616 730 Q588 732 582 706 L584 694 Q610 684 634 692 Z"/>
+  <path class="region-fur" d="M446 800 Q430 850 440 894 L446 916 L506 916 Q510 892 498 870 Q488 842 492 810 Z"/>
+  <path class="region-fur" d="M578 800 Q594 850 584 894 L578 916 L518 916 Q514 892 526 870 Q536 842 532 810 Z"/>
+  <path class="region-detail" d="M434 908 Q424 936 448 942 L508 942 Q518 928 508 914 Q470 902 434 908 Z"/>
+  <path class="region-detail" d="M590 908 Q600 936 576 942 L516 942 Q506 928 516 914 Q554 902 590 908 Z"/>
+  <path class="region-accent" d="M446 584 Q512 560 578 584 L562 612 Q606 652 608 706 Q604 764 558 792 Q512 808 466 792 Q420 764 416 706 Q418 652 462 612 Z"/>
+</svg>

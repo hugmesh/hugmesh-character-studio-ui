@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#8f97a3)}.region-accent{fill:var(--region-accent,#e8e3da)}.region-detail{fill:var(--region-detail,#d98a94)}</style>
+  <!-- Cat head: round skull, small triangular ears with pink inner, soft cheek fluff, short pale muzzle with tiny wedge nose -->
+  <path class="region-fur" d="M370 208 L332 84 L458 142 Z"/>
+  <path class="region-fur" d="M654 208 L692 84 L566 142 Z"/>
+  <path class="region-detail" d="M378 190 L354 112 L436 150 Z"/>
+  <path class="region-detail" d="M646 190 L670 112 L588 150 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M330 352 L276 378 L330 404 Z"/>
+  <path class="region-fur" d="M334 408 L284 442 L340 456 Z"/>
+  <path class="region-fur" d="M694 352 L748 378 L694 404 Z"/>
+  <path class="region-fur" d="M690 408 L740 442 L684 456 Z"/>
+  <ellipse class="region-accent" cx="512" cy="420" rx="76" ry="54"/>
+  <path class="region-detail" d="M490 392 h44 l-22 26 Z"/>
+</svg>

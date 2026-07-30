@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c2a488)}.region-accent{fill:var(--region-accent,#e9dfc9)}.region-detail{fill:var(--region-detail,#d9a05f)}</style>
+  <!-- Owlbear (SRD 5.1) head: solid heart-lobed owl facial disc with feather-tip scallops, tiny amber beak, round bear ears -->
+  <circle class="region-fur" cx="392" cy="158" r="56"/>
+  <circle class="region-accent" cx="396" cy="164" r="30"/>
+  <circle class="region-fur" cx="632" cy="158" r="56"/>
+  <circle class="region-accent" cx="628" cy="164" r="30"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <circle class="region-accent" cx="446" cy="348" r="96"/>
+  <circle class="region-accent" cx="578" cy="348" r="96"/>
+  <circle class="region-accent" cx="360" cy="290" r="28"/>
+  <circle class="region-accent" cx="346" cy="356" r="28"/>
+  <circle class="region-accent" cx="372" cy="418" r="28"/>
+  <circle class="region-accent" cx="452" cy="454" r="24"/>
+  <circle class="region-accent" cx="512" cy="444" r="26"/>
+  <circle class="region-accent" cx="572" cy="454" r="24"/>
+  <circle class="region-accent" cx="652" cy="418" r="28"/>
+  <circle class="region-accent" cx="678" cy="356" r="28"/>
+  <circle class="region-accent" cx="664" cy="290" r="28"/>
+  <path class="region-detail" d="M496 360 Q512 350 528 360 Q540 382 520 400 Q512 407 504 400 Q484 382 496 360 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

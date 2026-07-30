@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f7e0d3)}.region-accent{fill:var(--region-accent,#a8cfdd)}.region-detail{fill:var(--region-detail,#7fb0c4)}</style>
+  <!-- Merfolk (SRD 5.1) body: soft torso into a curled fish-tail wrap with a fan fluke, scallop scale waistband, scale accent dots -->
+  <path class="region-fur" d="M462 436 H562 Q632 468 648 548 Q660 610 648 658 Q582 688 512 688 Q442 688 376 658 Q364 610 376 548 Q392 468 462 436 Z"/>
+  <path class="region-fur" d="M388 516 Q324 540 306 598 Q298 630 324 640 Q348 646 358 618 Q370 580 408 556 Z"/>
+  <path class="region-fur" d="M636 516 Q700 540 718 598 Q726 630 700 640 Q676 646 666 618 Q654 580 616 556 Z"/>
+  <ellipse class="region-accent" cx="512" cy="700" rx="152" ry="82"/>
+  <path class="region-accent" d="M384 688 Q356 780 424 822 Q496 852 596 840 Q660 832 692 800 Q706 784 694 766 Q664 726 668 692 Q642 740 600 762 Q540 792 462 778 Q408 768 396 734 Q388 712 384 688 Z"/>
+  <path class="region-detail" d="M688 802 Q696 734 746 702 Q742 742 762 754 Q786 766 810 752 Q804 802 760 826 Q720 846 688 808 Z"/>
+  <path class="region-detail" d="M382 652 Q410 676 440 656 Q468 638 496 660 Q524 680 552 660 Q580 640 608 660 Q626 672 642 654 Q646 668 640 678 Q582 706 512 706 Q442 706 386 676 Q382 664 382 652 Z"/>
+  <circle class="region-detail" cx="470" cy="742" r="9"/>
+  <circle class="region-detail" cx="540" cy="752" r="9"/>
+  <circle class="region-detail" cx="606" cy="730" r="9"/>
+  <circle class="region-detail" cx="500" cy="798" r="9"/>
+  <circle class="region-detail" cx="576" cy="806" r="9"/>
+</svg>

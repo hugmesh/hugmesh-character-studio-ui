@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Shark tail: thick stem sweeping right from the hip into a vertical heterocercal caudal fin, larger upper lobe, pale inner panels -->
+  <path class="region-fur" d="M628 656 Q748 646 818 566 Q852 520 862 486 Q886 538 856 596 Q796 686 692 728 Q640 742 622 712 Z"/>
+  <path class="region-fur" d="M834 560 Q862 448 948 380 Q958 468 908 562 Q880 596 848 600 Z"/>
+  <path class="region-fur" d="M842 596 Q906 616 928 682 Q862 680 826 632 Z"/>
+  <path class="region-accent" d="M862 548 Q894 470 932 424 Q930 496 892 556 Z"/>
+  <path class="region-accent" d="M856 612 Q894 630 906 664 Q868 658 850 632 Z"/>
+  <path class="region-accent" d="M700 700 Q780 660 830 600 Q800 676 706 722 Z"/>
+  <circle class="region-detail" cx="742" cy="662" r="8"/>
+  <circle class="region-detail" cx="784" cy="620" r="8"/>
+</svg>

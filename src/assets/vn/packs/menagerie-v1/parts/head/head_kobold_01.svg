@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a6663d)}.region-accent{fill:var(--region-accent,#e0c08a)}.region-detail{fill:var(--region-detail,#6b4526)}</style>
+  <!-- Kobold head: small cute draconic face, big pointy ears, tiny horn nubs, short rounded snout with pale muzzle patch -->
+  <path class="region-fur" d="M356 292 L240 112 L452 200 Z"/>
+  <path class="region-fur" d="M668 292 L784 112 L572 200 Z"/>
+  <path class="region-accent" d="M362 272 L282 148 L424 208 Z"/>
+  <path class="region-accent" d="M662 272 L742 148 L600 208 Z"/>
+  <circle class="region-fur" cx="512" cy="340" r="170"/>
+  <circle class="region-fur" cx="386" cy="404" r="36"/>
+  <circle class="region-fur" cx="638" cy="404" r="36"/>
+  <path class="region-detail" d="M430 192 q-12 -34 6 -54 q22 10 22 46 z"/>
+  <path class="region-detail" d="M594 192 q12 -34 -6 -54 q-22 10 -22 46 z"/>
+  <path class="region-fur" d="M440 388 q72 -30 144 0 q22 48 -8 84 q-30 28 -64 28 q-34 0 -64 -28 q-30 -36 -8 -84 z"/>
+  <path class="region-accent" d="M462 408 q50 -20 100 0 q14 36 -8 60 q-20 20 -42 20 q-22 0 -42 -20 q-22 -24 -8 -60 z"/>
+  <ellipse class="region-detail" cx="487" cy="432" rx="6" ry="9"/>
+  <ellipse class="region-detail" cx="537" cy="432" rx="6" ry="9"/>
+</svg>

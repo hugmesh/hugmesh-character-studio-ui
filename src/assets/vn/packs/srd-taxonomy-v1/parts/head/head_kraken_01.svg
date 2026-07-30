@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cdb9de)}.region-accent{fill:var(--region-accent,#ecdff6)}.region-detail{fill:var(--region-detail,#a48cc2)}</style>
+  <!-- Kraken head: tall octopus mantle, side tentacle curls plus two front curls crossing the mantle base, sucker dots, siphon nub -->
+  <path class="region-fur" d="M356 540 Q238 498 236 362 Q236 276 306 262 Q260 328 292 398 Q320 458 356 540 Z"/>
+  <path class="region-fur" d="M668 540 Q786 498 788 362 Q788 276 718 262 Q764 328 732 398 Q704 458 668 540 Z"/>
+  <circle class="region-accent" cx="262" cy="322" r="10"/>
+  <circle class="region-accent" cx="272" cy="392" r="10"/>
+  <circle class="region-accent" cx="298" cy="452" r="10"/>
+  <circle class="region-accent" cx="762" cy="322" r="10"/>
+  <circle class="region-accent" cx="752" cy="392" r="10"/>
+  <circle class="region-accent" cx="726" cy="452" r="10"/>
+  <ellipse class="region-fur" cx="512" cy="312" rx="205" ry="232"/>
+  <circle class="region-accent" cx="446" cy="172" r="16"/>
+  <circle class="region-accent" cx="536" cy="142" r="14"/>
+  <circle class="region-accent" cx="600" cy="196" r="12"/>
+  <rect class="region-detail" x="700" y="238" width="36" height="48" rx="17"/>
+  <path class="region-detail" d="M336 464 Q302 566 402 594 Q492 618 524 556 Q498 574 448 566 Q380 554 372 496 Q368 476 336 464 Z"/>
+  <circle class="region-detail" cx="526" cy="552" r="16"/>
+  <path class="region-detail" d="M688 470 Q716 548 640 570 Q580 588 566 548 Q584 562 620 552 Q656 540 660 502 Q662 482 688 470 Z"/>
+  <circle class="region-detail" cx="570" cy="544" r="12"/>
+  <circle class="region-accent" cx="352" cy="510" r="8"/>
+  <circle class="region-accent" cx="390" cy="560" r="8"/>
+  <circle class="region-accent" cx="438" cy="576" r="8"/>
+  <circle class="region-accent" cx="486" cy="566" r="7"/>
+  <circle class="region-accent" cx="668" cy="516" r="8"/>
+  <circle class="region-accent" cx="636" cy="558" r="7"/>
+  <circle class="region-accent" cx="598" cy="562" r="7"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

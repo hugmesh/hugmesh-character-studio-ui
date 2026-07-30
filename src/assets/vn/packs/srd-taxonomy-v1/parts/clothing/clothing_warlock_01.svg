@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#b6a9cd)}.region-clothtrim{fill:var(--region-clothtrim,#e8e2d4)}.region-iris{fill:var(--region-iris,#85d9ae)}.region-line{fill:none;stroke:var(--region-line,#574a63);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Warlock mantle (SRD 5.1) clothing: high flared collar behind the head, glowing sigil clasp, rounded tattered hem -->
+  <path class="region-cloth" d="M282 560 Q262 400 340 308 Q420 258 512 250 Q604 258 684 308 Q762 400 742 560 Q724 590 668 578 Q596 552 512 550 Q428 552 356 578 Q300 590 282 560 Z"/>
+  <path class="region-clothtrim" d="M310 548 Q300 420 360 340 Q394 310 420 322 Q370 400 372 520 Q346 548 310 548 Z"/>
+  <path class="region-clothtrim" d="M714 548 Q724 420 664 340 Q630 310 604 322 Q654 400 652 520 Q678 548 714 548 Z"/>
+  <path class="region-cloth" d="M334 566 Q344 520 430 510 Q512 532 594 510 Q680 520 690 566 Q704 710 684 848 Q640 884 512 888 Q384 884 340 848 Q320 710 334 566 Z"/>
+  <path class="region-clothtrim" d="M348 818 Q384 856 420 820 Q452 860 492 822 Q524 862 560 822 Q596 860 630 820 Q662 856 678 818 Q684 854 660 876 Q580 892 512 890 Q444 892 364 876 Q340 854 348 818 Z"/>
+  <path class="region-clothtrim" d="M470 540 Q512 586 554 540 Q542 602 512 618 Q482 602 470 540 Z"/>
+  <circle class="region-iris" cx="512" cy="586" r="30"/>
+  <circle class="region-line" cx="512" cy="586" r="42"/>
+  <path class="region-line" d="M512 572 Q502 586 512 600 Q522 586 512 572"/>
+</svg>

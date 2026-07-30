@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#ead9f4)}.region-accent{fill:var(--region-accent,#f7cfe4)}.region-line{fill:none;stroke:var(--region-line,#b48fd0);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Unicorn horn feature (SRD 5.1): tall pastel horn + spiral seam bands + sparkle dots -->
+  <path class="region-fur" d="M466 198 Q512 168 558 198 Q542 108 522 48 Q512 30 502 48 Q482 108 466 198 Z"/>
+  <path class="region-line" d="M476 174 Q514 154 546 166"/>
+  <path class="region-line" d="M486 126 Q516 110 536 120"/>
+  <path class="region-line" d="M497 82 Q518 70 530 78"/>
+  <circle class="region-accent" cx="452" cy="98" r="9"/>
+  <circle class="region-accent" cx="570" cy="140" r="7"/>
+</svg>

@@ -1,0 +1,119 @@
+@use '../../styles/tokens' as t;
+
+:host {
+  display: block;
+}
+
+.character-studio {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.lede {
+  max-width: 42rem;
+  line-height: 1.5;
+}
+
+.status:empty {
+  display: none;
+}
+
+.studio-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.surprise {
+  cursor: pointer;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.surprise:hover {
+  border-color: var(--hug-accent, #7c4dff);
+}
+
+.studio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.preview {
+  flex: 0 0 auto;
+}
+
+// MOBILE/TABLET-PORTRAIT: under the tablet breakpoint the side-by-side
+// canvas+picker layout stacks. The preview (canvas + validity + export) pins
+// sticky-top at a BOUNDED height so the character stays visible while the
+// picker scrolls underneath; the opaque background stops picker rows showing
+// through, and the trimmed page padding keeps 360px-wide phones fitting
+// without horizontal scroll.
+@media (max-width: #{t.$bp-md - 1px}) {
+  .character-studio {
+    padding: 1rem;
+  }
+
+  .studio {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .preview {
+    position: sticky;
+    top: 0;
+    z-index: t.$z-content;
+    width: 100%;
+    background: var(--hug-bg-0, #0a0a12);
+    padding-bottom: 0.5rem;
+  }
+
+  .controls {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.validity {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.controls {
+  flex: 1 1 18rem;
+  min-width: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.credits {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hug-border, #1e1e32);
+  max-width: 42rem;
+
+  h2 {
+    font-size: 0.95rem;
+    margin: 0 0 0.35rem;
+  }
+
+  .credit-text {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--hug-text-muted, #a8acc4);
+    overflow-wrap: anywhere;
+  }
+}

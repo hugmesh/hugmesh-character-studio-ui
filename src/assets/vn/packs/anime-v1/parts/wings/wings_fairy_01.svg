@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#bfe3f2)}</style>
+  <!-- Fairy wings: two translucent-look double lobes per side, layered opacity for depth -->
+  <path class="region-accent" opacity="0.45" d="M450 486 C330 430 216 322 186 192 C176 140 216 116 266 140 C380 194 442 330 450 486 Z"/>
+  <path class="region-accent" opacity="0.7" d="M444 470 C350 420 270 330 246 226 C240 194 264 180 294 196 C376 244 428 356 444 470 Z"/>
+  <path class="region-accent" opacity="0.45" d="M448 508 C356 528 268 578 240 664 C228 706 262 728 302 706 C376 664 428 584 448 508 Z"/>
+  <path class="region-accent" opacity="0.7" d="M442 516 C372 534 306 574 284 640 C276 668 298 682 324 668 C378 636 420 576 442 516 Z"/>
+  <path class="region-accent" opacity="0.45" d="M574 486 C694 430 808 322 838 192 C848 140 808 116 758 140 C644 194 582 330 574 486 Z"/>
+  <path class="region-accent" opacity="0.7" d="M580 470 C674 420 754 330 778 226 C784 194 760 180 730 196 C648 244 596 356 580 470 Z"/>
+  <path class="region-accent" opacity="0.45" d="M576 508 C668 528 756 578 784 664 C796 706 762 728 722 706 C648 664 596 584 576 508 Z"/>
+  <path class="region-accent" opacity="0.7" d="M582 516 C652 534 718 574 740 640 C748 668 726 682 700 668 C646 636 604 576 582 516 Z"/>
+</svg>

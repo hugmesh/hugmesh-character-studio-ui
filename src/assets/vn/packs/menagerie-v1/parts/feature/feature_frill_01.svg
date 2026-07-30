@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#e0a45c)}.region-detail{fill:var(--region-detail,#8a5a2e)}</style>
+  <!-- Frilled-lizard neck frill: scalloped membrane ring around the skull with rib spokes; face cutout so the head shows through -->
+  <path class="region-accent" fill-rule="evenodd" d="M512 12 Q586 104 699 73 Q705 190 814 232 Q750 330 814 428 Q705 470 699 587 Q586 556 512 648 Q438 556 325 587 Q319 470 210 428 Q274 330 210 232 Q319 190 325 73 Q438 104 512 12 Z M512 140 a190 190 0 1 0 0.1 0 Z"/>
+  <path class="region-detail" d="M500 134 L512 24 L524 134 Z"/>
+  <path class="region-detail" d="M617 165 L692 82 L637 179 Z"/>
+  <path class="region-detail" d="M694 258 L803 235 L702 281 Z"/>
+  <path class="region-detail" d="M702 379 L803 425 L694 402 Z"/>
+  <path class="region-detail" d="M637 481 L692 578 L617 495 Z"/>
+  <path class="region-detail" d="M524 526 L512 636 L500 526 Z"/>
+  <path class="region-detail" d="M407 495 L332 578 L387 481 Z"/>
+  <path class="region-detail" d="M330 402 L221 425 L322 379 Z"/>
+  <path class="region-detail" d="M322 281 L221 235 L330 258 Z"/>
+  <path class="region-detail" d="M387 179 L332 82 L407 165 Z"/>
+</svg>

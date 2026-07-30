@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e8913a)}.region-accent{fill:var(--region-accent,#f7efe2)}.region-detail{fill:var(--region-detail,#3a2b26)}</style>
+  <!-- Kitsune ears: tall fox ears with cream inner fur and signature dark tips -->
+  <path class="region-fur" d="M358 248 Q328 112 386 34 Q468 92 504 208 Q440 258 358 248 Z"/>
+  <path class="region-accent" d="M394 218 Q378 128 398 84 Q450 134 472 204 Q434 228 394 218 Z"/>
+  <path class="region-detail" d="M386 34 Q354 82 356 128 Q398 138 440 116 Q414 68 386 34 Z"/>
+  <path class="region-fur" d="M666 248 Q696 112 638 34 Q556 92 520 208 Q584 258 666 248 Z"/>
+  <path class="region-accent" d="M630 218 Q646 128 626 84 Q574 134 552 204 Q590 228 630 218 Z"/>
+  <path class="region-detail" d="M638 34 Q670 82 668 128 Q626 138 584 116 Q610 68 638 34 Z"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#58402a)}.region-detail{fill:none;stroke:var(--region-detail,#33261c);stroke-width:12;stroke-linecap:round}</style>
+  <!-- Horse neck mane: crown tuft between the ears and a flowing fall of hair down the right side of the neck ending in pointed strands. -->
+  <path class="region-accent" d="M462 120 Q512 92 562 122 Q544 156 512 150 Q480 156 462 120 Z"/>
+  <path class="region-accent" d="M540 116 Q652 138 706 226 Q752 320 744 430 Q740 520 716 584 L700 496 L684 588 L662 498 L650 572 L636 476 Q630 380 646 300 Q620 190 540 116 Z"/>
+  <path class="region-detail" d="M676 240 Q712 330 706 440"/>
+  <path class="region-detail" d="M648 250 Q676 330 672 430"/>
+</svg>

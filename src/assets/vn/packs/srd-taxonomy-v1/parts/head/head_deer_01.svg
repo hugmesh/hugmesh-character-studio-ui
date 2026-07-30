@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#e4c9a6)}.region-accent{fill:var(--region-accent,#f9eed8)}.region-detail{fill:var(--region-detail,#a5805f)}</style>
+  <!-- Deer/Elk (SRD 5.1) head: huge soft side ears, rounded antler nubs, pale muzzle patch -->
+  <path class="region-fur" d="M348 272 Q262 158 172 164 Q140 176 160 216 Q230 282 334 314 Q366 296 348 272 Z"/>
+  <path class="region-accent" d="M330 276 Q262 200 202 202 Q184 210 198 232 Q250 274 322 300 Q338 290 330 276 Z"/>
+  <path class="region-fur" d="M676 272 Q762 158 852 164 Q884 176 864 216 Q794 282 690 314 Q658 296 676 272 Z"/>
+  <path class="region-accent" d="M694 276 Q762 200 822 202 Q840 210 826 232 Q774 274 702 300 Q686 290 694 276 Z"/>
+  <rect class="region-detail" x="436" y="92" width="34" height="64" rx="17"/>
+  <rect class="region-detail" x="554" y="92" width="34" height="64" rx="17"/>
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="328" cy="396" r="40"/>
+  <circle class="region-fur" cx="696" cy="396" r="40"/>
+  <ellipse class="region-accent" cx="512" cy="428" rx="78" ry="54"/>
+  <ellipse class="region-detail" cx="512" cy="400" rx="16" ry="11"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

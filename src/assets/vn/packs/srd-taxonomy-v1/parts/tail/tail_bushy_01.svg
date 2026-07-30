@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#c9ced9)}.region-accent{fill:var(--region-accent,#eceff5)}</style>
+  <!-- Bushy tail (SRD 5.1 canid/ursine): big fluffy curved plume of round tufts with a pale tip -->
+  <circle class="region-fur" cx="648" cy="700" r="96"/>
+  <circle class="region-fur" cx="726" cy="608" r="86"/>
+  <circle class="region-fur" cx="768" cy="506" r="76"/>
+  <circle class="region-fur" cx="764" cy="408" r="64"/>
+  <circle class="region-fur" cx="718" cy="342" r="36"/>
+  <circle class="region-fur" cx="786" cy="344" r="38"/>
+  <circle class="region-accent" cx="762" cy="398" r="46"/>
+  <circle class="region-accent" cx="748" cy="342" r="26"/>
+  <circle class="region-accent" cx="788" cy="346" r="26"/>
+</svg>

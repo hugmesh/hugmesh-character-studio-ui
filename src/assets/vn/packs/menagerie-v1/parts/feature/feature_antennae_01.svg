@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-accent{fill:var(--region-accent,#f0e6d0)}.region-detail{fill:var(--region-detail,#7a6248)}</style>
+  <!-- Feathered moth antennae: broad soft plumes (accent) rising from the skull crown over curved central stalks with slim barb lines (detail) -->
+  <path class="region-accent" d="M470 204 Q402 150 368 76 Q356 48 366 28 Q402 36 432 74 Q462 118 478 172 Q482 192 474 206 Z"/>
+  <path class="region-accent" d="M554 204 Q622 150 656 76 Q668 48 658 28 Q622 36 592 74 Q562 118 546 172 Q542 192 550 206 Z"/>
+  <path class="region-detail" d="M472 206 Q420 140 380 50 Q386 44 392 48 Q434 130 482 198 Z"/>
+  <path class="region-detail" d="M552 206 Q604 140 644 50 Q638 44 632 48 Q590 130 542 198 Z"/>
+  <path class="region-detail" d="M452 168 Q424 150 400 142 Q424 156 450 176 Z"/>
+  <path class="region-detail" d="M434 132 Q408 112 388 104 Q410 120 432 142 Z"/>
+  <path class="region-detail" d="M414 96 Q394 76 380 66 Q396 84 412 106 Z"/>
+  <path class="region-detail" d="M572 168 Q600 150 624 142 Q600 156 574 176 Z"/>
+  <path class="region-detail" d="M590 132 Q616 112 636 104 Q614 120 592 142 Z"/>
+  <path class="region-detail" d="M610 96 Q630 76 644 66 Q628 84 612 106 Z"/>
+</svg>

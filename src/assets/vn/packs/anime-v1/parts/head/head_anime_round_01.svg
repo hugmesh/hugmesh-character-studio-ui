@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#f5a8a8)}.region-detail{fill:var(--region-detail,#d99c86)}.region-line{fill:none;stroke:var(--region-line,#3a3340);stroke-width:10;stroke-linecap:round}</style>
+  <!-- Anime head, round: soft full cheeks, gentle chin, small human ears, blush hints (accent), nose tick (line); eye zone y~300 left clear -->
+  <path class="region-skin" d="M322 312 Q296 302 292 336 Q290 370 318 382 Q330 386 332 374 Q324 344 328 316 Z"/>
+  <path class="region-skin" d="M702 312 Q728 302 732 336 Q734 370 706 382 Q694 386 692 374 Q700 344 696 316 Z"/>
+  <ellipse class="region-detail" cx="308" cy="342" rx="8" ry="14"/>
+  <ellipse class="region-detail" cx="716" cy="342" rx="8" ry="14"/>
+  <path class="region-skin" d="M318 318 Q322 138 512 134 Q702 138 706 318 Q708 412 648 470 Q584 520 512 522 Q440 520 376 470 Q316 412 318 318 Z"/>
+  <ellipse class="region-accent" cx="424" cy="374" rx="34" ry="15"/>
+  <ellipse class="region-accent" cx="600" cy="374" rx="34" ry="15"/>
+  <path class="region-line" d="M514 384 q10 14 -4 26"/>
+  <path class="region-line" d="M400 456 q14 14 32 18"/>
+  <path class="region-line" d="M624 456 q-14 14 -32 18"/>
+</svg>

@@ -1,0 +1,753 @@
+{
+  "agent": "beasts-sky-steed",
+  "parts": [
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_avian_01",
+        "displayName": "Eagle",
+        "file": "parts/head/head_avian_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#d9b98f"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f2d5a0"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#f0a45c"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "eagle",
+          "giant-eagle",
+          "roc",
+          "bird-of-prey"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_hawk_01",
+        "displayName": "Hawk",
+        "file": "parts/head/head_avian_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#d99f7e"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f0cba6"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#d98a45"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "hawk",
+          "blood-hawk",
+          "bird-of-prey",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_owl_01",
+        "displayName": "Owl",
+        "file": "parts/head/head_owl_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#cdbba0"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f6ecd8"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#e5a95c"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "owl",
+          "giant-owl",
+          "owlbear"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_raven_01",
+        "displayName": "Raven",
+        "file": "parts/head/head_raven_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a6a2c2"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#c9c5dd"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#837b95"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "raven",
+          "crow"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_vulture_01",
+        "displayName": "Vulture",
+        "file": "parts/head/head_raven_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#bdafa0"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#e8ddcf"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#c2996d"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "vulture",
+          "giant-vulture",
+          "fluffy-neck-ruff",
+          "carrion",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_harpy_01",
+        "displayName": "Harpy",
+        "file": "parts/head/head_harpy_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f2cdb0"
+          },
+          {
+            "region": "hair",
+            "svgClass": "region-hair",
+            "defaultPalette": "#c3aede"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#a58ac9"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "monstrosity",
+          "harpy",
+          "feather-hair"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_griffon_01",
+        "displayName": "Griffon",
+        "file": "parts/head/head_griffon_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#efe2c4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#e8c795"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#d99f56"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "monstrosity",
+          "griffon",
+          "hippogriff",
+          "eagle-lion"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_cockatrice_01",
+        "displayName": "Cockatrice",
+        "file": "parts/head/head_cockatrice_01.svg",
+        "category": "head",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#e9dcae"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f0c684"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#f2968e"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#5a4450"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "monstrosity",
+          "cockatrice",
+          "rooster-comb",
+          "dizzy"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_equine_01",
+        "displayName": "Horse",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#d9b795"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f6e8d6"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#a9846a"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "horse",
+          "riding-horse",
+          "warhorse",
+          "draft-horse"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_pony_01",
+        "displayName": "Pony",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f0e3c8"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#faf3e4"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#c9a67e"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "pony",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_camel_01",
+        "displayName": "Camel",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#e4cfa2"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f6ecd4"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#b59468"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "beast",
+          "camel",
+          "mule",
+          "donkey",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_unicorn_01",
+        "displayName": "Unicorn",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f3ecf8"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#fbf7fd"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#e9b7d4"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "celestial",
+          "unicorn",
+          "pair-with-feature_unicorn_horn_01",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_pegasus_01",
+        "displayName": "Pegasus",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#eff4fa"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#fafcff"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#b9cfe9"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "celestial",
+          "pegasus",
+          "pair-with-wings_feathered_01",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "head",
+      "part": {
+        "id": "head_nightmare_01",
+        "displayName": "Nightmare",
+        "file": "parts/head/head_equine_01.svg",
+        "category": "head",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#9d8497"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#c2a3b4"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#f2a06e"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "fiend",
+          "nightmare",
+          "ember",
+          "flame-mane",
+          "palette-variant"
+        ]
+      }
+    },
+    {
+      "slot": "body",
+      "part": {
+        "id": "body_avian_01",
+        "displayName": "Avian Body",
+        "file": "parts/body/body_avian_01.svg",
+        "category": "base",
+        "headArchetype": "avian",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#8fb4d8"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#e7eff8"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#f0c26a"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "archetype",
+          "bird",
+          "wing-nubs",
+          "talons"
+        ]
+      }
+    },
+    {
+      "slot": "body",
+      "part": {
+        "id": "body_equine_01",
+        "displayName": "Equine Body",
+        "file": "parts/body/body_equine_01.svg",
+        "category": "base",
+        "headArchetype": "equine",
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#d9b795"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f6e8d6"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#a9846a"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "archetype",
+          "hooves",
+          "chest-tuft",
+          "horse",
+          "pony",
+          "camel",
+          "unicorn",
+          "pegasus",
+          "nightmare",
+          "centaur"
+        ]
+      }
+    },
+    {
+      "slot": "feature",
+      "part": {
+        "id": "muzzle_beak_01",
+        "displayName": "Avian Beak",
+        "file": "parts/feature/muzzle_beak_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "avian"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f2c470"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#daa353"
+          },
+          {
+            "region": "detail",
+            "svgClass": "region-detail",
+            "defaultPalette": "#b97f3e"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "feature",
+          "beak",
+          "eagle",
+          "hawk",
+          "owl",
+          "raven",
+          "vulture",
+          "griffon",
+          "cockatrice",
+          "roc"
+        ]
+      }
+    },
+    {
+      "slot": "feature",
+      "part": {
+        "id": "feature_unicorn_horn_01",
+        "displayName": "Unicorn Horn",
+        "file": "parts/feature/feature_unicorn_horn_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "equine",
+          "humanoid"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#ead9f4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f7cfe4"
+          },
+          {
+            "region": "line",
+            "svgClass": "region-line",
+            "defaultPalette": "#b48fd0"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "feature",
+          "unicorn",
+          "horn",
+          "spiral",
+          "celestial"
+        ]
+      }
+    },
+    {
+      "slot": "wings",
+      "part": {
+        "id": "wings_feathered_01",
+        "displayName": "Feathered Wings",
+        "file": "parts/wings/wings_feathered_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "*"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#f3eff8"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#d8cfe9"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "feature",
+          "wings",
+          "pegasus",
+          "celestial",
+          "angel",
+          "couatl",
+          "harpy",
+          "deva",
+          "planetar",
+          "solar"
+        ]
+      }
+    },
+    {
+      "slot": "tail",
+      "part": {
+        "id": "tail_fan_01",
+        "displayName": "Feather Fan Tail",
+        "file": "parts/tail/tail_fan_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "avian"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#a8cfc4"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#f2d8a8"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "feature",
+          "tail",
+          "fan",
+          "feathers",
+          "eagle",
+          "owl",
+          "raven",
+          "cockatrice"
+        ]
+      }
+    },
+    {
+      "slot": "tail",
+      "part": {
+        "id": "tail_horse_01",
+        "displayName": "Horse Tail",
+        "file": "parts/tail/tail_horse_01.svg",
+        "category": "feature",
+        "compatibleHeads": [
+          "equine",
+          "bovid_cervid"
+        ],
+        "tintRegions": [
+          {
+            "region": "fur",
+            "svgClass": "region-fur",
+            "defaultPalette": "#c9a482"
+          },
+          {
+            "region": "accent",
+            "svgClass": "region-accent",
+            "defaultPalette": "#ecd9c2"
+          }
+        ],
+        "source": "SRD 5.1",
+        "tags": [
+          "feature",
+          "tail",
+          "horse",
+          "pony",
+          "camel",
+          "warhorse",
+          "unicorn",
+          "pegasus",
+          "nightmare"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0855a)}.region-accent{fill:var(--region-accent,#e8d5b5)}.region-detail{fill:var(--region-detail,#c98f3f)}</style>
+  <!-- Gryphon head: raptor beak with feline tufted ears, feathered cheek fluff, and brow feathers. -->
+  <path class="region-fur" d="M348 118 q-20 -34 -18 -62 q26 16 40 46 z"/>
+  <path class="region-fur" d="M676 118 q20 -34 18 -62 q-26 16 -40 46 z"/>
+  <path class="region-fur" d="M394 224 L338 92 Q400 108 452 170 Q420 194 394 224 Z"/>
+  <path class="region-fur" d="M630 224 L686 92 Q624 108 572 170 Q604 194 630 224 Z"/>
+  <path class="region-detail" d="M394 208 L362 122 Q404 138 434 176 Q412 190 394 208 Z"/>
+  <path class="region-detail" d="M630 208 L662 122 Q620 138 590 176 Q612 190 630 208 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M344 340 Q296 372 288 428 Q316 424 336 404 Q330 442 346 472 Q372 452 380 418 Q392 380 368 348 Z"/>
+  <path class="region-fur" d="M680 340 Q728 372 736 428 Q708 424 688 404 Q694 442 678 472 Q652 452 644 418 Q632 380 656 348 Z"/>
+  <ellipse class="region-accent" cx="512" cy="380" rx="110" ry="86"/>
+  <path class="region-accent" d="M400 252 q40 -18 84 -6 l-6 22 q-40 -10 -74 4 z"/>
+  <path class="region-accent" d="M624 252 q-40 -18 -84 -6 l6 22 q40 -10 74 4 z"/>
+  <path class="region-detail" d="M458 392 h108 q2 40 -28 62 q-14 10 -20 24 q-6 -18 -20 -30 q-42 -28 -40 -56 z"/>
+</svg>

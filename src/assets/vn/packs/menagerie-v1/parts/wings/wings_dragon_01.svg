@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a63d40)}.region-accent{fill:var(--region-accent,#d98a6a)}.region-detail{fill:var(--region-detail,#d9c9a3)}</style>
+  <!-- Bat-style dragon wings: scaled arm and finger bones over stretched membrane, thumb claws at the wrists -->
+  <path class="region-accent" d="M402 466 Q312 348 236 244 L108 430 Q168 476 154 556 Q210 616 242 658 Q330 694 402 646 Z"/>
+  <path class="region-accent" d="M622 466 Q712 348 788 244 L916 430 Q856 476 870 556 Q814 616 782 658 Q694 694 622 646 Z"/>
+  <path class="region-fur" d="M402 448 Q320 340 244 248 L222 264 Q300 356 386 478 Z"/>
+  <path class="region-fur" d="M622 448 Q704 340 780 248 L802 264 Q724 356 638 478 Z"/>
+  <path class="region-fur" d="M236 240 L110 424 L126 434 L250 256 Z"/>
+  <path class="region-fur" d="M234 246 L146 552 L162 556 L250 262 Z"/>
+  <path class="region-fur" d="M238 250 L232 654 L248 654 L254 262 Z"/>
+  <path class="region-fur" d="M788 240 L914 424 L898 434 L774 256 Z"/>
+  <path class="region-fur" d="M790 246 L878 552 L862 556 L774 262 Z"/>
+  <path class="region-fur" d="M786 250 L792 654 L776 654 L770 262 Z"/>
+  <path class="region-detail" d="M230 244 l-30 -46 l40 22 z"/>
+  <path class="region-detail" d="M794 244 l30 -46 l-40 22 z"/>
+</svg>

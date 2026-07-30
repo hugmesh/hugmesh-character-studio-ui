@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#4a8f9c)}.region-accent{fill:var(--region-accent,#a5e3da)}.region-detail{fill:var(--region-detail,#28545e)}</style>
+  <!-- Kelpie head: horse-like dropped face with soft pale muzzle, webbed fin-mane crest over the crown, finned ears and triple gill slits on each cheek -->
+  <path class="region-fur" d="M404 196 L374 92 Q446 118 462 162 Z"/>
+  <path class="region-accent" d="M410 182 L392 116 Q436 136 446 162 Z"/>
+  <path class="region-fur" d="M620 196 L650 92 Q578 118 562 162 Z"/>
+  <path class="region-accent" d="M614 182 L632 116 Q588 136 578 162 Z"/>
+  <path class="region-accent" d="M430 190 L446 96 L474 160 L506 64 L530 158 L562 78 L582 162 L606 110 L610 196 Q512 158 430 190 Z"/>
+  <path class="region-detail" d="M444 100 L456 168 L436 172 Z"/>
+  <path class="region-detail" d="M504 70 L516 156 L494 158 Z"/>
+  <path class="region-detail" d="M560 82 L574 160 L552 164 Z"/>
+  <ellipse class="region-fur" cx="512" cy="308" rx="182" ry="180"/>
+  <path class="region-detail" d="M356 360 Q342 396 356 432 L368 426 Q358 396 368 366 Z"/>
+  <path class="region-detail" d="M386 372 Q374 402 386 432 L397 427 Q388 402 397 377 Z"/>
+  <path class="region-detail" d="M414 382 Q406 406 414 430 L424 426 Q418 406 424 386 Z"/>
+  <path class="region-detail" d="M668 360 Q682 396 668 432 L656 426 Q666 396 656 366 Z"/>
+  <path class="region-detail" d="M638 372 Q650 402 638 432 L627 427 Q636 402 627 377 Z"/>
+  <path class="region-detail" d="M610 382 Q618 406 610 430 L600 426 Q606 406 600 386 Z"/>
+  <path class="region-fur" d="M448 348 Q512 318 576 348 L590 468 Q590 524 512 528 Q434 524 434 468 Z"/>
+  <path class="region-accent" d="M448 450 Q512 422 576 450 Q584 514 512 520 Q440 514 448 450 Z"/>
+  <ellipse class="region-detail" cx="474" cy="480" rx="11" ry="15"/>
+  <ellipse class="region-detail" cx="550" cy="480" rx="11" ry="15"/>
+</svg>

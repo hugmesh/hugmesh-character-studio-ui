@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Sleepy eyes: heavy lids flatten the iris tops to half-moons, drowsy crease above each lid -->
+  <path class="region-iris" d="M398 342L494 342Q498 396 446 402Q394 396 398 342Z"/>
+  <path class="region-iris" d="M626 342L530 342Q526 396 578 402Q630 396 626 342Z"/>
+  <circle class="region-detail" cx="446" cy="364" r="15"/>
+  <circle class="region-detail" cx="578" cy="364" r="15"/>
+  <circle fill="#ffffff" cx="428" cy="356" r="10"/>
+  <circle fill="#ffffff" cx="560" cy="356" r="10"/>
+  <circle fill="#ffffff" cx="462" cy="382" r="5"/>
+  <circle fill="#ffffff" cx="594" cy="382" r="5"/>
+  <path class="region-line" d="M390 340Q446 332 502 340"/>
+  <path class="region-line" d="M522 340Q578 332 634 340"/>
+  <path class="region-line" d="M406 312Q446 304 486 312"/>
+  <path class="region-line" d="M538 312Q578 304 618 312"/>
+</svg>

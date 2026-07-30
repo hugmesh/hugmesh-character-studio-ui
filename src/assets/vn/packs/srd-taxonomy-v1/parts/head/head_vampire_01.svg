@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2e7f0)}.region-hair{fill:var(--region-hair,#9c8fc2)}.region-detail{fill:var(--region-detail,#8d7bb0)}</style>
+  <!-- Vampire (SRD 5.1) head: widow's-peak hair with sideburn points (region-hair), high upswept cape collar flaring behind the crown, mouth left to fang mouth parts -->
+  <path class="region-detail" d="M402 470 Q288 420 280 280 Q276 196 330 158 Q368 134 392 162 Q360 220 368 320 Q374 410 402 470 Z"/>
+  <path class="region-detail" d="M622 470 Q736 420 744 280 Q748 196 694 158 Q656 134 632 162 Q664 220 656 320 Q650 410 622 470 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <path class="region-hair" d="M312 322 Q300 140 512 114 Q724 140 712 322 Q702 230 648 204 Q600 182 560 206 Q532 222 516 250 Q512 258 508 250 Q492 222 464 206 Q424 182 376 204 Q322 230 312 322 Z"/>
+  <path class="region-hair" d="M312 300 Q306 360 330 400 Q342 356 340 300 Z"/>
+  <path class="region-hair" d="M712 300 Q718 360 694 400 Q682 356 684 300 Z"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+</svg>

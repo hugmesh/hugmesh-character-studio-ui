@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:16;stroke-linecap:round}</style>
+  <!-- Happy brows: raised high with a lively arch -->
+  <path class="region-line" d="M402 240 Q440 216 478 238"/>
+  <path class="region-line" d="M546 238 Q584 216 622 240"/>
+</svg>

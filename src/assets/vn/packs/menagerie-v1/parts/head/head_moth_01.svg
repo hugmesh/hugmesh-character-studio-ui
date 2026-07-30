@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cdb891)}.region-accent{fill:var(--region-accent,#f0e6d0)}.region-detail{fill:var(--region-detail,#7a6248)}</style>
+  <!-- Moth head: round fuzzy skull with crown tuft, thick jagged cream ruff wrapping the cheeks and chin, slim feathery antennae with barbs (detail) -->
+  <path class="region-detail" d="M468 180 Q424 116 376 66 Q398 118 448 190 Z"/>
+  <path class="region-detail" d="M420 118 L380 92 L428 150 Z"/>
+  <path class="region-detail" d="M448 158 L412 138 L458 186 Z"/>
+  <path class="region-detail" d="M556 180 Q600 116 648 66 Q626 118 576 190 Z"/>
+  <path class="region-detail" d="M604 118 L644 92 L596 150 Z"/>
+  <path class="region-detail" d="M576 158 L612 138 L566 186 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M470 142 Q512 96 554 142 Q512 120 470 142 Z"/>
+  <path class="region-fur" d="M330 262 Q300 240 286 210 Q322 222 348 246 Z"/>
+  <path class="region-fur" d="M694 262 Q724 240 738 210 Q702 222 676 246 Z"/>
+  <path class="region-accent" d="M338 396 L368 434 L322 446 L366 480 L330 500 L386 520 L356 552 L420 556 L402 596 L466 578 L468 616 L512 592 L556 616 L558 578 L622 596 L604 556 L668 552 L638 520 L694 500 L658 480 L702 446 L656 434 L686 396 Q620 468 512 472 Q404 468 338 396 Z"/>
+</svg>

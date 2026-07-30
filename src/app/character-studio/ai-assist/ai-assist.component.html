@@ -1,0 +1,23 @@
+@if (enabled()) {
+  <fieldset class="ai">
+    <legend>Describe your character (AI assist)</legend>
+    <div class="row">
+      <input
+        type="text"
+        class="prompt"
+        data-testid="cs-ai-prompt"
+        [value]="prompt()"
+        (input)="onPrompt($event)"
+        (keyup.enter)="generate()"
+        placeholder="e.g. a blue protogen with cyan eyes"
+        aria-label="Describe your character"
+      />
+      <button type="button" data-testid="cs-ai-generate" [disabled]="busy()" (click)="generate()">Generate</button>
+    </div>
+    <p class="status" role="status" aria-live="polite" data-testid="cs-ai-status">{{ status() }}</p>
+    <p class="hint">
+      Uses on-prem edge AI when your admin enables it; otherwise a local heuristic.
+      It only proposes a starting point — adjust everything below.
+    </p>
+  </fieldset>
+}

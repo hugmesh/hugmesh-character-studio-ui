@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-line{fill:none;stroke:var(--region-line,#4a3526);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Neutral mouth: small animal "w" under the nose with a faint lower-lip hint -->
+  <path class="region-line" d="M478 430 Q495 446 512 432 Q529 446 546 430"/>
+  <path class="region-line" d="M496 460 Q512 468 528 460"/>
+</svg>

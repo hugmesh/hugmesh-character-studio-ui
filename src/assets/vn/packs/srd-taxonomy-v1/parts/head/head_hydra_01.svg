@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#aacfdd)}.region-accent{fill:var(--region-accent,#d6e9f0)}.region-detail{fill:var(--region-detail,#6f93a6)}.region-line{fill:none;stroke:var(--region-line,#4a5f6e);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Hydra (SRD 5.1) head: big cute main head + two smaller heads on visible S-curve necks, tiny snouts all around -->
+  <path class="region-fur" d="M244 266 Q192 418 344 512 Q386 526 394 498 Q276 438 302 290 Z"/>
+  <path class="region-fur" d="M780 266 Q832 418 680 512 Q638 526 630 498 Q748 438 722 290 Z"/>
+  <circle class="region-fur" cx="256" cy="198" r="84"/>
+  <circle class="region-fur" cx="768" cy="198" r="84"/>
+  <ellipse class="region-accent" cx="244" cy="224" rx="22" ry="14"/>
+  <ellipse class="region-accent" cx="780" cy="224" rx="22" ry="14"/>
+  <circle class="region-detail" cx="228" cy="184" r="9"/>
+  <circle class="region-detail" cx="278" cy="184" r="9"/>
+  <circle class="region-detail" cx="746" cy="184" r="9"/>
+  <circle class="region-detail" cx="796" cy="184" r="9"/>
+  <circle fill="#ffffff" cx="225" cy="180" r="4"/>
+  <circle fill="#ffffff" cx="275" cy="180" r="4"/>
+  <circle fill="#ffffff" cx="743" cy="180" r="4"/>
+  <circle fill="#ffffff" cx="793" cy="180" r="4"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="202" cy="220" rx="18" ry="10"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="822" cy="220" rx="18" ry="10"/>
+  <path class="region-line" d="M222 242 q22 14 44 0"/>
+  <path class="region-line" d="M758 242 q22 14 44 0"/>
+  <circle class="region-fur" cx="328" cy="392" r="44"/>
+  <circle class="region-fur" cx="696" cy="392" r="44"/>
+  <circle class="region-fur" cx="512" cy="330" r="205"/>
+  <ellipse class="region-fur" cx="512" cy="420" rx="72" ry="42"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-line" d="M492 398 l7 6"/>
+  <path class="region-line" d="M532 398 l-7 6"/>
+</svg>

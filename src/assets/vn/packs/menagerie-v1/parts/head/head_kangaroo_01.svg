@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5854f)}.region-accent{fill:var(--region-accent,#e6cba4)}.region-detail{fill:var(--region-detail,#6b4226)}</style>
+  <!-- Kangaroo head: tall oval ears with dark inner ear, round skull with small cheek fluff, long tapered muzzle with cream underside and broad dark nose -->
+  <path class="region-fur" d="M378 258 Q330 160 352 52 Q398 36 436 96 Q462 178 442 262 Q410 244 378 258 Z"/>
+  <path class="region-fur" d="M646 258 Q694 160 672 52 Q626 36 588 96 Q562 178 582 262 Q614 244 646 258 Z"/>
+  <path class="region-detail" d="M392 236 Q362 158 376 84 Q402 92 420 136 Q434 190 424 240 Q408 230 392 236 Z"/>
+  <path class="region-detail" d="M632 236 Q662 158 648 84 Q622 92 604 136 Q590 190 600 240 Q616 230 632 236 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="198"/>
+  <path class="region-fur" d="M330 386 Q314 424 330 458 L382 432 Q356 410 356 380 Z"/>
+  <path class="region-fur" d="M694 386 Q710 424 694 458 L642 432 Q668 410 668 380 Z"/>
+  <path class="region-fur" d="M428 348 Q512 312 596 348 Q606 424 566 482 Q540 506 512 508 Q484 506 458 482 Q418 424 428 348 Z"/>
+  <path class="region-accent" d="M452 396 Q512 372 572 396 Q570 452 538 484 Q512 496 486 484 Q454 452 452 396 Z"/>
+  <path class="region-detail" d="M466 366 Q512 344 558 366 Q556 400 512 412 Q468 400 466 366 Z"/>
+</svg>

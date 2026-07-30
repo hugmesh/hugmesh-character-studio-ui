@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#cfae9e)}.region-accent{fill:var(--region-accent,#f2dcd2)}.region-line{fill:none;stroke:var(--region-line,#6e544c);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Boar (SRD 5.1) head: big pale snout disc w/ centered capsule nostrils, ivory up-tusk nubs at the mouth corners flanking the zone, bristly-but-round crown mane -->
+  <circle class="region-fur" cx="512" cy="112" r="34"/>
+  <circle class="region-fur" cx="452" cy="124" r="34"/>
+  <circle class="region-fur" cx="572" cy="124" r="34"/>
+  <circle class="region-fur" cx="396" cy="150" r="34"/>
+  <circle class="region-fur" cx="628" cy="150" r="34"/>
+  <path class="region-fur" d="M350 200 Q316 118 366 102 Q414 106 420 178 Q392 206 350 200 Z"/>
+  <path class="region-fur" d="M674 200 Q708 118 658 102 Q610 106 604 178 Q632 206 674 200 Z"/>
+  <path class="region-accent" d="M366 188 Q346 134 378 124 Q402 128 404 172 Q384 190 366 188 Z"/>
+  <path class="region-accent" d="M658 188 Q678 134 646 124 Q622 128 620 172 Q640 190 658 188 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="204"/>
+  <circle class="region-fur" cx="326" cy="398" r="42"/>
+  <circle class="region-fur" cx="698" cy="398" r="42"/>
+  <ellipse class="region-accent" cx="512" cy="410" rx="104" ry="62"/>
+  <path class="region-line" d="M501 386 l0 14"/>
+  <path class="region-line" d="M523 386 l0 14"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="390" cy="412" rx="36" ry="20"/>
+  <ellipse fill="#f2a0b3" opacity="0.55" cx="634" cy="412" rx="36" ry="20"/>
+  <path class="region-accent" d="M392 480 Q378 426 404 412 Q428 420 424 472 Q410 490 392 480 Z"/>
+  <path class="region-accent" d="M632 480 Q646 426 620 412 Q596 420 600 472 Q614 490 632 480 Z"/>
+</svg>

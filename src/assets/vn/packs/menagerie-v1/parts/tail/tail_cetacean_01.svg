@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:var(--region-detail,#2f3a45)}</style>
+  <!-- Cetacean tail: smooth muscular stem sweeping back from the hip into a symmetric horizontal fluke with swept crescent lobes and a deep center notch, pale underside panels -->
+  <path class="region-fur" d="M626 650 Q730 638 806 652 Q846 662 856 678 Q846 702 800 712 Q712 726 620 706 Z"/>
+  <path class="region-fur" d="M848 662 Q900 608 972 586 Q982 636 942 674 Q920 686 896 686 Q922 694 946 714 Q980 752 968 794 Q896 766 846 700 Q838 680 848 662 Z"/>
+  <path class="region-accent" d="M874 700 Q916 742 944 768 Q950 736 926 710 Q904 692 880 690 Z"/>
+  <path class="region-accent" d="M876 664 Q912 630 950 614 Q952 646 924 668 Q902 680 882 678 Z"/>
+  <path class="region-accent" d="M648 700 Q724 716 788 706 Q736 728 662 716 Z"/>
+  <path class="region-detail" d="M812 650 l20 -16 l8 16 Z"/>
+  <path class="region-detail" d="M786 646 l16 -12 l6 12 Z"/>
+  <circle class="region-detail" cx="742" cy="686" r="7"/>
+  <circle class="region-detail" cx="700" cy="694" r="7"/>
+</svg>

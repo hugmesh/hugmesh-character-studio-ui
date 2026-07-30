@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-hair{fill:var(--region-hair,#2e2e40)}.region-accent{fill:var(--region-accent,#52527a)}</style>
+  <!-- Hime cut: perfectly blunt straight bangs, cheek-length blunt side locks, long straight back curtains, horizontal sheen band. -->
+  <path class="region-hair" d="M306 380 Q298 108 512 92 Q726 108 718 380 Q704 238 512 212 Q320 238 306 380 Z"/>
+  <path class="region-hair" d="M368 168 L656 168 L656 268 L620 280 L584 268 L548 280 L512 268 L476 280 L440 268 L404 280 L368 268 Z"/>
+  <path class="region-hair" d="M300 248 Q292 340 296 440 L362 440 Q368 340 362 256 Q328 218 300 248 Z"/>
+  <path class="region-hair" d="M724 248 Q732 340 728 440 L662 440 Q656 340 662 256 Q696 218 724 248 Z"/>
+  <path class="region-hair" d="M304 246 Q276 380 272 540 Q270 640 280 706 L360 706 Q354 560 358 420 Q362 320 370 262 Q332 216 304 246 Z"/>
+  <path class="region-hair" d="M720 246 Q748 380 752 540 Q754 640 744 706 L664 706 Q670 560 666 420 Q662 320 654 262 Q692 216 720 246 Z"/>
+  <path class="region-accent" d="M384 196 Q512 182 640 196 Q512 168 384 196 Z"/>
+  <path class="region-accent" d="M298 350 Q290 500 296 640 Q310 502 314 358 Q308 332 298 350 Z"/>
+  <path class="region-accent" d="M726 350 Q734 500 728 640 Q714 502 710 358 Q716 332 726 350 Z"/>
+  <path class="region-accent" d="M316 280 Q310 340 314 404 Q324 342 326 286 Q322 268 316 280 Z"/>
+</svg>

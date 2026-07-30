@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-cloth{fill:var(--region-cloth,#ecc9b0)}.region-clothtrim{fill:var(--region-clothtrim,#f8eeda)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Monk gi (SRD 5.1): wrap-over V collar, cream sash with round knot and hanging tails, wide bell cuffs -->
+  <ellipse class="region-cloth" cx="372" cy="620" rx="54" ry="74"/>
+  <ellipse class="region-cloth" cx="652" cy="620" rx="54" ry="74"/>
+  <rect class="region-clothtrim" x="326" y="662" width="92" height="34" rx="17"/>
+  <rect class="region-clothtrim" x="606" y="662" width="92" height="34" rx="17"/>
+  <path class="region-cloth" d="M512 505 Q648 505 668 560 Q690 642 682 760 Q676 842 600 862 L424 862 Q348 842 342 760 Q334 642 356 560 Q376 505 512 505 Z"/>
+  <path class="region-clothtrim" d="M432 506 Q502 570 560 640 Q542 668 514 676 Q446 610 400 548 Q412 520 432 506 Z"/>
+  <path class="region-clothtrim" d="M592 506 Q522 570 464 640 Q482 668 510 676 Q578 610 624 548 Q612 520 592 506 Z"/>
+  <path class="region-line" d="M424 836 Q512 854 600 836"/>
+  <path class="region-line" d="M512 762 Q508 800 514 846"/>
+  <rect class="region-clothtrim" x="366" y="668" width="292" height="54" rx="27"/>
+  <path class="region-clothtrim" d="M490 714 Q466 780 484 828 Q500 814 506 722 Z"/>
+  <path class="region-clothtrim" d="M534 714 Q560 778 542 824 Q524 812 518 722 Z"/>
+  <circle class="region-cloth" cx="512" cy="694" r="30"/>
+  <circle class="region-clothtrim" cx="512" cy="694" r="12"/>
+</svg>

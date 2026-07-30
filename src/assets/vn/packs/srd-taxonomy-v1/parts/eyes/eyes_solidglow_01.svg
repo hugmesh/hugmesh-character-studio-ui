@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#8ce8cf)}</style>
+  <!-- Solid glow eyes: pupil-less spectral ovals with a soft halo ring (undead/fiend/elemental) -->
+  <ellipse class="region-iris" opacity="0.35" cx="446" cy="350" rx="58" ry="74"/>
+  <ellipse class="region-iris" opacity="0.35" cx="578" cy="350" rx="58" ry="74"/>
+  <ellipse class="region-iris" cx="446" cy="350" rx="46" ry="60"/>
+  <ellipse class="region-iris" cx="578" cy="350" rx="46" ry="60"/>
+  <circle fill="#ffffff" cx="430" cy="318" r="13"/>
+  <circle fill="#ffffff" cx="562" cy="318" r="13"/>
+  <circle fill="#ffffff" cx="462" cy="386" r="5"/>
+  <circle fill="#ffffff" cx="594" cy="386" r="5"/>
+</svg>

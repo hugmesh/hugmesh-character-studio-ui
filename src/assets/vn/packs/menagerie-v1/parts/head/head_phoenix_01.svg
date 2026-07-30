@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d9503a)}.region-accent{fill:var(--region-accent,#f7a83c)}.region-detail{fill:var(--region-detail,#e8952f)}</style>
+  <!-- Phoenix head: round avian skull crowned with three flickering flame plumes, ember cheek tufts, golden facial disc, and a small elegant pointed beak. -->
+  <path class="region-accent" d="M470 210 Q414 176 390 118 Q382 88 358 70 Q400 62 428 96 Q468 142 500 200 Z"/>
+  <path class="region-accent" d="M486 200 Q470 128 494 64 Q504 34 490 12 Q532 26 534 78 Q536 146 540 200 Z"/>
+  <path class="region-accent" d="M554 210 Q610 176 634 118 Q642 88 666 70 Q624 62 596 96 Q556 142 524 200 Z"/>
+  <path class="region-fur" d="M504 160 Q494 110 506 58 Q512 40 520 58 Q530 112 522 160 Z"/>
+  <path class="region-fur" d="M448 168 Q416 140 402 100 Q394 82 378 74 Q404 74 422 96 Q450 128 470 168 Z"/>
+  <path class="region-fur" d="M576 168 Q608 140 622 100 Q630 82 646 74 Q620 74 602 96 Q574 128 554 168 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="194"/>
+  <path class="region-accent" d="M330 368 q-36 4 -54 32 q26 10 48 0 q-18 20 -22 46 q32 -6 48 -30 z"/>
+  <path class="region-accent" d="M694 368 q36 4 54 32 q-26 10 -48 0 q18 20 22 46 q-32 -6 -48 -30 z"/>
+  <ellipse class="region-accent" cx="512" cy="356" rx="124" ry="108"/>
+  <path class="region-detail" d="M458 396 h108 q-14 36 -42 54 q-12 8 -24 0 q-28 -18 -42 -54 z"/>
+  <path class="region-detail" d="M480 450 q32 22 64 0 q-6 22 -32 26 q-26 -4 -32 -26 z"/>
+</svg>

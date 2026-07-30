@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b0855a)}.region-accent{fill:var(--region-accent,#e8d5b5)}.region-detail{fill:var(--region-detail,#c98f3f)}</style>
+  <!-- Gryphon tail: slender lion tail sweeping from the hip, ending in a three-plume feather tip with a quill band. -->
+  <path class="region-fur" d="M640 686 Q744 726 782 826 Q806 886 872 896 L886 862 Q838 852 818 782 Q788 682 664 650 Q636 660 640 686 Z"/>
+  <path class="region-fur" d="M700 712 q-24 14 -30 38 q24 0 38 -18 z"/>
+  <path class="region-fur" d="M760 792 q-26 18 -30 44 q26 -2 40 -22 z"/>
+  <path class="region-fur" d="M858 856 Q900 780 962 756 Q948 846 894 896 Z"/>
+  <path class="region-fur" d="M868 872 Q940 832 1000 842 Q952 908 882 908 Z"/>
+  <path class="region-fur" d="M862 886 Q914 928 930 980 Q866 958 844 904 Z"/>
+  <path class="region-accent" d="M862 862 Q890 796 944 770 Q936 844 890 890 Z"/>
+  <path class="region-accent" d="M870 876 Q930 844 986 852 Q944 902 884 902 Z"/>
+  <path class="region-accent" d="M866 888 Q908 924 922 968 Q866 950 850 902 Z"/>
+  <path class="region-detail" d="M850 854 q30 2 42 34 q-4 16 -24 14 q-24 -10 -18 -48 z"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#9c6a3f)}.region-detail{fill:var(--region-detail,#33261c)}</style>
+  <!-- Tall equine body: thick neck, broad muscular chest and shoulders, long legs ending in large single dark hooves. -->
+  <path class="region-fur" d="M468 450 L556 450 L576 548 Q512 572 448 548 Z"/>
+  <path class="region-fur" d="M448 546 Q362 592 374 700 Q382 786 456 810 L568 810 Q642 786 650 700 Q662 592 576 546 Q512 574 448 546 Z"/>
+  <path class="region-fur" d="M404 586 Q374 662 386 740 L416 746 Q422 666 442 606 Z"/>
+  <path class="region-fur" d="M620 586 Q650 662 638 740 L608 746 Q602 666 582 606 Z"/>
+  <ellipse class="region-detail" cx="400" cy="756" rx="19" ry="16"/>
+  <ellipse class="region-detail" cx="624" cy="756" rx="19" ry="16"/>
+  <path class="region-fur" d="M446 788 Q430 878 442 936 L492 936 Q498 862 492 800 Z"/>
+  <path class="region-fur" d="M532 800 Q526 862 532 936 L582 936 Q594 878 578 788 Z"/>
+  <path class="region-detail" d="M436 934 L496 934 L490 988 L444 988 Z"/>
+  <path class="region-detail" d="M528 934 L588 934 L580 988 L534 988 Z"/>
+</svg>

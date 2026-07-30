@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c470)}.region-accent{fill:var(--region-accent,#daa353)}.region-detail{fill:var(--region-detail,#b97f3e)}</style>
+  <!-- Avian beak feature (SRD 5.1): big rounded upper beak + lower mandible + oval nostrils (clip-on for avian heads) -->
+  <path class="region-accent" d="M470 458 Q512 486 554 458 Q550 494 512 502 Q474 494 470 458 Z"/>
+  <path class="region-fur" d="M438 398 Q512 374 586 398 Q580 448 524 472 Q512 477 500 472 Q444 448 438 398 Z"/>
+  <ellipse class="region-detail" cx="482" cy="408" rx="7" ry="10"/>
+  <ellipse class="region-detail" cx="542" cy="408" rx="7" ry="10"/>
+</svg>

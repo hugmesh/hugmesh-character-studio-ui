@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#b5502a)}.region-accent{fill:var(--region-accent,#f2e8da)}.region-detail{fill:var(--region-detail,#402a24)}</style>
+  <!-- Red panda head: rust round skull with big fluffy cheeks, large white-rimmed ears with dark centers, white cheek patches, muzzle and brow spots, dark tear stripes down the cheeks, dark nose -->
+  <path class="region-accent" d="M330 240 Q304 138 362 84 Q436 116 462 196 Q394 210 330 240 Z"/>
+  <path class="region-accent" d="M694 240 Q720 138 662 84 Q588 116 562 196 Q630 210 694 240 Z"/>
+  <path class="region-fur" d="M348 224 Q332 152 372 110 Q426 136 446 192 Q396 204 348 224 Z"/>
+  <path class="region-fur" d="M676 224 Q692 152 652 110 Q598 136 578 192 Q628 204 676 224 Z"/>
+  <path class="region-detail" d="M368 204 Q362 162 382 134 Q408 152 420 188 Q394 196 368 204 Z"/>
+  <path class="region-detail" d="M656 204 Q662 162 642 134 Q616 152 604 188 Q630 196 656 204 Z"/>
+  <circle class="region-fur" cx="512" cy="330" r="198"/>
+  <path class="region-fur" d="M316 340 L254 366 L310 392 L266 434 L330 430 Q314 386 316 340 Z"/>
+  <path class="region-fur" d="M708 340 L770 366 L714 392 L758 434 L694 430 Q710 386 708 340 Z"/>
+  <path class="region-accent" d="M330 320 Q310 380 336 440 Q378 470 424 452 Q446 402 428 348 Q380 322 330 320 Z"/>
+  <path class="region-accent" d="M694 320 Q714 380 688 440 Q646 470 600 452 Q578 402 596 348 Q644 322 694 320 Z"/>
+  <ellipse class="region-accent" cx="440" cy="248" rx="30" ry="20"/>
+  <ellipse class="region-accent" cx="584" cy="248" rx="30" ry="20"/>
+  <path class="region-accent" d="M448 386 Q512 366 576 386 Q592 434 566 470 Q540 494 512 496 Q484 494 458 470 Q432 434 448 386 Z"/>
+  <path class="region-detail" d="M432 330 Q414 374 424 424 Q436 428 448 420 Q444 372 452 336 Q442 328 432 330 Z"/>
+  <path class="region-detail" d="M592 330 Q610 374 600 424 Q588 428 576 420 Q580 372 572 336 Q582 328 592 330 Z"/>
+  <path class="region-detail" d="M482 396 Q512 386 542 396 Q546 420 526 434 Q512 442 498 434 Q478 420 482 396 Z"/>
+  <path class="region-detail" d="M509 440 L515 440 L513 460 L511 460 Z"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#6b7f92)}.region-accent{fill:var(--region-accent,#e8eef2)}.region-detail{fill:none;stroke:var(--region-detail,#2f3a45);stroke-width:11;stroke-linecap:round}</style>
+  <!-- Shark head: blunt wide snout with pale countershaded under-jaw, angled nostril slits, three gill slits per cheek -->
+  <circle class="region-fur" cx="512" cy="330" r="200"/>
+  <path class="region-fur" d="M348 356 Q334 470 428 522 Q470 546 512 548 Q554 546 596 522 Q690 470 676 356 Q640 420 512 428 Q384 420 348 356 Z"/>
+  <ellipse class="region-fur" cx="512" cy="470" rx="150" ry="84"/>
+  <ellipse class="region-accent" cx="512" cy="500" rx="112" ry="48"/>
+  <path class="region-detail" d="M468 414 l20 14"/>
+  <path class="region-detail" d="M556 414 l-20 14"/>
+  <path class="region-detail" d="M366 344 q-16 36 -2 70"/>
+  <path class="region-detail" d="M398 362 q-14 32 -2 62"/>
+  <path class="region-detail" d="M430 376 q-12 28 -2 54"/>
+  <path class="region-detail" d="M658 344 q16 36 2 70"/>
+  <path class="region-detail" d="M626 362 q14 32 2 62"/>
+  <path class="region-detail" d="M594 376 q12 28 2 54"/>
+</svg>

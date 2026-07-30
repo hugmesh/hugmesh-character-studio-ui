@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-iris{fill:var(--region-iris,#3a78c2)}.region-detail{fill:var(--region-detail,#33303b)}.region-line{fill:none;stroke:var(--region-line,#5a4450);stroke-width:14;stroke-linecap:round}</style>
+  <!-- Thinking eyes: irises drift up-and-aside, soft flat concentration lids -->
+  <ellipse class="region-iris" cx="458" cy="338" rx="48" ry="62"/>
+  <ellipse class="region-iris" cx="590" cy="338" rx="48" ry="62"/>
+  <circle class="region-detail" cx="468" cy="328" r="17"/>
+  <circle class="region-detail" cx="600" cy="328" r="17"/>
+  <circle fill="#ffffff" cx="446" cy="306" r="13"/>
+  <circle fill="#ffffff" cx="578" cy="306" r="13"/>
+  <circle fill="#ffffff" cx="492" cy="368" r="5"/>
+  <circle fill="#ffffff" cx="624" cy="368" r="5"/>
+  <path class="region-line" d="M408 292Q456 280 508 294"/>
+  <path class="region-line" d="M540 294Q588 280 640 292"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#d3ecf2)}.region-accent{fill:var(--region-accent,#eef9fb)}</style>
+  <!-- Insect wings (SRD 5.1 sprite/stirge kin): pastel double wing pairs, lighter inner panes for a translucent look -->
+  <path class="region-fur" d="M446 556 Q300 330 186 348 Q124 370 164 458 Q248 566 442 598 Z"/>
+  <path class="region-accent" d="M436 562 Q322 402 240 412 Q198 428 226 484 Q292 552 430 588 Z"/>
+  <path class="region-fur" d="M448 612 Q292 598 238 678 Q222 734 296 740 Q390 722 454 660 Z"/>
+  <path class="region-accent" d="M444 618 Q318 610 278 668 Q268 706 320 708 Q388 694 444 652 Z"/>
+  <path class="region-fur" d="M578 556 Q724 330 838 348 Q900 370 860 458 Q776 566 582 598 Z"/>
+  <path class="region-accent" d="M588 562 Q702 402 784 412 Q826 428 798 484 Q732 552 594 588 Z"/>
+  <path class="region-fur" d="M576 612 Q732 598 786 678 Q802 734 728 740 Q634 722 570 660 Z"/>
+  <path class="region-accent" d="M580 618 Q706 610 746 668 Q756 706 704 708 Q636 694 580 652 Z"/>
+</svg>

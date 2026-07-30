@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#f2c9a8)}.region-accent{fill:var(--region-accent,#f9ddcb)}</style>
+  <!-- Elf ears clip-on (SRD 5.1): long pointed side ears with soft inner shading, fits any humanoid head -->
+  <path class="region-fur" d="M372 350 Q300 322 210 254 Q262 250 338 292 Q366 312 374 338 Z"/>
+  <path class="region-accent" d="M366 344 Q312 320 258 282 Q300 286 350 316 Z"/>
+  <path class="region-fur" d="M652 350 Q724 322 814 254 Q762 250 686 292 Q658 312 650 338 Z"/>
+  <path class="region-accent" d="M658 344 Q712 320 766 282 Q724 286 674 316 Z"/>
+</svg>

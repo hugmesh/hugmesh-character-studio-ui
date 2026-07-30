@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-fur{fill:var(--region-fur,#a8cfc4)}.region-accent{fill:var(--region-accent,#f2d8a8)}</style>
+  <!-- Avian fan tail feature (SRD 5.1): six round feather petals fanned wide + gold tip dots, peeks around the body -->
+  <path class="region-fur" d="M430 700 Q330 630 282 606 Q252 594 250 622 Q256 664 330 706 Q390 730 430 700 Z"/>
+  <path class="region-fur" d="M430 750 Q330 716 268 700 Q232 694 236 722 Q248 762 330 780 Q396 788 430 750 Z"/>
+  <path class="region-fur" d="M450 800 Q360 800 306 812 Q276 820 288 844 Q312 872 380 866 Q430 856 450 800 Z"/>
+  <path class="region-fur" d="M594 700 Q694 630 742 606 Q772 594 774 622 Q768 664 694 706 Q634 730 594 700 Z"/>
+  <path class="region-fur" d="M594 750 Q694 716 756 700 Q792 694 788 722 Q776 762 694 780 Q628 788 594 750 Z"/>
+  <path class="region-fur" d="M574 800 Q664 800 718 812 Q748 820 736 844 Q712 872 644 866 Q594 856 574 800 Z"/>
+  <circle class="region-accent" cx="284" cy="628" r="15"/>
+  <circle class="region-accent" cx="262" cy="716" r="15"/>
+  <circle class="region-accent" cx="308" cy="834" r="13"/>
+  <circle class="region-accent" cx="740" cy="628" r="15"/>
+  <circle class="region-accent" cx="762" cy="716" r="15"/>
+  <circle class="region-accent" cx="716" cy="834" r="13"/>
+</svg>
