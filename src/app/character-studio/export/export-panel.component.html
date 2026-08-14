@@ -5,7 +5,28 @@
     data-testid="cs-set-avatar"
     [disabled]="busy() || !state.isValid()"
     (click)="setAsAvatar()"
-  >Set as Matrix avatar</button>
+  >Set as my mesh avatar</button>
+  <button
+    type="button"
+    class="primary"
+    data-testid="cs-use-everywhere"
+    [disabled]="busy() || !state.isValid()"
+    (click)="useEverywhere()"
+  >Use everywhere</button>
   <button type="button" data-testid="cs-export-download" [disabled]="busy()" (click)="download()">Download PNG</button>
   <p class="status" role="status" aria-live="polite" data-testid="cs-export-status">{{ status() }}</p>
+  <!-- Per-platform outcomes. "Skipped" is stated as a ROLE fact, not a failure:
+       a user without ROLE_MATRIX/ROLE_MASTODON simply has no avatar to set
+       there, and conflating that with an error would misreport their mesh. -->
+  @if (platformResults().length) {
+    <ul class="platform-results" data-testid="cs-platform-results">
+      @for (r of platformResults(); track r.platform) {
+        <li [attr.data-outcome]="r.outcome">
+          <strong>{{ r.platform }}</strong>:
+          {{ r.outcome === 'applied' ? 'applied' : r.outcome === 'skipped' ? 'skipped' : 'failed' }}
+          @if (r.detail) { <span class="detail"> — {{ r.detail }}</span> }
+        </li>
+      }
+    </ul>
+  }
 </div>

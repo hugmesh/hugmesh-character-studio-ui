@@ -7,6 +7,21 @@ export interface AvatarResult {
   avatarUrl: string;
 }
 
+/** One platform's outcome in a cross-platform apply. `skipped` is NOT a failure:
+ *  it means the signed-in user lacks that platform's access role, which the
+ *  gateway answers with 403 (MatrixProxyController / MastodonProxyController both
+ *  gate on ROLE_MATRIX / ROLE_MASTODON). Reporting it separately keeps the UI
+ *  honest — "not yours to set" must never read as "we tried and failed". */
+export type PlatformOutcome = 'applied' | 'skipped' | 'failed';
+
+export interface PlatformResult {
+  /** Human label for the surface, e.g. 'This mesh', 'Matrix', 'Mastodon'. */
+  platform: string;
+  outcome: PlatformOutcome;
+  /** Why, when the outcome is not `applied`. Shown verbatim to the operator. */
+  detail?: string;
+}
+
 /**
  * Hand-written fetch client for the user-bff (the org convention; no HttpClient).
  * Authenticates via the HttpOnly `bff_` cookie ({@link SessionService} credentials)
@@ -65,5 +80,106 @@ export class CharacterBffService {
       throw new Error(`exportAvatar ${res.status}`);
     }
     return (await res.json()) as AvatarResult;
+  }
+
+  // ── cross-platform apply ────────────────────────────────────────────────────
+  // The generators produce ONE image; the operator asked for it to land on every
+  // platform that actually has an avatar, not just this mesh's profile. Each leg
+  // below uses a mechanism verified against the RUNNING mesh, and each reports
+  // independently: one platform failing (or not being the user's to set) never
+  // hides the others' outcome.
+  //
+  // Platforms deliberately ABSENT here, because they have no avatar to set:
+  // wiki (no user-presentation layer at all — only a raw author subject), tube
+  // (a personal YouTube mirror; no local creator profiles) and owncast (upstream
+  // has instance branding only, no per-user avatar). Claiming those would be a
+  // lie in the results list.
+
+  /** Set the avatar on every platform this user can. Never throws: the caller
+   *  renders the per-platform list, so a partial success stays legible. */
+  async applyEverywhere(png: Blob): Promise<PlatformResult[]> {
+    const results: PlatformResult[] = [];
+
+    // 1. This mesh's profile — the canonical setter both UIs already use.
+    try {
+      await this.exportAvatar(png);
+      results.push({ platform: 'This mesh', outcome: 'applied' });
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      results.push(
+        msg === 'blocked-by-content-policy'
+          ? { platform: 'This mesh', outcome: 'failed', detail: 'Blocked by the content policy.' }
+          : { platform: 'This mesh', outcome: 'failed', detail: msg });
+    }
+
+    results.push(await this.applyToMatrix(png));
+    results.push(await this.applyToMastodon(png));
+    return results;
+  }
+
+  /** Matrix: upload the bytes to the homeserver media repo through the hsproxy,
+   *  then point the profile at the returned mxc://. Two calls, both proxied — the
+   *  browser never holds a homeserver token. */
+  private async applyToMatrix(png: Blob): Promise<PlatformResult> {
+    const hs = `${this.base}/matrix`;
+    try {
+      const who = await fetch(`${hs}/_matrix/client/v3/account/whoami`, {
+        credentials: this.session.credentials,
+      });
+      if (who.status === 403 || who.status === 401) {
+        return { platform: 'Matrix', outcome: 'skipped', detail: 'Your account does not have Matrix access.' };
+      }
+      if (!who.ok) {
+        return { platform: 'Matrix', outcome: 'failed', detail: `whoami ${who.status}` };
+      }
+      const userId = (await who.json()).user_id as string;
+
+      const up = await fetch(`${hs}/_matrix/media/v3/upload`, {
+        method: 'POST',
+        headers: { 'Content-Type': png.type || 'image/png' },
+        credentials: this.session.credentials,
+        body: png,
+      });
+      if (!up.ok) {
+        return { platform: 'Matrix', outcome: 'failed', detail: `media upload ${up.status}` };
+      }
+      const contentUri = (await up.json()).content_uri as string;
+
+      // The MXID rides RAW (@ and : unescaped): the hsproxy re-escapes '%', so a
+      // percent-encoded segment arrives double-escaped and misses the route.
+      const set = await fetch(
+        `${hs}/_matrix/client/v3/profile/${userId}/avatar_url`,
+        {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: this.session.credentials,
+          body: JSON.stringify({ avatar_url: contentUri }),
+        });
+      return set.ok
+        ? { platform: 'Matrix', outcome: 'applied' }
+        : { platform: 'Matrix', outcome: 'failed', detail: `set avatar ${set.status}` };
+    } catch (e) {
+      return { platform: 'Matrix', outcome: 'failed', detail: e instanceof Error ? e.message : String(e) };
+    }
+  }
+
+  /** Mastodon (and Akkoma, which is API-compatible): one multipart PATCH. The
+   *  proxy streams the body verbatim so the multipart boundary survives. */
+  private async applyToMastodon(png: Blob): Promise<PlatformResult> {
+    try {
+      const form = new FormData();
+      form.append('avatar', png, 'avatar.png');
+      const res = await fetch(
+        `${this.base}/mastodon/api/v1/accounts/update_credentials`,
+        { method: 'PATCH', credentials: this.session.credentials, body: form });
+      if (res.status === 403 || res.status === 401) {
+        return { platform: 'Mastodon', outcome: 'skipped', detail: 'Your account does not have Mastodon access.' };
+      }
+      return res.ok
+        ? { platform: 'Mastodon', outcome: 'applied' }
+        : { platform: 'Mastodon', outcome: 'failed', detail: `update_credentials ${res.status}` };
+    } catch (e) {
+      return { platform: 'Mastodon', outcome: 'failed', detail: e instanceof Error ? e.message : String(e) };
+    }
   }
 }
