@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#d9a76a)}.region-detail{fill:var(--region-detail,#8f6534)}</style>
+  <!-- Anime body E: rangy masc-leaning androgynous silhouette — button-up shirt (accent) with collar folds, buttons, chest pocket + rolled-sleeve cuffs (detail), bare skin forearms -->
+  <path class="region-skin" d="M476 456 h72 v70 q-36 22 -72 0 z"/>
+  <path class="region-skin" d="M390 648 L386 736 Q384 758 401 760 Q418 758 416 738 L412 648 Z"/>
+  <path class="region-skin" d="M634 648 L638 736 Q640 758 623 760 Q606 758 608 738 L612 648 Z"/>
+  <path class="region-accent" d="M438 528 Q512 558 586 528 Q636 542 650 586 L660 628 Q662 652 644 656 L602 648 L606 742 Q560 762 512 762 Q464 762 418 742 L422 648 L380 656 Q362 652 364 628 L374 586 Q388 542 438 528 Z"/>
+  <path class="region-detail" d="M446 530 Q478 546 506 552 L482 570 Q456 552 446 530 Z"/>
+  <path class="region-detail" d="M578 530 Q546 546 518 552 L542 570 Q568 552 578 530 Z"/>
+  <circle class="region-detail" cx="512" cy="592" r="6"/>
+  <circle class="region-detail" cx="512" cy="646" r="6"/>
+  <circle class="region-detail" cx="512" cy="700" r="6"/>
+  <path class="region-detail" d="M380 634 L422 624 L422 646 L380 656 Q364 652 364 640 Z"/>
+  <path class="region-detail" d="M644 634 L602 624 L602 646 L644 656 Q662 652 662 640 Z"/>
+  <path class="region-detail" d="M446 598 h54 v38 h-54 z"/>
+  <path class="region-detail" d="M446 598 h54 v10 h-54 z"/>
+</svg>
