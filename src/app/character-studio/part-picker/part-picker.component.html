@@ -52,6 +52,40 @@
           >{{ part.displayName }}</button>
         }
       </div>
+      @if (isBlendable(slot)) {
+        <div class="blend" [attr.data-testid]="'cs-blend-' + slot.slot">
+          <label class="blend-target">
+            Body type blend
+            <select
+              [attr.data-testid]="'cs-blend-target-' + slot.slot"
+              aria-label="Blend body type toward"
+              (change)="onBlendTarget(slot.slot, $event)"
+            >
+              <option value="" [selected]="!blendOf(slot.slot)">Single body type</option>
+              @for (part of blendTargetsFor(slot); track part.id) {
+                <option [value]="part.id" [selected]="blendOf(slot.slot)?.toId === part.id">
+                  {{ part.displayName }}
+                </option>
+              }
+            </select>
+          </label>
+          @if (blendOf(slot.slot)) {
+            <label class="blend-amount">
+              Amount
+              <input
+                type="range"
+                min="0"
+                max="100"
+                [attr.data-testid]="'cs-blend-amount-' + slot.slot"
+                aria-label="Body type blend amount"
+                [value]="blendPercent(slot.slot)"
+                (input)="onBlendAmount(slot.slot, $event)"
+              />
+              <span class="blend-pct" [attr.data-testid]="'cs-blend-pct-' + slot.slot">{{ blendPercent(slot.slot) }}%</span>
+            </label>
+          }
+        </div>
+      }
     </fieldset>
   }
 </div>

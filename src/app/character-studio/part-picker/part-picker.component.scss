@@ -88,3 +88,33 @@
   border-color: var(--hug-accent, #7c4dff);
   outline: 2px solid var(--hug-accent, #7c4dff);
 }
+
+.blend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.6rem 0 0;
+  padding: 0.5rem 0.6rem;
+  border: 1px dashed var(--hug-border, #444);
+  border-radius: 6px;
+}
+
+.blend label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.blend select,
+.blend input[type='range'] {
+  font: inherit;
+  color: inherit;
+}
+
+.blend-pct {
+  min-width: 2.5rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

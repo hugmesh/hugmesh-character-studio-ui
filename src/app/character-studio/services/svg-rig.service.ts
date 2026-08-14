@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { PartManifest, TintRegion } from '../models/vn-manifest';
-import { VnCharacter } from '../models/vn-character';
+import { SlotBlend, VnCharacter } from '../models/vn-character';
 
 /**
  * The SVG-DOM compositor (v2). Composes a character's chosen part SVGs into ONE
@@ -29,6 +29,13 @@ const SAFE_SVG_CLASS = /^[A-Za-z0-9_-]+$/;
  */
 const SAFE_HEX = /^#[0-9a-fA-F]{3,8}$/;
 
+/** Clamp a {@link SlotBlend.t} to a safe, finite [0,1] opacity fraction — it may
+ * originate from a loaded/persisted character, so it is not trusted to already
+ * be a well-formed number. */
+function clampBlendT(t: number): number {
+  return Number.isFinite(t) ? Math.max(0, Math.min(1, t)) : 0;
+}
+
 @Injectable({ providedIn: 'root' })
 export class SvgRigService {
   private readonly assetsBase = 'assets/vn/';
@@ -45,6 +52,13 @@ export class SvgRigService {
    * same `palette[region]`. A USER-DRAWN part in a slot still wins (the user's own
    * art is never replaced by an expression). An empty/absent map renders the base
    * character unchanged, so packs without expressions are unaffected.
+   *
+   * `def.slotBlend` (see {@link SlotBlend}) additionally crossfades a slot's part
+   * toward a second part in the same slot — a continuous axis ACROSS a roster of
+   * discrete hand-drawn parts (the body-type spectrum), rendered as two opacity-
+   * complementary `<g>` layers rather than a geometric morph (the parts are
+   * independent flat-vector art, not a shared topology). Ignored for a slot an
+   * active expression is currently swapping.
    */
   async compose(
     def: VnCharacter,
@@ -90,6 +104,7 @@ export class SvgRigService {
         continue;
       }
       // Expression override (if this is an expression slot) else the base partId.
+      const isExpressionSwap = slot.slot in expressionSlots;
       const partId = expressionSlots[slot.slot] ?? def.slots[slot.slot];
       if (!partId) {
         continue;
@@ -97,6 +112,32 @@ export class SvgRigService {
       const part = slot.parts.find(p => p.id === partId);
       if (!part) {
         continue;
+      }
+      // A slot blend crossfades toward a second part in the same slot (the
+      // body-type spectrum axis) — skipped during an expression swap, which
+      // is its own preview-only override of this slot's part.
+      const blend: SlotBlend | undefined = isExpressionSwap ? undefined : def.slotBlend?.[slot.slot];
+      const toPart = blend && blend.toId !== partId ? slot.parts.find(p => p.id === blend.toId) : undefined;
+      if (blend && toPart) {
+        const t = clampBlendT(blend.t);
+        if (t >= 1) {
+          const inner = await this.partFile(`${this.assetsBase}packs/${def.packId}/${toPart.file}`);
+          layers.push(`<g>${inner}</g>`);
+          addRegions(toPart.tintRegions);
+          continue;
+        }
+        if (t > 0) {
+          const [fromInner, toInner] = await Promise.all([
+            this.partFile(`${this.assetsBase}packs/${def.packId}/${part.file}`),
+            this.partFile(`${this.assetsBase}packs/${def.packId}/${toPart.file}`),
+          ]);
+          layers.push(`<g style="opacity:${(1 - t).toFixed(4)}">${fromInner}</g>`);
+          layers.push(`<g style="opacity:${t.toFixed(4)}">${toInner}</g>`);
+          addRegions(part.tintRegions);
+          addRegions(toPart.tintRegions);
+          continue;
+        }
+        // t clamped to 0 — falls through to the plain single-part render below.
       }
       const inner = await this.partFile(`${this.assetsBase}packs/${def.packId}/${part.file}`);
       layers.push(`<g>${inner}</g>`);

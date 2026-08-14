@@ -11,6 +11,24 @@ export interface UserPart {
 }
 
 /**
+ * A continuous blend for one slot: crossfades the slot's chosen part
+ * ({@link VnCharacter.slots}) toward a second part in the SAME slot, instead of
+ * only ever picking one or the other. `t=0` renders the chosen part alone,
+ * `t=1` renders {@link toId} alone; in between, both layer with complementary
+ * opacity (see `SvgRigService.compose`). This is a continuous axis ACROSS a
+ * roster of discrete hand-drawn parts (e.g. the body-type roster), not a
+ * geometric morph — the parts are independent flat-vector art sharing a
+ * common canvas/anchor, not a shared topology, so opacity crossfade is the
+ * honest interpolation, not a shape blend.
+ */
+export interface SlotBlend {
+  /** The other endpoint partId, in the same slot as the base choice. */
+  toId: string;
+  /** 0 = base part only, 1 = toId only, in between = both layered. */
+  t: number;
+}
+
+/**
  * The canonical, replayable description of a character (v2). Persisted as
  * `vn_character.definition` (user-bff) later; here it drives the SVG-DOM rig.
  */
@@ -26,6 +44,8 @@ export interface VnCharacter {
   defaultExpression: string;
   /** slot → user-drawn override (takes precedence over the pack part). */
   userParts?: Record<string, UserPart>;
+  /** slot → continuous blend toward a second part in that slot (see {@link SlotBlend}). */
+  slotBlend?: Record<string, SlotBlend>;
 }
 
 /**

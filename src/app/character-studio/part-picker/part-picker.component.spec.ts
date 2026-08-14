@@ -156,4 +156,127 @@ describe('PartPickerComponent', () => {
     fixture.detectChanges();
     expect(fixture.componentInstance.filterOf('head')).toBe('');
   }));
+
+  // ── body-type spectrum axis (crossfade blend across the base roster) ────
+
+  /** A 'base' slot (body) offers the blend control; a non-base slot (head) doesn't. */
+  const blendPack: PartManifest = {
+    packId: 'blend-pack-v1',
+    version: '1',
+    displayName: 'Blend Pack',
+    canvas: { width: 10, height: 10 },
+    slots: [
+      {
+        slot: 'body',
+        zOrder: 20,
+        required: true,
+        anchor: { x: 0.5, y: 0.5 },
+        parts: [
+          { id: 'body-a', displayName: 'Body A', file: 'ba.svg', category: 'base' },
+          { id: 'body-b', displayName: 'Body B', file: 'bb.svg', category: 'base' },
+          { id: 'body-c', displayName: 'Body C', file: 'bc.svg', category: 'base' },
+        ],
+      },
+      {
+        slot: 'head',
+        zOrder: 60,
+        required: true,
+        anchor: { x: 0.5, y: 0.5 },
+        parts: [
+          { id: 'head-a', displayName: 'Head A', file: 'ha.svg' },
+          { id: 'head-b', displayName: 'Head B', file: 'hb.svg' },
+        ],
+      },
+    ],
+  };
+
+  const createBlend = () => {
+    const fixture = TestBed.createComponent(PartPickerComponent);
+    fixture.componentRef.setInput('pack', blendPack);
+    TestBed.inject(CharacterStateService).init(blendPack, buildDefaultCharacter(blendPack), []);
+    fixture.detectChanges();
+    return fixture;
+  };
+
+  const changeSelect = (select: HTMLSelectElement, value: string) => {
+    select.value = value;
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+  };
+
+  it('offers the blend control only for the base (body-type) slot', () => {
+    const fixture = createBlend();
+    expect(fixture.nativeElement.querySelector('[data-testid="cs-blend-body"]')).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('[data-testid="cs-blend-head"]')).toBeNull();
+  });
+
+  it('excludes the currently selected base part from the blend-target options', () => {
+    const fixture = createBlend();
+    const select: HTMLSelectElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-target-body"]',
+    );
+    // The default character picks the first part of every slot (body-a).
+    const optionValues = Array.from(select.options)
+      .map(o => o.value)
+      .filter(Boolean);
+    expect(optionValues).toEqual(['body-b', 'body-c']);
+  });
+
+  it('starts with no blend target and the amount slider hidden', () => {
+    const fixture = createBlend();
+    expect(fixture.nativeElement.querySelector('[data-testid="cs-blend-amount-body"]')).toBeNull();
+    const select: HTMLSelectElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-target-body"]',
+    );
+    expect(select.value).toBe('');
+  });
+
+  it('choosing a blend target reveals the amount slider at 0%', () => {
+    const fixture = createBlend();
+    const select: HTMLSelectElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-target-body"]',
+    );
+    changeSelect(select, 'body-b');
+    fixture.detectChanges();
+
+    expect(fixture.componentInstance.character()?.slotBlend?.['body']).toEqual({ toId: 'body-b', t: 0 });
+    expect(
+      fixture.nativeElement.querySelector('[data-testid="cs-blend-pct-body"]').textContent,
+    ).toContain('0%');
+  });
+
+  it('dragging the amount slider updates the blend fraction', () => {
+    const fixture = createBlend();
+    const select: HTMLSelectElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-target-body"]',
+    );
+    changeSelect(select, 'body-b');
+    fixture.detectChanges();
+
+    const range: HTMLInputElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-amount-body"]',
+    );
+    range.value = '40';
+    range.dispatchEvent(new Event('input', { bubbles: true }));
+    fixture.detectChanges();
+
+    expect(fixture.componentInstance.character()?.slotBlend?.['body']).toEqual({ toId: 'body-b', t: 0.4 });
+    expect(
+      fixture.nativeElement.querySelector('[data-testid="cs-blend-pct-body"]').textContent,
+    ).toContain('40%');
+  });
+
+  it('choosing "Single body type" clears the blend and hides the slider again', () => {
+    const fixture = createBlend();
+    const select: HTMLSelectElement = fixture.nativeElement.querySelector(
+      '[data-testid="cs-blend-target-body"]',
+    );
+    changeSelect(select, 'body-b');
+    fixture.detectChanges();
+
+    changeSelect(select, '');
+    fixture.detectChanges();
+
+    expect(fixture.componentInstance.character()?.slotBlend?.['body']).toBeUndefined();
+    expect(fixture.nativeElement.querySelector('[data-testid="cs-blend-amount-body"]')).toBeNull();
+  });
 });
