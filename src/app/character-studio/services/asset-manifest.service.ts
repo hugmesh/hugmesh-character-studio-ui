@@ -12,16 +12,44 @@ import {
  * Loads the character-studio asset library: the top-level `assets/vn/manifest.json`
  * pack index, then a selected pack's `pack.json` ({@link PartManifest}). Uses the
  * browser `fetch` (no HttpClient provider needed — matches the B0 hand-written
- * fetch convention). The asset base is relative so it resolves correctly whether
- * the remote is served standalone or federated under the host.
+ * fetch convention). The asset base is resolved ABSOLUTELY from this module's own
+ * URL — see {@link AssetManifestService.assetsBase}.
  *
  * B0 PR-2 scope: load + expose slots/parts. The PixiJS rig that composes them
  * (PR-3+) consumes {@link activePack}.
  */
 @Injectable({ providedIn: 'root' })
 export class AssetManifestService {
-  /** Base path for VN assets, relative to the app base href. */
-  private readonly assetsBase = 'assets/vn/';
+  /**
+   * Absolute base URL for the VN assets, anchored on THIS MODULE's own URL.
+   *
+   * It used to be the bare relative string 'assets/vn/', which a `fetch` resolves
+   * against the DOCUMENT's URL — not the app's base href. Federated under the
+   * host shell the document is the shell at /character-studio (no trailing
+   * slash), so 'assets/vn/manifest.json' resolved to /assets/vn/manifest.json at
+   * the shell root and 404'd: "Failed to load character assets: manifest.json
+   * 404", with the whole studio unusable (operator report 2026-08-14). It only
+   * worked standalone, where the document URL already sat inside the remote.
+   *
+   * `import.meta.url` is the URL of this very chunk, which is served from the
+   * remote's own mount in BOTH cases (/character-studio/... federated, / when
+   * standalone), so assets resolve correctly with no hardcoded mount path.
+   * `document.baseURI` is the fallback for a non-ESM/test context.
+   */
+  private readonly assetsBase = AssetManifestService.resolveAssetsBase();
+
+  private static resolveAssetsBase(): string {
+    const anchor = typeof import.meta?.url === 'string'
+      ? import.meta.url
+      : (typeof document !== 'undefined' ? document.baseURI : '/');
+    try {
+      // '../assets/vn/' — chunks are emitted beside index.html, so the module's
+      // directory IS the app root; new URL() normalises the traversal away.
+      return new URL('assets/vn/', anchor).href;
+    } catch {
+      return 'assets/vn/';
+    }
+  }
 
   /** The currently-loaded pack, or null until {@link loadActivePack} resolves. */
   readonly activePack = signal<PartManifest | null>(null);
