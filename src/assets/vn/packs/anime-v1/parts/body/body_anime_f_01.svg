@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#96bede)}.region-detail{fill:var(--region-detail,#d9849b)}</style>
+  <!-- Anime body F: sprout/young silhouette — smaller round torso, stubby bare arms (skin), overalls with shoulder straps (accent) over a tee, strap buttons + bib pocket (detail) -->
+  <path class="region-skin" d="M484 466 h56 v54 q-28 16 -56 0 z"/>
+  <path class="region-skin" d="M442 556 Q414 566 408 596 L402 664 Q400 688 415 690 Q430 688 429 666 L432 602 Q434 576 444 562 Z"/>
+  <path class="region-skin" d="M582 556 Q610 566 616 596 L622 664 Q624 688 609 690 Q594 688 595 666 L592 602 Q590 576 580 562 Z"/>
+  <path class="region-detail" d="M448 544 Q512 570 576 544 Q604 554 610 584 Q614 606 600 612 L584 604 L584 648 L440 648 L440 604 L424 612 Q410 606 414 584 Q420 554 448 544 Z"/>
+  <path class="region-accent" d="M462 584 Q512 600 562 584 L566 618 Q590 622 596 650 L602 714 Q592 742 512 746 Q432 742 422 714 L428 650 Q434 622 458 618 Z"/>
+  <path class="region-accent" d="M460 548 L478 588 L462 596 L446 558 Z"/>
+  <path class="region-accent" d="M564 548 L546 588 L562 596 L578 558 Z"/>
+  <circle class="region-detail" cx="468" cy="590" r="7"/>
+  <circle class="region-detail" cx="556" cy="590" r="7"/>
+  <rect class="region-detail" x="488" y="626" width="48" height="34" rx="8"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <style>.region-skin{fill:var(--region-skin,#f2c9a8)}.region-accent{fill:var(--region-accent,#7dbca6)}.region-detail{fill:var(--region-detail,#49897a)}</style>
+  <!-- Anime body D: willowy femme-leaning androgynous silhouette — open long cardigan (accent) with cuff bands (detail) over a scoop tank (detail), skin chest peek + hands -->
+  <path class="region-skin" d="M479 457 h66 v64 q-33 18 -66 0 z"/>
+  <path class="region-skin" d="M474 520 Q512 546 550 520 L544 600 Q512 614 480 600 Z"/>
+  <path class="region-detail" d="M472 566 Q512 590 552 566 L558 752 Q512 764 466 752 Z"/>
+  <ellipse class="region-skin" cx="396" cy="756" rx="18" ry="21"/>
+  <ellipse class="region-skin" cx="628" cy="756" rx="18" ry="21"/>
+  <path class="region-accent" d="M438 548 Q466 528 498 524 L490 560 Q482 650 486 756 L446 750 Q438 706 442 662 Q432 620 428 598 Q428 564 438 548 Z"/>
+  <path class="region-accent" d="M586 548 Q558 528 526 524 L534 560 Q542 650 538 756 L578 750 Q586 706 582 662 Q592 620 596 598 Q596 564 586 548 Z"/>
+  <path class="region-accent" d="M436 552 Q404 564 398 604 L390 718 Q388 744 404 748 Q420 744 418 718 L424 612 Q428 572 438 556 Z"/>
+  <path class="region-accent" d="M588 552 Q620 564 626 604 L634 718 Q636 744 620 748 Q604 744 606 718 L600 612 Q596 572 586 556 Z"/>
+  <path class="region-detail" d="M390 714 Q404 722 418 714 L418 730 Q404 738 390 730 Z"/>
+  <path class="region-detail" d="M606 714 Q620 722 634 714 L634 730 Q620 738 606 730 Z"/>
+</svg>
