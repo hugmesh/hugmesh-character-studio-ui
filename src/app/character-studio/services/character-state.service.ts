@@ -1,6 +1,6 @@
 import { Injectable, computed, signal } from '@angular/core';
 import { PartManifest, TintRegion, ExpressionPreset } from '../models/vn-manifest';
-import { VnCharacter, UserPart, buildDefaultCharacter } from '../models/vn-character';
+import { VnCharacter, UserPart, SlotBlend, buildDefaultCharacter } from '../models/vn-character';
 
 /**
  * The single source of truth for the character being edited (B0 §3.3). A signal
@@ -67,6 +67,27 @@ export class CharacterStateService {
   /** Choose (or clear, with null) the part in a slot. */
   setSlot(slot: string, partId: string | null): void {
     this._character.update(c => (c ? { ...c, slots: { ...c.slots, [slot]: partId } } : c));
+  }
+
+  /**
+   * Set (or clear, with null) a slot's crossfade blend toward a second part in
+   * that slot — the continuous body-type spectrum axis, layered by
+   * {@link SvgRigService.compose}. Does not touch {@link VnCharacter.slots}: the
+   * blend's `t=0` endpoint is always whatever {@link setSlot} last chose there.
+   */
+  setSlotBlend(slot: string, blend: SlotBlend | null): void {
+    this._character.update(c => {
+      if (!c) {
+        return c;
+      }
+      const slotBlend = { ...(c.slotBlend ?? {}) };
+      if (blend) {
+        slotBlend[slot] = blend;
+      } else {
+        delete slotBlend[slot];
+      }
+      return { ...c, slotBlend };
+    });
   }
 
   /** Set a tint region's colour (drives the palette-swap filter, PR-5). */

@@ -1,6 +1,7 @@
 import { Component, OnDestroy, computed, effect, inject, input, signal } from '@angular/core';
 import { CharacterStateService } from '../services/character-state.service';
 import { PartDef, PartManifest, SlotDef } from '../models/vn-manifest';
+import { SlotBlend } from '../models/vn-character';
 
 /**
  * A slot whose part count reaches this many gets a client-side text filter
@@ -26,6 +27,10 @@ const FILTER_DEBOUNCE_MS = 150;
  * with `aria-pressed` reflecting the current selection. Large slots (see
  * {@link FILTER_MIN_PARTS}) get a debounced, aria-labelled text filter, and every
  * slot's button list scrolls internally past a bounded height (see the SCSS).
+ * A "base" slot (the body-type roster) additionally offers a blend axis: pick a
+ * second part to crossfade toward and an amount, calling
+ * {@link CharacterStateService.setSlotBlend} — a continuous spectrum ACROSS the
+ * roster's discrete hand-drawn bodies, not a swap between two of them.
  */
 @Component({
   selector: 'hug-part-picker',
@@ -162,5 +167,54 @@ export class PartPickerComponent implements OnDestroy {
 
   pick(slot: string, partId: string | null): void {
     this.state.setSlot(slot, partId);
+  }
+
+  // ── body-type spectrum axis (crossfade blend between two roster parts) ──
+
+  /**
+   * A slot offers the blend axis when it's a "base" slot (body-type roster,
+   * `PartCategory: 'base'`) with a current pick to blend FROM — the axis
+   * crossfades between two parts, so there is nothing to blend from an unset
+   * (optional, cleared) slot.
+   */
+  isBlendable(slot: SlotDef): boolean {
+    return slot.parts.some(p => p.category === 'base') && this.selected(slot.slot) !== null;
+  }
+
+  /** The slot's active blend (null = a single part, no crossfade). */
+  blendOf(slot: string): SlotBlend | null {
+    return this.character()?.slotBlend?.[slot] ?? null;
+  }
+
+  /** Candidate blend-toward parts: every part in the slot except the current base pick. */
+  blendTargetsFor(slot: SlotDef): PartDef[] {
+    const base = this.selected(slot.slot);
+    return this.partsFor(slot).filter(p => p.id !== base);
+  }
+
+  /** The active blend amount as a whole 0–100 percent (0 when no blend is set). */
+  blendPercent(slot: string): number {
+    return Math.round((this.blendOf(slot)?.t ?? 0) * 100);
+  }
+
+  /** Choose (or, with the empty option, clear) the blend-toward part. Amount carries over. */
+  onBlendTarget(slot: string, ev: Event): void {
+    const toId = (ev.target as HTMLSelectElement).value;
+    if (!toId) {
+      this.state.setSlotBlend(slot, null);
+      return;
+    }
+    this.state.setSlotBlend(slot, { toId, t: this.blendOf(slot)?.t ?? 0 });
+  }
+
+  /** Adjust the blend amount; a no-op until a blend-toward target is chosen. */
+  onBlendAmount(slot: string, ev: Event): void {
+    const current = this.blendOf(slot);
+    if (!current) {
+      return;
+    }
+    const raw = Number((ev.target as HTMLInputElement).value);
+    const pct = Number.isFinite(raw) ? Math.max(0, Math.min(100, raw)) : this.blendPercent(slot);
+    this.state.setSlotBlend(slot, { toId: current.toId, t: pct / 100 });
   }
 }

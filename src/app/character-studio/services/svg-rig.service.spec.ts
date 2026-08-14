@@ -1,6 +1,6 @@
 import { SvgRigService } from './svg-rig.service';
 import { PartManifest, TintRegion } from '../models/vn-manifest';
-import { VnCharacter } from '../models/vn-character';
+import { SlotBlend, VnCharacter } from '../models/vn-character';
 
 /**
  * Regression: the composite `<style>` block interpolates palette hex colours and
@@ -120,5 +120,123 @@ describe('SvgRigService CSS-injection hardening', () => {
     // The benign part inner markup is inlined unchanged.
     expect(svg).toContain('<path class="region-fur" d="M0 0h1v1z"/>');
     expect(svg).toContain('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">');
+  });
+});
+
+/**
+ * The body-type spectrum axis (SlotBlend, B0 §3.4): a slot crossfades its
+ * chosen part toward a second part in the same slot instead of only ever
+ * showing one or the other. Two independent flat-vector bodies, not a shared
+ * topology, so the honest interpolation is opacity crossfade — verify the
+ * layering, the t=0/t=1 edge collapses, and that an out-of-range or tampered
+ * `t` (this is user/persisted data) can never misrender or inject CSS.
+ */
+describe('SvgRigService slot blend (body-type spectrum axis)', () => {
+  let svc: SvgRigService;
+
+  const pack: PartManifest = {
+    packId: 'p',
+    version: '1',
+    displayName: 'P',
+    canvas: { width: 10, height: 10 },
+    slots: [
+      {
+        slot: 'body',
+        zOrder: 0,
+        required: true,
+        anchor: { x: 0, y: 0 },
+        parts: [
+          { id: 'a', displayName: 'A', file: 'a.svg', category: 'base' },
+          { id: 'b', displayName: 'B', file: 'b.svg', category: 'base' },
+        ],
+      },
+    ],
+  };
+
+  const charWith = (slotBlend?: Record<string, SlotBlend>): VnCharacter => ({
+    schemaVersion: 1,
+    packId: 'p',
+    name: 'c',
+    slots: { body: 'a' },
+    palette: {},
+    transform: { scale: 1, offsetX: 0, offsetY: 0 },
+    defaultExpression: 'neutral',
+    slotBlend,
+  });
+
+  beforeEach(() => {
+    svc = new SvgRigService();
+    spyOn<any>(svc, 'partFile').and.callFake((url: string) =>
+      Promise.resolve(url.endsWith('/a.svg') ? '<path d="A"/>' : '<path d="B"/>'),
+    );
+  });
+
+  it('renders a single unblended layer when no slotBlend is set for the slot', async () => {
+    const svg = await svc.compose(charWith(), pack);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="A"');
+    expect(svg).not.toContain('opacity');
+  });
+
+  it('crossfades both parts as opacity-complementary layers at a fractional t', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: 0.25 } }), pack);
+    expect(svg).toContain('<g style="opacity:0.7500">');
+    expect(svg).toContain('d="A"');
+    expect(svg).toContain('<g style="opacity:0.2500">');
+    expect(svg).toContain('d="B"');
+  });
+
+  it('collapses to the target part alone at t=1 (no residual base layer)', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: 1 } }), pack);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="B"');
+    expect(svg).not.toContain('d="A"');
+    expect(svg).not.toContain('opacity');
+  });
+
+  it('collapses to the base part alone at t=0 (same shape as no blend)', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: 0 } }), pack);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="A"');
+    expect(svg).not.toContain('opacity');
+  });
+
+  it('clamps t above 1 to a full swap instead of an out-of-range opacity', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: 1.7 } }), pack);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="B"');
+    expect(svg).not.toContain('opacity');
+  });
+
+  it('clamps a negative or non-finite t to 0 rather than crashing or misrendering', async () => {
+    for (const bad of [-1, NaN, Infinity, -Infinity]) {
+      const svg = await svc.compose(charWith({ body: { toId: 'b', t: bad } }), pack);
+      expect(svg.match(/<g/g)?.length).toBe(1);
+      expect(svg).toContain('d="A"');
+      expect(svg).not.toContain('opacity');
+    }
+  });
+
+  it('rejects a non-numeric t — defense in depth against a tampered persisted character', async () => {
+    const malicious = '0)}</style><script>alert(1)</script><style>x{y:(' as unknown as number;
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: malicious } }), pack);
+    expect(svg).not.toContain('<script');
+    expect(svg).not.toContain(malicious);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="A"');
+  });
+
+  it('falls back to the single base-part render when toId is not a part in the slot', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'not-a-real-part', t: 0.5 } }), pack);
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="A"');
+  });
+
+  it('is ignored for a slot an active expression is currently swapping', async () => {
+    const svg = await svc.compose(charWith({ body: { toId: 'b', t: 0.5 } }), pack, { body: 'b' });
+    // The expression override wins outright — no crossfade with the base pick.
+    expect(svg.match(/<g/g)?.length).toBe(1);
+    expect(svg).toContain('d="B"');
+    expect(svg).not.toContain('opacity');
   });
 });
