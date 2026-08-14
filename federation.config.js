@@ -1,5 +1,5 @@
 // REMOTE bundle config for the VN character-studio micro-frontend (native-
-// federation remote name "character-studio"). The hugmesh.systems host
+// federation remote name "character-studio"). The hugmesh.net host
 // consumes the single exposed `./routes` module via
 // loadRemoteModule({ remoteName: 'character-studio', exposedModule: './routes' })
 // and mounts CHARACTER_STUDIO_ROUTES at /character-studio — so the remote name

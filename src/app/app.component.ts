@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 /**
  * Standalone dev shell for the character-studio remote. Only used when this
  * remote is run on its own (`ng serve character-studio`); in production the
- * hugmesh.systems host federates `./routes` (CHARACTER_STUDIO_ROUTES)
+ * hugmesh.net host federates `./routes` (CHARACTER_STUDIO_ROUTES)
  * directly — this shell is not loaded. It supplies the skip link + a
  * <main id="main"> landmark so the remote is keyboard-accessible standalone
  * (the a11y contract copied verbatim from the admin remote).
