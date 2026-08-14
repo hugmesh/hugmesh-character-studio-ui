@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Application, Assets, Container, Sprite, Texture } from 'pixi.js';
 import { PartManifest } from '../models/vn-manifest';
 import { VnCharacter } from '../models/vn-character';
+import { resolveAssetsBase } from './assets-base';
 
 /**
  * The PixiJS (WebGL) rig engine (B0 §3.3). Composes a character's chosen parts
@@ -17,7 +18,10 @@ import { VnCharacter } from '../models/vn-character';
 export class PixiRigService {
   private app: Application | null = null;
   private rig: Container | null = null;
-  private readonly assetsBase = 'assets/vn/';
+  // Absolute, anchored on this chunk's own URL. PixiJS's Assets loader resolves
+  // a relative string against the DOCUMENT, which under the host shell is the
+  // shell itself — every texture 404s. See ./assets-base.
+  private readonly assetsBase = resolveAssetsBase();
 
   /** Create the PixiJS Application bound to the given canvas (idempotent). */
   async mount(canvas: HTMLCanvasElement, width = 512, height = 512): Promise<void> {

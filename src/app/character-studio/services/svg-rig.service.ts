@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { PartManifest, TintRegion } from '../models/vn-manifest';
 import { SlotBlend, VnCharacter } from '../models/vn-character';
+import { resolveAssetsBase } from './assets-base';
 
 /**
  * The SVG-DOM compositor (v2). Composes a character's chosen part SVGs into ONE
@@ -38,7 +39,10 @@ function clampBlendT(t: number): number {
 
 @Injectable({ providedIn: 'root' })
 export class SvgRigService {
-  private readonly assetsBase = 'assets/vn/';
+  // Absolute, anchored on this chunk's own URL — a bare 'assets/vn/' resolves
+  // against the SHELL's document when federated and 404s every part. See
+  // ./assets-base.
+  private readonly assetsBase = resolveAssetsBase();
   private readonly cache = new Map<string, string>();
 
   /**
