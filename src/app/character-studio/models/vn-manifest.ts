@@ -91,9 +91,10 @@ export interface PartManifest {
    * Verbatim attribution string required for any pack carrying SRD-sourced parts
    * (see {@link PartDef.source}); enforced by `npm run validate:assets`
    * (`tools/validate-assets.mjs`) and mirrored in ATTRIBUTION.txt.
-   * TODO: docs/CATALOG-DND-SRD.md also requires this string in an "in-app Credits
-   * view", which does not exist yet — this field is validated + kept in the repo's
-   * ATTRIBUTION.txt but never rendered to the end user in the running app.
+   * docs/CATALOG-DND-SRD.md requires it on all three surfaces — `pack.json`,
+   * ATTRIBUTION.txt, and an in-app "Credits" view; the last is the `cs-credits`
+   * section of `character-studio.component.html`, rendered to the end user
+   * whenever the active pack carries one.
    */
   attribution?: string;
   canvas: { width: number; height: number };
