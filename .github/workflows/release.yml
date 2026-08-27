@@ -13,7 +13,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: hugmesh-net/hugmesh-character-studio-ui
+  IMAGE_NAME: hugmesh/hugmesh-character-studio-ui
 
 jobs:
   build-and-push:
