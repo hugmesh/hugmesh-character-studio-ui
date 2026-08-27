@@ -1,0 +1,68 @@
+:host {
+  display: block;
+}
+
+.lip-sync {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.lip-sync legend {
+  font-weight: 600;
+}
+
+.hint,
+.status {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.status:empty {
+  display: none;
+}
+
+.frames,
+.mic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.mic {
+  margin-top: 0.5rem;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+button.selected {
+  border-color: var(--hug-accent, #7c4dff);
+  outline: 2px solid var(--hug-accent, #7c4dff);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.level {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+meter {
+  width: 8rem;
+}

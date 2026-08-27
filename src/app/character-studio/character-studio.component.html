@@ -36,6 +36,8 @@
             [pack]="p"
             [character]="c"
             [expressionSlots]="state.activeExpressionSlots()"
+            [viseme]="lipsync.viseme()"
+            [mouthBox]="mouthBox()"
             [ariaLabel]="canvasAlt()"
           />
           <p class="validity" aria-live="polite" data-testid="cs-validity">
@@ -47,6 +49,8 @@
           <hug-part-picker [pack]="p" />
           <hug-palette [pack]="p" />
           <hug-expression-preview />
+          <hug-lip-sync-panel />
+          <hug-rig-panel [pack]="p" />
           <hug-draw [pack]="p" />
         </div>
       </div>

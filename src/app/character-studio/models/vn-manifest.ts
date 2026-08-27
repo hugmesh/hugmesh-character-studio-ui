@@ -69,6 +69,15 @@ export interface PartDef {
   source?: string;
   /** Free-form catalog tags (e.g. `["race", "draconic"]`) for grouping/search. */
   tags?: string[];
+  /**
+   * LIP-SYNC VARIANT: this part is the `viseme` frame ('half' | 'open') of the
+   * mouth part `visemeOf`. A pack that draws its own talking frames declares
+   * them this way; the compositor picks the variant for the live openness. A
+   * pack without variants still lip-syncs — the chosen mouth is opened by a
+   * transform about its own bounds instead.
+   */
+  viseme?: 'closed' | 'half' | 'open';
+  visemeOf?: string;
 }
 
 /** One z-ordered layer slot (body, head, eyes, ...) and its candidate parts. */

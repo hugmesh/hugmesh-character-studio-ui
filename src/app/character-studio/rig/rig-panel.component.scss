@@ -1,0 +1,70 @@
+:host {
+  display: block;
+}
+
+.rig {
+  border: 1px solid var(--hug-border, #333);
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.rig legend {
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.slot {
+  border-top: 1px solid var(--hug-border, #333);
+  padding: 0.35rem 0;
+}
+
+.slot summary {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.badge {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: none;
+  border: 1px solid var(--hug-accent, #7c4dff);
+  border-radius: 999px;
+  padding: 0 0.4rem;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--hug-border, #444);
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

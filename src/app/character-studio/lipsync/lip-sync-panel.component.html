@@ -1,0 +1,48 @@
+<fieldset class="lip-sync" data-testid="cs-lipsync">
+  <legend>Talk</legend>
+  <p class="hint">
+    Your character's mouth follows your voice — the way a visual novel's talking
+    sprite does, in three frames. Preview a frame by hand, or use your microphone
+    (it asks the browser for permission the first time).
+  </p>
+  <div class="frames" role="group" aria-label="Mouth frame preview">
+    @for (v of visemes; track v) {
+      <button
+        type="button"
+        class="frame"
+        [attr.data-testid]="'cs-viseme-' + v"
+        [class.selected]="lipsync.viseme() === v"
+        [attr.aria-pressed]="lipsync.viseme() === v"
+        [disabled]="lipsync.micLive()"
+        (click)="pick(v)"
+      >{{ labelOf(v) }}</button>
+    }
+  </div>
+  <div class="mic">
+    <button
+      type="button"
+      class="mic-toggle"
+      data-testid="cs-mic-toggle"
+      [class.selected]="lipsync.micLive()"
+      [attr.aria-pressed]="lipsync.micLive()"
+      (click)="toggleMic()"
+    >{{ lipsync.micLive() ? 'Stop the microphone' : 'Use my microphone' }}</button>
+    <label class="level">
+      Level
+      <meter
+        data-testid="cs-mic-level"
+        min="0"
+        max="1"
+        [value]="lipsync.openness()"
+        [attr.aria-valuetext]="(lipsync.openness() * 100).toFixed(0) + '%'"
+      ></meter>
+    </label>
+  </div>
+  <p class="status" role="status" aria-live="polite" data-testid="cs-lipsync-status">
+    @if (lipsync.micError()) {
+      {{ lipsync.micError() }}
+    } @else if (lipsync.micLive()) {
+      Listening — mouth: {{ labelOf(lipsync.viseme()) }}.
+    }
+  </p>
+</fieldset>
