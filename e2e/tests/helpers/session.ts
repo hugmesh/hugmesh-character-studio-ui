@@ -1,3 +1,5 @@
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 /**
@@ -35,10 +37,97 @@ export const SEED_USERS: SeedUser[] = [
   { username: 'bob', passwordEnv: 'E2E_BOB_PASSWORD', provider: 'discord' },
 ];
 
-/** Resolve a seed user's password — env override or `E2E_PASSWORD` fallback —
- *  without throwing on a missing env. */
+const CREDENTIALS_FILENAME = '.e2e-credentials';
+
+/**
+ * Locate the run-state credentials file written by the seeder
+ * (`tests/stack/e2e-password.sh` in hugmesh-generator). An explicit
+ * `E2E_CREDENTIALS_FILE` path wins outright — existence is NOT checked here,
+ * so a caller can still name that exact path in an error. Otherwise walk up
+ * from `cwd` looking for a `.e2e-credentials` file, the same way `package.json`
+ * or `.git` gets located, since Playwright's cwd is `e2e/` while the file is
+ * conventionally written at the repo root. Returns `undefined` only when no
+ * explicit path was given AND none was found walking up to the filesystem root.
+ */
+function findCredentialsFilePath(): string | undefined {
+  const explicit = process.env['E2E_CREDENTIALS_FILE'];
+  if (explicit) return resolve(explicit);
+
+  let dir = resolve(process.cwd());
+  for (;;) {
+    const candidate = join(dir, CREDENTIALS_FILENAME);
+    if (existsSync(candidate)) return candidate;
+    const parent = dirname(dir);
+    if (parent === dir) return undefined;
+    dir = parent;
+  }
+}
+
+/**
+ * Parse the seeder's run-state file: plain `KEY=value` lines, no quotes, no
+ * `export` keyword (so it round-trips through both `set -a; . file; set +a`
+ * and `docker compose --env-file`). Blank lines and `#`-comments are skipped;
+ * a malformed line is ignored rather than throwing.
+ */
+function parseCredentialsFile(content: string): Record<string, string> {
+  const values: Record<string, string> = {};
+  for (const line of content.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eq = trimmed.indexOf('=');
+    if (eq <= 0) continue;
+    values[trimmed.slice(0, eq)] = trimmed.slice(eq + 1);
+  }
+  return values;
+}
+
+/**
+ * Load and parse the credentials file at `path`, if any. A missing file —
+ * an explicit `E2E_CREDENTIALS_FILE` that hasn't been written yet, or simply
+ * no `path` resolved at all — is expected pre-seed state, NOT an error: it
+ * falls through to `undefined` so the caller raises ONE clear message rather
+ * than an ENOENT stack trace. Any other read failure (e.g. a permissions
+ * error) still propagates — that is a real, actionable environment problem.
+ */
+function loadCredentials(path: string | undefined): Record<string, string> | undefined {
+  if (!path) return undefined;
+  try {
+    return parseCredentialsFile(readFileSync(path, 'utf8'));
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') return undefined;
+    throw err;
+  }
+}
+
+/**
+ * Resolve a seed user's password. Precedence mirrors the mesh-wide contract
+ * (per-user override -> shared override -> run-state file -> hard failure):
+ *   1. `process.env[user.passwordEnv]` — explicit per-user override.
+ *   2. `process.env.E2E_PASSWORD` — explicit shared override / same-run
+ *      propagation from whichever process generated first.
+ *   3. the run-state credentials file written by the seeder
+ *      (`${E2E_CREDENTIALS_FILE}`, or a `.e2e-credentials` walked up from cwd).
+ *   4. throws. There is no literal fallback: a guessable default defeats the
+ *      entire point of random per-run passwords, so an unseeded run must fail
+ *      loudly and name the fix (`make stack-seed`) instead of silently
+ *      authenticating with a known value.
+ */
 export function passwordFor(user: SeedUser): string {
-  return process.env[user.passwordEnv] ?? process.env['E2E_PASSWORD'] ?? 'e2e-pass';
+  const fromEnv = process.env[user.passwordEnv] || process.env['E2E_PASSWORD'];
+  if (fromEnv) return fromEnv;
+
+  const credentialsPath = findCredentialsFilePath();
+  const fromFile = loadCredentials(credentialsPath);
+  const filed = fromFile?.[user.passwordEnv] || fromFile?.['E2E_PASSWORD'];
+  if (filed) return filed;
+
+  const where = credentialsPath
+    ? `checked ${credentialsPath}`
+    : 'no .e2e-credentials file found walking up from cwd';
+  throw new Error(
+    `No e2e password resolved for '${user.username}': set $${user.passwordEnv} or $E2E_PASSWORD, ` +
+      `or run \`make stack-seed\` to generate one and persist it to .e2e-credentials (${where}).`,
+  );
 }
 
 /**
