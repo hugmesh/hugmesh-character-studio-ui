@@ -5,3 +5,7 @@
 /openapi.json
 *.log
 .DS_Store
+# e2e run-state credentials (Rule 3 of the e2e random-password contract):
+# this repo only READS one (see e2e/tests/helpers/session.ts), but it must
+# still never be committed.
+/.e2e-credentials

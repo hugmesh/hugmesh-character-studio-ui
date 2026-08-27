@@ -4,3 +4,6 @@
 /results
 /node_modules
 /test-results
+# e2e run-state credentials, in case E2E_CREDENTIALS_FILE or the cwd-walk
+# lands one here instead of the repo root (see tests/helpers/session.ts).
+/.e2e-credentials
