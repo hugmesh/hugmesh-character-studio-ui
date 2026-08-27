@@ -3,6 +3,8 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { SvgRigService } from '../services/svg-rig.service';
 import { PartManifest } from '../models/vn-manifest';
 import { VnCharacter } from '../models/vn-character';
+import { Viseme } from '../lipsync/viseme';
+import { Box } from '../rig/rig-fit';
 
 /**
  * Renders the composed character (v2 SVG-DOM compositor). Re-composes whenever
@@ -32,6 +34,10 @@ export class StudioCanvasComponent {
    * base character. Re-composes when it changes (expression button click).
    */
   readonly expressionSlots = input<Record<string, string>>({});
+  /** Lip-sync frame; 'closed' draws the art as authored. */
+  readonly viseme = input<Viseme>('closed');
+  /** The chosen mouth's measured bounds (null = fall back to the slot anchor). */
+  readonly mouthBox = input<Box | null>(null);
 
   private readonly rig = inject(SvgRigService);
   private readonly sanitizer = inject(DomSanitizer);
@@ -45,7 +51,8 @@ export class StudioCanvasComponent {
       const def = this.character();
       const pack = this.pack();
       const expr = this.expressionSlots();
-      void this.rig.composeDataUrl(def, pack, expr).then(u => this.url.set(u));
+      const opts = { viseme: this.viseme(), mouthBox: this.mouthBox() };
+      void this.rig.composeDataUrl(def, pack, expr, opts).then(u => this.url.set(u));
     });
   }
 }

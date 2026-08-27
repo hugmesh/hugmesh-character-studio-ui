@@ -1,0 +1,37 @@
+<fieldset class="rig" data-testid="cs-rig">
+  <legend>Rig</legend>
+  <p class="hint">
+    Nudge, scale or rotate any layer. The preview and the export are the same
+    picture, so what you see here is what you get.
+  </p>
+  <div class="actions">
+    <button type="button" data-testid="cs-rig-fit" (click)="fitFace()">Fit the face</button>
+    <button type="button" data-testid="cs-rig-reset-all" [disabled]="!anyTransform()" (click)="resetAll()">Reset all</button>
+  </div>
+  @for (slot of slots(); track slot.slot) {
+    <details class="slot" [attr.data-testid]="'cs-rig-' + slot.slot" [class.adjusted]="isAdjusted(slot.slot)">
+      <summary>{{ slot.slot }}@if (isAdjusted(slot.slot)) { <span class="badge">adjusted</span> }</summary>
+      <label>
+        Left / right
+        <input type="range" [attr.data-testid]="'cs-rig-' + slot.slot + '-dx'" [min]="-limits.offset" [max]="limits.offset" step="0.5"
+               [value]="transformOf(slot.slot).dx" (input)="onChange(slot.slot, 'dx', $event)" />
+      </label>
+      <label>
+        Up / down
+        <input type="range" [attr.data-testid]="'cs-rig-' + slot.slot + '-dy'" [min]="-limits.offset" [max]="limits.offset" step="0.5"
+               [value]="transformOf(slot.slot).dy" (input)="onChange(slot.slot, 'dy', $event)" />
+      </label>
+      <label>
+        Size
+        <input type="range" [attr.data-testid]="'cs-rig-' + slot.slot + '-scale'" [min]="limits.scaleMin" [max]="limits.scaleMax" step="0.01"
+               [value]="transformOf(slot.slot).scale" (input)="onChange(slot.slot, 'scale', $event)" />
+      </label>
+      <label>
+        Tilt
+        <input type="range" [attr.data-testid]="'cs-rig-' + slot.slot + '-rot'" [min]="-limits.rot" [max]="limits.rot" step="0.5"
+               [value]="transformOf(slot.slot).rot" (input)="onChange(slot.slot, 'rot', $event)" />
+      </label>
+      <button type="button" [attr.data-testid]="'cs-rig-' + slot.slot + '-reset'" [disabled]="!isAdjusted(slot.slot)" (click)="reset(slot.slot)">Reset {{ slot.slot }}</button>
+    </details>
+  }
+</fieldset>

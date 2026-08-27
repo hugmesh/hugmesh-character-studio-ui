@@ -39,3 +39,11 @@ button:disabled {
 .status:empty {
   display: none;
 }
+
+a.go-live {
+  color: inherit;
+  border: 1px solid var(--hug-accent, #7c4dff);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+}

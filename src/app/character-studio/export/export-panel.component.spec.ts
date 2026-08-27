@@ -103,7 +103,7 @@ describe('ExportPanelComponent — export fidelity + status mapping', () => {
     const bffSpy = spyOn(bff, 'exportAvatar').and.resolveTo({ avatarUrl: 'mxc://home/new' } as AvatarResult);
     await component.setAsAvatar();
     expect(bffSpy).toHaveBeenCalledTimes(1);
-    expect(component.status()).toBe('Set as your avatar.');
+    expect(component.status()).toBe('Set as your mesh avatar.');
   });
 
   it('maps a 422 content-policy block to the blocked message', async () => {

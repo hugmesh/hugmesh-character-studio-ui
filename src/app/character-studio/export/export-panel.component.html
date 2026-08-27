@@ -14,6 +14,11 @@
     (click)="useEverywhere()"
   >Use everywhere</button>
   <button type="button" data-testid="cs-export-download" [disabled]="busy()" (click)="download()">Download PNG</button>
+  <!-- A full-page navigation to the Owncast remote's avatar cam, deliberately NOT a
+       routerLink: under the host shell the injected Router is the shell's, and an
+       absolute routerLink from inside this remote misses; a root-relative href is
+       resolved by the gateway (remote-deeplink-to-host-shell) to the shell page. -->
+  <a class="go-live" data-testid="cs-go-live" [attr.href]="goLiveHref" title="Stream on Owncast as an avatar, mouth following your voice">Go live as an avatar</a>
   <p class="status" role="status" aria-live="polite" data-testid="cs-export-status">{{ status() }}</p>
   <!-- Per-platform outcomes. "Skipped" is stated as a ROLE fact, not a failure:
        a user without ROLE_MATRIX/ROLE_MASTODON simply has no avatar to set

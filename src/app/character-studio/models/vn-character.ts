@@ -21,6 +21,38 @@ export interface UserPart {
  * common canvas/anchor, not a shared topology, so opacity crossfade is the
  * honest interpolation, not a shape blend.
  */
+/**
+ * A per-slot RIG adjustment in pack-canvas pixels/degrees: nudge, scale and
+ * rotate one layer about its slot anchor. SPARSE on the character — an
+ * identity transform is removed, never stored. Applied by the compositor at
+ * compose time, so every edit shows live and exports exactly as previewed.
+ */
+export interface SlotTransform {
+  dx: number;
+  dy: number;
+  scale: number;
+  rot: number;
+}
+export const IDENTITY_TRANSFORM: Readonly<SlotTransform> = { dx: 0, dy: 0, scale: 1, rot: 0 };
+/** Clamp bounds: a quarter of a 1024 canvas, half-to-double size, ±45°. */
+export const SLOT_TRANSFORM_LIMITS = { offset: 256, scaleMin: 0.5, scaleMax: 2, rot: 45 } as const;
+export function isIdentityTransform(t: SlotTransform | null | undefined): boolean {
+  return !t || (t.dx === 0 && t.dy === 0 && t.scale === 1 && t.rot === 0);
+}
+export function clampSlotTransform(t: Partial<SlotTransform> | null | undefined): SlotTransform {
+  const num = (v: unknown, lo: number, hi: number, fallback: number) => {
+    const n = typeof v === 'number' && Number.isFinite(v) ? v : fallback;
+    return Math.min(hi, Math.max(lo, n));
+  };
+  const L = SLOT_TRANSFORM_LIMITS;
+  return {
+    dx: num(t?.dx, -L.offset, L.offset, 0),
+    dy: num(t?.dy, -L.offset, L.offset, 0),
+    scale: num(t?.scale, L.scaleMin, L.scaleMax, 1),
+    rot: num(t?.rot, -L.rot, L.rot, 0),
+  };
+}
+
 export interface SlotBlend {
   /** The other endpoint partId, in the same slot as the base choice. */
   toId: string;
@@ -46,6 +78,8 @@ export interface VnCharacter {
   userParts?: Record<string, UserPart>;
   /** slot → continuous blend toward a second part in that slot (see {@link SlotBlend}). */
   slotBlend?: Record<string, SlotBlend>;
+  /** Per-slot rig adjustments (see {@link SlotTransform}); absent = none. */
+  slotTransforms?: Record<string, SlotTransform>;
 }
 
 /**

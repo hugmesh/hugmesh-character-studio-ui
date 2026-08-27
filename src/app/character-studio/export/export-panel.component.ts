@@ -27,6 +27,9 @@ export class ExportPanelComponent {
 
   readonly status = signal('');
   readonly busy = signal(false);
+  /** The Owncast remote's avatar cam (see hugmesh-owncast-ui `avatar-cam`). */
+  static readonly GO_LIVE_HREF = '/owncast/avatar-cam';
+  readonly goLiveHref = ExportPanelComponent.GO_LIVE_HREF;
 
   private async composePng(): Promise<Blob> {
     const def = this.state.character();

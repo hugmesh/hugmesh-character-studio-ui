@@ -1,4 +1,4 @@
-import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { Component, OnInit, computed, effect, inject, signal } from '@angular/core';
 import { AssetManifestService } from './services/asset-manifest.service';
 import { CharacterStateService } from './services/character-state.service';
 import { StudioCanvasComponent } from './canvas/studio-canvas.component';
@@ -9,6 +9,12 @@ import { DrawComponent } from './draw/draw.component';
 import { ExportPanelComponent } from './export/export-panel.component';
 import { AiAssistComponent } from './ai-assist/ai-assist.component';
 import { ExpressionPreviewComponent } from './expression-preview/expression-preview.component';
+import { LipSyncPanelComponent } from './lipsync/lip-sync-panel.component';
+import { LipSyncService } from './lipsync/lip-sync.service';
+import { RigPanelComponent } from './rig/rig-panel.component';
+import { Box } from './rig/rig-fit';
+import { PartGeometryService } from './services/part-geometry.service';
+import { MOUTH_SLOT, SvgRigService } from './services/svg-rig.service';
 import { PartManifest } from './models/vn-manifest';
 import { randomizeCharacter } from './util/randomize';
 
@@ -32,6 +38,8 @@ import { randomizeCharacter } from './util/randomize';
     ExportPanelComponent,
     AiAssistComponent,
     ExpressionPreviewComponent,
+    LipSyncPanelComponent,
+    RigPanelComponent,
   ],
   templateUrl: './character-studio.component.html',
   styleUrl: './character-studio.component.scss',
@@ -40,7 +48,17 @@ export class CharacterStudioComponent implements OnInit {
   private readonly assets = inject(AssetManifestService);
   protected readonly state = inject(CharacterStateService);
 
+  protected readonly lipsync = inject(LipSyncService);
+  private readonly rig = inject(SvgRigService);
+  private readonly geometry = inject(PartGeometryService);
   readonly status = signal('Loading character assets…');
+  /**
+   * The chosen mouth's measured bounds on the pack canvas — what the lip-sync
+   * opens the mouth about. Re-measured whenever the mouth part (or the
+   * expression's mouth override, or a user-drawn mouth) changes; null until
+   * known, which the compositor treats as "use the slot anchor".
+   */
+  readonly mouthBox = signal<Box | null>(null);
   readonly pack = signal<PartManifest | null>(null);
   /** Enabled pack-index entries for the pack picker (set by the initial load). */
   readonly packEntries = this.assets.packEntries;
@@ -65,6 +83,36 @@ export class CharacterStudioComponent implements OnInit {
       ? `Character preview: ${pack.displayName} — ${headPart.displayName} head`
       : `Character preview: ${pack.displayName}`;
   });
+
+  constructor() {
+    effect(() => {
+      const pack = this.pack();
+      const c = this.state.character();
+      const mouthId = this.state.activeExpressionSlots()[MOUTH_SLOT] ?? c?.slots[MOUTH_SLOT];
+      const user = c?.userParts?.[MOUTH_SLOT];
+      if (!pack || !c || (!mouthId && !user)) {
+        this.mouthBox.set(null);
+        return;
+      }
+      void this.measureMouth(pack, mouthId ?? null, user?.svgInline ?? null).then(box => this.mouthBox.set(box));
+    });
+  }
+
+  private async measureMouth(pack: PartManifest, partId: string | null, userSvg: string | null): Promise<Box | null> {
+    if (userSvg) {
+      return this.geometry.bboxOf(`user:${pack.packId}:${MOUTH_SLOT}:${userSvg.length}`, userSvg, pack.canvas);
+    }
+    const part = pack.slots.find(s => s.slot === MOUTH_SLOT)?.parts.find(p => p.id === partId);
+    if (!part) {
+      return null;
+    }
+    try {
+      const markup = await this.rig.partMarkup(pack, part);
+      return await this.geometry.bboxOf(`${pack.packId}:${part.id}`, markup, pack.canvas);
+    } catch {
+      return null;
+    }
+  }
 
   async ngOnInit(): Promise<void> {
     try {

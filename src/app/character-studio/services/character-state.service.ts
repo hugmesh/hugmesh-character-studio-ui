@@ -1,6 +1,6 @@
 import { Injectable, computed, signal } from '@angular/core';
 import { PartManifest, TintRegion, ExpressionPreset } from '../models/vn-manifest';
-import { VnCharacter, UserPart, SlotBlend, buildDefaultCharacter } from '../models/vn-character';
+import { VnCharacter, UserPart, SlotBlend, SlotTransform, buildDefaultCharacter, clampSlotTransform, isIdentityTransform } from '../models/vn-character';
 
 /**
  * The single source of truth for the character being edited (B0 §3.3). A signal
@@ -91,6 +91,49 @@ export class CharacterStateService {
   }
 
   /** Set a tint region's colour (drives the palette-swap filter, PR-5). */
+  /** One slot's rig transform, clamped; identity removes the entry (sparse). */
+  setSlotTransform(slot: string, t: Partial<SlotTransform> | null): void {
+    this._character.update(c => {
+      if (!c) {
+        return c;
+      }
+      const slotTransforms = { ...(c.slotTransforms ?? {}) };
+      const clean = t ? clampSlotTransform(t) : null;
+      if (clean && !isIdentityTransform(clean)) {
+        slotTransforms[slot] = clean;
+      } else {
+        delete slotTransforms[slot];
+      }
+      const next: VnCharacter = { ...c, slotTransforms };
+      if (Object.keys(slotTransforms).length === 0) {
+        delete next.slotTransforms;
+      }
+      return next;
+    });
+  }
+
+  slotTransform(slot: string): SlotTransform | null {
+    return this._character()?.slotTransforms?.[slot] ?? null;
+  }
+
+  /** Merge auto-fit proposals over the current transforms (slot by slot). */
+  applyTransforms(transforms: Record<string, SlotTransform>): void {
+    for (const [slot, t] of Object.entries(transforms)) {
+      this.setSlotTransform(slot, t);
+    }
+  }
+
+  clearTransforms(): void {
+    this._character.update(c => {
+      if (!c?.slotTransforms) {
+        return c;
+      }
+      const next = { ...c };
+      delete next.slotTransforms;
+      return next;
+    });
+  }
+
   setPalette(region: string, hex: string): void {
     this._character.update(c => (c ? { ...c, palette: { ...c.palette, [region]: hex } } : c));
   }

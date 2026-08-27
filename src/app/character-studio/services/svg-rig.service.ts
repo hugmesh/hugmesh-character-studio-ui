@@ -1,6 +1,26 @@
 import { Injectable } from '@angular/core';
-import { PartManifest, TintRegion } from '../models/vn-manifest';
-import { SlotBlend, VnCharacter } from '../models/vn-character';
+import { PartDef, PartManifest, SlotDef, TintRegion } from '../models/vn-manifest';
+import { SlotBlend, SlotTransform, VnCharacter, clampSlotTransform, isIdentityTransform } from '../models/vn-character';
+import { VISEME_OPEN_SCALE, Viseme } from '../lipsync/viseme';
+import { Box } from '../rig/rig-fit';
+
+/** The slot whose layer lip-syncs. */
+export const MOUTH_SLOT = 'mouth';
+
+export interface ComposeOptions {
+  /** The lip-sync frame to draw the mouth in; absent/'closed' = the art as authored. */
+  viseme?: Viseme;
+  /** The chosen mouth's measured bounds on the canvas (PartGeometryService); null = unknown. */
+  mouthBox?: Box | null;
+}
+
+/** A finite number or 0 — nothing else ever reaches a transform attribute. */
+function num(v: unknown): number {
+  return typeof v === 'number' && Number.isFinite(v) ? v : 0;
+}
+function f(v: number): string {
+  return String(Math.round(num(v) * 100) / 100);
+}
 import { resolveAssetsBase } from './assets-base';
 
 /**
@@ -68,6 +88,7 @@ export class SvgRigService {
     def: VnCharacter,
     pack: PartManifest,
     expressionSlots: Record<string, string> = {},
+    opts: ComposeOptions = {},
   ): Promise<string> {
     const slots = [...pack.slots].sort((a, b) => a.zOrder - b.zOrder);
     const layers: string[] = [];
@@ -100,20 +121,29 @@ export class SvgRigService {
     };
 
     for (const slot of slots) {
+      // Every layer of this slot passes through the rig/viseme wrapper.
+      let synthesizeViseme = false;
+      const push = (markup: string) =>
+        layers.push(this.wrapSlot(slot, markup, def, pack, opts, synthesizeViseme));
       const userPart = def.userParts?.[slot.slot];
       if (userPart) {
-        // A user-drawn part wins over any expression swap.
-        layers.push(`<g>${this.svgInner(userPart.svgInline)}</g>`);
+        synthesizeViseme = this.wantsViseme(slot, opts);
+        push(`<g>${this.svgInner(userPart.svgInline)}</g>`);
         addRegions(userPart.tintRegions);
         continue;
       }
-      // Expression override (if this is an expression slot) else the base partId.
       const isExpressionSwap = slot.slot in expressionSlots;
       const partId = expressionSlots[slot.slot] ?? def.slots[slot.slot];
       if (!partId) {
         continue;
       }
-      const part = slot.parts.find(p => p.id === partId);
+      // A pack that draws its own talking frames: use the variant of the CHOSEN
+      // mouth (or the expression's mouth) for this viseme, no transform needed.
+      const variant = this.wantsViseme(slot, opts)
+        ? slot.parts.find(p => p.visemeOf === partId && p.viseme === opts.viseme)
+        : undefined;
+      synthesizeViseme = this.wantsViseme(slot, opts) && !variant;
+      const part = variant ?? slot.parts.find(p => p.id === partId);
       if (!part) {
         continue;
       }
@@ -126,7 +156,7 @@ export class SvgRigService {
         const t = clampBlendT(blend.t);
         if (t >= 1) {
           const inner = await this.partFile(`${this.assetsBase}packs/${def.packId}/${toPart.file}`);
-          layers.push(`<g>${inner}</g>`);
+          push(`<g>${inner}</g>`);
           addRegions(toPart.tintRegions);
           continue;
         }
@@ -135,8 +165,8 @@ export class SvgRigService {
             this.partFile(`${this.assetsBase}packs/${def.packId}/${part.file}`),
             this.partFile(`${this.assetsBase}packs/${def.packId}/${toPart.file}`),
           ]);
-          layers.push(`<g style="opacity:${(1 - t).toFixed(4)}">${fromInner}</g>`);
-          layers.push(`<g style="opacity:${t.toFixed(4)}">${toInner}</g>`);
+          push(`<g style="opacity:${(1 - t).toFixed(4)}">${fromInner}</g>`);
+          push(`<g style="opacity:${t.toFixed(4)}">${toInner}</g>`);
           addRegions(part.tintRegions);
           addRegions(toPart.tintRegions);
           continue;
@@ -144,7 +174,7 @@ export class SvgRigService {
         // t clamped to 0 — falls through to the plain single-part render below.
       }
       const inner = await this.partFile(`${this.assetsBase}packs/${def.packId}/${part.file}`);
-      layers.push(`<g>${inner}</g>`);
+      push(`<g>${inner}</g>`);
       addRegions(part.tintRegions);
     }
 
@@ -163,12 +193,69 @@ export class SvgRigService {
     def: VnCharacter,
     pack: PartManifest,
     expressionSlots: Record<string, string> = {},
+    opts: ComposeOptions = {},
   ): Promise<string> {
-    const svg = await this.compose(def, pack, expressionSlots);
+    const svg = await this.compose(def, pack, expressionSlots, opts);
     return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
   }
 
   /** Fetch a pack part SVG and return its `<svg>` inner markup (cached). */
+  /** The mouth slot lip-syncs when a non-closed viseme is asked for. */
+  private wantsViseme(slot: SlotDef, opts: ComposeOptions): boolean {
+    return slot.slot === MOUTH_SLOT && !!opts.viseme && opts.viseme !== 'closed';
+  }
+
+  /**
+   * Fold the slot's rig transform and, for the mouth, the synthesized viseme
+   * onto one layer. Every number is clamped/finite-checked before it reaches
+   * an attribute, so a character cannot smuggle markup through a transform.
+   *
+   * The viseme opens the CHOSEN mouth about its own measured bounds
+   * ({@link ComposeOptions.mouthBox}) — the art stays the user's, the emotion's
+   * mouth override stays in effect, only the openness changes — and falls back
+   * to a small box at the slot anchor when the bounds are unknown.
+   */
+  private wrapSlot(
+    slot: SlotDef,
+    markup: string,
+    def: VnCharacter,
+    pack: PartManifest,
+    opts: ComposeOptions,
+    synthesizeViseme: boolean,
+  ): string {
+    const w = num(pack.canvas.width), h = num(pack.canvas.height);
+    let inner = markup;
+    if (synthesizeViseme && opts.viseme && opts.viseme !== 'closed') {
+      const sy = VISEME_OPEN_SCALE[opts.viseme];
+      const box = opts.mouthBox ?? {
+        x: num(slot.anchor.x) * w - w * 0.05,
+        y: num(slot.anchor.y) * h - h * 0.02,
+        w: w * 0.1,
+        h: h * 0.04,
+      };
+      const cx = num(box.x) + num(box.w) / 2;
+      const cy = num(box.y) + num(box.h) / 2;
+      const drop = num(box.h) * 0.12 * (sy - 1);   // the jaw drops; the upper lip stays
+      inner =
+        `<g data-viseme="${opts.viseme}" transform="translate(0 ${f(drop)}) translate(${f(cx)} ${f(cy)})` +
+        ` scale(1 ${f(sy)}) translate(${f(-cx)} ${f(-cy)})">${inner}</g>`;
+    }
+    const raw = def.slotTransforms?.[slot.slot];
+    if (raw && !isIdentityTransform(raw)) {
+      const t: SlotTransform = clampSlotTransform(raw);
+      const px = num(slot.anchor.x) * w, py = num(slot.anchor.y) * h;
+      inner =
+        `<g data-rig="${slot.slot}" transform="translate(${f(t.dx)} ${f(t.dy)}) translate(${f(px)} ${f(py)})` +
+        ` rotate(${f(t.rot)}) scale(${f(t.scale)}) translate(${f(-px)} ${f(-py)})">${inner}</g>`;
+    }
+    return inner;
+  }
+
+  /** A pack part's inner markup — what the geometry service rasterises. */
+  async partMarkup(pack: PartManifest, part: PartDef): Promise<string> {
+    return this.partFile(`${this.assetsBase}packs/${pack.packId}/${part.file}`);
+  }
+
   private async partFile(url: string): Promise<string> {
     const hit = this.cache.get(url);
     if (hit !== undefined) {
