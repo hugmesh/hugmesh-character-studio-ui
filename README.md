@@ -230,23 +230,19 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
 - PNG export plus a moderated avatar upload (`POST /bff/user/profile/avatar`),
   which goes through the platform's sanitize → moderate → store pipeline; a
   blocked image surfaces as an HTTP 422.
+- Character persistence (issue #1): on studio load the saved `vn-character`
+  definition is restored via `CharacterBffService.loadActive` (reopening the
+  pack it belongs to, falling back to the pack default when there is no save
+  or the user-bff is unreachable), and every edit is debounce-autosaved via
+  `CharacterBffService.saveDefinition`, with a pending save flushed on
+  navigation away. An aria-live indicator (`cs-autosave`) reports "Saved." or
+  an honest local-only failure.
 - A Playwright-bdd e2e harness (16 `.feature` files, offline-first, with
   `@cluster`-tagged scenarios for cases that need a live backend), a
-  Karma/Jasmine unit suite (33 specs across 6 suites), and two
+  Karma/Jasmine unit suite (90+ specs, `npm test`), and two
   asset-integrity CLI gates (`validate:assets`, `compose:sweep`).
 
 ### Known limitations
-
-- **Character persistence is defined but unused.** `CharacterBffService.saveDefinition`
-  and `.loadActive` (`src/app/character-studio/services/character-bff.service.ts:23`
-  and `:36`) implement PUT/GET of the `vn-character` definition, but nothing in
-  the app calls either — `CharacterStudioComponent.ngOnInit`
-  (`src/app/character-studio/character-studio.component.ts:69`) always seeds via
-  `this.state.init(pack, undefined, expressions)`
-  (`src/app/character-studio/character-studio.component.ts:75`), passing `undefined` for
-  the saved definition, never from `loadActive()`. No in-progress edit is
-  persisted until (if) the user exports it as their avatar — navigating away
-  loses the in-progress character.
 - **`PixiRigService.setExpression`/`.setViseme` are stubs** (see the docblocks
   in `pixi-rig.service.ts`) — expected, since that GPU rig isn't on the active
   render path yet (reserved for a future milestone), not a regression.

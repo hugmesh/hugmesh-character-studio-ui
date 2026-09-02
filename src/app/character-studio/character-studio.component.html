@@ -9,6 +9,14 @@
 
   <!-- Status/error region (export 422, asset-load errors land here in later steps). -->
   <p class="status" role="status" aria-live="polite" data-testid="cs-status">{{ status() }}</p>
+  <!-- Autosave indicator: silent until the first save attempt, then honest —
+       a failed PUT says the edits are local-only instead of pretending. -->
+  <p class="autosave" role="status" aria-live="polite" data-testid="cs-autosave">
+    @switch (saveState()) {
+      @case ('saved') { Saved. }
+      @case ('error') { Autosave failed — your latest edits are only on this device. }
+    }
+  </p>
   @if (error()) {
     <p class="error" role="alert" data-testid="cs-error">{{ error() }}</p>
   }
