@@ -1,5 +1,6 @@
-import { Component, OnInit, computed, effect, inject, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, computed, effect, inject, signal } from '@angular/core';
 import { AssetManifestService } from './services/asset-manifest.service';
+import { CharacterBffService } from './services/character-bff.service';
 import { CharacterStateService } from './services/character-state.service';
 import { StudioCanvasComponent } from './canvas/studio-canvas.component';
 import { PackPickerComponent } from './pack-picker/pack-picker.component';
@@ -16,7 +17,19 @@ import { Box } from './rig/rig-fit';
 import { PartGeometryService } from './services/part-geometry.service';
 import { MOUTH_SLOT, SvgRigService } from './services/svg-rig.service';
 import { PartManifest } from './models/vn-manifest';
+import { VnCharacter } from './models/vn-character';
 import { randomizeCharacter } from './util/randomize';
+
+/**
+ * Debounce for the autosave PUT. Long enough to collapse a drag/typing burst
+ * into one write, short enough that "navigate away moments after an edit"
+ * still catches the flush in {@link CharacterStudioComponent.ngOnDestroy}.
+ * Exported so the spec can step a virtual clock past it.
+ */
+export const AUTOSAVE_DEBOUNCE_MS = 800;
+
+/** Autosave lifecycle surfaced in the aria-live indicator (`cs-autosave`). */
+export type SaveState = 'idle' | 'saved' | 'error';
 
 /**
  * Root of the VN character-studio creator (Phase B0). Loads the asset library
@@ -25,6 +38,12 @@ import { randomizeCharacter } from './util/randomize';
  * the part picker (PR-4) — choosing a part re-composes the canvas. The studio
  * header offers the pack picker (switching the whole art set) and the
  * "Surprise me" randomizer. Errors surface in the `aria-live` region.
+ *
+ * Persistence (issue #1): on init the saved definition is restored via
+ * {@link CharacterBffService.loadActive} (falling back to the pack default when
+ * there is none, or when the bff is unreachable), and every subsequent edit is
+ * autosaved via {@link CharacterBffService.saveDefinition} on a
+ * {@link AUTOSAVE_DEBOUNCE_MS} debounce, flushed on destroy.
  */
 @Component({
   selector: 'hug-character-studio',
@@ -44,9 +63,10 @@ import { randomizeCharacter } from './util/randomize';
   templateUrl: './character-studio.component.html',
   styleUrl: './character-studio.component.scss',
 })
-export class CharacterStudioComponent implements OnInit {
+export class CharacterStudioComponent implements OnInit, OnDestroy {
   private readonly assets = inject(AssetManifestService);
   protected readonly state = inject(CharacterStateService);
+  private readonly characterBff = inject(CharacterBffService);
 
   protected readonly lipsync = inject(LipSyncService);
   private readonly rig = inject(SvgRigService);
@@ -64,6 +84,17 @@ export class CharacterStudioComponent implements OnInit {
   readonly packEntries = this.assets.packEntries;
   /** Surfaced from the service for the aria-live error region. */
   readonly error = this.assets.error;
+
+  /** Autosave outcome for the `cs-autosave` indicator ('idle' until a save runs). */
+  readonly saveState = signal<SaveState>('idle');
+  /**
+   * JSON of the definition as last loaded from / written to the user-bff — the
+   * autosave's dirty check. `null` until {@link ngOnInit} seeds the state, which
+   * is also what keeps the seeding itself (and any state left over from a
+   * previous studio instance) from triggering a write of an unedited character.
+   */
+  private lastPersisted: string | null = null;
+  private saveTimer: ReturnType<typeof setTimeout> | null = null;
 
   /**
    * Meaningful alt/aria-label for the preview <img>: names the pack and the
@@ -96,6 +127,54 @@ export class CharacterStudioComponent implements OnInit {
       }
       void this.measureMouth(pack, mouthId ?? null, user?.svgInline ?? null).then(box => this.mouthBox.set(box));
     });
+
+    // Debounced autosave (issue #1): every state mutation lands here via the
+    // character signal; a burst of edits collapses into one PUT. Armed only
+    // once ngOnInit has seeded the state (lastPersisted != null), and only when
+    // the definition actually differs from what the user-bff already holds.
+    effect(() => {
+      const def = this.state.character();
+      if (!def || this.lastPersisted === null || JSON.stringify(def) === this.lastPersisted) {
+        return;
+      }
+      if (this.saveTimer !== null) {
+        clearTimeout(this.saveTimer);
+      }
+      this.saveTimer = setTimeout(() => {
+        this.saveTimer = null;
+        void this.saveNow();
+      }, AUTOSAVE_DEBOUNCE_MS);
+    });
+  }
+
+  /** PUT the current definition if it is dirty (the autosave timer's target). */
+  private async saveNow(): Promise<void> {
+    const def = this.state.character();
+    if (!def) {
+      return;
+    }
+    const serialized = JSON.stringify(def);
+    if (serialized === this.lastPersisted) {
+      return;
+    }
+    try {
+      await this.characterBff.saveDefinition(def);
+      this.lastPersisted = serialized;
+      this.saveState.set('saved');
+    } catch {
+      // Keep lastPersisted stale so the next edit retries; the aria-live
+      // indicator says the edits are local-only rather than silently lying.
+      this.saveState.set('error');
+    }
+  }
+
+  /** Flush a pending (debounced, not-yet-fired) save on navigation away. */
+  ngOnDestroy(): void {
+    if (this.saveTimer !== null) {
+      clearTimeout(this.saveTimer);
+      this.saveTimer = null;
+      void this.saveNow();
+    }
   }
 
   private async measureMouth(pack: PartManifest, partId: string | null, userSvg: string | null): Promise<Box | null> {
@@ -116,12 +195,34 @@ export class CharacterStudioComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     try {
-      const pack = await this.assets.loadActivePack();
+      let pack = await this.assets.loadActivePack();
+      // Restore the saved definition, if any (issue #1). A failed GET (signed
+      // out, bff unreachable — the standalone/dev case) must never block the
+      // studio: fall back to the pack default exactly as before.
+      let saved: VnCharacter | null = null;
+      try {
+        saved = await this.characterBff.loadActive();
+      } catch {
+        saved = null;
+      }
+      if (saved && saved.packId !== pack.packId) {
+        // The save lives in another pack — re-open that one, like onPackChange.
+        try {
+          pack = await this.assets.loadPack(saved.packId);
+        } catch {
+          saved = null; // its pack is gone/disabled: seed the default instead
+        }
+      }
       this.pack.set(pack);
       // Optional expression presets (empty for packs without an `expressions` index).
       const expressions = await this.assets.loadExpressions(pack);
-      this.state.init(pack, undefined, expressions);
-      this.status.set(`Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”.`);
+      this.state.init(pack, saved ?? undefined, expressions);
+      this.lastPersisted = JSON.stringify(this.state.character());
+      this.status.set(
+        saved
+          ? `Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”. Restored your saved character.`
+          : `Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”.`,
+      );
     } catch {
       this.status.set('');
     }
@@ -131,7 +232,9 @@ export class CharacterStudioComponent implements OnInit {
    * Switch to another enabled pack (pack-picker selection): load its manifest +
    * expressions and re-seed the character state with the pack's default
    * character — exactly like the initial load. Selecting the current pack is a
-   * no-op (the picker never emits it, and we guard again here).
+   * no-op (the picker never emits it, and we guard again here). The re-seeded
+   * character differs from the persisted one, so the autosave effect persists
+   * the switch — reopening the studio restores the pack you left it on.
    */
   async onPackChange(packId: string): Promise<void> {
     if (this.pack()?.packId === packId) {

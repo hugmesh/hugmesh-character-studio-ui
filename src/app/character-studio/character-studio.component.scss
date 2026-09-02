@@ -19,6 +19,16 @@
   display: none;
 }
 
+.autosave {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+.autosave:empty {
+  display: none;
+}
+
 .studio-header {
   display: flex;
   flex-wrap: wrap;
