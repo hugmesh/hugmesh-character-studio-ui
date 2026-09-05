@@ -23,6 +23,23 @@ export interface PlatformResult {
 }
 
 /**
+ * Ceiling on the character-definition GET that the studio's first render waits
+ * behind. A bff that REFUSES the connection already rejects promptly; one that
+ * accepts the socket and then never answers (gateway backpressure, a wedged
+ * upstream pool) would otherwise leave the promise outstanding for the life of
+ * the page. Bounding it turns that stall into the ordinary — and already
+ * handled — failure path, whose fallback is the pack default. Generous on
+ * purpose: this is a stall detector, not a latency budget.
+ *
+ * Deliberately NOT applied to the write/upload calls: `saveDefinition` retries
+ * on the next edit, and the avatar export runs a server-side moderation pass
+ * that can legitimately take longer than any timeout worth setting here.
+ *
+ * Exported so the spec can step a virtual clock past it.
+ */
+export const BFF_LOAD_TIMEOUT_MS = 10_000;
+
+/**
  * Hand-written fetch client for the user-bff (the org convention; no HttpClient).
  * Authenticates via the HttpOnly `bff_` cookie ({@link SessionService} credentials)
  * — no browser bearer. Covers the character-definition persistence (PUT/GET
@@ -47,11 +64,15 @@ export class CharacterBffService {
     }
   }
 
-  /** Load the active character definition for re-edit (null if none). */
+  /**
+   * Load the active character definition for re-edit (null if none).
+   *
+   * Bounded by {@link BFF_LOAD_TIMEOUT_MS}: the studio's restore-on-open waits
+   * on this, so a bff that stalls rather than fails must still settle. The
+   * caller treats the resulting rejection exactly like an unreachable bff.
+   */
   async loadActive(): Promise<VnCharacter | null> {
-    const res = await fetch(`${this.base}/vn-character/active`, {
-      credentials: this.session.credentials,
-    });
+    const res = await this.getBounded(`${this.base}/vn-character/active`);
     if (res.status === 404) {
       return null;
     }
@@ -59,6 +80,26 @@ export class CharacterBffService {
       throw new Error(`loadActive ${res.status}`);
     }
     return (await res.json()) as VnCharacter;
+  }
+
+  /**
+   * GET with a hard ceiling on how long it may stay unanswered. Uses an
+   * AbortController driven by `setTimeout` rather than `AbortSignal.timeout()`
+   * so the timer is cleared the moment the response lands (no timer left
+   * pending behind a finished request) and so zone.js can drive it in the
+   * specs' virtual clock.
+   */
+  private async getBounded(url: string, timeoutMs = BFF_LOAD_TIMEOUT_MS): Promise<Response> {
+    const abort = new AbortController();
+    const timer = setTimeout(
+      () => abort.abort(new DOMException(`${url} did not answer within ${timeoutMs}ms`, 'TimeoutError')),
+      timeoutMs,
+    );
+    try {
+      return await fetch(url, { credentials: this.session.credentials, signal: abort.signal });
+    } finally {
+      clearTimeout(timer);
+    }
   }
 
   /**
