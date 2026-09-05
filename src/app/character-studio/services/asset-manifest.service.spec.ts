@@ -68,9 +68,12 @@ describe('AssetManifestService pack index + loadPack', () => {
     expect(pack.packId).toBe('anime-v1');
     expect(svc.activePack()).toBe(pack);
     expect(svc.error()).toBeNull();
-    expect(fetchSpy).toHaveBeenCalledWith('assets/vn/packs/anime-v1/pack.json', {
-      cache: 'no-cache',
-    });
+    // Asset URLs are ABSOLUTE since #11 (resolved from the module, not the
+    // document), so assert on the tail — the stub above matches the same way.
+    expect(fetchSpy).toHaveBeenCalledWith(
+      jasmine.stringMatching(/(^|\/)assets\/vn\/packs\/anime-v1\/pack\.json$/),
+      { cache: 'no-cache' },
+    );
   });
 
   it('loadPack falls back to fetching the index when packEntries is not populated yet', async () => {

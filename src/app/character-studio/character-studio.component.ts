@@ -16,7 +16,7 @@ import { RigPanelComponent } from './rig/rig-panel.component';
 import { Box } from './rig/rig-fit';
 import { PartGeometryService } from './services/part-geometry.service';
 import { MOUTH_SLOT, SvgRigService } from './services/svg-rig.service';
-import { PartManifest } from './models/vn-manifest';
+import { ExpressionPreset, PartManifest } from './models/vn-manifest';
 import { VnCharacter } from './models/vn-character';
 import { randomizeCharacter } from './util/randomize';
 
@@ -256,44 +256,90 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Open the studio on the pack default FIRST, then restore the saved character
+   * over it.
+   *
+   * ORDERING IS LOAD-BEARING. The whole studio is gated on `@if (pack(); as p)`
+   * (character-studio.component.html), and `pack` had been written only AFTER
+   * awaiting the user-bff GET. A GET that REJECTS is handled (the catch below);
+   * a GET that never SETTLES — a gateway that accepts the socket and then does
+   * not answer, a wedged upstream pool — is not an error, so no catch can see
+   * it, and the studio stayed on "Loading character assets…" forever with no
+   * user-driven recovery (the pack picker that could re-seed it lives inside the
+   * very gate that never opened). Seeding before the await keeps studio
+   * availability a property of OUR nginx serving the pack, not of the user-bff
+   * being both healthy and responsive. {@link CharacterBffService.loadActive}
+   * additionally bounds the GET so a stall degrades into the fallback below
+   * instead of leaking a promise for the life of the page.
+   */
   async ngOnInit(): Promise<void> {
+    let pack: PartManifest;
+    let expressions: ExpressionPreset[];
     try {
-      let pack = await this.assets.loadActivePack();
-      // Restore the saved definition, if any (issue #1). A failed GET (signed
-      // out, bff unreachable — the standalone/dev case) must never block the
-      // studio: fall back to the pack default exactly as before.
-      let saved: VnCharacter | null = null;
-      try {
-        saved = await this.characterBff.loadActive();
-      } catch {
-        saved = null;
-      }
-      if (saved && saved.packId !== pack.packId) {
-        // The save lives in another pack — re-open that one, like onPackChange.
-        try {
-          pack = await this.assets.loadPack(saved.packId);
-        } catch {
-          saved = null; // its pack is gone/disabled: seed the default instead
-        }
-      }
-      this.pack.set(pack);
+      pack = await this.assets.loadActivePack();
       // Optional expression presets (empty for packs without an `expressions` index).
-      const expressions = await this.assets.loadExpressions(pack);
-      this.state.init(pack, saved ?? undefined, expressions);
-      this.lastPersisted = JSON.stringify(this.state.character());
-      // Null when there is nothing to lose: no save, an unreachable bff, or a
-      // save whose pack is gone/disabled (`saved` was cleared above — that
-      // character can no longer be loaded or rendered, so the fresh default
-      // takes over the slot rather than being locked out of saving forever).
-      this.persistedPackId.set(saved?.packId ?? null);
-      this.status.set(
-        saved
-          ? `Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”. Restored your saved character.`
-          : `Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”.`,
-      );
+      expressions = await this.assets.loadExpressions(pack);
     } catch {
       this.status.set('');
+      return;
     }
+    this.pack.set(pack);
+    this.state.init(pack, undefined, expressions);
+    this.status.set(`Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”.`);
+    // Arm the autosave against the seeded default NOW rather than after the GET:
+    // the studio is interactive from this point, and edits made while a slow
+    // restore is still in flight must not be silently dropped. The dirty check
+    // in the autosave effect means seeding itself still never PUTs.
+    const seeded = JSON.stringify(this.state.character());
+    this.lastPersisted = seeded;
+
+    // Restore the saved definition, if any (issue #1). A failed GET (signed
+    // out, bff unreachable — the standalone/dev case) and a timed-out one both
+    // land in the catch and leave the seeded default in place.
+    let saved: VnCharacter | null = null;
+    try {
+      saved = await this.characterBff.loadActive();
+    } catch {
+      saved = null;
+    }
+    if (!saved) {
+      return;
+    }
+    if (JSON.stringify(this.state.character()) !== seeded) {
+      // The user already started editing while the GET was outstanding —
+      // restoring over that would throw their live work away. Keep the edits and
+      // let the autosave overwrite the (now stale) server copy instead: marking
+      // the fetched definition as "persisted" is exactly what makes them dirty.
+      this.lastPersisted = JSON.stringify(saved);
+      // The live edits are taking the slot over, so THIS pack owns the save from
+      // here — not `saved.packId`, which would make browsingOtherPack() true and
+      // gate the very autosave that is meant to land them.
+      this.persistedPackId.set(pack.packId);
+      return;
+    }
+    if (saved.packId !== pack.packId) {
+      // The save lives in another pack — re-open that one, like onPackChange.
+      try {
+        pack = await this.assets.loadPack(saved.packId);
+        expressions = await this.assets.loadExpressions(pack);
+        this.pack.set(pack);
+      } catch {
+        // Its pack is gone/disabled: keep the seeded default, and leave
+        // persistedPackId null — that saved character can no longer be loaded or
+        // rendered, so the fresh default takes over the slot rather than being
+        // locked out of saving forever.
+        return;
+      }
+    }
+    this.state.init(pack, saved, expressions);
+    this.lastPersisted = JSON.stringify(this.state.character());
+    // The restored character's pack now holds the one save: any OTHER pack the
+    // picker opens from here is a browse (see browsingOtherPack).
+    this.persistedPackId.set(saved.packId);
+    this.status.set(
+      `Loaded ${pack.slots.length} slot(s) from “${pack.displayName}”. Restored your saved character.`,
+    );
   }
 
   /**

@@ -85,6 +85,17 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     defaultExpression: 'neutral',
   };
 
+  /** A saved definition living in the OTHER pack (packB), for the cross-pack paths. */
+  const savedB: VnCharacter = {
+    schemaVersion: 1,
+    packId: 'pack-b',
+    name: 'Saved elsewhere',
+    slots: { body: 'bodyb_0' },
+    palette: { fur: '#654321' },
+    transform: { scale: 1, offsetX: 0, offsetY: 0 },
+    defaultExpression: 'neutral',
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({ imports: [CharacterStudioComponent] }).compileComponents();
     assets = TestBed.inject(AssetManifestService);
@@ -96,9 +107,9 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     spyOn(rig, 'partMarkup').and.resolveTo('<svg xmlns="http://www.w3.org/2000/svg"></svg>');
     spyOn(assets, 'loadActivePack').and.resolveTo(packA);
     // Dispatch by id: the browse specs switch away AND back, so 'pack-a'
-  // must resolve to packA rather than to whatever the last switch loaded.
-  loadPackSpy = spyOn(assets, 'loadPack').and.callFake((packId: string) =>
-    Promise.resolve(packId === 'pack-a' ? packA : packB));
+    // must resolve to packA rather than to whatever the last switch loaded.
+    loadPackSpy = spyOn(assets, 'loadPack').and.callFake((packId: string) =>
+      Promise.resolve(packId === 'pack-a' ? packA : packB));
     spyOn(assets, 'loadExpressions').and.resolveTo([]);
     loadActiveSpy = spyOn(bff, 'loadActive').and.resolveTo(null);
     saveSpy = spyOn(bff, 'saveDefinition').and.resolveTo();
@@ -175,6 +186,54 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     expect(component.pack()!.packId).toBe('pack-a');
     expect(state.character()!.slots['body']).toBe('body_0');
     expect(component.status()).toContain('Loaded 1 slot(s)');
+  }));
+
+  // ── the STALL case (not the same as a failure) ────────────────────────────
+  // A GET that REJECTS is covered by the spec above. A GET that never settles —
+  // a gateway holding the socket open without answering, a wedged r2dbc pool
+  // upstream — is not an error, so the `catch` never runs. Before the fix the
+  // studio's `pack` signal was only written AFTER that await, and the whole UI
+  // is gated on `@if (pack(); as p)`, so the studio stayed on
+  // "Loading character assets…" forever with no recovery (the pack picker that
+  // could re-seed it lives inside the very gate that never opened).
+
+  it('opens the studio on the pack default when the restore GET never settles (stall, not failure)', fakeAsync(() => {
+    loadActiveSpy.and.returnValue(new Promise<VnCharacter | null>(() => {})); // never settles
+    const component = create();
+    tick(60_000); // …and it is STILL outstanding a minute later
+    fixture.detectChanges();
+    expect(component.pack()!.packId).toBe('pack-a');
+    expect(state.character()!.slots['body']).toBe('body_0');
+    expect(component.status()).toContain('Loaded 1 slot(s)');
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.querySelector('[data-testid="cs-studio-header"]')).not.toBeNull();
+    expect(el.querySelector('[data-testid="cs-studio"]')).not.toBeNull();
+  }));
+
+  it('keeps the autosave armed while a stalled restore GET is still in flight', fakeAsync(() => {
+    loadActiveSpy.and.returnValue(new Promise<VnCharacter | null>(() => {}));
+    const component = create();
+    editAndSettle(() => state.setSlot('body', 'body_1'));
+    expect(saveSpy).toHaveBeenCalledTimes(1);
+    expect((saveSpy.calls.mostRecent().args[0] as VnCharacter).slots['body']).toBe('body_1');
+    expect(component.saveState()).toBe('saved');
+  }));
+
+  it('does not clobber edits made while a slow restore GET was still in flight', fakeAsync(() => {
+    let land!: (v: VnCharacter | null) => void;
+    loadActiveSpy.and.returnValue(new Promise<VnCharacter | null>(res => (land = res)));
+    create();
+    state.setPalette('fur', '#00ff00'); // the user starts editing the seeded default…
+    fixture.detectChanges();
+    land(savedA); // …and only then does the saved definition arrive (fur #123456)
+    flushMicrotasks();
+    fixture.detectChanges();
+    expect(state.character()!.palette['fur']).toBe('#00ff00'); // live edit survives
+    expect(state.character()!.name).toBe('Untitled'); // …not overwritten by the save
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    flushMicrotasks();
+    expect(saveSpy).toHaveBeenCalledTimes(1); // …and is what gets persisted
+    expect((saveSpy.calls.mostRecent().args[0] as VnCharacter).palette['fur']).toBe('#00ff00');
   }));
 
   it('autosaves an edit after the debounce, collapsing a burst into ONE PUT of the latest definition', fakeAsync(() => {
@@ -357,5 +416,29 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     switchPack(component, 'pack-a');
     expect(saveSpy).toHaveBeenCalledTimes(1);
     expect(fixture.nativeElement.querySelector('[data-testid="cs-browsing"]')).not.toBeNull();
+  }));
+
+  it('lets live edits save in their OWN pack when the late restore belongs to another pack', fakeAsync(() => {
+    // The stall-tolerant init (#21) seeds pack-a and arms the autosave before the
+    // GET lands. If the arriving save's pack were taken as the one that "owns"
+    // the slot, browsingOtherPack() would be true for the pack on screen and the
+    // gate added here would swallow the user's live edit — the same silent loss
+    // this panel exists to close, arriving from the other direction.
+    let land!: (v: VnCharacter | null) => void;
+    loadActiveSpy.and.returnValue(new Promise<VnCharacter | null>(res => (land = res)));
+    const component = create();
+    state.setPalette('fur', '#00ff00'); // the user edits pack-a's seeded default…
+    fixture.detectChanges();
+    land(savedB); // …and the save that finally arrives lives in pack-b
+    flushMicrotasks();
+    fixture.detectChanges();
+    expect(component.pack()!.packId).toBe('pack-a'); // the live edit keeps the screen
+    expect(fixture.nativeElement.querySelector('[data-testid="cs-browsing"]')).toBeNull();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    flushMicrotasks();
+    expect(saveSpy).toHaveBeenCalledTimes(1);
+    const put = saveSpy.calls.mostRecent().args[0] as VnCharacter;
+    expect(put.packId).toBe('pack-a');
+    expect(put.palette['fur']).toBe('#00ff00');
   }));
 });
