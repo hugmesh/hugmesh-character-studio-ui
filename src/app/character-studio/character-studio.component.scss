@@ -51,6 +51,37 @@
   border-color: var(--hug-accent, #7c4dff);
 }
 
+/* Browse notice: reassurance, not an alarm — it says the save is safe. Sits
+   under the header so the pack picker that caused it is right above. */
+.browsing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--hug-border, #444);
+  border-left: 3px solid var(--hug-accent, #7c4dff);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.keep-here {
+  cursor: pointer;
+  border: 1px solid var(--hug-accent, #7c4dff);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  white-space: nowrap;
+}
+
+.keep-here:hover {
+  background: color-mix(in srgb, var(--hug-accent, #7c4dff) 15%, transparent);
+}
+
 .studio {
   display: flex;
   flex-wrap: wrap;
