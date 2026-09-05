@@ -230,13 +230,17 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
 - PNG export plus a moderated avatar upload (`POST /bff/user/profile/avatar`),
   which goes through the platform's sanitize → moderate → store pipeline; a
   blocked image surfaces as an HTTP 422.
-- Character persistence (issue #1): on studio load the saved `vn-character`
-  definition is restored via `CharacterBffService.loadActive` (reopening the
-  pack it belongs to, falling back to the pack default when there is no save
-  or the user-bff is unreachable), and every edit is debounce-autosaved via
-  `CharacterBffService.saveDefinition`, with a pending save flushed on
-  navigation away. An aria-live indicator (`cs-autosave`) reports "Saved." or
-  an honest local-only failure.
+- Character persistence (issue #1): the studio opens on the pack default and
+  the saved `vn-character` definition is then restored over it via
+  `CharacterBffService.loadActive` (reopening the pack it belongs to). The
+  restore is strictly off the render path: rendering never waits on the
+  user-bff, so no save, an unreachable bff, *or one that stalls* (the GET is
+  bounded by `BFF_LOAD_TIMEOUT_MS`) all leave you editing the pack default
+  rather than a studio stuck on "Loading character assets…". Edits made while
+  a slow restore is still in flight win over it. Every edit is
+  debounce-autosaved via `CharacterBffService.saveDefinition`, with a pending
+  save flushed on navigation away. An aria-live indicator (`cs-autosave`)
+  reports "Saved." or an honest local-only failure.
 - A Playwright-bdd e2e harness (16 `.feature` files, offline-first, with
   `@cluster`-tagged scenarios for cases that need a live backend), a
   Karma/Jasmine unit suite (90+ specs, `npm test`), and two
