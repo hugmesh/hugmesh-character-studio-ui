@@ -36,6 +36,21 @@
         (click)="surpriseMe()"
       >Surprise me</button>
     </div>
+    <!-- Browsing another art set: the studio saves ONE character, so while the
+         open pack is not the one holding it, nothing is written and the save is
+         left alone. Says where the save is and offers the explicit swap. -->
+    @if (browsingOtherPack()) {
+      <p class="browsing" role="status" data-testid="cs-browsing">
+        Just looking — your saved character is in “{{ savedPackLabel() }}” and stays
+        there. Edits here aren't saved unless you keep them.
+        <button
+          type="button"
+          class="keep-here"
+          data-testid="cs-keep-here"
+          (click)="keepThisCharacter()"
+        >Keep this one instead</button>
+      </p>
+    }
     @if (state.character(); as c) {
       <hug-ai-assist [pack]="p" />
       <div class="studio" data-testid="cs-studio">

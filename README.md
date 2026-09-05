@@ -240,7 +240,12 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
   a slow restore is still in flight win over it. Every edit is
   debounce-autosaved via `CharacterBffService.saveDefinition`, with a pending
   save flushed on navigation away. An aria-live indicator (`cs-autosave`)
-  reports "Saved." or an honest local-only failure.
+  reports "Saved." or an honest local-only failure. Exactly ONE character is
+  saved, so the pack picker — which is also the only way to *look* at another
+  art set — is non-destructive: while the open pack is not the one holding the
+  save, the autosave is suspended, a header notice says so, the character you
+  left is restored when you switch back, and moving the save to the browsed
+  pack takes an explicit "Keep this one instead".
 - A Playwright-bdd e2e harness (16 `.feature` files, offline-first, with
   `@cluster`-tagged scenarios for cases that need a live backend), a
   Karma/Jasmine unit suite (90+ specs, `npm test`), and two
