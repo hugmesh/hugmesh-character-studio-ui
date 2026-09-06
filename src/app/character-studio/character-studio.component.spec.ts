@@ -465,6 +465,15 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
   // These two specs pin the fix from both sides: at most one PUT on the wire,
   // and — landing whatever IS open newest-first, the completion order that
   // produced the bug — a following undo still reaches the bff.
+  //
+  // Serializing the writes is only half of it, though, and it makes the OTHER
+  // half the only shape left. The three specs after them hold a SINGLE write
+  // open and pin what has to survive it: an undo made during that write still
+  // reaches the bff (nothing but the chain is watching — the autosave effect's
+  // dirty check matches the not-yet-updated `lastPersisted` and arms nothing),
+  // and a pack switch during that write still lands the edit made in the pack
+  // being LEFT, which a pass that re-read the state would write as, or refuse
+  // for, the pack that replaced it on screen.
 
   interface PendingPut {
     def: VnCharacter;
@@ -570,5 +579,128 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     // The flush is not a licence to race: the bff saw the two definitions in the
     // order they were made, so nothing after this believes the older one is stored.
     expect(savedColours()).toEqual(['#ff0000', '#00ff00']);
+  }));
+
+  it('lands an undo made while the single open write was on the wire', fakeAsync(() => {
+    const pending = deferSaves();
+    const component = create();
+    const original = JSON.stringify(state.character());
+
+    state.setSlot('body', 'body_1'); // one edit…
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS); // …its PUT goes out and hangs. Exactly one on the wire.
+    expect(pending.length).toBe(1);
+    expect(pending[0].def.slots['body']).toBe('body_1');
+
+    // THE UNDO, made while that single write is still open. `lastPersisted` is
+    // still the pre-edit definition, so the autosave effect's dirty check
+    // MATCHES this and arms no timer — and the signal will not change again to
+    // give the effect a second chance. Only the write chain is left watching.
+    state.setSlot('body', 'body_0');
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    flushMicrotasks();
+    expect(pending.length).toBe(1); // nothing armed, as expected
+
+    pending[0].settle(); // the write lands: the bff holds body_1, the screen shows body_0
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    // The chain re-checked after its own write and found them parted.
+    expect(pending.length).toBe(2);
+    expect(pending[1].def.slots['body']).toBe('body_0');
+
+    pending[1].settle();
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    expect(saveSpy.calls.count()).toBe(2); // and then stops: no third, redundant write
+    expect(JSON.stringify(state.character())).toBe(original);
+    expect(component.saveState()).toBe('saved');
+  }));
+
+  it('lands a pending edit as the pack it was made in when a write is open across the switch', fakeAsync(() => {
+    loadActiveSpy.and.resolveTo(savedA); // the save lives in pack-a
+    const pending = deferSaves();
+    const component = create();
+
+    state.setSlot('body', 'body_0'); // edit 1, in pack-a
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS); // its PUT goes out, unanswered
+    expect(pending.length).toBe(1);
+
+    state.setPalette('fur', '#abcdef'); // edit 2, in pack-a — its debounce is armed
+    fixture.detectChanges();
+
+    void component.onPackChange('pack-b'); // …and the picker beats that debounce
+    flushMicrotasks();
+    fixture.detectChanges();
+    expect(state.character()!.packId).toBe('pack-b'); // pack-a's character is off screen now
+
+    pending[0].settle(); // edit 1 answers; the chain takes the pass the flush queued
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    // The flush captured edit 2 when it was REQUESTED, so that is what the queued
+    // pass wrote. A pass that re-read the state would have found pack-b's
+    // character and refused it as a browse — dropping edit 2 without a word.
+    expect(pending.length).toBe(2);
+    expect(pending[1].def.packId).toBe('pack-a');
+    expect(pending[1].def.palette['fur']).toBe('#abcdef');
+
+    pending[1].settle();
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    expect(saveSpy.calls.count()).toBe(2);
+    // Landing it did not move the save: pack-b is still only being looked at.
+    expect(component.browsingOtherPack()).toBeTrue();
+  }));
+
+  it('lands a pending edit as the pack it was made in when a write is open and nothing is saved yet', fakeAsync(() => {
+    const pending = deferSaves(); // loadActive → null, so persistedPackId stays null
+    const component = create();
+
+    state.setSlot('body', 'body_1'); // edit 1, in pack-a
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    expect(pending.length).toBe(1);
+
+    state.setPalette('fur', '#abcdef'); // edit 2, in pack-a — debounce armed
+    fixture.detectChanges();
+
+    void component.onPackChange('pack-b');
+    flushMicrotasks();
+    fixture.detectChanges();
+
+    pending[0].settle();
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    // Nothing was saved when the switch happened, so the re-seed re-baselined the
+    // dirty check to pack-b's default. A re-reading pass would have found
+    // "nothing to write" and edit 2 would have vanished without even a refusal.
+    expect(pending.length).toBe(2);
+    expect(pending[1].def.packId).toBe('pack-a');
+    expect(pending[1].def.palette['fur']).toBe('#abcdef');
+
+    pending[1].settle();
+    flushMicrotasks();
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS * 2);
+    flushMicrotasks();
+
+    expect(saveSpy.calls.count()).toBe(2);
+    expect(component.saveState()).toBe('saved');
   }));
 });

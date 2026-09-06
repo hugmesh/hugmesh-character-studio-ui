@@ -112,6 +112,19 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
    * rather than a second concurrent one.
    */
   private resaveQueued = false;
+  /**
+   * Definitions PINNED for the chain to write as-is, in the order they were
+   * pinned — the flush path's queue ({@link flushPendingSave}).
+   *
+   * The ordinary autosave wants the opposite of this: a follow-up pass that
+   * RE-READS the state, so a burst collapses to the newest definition. But a
+   * flush runs immediately before the state is replaced wholesale (a pack
+   * switch re-seeds it, {@link onPackChange}), so by the time a re-reading pass
+   * ran, the definition the flush meant to save would be gone and a stranger
+   * would be in its place. Anything flushed is therefore captured at REQUEST
+   * time and written verbatim.
+   */
+  private readonly queuedDefinitions: VnCharacter[] = [];
 
   /**
    * The pack the user-bff's saved character belongs to — null while nothing is
@@ -232,17 +245,36 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
    * the newest definition, and `lastPersisted` always ends as the definition of
    * the request that answered last, which is now also the newest.
    *
+   * ONE WRITE IS ENOUGH TO LOSE AN UNDO, though, so serializing is only half of
+   * it. With a single PUT of Y open and `lastPersisted` still X, an undo back to
+   * X matches the autosave effect's dirty check and arms no timer; the write
+   * then lands, `lastPersisted` becomes Y, and nothing is left watching — the
+   * screen shows X, the bff holds Y, the indicator reads "Saved." The chain's
+   * post-write re-check in {@link runSaveChain} is what closes that half, and it
+   * is the half that survives serializing (which makes one PUT the only shape
+   * there is).
+   *
+   * `pinned` is for the one caller that cannot let the chain re-read: the
+   * flush before a pack switch, whose definition is about to be replaced on
+   * screen. See {@link queuedDefinitions}.
+   *
    * Returns the chain, so a caller that awaits gets "everything queued is
    * written", not just "the write that happened to be open".
    */
-  private saveNow(): Promise<void> {
+  private saveNow(pinned?: VnCharacter): Promise<void> {
+    if (pinned) {
+      this.queuedDefinitions.push(pinned);
+    }
     if (this.saving !== null) {
       this.resaveQueued = true;
       return this.saving;
     }
-    // Claim the wire SYNCHRONOUSLY, before the first PUT is issued: a guard
-    // assigned only after `runSaveChain()` has started would leave a window in
-    // which it still reads null.
+    // Claim the wire synchronously, before the first PUT is issued, so that a
+    // save requested from inside the chain's own turn still coalesces rather
+    // than opening a second write. (No current caller arrives from there — they
+    // all come from a timer, a lifecycle hook or a click — so nothing today
+    // exercises the ordering; it is written this way because the cost of a
+    // future caller that does is the overlap this whole guard exists to stop.)
     let done!: () => void;
     const chain = new Promise<void>(resolve => (done = resolve));
     this.saving = chain;
@@ -252,38 +284,87 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
 
   /**
    * Write, then write again for whatever the user did while that write was on
-   * the wire — until nothing more is queued. Each pass re-reads the state, so
+   * the wire — until nothing more is queued. A pass writes a PINNED definition
+   * if one is waiting ({@link queuedDefinitions}), else re-reads the state, so
    * the last edit wins and no intermediate definition is written twice.
    */
   private async runSaveChain(): Promise<void> {
     try {
       do {
         this.resaveQueued = false;
-        await this.putCurrentDefinition();
-      } while (this.resaveQueued);
+        const wrote = await this.putCurrentDefinition(this.queuedDefinitions.shift());
+        // The state can move WHILE a PUT is open, and one such move is invisible
+        // to the autosave effect: an edit BACK to the definition the bff held
+        // before this write — an undo — still matches `lastPersisted` (which the
+        // write has not updated yet), so the effect returns without arming a
+        // timer, and the signal will not change again to give it a second
+        // chance. Nothing else is left watching. So the chain re-checks against
+        // the value the write just recorded, and takes one more pass if the
+        // screen and the bff have parted. Only after a SUCCESSFUL write: a
+        // failed one leaves `lastPersisted` deliberately stale, and re-arming on
+        // that would spin the loop instead of waiting for the next edit.
+        if (wrote && this.liveStateIsDirty()) {
+          this.resaveQueued = true;
+        }
+      } while (this.resaveQueued || this.queuedDefinitions.length > 0);
     } finally {
-      // Release the wire in the SAME synchronous step as the loop's exit test.
-      // A release deferred by even one microtask is a window in which a save
-      // request would set `resaveQueued` on a chain that has stopped reading
-      // it — and that request would simply be lost.
+      // Release the wire in the same synchronous step as the loop's exit test,
+      // so a save request cannot set `resaveQueued` on a chain that has stopped
+      // reading it. (As with the claim in `saveNow`, no current caller can hit
+      // that window — it is closed by construction rather than by a spec.)
       this.saving = null;
     }
   }
 
-  /** One PUT of whatever the state holds RIGHT NOW, if it is dirty. Never
-   *  rejects — a failed write is reported and left for the next edit to retry. */
-  private async putCurrentDefinition(): Promise<void> {
+  /**
+   * Does the definition on screen still differ from what the bff was last known
+   * to hold? The chain's re-check.
+   *
+   * It asks exactly the questions {@link putCurrentDefinition} asks before it
+   * writes, which is what keeps the loop finite: `true` here means the next pass
+   * has a definition to send, that pass records it in `lastPersisted`, and the
+   * check that follows is then false unless the user edited again — so the loop
+   * runs once per edit, never once per turn.
+   */
+  private liveStateIsDirty(): boolean {
     const def = this.state.character();
-    // The browse check is belt-and-braces: the effect never arms a timer while
-    // browsing and onPackChange flushes the previous pack's timer before the
-    // re-seed, so no CURRENT caller reaches here mid-browse. It stays because
-    // the cost of a future one doing so is the user's character, permanently.
-    if (!def || this.browsingOtherPack()) {
-      return;
+    if (!def || this.lastPersisted === null || !this.writable(def)) {
+      return false;
+    }
+    return JSON.stringify(def) !== this.lastPersisted;
+  }
+
+  /**
+   * May this definition be written? The browse rule, asked of the DEFINITION
+   * rather than of the open pack: the studio persists exactly one character, so
+   * a definition from a pack other than the one holding the save would replace
+   * it — that is the browse the autosave is suspended for.
+   *
+   * Asking it of the definition (not `browsingOtherPack()`, which reads the pack
+   * on SCREEN) is what lets a pinned flush still land: its definition belongs to
+   * the pack the save lives in even though the user has already moved on to
+   * another one. For every non-pinned caller the two are the same question, the
+   * definition's pack being the open pack.
+   */
+  private writable(def: VnCharacter): boolean {
+    const saved = this.persistedPackId();
+    return saved === null || saved === def.packId;
+  }
+
+  /**
+   * One PUT of `pinned`, or of whatever the state holds RIGHT NOW, if it is
+   * dirty. Never rejects — a failed write is reported and left for the next edit
+   * to retry. Returns whether the bff actually took a definition, which is what
+   * makes the chain's re-check safe to arm on.
+   */
+  private async putCurrentDefinition(pinned?: VnCharacter): Promise<boolean> {
+    const def = pinned ?? this.state.character();
+    if (!def || !this.writable(def)) {
+      return false;
     }
     const serialized = JSON.stringify(def);
     if (serialized === this.lastPersisted) {
-      return;
+      return false;
     }
     try {
       await this.characterBff.saveDefinition(def);
@@ -291,24 +372,34 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
       // This pack now owns the save — switching away is a browse from here on.
       this.persistedPackId.set(def.packId);
       this.saveState.set('saved');
+      return true;
     } catch {
       // Keep lastPersisted stale so the next edit retries; the aria-live
       // indicator says the edits are local-only rather than silently lying.
       this.saveState.set('error');
+      return false;
     }
   }
 
   /**
    * Write a debounced-but-not-yet-fired save NOW. Called on navigation away and
    * before a pack switch: a timer armed for the pack being left would otherwise
-   * fire with the next pack's character on screen — where {@link saveNow} would
-   * (correctly) refuse it, silently dropping the edit that armed it.
+   * fire with the next pack's character on screen — where the write would
+   * (correctly) be refused, silently dropping the edit that armed it.
+   *
+   * The definition is CAPTURED HERE, not read when the write runs. "Now" is only
+   * as immediate as the wire allows: if a PUT is already open, this save waits
+   * behind it, and by the time it runs {@link onPackChange} has re-seeded the
+   * state with the next pack's character. A pass that re-read the state would
+   * then write (or, more often, refuse to write) a definition the user never
+   * asked to save, and the edit that armed the timer would be gone — which is
+   * exactly the loss the flush exists to prevent, just moved behind a slow save.
    */
   private flushPendingSave(): void {
     if (this.saveTimer !== null) {
       clearTimeout(this.saveTimer);
       this.saveTimer = null;
-      void this.saveNow();
+      void this.saveNow(this.state.character() ?? undefined);
     }
   }
 
