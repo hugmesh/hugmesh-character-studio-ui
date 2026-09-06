@@ -24,8 +24,13 @@ import { VnCharacter } from './models/vn-character';
  *  - BROWSING another pack in the picker writes NOTHING, is reversible in the
  *    session, and only an explicit "keep this one" moves the save to it. The
  *    first cut of this wiring PUT the browsed pack's default character, which
- *    destroyed the saved one on a single picker click — the specs at the foot
- *    of this file pin that it cannot come back.
+ *    destroyed the saved one on a single picker click — the specs mid-file pin
+ *    that it cannot come back;
+ *  - autosave PUTs never OVERLAP. Two writes in flight at once could answer in
+ *    either order, and the older one answering last made the studio believe an
+ *    older definition was stored than the one the bff held — which silently
+ *    swallowed the user's next undo. The specs at the foot of this file hold
+ *    the writes open and answer them newest-first to pin that.
  *
  * The BFF and asset services are spied at their promise boundary — the e2e
  * @cluster scenarios own the live HTTP round trip.
@@ -440,5 +445,130 @@ describe('CharacterStudioComponent — character persistence wiring', () => {
     const put = saveSpy.calls.mostRecent().args[0] as VnCharacter;
     expect(put.packId).toBe('pack-a');
     expect(put.palette['fur']).toBe('#00ff00');
+  }));
+
+  // ── overlapping autosave PUTs (regression, panel finding on merged PR #20) ──
+  // `saveNow` awaited its PUT and only then wrote `lastPersisted` — from the
+  // definition it had captured when it ISSUED that PUT. Nothing stopped a second
+  // save starting while the first was still on the wire (the debounce only
+  // spaces out when saves are STARTED; it says nothing about when they finish,
+  // and a save slower than 800 ms is ordinary on a mesh link). Two writes in
+  // flight are two writes racing to be the one that records `lastPersisted`
+  // LAST, and completion order is not issue order.
+  //
+  // When the OLDER write answered last it left `lastPersisted` holding the OLDER
+  // definition while the bff held the newer one. The studio then believed the
+  // bff held text it did not hold, so the user's very next edit BACK to that
+  // older definition — an undo — matched the dirty check and was dropped without
+  // a write: gone permanently, with the indicator still reading "Saved."
+  //
+  // These two specs pin the fix from both sides: at most one PUT on the wire,
+  // and — landing whatever IS open newest-first, the completion order that
+  // produced the bug — a following undo still reaches the bff.
+
+  interface PendingPut {
+    def: VnCharacter;
+    /** Answer this PUT (resolve the promise `saveDefinition` returned). */
+    settle: () => void;
+  }
+
+  /** Make every autosave PUT hang until the spec answers it, and collect them
+   *  in issue order. */
+  function deferSaves(): PendingPut[] {
+    const pending: PendingPut[] = [];
+    saveSpy.and.callFake(
+      (def: VnCharacter) => new Promise<void>(resolve => pending.push({ def, settle: resolve })));
+    return pending;
+  }
+
+  /** Answer every PUT that is currently open, NEWEST FIRST — the out-of-order
+   *  completion the bug turned on — and keep going while the component issues
+   *  more (serialized writes arrive one at a time, so this drains the chain). */
+  function landOpenWritesNewestFirst(pending: PendingPut[]): void {
+    for (let pass = 0; pending.length > 0 && pass < 10; pass++) {
+      for (const put of pending.splice(0).reverse()) {
+        put.settle();
+      }
+      flushMicrotasks();
+    }
+  }
+
+  /** The colour of each definition the bff was asked to store, in issue order. */
+  function savedColours(): (string | undefined)[] {
+    return saveSpy.calls.all().map(c => (c.args[0] as VnCharacter).palette['fur']);
+  }
+
+  it('never puts two autosave writes on the wire at once', fakeAsync(() => {
+    const pending = deferSaves();
+    create();
+
+    state.setPalette('fur', '#ff0000'); // first edit…
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS); // …its PUT goes out, and the bff does not answer
+    expect(pending.length).toBe(1);
+
+    state.setPalette('fur', '#00ff00'); // a second edit, while that PUT is open
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    flushMicrotasks();
+    expect(pending.length).toBe(1); // coalesced behind the open write, not raced
+
+    pending[0].settle(); // the first write finally answers…
+    flushMicrotasks();
+    expect(pending.length).toBe(2); // …and only THEN does the second go out
+    expect(pending[1].def.palette['fur']).toBe('#00ff00'); // with the newest edit
+
+    pending[1].settle();
+    flushMicrotasks();
+    expect(saveSpy).toHaveBeenCalledTimes(2); // no third, redundant write
+  }));
+
+  it('keeps the NEWEST definition persisted when overlapping PUTs answer out of order, so the undo after them still writes', fakeAsync(() => {
+    const pending = deferSaves();
+    const component = create();
+
+    state.setPalette('fur', '#ff0000'); // edit A → PUT, unanswered
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    state.setPalette('fur', '#00ff00'); // edit B, while A is still on the wire
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS);
+    flushMicrotasks();
+
+    // Answer newest-first. On the old code both PUTs were open, so A landed LAST
+    // and left the studio believing '#ff0000' was stored.
+    landOpenWritesNewestFirst(pending);
+    expect(savedColours().pop()).toBe('#00ff00'); // the bff's last write is edit B
+    expect(component.saveState()).toBe('saved');
+
+    // THE UNDO. Back to edit A's colour — which is NOT what the bff holds, so it
+    // must be written. The old code's dirty check matched and swallowed it.
+    const before = saveSpy.calls.count();
+    editAndSettle(() => state.setPalette('fur', '#ff0000'));
+    expect(saveSpy.calls.count()).toBe(before + 1);
+    expect((saveSpy.calls.mostRecent().args[0] as VnCharacter).palette['fur']).toBe('#ff0000');
+
+    landOpenWritesNewestFirst(pending);
+    expect(savedColours().pop()).toBe('#ff0000');
+  }));
+
+  it('flushing on destroy while a write is open still lands the pending edit', fakeAsync(() => {
+    const pending = deferSaves();
+    create();
+
+    state.setPalette('fur', '#ff0000');
+    fixture.detectChanges();
+    tick(AUTOSAVE_DEBOUNCE_MS); // PUT out, unanswered
+    state.setPalette('fur', '#00ff00'); // one more edit…
+    fixture.detectChanges();
+    fixture.destroy(); // …and navigation away beats its debounce
+    flushMicrotasks();
+    expect(pending.length).toBe(1); // the flush queues behind the open write…
+
+    landOpenWritesNewestFirst(pending);
+    expect(savedColours().pop()).toBe('#00ff00'); // …and the door edit still lands
+    // The flush is not a licence to race: the bff saw the two definitions in the
+    // order they were made, so nothing after this believes the older one is stored.
+    expect(savedColours()).toEqual(['#ff0000', '#00ff00']);
   }));
 });

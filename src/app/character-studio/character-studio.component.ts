@@ -43,9 +43,11 @@ export type SaveState = 'idle' | 'saved' | 'error';
  * {@link CharacterBffService.loadActive} (falling back to the pack default when
  * there is none, or when the bff is unreachable), and every subsequent edit is
  * autosaved via {@link CharacterBffService.saveDefinition} on a
- * {@link AUTOSAVE_DEBOUNCE_MS} debounce, flushed on destroy. Exactly one
- * character is saved, so browsing to another pack suspends the autosave instead
- * of replacing it — see {@link CharacterStudioComponent.browsingOtherPack}.
+ * {@link AUTOSAVE_DEBOUNCE_MS} debounce, flushed on destroy. Writes are
+ * serialized — never two PUTs on the wire at once, see
+ * {@link CharacterStudioComponent.saveNow}. Exactly one character is saved, so
+ * browsing to another pack suspends the autosave instead of replacing it — see
+ * {@link CharacterStudioComponent.browsingOtherPack}.
  */
 @Component({
   selector: 'hug-character-studio',
@@ -97,6 +99,19 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
    */
   private lastPersisted: string | null = null;
   private saveTimer: ReturnType<typeof setTimeout> | null = null;
+  /**
+   * The autosave write chain while one is running, else null — the in-flight
+   * guard. Every save goes through {@link saveNow}, which serializes on this so
+   * at most ONE PUT is ever on the wire. See the hazard note there.
+   */
+  private saving: Promise<void> | null = null;
+  /**
+   * Set when a save is asked for while one is already on the wire: the running
+   * chain makes one more pass afterwards, re-reading the state, so a burst of
+   * requests COALESCES into a single follow-up write of the newest definition
+   * rather than a second concurrent one.
+   */
+  private resaveQueued = false;
 
   /**
    * The pack the user-bff's saved character belongs to — null while nothing is
@@ -194,8 +209,70 @@ export class CharacterStudioComponent implements OnInit, OnDestroy {
     });
   }
 
-  /** PUT the current definition if it is dirty (the autosave timer's target). */
-  private async saveNow(): Promise<void> {
+  /**
+   * Save the current definition, ONE write at a time (the autosave timer's
+   * target, and the explicit-keep action's).
+   *
+   * OVERLAP — not concurrency cost — is the hazard this guard exists for.
+   * {@link putCurrentDefinition} records `lastPersisted` from the value it
+   * captured when it ISSUED its PUT, so two writes in flight at once are two
+   * writes racing to be the one that writes it LAST. Completion order is not
+   * issue order: the newer request routinely answers first (a warmer
+   * connection, a retried TCP segment on the older one, plain server jitter),
+   * and then the older one lands and overwrites `lastPersisted` with the OLDER
+   * definition. From that moment the studio believes the bff holds text it does
+   * not hold — and the very next edit BACK to that older definition, an undo,
+   * matches the dirty check and is dropped without a write. The edit is gone,
+   * permanently, with the indicator still reading "Saved."
+   *
+   * So: while a write is on the wire, a new save request does not start a
+   * second one — it asks the running chain for one more pass
+   * ({@link resaveQueued}), which re-reads the state when it runs. The bff
+   * therefore sees the writes in the order they were made, a burst collapses to
+   * the newest definition, and `lastPersisted` always ends as the definition of
+   * the request that answered last, which is now also the newest.
+   *
+   * Returns the chain, so a caller that awaits gets "everything queued is
+   * written", not just "the write that happened to be open".
+   */
+  private saveNow(): Promise<void> {
+    if (this.saving !== null) {
+      this.resaveQueued = true;
+      return this.saving;
+    }
+    // Claim the wire SYNCHRONOUSLY, before the first PUT is issued: a guard
+    // assigned only after `runSaveChain()` has started would leave a window in
+    // which it still reads null.
+    let done!: () => void;
+    const chain = new Promise<void>(resolve => (done = resolve));
+    this.saving = chain;
+    void this.runSaveChain().then(done, done);
+    return chain;
+  }
+
+  /**
+   * Write, then write again for whatever the user did while that write was on
+   * the wire — until nothing more is queued. Each pass re-reads the state, so
+   * the last edit wins and no intermediate definition is written twice.
+   */
+  private async runSaveChain(): Promise<void> {
+    try {
+      do {
+        this.resaveQueued = false;
+        await this.putCurrentDefinition();
+      } while (this.resaveQueued);
+    } finally {
+      // Release the wire in the SAME synchronous step as the loop's exit test.
+      // A release deferred by even one microtask is a window in which a save
+      // request would set `resaveQueued` on a chain that has stopped reading
+      // it — and that request would simply be lost.
+      this.saving = null;
+    }
+  }
+
+  /** One PUT of whatever the state holds RIGHT NOW, if it is dirty. Never
+   *  rejects — a failed write is reported and left for the next edit to retry. */
+  private async putCurrentDefinition(): Promise<void> {
     const def = this.state.character();
     // The browse check is belt-and-braces: the effect never arms a timer while
     // browsing and onPackChange flushes the previous pack's timer before the
