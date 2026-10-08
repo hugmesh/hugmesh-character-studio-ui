@@ -4,7 +4,7 @@
 
 **Source of all content below:** the **D&D System Reference Document 5.1 (SRD 5.1)**, released by Wizards of the Coast LLC under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)** on **January 27, 2023**. This release is irrevocable. (The same SRD was historically available under OGL 1.0a; CC-BY-4.0 is the cleaner, permanent basis this pack relies on.)
 
-> **Scope:** this catalog is the *spec*. We use SRD names/types only as **design labels** for parts; we ship our own original SVG art. We do **not** copy SRD prose, stat blocks, or images. **Status:** the species art pass is complete — `srd-taxonomy-v1` v2 ships original chibi art per [`ART-STYLE-CHIBI.md`](ART-STYLE-CHIBI.md) for every species below (each is a part entry or a tag on one, enforced by the pack assembler's coverage check against its own species list). Classes ship one outfit each (12 `clothing` parts) and 12 `accessory` parts; the three-and-three lists in §1 are the spec for more. One listed species is not in the SRD: see Troglodyte in §3.
+> **Scope:** this catalog is the *spec*. We use SRD names and types only as **design labels** for parts. We ship our own original SVG art. We do **not** copy SRD prose, stat blocks, or images. **Status:** the species art pass is done. `srd-taxonomy-v1` v2 ships original chibi art per [`ART-STYLE-CHIBI.md`](ART-STYLE-CHIBI.md) for every species below. Each is a part entry or a tag on one, and the pack assembler's coverage check enforces it against its own species list. Classes ship one outfit each (12 `clothing` parts) and 12 `accessory` parts. The three-and-three lists in §1 are the spec for more. One listed species is not in the SRD: see Troglodyte in §3.
 
 ## Required attribution string (every SRD pack MUST carry this verbatim)
 
@@ -18,7 +18,7 @@ Per the SRD legal text: do **not** add any other attribution regarding Wizards b
 
 ## EXCLUSIONS — closed WotC Product Identity, NEVER ship these
 
-Not in SRD 5.1; keep out of every pack, asset name, and head archetype:
+Not in SRD 5.1. Keep out of every pack, asset name and head archetype:
 
 - **beholder** (+ spectator, death tyrant), **mind flayer / illithid** (+ elder brain), **githyanki / githzerai**, **slaad** (all), **umber hulk**, **kuo-toa**, **yuan-ti**, **displacer beast**, **carrion crawler**
 - **bullywug** — **NOT in SRD** (Monster Manual only) — *excluded despite often being listed with SRD humanoids*
@@ -30,7 +30,7 @@ Not in SRD 5.1; keep out of every pack, asset name, and head archetype:
 
 ## 1. CLASSES — 12 SRD classes → OUTFIT / THEME sets
 
-All 12 are SRD 5.1. A class is **not a creature** — it maps to `category:clothing` / `category:accessory` parts overlaying any head/base. Default `compatibleHeads:["*"]`.
+All 12 are SRD 5.1. A class is **not a creature**. It maps to `category:clothing` / `category:accessory` parts that overlay any head/base. Default `compatibleHeads:["*"]`.
 
 | Class | clothing (`category:clothing`) | accessory (`category:accessory`) |
 |---|---|---|
@@ -47,7 +47,7 @@ All 12 are SRD 5.1. A class is **not a creature** — it maps to `category:cloth
 | **Warlock** | dark-mantle, tattered-robe, high-collar-coat | pact-tome, eldritch-rod, sigil-pendant |
 | **Wizard** | long-robe, star-mantle, scholar-coat | pointed-hat, gnarled-staff, spellbook |
 
-> Heavy armor (plate/chain) may need `compatibleHeads` narrowed if a torso silhouette is archetype-specific (e.g. avian/draconic). Shields/weapons/hats are `accessory` → mix across classes freely.
+> Narrow `compatibleHeads` on heavy armor (plate/chain) if the torso silhouette is archetype-specific (e.g. avian/draconic). Shields, weapons and hats are `accessory` parts: mix them across classes freely.
 
 ---
 
@@ -67,13 +67,13 @@ Nine SRD races. Each → `category:base` body + `category:head` with a `headArch
 | **Tiefling** | `humanoid` | horns (`compatibleHeads:["humanoid"]`), tail-spaded, solid-eyes |
 | **Dragonborn** | `reptile` (draconic) | draconic-snout, scales-tint, frill; eyes.reptilian |
 
-> Tiefling = humanoid base + detachable horns/tail features (reuse onto other humanoid heads). Dragonborn reuses the **`reptile`** archetype shared with reptilian monsters / lizardfolk.
+> Tiefling = humanoid base + detachable horns/tail features (reuse them on other humanoid heads). Dragonborn reuses the **`reptile`** archetype shared with reptilian monsters and lizardfolk.
 
 ---
 
 ## 3. MONSTERS — SRD-OPEN ONLY, by head archetype
 
-Verified against the SRD 5.1 monster-by-type index. `headArchetype` in parens.
+Checked against the SRD 5.1 monster-by-type index. `headArchetype` in parens.
 
 - **Dragons (`reptile`):** chromatic Black/Blue/Green/Red/White + metallic Brass/Bronze/Copper/Gold/Silver (all tiers); kin: Wyvern, Pseudodragon, Dragon Turtle.
 - **Giants (`humanoid`, oversized):** Hill/Stone/Frost/Fire/Cloud/Storm; Ettin (two-head), Ogre, Oni, Troll.
@@ -94,7 +94,7 @@ Verified against the SRD 5.1 monster-by-type index. `headArchetype` in parens.
 
 ## DATA-MODEL FOLD-IN — how these become `pack.json` parts
 
-Each catalog entry → one part object:
+Each catalog entry becomes one part object:
 
 ```json
 { "id": "head_dragonborn_01", "displayName": "Dragonborn",
@@ -110,9 +110,9 @@ Rules:
 2. **Signature features** (tiefling horns/tail, dragonborn snout/scales, half-orc tusks, satyr horns, medusa snake-hair) → `category:"feature"` with `compatibleHeads` set to the fitting archetypes (horns `["humanoid"]`, snout `["reptile"]`).
 3. **Classes** → `category:"clothing"`/`"accessory"` with `compatibleHeads:["*"]` (narrow only for archetype-specific silhouettes).
 4. **`eyes`:** `eyes_reptilian_01` (dragonborn/kobold/lizardfolk; `compatibleHeads:["reptile"]`), `eyes_solidglow_01` (tiefling/undead/fiends), `eyes_beast_01` (beasts).
-5. **`headArchetype` reuse is the win:** dragonborn/kobold/lizardfolk/sahuagin/dragons share `reptile`; gnoll/werewolf/hell hound share `canid`. Build archetype art once, reskin via `tint`/`tags`.
-6. **Every SRD part carries `"source":"SRD 5.1"`**; the SRD pack root carries the CC-BY attribution string. Anything that cannot cite SRD 5.1 must not enter the pack.
-7. **Art status: shipped.** The v2 chibi pass covers the full catalog; this catalog remains the spec for any future additions.
+5. **`headArchetype` reuse is the win:** dragonborn/kobold/lizardfolk/sahuagin/dragons share `reptile`; gnoll/werewolf/hell hound share `canid`. Build archetype art once; reskin it with `tint`/`tags`.
+6. **Every SRD part carries `"source":"SRD 5.1"`**; the SRD pack root carries the CC-BY attribution string. Anything that cannot cite SRD 5.1 stays out of the pack.
+7. **Art status: shipped.** The v2 chibi pass covers every species in the catalog. The catalog stays the spec for future additions.
 
 Possible further archetypes (optional): consider `piscine`/`crustacean` for aboleth/sahuagin/chuul/merfolk, else fold into `reptile`/`synth`.
 
