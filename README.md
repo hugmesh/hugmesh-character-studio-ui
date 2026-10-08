@@ -76,7 +76,7 @@ flowchart TB
     LocalHeuristic["local keyword heuristic, fallback"]
     ExportPanel["ExportPanelComponent"]
     CharacterBff["CharacterBffService"]
-    Moderation["Moderation pipeline<br/>sanitize -> moderate -> store"]
+    Moderation["Moderation gate<br/>moderate -> store"]
     PixiRig["PixiRigService, retained for a future GPU rig, not wired into this flow"]
 
     Host -->|mounts at /character-studio| Routes
@@ -229,7 +229,8 @@ pushes to `ghcr.io/hugmesh/hugmesh-character-studio-ui`.
 - A live SVG-DOM compositor (`SvgRigService`) with independent per-region CSS
   custom-property recolor, a part picker, a palette, a freehand draw/paint
   tool (client-sanitized via DOMPurify), a seedable "surprise me" randomizer,
-  and a pack picker with a hybrid-mode toggle (bypasses `compatibleHeads`).
+  a pack picker, and a hybrid-mode toggle in the part picker (bypasses
+  `compatibleHeads`).
 - Expression preview wired end-to-end as a preview-only slot-override swap —
   see `SvgRigService.compose`'s `expressionSlots` parameter. `srd-taxonomy-v1`
   ships 10 presets; the other three packs ship 4 (neutral, happy, sad, angry).
