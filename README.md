@@ -12,8 +12,9 @@ mounts at `/character-studio`. This is the platform's avatar-authoring
 surface: the Matrix/Akkoma chat clients and the forum both consume the
 characters it produces, via the
 [`hugmesh-user-bff-api`](https://github.com/hugmesh/hugmesh-user-bff-api)
-`/bff/user/**` character/avatar routes, keyed to the signed-in user's Casdoor
-subject.
+`/bff/user/**` avatar route, keyed to the signed-in user's token subject. The
+character-definition and AI-suggest routes the client also calls are not served
+by that BFF yet (see [Known limitations](#known-limitations)).
 
 ## Quick start
 
@@ -33,16 +34,19 @@ dedicated backend of its own (only `hugmeshRemote(...)` is used; there's no
   loads this remote's exposed `./routes` module and mounts it at
   `/character-studio` (federation surface: `./routes` →
   `CHARACTER_STUDIO_ROUTES`, declared in `federation.config.js`).
-- Reads/writes that need a backend go through the existing
-  [`hugmesh-user-bff-api`](https://github.com/hugmesh/hugmesh-user-bff-api)
-  `/bff/user/**` surface (`CharacterBffService`, `CharacterAiService`),
-  authenticated via the shared HttpOnly `bff_` session cookie — there is no
-  browser-held bearer token.
-- `federation-base.js` is kept byte-for-byte identical to the copy in
+- Reads/writes that need a backend go through the `/bff/user/**` surface
+  (`CharacterBffService`, `CharacterAiService`), authenticated via the shared
+  HttpOnly `bff_` session cookie — there is no browser-held bearer token. Only
+  part of that surface exists in
+  [`hugmesh-user-bff-api`](https://github.com/hugmesh/hugmesh-user-bff-api):
+  `POST /bff/user/profile/avatar` is served; `GET`/`PUT /bff/user/vn-character`
+  and `POST /bff/user/vn-character/suggest` are not (no repo on `origin/main`
+  maps them).
+- `federation-base.js` carries the same code as the copy in
   [`hugmesh-games`](https://github.com/hugmesh/hugmesh-games)
-  (`frontend/federation-base.js`) and every other HugMesh native-federation
-  remote, so the shared-dependency/skip-list contract can't drift between the
-  host shell and any remote.
+  (`frontend/federation-base.js`) and the other HugMesh native-federation
+  remotes (only the header comments differ), so the shared-dependency/skip-list
+  contract can't drift between the host shell and any remote.
 - This remote has no role gates — it's a self-service tool, identical for
   every signed-in user — so the role×feature test matrices used elsewhere on
   the platform are deliberately not applicable here (see
@@ -63,10 +67,12 @@ flowchart TB
     PartPicker["PartPickerComponent"]
     Palette["PaletteComponent"]
     ExprPreview["ExpressionPreviewComponent"]
+    LipSync["LipSyncPanelComponent<br/>mic or hand-picked frame -> viseme"]
+    RigPanel["RigPanelComponent<br/>per-layer offset, scale, tilt"]
     Draw["DrawComponent<br/>perfect-freehand + sanitizeSvgClient"]
     AiAssist["AiAssistComponent"]
     CharacterAi["CharacterAiService.suggest"]
-    BffSuggest["POST /bff/user/vn-character/suggest"]
+    BffSuggest["POST /bff/user/vn-character/suggest<br/>not served by user-bff today"]
     LocalHeuristic["local keyword heuristic, fallback"]
     ExportPanel["ExportPanelComponent"]
     CharacterBff["CharacterBffService"]
@@ -84,6 +90,8 @@ flowchart TB
     PartPicker --> State
     Palette --> State
     ExprPreview --> State
+    RigPanel --> State
+    LipSync --> Canvas
     Draw --> State
 
     AiAssist --> CharacterAi
@@ -104,17 +112,19 @@ The core creator flow: the asset library loads a pack
 drives a **live SVG-DOM preview** (`StudioCanvasComponent` + `SvgRigService` —
 independent per-region recolor via CSS custom properties, not the PixiJS
 path), with a part picker, a palette, a freehand draw/paint-in tool, an
-expression preview (neutral/happy/sad/angry toggles), an optional "describe
-your character" AI-assist panel (calls a suggestion endpoint, falling back to
-a local keyword heuristic when that endpoint is unavailable), and an export
-panel that renders the composed character to PNG and uploads it through the
-BFF's moderated avatar-export endpoint (a sanitize → moderate → store
-pipeline; a blocked image surfaces as an HTTP 422).
+expression preview (one toggle per expression preset the active pack ships),
+a "Talk" panel (mouth frames driven by the microphone or picked by hand), a
+"Rig" panel (offset, size and tilt per layer, plus "Fit the face"), an
+optional "describe your character" AI-assist panel (calls a suggestion
+endpoint, falling back to a local keyword heuristic when that endpoint is
+unavailable), and an export panel that renders the composed character to PNG
+and uploads it through the BFF's moderated avatar-export endpoint (a
+moderation gate before storage; a blocked image surfaces as an HTTP 422).
 
 `PixiRigService` (`src/app/character-studio/services/pixi-rig.service.ts`) is
 retained in the codebase but not on the active render path. It's reserved for
-a future GPU-accelerated live-render / expression-viseme milestone, not the
-current SVG-driven creator.
+a future GPU-accelerated live-render milestone, not the current SVG-driven
+creator. Lip-sync already runs on the SVG path.
 
 ## Asset packs
 
@@ -125,9 +135,9 @@ disk):
 | Pack | Slots | Part SVGs | Notes |
 |---|---|---|---|
 | `base-anthro-v1` | 5 | 14 | Original generic-anthro content, not SRD-derived. |
-| `srd-taxonomy-v1` | 11 | 180 | "SRD Chibi — All Species": full D&D SRD 5.1 (CC-BY-4.0) catalog coverage in original chibi/kemono art (92 species heads, 10 expression presets, 5-step viseme mouths, 12 class outfit sets, token backdrops) — see [`docs/CATALOG-DND-SRD.md`](docs/CATALOG-DND-SRD.md), [`docs/ART-STYLE-CHIBI.md`](docs/ART-STYLE-CHIBI.md) and [`ATTRIBUTION.txt`](ATTRIBUTION.txt). The art is original; only the naming/category taxonomy is SRD-sourced. |
-| `menagerie-v1` | 12 | 189 | An "all creatures" pack: ~40 species including dragons, kobolds, dinosaurs, insects, amphibians, slimes, and robots, plus universal hybrid overlays (goo/metallic/stone/crystal). |
-| `anime-v1` | 12 | 48 | A kemonomimi/anime pack (catgirl-style ears/tails, nine-tailed kitsune, etc). |
+| `srd-taxonomy-v1` | 11 | 180 | "SRD Chibi — All Species": full D&D SRD 5.1 (CC-BY-4.0) catalog coverage in original chibi/kemono art (92 species heads, 10 expression presets, 5-step viseme mouths, 12 class outfit sets, token backdrops) — see [`docs/CATALOG-DND-SRD.md`](docs/CATALOG-DND-SRD.md), [`docs/ART-STYLE-CHIBI.md`](docs/ART-STYLE-CHIBI.md) and [`ATTRIBUTION.txt`](ATTRIBUTION.txt). The art is original; only the naming/category taxonomy is SRD-sourced. (`manifest.json` still labels it "Taxonomy + SRD Placeholders v1"; `pack.json` says "SRD Chibi — All Species".) |
+| `menagerie-v1` | 12 | 189 | An "all creatures" pack: 54 heads including dragons, kobolds, dinosaurs, insects, amphibians, slimes, and robots, plus universal hybrid overlays (goo/metallic/stone/crystal). |
+| `anime-v1` | 12 | 51 | A kemonomimi/anime pack (catgirl-style ears/tails, nine-tailed kitsune, etc). |
 
 All four share one geometry canon. `srd-taxonomy-v1` carries a full chibi art
 pass (style guide: [`docs/ART-STYLE-CHIBI.md`](docs/ART-STYLE-CHIBI.md),
@@ -142,9 +152,9 @@ are candidates for the same treatment.
 - `npm run build:character-studio` — production federation build.
 - `npm start` — standalone dev server on `:4209`.
 - `npm test` — Karma/Jasmine unit tests (`ng test character-studio --watch=false
-  --browsers=ChromeHeadlessCI`); 33 specs across the pack picker, part picker,
-  `AssetManifestService`, `SvgRigService`, the randomizer, and the export
-  panel.
+  --browsers=ChromeHeadlessCI`); 114 specs in 18 spec files, covering the
+  services, panels (pack picker, part picker, export, lip-sync, rig), the
+  compositor and the randomizer.
 - `npm run validate:assets` / `npm run compose:sweep` — asset-library CI
   gates (see below).
 - `e2e/` — a separate Playwright + playwright-bdd (Gherkin) package
@@ -194,7 +204,7 @@ long-caches hashed bundle files but always revalidates `remoteEntry.json`
 modules). This image is only meaningful when the optional `character-studio`
 mesh feature is enabled on a HugMesh deployment. The publish workflow
 (`.github/workflows/release.yml`) is manual-only (`workflow_dispatch`) and
-pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
+pushes to `ghcr.io/hugmesh/hugmesh-character-studio-ui`.
 
 ## Documentation
 
@@ -220,22 +230,37 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
   custom-property recolor, a part picker, a palette, a freehand draw/paint
   tool (client-sanitized via DOMPurify), a seedable "surprise me" randomizer,
   and a pack picker with a hybrid-mode toggle (bypasses `compatibleHeads`).
-- Expression preview (neutral/happy/sad/angry) wired end-to-end as a
-  preview-only slot-override swap — see `SvgRigService.compose`'s
-  `expressionSlots` parameter.
+- Expression preview wired end-to-end as a preview-only slot-override swap —
+  see `SvgRigService.compose`'s `expressionSlots` parameter. `srd-taxonomy-v1`
+  ships 10 presets; the other three packs ship 4 (neutral, happy, sad, angry).
+- A "Talk" panel: the mouth cycles closed / half / open from the microphone
+  (on explicit user action) or a hand-picked frame (`lipsync/`,
+  `MicOpennessService`). No shipped pack declares its own talking frames
+  (`viseme` / `visemeOf` appear in no `pack.json`), so the chosen mouth is
+  opened by a transform about its measured bounds.
+- A "Rig" panel: per-layer offset, size and tilt (`VnCharacter.slotTransforms`,
+  clamped) and a "Fit the face" button that centres each feature on the head.
+- A "Body type blend" control in the part picker: a crossfade between two
+  parts of the body slot (`VnCharacter.slotBlend`), an opacity blend, not a
+  geometric morph.
 - An AI-assist "describe your character" panel: calls a suggestion endpoint
   (`POST /bff/user/vn-character/suggest`) and falls back to a local keyword
-  heuristic when that endpoint is unavailable — AI features on this platform
-  are self-hosted/opt-in by default, so the fallback path is the common case.
-- PNG export plus a moderated avatar upload (`POST /bff/user/profile/avatar`),
-  which goes through the platform's sanitize → moderate → store pipeline; a
-  blocked image surfaces as an HTTP 422.
-- Character persistence (issue #1): the studio opens on the pack default and
-  the saved `vn-character` definition is then restored over it via
+  heuristic when that endpoint is unavailable. No service on `origin/main`
+  answers that route, so today the local heuristic is the only path.
+- PNG export plus a moderated avatar upload (`POST /bff/user/profile/avatar`,
+  button "Set as my mesh avatar"); a blocked image surfaces as an HTTP 422.
+- "Use everywhere": applies the same 512 px PNG to this mesh's profile, to
+  Matrix and to Mastodon/Akkoma (through the `/bff/user/matrix` and
+  `/bff/user/mastodon` proxies). Each platform reports on its own; a platform
+  the account has no role for is listed as skipped, not failed. Wiki, tube and
+  Owncast are left out because they have no per-user avatar.
+- A "Go live as an avatar" link to the Owncast remote's avatar cam.
+- Character persistence, client side (issue #1): the studio opens on the pack
+  default and the saved `vn-character` definition is then restored over it via
   `CharacterBffService.loadActive` (reopening the pack it belongs to). The
   restore is strictly off the render path: rendering never waits on the
   user-bff, so no save, an unreachable bff, *or one that stalls* (the GET is
-  bounded by `BFF_LOAD_TIMEOUT_MS`) all leave you editing the pack default
+  bounded by `BFF_LOAD_TIMEOUT_MS`, 10 s) all leave you editing the pack default
   rather than a studio stuck on "Loading character assets…". Edits made while
   a slow restore is still in flight win over it. Every edit is
   debounce-autosaved via `CharacterBffService.saveDefinition`, with a pending
@@ -248,10 +273,17 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
   pack takes an explicit "Keep this one instead".
 - A Playwright-bdd e2e harness (16 `.feature` files, offline-first, with
   `@cluster`-tagged scenarios for cases that need a live backend), a
-  Karma/Jasmine unit suite (90+ specs, `npm test`), and two
+  Karma/Jasmine unit suite (114 specs, `npm test`), and two
   asset-integrity CLI gates (`validate:assets`, `compose:sweep`).
 
 ### Known limitations
+- **The character-definition and AI-suggest routes have no server.**
+  `GET`/`PUT /bff/user/vn-character` and `POST /bff/user/vn-character/suggest`
+  are called by the client, but `hugmesh-user-bff-api` on `origin/main`
+  serves only `/bff/user/character/{avatar,parts,stickers}` and
+  `/bff/user/profile/avatar`. Until a service maps them, a saved character is
+  never restored and autosave reports "Autosave failed — your latest edits are
+  only on this device."
 - **`PixiRigService.setExpression`/`.setViseme` are stubs** (see the docblocks
   in `pixi-rig.service.ts`) — expected, since that GPU rig isn't on the active
   render path yet (reserved for a future milestone), not a regression.
@@ -264,9 +296,10 @@ pushes to `ghcr.io/hugmesh-net/hugmesh-character-studio-ui`.
   `anime-v1` remain earlier-generation flat vector art — bringing them to the
   chibi style guide is content work, not a code gap.
 - User-drawn parts (the freehand draw tool) are client-sanitized and
-  session-local only; there is no server-side persistence path for a drawn
-  part yet (by design — `svg-sanitize.client.ts` is explicitly documented as
-  preview-only, not the security boundary).
+  session-local only; the studio does not call the BFF's
+  `/bff/user/character/parts` route, so a drawn part is not saved
+  (`svg-sanitize.client.ts` is documented as preview-only, not the security
+  boundary).
 
 ## Contributing
 
