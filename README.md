@@ -12,7 +12,7 @@ mounts at `/character-studio`. This is the platform's avatar-authoring
 surface: the Matrix/Akkoma chat clients and the forum both consume the
 characters it produces, via the
 [`hugmesh-user-bff-api`](https://github.com/hugmesh/hugmesh-user-bff-api)
-`/bff/user/**` avatar route, keyed to the signed-in user's token subject. The
+`/bff/user/**` avatar route, keyed to the signed-in user's Casdoor subject. The
 client also calls character-definition and AI-suggest routes. That BFF does
 not serve them yet (see [Known limitations](#known-limitations)).
 
@@ -75,7 +75,7 @@ flowchart TB
     LocalHeuristic["local keyword heuristic, fallback"]
     ExportPanel["ExportPanelComponent"]
     CharacterBff["CharacterBffService"]
-    Moderation["Moderation gate<br/>moderate -> store"]
+    Moderation["Avatar gate<br/>validate (5 MB cap, raster sniff) -> moderate -> store"]
     PixiRig["PixiRigService, retained for a future GPU rig, not wired into this flow"]
 
     Host -->|mounts at /character-studio| Routes
@@ -120,8 +120,8 @@ preview sit:
   suggestion endpoint and falls back to a local keyword heuristic when that
   endpoint is unavailable;
 - an export panel, which renders the character to PNG and uploads it through
-  the BFF's moderated avatar endpoint (a moderation gate before storage; a
-  blocked image comes back as HTTP 422).
+  the BFF's moderated avatar endpoint (a validation and moderation gate before
+  storage; a blocked image comes back as HTTP 422).
 
 `PixiRigService` (`src/app/character-studio/services/pixi-rig.service.ts`)
 stays in the codebase but is off the render path. It is reserved for a future
@@ -161,11 +161,10 @@ packs are earlier flat vector art, and candidates for the same treatment.
   (part picker, palette, draw/undo/clear, export→download, expression preview,
   canvas render, responsive layout, credits/attribution, combination
   coverage) run fully offline against `ng serve character-studio`, with no
-  backend and no mocks. Sixteen `.feature` files ship. Five of them touch the
-  off-stack `character-bff`/`character-ai`: the "set as avatar" cross-surface
-  write and its cross-user isolation, and the edge-AI suggest seam and its
-  fallback path. Those carry `@cluster`-tagged scenarios, skipped unless
-  `E2E_LIVE=1`.
+  backend and no mocks. Sixteen `.feature` files ship. Five touch the
+  off-stack `character-bff`/`character-ai` ("set as avatar" and its cross-user
+  isolation, the edge-AI suggest seam and its fallback). Their `@cluster`
+  scenarios are skipped unless `E2E_LIVE=1`.
 
 ### Asset-library CI gates
 
@@ -253,18 +252,17 @@ runs by hand only (`workflow_dispatch`) and pushes to
   Owncast are left out: they have no per-user avatar.
 - A "Go live as an avatar" link to the Owncast remote's avatar cam.
 - Character persistence, client side (issue #1). The studio opens on the pack
-  default. Then `CharacterBffService.loadActive` restores the saved
-  `vn-character` definition over it, reopening the pack it belongs to. The
-  restore stays off the render path: rendering never waits on the user-bff. No
-  save, an unreachable bff, *or one that stalls* (the GET is capped by
-  `BFF_LOAD_TIMEOUT_MS`, 10 s) all leave you editing the pack default, not
-  stuck on "Loading character assets…". Edits made while a slow restore is
-  still in flight win over it. Every edit autosaves after a debounce through
-  `CharacterBffService.saveDefinition`, and a pending save flushes when you
-  navigate away. An aria-live indicator (`cs-autosave`) reports "Saved." or an
-  honest local-only failure. The studio saves exactly ONE character, so
-  browsing another pack, the only way to *look* at another art set, must not
-  destroy it. While the open pack is not the one holding the save, autosave is
+  default, then `CharacterBffService.loadActive` restores the saved
+  `vn-character` definition over it, reopening the pack it belongs to. Rendering
+  never waits on the user-bff: no save, an unreachable bff, *or one that
+  stalls* (the GET is capped by `BFF_LOAD_TIMEOUT_MS`, 10 s) leaves you editing
+  the pack default, not stuck on "Loading character assets…". Edits made while
+  a slow restore is in flight win over it. Each edit autosaves after a debounce
+  (`CharacterBffService.saveDefinition`); a pending save flushes on navigation
+  away. An aria-live indicator (`cs-autosave`) reports "Saved." or an honest
+  local-only failure. The studio saves exactly ONE character, so browsing
+  another pack (the only way to *look* at another art set) must not destroy
+  it. While the open pack is not the one holding the save, autosave is
   suspended and a header notice says so. Switching back restores the character
   you left. Moving the save to the browsed pack takes an explicit "Keep this
   one instead".
