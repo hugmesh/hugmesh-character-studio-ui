@@ -4,7 +4,7 @@
 
 **Source of all content below:** the **D&D System Reference Document 5.1 (SRD 5.1)**, released by Wizards of the Coast LLC under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)** on **January 27, 2023**. This release is irrevocable. (The same SRD was historically available under OGL 1.0a; CC-BY-4.0 is the cleaner, permanent basis this pack relies on.)
 
-> **Scope:** this catalog is the *spec*. We use SRD names/types only as **design labels** for parts; we ship our own original SVG art. We do **not** copy SRD prose, stat blocks, or images. **Status:** the full-catalog art pass is complete — `srd-taxonomy-v1` v2 ships original chibi art per [`ART-STYLE-CHIBI.md`](ART-STYLE-CHIBI.md) for every species below (each is a part entry or a tag on one, enforced by the pack assembler's coverage check).
+> **Scope:** this catalog is the *spec*. We use SRD names/types only as **design labels** for parts; we ship our own original SVG art. We do **not** copy SRD prose, stat blocks, or images. **Status:** the species art pass is complete — `srd-taxonomy-v1` v2 ships original chibi art per [`ART-STYLE-CHIBI.md`](ART-STYLE-CHIBI.md) for every species below (each is a part entry or a tag on one, enforced by the pack assembler's coverage check against its own species list). Classes ship one outfit each (12 `clothing` parts) and 12 `accessory` parts; the three-and-three lists in §1 are the spec for more. One listed species is not in the SRD: see Troglodyte in §3.
 
 ## Required attribution string (every SRD pack MUST carry this verbatim)
 
@@ -84,10 +84,10 @@ Verified against the SRD 5.1 monster-by-type index. `headArchetype` in parens.
 - **Fey:** Dryad(`plant`/`humanoid`), Satyr(`bovid_cervid`), Sprite(`humanoid`); Blink Dog(`canid`); Green/Sea Hag(`humanoid`).
 - **Celestials:** Couatl(`reptile` feathered serpent); Deva/Planetar/Solar(`humanoid` winged); Pegasus/Unicorn(`equine`).
 - **Beasts (by archetype):** canid(Wolf/Dire Wolf/Jackal/Mastiff), felid(Lion/Tiger/Panther/Saber-Tooth), avian(Eagle/Hawk/Owl/Raven/Vulture + Giant), reptile(Crocodile/Giant Lizard/Snakes/Plesiosaurus/Triceratops/T-Rex), ursine_musteline(Bears/Badger/Weasel), equine(Horses/Pony/Mule/Camel), bovid_cervid(Deer/Elk/Goat/Boar/Mammoth/Rhino), lagomorph_rodent(Rat/Giant Rat/Stirge).
-- **Plants (`plant` — proposed new archetype, else `synth`):** Treant, Shambling Mound, Awakened Tree/Shrub, Shrieker, Violet Fungus.
+- **Plants (`plant`; shipped as `head_treant_01` and `head_fungus_01`, which carry the other names as tags, else `synth`):** Treant, Shambling Mound, Awakened Tree/Shrub, Shrieker, Violet Fungus.
 - **Aberrations (SRD-OPEN = exactly):** Aboleth(`reptile`/piscine), Chuul(`synth`), Cloaker(`synth`), Gibbering Mouther(`synth`), Otyugh(`synth`). Grick is SRD but a **Monstrosity** (`synth`), not an Aberration. *(beholder/mind flayer/grell/intellect devourer EXCLUDED.)*
 - **Oozes (`synth`, no head):** Gelatinous Cube, Gray Ooze, Ochre Jelly, Black Pudding.
-- **Humanoid monsters:** Goblin/Hobgoblin/Bugbear(`humanoid` goblinoid), Kobold(`reptile`), Gnoll(`canid` hyena), Orc(`humanoid` tusked), Lizardfolk(`reptile`), Sahuagin(`reptile` piscine), **Troglodyte(`reptile`) — confirmed SRD**, Merfolk(`humanoid` piscine), Drow/Duergar/Svirfneblin/Grimlock(`humanoid`). **Lycanthropes:** Werewolf(`canid`)/Werebear(`ursine_musteline`)/Wereboar(`bovid_cervid`)/Wererat(`lagomorph_rodent`)/Weretiger(`felid`) = `humanoid` base + beast-head swap. *(bullywug/kuo-toa/yuan-ti EXCLUDED.)*
+- **Humanoid monsters:** Goblin/Hobgoblin/Bugbear(`humanoid` goblinoid), Kobold(`reptile`), Gnoll(`canid` hyena), Orc(`humanoid` tusked), Lizardfolk(`reptile`), Sahuagin(`reptile` piscine), Merfolk(`humanoid` piscine), Drow/Duergar/Svirfneblin/Grimlock(`humanoid`). **Lycanthropes:** Werewolf(`canid`)/Werebear(`ursine_musteline`)/Wereboar(`bovid_cervid`)/Wererat(`lagomorph_rodent`)/Weretiger(`felid`) = `humanoid` base + beast-head swap. *(bullywug/kuo-toa/yuan-ti EXCLUDED.)* **Troglodyte(`reptile`) is NOT in SRD 5.1** — it is absent from the 5thsrd.org monsters-by-type index (Humanoid section lists Bugbear, Duergar, Drow, Gnoll, Svirfneblin, Goblin, Hobgoblin, Grimlock, Half-Red Dragon Veteran, the lycanthropes, Kobold, Lizardfolk, Merfolk, Orc, Sahuagin). It is Monster Manual content and belongs on the exclusion list. The pack still ships `head_troglodyte_01` tagged `source:"SRD 5.1"`; that part must be removed or relabelled, and the troglodyte entries dropped from the assembler's species list.
 - **Monstrosities (SRD-open, iconic, safe):** Minotaur(`bovid_cervid`), Centaur(`equine`), Medusa(`humanoid`+snake-hair), Harpy(`avian`), Manticore(`felid`+`avian`), Owlbear(`avian`/`ursine_musteline`), Chimera(multi), Cockatrice(`avian`), Gorgon(`bovid_cervid`), Griffon/Hippogriff(`avian`/`equine`), Sphinxes(`felid`+`avian`), Doppelganger(`humanoid`), Drider(`humanoid`+spider), Naga(`reptile`), Tarrasque/Kraken/Roc/Purple Worm/Hydra(large `reptile`/`synth`).
 
 ---
@@ -97,21 +97,24 @@ Verified against the SRD 5.1 monster-by-type index. `headArchetype` in parens.
 Each catalog entry → one part object:
 
 ```json
-{ "id": "head.dragonborn", "category": "head", "headArchetype": "reptile",
-  "displayName": "Dragonborn", "source": "SRD 5.1", "file": "parts/head/dragonborn.svg",
-  "tags": ["race", "draconic"] }
+{ "id": "head_dragonborn_01", "displayName": "Dragonborn",
+  "file": "parts/head/head_dragonborn_01.svg", "category": "head", "headArchetype": "reptile",
+  "tintRegions": [ { "region": "fur", "svgClass": "region-fur", "defaultPalette": "#e2c4a4" }, … ],
+  "source": "SRD 5.1", "tags": ["race", "draconic", "dragonborn", "scales"] }
 ```
 
+This is the shipped part, with its other three `tintRegions` elided (`accent`, `detail`, `line`). Part ids may use only `[A-Za-z0-9_-]` (the schema pattern), so dotted ids such as `head.dragonborn` are invalid.
+
 Rules:
-1. **Races / monster heads** → `category:"base"` (body) + `category:"head"`, each with a `headArchetype` (`canid|felid|avian|reptile|equine|bovid_cervid|ursine_musteline|synth|humanoid|lagomorph_rodent`, plus proposed **`plant`** — `headArchetype` is a free-form string so `plant` needs no model change).
+1. **Races / monster heads** → `category:"base"` (body) + `category:"head"`, each with a `headArchetype` (`canid|felid|avian|reptile|equine|bovid_cervid|ursine_musteline|synth|humanoid|lagomorph_rodent`, plus **`plant`**, which two shipped heads already use: `head_treant_01`, `head_fungus_01`; `headArchetype` is a free-form string so `plant` needed no model change).
 2. **Signature features** (tiefling horns/tail, dragonborn snout/scales, half-orc tusks, satyr horns, medusa snake-hair) → `category:"feature"` with `compatibleHeads` set to the fitting archetypes (horns `["humanoid"]`, snout `["reptile"]`).
 3. **Classes** → `category:"clothing"`/`"accessory"` with `compatibleHeads:["*"]` (narrow only for archetype-specific silhouettes).
-4. **`eyes`:** `eyes.reptilian` (dragonborn/kobold/lizardfolk), `eyes.solid-glow` (tiefling/undead/fiends), `eyes.beast` (beasts).
-5. **`headArchetype` reuse is the win:** dragonborn/kobold/lizardfolk/troglodyte/sahuagin/dragons share `reptile`; gnoll/werewolf/hell hound share `canid`. Build archetype art once, reskin via `tint`/`tags`.
+4. **`eyes`:** `eyes_reptilian_01` (dragonborn/kobold/lizardfolk; `compatibleHeads:["reptile"]`), `eyes_solidglow_01` (tiefling/undead/fiends), `eyes_beast_01` (beasts).
+5. **`headArchetype` reuse is the win:** dragonborn/kobold/lizardfolk/sahuagin/dragons share `reptile`; gnoll/werewolf/hell hound share `canid`. Build archetype art once, reskin via `tint`/`tags`.
 6. **Every SRD part carries `"source":"SRD 5.1"`**; the SRD pack root carries the CC-BY attribution string. Anything that cannot cite SRD 5.1 must not enter the pack.
 7. **Art status: shipped.** The v2 chibi pass covers the full catalog; this catalog remains the spec for any future additions.
 
-Proposed enum additions (optional): `plant` (treant/shambling mound/dryad); consider `piscine`/`crustacean` for aboleth/sahuagin/chuul/merfolk, else fold into `reptile`/`synth`.
+Possible further archetypes (optional): consider `piscine`/`crustacean` for aboleth/sahuagin/chuul/merfolk, else fold into `reptile`/`synth`.
 
 ---
 
