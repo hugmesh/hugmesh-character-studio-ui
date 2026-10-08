@@ -111,7 +111,7 @@ bands, so a character's token and its 3D avatar read as the same character:
 | Kemono/JRPG band (3D constant) | 2D mapping on the r≈200 face disc |
 |---|---|
 | plush muzzle 15–25% head depth, wide-rounded, never a cone (`muzzleDepthRatio 0.22`) | muzzle ellipse ≤ rx90 ry60, wide and shallow, tapering into the cheeks — never pointed |
-| eyes 0.28–0.35 face width each, iris fills ~0.9 (`eyeWidthRatio 0.33`, `irisFill 0.9`) | iris rx 48–56, ry 62–74 at centers (446, ~350) / (578, ~350) — aperture barely larger than iris, one big + one small white highlight. This is what `srd-taxonomy-v1` uses (`eyes_round_01`: rx 52, ry 68, tilt 6°), so it is the band to follow where it differs from §1 |
+| eyes 0.28–0.35 face width each, iris fills ~0.9 (`eyeWidthRatio 0.33`, `irisFill 0.9`) | iris rx 48–56, ry 62–74 at centers (446, ~350) / (578, ~350) — aperture barely larger than iris, one big + one small white highlight. `srd-taxonomy-v1` uses this band (`eyes_round_01`: rx 52, ry 68, tilt 6°); follow it where it differs from §1 |
 | eyes LOW on the face (`eyeLineRatio 0.60` from crown) | eye centers at y ≈ 345–365 (below the disc midline at 330), big forehead above |
 | slight inward eye tilt (`eyeTiltDeg 7`) | tilt iris ellipses ~5–7° inward (tops lean toward center) |
 | **upper-lid angle is THE expression driver** (`upperLidAngleDeg 13` neutral droop) | eye parts ship as lid-angle variants: neutral = soft 10–15° droop line, happy = flat/closed-arc lid, sleepy = heavy lid, angry = inward-slanted lid; expressions swap the lid, not the whole face |
@@ -135,9 +135,9 @@ Mouth parts also include a **5-step openness strip**
 (`mouth_talk_0..4`: closed → small → mid → open → wide, tagged `viseme`) matching the 3D
 lip-sync module's `MOUTH_FRAMES := 5` fallback, so amplitude-driven talking (VN stage
 amplitude mouth, Chat3D openness channel, JRPG mouth-strip) can animate the same art.
-The studio's own "Talk" panel does not read this strip yet. It cycles three frames
-(closed / half / open) and opens the chosen mouth by a transform, because no pack
-links its talking frames to a mouth with `viseme` / `visemeOf`.
+The studio's "Talk" panel does not read this strip yet: it cycles three frames
+(closed / half / open) and opens the chosen mouth by a transform, since no pack
+sets `viseme` / `visemeOf`.
 
 **Legal posture (from the 3D legal inventory):** commercial kemono/fursuit sources
 (BOOTH VN3 packs, Cults3D heads, TheRPGslayer bases) are STYLE-REFERENCE-ONLY. Never
