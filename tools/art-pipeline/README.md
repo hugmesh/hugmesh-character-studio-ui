@@ -12,8 +12,7 @@ this directory are the source of truth, and `pack.json` is generated from them.
   that each fragment's tint classes match its SVG. It also checks **species coverage**:
   every name in the `SPECIES` list hard-coded in `assemble.py` must be an entry id,
   display name or tag. Keep that list by hand in step with `docs/CATALOG-DND-SRD.md`. Run:
-  `python3 assemble.py` (dry-run) / `python3 assemble.py --write`. A dry run on a
-  clean tree prints `parts: 195 across 11 slots; 0 errors; 0 species uncovered`.
+  `python3 assemble.py` (dry-run) / `python3 assemble.py --write`.
 - `compose_proof.py` — composes fragment parts into flattened proof SVG/PNG sheets
   (`python3 compose_proof.py OUTDIR head_dragon_01 body_x:head_y:acc_z ...`); needs
   `rsvg-convert` + PIL. Every art agent ran this render-and-LOOK loop.
