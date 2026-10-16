@@ -39,8 +39,8 @@ backend of its own: it calls `hugmeshRemote(...)` and never `hugmeshHost(...)`
   session cookie authenticates each call; the browser holds no bearer token.
   [`hugmesh-user-bff-api`](https://github.com/hugmesh/hugmesh-user-bff-api)
   serves only part of that surface. `POST /bff/user/profile/avatar` exists.
-  `GET`/`PUT /bff/user/vn-character` and `POST /bff/user/vn-character/suggest`
-  do not: no service on `main` maps them.
+  `PUT /bff/user/vn-character`, `GET /bff/user/vn-character/active` and
+  `POST /bff/user/vn-character/suggest` do not: no service on `main` maps them.
 - `federation-base.js` has the same code as the copy in
   [`hugmesh-games`](https://github.com/hugmesh/hugmesh-games)
   (`frontend/federation-base.js`) and the other HugMesh native-federation
@@ -273,10 +273,10 @@ runs by hand only (`workflow_dispatch`) and pushes to
 
 ### Known limitations
 - **The character-definition and AI-suggest routes have no server.** The
-  client calls `GET`/`PUT /bff/user/vn-character` and
-  `POST /bff/user/vn-character/suggest`. On `main`, the
+  client calls `PUT /bff/user/vn-character`, `GET /bff/user/vn-character/active`
+  and `POST /bff/user/vn-character/suggest`. On `main`, the
   character and avatar routes of `hugmesh-user-bff-api` are
-  `/bff/user/character/{avatar,parts,stickers}` and `/bff/user/profile/avatar`. Until a service maps those two routes, a
+  `/bff/user/character/{avatar,parts,stickers}` and `/bff/user/profile/avatar`. Until a service maps those routes, a
   saved character is never restored, and autosave reports "Autosave failed —
   your latest edits are only on this device."
 - **`PixiRigService.setExpression`/`.setViseme` are stubs** (see the docblocks
