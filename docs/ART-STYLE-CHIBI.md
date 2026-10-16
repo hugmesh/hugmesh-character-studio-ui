@@ -137,7 +137,7 @@ lip-sync module's `MOUTH_FRAMES := 5` fallback, so amplitude-driven talking (VN 
 amplitude mouth, Chat3D openness channel, JRPG mouth-strip) can animate the same art.
 The studio's "Talk" panel does not read this strip yet: it cycles three frames
 (closed / half / open) and opens the chosen mouth by a transform, since no pack
-sets `viseme` / `visemeOf`.
+part sets the `viseme` / `visemeOf` fields.
 
 **Legal posture (from the 3D legal inventory):** commercial kemono/fursuit sources
 (BOOTH VN3 packs, Cults3D heads, TheRPGslayer bases) are STYLE-REFERENCE-ONLY. Never
