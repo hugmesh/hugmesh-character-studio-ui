@@ -3,16 +3,16 @@
 *Part of [hugmesh-character-studio-ui](../README.md).*
 
 The house style for real (non-placeholder) part art: **super-chibi, cutesy, flat-vector**.
-Distilled from published drawing guides (sources at the bottom) and mapped onto this
+It comes from published drawing guides (sources at the bottom), mapped onto this
 repo's 1024×1024 part canvas so every part composes with every other.
 
 ## 1. Proportions (super-chibi, ~2 heads tall)
 
-Published chibi guidance: head-to-body between 1:2 and 1:4, with **1:2 ("super chibi")
-reading best at token/avatar sizes**; head round and about twice as big as the body;
-body a simple jellybean/oval; limbs stubby and about half natural length; hands/feet
-small, round, mitten-like (2 finger-joints max); **ban straight lines — everything soft
-and curvy**; big forehead, baby-fat cheeks.
+The published guides say: head-to-body between 1:2 and 1:4, with **1:2 ("super chibi")
+reading best at token/avatar sizes**. The head is round and about twice as big as the body.
+The body is a simple jellybean/oval. Limbs are stubby, about half natural length. Hands
+and feet are small, round and mitten-like (2 finger-joints max). **No straight lines:
+everything is soft and curvy.** Big forehead, baby-fat cheeks.
 
 Mapped to our canvas (matches the shipped menagerie/anime geometry so packs stay
 cross-consistent):
@@ -31,24 +31,24 @@ cross-consistent):
 | Feet / paws | ellipses ~rx70 ry60 at (414, 780) & (610, 780) or rounded rects at y ≈ 842 |
 | Tail / wings | separate slot parts; anchor behind body silhouette (tail y ≈ 560–760, wings y ≈ 300–620) |
 
-**Three-feature rule:** per species pick at most **three signature features** and
-exaggerate those (ears, horns, tusks, gills, mane, frill, snout, beard…). Everything
-else stays generic-cute. A species must be recognizable as a silhouette.
+**Three-feature rule:** give each species at most **three signature features** and
+exaggerate them (ears, horns, tusks, gills, mane, frill, snout, beard…). Everything
+else stays generic-cute. You must be able to recognize a species by its silhouette.
 
 ## 2. Line & shape language
 
 - Flat fills, **no gradients**, no filters, no masks/defs — plain `path/circle/ellipse/rect` only.
-- Outline-accent style: fills carry the form; `region-line` strokes are used ONLY for
+- Outline-accent style: fills carry the form. Use `region-line` strokes ONLY for
   mouths, eyelid/lash accents, and small interior seams. `stroke-width="14"`,
   `stroke-linecap="round"` (matches shipped packs).
-- Corners: everything rounded — `rx` on rects, `Q` curves on paths. If a species is
+- Round every corner: `rx` on rects, `Q` curves on paths. If a species is
   spiky (dragon frill, hedgehog), soften each spike tip into a curve.
-- Keep each part ≤ 30 shapes and **≤ 8 KB on disk** (validator hard cap; parts inline
-  into one composed SVG document).
+- Keep each part ≤ 30 shapes and **≤ 8 KB on disk** (the validator enforces the 8 KB cap;
+  parts inline into one composed SVG document).
 
 ## 3. Color: pastel flat palette per part
 
-3–6 colors per part via the tint-region system — the shipped conventions:
+Use 3–6 colors per part through the tint-region system. The shipped conventions:
 
 | Region class | Role | Example pastel default |
 |---|---|---|
@@ -58,29 +58,29 @@ else stays generic-cute. A species must be recognizable as a silhouette.
 | `region-iris` | iris fill (eyes parts only) | saturated candy color, e.g. `#3a78c2` |
 | `region-line` | mouth/eyelid strokes | dark warm neutral, e.g. `#5a4450` |
 
-**Clothing/accessory parts** must NOT put their main mass on `fur/accent/detail` — those
-are owned by the composed head/body (one region = one color character-wide, so a garment
-on `detail` turns hair-dark). Garments declare their own regions: `cloth`/`region-cloth`
-(main garment mass, pastel default) and optionally `clothtrim`/`region-clothtrim` (trim),
-keeping `iris` for a single saturated pop and `region-line` for seams/strings. (`cloth`
+**Clothing/accessory parts** must NOT put their main mass on `fur/accent/detail`. The
+composed head/body owns those, and one region is one color character-wide, so a garment
+on `detail` turns the hair dark. Garments declare their own regions: `cloth`/`region-cloth`
+(main garment mass, pastel default) and, optionally, `clothtrim`/`region-clothtrim` (trim).
+Keep `iris` for a single saturated pop and `region-line` for seams and strings. (`cloth`
 is a 2D-pack region; the 3D forge maps it to the outfit material when outfits land.)
 
 Rules: **defaults must be pastel** (soften every hue toward white; reserve one saturated
-accent — usually the iris — as the pop color). Hardcoded fills are allowed only for
-`#ffffff` eye highlights and `#f2a0b3` blush. Every `class="region-*"` used must be
-declared in the part's `<style>` as `fill:var(--region-X,#default)` (or stroke for
-`region-line`) AND listed in the part's `tintRegions` in pack.json — the CI validator
-asserts the class binds.
+accent, usually the iris, as the pop color). Hardcoded fills are allowed only for
+`#ffffff` eye highlights and `#f2a0b3` blush. Declare every `class="region-*"` you use in
+the part's `<style>` as `fill:var(--region-X,#default)` (or stroke for
+`region-line`) AND list it in the part's `tintRegions` in pack.json. The CI validator
+asserts that the class binds.
 
 ## 4. Faces (where the cute lives)
 
-- **Eyes enormous, low on the face, lots of forehead.** Tall rounded-rectangle/oval
-  irises, flat-ish bottom lid on happy variants. Half-close the top lid for "dangerous"
-  species (dragons, fiends) — still cute.
-- Mouth tiny. Default = closed wide smile (`q` curve). Tiny single fang = cute for
-  predators/vampires.
+- **Eyes enormous, low on the face, lots of forehead.** Use tall rounded-rectangle/oval
+  irises, with a flat-ish bottom lid on happy variants. Half-close the top lid for "dangerous"
+  species (dragons, fiends); they stay cute.
+- Mouth tiny. Default is a closed wide smile (`q` curve). A tiny single fang is cute on
+  predators and vampires.
 - Blush always, on every head, including skeletons/robots/oozes (paint it as a plate
-  blush/LED blush there — it is the style signature).
+  blush or LED blush there). It is the style signature.
 - Brows are their own slot parts: short thick rounded strokes.
 
 ## 5. SVG part template
@@ -100,18 +100,18 @@ patches → detail → line accents. No `<g>`, no `transform` on the root, no te
 
 `backdrop 0 → tail 10 → wings 15 → body 20 → markings 30 → clothing 40 → head 60 →
 ears 70 → feature 80 → brows 90 → eyes 100 → mouth 110 → hair 120 → accessory 130`.
-Heads carry `headArchetype`; features/eyes narrow with `compatibleHeads`.
+Heads carry `headArchetype`; features and eyes narrow with `compatibleHeads`.
 
 ## 7. Cross-medium parity with the 3D character forge (kemono alignment)
 
-The 3D avatar pipeline (character-forge `proportions.gd`, Char3DConfig §2) derives its
-face construction from the same research corpus; the 2D packs follow the SAME numeric
-bands so a character's token and its 3D avatar read as the same character:
+The 3D avatar pipeline (character-forge `games/character-forge/scripts/proportions.gd` in `hugmesh-games`, Char3DConfig §2) derives its
+face construction from the same research. The 2D packs follow the SAME numeric
+bands, so a character's token and its 3D avatar read as the same character:
 
 | Kemono/JRPG band (3D constant) | 2D mapping on the r≈200 face disc |
 |---|---|
 | plush muzzle 15–25% head depth, wide-rounded, never a cone (`muzzleDepthRatio 0.22`) | muzzle ellipse ≤ rx90 ry60, wide and shallow, tapering into the cheeks — never pointed |
-| eyes 0.28–0.35 face width each, iris fills ~0.9 (`eyeWidthRatio 0.33`, `irisFill 0.9`) | iris rx 48–56, ry 62–74 at centers (446, ~350) / (578, ~350) — aperture barely larger than iris, one big + one small white highlight |
+| eyes 0.28–0.35 face width each, iris fills ~0.9 (`eyeWidthRatio 0.33`, `irisFill 0.9`) | iris rx 48–56, ry 62–74 at centers (446, ~350) / (578, ~350) — aperture barely larger than iris, one big + one small white highlight. `srd-taxonomy-v1` uses this band (`eyes_round_01`: rx 52, ry 68, tilt 6°); follow it where it differs from §1 |
 | eyes LOW on the face (`eyeLineRatio 0.60` from crown) | eye centers at y ≈ 345–365 (below the disc midline at 330), big forehead above |
 | slight inward eye tilt (`eyeTiltDeg 7`) | tilt iris ellipses ~5–7° inward (tops lean toward center) |
 | **upper-lid angle is THE expression driver** (`upperLidAngleDeg 13` neutral droop) | eye parts ship as lid-angle variants: neutral = soft 10–15° droop line, happy = flat/closed-arc lid, sleepy = heavy lid, angry = inward-slanted lid; expressions swap the lid, not the whole face |
@@ -122,21 +122,25 @@ bands so a character's token and its 3D avatar read as the same character:
 | 60/30/10 color blocking (JRPG) | ~60% fur, ~30% accent, ~10% detail per composed character |
 
 **Palette contract:** Char3DConfig `materials` uses the SAME region names as the SVG
-palette 1:1 (`fur, accent, detail, line, iris, skin, hair`). 2D parts use `fur` for the
-primary mass on every archetype (on humanoids fur IS the skin — legacy palettes bind by
-region name and must keep working); heads that bake hair declare a sixth region
-`hair`/`region-hair` so the 3D mapper and the palette editor pick it up.
+palette, 1:1 (`fur, accent, detail, line, iris, skin, hair`). 2D parts use `fur` for the
+primary mass on every archetype. On humanoids fur IS the skin; legacy palettes bind by
+region name and must keep working. A head that bakes hair declares a sixth region,
+`hair`/`region-hair`, so the 3D mapper and the palette editor pick it up.
 
 **Expression roster:** the canonical 10-expression vocabulary (StickerExpression twin,
 also the 3D preset list) is `neutral happy sad angry surprised embarrassed thinking wink
-sleepy smug`. Packs ship all 10 as expression presets (cap 16) overriding
-`eyes/brows/mouth`. Mouth parts additionally include a **5-step openness strip**
+sleepy smug`. `srd-taxonomy-v1` ships all 10 as expression presets (cap 16) overriding
+`eyes/brows/mouth`; the other packs ship four (neutral, happy, sad, angry).
+Mouth parts also include a **5-step openness strip**
 (`mouth_talk_0..4`: closed → small → mid → open → wide, tagged `viseme`) matching the 3D
 lip-sync module's `MOUTH_FRAMES := 5` fallback, so amplitude-driven talking (VN stage
 amplitude mouth, Chat3D openness channel, JRPG mouth-strip) can animate the same art.
+The studio's "Talk" panel does not read this strip yet: it cycles three frames
+(closed / half / open) and opens the chosen mouth by a transform, since no pack
+part sets the `viseme` / `visemeOf` fields.
 
 **Legal posture (from the 3D legal inventory):** commercial kemono/fursuit sources
-(BOOTH VN3 packs, Cults3D heads, TheRPGslayer bases) are STYLE-REFERENCE-ONLY — never
+(BOOTH VN3 packs, Cults3D heads, TheRPGslayer bases) are STYLE-REFERENCE-ONLY. Never
 trace, copy, or vectorize them. Everything in these packs is original art; SRD-derived
 names/types carry `source:"SRD 5.1"` + the pack-level CC-BY attribution string.
 
@@ -150,7 +154,7 @@ names/types carry `source:"SRD 5.1"` + the pack-level CC-BY attribution string.
 - getillustrations — [Flat Vector Illustration: A Complete Guide](https://getillustrations.com/blog/flat-vector-illustration-guide/) (3–6 colors: primary/secondary/neutral/accent; consistent stroke weight)
 - Research from the platform's companion 3D character-forge project (kemono
   and JRPG-base proportion technique surveys, plus a legal-clearance review
-  of reference sources) and its `proportions.gd` numeric bands — the shared
+  of reference sources) and its `proportions.gd` numeric bands. The shared
   cross-medium face spec in §7 traces back to that research, which in turn
   cites: fursonafy/fursuitcommissions anthro-proportion guides,
   vsquad/skyryedesign anime-head guides, and a survey of the kemono style
