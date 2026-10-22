@@ -1,6 +1,6 @@
 {
   "name": "@hugmesh/character-studio",
-  "version": "0.0.0",
+  "version": "0.2.0-beta.1",
   "description": "VN character-studio — Gaia/Picrew-style layered-2D anthro/furry avatar creator (native-federation remote 'character-studio'). Phase B0 of the VN-character feature.",
   "scripts": {
     "ng": "ng",

@@ -1,38 +1,122 @@
 name: Release
 
-# Manual-only for now: this workflow is intentionally inert until a human
-# enables it. It must never gain a `push`/`tags` trigger without that
-# decision being made explicitly.
+# Publishes ghcr.io/hugmesh/hugmesh-character-studio-ui.
+#
+# The version comes from package.json `.version` (package-lock.json must match).
+#
+#   push to main                   -> :main and :sha-<12>
+#   push of tag v<version>         -> :<version>, :beta and :sha-<12>,
+#                                     plus a GitHub Release (prerelease, never "latest")
+#   workflow_dispatch on main      -> same as a push to main
+#   workflow_dispatch on a v* tag  -> same as that tag push (re-run path)
+#   anything else                  -> refused by the version job
+#
+# A tag is the explicit publish decision: a person pushes an annotated
+# `v<version>` tag on a commit on main. A published `:<version>` is never
+# overwritten (the image job refuses), and a beta never moves `:latest`.
+#
+# Runner: every job uses the same `runs-on` line. It picks the repo/org
+# variable RUNS_ON_PUBLISH (a JSON array, e.g. ["self-hosted","Linux","X64"])
+# only for a push or dispatch on main or a `v*` tag, and hosted
+# `ubuntu-latest` for everything else, including when the variable is unset.
+# Deleting RUNS_ON_PUBLISH sends every job back to hosted runners.
+# This workflow must never gain a `pull_request` or `pull_request_target`
+# trigger: on a public repo a self-hosted runner must not run PR code.
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Image tag to publish (defaults to the short commit SHA)'
-        required: false
-        default: ''
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: hugmesh/hugmesh-character-studio-ui
 
 jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+  version:
+    runs-on: ${{ fromJSON(github.event_name != 'pull_request' && github.event_name != 'pull_request_target' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || startsWith(github.ref, 'refs/tags/studio-v')) && vars.RUNS_ON_PUBLISH || '"ubuntu-latest"') }}
+    outputs:
+      version: ${{ steps.resolve.outputs.version }}
+      kind: ${{ steps.resolve.outputs.kind }}
+      sha12: ${{ steps.resolve.outputs.sha12 }}
+      prerelease: ${{ steps.resolve.outputs.prerelease }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Resolve image tag
-        id: vars
+      - name: Resolve version and run kind
+        id: resolve
+        shell: bash
         run: |
-          if [ -n "${{ inputs.tag }}" ]; then
-            echo "tag=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "tag=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+          set -euo pipefail
+          version=$(python3 -c 'import json; print(json.load(open("package.json"))["version"])')
+          lock_version=$(python3 -c 'import json; d=json.load(open("package-lock.json")); print(d["version"]); print(d["packages"][""]["version"])' | sort -u | paste -sd " ")
+          if [ "$lock_version" != "$version" ]; then
+            echo "::error::package-lock.json version ($lock_version) does not match package.json ($version)"
+            exit 1
           fi
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z]+(\.[0-9A-Za-z]+)*)?$ ]]; then
+            echo "::error::package.json version '$version' is not MAJOR.MINOR.PATCH[-pre.N]"
+            exit 1
+          fi
+          case "$version" in
+            *SNAPSHOT*) echo "::error::SNAPSHOT versions are never published"; exit 1 ;;
+          esac
+          case "$GITHUB_REF" in
+            refs/tags/v*)
+              if [ "${GITHUB_REF_NAME#v}" != "$version" ]; then
+                echo "::error::tag $GITHUB_REF_NAME does not match package.json version $version"
+                exit 1
+              fi
+              if ! git merge-base --is-ancestor "$GITHUB_SHA" origin/main; then
+                echo "::error::tag $GITHUB_REF_NAME is not on main; only commits on main are released"
+                exit 1
+              fi
+              kind=release
+              ;;
+            refs/heads/main)
+              kind=main
+              ;;
+            *)
+              echo "::error::publishing runs only on main or a v<version> tag, not $GITHUB_REF"
+              exit 1
+              ;;
+          esac
+          case "$version" in
+            *-*) prerelease=true ;;
+            *) prerelease=false ;;
+          esac
+          {
+            echo "version=$version"
+            echo "kind=$kind"
+            echo "sha12=${GITHUB_SHA:0:12}"
+            echo "prerelease=$prerelease"
+          } >> "$GITHUB_OUTPUT"
+          echo "version=$version kind=$kind prerelease=$prerelease ref=$GITHUB_REF"
+
+  image:
+    needs: version
+    runs-on: ${{ fromJSON(github.event_name != 'pull_request' && github.event_name != 'pull_request_target' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || startsWith(github.ref, 'refs/tags/studio-v')) && vars.RUNS_ON_PUBLISH || '"ubuntu-latest"') }}
+    permissions:
+      contents: read
+      packages: write
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+      KIND: ${{ needs.version.outputs.kind }}
+      SHA12: ${{ needs.version.outputs.sha12 }}
+      PRERELEASE: ${{ needs.version.outputs.prerelease }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -44,11 +128,83 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Refuse to overwrite a published version
+        if: env.KIND == 'release'
+        shell: bash
+        run: |
+          set -uo pipefail
+          ref="$REGISTRY/$IMAGE_NAME:$VERSION"
+          if out=$(docker buildx imagetools inspect "$ref" 2>&1); then
+            echo "::error::$ref already exists; a published version is never overwritten. Raise the version instead."
+            exit 1
+          fi
+          if ! grep -a -i -E 'not found|manifest unknown' <<<"$out" >/dev/null; then
+            echo "::error::could not tell whether $ref exists:"
+            echo "$out"
+            exit 1
+          fi
+          echo "$ref is not published yet"
+
+      - name: Compute image tags and labels
+        id: tags
+        shell: bash
+        run: |
+          set -euo pipefail
+          img="$REGISTRY/$IMAGE_NAME"
+          if [ "$KIND" = release ]; then
+            tags="$img:$VERSION"
+            # A beta moves :beta. Nothing in this workflow ever moves :latest;
+            # pushing :latest for a final release is a separate decision.
+            if [ "$PRERELEASE" = true ]; then
+              tags="$tags"$'\n'"$img:beta"
+            fi
+            label_version="$VERSION"
+          else
+            tags="$img:main"
+            label_version=main
+          fi
+          tags="$tags"$'\n'"$img:sha-$SHA12"
+          {
+            echo "tags<<__TAGS__"
+            echo "$tags"
+            echo "__TAGS__"
+            echo "labels<<__LABELS__"
+            echo "org.opencontainers.image.source=https://github.com/${GITHUB_REPOSITORY}"
+            echo "org.opencontainers.image.version=$label_version"
+            echo "org.opencontainers.image.revision=$GITHUB_SHA"
+            echo "__LABELS__"
+          } >> "$GITHUB_OUTPUT"
+          echo "$tags"
+
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.tag }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ steps.tags.outputs.tags }}
+          labels: ${{ steps.tags.outputs.labels }}
+
+  github-release:
+    needs: [version, image]
+    if: needs.version.outputs.kind == 'release'
+    runs-on: ${{ fromJSON(github.event_name != 'pull_request' && github.event_name != 'pull_request_target' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || startsWith(github.ref, 'refs/tags/studio-v')) && vars.RUNS_ON_PUBLISH || '"ubuntu-latest"') }}
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PRERELEASE: ${{ needs.version.outputs.prerelease }}
+    steps:
+      - name: Create the GitHub Release
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "Release $GITHUB_REF_NAME already exists; leaving it alone."
+            exit 0
+          fi
+          flags=(--verify-tag --latest=false --generate-notes --title "$GITHUB_REF_NAME")
+          if [ "$PRERELEASE" = true ]; then
+            flags+=(--prerelease)
+          fi
+          gh release create "$GITHUB_REF_NAME" "${flags[@]}"

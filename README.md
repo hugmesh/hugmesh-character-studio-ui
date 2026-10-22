@@ -197,9 +197,34 @@ The `Dockerfile` builds with `node:24-alpine` and serves from
 hashed bundle files for a year but always revalidates `remoteEntry.json`, the
 manifest the host shell fetches to resolve this remote's exposed modules. The
 image matters only when the optional `character-studio` mesh feature is on in
-a HugMesh deployment. The publish workflow (`.github/workflows/release.yml`)
-runs by hand only (`workflow_dispatch`) and pushes to
-`ghcr.io/hugmesh/hugmesh-character-studio-ui`.
+a HugMesh deployment.
+
+### Versions and publishing
+
+The version lives in `package.json` (and the root entries of
+`package-lock.json`, which must match). It is a beta, `0.2.0-beta.1`: built and
+tested, not yet proven live. Fixes during the beta raise the last number
+(`-beta.2`, `-beta.3`, ...).
+
+The publish workflow (`.github/workflows/release.yml`) pushes to
+`ghcr.io/hugmesh/hugmesh-character-studio-ui`:
+
+| Trigger | Image tags | GitHub Release |
+|---|---|---|
+| push to `main` (or a manual run on `main`) | `main`, `sha-<12 hex>` | none |
+| push of tag `v<version>` (or a manual run on that tag) | `<version>`, `beta`, `sha-<12 hex>` | prerelease, never marked latest |
+
+The workflow refuses a tag that does not match `package.json`, a tag on a
+commit that is not on `main`, any other branch, and a version that is already
+published. It never pushes `latest`. Jobs run on the runner named by the
+`RUNS_ON_PUBLISH` Actions variable (a JSON array such as
+`["self-hosted","Linux","X64"]`) for pushes and manual runs on `main` or a
+`v*` tag, and on hosted `ubuntu-latest` otherwise or when the variable is
+unset. The workflow has no pull-request trigger.
+
+To cut a beta: raise the version in `package.json` and `package-lock.json`,
+merge to `main`, then push an annotated tag on that commit
+(`git tag -a v0.2.0-beta.1 -m v0.2.0-beta.1 && git push origin v0.2.0-beta.1`).
 
 ## Documentation
 
